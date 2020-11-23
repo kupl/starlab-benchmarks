@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "trust/asn1.c",
+        "line": 75
+    },
+    "sink": {
+        "filepath": "trust/asn1.c",
+        "line": 84
+    }
+}

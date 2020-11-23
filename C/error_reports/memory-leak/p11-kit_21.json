@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "p11-kit/rpc-message.c",
+        "line": 525
+    },
+    "sink": {
+        "filepath": "p11-kit/rpc-message.c",
+        "line": 529
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/dynamic-preprocessors/sdf/spp_sdf.c",
+        "line": 896
+    },
+    "sink": {
+        "filepath": "src/dynamic-preprocessors/sdf/spp_sdf.c",
+        "line": 897
+    }
+}

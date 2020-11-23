@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/open_legacy.c",
+        "line": 102
+    },
+    "sink": {
+        "filepath": "src/open_legacy.c",
+        "line": 113
+    }
+}

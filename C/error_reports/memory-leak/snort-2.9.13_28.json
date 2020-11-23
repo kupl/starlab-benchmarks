@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/preprocessors/Stream6/snort_stream_tcp.c",
+        "line": 11924
+    },
+    "sink": {
+        "filepath": "src/preprocessors/Stream6/snort_stream_tcp.c",
+        "line": 11927
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/fpcreate.c",
+        "line": 364
+    },
+    "sink": {
+        "filepath": "src/fpcreate.c",
+        "line": 379
+    }
+}

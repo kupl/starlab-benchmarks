@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/rec-fex.c",
+        "line": 665
+    },
+    "sink": {
+        "filepath": "src/rec-fex.c",
+        "line": 666
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/lxc/bdev/lxczfs.c",
+        "line": 174
+    },
+    "sink": {
+        "filepath": "src/lxc/bdev/lxczfs.c",
+        "line": 176
+    }
+}

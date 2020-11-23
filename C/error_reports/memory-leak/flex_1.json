@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/buf.c",
+        "line": 175
+    },
+    "sink": {
+        "filepath": "src/buf.c",
+        "line": 182
+    }
+}

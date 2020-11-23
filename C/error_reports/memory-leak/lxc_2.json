@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/lxc/bdev/bdev.c",
+        "line": 752
+    },
+    "sink": {
+        "filepath": "src/lxc/bdev/bdev.c",
+        "line": 763
+    }
+}

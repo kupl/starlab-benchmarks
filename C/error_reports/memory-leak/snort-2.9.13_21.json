@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/file-process/file_service.c",
+        "line": 413
+    },
+    "sink": {
+        "filepath": "src/file-process/file_service.c",
+        "line": 413
+    }
+}

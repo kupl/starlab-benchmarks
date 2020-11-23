@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "cli/wvtag.c",
+        "line": 941
+    },
+    "sink": {
+        "filepath": "cli/wvtag.c",
+        "line": 942
+    }
+}

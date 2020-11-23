@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "pipe.c",
+        "line": 52
+    },
+    "sink": {
+        "filepath": "pipe.c",
+        "line": 65
+    }
+}

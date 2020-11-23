@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/dynamic-preprocessors/dcerpc2/dce2_config.c",
+        "line": 1386
+    },
+    "sink": {
+        "filepath": "src/dynamic-preprocessors/dcerpc2/dce2_config.c",
+        "line": 1449
+    }
+}

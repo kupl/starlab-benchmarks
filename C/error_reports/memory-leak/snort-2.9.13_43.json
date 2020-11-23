@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/snort.c",
+        "line": 984
+    },
+    "sink": {
+        "filepath": "src/snort.c",
+        "line": 989
+    }
+}

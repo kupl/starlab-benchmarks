@@ -1,0 +1,17 @@
+2019-03-21 - Snort 2.9.13.0
+  
+[*] New Additions
+
+ * Snort now supports reload on snort rules update.
+
+ * Addition of a scenario to add a packet to blacklist verdict to ensure new session will be allowed.
+
+ * Handled a new pre-processor alert in case of improper end of HTTP header.
+
+[*] Improvements
+
+ * Modified the calculation of file hash for FTP/HTTP with offset values.
+
+ * Fixed portal authentication connection stuck in half closed state.
+
+ * Updated UDP global timeout for non-standard port.

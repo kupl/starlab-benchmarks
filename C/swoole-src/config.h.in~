@@ -1,0 +1,166 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Whether to build swoole as dynamic module */
+#undef COMPILE_DL_SWOOLE
+
+/* have accept4 */
+#undef HAVE_ACCEPT4
+
+/* have clock_gettime */
+#undef HAVE_CLOCK_GETTIME
+
+/* cpu affinity? */
+#undef HAVE_CPU_AFFINITY
+
+/* have daemon */
+#undef HAVE_DAEMON
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* have epoll */
+#undef HAVE_EPOLL
+
+/* have eventfd */
+#undef HAVE_EVENTFD
+
+/* have execinfo */
+#undef HAVE_EXECINFO
+
+/* have hiredis */
+#undef HAVE_HIREDIS
+
+/* have inotify */
+#undef HAVE_INOTIFY
+
+/* have inotify_init1 */
+#undef HAVE_INOTIFY_INIT1
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* have kqueue */
+#undef HAVE_KQUEUE
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* have mkostemp */
+#undef HAVE_MKOSTEMP
+
+/* have pthread_mutex_timedlock */
+#undef HAVE_MUTEX_TIMEDLOCK
+
+/* have nghttp2 */
+#undef HAVE_NGHTTP2
+
+/* have openssl */
+#undef HAVE_OPENSSL
+
+/* have pcre */
+#undef HAVE_PCRE
+
+/* have poll */
+#undef HAVE_POLL
+
+/* have pthread_barrier_init */
+#undef HAVE_PTHREAD_BARRIER
+
+/* have SO_REUSEPORT? */
+#undef HAVE_REUSEPORT
+
+/* have pthread_rwlock_init */
+#undef HAVE_RWLOCK
+
+/* have sendfile */
+#undef HAVE_SENDFILE
+
+/* have signalfd */
+#undef HAVE_SIGNALFD
+
+/* have pthread_spin_lock */
+#undef HAVE_SPINLOCK
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* have timerfd */
+#undef HAVE_TIMERFD
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
+
+/* Define to 1 if your C compiler doesn't accept -c and -o together. */
+#undef NO_MINUS_C_MINUS_O
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* do we enable swoole debug */
+#undef SW_DEBUG
+
+/* have zlib */
+#undef SW_HAVE_ZLIB
+
+/* enable sockets support */
+#undef SW_SOCKETS
+
+/* enable http2.0 support */
+#undef SW_USE_HTTP2
+
+/* enable hugepage support */
+#undef SW_USE_HUGEPAGE
+
+/* use jemalloc */
+#undef SW_USE_JEMALLOC
+
+/* enable openssl support */
+#undef SW_USE_OPENSSL
+
+/* enable async-redis support */
+#undef SW_USE_REDIS
+
+/* enable ringbuffer support */
+#undef SW_USE_RINGBUFFER
+
+/* use tcmalloc */
+#undef SW_USE_TCMALLOC
+
+/* enable thread support */
+#undef SW_USE_THREAD

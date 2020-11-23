@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "p11-kit/pin.c",
+        "line": 549
+    },
+    "sink": {
+        "filepath": "p11-kit/pin.c",
+        "line": 553
+    }
+}

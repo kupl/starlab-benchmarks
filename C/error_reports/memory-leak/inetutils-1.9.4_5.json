@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "libinetutils/argcv.c",
+        "line": 167
+    },
+    "sink": {
+        "filepath": "libinetutils/argcv.c",
+        "line": 175
+    }
+}

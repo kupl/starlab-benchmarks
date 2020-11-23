@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/rec-rset.c",
+        "line": 1760
+    },
+    "sink": {
+        "filepath": "src/rec-rset.c",
+        "line": 1758
+    }
+}

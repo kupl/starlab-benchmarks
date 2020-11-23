@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/syslogd.c",
+        "line": 2037
+    },
+    "sink": {
+        "filepath": "src/syslogd.c",
+        "line": 2051
+    }
+}

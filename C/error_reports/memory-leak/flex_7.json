@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/sym.c",
+        "line": 180
+    },
+    "sink": {
+        "filepath": "src/sym.c",
+        "line": 180
+    }
+}

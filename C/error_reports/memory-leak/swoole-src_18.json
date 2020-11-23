@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "swoole_buffer.c",
+        "line": 124
+    },
+    "sink": {
+        "filepath": "swoole_buffer.c",
+        "line": 131
+    }
+}

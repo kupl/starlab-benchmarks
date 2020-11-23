@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "utils/recfmt.c",
+        "line": 161
+    },
+    "sink": {
+        "filepath": "utils/recfmt.c",
+        "line": 173
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "trust/save.c",
+        "line": 555
+    },
+    "sink": {
+        "filepath": "trust/save.c",
+        "line": 562
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "filters/video/source.c",
+        "line": 42
+    },
+    "sink": {
+        "filepath": "filters/video/source.c",
+        "line": 48
+    }
+}

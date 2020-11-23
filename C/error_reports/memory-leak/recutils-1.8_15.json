@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "utils/csv2rec.c",
+        "line": 147
+    },
+    "sink": {
+        "filepath": "utils/csv2rec.c",
+        "line": 147
+    }
+}

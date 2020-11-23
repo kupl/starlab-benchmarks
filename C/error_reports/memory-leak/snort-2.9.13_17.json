@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/dynamic-preprocessors/ftptelnet/spp_ftptelnet.c",
+        "line": 535
+    },
+    "sink": {
+        "filepath": "src/dynamic-preprocessors/ftptelnet/spp_ftptelnet.c",
+        "line": 554
+    }
+}

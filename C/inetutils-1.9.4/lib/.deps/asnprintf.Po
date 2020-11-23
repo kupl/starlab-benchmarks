@@ -1,0 +1,22 @@
+asnprintf.o: asnprintf.c \
+  /home/junhee/projects/saver/infer/bin/../lib/clang_wrappers/global_defines.h \
+  ../config.h ../confpaths.h /usr/include/paths.h vasnprintf.h \
+  /home/junhee/projects/saver/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/stdarg.h \
+  /home/junhee/projects/saver/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/stddef.h \
+  /home/junhee/projects/saver/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/__stddef_max_align_t.h
+
+/home/junhee/projects/saver/infer/bin/../lib/clang_wrappers/global_defines.h:
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:
+
+vasnprintf.h:
+
+/home/junhee/projects/saver/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/stdarg.h:
+
+/home/junhee/projects/saver/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/stddef.h:
+
+/home/junhee/projects/saver/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/__stddef_max_align_t.h:

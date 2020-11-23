@@ -1,0 +1,63 @@
+matrix:
+  include:
+    - os: linux
+      sudo: required
+      services: docker
+      env: SRCDIR=/srcdir BUILDDIR=/builddir
+    - os: linux
+      sudo: required
+      services: docker
+      env: PROFILE=autotools BUILD_OPTS="--enable-coverage" COVERAGE=yes SRCDIR=/coverage BUILDDIR=/coverage EXTRA_PKGS="lcov python-pip"
+    - os: linux
+      sudo: required
+      services: docker
+      env: MESON_BUILD_OPTS="-Db_sanitize=address" SRCDIR=/srcdir BUILDDIR=/builddir EXTRA_PKGS="libasan"
+    - os: linux
+      sudo: required
+      services: docker
+      env: MESON_BUILD_OPTS="-Db_sanitize=undefined" SRCDIR=/srcdir BUILDDIR=/builddir EXTRA_PKGS="libubsan"
+    - os: linux
+      sudo: required
+      services: docker
+      env: MESON_BUILD_OPTS="" SCAN_BUILD="scan-build --status-bugs" SRCDIR=/srcdir BUILDDIR=/builddir EXTRA_PKGS="clang-analyzer"
+    - os: linux
+      sudo: required
+      services: docker
+      env: MESON_BUILD_OPTS="--cross-file build/cross_file_mingw64.txt" MESON_TEST_ENV="WINEPATH=/usr/x86_64-w64-mingw32/sys-root/mingw/bin" MESON_TEST_OPTS="--num-processes 1" SRCDIR=/srcdir BUILDDIR=/builddir EXTRA_PKGS="mingw64-gcc mingw64-libffi mingw64-libtasn1 wine"
+    - os: linux
+      sudo: required
+      services: docker
+      env: PROFILE=cppcheck SRCDIR=/srcdir BUILDDIR=/builddir EXTRA_PKGS="cppcheck"
+    - os: osx
+
+language: c
+
+before_install:
+  - |
+      if test -e "./.travis/${PROFILE-${TRAVIS_OS_NAME}}/before_install.sh"; then
+        . "./.travis/${PROFILE-${TRAVIS_OS_NAME}}/before_install.sh"
+      fi
+
+install:
+  - |
+      if test -e "./.travis/${PROFILE-${TRAVIS_OS_NAME}}/install.sh"; then
+        . "./.travis/${PROFILE-${TRAVIS_OS_NAME}}/install.sh"
+      fi
+
+script:
+  - |
+      if test -e "./.travis/${PROFILE-${TRAVIS_OS_NAME}}/script.sh"; then
+        . "./.travis/${PROFILE-${TRAVIS_OS_NAME}}/script.sh"
+      fi
+
+after_failure:
+  - |
+      if test -e "./.travis/${PROFILE-${TRAVIS_OS_NAME}}/after_failure.sh"; then
+        . "./.travis/${PROFILE-${TRAVIS_OS_NAME}}/after_failure.sh"
+      fi
+
+after_success:
+  - |
+      if test -e "./.travis/${PROFILE-${TRAVIS_OS_NAME}}/after_success.sh"; then
+        . "./.travis/${PROFILE-${TRAVIS_OS_NAME}}/after_success.sh"
+      fi

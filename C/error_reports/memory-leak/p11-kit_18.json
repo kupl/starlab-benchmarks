@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "p11-kit/proxy.c",
+        "line": 269
+    },
+    "sink": {
+        "filepath": "p11-kit/proxy.c",
+        "line": 282
+    }
+}

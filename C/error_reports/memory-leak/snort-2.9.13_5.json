@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/dynamic-plugins/sf_dynamic_plugins.c",
+        "line": 1378
+    },
+    "sink": {
+        "filepath": "src/dynamic-plugins/sf_dynamic_plugins.c",
+        "line": 1428
+    }
+}

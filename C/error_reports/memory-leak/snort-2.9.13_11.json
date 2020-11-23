@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/dynamic-preprocessors/appid/service_plugins/service_direct_connect.c",
+        "line": 136
+    },
+    "sink": {
+        "filepath": "src/dynamic-preprocessors/appid/service_plugins/service_direct_connect.c",
+        "line": 149
+    }
+}

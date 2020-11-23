@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c",
+        "line": 398
+    },
+    "sink": {
+        "filepath": "src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c",
+        "line": 406
+    }
+}

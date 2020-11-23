@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/memory/Table.c",
+        "line": 85
+    },
+    "sink": {
+        "filepath": "src/memory/Table.c",
+        "line": 89
+    }
+}

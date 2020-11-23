@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/fpdetect.c",
+        "line": 1793
+    },
+    "sink": {
+        "filepath": "src/fpdetect.c",
+        "line": 1795
+    }
+}

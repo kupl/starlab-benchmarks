@@ -1,0 +1,4 @@
+#!/bin/bash
+
+unset GLOBAL_REPAIR
+export DUMP_CANDS=1

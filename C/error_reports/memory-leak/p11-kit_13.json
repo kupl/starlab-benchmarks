@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "p11-kit/modules.c",
+        "line": 2426
+    },
+    "sink": {
+        "filepath": "p11-kit/modules.c",
+        "line": 2433
+    }
+}

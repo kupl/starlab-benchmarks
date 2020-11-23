@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "talkd/acl.c",
+        "line": 305
+    },
+    "sink": {
+        "filepath": "talkd/acl.c",
+        "line": 323
+    }
+}

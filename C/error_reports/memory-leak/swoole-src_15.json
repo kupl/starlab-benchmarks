@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/pipe/PipeUnsock.c",
+        "line": 54
+    },
+    "sink": {
+        "filepath": "src/pipe/PipeUnsock.c",
+        "line": 64
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "trust/extract-openssl.c",
+        "line": 543
+    },
+    "sink": {
+        "filepath": "trust/extract-openssl.c",
+        "line": 543
+    }
+}

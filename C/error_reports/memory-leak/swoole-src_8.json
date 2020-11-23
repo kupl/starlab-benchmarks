@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/network/Timer.c",
+        "line": 115
+    },
+    "sink": {
+        "filepath": "src/network/Timer.c",
+        "line": 125
+    }
+}

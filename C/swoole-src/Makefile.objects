@@ -1,0 +1,178 @@
+swoole.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole.c -o swoole.lo 
+swoole_server.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_server.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_server.c -o swoole_server.lo 
+swoole_server_port.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_server_port.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_server_port.c -o swoole_server_port.lo 
+swoole_atomic.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_atomic.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_atomic.c -o swoole_atomic.lo 
+swoole_lock.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_lock.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_lock.c -o swoole_lock.lo 
+swoole_client.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_client.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_client.c -o swoole_client.lo 
+swoole_event.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_event.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_event.c -o swoole_event.lo 
+swoole_timer.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_timer.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_timer.c -o swoole_timer.lo 
+swoole_async.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_async.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_async.c -o swoole_async.lo 
+swoole_process.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_process.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_process.c -o swoole_process.lo 
+swoole_buffer.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_buffer.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_buffer.c -o swoole_buffer.lo 
+swoole_table.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_table.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_table.c -o swoole_table.lo 
+swoole_http_server.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_http_server.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_http_server.c -o swoole_http_server.lo 
+swoole_http_v2_server.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_http_v2_server.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_http_v2_server.c -o swoole_http_v2_server.lo 
+swoole_websocket_server.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_websocket_server.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_websocket_server.c -o swoole_websocket_server.lo 
+swoole_http_client.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_http_client.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_http_client.c -o swoole_http_client.lo 
+swoole_mysql.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_mysql.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_mysql.c -o swoole_mysql.lo 
+swoole_redis.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_redis.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_redis.c -o swoole_redis.lo 
+swoole_redis_server.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_redis_server.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_redis_server.c -o swoole_redis_server.lo 
+swoole_module.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_module.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_module.c -o swoole_module.lo 
+swoole_mmap.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_mmap.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_mmap.c -o swoole_mmap.lo 
+swoole_channel.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_channel.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/swoole_channel.c -o swoole_channel.lo 
+src/core/base.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/base.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/base.c -o src/core/base.lo 
+src/core/log.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/log.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/log.c -o src/core/log.lo 
+src/core/hashmap.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/hashmap.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/hashmap.c -o src/core/hashmap.lo 
+src/core/RingQueue.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/RingQueue.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/RingQueue.c -o src/core/RingQueue.lo 
+src/core/Channel.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/Channel.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/Channel.c -o src/core/Channel.lo 
+src/core/string.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/string.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/string.c -o src/core/string.lo 
+src/core/array.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/array.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/array.c -o src/core/array.lo 
+src/core/socket.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/socket.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/socket.c -o src/core/socket.lo 
+src/core/list.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/list.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/list.c -o src/core/list.lo 
+src/core/heap.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/heap.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/core/heap.c -o src/core/heap.lo 
+src/memory/ShareMemory.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/ShareMemory.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/ShareMemory.c -o src/memory/ShareMemory.lo 
+src/memory/MemoryGlobal.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/MemoryGlobal.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/MemoryGlobal.c -o src/memory/MemoryGlobal.lo 
+src/memory/RingBuffer.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/RingBuffer.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/RingBuffer.c -o src/memory/RingBuffer.lo 
+src/memory/FixedPool.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/FixedPool.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/FixedPool.c -o src/memory/FixedPool.lo 
+src/memory/Malloc.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/Malloc.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/Malloc.c -o src/memory/Malloc.lo 
+src/memory/Table.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/Table.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/Table.c -o src/memory/Table.lo 
+src/memory/Buffer.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/Buffer.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/memory/Buffer.c -o src/memory/Buffer.lo 
+src/factory/Factory.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/factory/Factory.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/factory/Factory.c -o src/factory/Factory.lo 
+src/factory/FactoryThread.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/factory/FactoryThread.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/factory/FactoryThread.c -o src/factory/FactoryThread.lo 
+src/factory/FactoryProcess.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/factory/FactoryProcess.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/factory/FactoryProcess.c -o src/factory/FactoryProcess.lo 
+src/reactor/ReactorBase.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/reactor/ReactorBase.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/reactor/ReactorBase.c -o src/reactor/ReactorBase.lo 
+src/reactor/ReactorSelect.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/reactor/ReactorSelect.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/reactor/ReactorSelect.c -o src/reactor/ReactorSelect.lo 
+src/reactor/ReactorPoll.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/reactor/ReactorPoll.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/reactor/ReactorPoll.c -o src/reactor/ReactorPoll.lo 
+src/reactor/ReactorEpoll.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/reactor/ReactorEpoll.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/reactor/ReactorEpoll.c -o src/reactor/ReactorEpoll.lo 
+src/reactor/ReactorKqueue.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/reactor/ReactorKqueue.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/reactor/ReactorKqueue.c -o src/reactor/ReactorKqueue.lo 
+src/pipe/PipeBase.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/pipe/PipeBase.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/pipe/PipeBase.c -o src/pipe/PipeBase.lo 
+src/pipe/PipeEventfd.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/pipe/PipeEventfd.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/pipe/PipeEventfd.c -o src/pipe/PipeEventfd.lo 
+src/pipe/PipeUnsock.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/pipe/PipeUnsock.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/pipe/PipeUnsock.c -o src/pipe/PipeUnsock.lo 
+src/lock/Semaphore.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/lock/Semaphore.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/lock/Semaphore.c -o src/lock/Semaphore.lo 
+src/lock/Mutex.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/lock/Mutex.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/lock/Mutex.c -o src/lock/Mutex.lo 
+src/lock/RWLock.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/lock/RWLock.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/lock/RWLock.c -o src/lock/RWLock.lo 
+src/lock/SpinLock.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/lock/SpinLock.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/lock/SpinLock.c -o src/lock/SpinLock.lo 
+src/lock/FileLock.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/lock/FileLock.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/lock/FileLock.c -o src/lock/FileLock.lo 
+src/network/Server.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Server.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Server.c -o src/network/Server.lo 
+src/network/TaskWorker.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/TaskWorker.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/TaskWorker.c -o src/network/TaskWorker.lo 
+src/network/Client.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Client.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Client.c -o src/network/Client.lo 
+src/network/Connection.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Connection.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Connection.c -o src/network/Connection.lo 
+src/network/ProcessPool.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/ProcessPool.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/ProcessPool.c -o src/network/ProcessPool.lo 
+src/network/ThreadPool.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/ThreadPool.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/ThreadPool.c -o src/network/ThreadPool.lo 
+src/network/ReactorThread.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/ReactorThread.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/ReactorThread.c -o src/network/ReactorThread.lo 
+src/network/ReactorProcess.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/ReactorProcess.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/ReactorProcess.c -o src/network/ReactorProcess.lo 
+src/network/Manager.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Manager.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Manager.c -o src/network/Manager.lo 
+src/network/Worker.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Worker.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Worker.c -o src/network/Worker.lo 
+src/network/Timer.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Timer.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Timer.c -o src/network/Timer.lo 
+src/network/Port.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Port.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/network/Port.c -o src/network/Port.lo 
+src/os/base.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/base.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/base.c -o src/os/base.lo 
+src/os/dl.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/dl.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/dl.c -o src/os/dl.lo 
+src/os/linux_aio.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/linux_aio.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/linux_aio.c -o src/os/linux_aio.lo 
+src/os/msg_queue.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/msg_queue.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/msg_queue.c -o src/os/msg_queue.lo 
+src/os/sendfile.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/sendfile.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/sendfile.c -o src/os/sendfile.lo 
+src/os/signal.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/signal.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/signal.c -o src/os/signal.lo 
+src/os/timer.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/timer.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/os/timer.c -o src/os/timer.lo 
+src/protocol/Base.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Base.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Base.c -o src/protocol/Base.lo 
+src/protocol/SSL.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/SSL.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/SSL.c -o src/protocol/SSL.lo 
+src/protocol/Http.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Http.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Http.c -o src/protocol/Http.lo 
+src/protocol/Http2.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Http2.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Http2.c -o src/protocol/Http2.lo 
+src/protocol/WebSocket.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/WebSocket.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/WebSocket.c -o src/protocol/WebSocket.lo 
+src/protocol/Mqtt.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Mqtt.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Mqtt.c -o src/protocol/Mqtt.lo 
+src/protocol/Socks5.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Socks5.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Socks5.c -o src/protocol/Socks5.lo 
+src/protocol/MimeTypes.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/MimeTypes.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/MimeTypes.c -o src/protocol/MimeTypes.lo 
+src/protocol/Redis.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Redis.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Redis.c -o src/protocol/Redis.lo 
+src/protocol/Base64.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Base64.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/src/protocol/Base64.c -o src/protocol/Base64.lo 
+thirdparty/php_http_parser.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/thirdparty/php_http_parser.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/thirdparty/php_http_parser.c -o thirdparty/php_http_parser.lo 
+thirdparty/multipart_parser.lo: /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/thirdparty/multipart_parser.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/junhee/benchmarks/ICSE20-artifacts/table1/benchmarks/swoole-src/thirdparty/multipart_parser.c -o thirdparty/multipart_parser.lo 
+$(phplibdir)/swoole.la: ./swoole.la
+	$(LIBTOOL) --mode=install cp ./swoole.la $(phplibdir)
+
+./swoole.la: $(shared_objects_swoole) $(SWOOLE_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS)  -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_swoole) $(SWOOLE_SHARED_LIBADD)
+

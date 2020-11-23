@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "utils/recutl.c",
+        "line": 476
+    },
+    "sink": {
+        "filepath": "utils/recutl.c",
+        "line": 492
+    }
+}

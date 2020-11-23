@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/sfutil/sfportobject.c",
+        "line": 820
+    },
+    "sink": {
+        "filepath": "src/sfutil/sfportobject.c",
+        "line": 832
+    }
+}

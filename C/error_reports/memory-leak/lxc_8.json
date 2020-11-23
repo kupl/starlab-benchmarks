@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/lxc/lxccontainer.c",
+        "line": 711
+    },
+    "sink": {
+        "filepath": "src/lxc/lxccontainer.c",
+        "line": 716
+    }
+}

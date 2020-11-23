@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/os/base.c",
+        "line": 331
+    },
+    "sink": {
+        "filepath": "src/os/base.c",
+        "line": 347
+    }
+}

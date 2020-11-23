@@ -1,0 +1,21 @@
+stripslash.lo: stripslash.c \
+  /home/junhee/projects/saver_original/infer/bin/../lib/clang_wrappers/global_defines.h \
+  ../src/config.h dirname.h \
+  /home/junhee/projects/saver_original/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/stdbool.h \
+  /home/junhee/projects/saver_original/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/stddef.h \
+  /home/junhee/projects/saver_original/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/__stddef_max_align_t.h \
+  dosname.h
+
+/home/junhee/projects/saver_original/infer/bin/../lib/clang_wrappers/global_defines.h:
+
+../src/config.h:
+
+dirname.h:
+
+/home/junhee/projects/saver_original/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/stdbool.h:
+
+/home/junhee/projects/saver_original/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/stddef.h:
+
+/home/junhee/projects/saver_original/facebook-clang-plugins/clang/install/lib/clang/9.0.0/include/__stddef_max_align_t.h:
+
+dosname.h:

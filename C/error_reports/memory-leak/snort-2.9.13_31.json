@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/sfutil/ipobj.c",
+        "line": 224
+    },
+    "sink": {
+        "filepath": "src/sfutil/ipobj.c",
+        "line": 230
+    }
+}

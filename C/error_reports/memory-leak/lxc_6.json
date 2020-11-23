@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/lxc/confile.c",
+        "line": 2520
+    },
+    "sink": {
+        "filepath": "src/lxc/confile.c",
+        "line": 2525
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/detection-plugins/sp_file_type.c",
+        "line": 198
+    },
+    "sink": {
+        "filepath": "src/detection-plugins/sp_file_type.c",
+        "line": 200
+    }
+}

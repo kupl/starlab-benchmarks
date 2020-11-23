@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/sfutil/sfPolicy.c",
+        "line": 417
+    },
+    "sink": {
+        "filepath": "src/sfutil/sfPolicy.c",
+        "line": 440
+    }
+}

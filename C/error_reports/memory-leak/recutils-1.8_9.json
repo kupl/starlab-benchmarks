@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "src/rec-db.c",
+        "line": 1004
+    },
+    "sink": {
+        "filepath": "src/rec-db.c",
+        "line": 1018
+    }
+}

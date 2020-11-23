@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "input/thread.c",
+        "line": 53
+    },
+    "sink": {
+        "filepath": "input/thread.c",
+        "line": 54
+    }
+}

@@ -1,0 +1,4 @@
+lsm/liblxc_la-lsm.lo: lsm/lsm.c \
+  /home/junhee/projects/saver/infer/bin/../lib/clang_wrappers/global_defines.h
+
+/home/junhee/projects/saver/infer/bin/../lib/clang_wrappers/global_defines.h:

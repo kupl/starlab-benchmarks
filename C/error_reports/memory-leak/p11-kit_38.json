@@ -1,0 +1,11 @@
+{
+    "err_type": "MEMORY_LEAK",
+    "source": {
+        "filepath": "trust/parser.c",
+        "line": 692
+    },
+    "sink": {
+        "filepath": "trust/parser.c",
+        "line": 701
+    }
+}
