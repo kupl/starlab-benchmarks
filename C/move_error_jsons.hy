@@ -5,7 +5,7 @@
 
 (import os)
 (import os.path)
-(import [shutil [move]])
+(import shutil)
 
 
 (defn get-prefix [string_]
@@ -32,7 +32,9 @@
   (for [prefix prefixes]
     (when (in ".DS" prefix)
       (continue))
-    (move (os.path.join current-dir prefix) (os.path.join current-dir prefix "src_"))))
+    (when (= "flex" prefix)
+      (continue))
+    (shutil.copytree (os.path.join current-dir prefix) (os.path.join current-dir prefix "src_"))))
 
 
 (defn rename-src-underbar []
