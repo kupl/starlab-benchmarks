@@ -34,16 +34,49 @@
       (continue))
     (when (= "flex" prefix)
       (continue))
-    (shutil.copytree (os.path.join current-dir prefix) (os.path.join current-dir prefix "src_"))))
+    (shutil.copytree
+      prefix
+      (+ prefix "_src_")
+      :symlinks True)))
+
+
+;; folder = '/path/to/folder'
+;; for filename in os.listdir(folder):
+;;     file_path = os.path.join(folder, filename)
+;;     try:
+;;         if os.path.isfile(file_path) or os.path.islink(file_path):
+;;             os.unlink(file_path)
+;;         elif os.path.isdir(file_path):
+;;             shutil.rmtree(file_path)
+;;     except Exception as e:
+;;         print('Failed to delete %s. Reason: %s' % (file_path, e))
+
+(defn remove-folder-contents []
+  (setv prefixes (get-prefixes))
+  (for [prefix prefixes]
+    (setv file-path prefix)
+    (try
+      (when (or (os.path.isfile file-path)
+              (os.path.islink file-path))
+          (os.unlink file-path))
+      (when (os.path.isdir file-path)
+        (shutil.rmtree file-path))
+      (except []
+        (print "failed!")))))
 
 
 (defn rename-src-underbar []
   "rename src_ to src"
-  (setv prefixes (get-prefixes))
+  (setv prefixes (set (get-prefixes)))
+  ;; (setv current-dir (os.getcwd))
   (for [prefix prefixes]
     (when (in ".DS" prefix)
       (continue))
-    (move (+ prefix "/src_") (+ prefix "/src"))))
+    (when (= "flex" prefix)
+      (continue))
+    (os.rename
+      (+ prefix "_src_")
+      (+ prefix "/src_"))))
 
 
 ;;; integrating resource-leak and memory-leaks into one.
@@ -90,11 +123,11 @@
   (setv cnt 1)
   (setv rl-renamed [])
   (for [rl-name memory-leaks]
-    (.append rl-renamed (, (+ "memory-leak/" rl-name) (+ prefix "/bugs/" "bug_" (str cnt))))
+    (.append rl-renamed (, (+ "memory-leak/" rl-name) (+ prefix "/bugs/" "bug_" (str cnt) ".json")))
     (setv cnt (inc cnt)))
   (setv ml-renamed [])
   (for [ml-name resource-leaks]
-    (.append ml-renamed (, (+ "resource-leak/" ml-name) (+ prefix "/bugs/" "bug_" (str cnt))))
+    (.append ml-renamed (, (+ "resource-leak/" ml-name) (+ prefix "/bugs/" "bug_" (str cnt) ".json")))
     (setv cnt (inc cnt)))
   (+ rl-renamed ml-renamed))
 
@@ -165,12 +198,12 @@
 (defmain []
   (print "starting...")
   (print "scanning directories...")
-  (print "making relevant subdirectories...")
-  (make-src-subdirectories)
-  (make-bugs-subdirectories)
   (print "moving all repo files to src/...")
+  ;; (make-src-subdirectories)
   (move-all-repo-files)
+  (remove-folder-contents)
   (rename-src-underbar)
   (print "running git mv commands...")
+  (make-bugs-subdirectories)
   (run-all-git-mv-commands)
   (print "done"))
