@@ -1,0 +1,7 @@
+{
+    "filepath": "sling-org-apache-sling-tracer/src/main/java/org/apache/sling/tracer/internal/Util.java",
+    "line": 36,
+    "npe_method": "nullSafeString",
+    "deref_field": "o",
+    "npe_class": "Util"
+}

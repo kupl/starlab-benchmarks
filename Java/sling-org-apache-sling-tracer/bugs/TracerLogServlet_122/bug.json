@@ -1,0 +1,7 @@
+{
+    "filepath": "sling-org-apache-sling-tracer/src/main/java/org/apache/sling/tracer/internal/TracerLogServlet.java",
+    "line": 124,
+    "npe_method": "renderContent",
+    "deref_field": "recording",
+    "npe_class": "TracerLogServlet"
+}

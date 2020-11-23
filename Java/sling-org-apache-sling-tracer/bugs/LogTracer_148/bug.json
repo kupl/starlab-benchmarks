@@ -1,0 +1,7 @@
+{
+    "filepath": "sling-org-apache-sling-tracer/src/main/java/org/apache/sling/tracer/internal/LogTracer.java",
+    "line": 149,
+    "npe_method": "deactivate",
+    "deref_field": "filterRegistration",
+    "npe_class": "LogTracer"
+}
