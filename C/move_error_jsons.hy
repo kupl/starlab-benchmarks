@@ -32,7 +32,7 @@
   (for [prefix prefixes]
     (when (in ".DS" prefix)
       (continue))
-    (move (os.path.join current-dir prefix) (+ current-dir prefix "/src_"))))
+    (move (os.path.join current-dir prefix) (os.path.join current-dir prefix "src_"))))
 
 
 (defn rename-src-underbar []
@@ -168,7 +168,6 @@
   (make-bugs-subdirectories)
   (print "moving all repo files to src/...")
   (move-all-repo-files)
-  (return)
   (rename-src-underbar)
   (print "running git mv commands...")
   (run-all-git-mv-commands)
