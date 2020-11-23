@@ -68,15 +68,15 @@
 (defn rename-src-underbar []
   "rename src_ to src"
   (setv prefixes (set (get-prefixes)))
-  ;; (setv current-dir (os.getcwd))
+  (setv current-dir (os.getcwd))
   (for [prefix prefixes]
     (when (in ".DS" prefix)
       (continue))
     (when (= "flex" prefix)
       (continue))
-    (os.rename
-      (+ prefix "_src_")
-      (+ prefix "/src_"))))
+    (shutil.move
+      (os.path.join current-dir (+ prefix "_src_"))
+      (os.path.join current-dir (+ prefix "/src")))))
 
 
 ;;; integrating resource-leak and memory-leaks into one.
@@ -123,11 +123,11 @@
   (setv cnt 1)
   (setv rl-renamed [])
   (for [rl-name memory-leaks]
-    (.append rl-renamed (, (+ "memory-leak/" rl-name) (+ prefix "/bugs/" "bug_" (str cnt) ".json")))
+    (.append rl-renamed (, (+ "error_reports/memory-leak/" rl-name) (+ prefix "/bugs/" "bug_" (str cnt) ".json")))
     (setv cnt (inc cnt)))
   (setv ml-renamed [])
   (for [ml-name resource-leaks]
-    (.append ml-renamed (, (+ "resource-leak/" ml-name) (+ prefix "/bugs/" "bug_" (str cnt) ".json")))
+    (.append ml-renamed (, (+ "error_reports/resource-leak/" ml-name) (+ prefix "/bugs/" "bug_" (str cnt) ".json")))
     (setv cnt (inc cnt)))
   (+ rl-renamed ml-renamed))
 

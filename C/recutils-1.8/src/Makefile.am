@@ -1,7 +1,6 @@
-# src/ Makefile.am
-# GNU recutils
+# Top-level Makefile.am
 
-# Copyright (C) 2009-2019 Jose E. Marchesi
+# Copyright (C) 2009-2015 Jose E. Marchesi
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,70 +15,16 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-lib_LTLIBRARIES = librec.la
+ACLOCAL_AMFLAGS = -I m4
+SUBDIRS = lib libcsv src utils bash doc po man etc
 
-include_HEADERS = rec.h
-
-librec_la_SOURCES = rec.c \
-                    rec-mset.c \
-                    rec-utils.h \
-                    rec-utils.c \
-                    rec-comment.c \
-                    rec-field-name.c \
-                    rec-field.c \
-                    rec-record.c \
-                    rec-rset.c \
-                    rec-db.c \
-                    rec-parser.c \
-                    rec-writer.c \
-                    rec-int.c \
-                    rec-sex-parser.h \
-                    rec-sex-parser.c \
-                    rec-sex-ast.h \
-                    rec-sex-ast.c \
-                    rec-sex-tab.y \
-                    rec-sex-lex.l \
-                    rec-sex.c \
-                    rec-fex.c \
-                    rec-types.c \
-                    rec-buf.c \
-                    rec-aggregate.c
-
-if CRYPT
-   librec_la_SOURCES += rec-crypt.c
-else
-   librec_la_SOURCES += rec-crypt-dummy.c
+if BUILD_A68
+   SUBDIRS += algol68
 endif
 
-BUILT_SOURCES = rec-sex-tab.h
-AM_YFLAGS = -d
-AM_LFLAGS = -d
-AM_CFLAGS = 
-if USE_COVERAGE
-  AM_CFLAGS += -fprofile-arcs -ftest-coverage
-endif
+perf:
+	$(MAKE) -C torture/utils perf
 
-AM_LDFLAGS = -no-undefined
-AM_CPPFLAGS = -I$(top_builddir)/lib -I$(top_srcdir)/lib \
-              -DLOCALEDIR=\"$(localedir)\"
-librec_la_LDFLAGS = -version-info 1:0:0
-librec_la_LIBADD = $(top_builddir)/lib/librecutils.la \
-                   $(LIB_CLOCK_GETTIME)
-
-if CRYPT
-   librec_la_LIBADD += $(LTLIBGCRYPT)
-endif
-
-if REMOTE_DESCRIPTORS
-  AM_CPPFLAGS += -DREMOTE_DESCRIPTORS
-  librec_la_LIBADD += $(CURLLIBS)
-endif
-
-if UUID_TYPE
-  AM_CPPFLAGS += -DUUID_TYPE
-  librec_la_LIBADD += $(UUIDLIBS)
-endif
-
-check-syntax: all
+.PHONY: perf
 
 # End of Makefile.am
