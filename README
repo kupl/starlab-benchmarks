@@ -1,24 +1,19 @@
 ## SW스타랩 벤치마크
 
-##Features
+## Features
 
 
-##Useage
+## Useage
 StarLab provides a command-line interface that can be used as follows:
 
-##스타랩 dataset
-c
-jav
-ocaml
-soli
+## 스타랩 dataset
 
-##
 |Language | Repo | Number of bugs | Vulnerability |
 | c |  |    |
 
 
 
 
-##License
+## License
 /*todo*/
 
