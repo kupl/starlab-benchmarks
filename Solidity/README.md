@@ -2,7 +2,8 @@ Solidity
 ========
 
 This is for the benchmarks written in solidity. (Ethereum Smart Contract)  
-The name of each directory denotes the CVE ID number for each vulnerable sol file.
+The name of each directory denotes the CVE ID number for each vulnerable sol file.  
+We have collected 200 benchmarks with different CVE ID number.
 
 ### Vulnerability
 
