@@ -35,9 +35,9 @@ bugs | subdirectories for the bug info and failing test case.
 The **src** directory consists of compilable Java project source codes.  
 
 #### bugs
-The **bugs** directory consists of subdirectories which include the failing test case and bug info file in json format.  
-The failing test case is a source code which triggeres the error.  
-The contents of each json file are as follows:
+The **bugs** directory consists of subdirectories which include the failing test case(**bug.java**) and bug info file(**bug.json**) in json format.  
+**bug.java** is a source code which triggeres the error.  
+The contents of each **bug.json** are as follows:
 
 Name        | Description
 ----------- | -----------
