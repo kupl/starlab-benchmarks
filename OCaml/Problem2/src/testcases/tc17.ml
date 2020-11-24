@@ -1,0 +1,1 @@
+assert ((test (P ("x", P ("c", V "c")))) = true)
