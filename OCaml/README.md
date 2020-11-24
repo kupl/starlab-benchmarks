@@ -31,7 +31,7 @@ OCaml
 
 Name  | Description
 ----- | -----------
-src   | solution program for each problem
+src   | A solution program for each problem
 bugs  | buggy programs for each problem
 
 #### src
