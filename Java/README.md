@@ -33,6 +33,7 @@ bugs | subdirectories for the bug info and failing test case.
 
 #### src
 The **src** directory consists of compilable Java project source codes with the errors.  
+To compile each project, follow the instruction(e.g., README.md) in each project.
 
 #### bugs
 The **bugs** directory consists of subdirectories which include the failing test case(**bug.java**) and bug info file(**bug.json**) in json format.  
