@@ -1,0 +1,1 @@
+assert (test (AndAlso (OrElse(True, False), Not (Imply (True, False)))) = true)

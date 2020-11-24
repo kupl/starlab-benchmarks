@@ -1,0 +1,1 @@
+assert (test (Imply (False, False)) = true)

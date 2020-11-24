@@ -1,0 +1,1 @@
+assert (test (Equal (Minus (Num 5,Num 2),Num 3)) = true)
