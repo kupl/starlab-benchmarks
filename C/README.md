@@ -1,8 +1,8 @@
 C
 ========
 
-This is for the benchmarks written in C.
-The name of each directory denotes the name of the vulnerable program.
+This is for the benchmarks written in C.  
+The name of each directory denotes the name of the vulnerable program.  
 We have collected ? vulnerabilities in ? programs.
 
 ### Error Types
