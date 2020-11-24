@@ -19,21 +19,24 @@ C
          |--- src 
                |--- COMPILABLE_PROJECT
          |--- bugs
-               |--- bug_1.json
-               |--- bug_2.json
+               |--- FILE_1
+                      |--- bug.java
+                      |--- bug.json
+               |--- FILE_2
                |--- ...
 ```
 
 Name | Description
 ---- | -----------
 src  | compilable Java project source codes ???.
-bug  | bug info file in json format.
+bugs | subdirectories for the bug info and failing test case.
 
 #### src
 The **src** directory consists of compilable Java project source codes.  
 
 #### bugs
-The **bugs** directory consists of bug info files in json format.  
+The **bugs** directory consists of subdirectories which include the failing test case and bug info file in json format.  
+The failing test case is a source code which triggeres the error.  
 The contents of each json file are as follows:
 
 Name        | Description
