@@ -17,7 +17,7 @@ Problem 2 | Checking the validity of a lambda term               |       33
 Problem 3 | Evluationa a propositional formula                   |       34
 
 ### Directory
-Each Problem directory consists of two subdirectories (src and bugs) as follows:
+Each Problem directory consists of two subdirectories (**src** and **bugs**) as follows:
 
 ```
 OCaml
@@ -41,7 +41,7 @@ src   | a solution program for each problem
 bugs  | buggy programs for each problem
 
 #### src
-The src directory contains the following three contents:
+The **src** directory contains the following three contents:
 
 Name        | Description
 ----------- | -----------
