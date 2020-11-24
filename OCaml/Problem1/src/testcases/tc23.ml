@@ -1,0 +1,1 @@
+assert (test ((Times [Var "x"; Var "x"], "x") [("x", 0)]) = 0)

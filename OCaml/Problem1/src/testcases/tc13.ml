@@ -1,0 +1,1 @@
+assert ((test (Sum [Power ("x", 2); Power ("x", 2); Const 1], "y") [("x",1)]) = 0)

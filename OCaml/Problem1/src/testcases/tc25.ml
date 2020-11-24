@@ -1,0 +1,1 @@
+assert (test ((Times ([Const (-1); Const (-1); Var "x"]), "x")) [("x", 1)] = 1)

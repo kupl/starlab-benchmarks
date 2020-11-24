@@ -1,0 +1,1 @@
+assert ((test (Sum [Times [Sum [Var "x"; Var "y"]; Times [Var "x"; Var "y"]]; Power ("x", 2)], "x") [("x",3); ("y", 4)]) = 46)

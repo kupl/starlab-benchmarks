@@ -1,0 +1,1 @@
+assert ((test (Power ("y", 5), "y") [("y", 2)]) = 80)

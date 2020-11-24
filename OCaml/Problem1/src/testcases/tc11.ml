@@ -1,0 +1,1 @@
+assert ((test (Sum [Power ("x", 2); Times [Const 2; Var "x"]; Const 1], "x") [("x", 2)]) = 6)

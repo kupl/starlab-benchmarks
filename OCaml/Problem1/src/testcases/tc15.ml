@@ -1,0 +1,1 @@
+assert ((test (Times [Power ("x", 3); Power ("y", 2)], "x") [("x",10); ("y", 5)]) = 7500)

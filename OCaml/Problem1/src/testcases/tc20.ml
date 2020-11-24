@@ -1,0 +1,1 @@
+assert ((test (Times [Sum [Var "x"; Var "y"; Var "z"]; Power ("x", 2); Sum[Times [Const 3; Var "x"]; Var "z"]], "y") [("x", 1); ("y",1); ("z", 1)]) = 4)

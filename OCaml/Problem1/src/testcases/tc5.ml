@@ -1,0 +1,1 @@
+assert ((test (Power ("x", 2),"y") [("x",5)]) = 0)

@@ -1,0 +1,1 @@
+assert ((test (Sum [Const 2; Power ("x",2); Power ("x",3)], "x") ["x",2]) = 16)
