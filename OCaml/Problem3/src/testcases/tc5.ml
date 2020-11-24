@@ -1,1 +1,1 @@
-assert (test (Not (Not (Not (Not (Imply (True, True)))))) = true)
+assert ((test (Not (Not (Not (Not (Imply (True, True))))))) = true)

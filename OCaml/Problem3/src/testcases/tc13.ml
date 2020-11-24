@@ -1,1 +1,1 @@
-assert (test (Equal (Num 1, Plus (Num 0, Num 1))) = true)
+assert ((test (Equal (Num 1, Plus (Num 0, Num 1)))) = true)

@@ -1,1 +1,1 @@
-assert (test (AndAlso ((True, Not (True)))) = false)
+assert ((test (AndAlso ((True, Not (True)))) )= false)

@@ -1,1 +1,1 @@
-assert (test (AndAlso (AndAlso(True, True), AndAlso (Not (AndAlso (True, False)), Not (OrElse (False, False))))) = true)
+assert ((test (AndAlso (AndAlso(True, True), AndAlso (Not (AndAlso (True, False)), Not (OrElse (False, False)))))) = true)

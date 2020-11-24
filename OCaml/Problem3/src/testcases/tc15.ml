@@ -1,1 +1,1 @@
-assert (test (OrElse ((False, Not (False)))) = true)
+assert ((test (OrElse ((False, Not (False))))) = true)

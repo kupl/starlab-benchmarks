@@ -1,1 +1,1 @@
-assert (test (Imply (False, False)) = true)
+assert ((test (Imply (False, False))) = true)
