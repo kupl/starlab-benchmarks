@@ -1,7 +1,7 @@
 Solidity
 ========
 
-This is for the benchmarksk written in solidity. (Ethereum Smart Contract)  
+This is for the benchmarks written in solidity. (Ethereum Smart Contract)  
 The name of each directory denotes the CVE ID number for each vulnerable sol file.
 
 ### Vulnerability
@@ -16,6 +16,7 @@ Each directory consists of two subdirectories (bugs and src) as follows:
 Solidity
   |--- CVE_ID_NUM
             |--- src 
+                   |--- CVE_ID_NUM.sol
             |--- bugs
                    |--- bug_1.json
                    |--- bug_2.json
@@ -24,12 +25,12 @@ Solidity
 
 Name | Description
 ---- | -----------
-src | project source code for each.
+src | project source code for each CVE.
 bug | bug info file in json format.
 
 ### meta.csv
 
-It is the meta data for each vulnerable solc code.  
+It is a meta data for vulnerable solc codes.  
 Description of the columns in meta.csv is as follows:
 
 Column | Description
