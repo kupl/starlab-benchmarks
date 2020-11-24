@@ -30,7 +30,7 @@ src  | compilable program source codes.
 bug  | bug info file in json format.
 
 #### src
-The **src** directory consists of compilable program source codes.  
+The **src** directory consists of compilable program source codes with errors.  
 To compile each program, follow the instruction(e.g., README.md) in each program.
 
 #### bugs
