@@ -32,7 +32,7 @@ src  | compilable Java project source codes ???.
 bugs | subdirectories for the bug info and failing test case.
 
 #### src
-The **src** directory consists of compilable Java project source codes.  
+The **src** directory consists of compilable Java project source codes with the errors.  
 
 #### bugs
 The **bugs** directory consists of subdirectories which include the failing test case(**bug.java**) and bug info file(**bug.json**) in json format.  
