@@ -4,12 +4,31 @@ Solidity
 This directory is for the benchmarksk written in solidity. (Ethereum Smart Contract)  
 The name of each directory denotes the CVE ID number for each vulnerable sol file.
 
-Vulnerability
---------
+### Vulnerability
+
 We mainly focus on the integer over/underflow vulnerabilities in smart contracts.
 
-meta.csv
---------
+### Directory
+
+Each directory consists of two subdirectories (bugs and src) as follows:
+
+```
+Solidity
+  |--- CVE_ID_NUM
+            |--- src 
+            |--- bugs
+                   |--- bug_1.json
+                   |--- bug_2.json
+                   |--- ...
+```
+
+Name | Description
+---- | -----------
+src | project source code for each.
+bug | bug info file in json format.
+
+### meta.csv
+
 It is the meta data for each vulnerable solc code.  
 Description of the columns in meta.csv is as follows:
 
