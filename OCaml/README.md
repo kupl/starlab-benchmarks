@@ -55,3 +55,12 @@ bug.ml   | incorrect source code
 bug.json | bug info file in json format.
 
 Each json file reports the test cases that the buggy program fails to satisfy.
+
+### Detail
+Name      | Description | # of buggy programs
+--------- | ----------- | -------------------
+Problem 1 | ?           | ?
+Problem 2 | ?           | ?
+Problem 3 | ?
+
+
