@@ -30,8 +30,7 @@ bug | bug info file in json format.
 
 ### meta.csv
 
-It is a meta data for vulnerable solc codes.  
-Description of the columns in meta.csv is as follows:
+It is a meta data for vulnerable solc codes. Description of the columns in meta.csv is as follows:
 
 Column | Description
 ------ | -----------
