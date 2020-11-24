@@ -6,7 +6,7 @@ The name of each directory denotes the CVE ID number for each vulnerable sol fil
 
 ### Vulnerability
 
-We mainly focus on the integer over/underflow vulnerabilities in smart contracts.
+We mainly focus on the **integer over/underflow** vulnerabilities in smart contracts.
 
 ### Directory
 
