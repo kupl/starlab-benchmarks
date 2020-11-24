@@ -1,7 +1,7 @@
 Solidity
 ========
 
-This directory is for the benchmarksk written in solidity. (Ethereum Smart Contract)  
+This is for the benchmarksk written in solidity. (Ethereum Smart Contract)  
 The name of each directory denotes the CVE ID number for each vulnerable sol file.
 
 ### Vulnerability
