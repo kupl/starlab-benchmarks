@@ -17,9 +17,7 @@ Each directory consists of two subdirectories (bugs and src) as follows:
 C
 |--- PROJECT_NAME
          |--- src 
-               |--- COMPILABLE_PROJECT_1
-               |--- COMPILABLE_PROJECT_2
-               |--- ...
+               |--- COMPILABLE_PROJECT
          |--- bugs
                |--- bug_1.json
                |--- bug_2.json
