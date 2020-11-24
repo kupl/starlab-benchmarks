@@ -29,6 +29,12 @@ OCaml
                            |--- bug.json
 ```
 
+Name  | Description
+----- | -----------
+src   | solution program for each problem
+bugs  | buggy programs for each problem
+
+#### src
 The src directory contains the following three contents:
 
 Name        | Description
@@ -37,10 +43,11 @@ solution.ml | correct source code for each problem
 test.ml     | test code for executing the given source program
 testcases   | subdirecotry storing all test cases
 
-A test case is an assertion specifying that running test function with **input** must return expected **output**:  
-`assert ((test input) = output)`. 
+A test case is an assertion which specifies the input and the expected output.   
+(e.g., `assert ((test input) = output)`) 
 
-For each buggy program in the bugs directory (bug_#), we collected the following two contents:
+#### bugs
+Each buggy program (bug_#) consists of the following two files:
 
 Name     | Description
 -------- | -----------
