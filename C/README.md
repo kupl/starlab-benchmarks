@@ -39,6 +39,6 @@ The contents of each json file are as follows:
 
 Name      | Description
 --------- | -----------
-err_type  | the error type (e.g., memory leak)
+err_type  | The type of error occured (e.g., memory leak)
 source    | ?
-sink      | ?
+sink      | The path and line number where the memory leaks
