@@ -19,6 +19,7 @@ C
          |--- src 
                |--- COMPILABLE_PROJECT_1
                |--- COMPILABLE_PROJECT_2
+               |--- ...
          |--- bugs
                |--- bug_1.json
                |--- bug_2.json
