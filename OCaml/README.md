@@ -1,8 +1,8 @@
 OCaml
 ========
 
-This is for the benchmarks written in OCaml.
-The name of each directory denotes the name of each OCaml problem.
+This is for the benchmarks written in OCaml.  
+The name of each directory denotes the name of each OCaml problem.  
 We have collected 100 benchmarks from 3 different problems.
 
 ### Error Type
@@ -34,16 +34,17 @@ The src directory contains the following three contents:
 Name        | Description
 ----------- | -----------
 solution.ml | correct source code for each problem
-test.ml     | test code for executing given source
-testcases   | direcotry storing all test cases
+test.ml     | test code for executing the given source program
+testcases   | subdirecotry storing all test cases
 
-A test case is an assertion specifying that running test function with an input must return expected output: `assert ((test input) = output)`. 
+A test case is an assertion specifying that running test function with **input** must return expected **output**:  
+`assert ((test input) = output)`. 
 
 For each buggy program in the bugs directory (bug_#), we collected the following two contents:
 
 Name     | Description
 -------- | -----------
-bug.ml   | incorrect source code fails to pass the test cases
+bug.ml   | incorrect source code
 bug.json | bug info file in json format.
 
 Each json file reports the test cases that the buggy program fails to satisfy.
