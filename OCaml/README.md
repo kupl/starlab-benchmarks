@@ -14,7 +14,7 @@ Name      | Program Description                                  | # of bug
 --------- | ---------------------------------------------------- | --------:
 Problem 1 | Symbolic Differentiation of an arithmetic expression |       33
 Problem 2 | Checking the validity of a lambda term               |       33
-Problem 3 | Evluationa a propositional formula                   |       34
+Problem 3 | Evaluation a propositional formula                   |       34
 
 ### Directory
 Each Problem directory consists of two subdirectories (**src** and **bugs**) as follows:
