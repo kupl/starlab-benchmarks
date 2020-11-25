@@ -1,0 +1,24 @@
+; include.in
+;
+
+; The command(s) used within this example are prefixed with `%%%'.
+; The real call(s) of these command(s) are prefixed with `***'.
+;
+%%%cat include.rc
+***cat ./include.rc
+
+; The resource file line(s) used within this example are prefixed with `:::'.
+;
+:::#include "$f"
+
+; Additionally leading Texinfo commands are prefixed with `+++'.
+;
++++example
++++group
++++cartouche
+
+; Additionally trailing Texinfo commands are prefixed with `---'.
+;
+---end cartouche
+---end group
+---end example

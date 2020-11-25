@@ -1,0 +1,12 @@
+Thanks for . . .
+
+
+. . . suggestions from 
+
+Karl Berry for suggestions to update the version of Automake used, to update
+the license to GPL 3, and generally to make a new release. 2010-2013
+
+Jim Meyering for general advice on strict aliasing, line length, detecting 
+stdout errors, and memory leaks during the decision process to make combine 
+a GNU package. March, 2004.
+

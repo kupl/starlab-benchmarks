@@ -1,0 +1,1347 @@
+# Dutch translations for enscript.
+# Copyright (C) 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the enscript package.
+#
+# Enscript has some encoding problem:
+# anything that is non 7-bit ASCII gets printed as "?".
+# The encoding of this file does not affect that.
+# Worked around here by using "-e" instead of "ë".
+#
+# Erick Branderhorst <Erick.Branderhorst@asml.nl>, 1996.
+# Benno Schulenberg <benno@vertaalt.nl>, 2006, 2007, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: enscript 1.6.5.2\n"
+"Report-Msgid-Bugs-To: bug-enscript@gnu.org\n"
+"POT-Creation-Date: 2012-09-25 20:24+0100\n"
+"PO-Revision-Date: 2010-06-13 22:34+0200\n"
+"Last-Translator: Benno Schulenberg <benno@vertaalt.nl>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: compat/getopt.c:628
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: optie '%s' is niet eenduidig\n"
+
+#: compat/getopt.c:652
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: optie '--%s' staat geen argument toe\n"
+
+#: compat/getopt.c:657
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: optie '%c%s' staat geen argument toe\n"
+
+#: compat/getopt.c:674 compat/getopt.c:847
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: optie '%s' vereist een argument\n"
+
+#: compat/getopt.c:703
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: onbekende optie '--%s'\n"
+
+#: compat/getopt.c:707
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: onbekende optie '%c%s'\n"
+
+#: compat/getopt.c:733
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: ongeldige optie -- %c\n"
+
+#: compat/getopt.c:736
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: ongeldige optie -- %c\n"
+
+#: compat/getopt.c:766 compat/getopt.c:896
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: optie vereist een argument -- %c\n"
+
+#: compat/getopt.c:813
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: optie '-W %s' is niet eenduidig\n"
+
+#: compat/getopt.c:831
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: optie '-W %s' staat geen argument toe\n"
+
+#: compat/xalloc.c:70
+#, c-format
+msgid "xmalloc(): couldn't allocate %d bytes\n"
+msgstr "xmalloc(): kan geen %d bytes reserveren\n"
+
+#: compat/xalloc.c:88
+#, c-format
+msgid "xcalloc(): couldn't allocate %d bytes\n"
+msgstr "xcalloc(): kan geen %d bytes reserveren\n"
+
+#: compat/xalloc.c:109
+#, c-format
+msgid "xrealloc(): couldn't reallocate %d bytes\n"
+msgstr "xrealloc(): kan %d bytes niet verplaatsen\n"
+
+#: compat/regex.c:996
+msgid "Success"
+msgstr "Gelukt"
+
+#: compat/regex.c:997
+msgid "No match"
+msgstr "Geen overeenkomsten"
+
+#: compat/regex.c:998
+msgid "Invalid regular expression"
+msgstr "Ongeldige reguliere expressie"
+
+#: compat/regex.c:999
+msgid "Invalid collation character"
+msgstr "Ongeldig samengesteld teken"
+
+#: compat/regex.c:1000
+msgid "Invalid character class name"
+msgstr "Ongeldige tekenklassenaam"
+
+#: compat/regex.c:1001
+msgid "Trailing backslash"
+msgstr "Backslash (\\) aan het eind"
+
+#: compat/regex.c:1002
+msgid "Invalid back reference"
+msgstr "Ongeldige terugverwijzing"
+
+#: compat/regex.c:1003
+msgid "Unmatched [ or [^"
+msgstr "Ongepaarde [ of [^"
+
+#: compat/regex.c:1004
+msgid "Unmatched ( or \\("
+msgstr "Ongepaarde ( of \\("
+
+#: compat/regex.c:1005
+msgid "Unmatched \\{"
+msgstr "Ongepaarde \\{"
+
+#: compat/regex.c:1006
+msgid "Invalid content of \\{\\}"
+msgstr "Ongeldige inhoud van \\{\\}"
+
+#: compat/regex.c:1007
+msgid "Invalid range end"
+msgstr "Ongeldig bereikeinde"
+
+#: compat/regex.c:1008
+msgid "Memory exhausted"
+msgstr "Onvoldoende geheugen beschikbaar"
+
+#: compat/regex.c:1009
+msgid "Invalid preceding regular expression"
+msgstr "Ongeldige voorafgaande reguliere expressie"
+
+#: compat/regex.c:1010
+msgid "Premature end of regular expression"
+msgstr "Voortijdig einde van reguliere expressie"
+
+#: compat/regex.c:1011
+msgid "Regular expression too big"
+msgstr "Reguliere expressie is te groot"
+
+#: compat/regex.c:1012
+msgid "Unmatched ) or \\)"
+msgstr "Ongepaarde ) of \\)"
+
+#: compat/regex.c:5458
+msgid "No previous regular expression"
+msgstr "Geen eerdere reguliere expressie"
+
+#: src/main.c:949
+#, no-c-format
+msgid "$3v $-40N $3% pages $4L lines  $E $C"
+msgstr "$3v $-40N $3% pagina's $4L regels  $E $C"
+
+#: src/main.c:979
+#, c-format
+msgid "couldn't get passwd entry for uid=%d: %s"
+msgstr "kan geen wachtwoord vinden voor UID=%d: %s"
+
+#: src/main.c:1071
+#, c-format
+msgid "couldn't read config file \"%s/%s\": %s"
+msgstr "kan configuratiebestand '%s/%s' niet vinden: %s"
+
+#: src/main.c:1075
+msgid "I did also try the following directories:"
+msgstr "De volgende mappen zijn ook doorzocht:"
+
+#: src/main.c:1076 src/main.c:1077 src/main.c:1078
+#, c-format
+msgid "\t%s"
+msgstr "\t%s"
+
+#: src/main.c:1079
+msgid "\t../lib"
+msgstr "\t../lib"
+
+#: src/main.c:1080
+msgid "\t../../lib"
+msgstr "\t../../lib"
+
+#: src/main.c:1082
+msgid "This is probably an installation error.  Please, try to rebuild:"
+msgstr "Dit is vermoedelijk een installatiefout."
+
+#: src/main.c:1083
+msgid "\tmake distclean"
+msgstr "..."
+
+#: src/main.c:1084
+msgid "\t./configure --prefix=PREFIX"
+msgstr "Rapporteer een fout bij de maker van uw distributie."
+
+#: src/main.c:1085
+msgid "\tmake"
+msgstr "..."
+
+#: src/main.c:1086
+msgid "\tmake check"
+msgstr "..."
+
+#: src/main.c:1087
+msgid "\tmake install"
+msgstr "..."
+
+#: src/main.c:1088
+#, fuzzy
+msgid ""
+"or set the environment variable `ENSCRIPT_LIBRARY' to point to your library "
+"directory."
+msgstr ""
+"Of omzeil de fout door omgevingsvariabele ENSCRIPT_LIBRARY\n"
+"naar de juiste map te laten wijzen."
+
+#: src/main.c:1161
+#, c-format
+msgid "unknown encoding: %s"
+msgstr "onbekende codering: %s"
+
+#: src/main.c:1180
+#, c-format
+msgid "couldn't open AFM library: %s"
+msgstr "kan AFM-bibliotheek niet openen: %s"
+
+#: src/main.c:1209
+#, c-format
+msgid ""
+"known media:\n"
+"name             width\theight\tllx\tlly\turx\tury\n"
+"------------------------------------------------------------\n"
+msgstr ""
+"Bekende formaten:\n"
+"naam             breed\thoog\tllx\tlly\turx\tury\n"
+"------------------------------------------------------------\n"
+
+#: src/main.c:1228
+#, c-format
+msgid "do not know anything about media \"%s\""
+msgstr "er is niets bekend over formaat '%s'"
+
+#: src/main.c:1272
+#, c-format
+msgid ""
+"set new marginals for media `%s' (%dx%d): llx=%d, lly=%d, urx=%d, ury=%d\n"
+msgstr ""
+"nieuwe marges voor formaat '%s' (%dx%d): llx=%d, lly=%d, urx=%d, ury=%d\n"
+
+#: src/main.c:1283
+#, c-format
+msgid "illegal page label format \"%s\""
+msgstr "ongeldige soort voor paginalabel: '%s'"
+
+#: src/main.c:1295
+#, c-format
+msgid "illegal non-printable format \"%s\""
+msgstr "ongeldige printwijze voor niet-afdrukbare tekens: '%s'"
+
+#: src/main.c:1309
+#, c-format
+msgid "illegal style for wrapped line marker: \"%s\""
+msgstr "ongeldige stijl voor afgebroken-regelmarkering: '%s'"
+
+#: src/main.c:1319
+#, c-format
+msgid "illegal N-up argument: %d"
+msgstr "ongeldig argument '%d' voor gecomprimeerd printen"
+
+#: src/main.c:1324
+#, c-format
+msgid "N-up argument must be power of 2: %d"
+msgstr "het argument '%d' voor gecomprimeed printen moet een macht van 2 zijn"
+
+#: src/main.c:1401
+#, c-format
+msgid "malformed underlay position: %s"
+msgstr "onjuiste achtergrondpositie: %s"
+
+#: src/main.c:1424
+#, c-format
+msgid "illegal underlay style: %s"
+msgstr "ongeldige achtergrondstijl: %s"
+
+#: src/main.c:1451
+#, c-format
+msgid ""
+"Highlighting is supported for the following languages and file formats:\n"
+"\n"
+msgstr ""
+"Syntaxmarkering is mogelijk voor de volgende programmeertalen en "
+"bestandstypes:\n"
+"\n"
+
+#: src/main.c:1632
+#, c-format
+msgid "couldn't create temporary toc file: %s"
+msgstr "kan tijdelijk bestand voor inhoudsopgave niet aanmaken: %s"
+
+#: src/main.c:1679
+#, c-format
+msgid "couldn't stat input file \"%s\": %s"
+msgstr "kan status van invoerbestand '%s' niet opvragen: %s"
+
+#: src/main.c:1699
+#, c-format
+msgid "couldn't rewind toc file: %s"
+msgstr "kan niet terugspringen in inhoudsopgavebestand: %s"
+
+#: src/main.c:1705
+msgid "Table of Contents"
+msgstr "Inhoudsopgave"
+
+#: src/main.c:1731
+msgid "no output generated\n"
+msgstr "Geen uitvoer gegenereerd.\n"
+
+#: src/main.c:1736
+#, c-format
+msgid "output sent to %s\n"
+msgstr "uitvoer is verzonden naar %s\n"
+
+#: src/main.c:1737 src/main.c:1768
+msgid "printer"
+msgstr "printer"
+
+#: src/main.c:1739
+#, c-format
+msgid "output left in %s\n"
+msgstr "uitvoer is opgeslagen in %s\n"
+
+#: src/main.c:1760
+#, c-format
+msgid "%d page"
+msgid_plural "%d pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/main.c:1762
+#, c-format
+msgid "%d copy"
+msgid_plural "%d copies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/main.c:1767
+#, c-format
+msgid " sent to %s\n"
+msgstr " verzonden naar %s\n"
+
+#: src/main.c:1770
+#, c-format
+msgid " left in %s\n"
+msgstr " opgeslagen in %s\n"
+
+#: src/main.c:1776
+#, c-format
+msgid "%d line was %s\n"
+msgid_plural "%d lines were %s\n"
+msgstr[0] "%d regel is %s\n"
+msgstr[1] "%d regels zijn %s\n"
+
+#: src/main.c:1781
+msgid "truncated"
+msgstr "afgekapt"
+
+#: src/main.c:1781
+msgid "wrapped"
+msgstr "afgebroken"
+
+#: src/main.c:1788
+#, c-format
+msgid "%d character was missing\n"
+msgid_plural "%d characters were missing\n"
+msgstr[0] "%d teken ontbrak (in lettertype)\n"
+msgstr[1] "%d tekens ontbraken (in lettertype)\n"
+
+#: src/main.c:1794
+msgid "missing character codes (decimal):\n"
+msgstr "codes van ontbrekende tekens (decimaal):\n"
+
+#: src/main.c:1803
+#, c-format
+msgid "%d non-printable character\n"
+msgid_plural "%d non-printable characters\n"
+msgstr[0] "%d teken was niet-afdrukbaar\n"
+msgstr[1] "%d tekens waren niet-afdrukbaar\n"
+
+#: src/main.c:1810
+msgid "non-printable character codes (decimal):\n"
+msgstr "codes van niet-afdrukbare tekens (decimaal):\n"
+
+#: src/main.c:1859
+#, c-format
+msgid "couldn't open printer `%s': %s"
+msgstr "kan geen toegang verkrijgen tot printer '%s': %s"
+
+#: src/main.c:1868
+#, c-format
+msgid "couldn't create output file \"%s\": %s"
+msgstr "kan uitvoerbestand '%s' niet aanmaken: %s"
+
+#: src/main.c:1885
+#, c-format
+msgid "couldn't close output file \"%s\": %s"
+msgstr "kan uitvoerbestand '%s' niet sluiten: %s"
+
+#: src/main.c:1943
+#, c-format
+msgid ""
+"syntax error in option string %s=\"%s\":\n"
+"missing end of quotation: %c"
+msgstr ""
+"syntaxfout in optietekenreeks %s=\"%s\":\n"
+"ontbrekend aanhalingsteken aan het eind: %c"
+
+#: src/main.c:1975
+#, c-format
+msgid ""
+"warning: didn't process following options from environment variable %s:\n"
+msgstr ""
+"waarschuwing: de volgende opties uit omgevingsvariabele %s zijn niet "
+"verwerkt:\n"
+
+#: src/main.c:1979
+#, c-format
+msgid "  option %d = \"%s\"\n"
+msgstr "  optie %d = \"%s\"\n"
+
+#: src/main.c:2025
+msgid "number of columns must be larger than zero"
+msgstr "aantal kolommen moet groter zijn dan nul"
+
+#: src/main.c:2083
+msgid "file alignment must be larger than zero"
+msgstr "bestandsuitlijning moet groter zijn dan nul"
+
+#: src/main.c:2138 src/main.c:2144 src/main.c:2355 src/util.c:416
+#, c-format
+msgid "malformed font spec: %s"
+msgstr "onjuiste specificatie van lettertype: %s"
+
+#: src/main.c:2160
+#, c-format
+msgid "couldn't find header definition file \"%s.hdr\""
+msgstr "kan koptekst-definitiebestand '%s.hdr' niet vinden"
+
+#: src/main.c:2204
+#, c-format
+msgid "must print at least one line per each page: %s"
+msgstr "moet minstens 1 regel per pagina printen: %s"
+
+#: src/main.c:2224
+#, c-format
+msgid "%s: illegal newline character specifier: '%s': expected 'n' or 'r'\n"
+msgstr "%s: ongeldig regeleindeteken '%s' -- verwacht 'n' of 'r'\n"
+
+#: src/main.c:2313
+#, c-format
+msgid "malformed argument `%s' for option -W, --option: no comma found"
+msgstr "onjuist argument '%s' van -W of --option: ontbrekende komma"
+
+#: src/main.c:2318
+#, c-format
+msgid "helper application specification must be single character: %s"
+msgstr "aanduiding van hulpprogramma dient een enkel teken te zijn: %s"
+
+#: src/main.c:2414
+msgid "slice must be greater than zero"
+msgstr "strooknummer moet groter zijn dan nul"
+
+#: src/main.c:2495 states/main.c:318
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Probeer '%s --help' voor meer informatie.\n"
+
+#: src/main.c:2515
+#, fuzzy, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"  -#                         an alias for option -n, --copies\n"
+"  -1                         same as --columns=1\n"
+"  -2                         same as --columns=2\n"
+"      --columns=NUM          specify the number of columns per page\n"
+"  -a, --pages=PAGES          specify which pages are printed\n"
+"  -A, --file-align=ALIGN     align separate input files to ALIGN\n"
+"  -b, --header=HEADER        set page header\n"
+"  -B, --no-header            no page headers\n"
+"  -c, --truncate-lines       cut long lines (default is to wrap)\n"
+"  -C[START], --line-numbers[=START]\n"
+"                             precede each line with its line number\n"
+"  -d                         an alias for option --printer\n"
+"  -D, --setpagedevice=KEY[:VALUE]\n"
+"                             pass a page device definition to output\n"
+"  -e[CHAR], --escapes[=CHAR]       enable special escape interpretation\n"
+msgstr ""
+"Gebruik:  %s [OPTIE]... [BESTAND]...\n"
+"\n"
+"(Een verplicht argument bij een lange optie geldt ook voor de korte vorm.)\n"
+"\n"
+"  -#                          een alias voor '-n' en '--copies'\n"
+"  -1, -2, ...                 hetzelfde als '--columns=1', '--"
+"columns=2', ...\n"
+"      --columns=AANTAL        dit aantal kolommen per pagina gebruiken\n"
+"  -a, --pages=[VAN][-][TOT]   deze reeks pagina's printen\n"
+"  -A, --file-align=AANTAL     invoerbestanden op dit aantal pagina's "
+"uitlijnen\n"
+"  -b, --header=TEKENREEKS     deze opmaak voor paginakoptekst gebruiken\n"
+"  -B, --no-header             geen paginakoptekst printen\n"
+"  -c, --truncate-lines        lange regels afkappen (standaard is afbreken)\n"
+"  -C, --line-numbers[=BEGIN]  elke regel door z'n regelnummer vooraf laten "
+"gaan\n"
+"  -d                          hetzelfde als '--printer'\n"
+"  -D, --setpagedevice=SLEUTEL[:WAARDE]   deze printeroptie aan uitvoer "
+"toevoegen\n"
+"  -e, --escapes[=TEKEN]       interpretatie van speciale stuurcodes "
+"aanzetten\n"
+
+#: src/main.c:2535
+#, fuzzy, c-format
+msgid "  -E[LANG], --highlight[=LANG]     highlight source code\n"
+msgstr ""
+"  -E, --highlight[=TAAL]      syntaxmarkering (voor deze taal) gebruiken\n"
+
+#: src/main.c:2538
+#, fuzzy, c-format
+msgid ""
+"  -f, --font=NAME            use font NAME for body text\n"
+"  -F, --header-font=NAME     use font NAME for header texts\n"
+"  -g, --print-anyway         nothing (compatibility option)\n"
+"  -G                         same as --fancy-header\n"
+"      --fancy-header[=NAME]  select fancy page header\n"
+"  -h, --no-job-header        suppress the job header page\n"
+"  -H[NUM], --highlight-bars[=NUM]  specify how high highlight bars are\n"
+"  -i, --indent=NUM           set line indent to NUM characters\n"
+"  -I, --filter=CMD           read input files through input filter CMD\n"
+"  -j, --borders              print borders around columns\n"
+"  -J,                        an alias for option --title\n"
+"  -k, --page-prefeed         enable page prefeed\n"
+"  -K, --no-page-prefeed      disable page prefeed\n"
+"  -l, --lineprinter          simulate lineprinter, this is an alias for:\n"
+"                               --lines-per-page=66, --no-header, --"
+"portrait,\n"
+"                               --columns=1\n"
+msgstr ""
+"  -f, --font=LETTERTYPE       dit lettertype voor broodtekst gebruiken\n"
+"  -F, --header-font=LETTYPE   dit lettertype voor koptekst gebruiken\n"
+"  -g, --print-anyway          (doet niets; herkend wegens compatibileit)\n"
+"  -G  --fancy-header[=NAAM]   de standaard (of een speciale) koptekst "
+"printen\n"
+"  -h, --no-job-header         geen taak-startpagina printen\n"
+"  -H, --highlight-bars=GETAL  hoogte van markeringsbalken\n"
+"  -i, --indent=AANTAL         alle regels dit aantal tekens laten "
+"inspringen\n"
+"  -I, --filter=OPDRACHT       invoerbestanden door deze opdracht filteren\n"
+"  -j, --borders               randen rond kolommen printen\n"
+"  -J                          hetzelfde als '--title'\n"
+"  -k, --page-prefeed          anticiperen op volgende pagina (indien "
+"mogelijk)\n"
+"  -K, --no-page-prefeed       niet anticiperen op volgende pagina "
+"(standaard)\n"
+"  -l, --lineprinter           een regelprinter simuleren; dit is hetzelfde "
+"als\n"
+"                                '--lines-per-page=66, --no-header,\n"
+"                                 --portrait, --columns=1'\n"
+
+# XXX "kopieën" lukt niet wegens coderingsprobleem
+#: src/main.c:2556
+#, c-format
+msgid ""
+"  -L, --lines-per-page=NUM   specify how many lines are printed on each "
+"page\n"
+"  -m, --mail                 send mail upon completion\n"
+"  -M, --media=NAME           use output media NAME\n"
+"  -n, --copies=NUM           print NUM copies of each page\n"
+"  -N, --newline=NL           select the newline character.  Possible\n"
+"                             values for NL are: n (`\\n') and r (`\\r').\n"
+"  -o                         an alias for option --output\n"
+"  -O, --missing-characters   list missing characters\n"
+"  -p, --output=FILE          leave output to file FILE.  If FILE is `-',\n"
+"                             leave output to stdout.\n"
+"  -P, --printer=NAME         print output to printer NAME\n"
+"  -q, --quiet, --silent      be really quiet\n"
+"  -r, --landscape            print in landscape mode\n"
+"  -R, --portrait             print in portrait mode\n"
+msgstr ""
+"  -L, --lines-per-page=AANTAL   maximum aantal regels per pagina\n"
+"  -m, --mail                  na voltooiing een e-mail aan gebruiker sturen\n"
+"  -M, --media=FORMAAT         dit formaat voor de uitvoer gebruiken\n"
+"  -n, --copies=AANTAL         dit aantal kopie-en van elke pagina printen\n"
+"  -N, --newline=X             dit teken gebruiken voor een nieuwe regel;\n"
+"                                mogelijke waarden zijn: n ('\\n') en r "
+"('\\r')\n"
+"  -o                          hetzelfde als '--output'\n"
+"  -O, --missing-characters    in gebruikte lettertype ontbrekende tekens "
+"tonen\n"
+"  -p, --output=BESTAND        uitvoer in dit bestand opslaan; als BESTAND "
+"'-'\n"
+"                                is, dan uitvoer naar standaarduitvoer "
+"sturen\n"
+"  -P, --printer=NAAM          uitvoer naar printer met deze naam sturen\n"
+"  -q, --quiet, --silent       zo weinig mogelijk meldingen produceren\n"
+"  -r, --landscape             liggende pagina's printen\n"
+"  -R, --portrait              staande pagina's printen\n"
+
+#: src/main.c:2572
+#, fuzzy, c-format
+msgid ""
+"  -s, --baselineskip=NUM     set baselineskip to NUM\n"
+"  -S, --statusdict=KEY[:VALUE]\n"
+"                             pass a statusdict definition to the output\n"
+"  -t, --title=TITLE          set banner page's job title to TITLE.  Option\n"
+"                             sets also the name of the input file stdin.\n"
+"  -T, --tabsize=NUM          set tabulator size to NUM\n"
+"  -u[TEXT], --underlay[=TEXT]      print TEXT under every page\n"
+"  -U, --nup=NUM              print NUM logical pages on each output page\n"
+"  -v, --verbose              tell what we are doing\n"
+"  -V, --version              print version number\n"
+"  -w, --language=LANG        set output language to LANG\n"
+"  -W, --options=APP,OPTION   pass option OPTION to helper application APP\n"
+"  -X, --encoding=NAME        use input encoding NAME\n"
+"  -z, --no-formfeed          do not interpret form feed characters\n"
+"  -Z, --pass-through         pass through PostScript and PCL files\n"
+"                             without any modifications\n"
+msgstr ""
+"  -s, --baselineskip=AANTAL   aantal punten witruimte tussen regels (normaal "
+"1)\n"
+"  -S, --statusdict=SLEUTEL[:WAARDE]   deze printeroptie aan uitvoer "
+"toevoegen\n"
+"  -t, --title=TITEL           deze titel op taak-startpagina gebruiken\n"
+"  -T, --tabsize=AANTAL        de tabulatorgrootte op dit aantal instellen\n"
+"  -u, --underlay[=TEKST]      deze tekst als achtergrond op elke pagina "
+"printen\n"
+"  -U, --nup=AANTAL            dit aantal logische pagina's op 1 pagina "
+"printen\n"
+"  -v, --verbose               breedsprakige uitvoer produceren\n"
+"  -V, --version               versie-informatie tonen en stoppen\n"
+"  -w, --language=TAAL         de uitvoertaal op deze taal instellen\n"
+"  -W, --options=PROG,OPTIE    deze OPTIE aan hulpprogramma PROG meegeven\n"
+"  -X, --encoding=CODERING     de invoer volgens deze codering inlezen\n"
+"  -z, --no-formfeed           nieuwe-pagina-tekens negeren\n"
+"  -Z, --pass-through          PostScript- en PCL-bestand ongewijzigd "
+"doorgeven\n"
+"\n"
+
+#: src/main.c:2590
+#, c-format
+msgid ""
+"Long-only options:\n"
+"  --color[=bool]             create color outputs with states\n"
+"  --continuous-page-numbers  count page numbers across input files.  Don't\n"
+"                             restart numbering at beginning of each file.\n"
+"  --download-font=NAME       download font NAME\n"
+"  --extended-return-values   enable extended return values\n"
+"  --filter-stdin=NAME        specify how stdin is shown to the input filter\n"
+"  --footer=FOOTER            set page footer\n"
+"  --h-column-height=HEIGHT   set the horizontal column height to HEIGHT\n"
+"  --help                     print this help and exit\n"
+msgstr ""
+"Alleen lange opties:\n"
+"  --color[=BOOLEAAN]          kleuren gebruiken bij syntaxmarkering\n"
+"  --continuous-page-numbers   paginanummers door laten tellen; niet voor "
+"elk\n"
+"                                bestand opnieuw beginnen\n"
+"  --download-font=NAAM        het lettertype met deze naam van internet "
+"ophalen\n"
+"  --extended-return-values    een gedetailleerdere afsluitwaarde produceren\n"
+"  --filter-stdin=NAAM         de naam van standaardinvoer voor het "
+"invoerfilter\n"
+"  --footer=TEKENREEKS         deze opmaak voor paginavoettekst gebruiken\n"
+"  --h-column-height=HOOGTE    de hoogte voor horizontale kolommen\n"
+"  --help                      hulptekst tonen en stoppen\n"
+
+#: src/main.c:2601
+#, c-format
+msgid ""
+"  --help-highlight           describe all supported --highlight languages\n"
+"                             and file formats\n"
+"  --highlight-bar-gray=NUM   print highlight bars with gray NUM (0 - 1)\n"
+"  --list-media               list names of all known media\n"
+"  --margins=LEFT:RIGHT:TOP:BOTTOM\n"
+"                             adjust page marginals\n"
+"  --mark-wrapped-lines[STYLE]\n"
+"                             mark wrapped lines in the output with STYLE\n"
+"  --non-printable-format=FMT specify how non-printable chars are printed\n"
+msgstr ""
+"  --help-highlight            mogelijke bestandstypen voor syntaxmarkering "
+"tonen\n"
+"  --highlight-bar-gray=GETAL  markeringsbalken met deze grijswaarde printen\n"
+"  --list-media                alle bekende formaten tonen\n"
+"  --margins=LINKS:RECHTS:BOVEN:ONDER   deze paginamarges gebruiken\n"
+"  --mark-wrapped-lines[=STIJL]   afgebroken regels markeren (met deze "
+"stijl)\n"
+"  --non-printable-format=SOORT   printwijze voor niet-afdrukbare tekens\n"
+
+#: src/main.c:2612
+#, c-format
+msgid ""
+"  --nup-columnwise           layout pages in the N-up printing columnwise\n"
+"  --nup-xpad=NUM             set the page x-padding of N-up printing to NUM\n"
+"  --nup-ypad=NUM             set the page y-padding of N-up printing to NUM\n"
+"  --page-label-format=FMT    set page label format to FMT\n"
+"  --ps-level=LEVEL           set the PostScript language level that "
+"enscript\n"
+"                             should use\n"
+"  --printer-options=OPTIONS  pass extra options to the printer command\n"
+"  --rotate-even-pages        rotate even-numbered pages 180 degrees\n"
+msgstr ""
+"  --nup-columnwise            kolomsgewijs in plaats van rijsgewijs printen\n"
+"  --nup-xpad=AANTAL           dit aantal punten horizontale tussenruimte\n"
+"  --nup-ypad=AANTAL           dit aantal punten verticale tussenruimte\n"
+"  --page-label-format=SOORT   dit soort paginalabel gebruiken\n"
+"  --ps-level=NIVEAU           dit niveau van de PostScript-taal gebruiken\n"
+"  --printer-options=OPTIES    deze opties aan printeropdracht toevoegen\n"
+"  --rotate-even-pages         de even pagina's 180 graden draaien\n"
+
+#: src/main.c:2622
+#, c-format
+msgid ""
+"  --slice=NUM                print vertical slice NUM\n"
+"  --style=STYLE              use highlight style STYLE\n"
+"  --swap-even-page-margins   swap left and right side margins for each even\n"
+"                             numbered page\n"
+"  --toc                      print table of contents\n"
+"  --ul-angle=ANGLE           set underlay text's angle to ANGLE\n"
+"  --ul-font=NAME             print underlays with font NAME\n"
+"  --ul-gray=NUM              print underlays with gray value NUM\n"
+"  --ul-position=POS          set underlay's starting position to POS\n"
+"  --ul-style=STYLE           print underlays with style STYLE\n"
+"  --word-wrap                wrap long lines from word boundaries\n"
+msgstr ""
+"  --slice=NUMMER              de verticale strook met dit nummer printen\n"
+"  --style=STIJL               deze stijl van syntaxmarkeringen gebruiken\n"
+"  --swap-even-page-margins    op even pagina's linker/rechter marges "
+"omwisselen\n"
+"  --toc                       inhoudsopgave printen\n"
+"  --ul-angle=HOEK             achtergrondtekst onder deze hoek plaatsen\n"
+"  --ul-font=LETTERTYPE        dit lettertype voor achtergrondtekst "
+"gebruiken\n"
+"  --ul-gray=GETAL             achtergrondtekst met deze grijswaarde printen\n"
+"  --ul-position=POSITIE       achtergrondtekst op deze positie beginnen\n"
+"  --ul-style=STIJL            achtergrondtekst in deze stijl printen\n"
+"  --word-wrap                 lange regels afbreken op woordgrenzen\n"
+
+#: src/main.c:2636
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"\n"
+"Rapporteer gebreken in het programma aan <%s>;\n"
+"meld fouten in de vertaling aan <vertaling@vrijschrift.org>.\n"
+
+#: src/psgen.c:331
+#, c-format
+msgid "couldn't find prolog \"%s\": %s\n"
+msgstr "kan 'prolog'-bestand '%s' niet vinden: %s\n"
+
+#: src/psgen.c:339
+#, c-format
+msgid "couldn't find encoding file \"%s.enc\": %s\n"
+msgstr "kan coderingsbestand '%s.enc' niet vinden: %s\n"
+
+#: src/psgen.c:471
+#, c-format
+msgid "couldn't find header definition file \"%s.hdr\": %s\n"
+msgstr "kan koptekst-definitiebestand '%s.hdr' niet vinden: %s\n"
+
+#: src/psgen.c:615
+#, c-format
+msgid "processing file \"%s\"...\n"
+msgstr "bezig met bestand '%s'...\n"
+
+#: src/psgen.c:913
+#, c-format
+msgid "EPS file \"%s\" is too large for page\n"
+msgstr "EPS-bestand '%s' is te groot voor pagina\n"
+
+#: src/psgen.c:986
+msgid "user font encoding can be only the system's default or `ps'"
+msgstr ""
+"codering van gebruikerslettertype kan alleen 'ps' of de standaardwaarde zijn"
+
+#: src/psgen.c:1228
+#, c-format
+msgid "unknown special escape: %s"
+msgstr "ongeldig speciaal escape-teken: %s"
+
+#: src/psgen.c:1354
+#, c-format
+msgid "illegal option %c for ^@epsf escape"
+msgstr "ongeldige optie '%c' voor ^@epsf-stuurcode"
+
+#: src/psgen.c:1360
+msgid "malformed ^@epsf escape: no ']' after options"
+msgstr "onjuiste ^@epsf-stuurcode: geen ']' na de opties"
+
+#: src/psgen.c:1372
+#, c-format
+msgid ""
+"too long file name for ^@epsf escape:\n"
+"%.*s"
+msgstr ""
+"bestandsnaam is te lang in ^@epsf-stuurcode:\n"
+"%.*s"
+
+#: src/psgen.c:1376
+msgid "unexpected EOF while scanning ^@epsf escape"
+msgstr "onverwacht bestandseinde tijdens scannen van ^@epsf-stuurcode"
+
+#: src/psgen.c:1382
+msgid "malformed ^@epsf escape: no '{' found"
+msgstr "onjuiste ^@epsf-stuurcode: geen '{' gevonden"
+
+#: src/psgen.c:1440
+#, c-format
+msgid "malformed %s escape: no '{' found"
+msgstr "onjuiste %s-stuurcode: geen '{' gevonden"
+
+#: src/psgen.c:1454
+#, c-format
+msgid ""
+"too long argument for %s escape:\n"
+"%.*s"
+msgstr ""
+"argument is te lang in %s-stuurcode:\n"
+"%.*s"
+
+#: src/psgen.c:1474
+#, c-format
+msgid "malformed font spec for ^@font escape: %s"
+msgstr "onjuiste specificatie van lettertype in ^@font-stuurcode: %s"
+
+#: src/psgen.c:1511
+#, c-format
+msgid "malformed color spec for ^@%s escape: %s"
+msgstr "onjuiste specificatie van kleur in ^@%s-stuurcode: %s"
+
+#: src/psgen.c:1535
+#, c-format
+msgid "invalid value for ^@shade escape: %s"
+msgstr "ongeldige waarde in ^@shade-stuurcode: %s"
+
+#: src/psgen.c:1543
+#, c-format
+msgid "invalid value for ^@bggray escape: %s"
+msgstr "ongeldige waarde in ^@bggray-stuurcode: %s"
+
+#: src/psgen.c:2412
+#, c-format
+msgid "couldn't open EPS file \"%s\": %s\n"
+msgstr "kan EPS-bestand '%s' niet openen: %s\n"
+
+#: src/psgen.c:2448
+#, c-format
+msgid "EPS file \"%s\" does not start with \"%%!\" magic\n"
+msgstr "EPS-bestand '%s' begint niet met magische tekens \"%%!\"\n"
+
+#: src/psgen.c:2473
+#, c-format
+msgid ""
+"EPS file \"%s\" contains malformed %%%%BoundingBox row:\n"
+"\"%.*s\"\n"
+msgstr ""
+"EPS-bestand '%s' bevat onjuiste %%%%BoundingBox-regel:\n"
+"\"%.*s\"\n"
+
+#: src/psgen.c:2498
+#, c-format
+msgid "EPS file \"%s\" is not a valid EPS file\n"
+msgstr "bestand '%s' is geen geldig EPS-bestand\n"
+
+#: src/psgen.c:2640
+#, c-format
+msgid "passing through all input files for output language `%s'\n"
+msgstr "doorgeven van alle invoerbestanden voor uitvoertaal '%s'\n"
+
+#: src/psgen.c:2692
+#, c-format
+msgid "passing through %s file \"%s\"\n"
+msgstr "doorgeven van %s-bestand '%s'\n"
+
+#: src/psgen.c:2795
+#, c-format
+msgid "couldn't create temporary divert file: %s"
+msgstr "kan tijdelijk rangeerbestand niet aanmaken: %s"
+
+#: src/psgen.c:2812
+#, c-format
+msgid "couldn't rewind divert file: %s"
+msgstr "kan niet terugspringen in rangeerbestand: %s"
+
+#: src/util.c:93
+#, c-format
+msgid "missing argument: %s"
+msgstr "ontbrekend argument: %s"
+
+#: src/util.c:186 src/util.c:214
+#, c-format
+msgid "illegal value \"%s\" for option %s"
+msgstr "ongeldige waarde '%s' voor optie %s"
+
+#: src/util.c:202
+#, c-format
+msgid "invalid value \"%s\" for option %s"
+msgstr "ongeldige waarde '%s' voor optie %s"
+
+#: src/util.c:440
+#, c-format
+msgid "illegal option: %s"
+msgstr "ongeldige optie: %s"
+
+#: src/util.c:619
+#, c-format
+msgid "%s:%d: %%Format: no name"
+msgstr "%s:%d: %%Format: geen naam"
+
+#: src/util.c:630
+#, c-format
+msgid "%s:%d: %%Format: too long name, maxlen=%d"
+msgstr "%s:%d: %%Format: naam is te lang; maximum lengte=%d"
+
+#: src/util.c:653
+#, c-format
+msgid "%s:%d: %%Format: name \"%s\" is already defined"
+msgstr "%s:%d: %%Format: naam \"%s\" is al gedefinieerd"
+
+#: src/util.c:674
+#, c-format
+msgid "%s:%d: %%HeaderHeight: no argument"
+msgstr "%s:%d: %%HeaderHeight: geen argument"
+
+#: src/util.c:696
+#, c-format
+msgid "%s:%d: %%FooterHeight: no argument"
+msgstr "%s:%d: %%FooterHeight: geen argument"
+
+#: src/util.c:843
+#, c-format
+msgid "%s: warning: font size is negative\n"
+msgstr "%s: waarschuwing: grootte van lettertype is negatief\n"
+
+#: src/util.c:845
+#, c-format
+msgid "%s: warning: font width is negative\n"
+msgstr "%s: waarschuwing: breedte van lettertype is negatief\n"
+
+#: src/util.c:847
+#, c-format
+msgid "%s: warning: font height is negative\n"
+msgstr "%s: waarschuwing: hoogte van lettertype is negatief\n"
+
+#: src/util.c:866
+#, c-format
+msgid "reading AFM info for font \"%s\"\n"
+msgstr "inlezen van AFM-informatie voor lettertype '%s'\n"
+
+#: src/util.c:899
+#, c-format
+msgid "couldn't open AFM file for font \"%s\", using default\n"
+msgstr ""
+"kan AFM-bestand voor lettertype '%s' niet openen; standaard wordt gebruikt\n"
+
+#: src/util.c:906
+#, c-format
+msgid "couldn't open AFM file for the default font: %s"
+msgstr "kan AFM-bestand voor standaard lettertype niet openen: %s"
+
+#: src/util.c:1095
+#, c-format
+msgid "downloading font \"%s\"\n"
+msgstr "ophalen van lettertype '%s'\n"
+
+#: src/util.c:1100
+#, c-format
+msgid "couldn't open font description file \"%s\": %s\n"
+msgstr "kan lettertype-beschrijvingsbestand '%s' niet openen: %s\n"
+
+#: src/util.c:1392
+#, c-format
+msgid "%s: too long format for %%D{} escape"
+msgstr "%s: opmaak in %%D{}-stuurcode is te lang"
+
+#: src/util.c:1477
+#, c-format
+msgid "%s: unknown `%%' escape `%c' (%d)"
+msgstr "%s: onbekende %%-stuurcode '%c' (%d)"
+
+#: src/util.c:1515
+#, c-format
+msgid "%s: no closing ')' for $() escape"
+msgstr "%s: geen afsluitende ')' in $()-stuurcode"
+
+#: src/util.c:1518
+#, c-format
+msgid "%s: too long variable name for $() escape"
+msgstr "%s: variabelenaam is te lang in $()-stuurcode"
+
+#: src/util.c:1545
+#, c-format
+msgid "%s: too long format for $D{} escape"
+msgstr "%s: opmaak in $D{}-stuurcode is te lang"
+
+#: src/util.c:1633
+#, c-format
+msgid "%s: unknown `$' escape `%c' (%d)"
+msgstr "%s: onbekende $-stuurcode '%c' (%d)"
+
+#: src/util.c:1824
+#, c-format
+msgid "malformed float dimension: \"%s\""
+msgstr "onjuist drijvende-komma-getal '%s'"
+
+#: src/util.c:1946
+#, c-format
+msgid "couldn't open input filter \"%s\" for file \"%s\": %s"
+msgstr "kan invoerfilter '%s' voor bestand '%s' niet openen: %s"
+
+#: src/util.c:1963
+#, c-format
+msgid "couldn't open input file \"%s\": %s"
+msgstr "kan invoerbestand '%s' niet openen: %s"
+
+#: src/mkafmmap.c:167
+#, c-format
+msgid "file=%s\n"
+msgstr "bestand=%s\n"
+
+#: src/mkafmmap.c:167
+msgid "stdout"
+msgstr "standaarduitvoer"
+
+#: src/mkafmmap.c:175
+#, c-format
+msgid "%s: couldn't open output file \"%s\""
+msgstr "%s: kan uitvoerbestand '%s' niet openen"
+
+#: src/mkafmmap.c:189
+msgid "couldn't create AFM library"
+msgstr "kan AFM-bibliotheek niet aanmaken"
+
+#: src/mkafmmap.c:238
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... FILE...\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"  -h, --help              print this help and exit\n"
+"  -p, --output-file=NAME  print output to file NAME (default file is\n"
+"                          font.map).  If FILE is `-', leavy output to\n"
+"                          stdout.\n"
+"  -V, --version           print version number\n"
+msgstr ""
+"Gebruik:  %s [OPTIE]... BESTAND...\n"
+"\n"
+"(Verplicht argument bij lange optie geldt ook voor de korte vorm.)\n"
+"\n"
+"  -h, --help                 hulptekst tonen en stoppen\n"
+"  -p, --output-file=BESTAND  uitvoer opslaan in BESTAND (standaard 'font."
+"map');\n"
+"                             als BESTAND '-' is, dan naar standaarduitvoer\n"
+"  -V, --version              versie-informatie tonen en stoppen\n"
+
+#: states/lex.l:167 states/lex.l:173
+msgid "error: EOF in comment"
+msgstr "Fout: bestandseinde bereikt in commentaar"
+
+#: states/lex.l:204
+msgid "error: EOF in string constant"
+msgstr "Fout: bestandseinde bereikt in tekenreeksconstante"
+
+#: states/lex.l:311
+msgid "error: EOF in regular expression"
+msgstr "Fout: bestandseinde bereikt in reguliere expressie"
+
+#: states/main.c:197
+#, c-format
+msgid "states for %s"
+msgstr "'states' voor %s"
+
+#: states/main.c:252
+#, c-format
+msgid "%s: malformed variable definition \"%s\"\n"
+msgstr "%s: onjuiste variabeledefinitie '%s'\n"
+
+#: states/main.c:280
+#, c-format
+msgid "%s: couldn't create output file \"%s\": %s\n"
+msgstr "%s: kan uitvoerbestand '%s' niet aanmaken: %s\n"
+
+#: states/main.c:311
+#, c-format
+msgid "%s: unknown warning level `%s'\n"
+msgstr "%s: onbekend waarschuwingsniveau '%s'\n"
+
+#: states/main.c:360 states/main.c:396 states/prims.c:1375 states/utils.c:227
+#, c-format
+msgid "%s: out of memory\n"
+msgstr "%s: onvoldoende geheugen beschikbaar\n"
+
+#: states/main.c:421
+#, c-format
+msgid "%s: couldn't open input file `%s': %s\n"
+msgstr "%s: kan invoerbestand '%s' niet openen: %s\n"
+
+#: states/main.c:445
+#, c-format
+msgid ""
+"Usage: %s [OPTION]... [FILE]...\n"
+"Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
+"Gebruik:  %s [OPTIE]... [BESTAND]...\n"
+"\n"
+"(Een verplicht argument bij een lange optie geldt ook voor de korte vorm.)\n"
+"\n"
+
+# XXX "definiëren" lukt niet wegens coderingsprobleem
+#: states/main.c:449
+#, fuzzy, c-format
+msgid ""
+"  -D, --define=VAR=VAL       define variable VAR to have value VAL\n"
+"  -f, --file=NAME            read state definitions from file NAME\n"
+"  -h, --help                 print this help and exit\n"
+"  -o, --output=NAME          save output to file NAME\n"
+"  -p, --path=PATH            set the load path to PATH\n"
+"  -s, --state=NAME           start from state NAME\n"
+"  -v, --verbose              increase the program verbosity\n"
+"  -V, --version              print version number\n"
+"  -W, --warning=LEVEL        set the warning level to LEVEL\n"
+msgstr ""
+"  -D, --define=VAR=WAARDE    variabele VAR defini-eren en WAARDE geven\n"
+"  -f, --file=BESTAND         toestandsdefinities uit BESTAND lezen\n"
+"  -h, --help                 deze hulptekst tonen en stoppen\n"
+"  -o, --output=BESTAND       de uitvoer opslaan in BESTAND\n"
+"  -p, --path=PAD             PAD gebruiken voor het laden van bestanden\n"
+"  -s, --state=NAAM           bij de toestand met deze NAAM beginnen\n"
+"  -v, --verbose              breedsprakiger uitvoer produceren\n"
+"  -V, --version              versie-informatie tonen en stoppen\n"
+"  -W, --warning=NIVEAU       waarschuwingsproductie op dit NIVEAU instellen\n"
+
+#: states/prims.c:44
+#, c-format
+msgid "%s:%d: %s: too few arguments\n"
+msgstr "%s:%d %s: te weinig argumenten\n"
+
+#: states/prims.c:54
+#, c-format
+msgid "%s:%d: %s: too many arguments\n"
+msgstr "%s:%d %s: te veel argumenten\n"
+
+#: states/prims.c:107 states/prims.c:127 states/prims.c:253 states/prims.c:426
+#: states/prims.c:901
+#, c-format
+msgid "%s:%d: %s: illegal argument type\n"
+msgstr "%s:%d: %s: argument is van ongeldig type\n"
+
+#: states/prims.c:468
+#, c-format
+msgid "%s: panic: "
+msgstr "%s: paniek: "
+
+#: states/prims.c:502
+#, c-format
+msgid "%s:%d: %s: malformed version string `%s'\n"
+msgstr "%s:%d %s: onjuist versienummer '%s'\n"
+
+#: states/prims.c:517
+#, c-format
+msgid ""
+"%s: FATAL ERROR: States version %s or higher is required for this script\n"
+msgstr "%s: Fout: 'states'-versie %s of hoger is vereist voor dit script\n"
+
+#: states/prims.c:608 states/prims.c:1274
+#, c-format
+msgid "%s:%d: %s: start offset is bigger than end offset\n"
+msgstr "%s:%d %s: beginpositie is groter dan eindpositie\n"
+
+#: states/prims.c:617 states/prims.c:633 states/prims.c:1280
+#, c-format
+msgid "%s:%d: %s: offset out of range\n"
+msgstr "%s:%d: %s: positie valt buiten bereik\n"
+
+#: states/prims.c:651
+#, c-format
+msgid "%s:%d: %s: illegal argument\n"
+msgstr "%s:%d %s: ongeldig argument\n"
+
+#: states/prims.c:698
+#, c-format
+msgid "%s:%d: %s: illegal regexp character syntax: %c\n"
+msgstr "%s:%d %s: ongeldige soort syntax '%c' voor reguliere expressies\n"
+
+# XXX "definiëren" lukt niet wegens coderingsprobleem
+#: states/prims.c:913
+#, c-format
+msgid "%s:%d: %s: couldn't define state `%s'\n"
+msgstr "%s:%d: %s: kan toestand '%s' niet defini-eren\n"
+
+#: states/prims.c:1010
+#, c-format
+msgid "%s: primitive `%s': too few arguments for format\n"
+msgstr "%s: primitief '%s': te weinig argumenten voor opmaak\n"
+
+#: states/prims.c:1038
+#, c-format
+msgid "%s:%d: %s: argument %d doesn't match format\n"
+msgstr "%s:%d: %s: argument %d komt niet overeen met opmaak\n"
+
+#: states/prims.c:1078
+#, c-format
+msgid "%s:%d: %s: no extra options can be specified for %%s\n"
+msgstr "%s:%d: %s: bij %%s kunnen geen extra opties worden gespecificeerd \n"
+
+#: states/prims.c:1087
+#, c-format
+msgid "%s:%d: %s: illegal type specifier `%c'\n"
+msgstr "%s:%d: %s: ongeldige typespecificatie '%c'\n"
+
+#: states/process.c:115
+#, c-format
+msgid "%s: undefined state `%s'\n"
+msgstr "%s: ongedefinieerde toestand '%s'\n"
+
+#: states/process.c:196
+#, c-format
+msgid "%s: error: undefined variable `%s'\n"
+msgstr "%s: Fout: ongedefinieerde variabele '%s'\n"
+
+#: states/process.c:290
+#, c-format
+msgid "%s: undefined super state `%s'\n"
+msgstr "%s: ongedefinieerde supertoestand '%s'\n"
+
+#: states/utils.c:260
+#, c-format
+msgid "%s:%d: couldn't compile regular expression \"%s\": %s\n"
+msgstr "%s:%d: kan reguliere expressie '%s' niet compileren: %s\n"
+
+#: states/utils.c:449 states/utils.c:477
+#, c-format
+msgid "%s: ouf of memory"
+msgstr "%s: geen geheugen meer"
+
+#: states/utils.c:454
+#, c-format
+msgid "warning: redefining state `%s'"
+msgstr "waarschuwing: toestand '%s' wordt geherdefinieerd"
+
+#: states/utils.c:481
+#, c-format
+msgid "%s:%d: warning: redefining subroutine `%s'\n"
+msgstr "%s:%d: waarschuwing: subroutine '%s' wordt geherdefinieerd\n"
+
+#: states/utils.c:578
+#, c-format
+msgid "%s:%d: error: undefined variable `%s'\n"
+msgstr "%s:%d: Fout: ongedefinieerde variabele '%s'\n"
+
+#: states/utils.c:616
+#, c-format
+msgid "%s:%d: error: couldn't set variable `%s'\n"
+msgstr "%s:%d: Fout: kan niets toewijzen aan variabele '%s'\n"
+
+#: states/utils.c:767
+#, c-format
+msgid "%s:%d: error: expression between illegal types\n"
+msgstr "%s:%d: Fout: verschillende types gebruikt in expressie\n"
+
+#: states/utils.c:865
+#, c-format
+msgid "%s:%d: error: too few arguments for subroutine\n"
+msgstr "%s:%d: Fout: te weinig argumenten voor subroutine\n"
+
+#: states/utils.c:872
+#, c-format
+msgid "%s:%d: error: too many arguments for subroutine\n"
+msgstr "%s:%d: Fout: te veel argumenten voor subroutine\n"
+
+#: states/utils.c:926
+#, c-format
+msgid "%s:%d: error: undefined procedure `%s'\n"
+msgstr "%s:%d: Fout: ongedefinieerde procedure '%s'\n"
+
+#: states/utils.c:1018
+#, c-format
+msgid "%s:%d: error: illegal lvalue for assignment\n"
+msgstr "%s:%d: Fout: ongeldige linkerwaarde in arraytoewijzing\n"
+
+#: states/utils.c:1026 states/utils.c:1110
+#, c-format
+msgid "%s:%d: error: array reference index is not integer\n"
+msgstr "%s:%d: Fout: array-index is geen geheel getal\n"
+
+#: states/utils.c:1032
+#, c-format
+msgid "%s:%d: error: negative array reference index\n"
+msgstr "%s:%d: Fout: array-index is negatief\n"
+
+#: states/utils.c:1083
+#, c-format
+msgid "%s:%d: error: illegal rvalue for string assignment\n"
+msgstr "%s:%d: Fout: ongeldige rechterwaarde in tekenreekstoewijzing\n"
+
+#: states/utils.c:1102
+#, c-format
+msgid "%s:%d: error: illegal type for array reference\n"
+msgstr "%s:%d: Fout: kan argument niet als array indexeren\n"
+
+#: states/utils.c:1119
+#, fuzzy, c-format
+msgid "%s:%d: error: array reference index out of range\n"
+msgstr "%s:%d: Fout: array-index valt buiten bereik\n"
+
+#: states/utils.c:1345
+#, c-format
+msgid "%s: couldn't open definition file `%s': %s\n"
+msgstr "%s: kan definitiebestand '%s' niet openen: %s\n"
+
+#: states/utils.c:1401
+#, c-format
+msgid "%s: autoloading `%s' from `%s'\n"
+msgstr "%s: automatisch laden van '%s' uit '%s'...\n"
+
+#~ msgid "library directory."
+#~ msgstr "..."
+
+# XXX "kopieën" lukt niet wegens coderingsprobleem
+#~ msgid "[ %d pages * %d copy ]"
+#~ msgstr "[ %d pagina's * %d kopie ]"

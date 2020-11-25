@@ -1,0 +1,42 @@
+2008-01-01  Tim Retout  <diocles@gnu.org>
+
+	* ChangeLog: Run M-x change-log-redate. Add copyright notice at end.
+
+1999-09-13  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* sliceprint.in: Added option `--extended-return-values' since it
+	is not needed to get the extended return values.
+
+1998-05-18  Markku Rossi  <mtr@ngs.fi>
+
+	* diffpp.in: Updated.  Thanks to Tait Cyrus <tait.cyrus@mci.com>
+	for the updated version.
+
+1997-07-17  Markku Rossi  <mtr@ngs.fi>
+
+	* Makefile.am: Updated changes needed by Automake-1.2.
+
+1996-08-23  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* sliceprint.in: sliceprint - slice documents with long lines to
+	separate printouts.
+
+1996-07-28  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* diffpp.in: Changed diamond <> to <STDIN> to make diffpp to work
+	with some older perls.
+
+1996-06-30  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* diffpp.in: diffpp - pretty-print diff outputs.
+
+1996-06-13  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* New directory to hold some handy utility scripts for enscript.
+
+
+Copyright (C) 1996, 1997, 1998, 1999, 2008 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

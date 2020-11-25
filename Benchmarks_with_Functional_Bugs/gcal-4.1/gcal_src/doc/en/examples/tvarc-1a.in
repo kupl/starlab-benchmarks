@@ -1,0 +1,36 @@
+; tvarc-1a.in
+;
+
+; The command(s) used within this example are prefixed with `%%%'.
+; The real call(s) of these command(s) are prefixed with `***'.
+;
+%%%cat tvarc-1a.rc
+***cat ./tvarc-1a.rc
+;
+%%%gcal -f tvarc-1a.rc -QUx --exe -r'\$f=./tvarc-1.rc'
+***LANGUAGE=en GCAL= GCALPATH=. ../../../src/gcal -f tvarc-1a.rc -QUx --exe -r'$f=./tvarc-1.rc' $*
+
+; The resource file line(s) used within this example are prefixed with `:::'.
+;
+:::; tvarc-1a.rc
+:::;
+:::$a=bonjour
+:::$b=123
+:::$c=bonsoir
+:::$x?cat $f
+:::0 \$x=---$:30*x---
+:::$y:cat $f
+:::0 \$y=---$y---
+:::0 \$y=:::$>1u*y:::
+
+; Additionally leading Texinfo commands are prefixed with `+++'.
+;
++++example
++++group
++++cartouche
+
+; Additionally trailing Texinfo commands are prefixed with `---'.
+;
+---end cartouche
+---end group
+---end example

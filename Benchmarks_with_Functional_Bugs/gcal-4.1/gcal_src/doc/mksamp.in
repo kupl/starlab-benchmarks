@@ -1,0 +1,386 @@
+#! /bin/sh
+#
+#  @configure_input@
+#
+#  $Id: mksamp.in 0.06 2000/06/21 00:00:06 tom Exp $
+#
+#  mksamp.in: When listing example programm calls in a Texinfo document,
+#             the author normally has to write down the call of the program
+#             (the shell prompt, the command name and the options passed
+#             to it), and the result this call creates.  Of course this
+#             can be done by redirecting the output of such a call into
+#             a file and inserting it into the Texinfo document source
+#             (or by means of directly including this data stream into
+#             the document if the used editor allows this operation),
+#             providing each line of this output with the proper Texinfo
+#             command(s).
+#             But at last, it's not very convenient to work like this.
+#             It would be much better, if, on the one hand, there would be a
+#             shell script file which allows the user to ``test'' this program
+#             example by himself.  And, on the other hand, it would be also
+#             very fine to insert all the required texts (which are Texinfo
+#             commands, the above mentioned shell prompt line and the created
+#             output) only by using a simple `@include FILE.texi' command into
+#             the document.
+#             This shell script can help you to solve this task!  It comes
+#             along with two small SED script files, `mks1sed.in' (expanded to
+#             `mksamp-1.sed'), and `mks2sed.in' (expanded to `mksamp-2.sed').
+#             It processes an input file, typically a `FILE.in' file, which
+#             contains all the necessary definitions for the example, and
+#             generates a resulting Texinfo file `FILE.texi' from that file.
+#             Moreover, a shell script file `FILE.sh', a data file --here:
+#             a Gcal resource file-- `FILE.rc', which serves as input for
+#             the commands that are run by the created shell script file,
+#             are created.  If no data file is needed, it will not be created.
+#             In the input file `FILE.in', some special character sequences
+#             must be used to mark the different classes of action, which
+#             should all be given in this required order:
+#               * The command(s) used within the example are
+#                   either prefixed with `%%%' for using the '$ ' shell
+#                                              primary prompt character
+#                   or     prefixed with `%%>' for using the '> ' shell
+#                                              secondary prompt character,
+#                   and the real call(s) of these command(s) are
+#                   prefixed with `***'.
+#               * The data/resource file line(s) used within the example are
+#                   prefixed with `:::'.
+#               * Additionally leading Texinfo commands are
+#                   prefixed with `+++'.
+#               * Additionally trailing Texinfo commands are
+#                   prefixed with `---'.
+#
+#             Usage: mksamp --help | --version
+#             Usage: mksamp [--debug] [--verbose] FILE...
+#
+#             `--debug':    Turn on shell debugging.
+#             `--verbose':  Report on what is done.
+#
+#  UN*X solution.
+#
+#  Needs `test', `echo', `expr', `eval', `/bin/sh', `cd', `rm', `pwd', `chmod'
+#  and `sed' for processing!
+#
+#  Returns 0 if processing was successfully.
+#  Returns 1 in case an error occured while processing.
+#
+#  Copyright (c) 2000  Thomas Esken      <esken@gmx.net>
+#                      Im Hagenfeld 84
+#                      D-48147 M"unster
+#                      GERMANY
+#
+#  This software doesn't claim completeness, correctness or usability.
+#  On principle I will not be liable for ANY damages or losses (implicit
+#  or explicit), which result from using or handling my software.
+#  If you use this software, you agree without any exception to this
+#  agreement, which binds you LEGALLY !!
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the `GNU General Public License' as published by
+#  the `Free Software Foundation'; either version 3, or (at your option)
+#  any later version.
+#
+#  You should have received a copy of the `GNU General Public License'
+#  along with this program; if not, write to the:
+#
+#
+#
+
+#
+# Basically used programs.
+#
+Shell=/bin/sh
+Cd=cd
+Rm=rm
+Sed=sed
+Set=set
+Pwd=pwd
+Test=test
+Echo=echo
+Expr=expr
+Chmod=chmod
+
+#
+# Basically used texts.
+#
+PACKAGE=@PACKAGE@
+VERSION=@VERSION@
+#
+mydefaultname=mksamp
+#
+srcdir=@srcdir@
+oldwd=`$Pwd`
+#
+Sed_script1=mksamp-1.sed
+Sed_script2=mksamp-2.sed
+#
+myname=`$Echo "$0" | $Sed -e 's,.*/,,'`
+myversion=0.06
+myinternalname="$myname ($PACKAGE $VERSION) $myversion"
+#
+shellscriptfile_suffix=.sh
+datafile_suffix=.rc
+texifile_suffix=.texi
+tmpfile_suffix=.tmp
+#
+info1="$myname: Generates progamm call examples which can be easily"
+info2="$myname: inserted in a Texinfo document by using \`@include FILE""$texifile_suffix'."
+info3="$myname: Creates a legal Texinfo include file \`FILE""$texifile_suffix',"
+info4="$myname: a data file \`FILE""$datafile_suffix' and a shell script file"
+info5="$myname: \`FILE""$shellscriptfile_suffix' from each \`DEFINITION-FILE' processed."
+info6="$myname:"
+usage1="usage: $myname  --help | --version"
+usage2="usage: $myname  [--debug] [--verbose] DEFINITION-FILE..."
+
+#
+# Some constant values.
+#
+EXIT_SUCCESS=0
+EXIT_FAILURE=1
+
+#
+# The used programs.
+#
+Eval=eval
+
+#
+# Let's check for command line arguments.
+#
+debug=no
+verbose=no
+commands=""
+previous=""
+for option in $*
+do
+  #
+  # If the previous option needs an argument, assign it.
+  #
+  if $Test -n "$previous";
+  then
+    $Eval "$previous=\$option"
+    previous=""
+    continue
+  fi
+
+  case "$option" in
+    -*=)  optarg="###error###" ;;
+    -*=*) optarg=`$Echo "$option" | $Sed 's/[-_a-zA-Z0-9]*=//'` ;;
+    *)    optarg="" ;;
+  esac
+
+  #
+  # Manage the options.
+  #
+  case "$option" in
+    -help=* | -hel=* | -he=* | -h=* | -help | -hel | -he | -h | \
+    --help=* | --hel=* | --he=* | --h=* | --help | --hel | --he | --h)
+      if $Test -n "$optarg";
+      then
+        $Echo "$myname: error: option \``$Echo $option | $Sed -e 's/=.*//'`' doesn't allow an argument" 1>&2
+        exit $EXIT_FAILURE
+      fi
+      $Echo "$info1"
+      $Echo "$info2"
+      $Echo "$info3"
+      $Echo "$info4"
+      $Echo "$info5"
+      $Echo "$info6"
+      $Echo "$usage1"
+      $Echo "$usage2"
+      exit $EXIT_SUCCESS ;;
+
+    -version=* | -versio=* | -versi=* | -vers=* | \
+    -version | -versio | -versi | -vers | \
+    --version=* | --versio=* | --versi=* | --vers=* | \
+    --version | --versio | --versi | --vers)
+      if $Test -n "$optarg";
+      then
+        $Echo "$myname: error: option \``$Echo $option | $Sed -e 's/=.*//'`' doesn't allow an argument" 1>&2
+        exit $EXIT_FAILURE
+      fi
+      $Echo "$myinternalname"
+      exit $EXIT_SUCCESS ;;
+
+    -verbose=* | -verbos=* | -verbo=* | -verb=* | \
+    -verbose | -verbos | -verbo | -verb | \
+    --verbose=* | --verbos=* | --verbo=* | --verb=* | \
+    --verbose | --verbos | --verbo | --verb)
+      if $Test -n "$optarg";
+      then
+        $Echo "$myname: error: option \``$Echo $option | $Sed -e 's/=.*//'`' doesn't allow an argument" 1>&2
+        exit $EXIT_FAILURE
+      fi
+      verbose=yes
+      shift ;;
+
+    -debug=* | -debu=* | -deb=* | -de=* | -d=* | \
+    -debug | -debu | -deb | -de | -d | \
+    --debug=* | --debu=* | --deb=* | --de=* | --d=* | \
+    --debug | --debu | --deb | --de | --d)
+      if $Test -n "$optarg";
+      then
+        $Echo "$myname: error: option \``$Echo $option | $Sed -e 's/=.*//'`' doesn't allow an argument" 1>&2
+        exit $EXIT_FAILURE
+      fi
+      debug=yes
+      shift ;;
+
+    -*)
+      $Echo "$myname: error: $option: invalid option, use --help to show usage" 1>&2
+      exit $EXIT_FAILURE ;;
+
+    *)
+      if $Test -z "$commands";
+      then
+        commands="$option"
+      else
+        commands="$commands $option"
+      fi
+  esac
+done
+
+#
+# Get the number of commands given.
+#
+cmd_number=0
+for cmd in $commands
+do
+  cmd_number=`$Expr $cmd_number + 1`
+done
+
+#
+# Enable tracing.
+#
+if $Test "$debug" = yes;
+then
+  $Set -x
+fi
+
+#
+# Let's start processing now.
+#
+if $Test "$cmd_number" -eq 0;
+then
+  $Echo "$info1"
+  $Echo "$info2"
+  $Echo "$info3"
+  $Echo "$info4"
+  $Echo "$info5"
+  $Echo "$info6"
+  $Echo "$usage1"
+  $Echo "$usage2"
+  exit $EXIT_FAILURE
+else
+  if $Test ! -s "$srcdir/$Sed_script1";
+  then
+    $Echo "$myname: error: file \`$srcdir/$Sed_script1' is missing" 1>&2
+    exit $EXIT_FAILURE
+  fi
+  if $Test ! -s "$srcdir/$Sed_script2";
+  then
+    $Echo "$myname: error: file \`$srcdir/$Sed_script2' is missing" 1>&2
+    exit $EXIT_FAILURE
+  fi
+  for inputfile in $commands
+  do
+    if $Test ! -s "$inputfile";
+    then
+      $Echo "$myname: error: file \`$inputfile' not found" 1>&2
+      exit $EXIT_FAILURE
+    fi
+    #
+    # Get the basedir, the basename and the basename prefix of the inputfile.
+    #
+    inputfile_basedir=`$Echo "$inputfile" | $Sed -e "s,[^/][^/]*\$,,"`
+    if $Test -n "$inputfile_basedir";
+    then
+      inputfile_basename=`$Echo "$inputfile" | $Sed -e "s,$inputfile_basedir,,"`
+    else
+      inputfile_basename=$inputfile
+    fi
+    inputfile_prefix=`$Echo "$inputfile_basename" | $Sed -e "s,\.[^.]*\$,,"`
+    #
+    if $Test "$srcdir" = ".";
+    then
+      sedscriptdir=`$Pwd`
+    else
+      sedscriptdir="$srcdir"
+    fi
+    #
+    if $Test -n "$inputfile_basedir";
+    then
+      oldwd=`$Pwd`
+      $Cd `$Echo "$inputfile_basedir" | $Sed -e "s,/\$,,"`
+    fi
+    #
+    # Set the file names properly.
+    #
+    shellscriptfile=$inputfile_prefix""$shellscriptfile_suffix
+    datafile=$inputfile_prefix""$datafile_suffix
+    texifile=$inputfile_prefix""$texifile_suffix
+    tmpfile=$inputfile_prefix""$tmpfile_suffix
+    #
+    if $Test "$debug" = no;
+    then
+      trap "$Rm -f $shellscriptfile $datafile $texifile $tmpfile;exit $EXIT_FAILURE" 1 2 15
+    fi
+    #
+    # Report if verbose is set.
+    #
+    if $Test "$verbose" = yes;
+    then
+      $Echo "$myname: creating \`$inputfile_basedir""$inputfile_prefix($datafile_suffix "\
+"$shellscriptfile_suffix $texifile_suffix)' from \`$inputfile'..."
+    fi
+    #
+    # Generate the data file.
+    #
+    $Sed -e '/^:::/!d' -e 's/^::://' $inputfile_basename > $datafile
+    #
+    # Delete the data file if it is empty.
+    #
+    if $Test ! -s "$datafile";
+    then
+      $Rm -f $datafile
+    fi
+    #
+    # Generate the Texinfo starting commands.
+    #
+    $Echo "; Automatically generated by $mydefaultname from $inputfile_basename." > $tmpfile
+    $Echo ";" >> $tmpfile
+    $Sed -e '/^\+\+\+/!d' $inputfile_basename >> $tmpfile
+    #
+    # Generate the shell script file which runs the commands of this example.
+    #
+    $Sed -f $sedscriptdir/$Sed_script1 $inputfile_basename | \
+      $Sed -e "s,@DEFINITION_FILE@,$inputfile_basename," > $shellscriptfile
+    $Chmod u+x $shellscriptfile
+    #
+    # Generate the Texinfo output of the commands run by the created shell script.
+    #
+    $Shell $shellscriptfile >> $tmpfile
+    #
+    # Generate the Texinfo ending commands.
+    #
+    $Sed -e '/^\-\-\-/!d' $inputfile_basename >> $tmpfile
+    #
+    # Convert the tmpfile to a legal Texinfo file that we can @include.
+    #
+    $Sed -f $sedscriptdir/$Sed_script2 $tmpfile | \
+      $Sed -e "s,@DEFINITION_FILE@,$inputfile_basename," \
+           -e "s,@PACKAGE_TEXIFILE@,$PACKAGE""$texifile_suffix," > $texifile
+    #
+    # And delete the tmpfile.
+    #
+    if $Test "$debug" = no;
+    then
+      $Rm -f $tmpfile
+    fi
+    #
+    if $Test -n "$inputfile_basedir";
+    then
+      $Cd $oldwd
+      oldwd=$srcdir
+    fi
+  done
+  exit $EXIT_SUCCESS
+fi

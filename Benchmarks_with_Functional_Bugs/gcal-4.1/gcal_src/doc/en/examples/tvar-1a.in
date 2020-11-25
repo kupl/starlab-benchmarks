@@ -1,0 +1,23 @@
+; tvar-1a.in
+;
+
+; The command(s) used within this example are prefixed with `%%%'.
+; The real call(s) of these command(s) are prefixed with `***'.
+;
+%%%gcal %19960101 -H no -x -r '\$A=FROBOZZ:\$x=' -f ./tvar-1.rc
+***LANGUAGE=en GCAL= GCALPATH=. ../../../src/gcal %19960101 -H no -x -r '$A=FROBOZZ:$x=' -f ./tvar-1.rc $*
+
+; The resource file line(s) used within this example are prefixed with `:::'.
+;
+
+; Additionally leading Texinfo commands are prefixed with `+++'.
+;
++++example
++++group
++++cartouche
+
+; Additionally trailing Texinfo commands are prefixed with `---'.
+;
+---end cartouche
+---end group
+---end example

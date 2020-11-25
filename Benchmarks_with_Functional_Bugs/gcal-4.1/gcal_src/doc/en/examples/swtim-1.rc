@@ -1,0 +1,12 @@
+; swtim-1.rc, daylight-saving time BRD
+;
+$a=daylight-saving time starts Sunday
+;
+a=03sun9
+0@a-2#+2 Summer $a~+1 hrs. (02:00 --> 03:00 h.)%i1981
+;
+a=09sun9
+0@a-2#+2 Winter $a~-1 hrs. (03:00 --> 02:00 h.)%i1981#1995
+;
+a=10sun9
+0@a-2#+2 Winter $a~-1 hrs. (03:00 --> 02:00 h.)%i1996

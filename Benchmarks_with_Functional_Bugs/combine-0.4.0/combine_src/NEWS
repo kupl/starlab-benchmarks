@@ -1,0 +1,42 @@
+0.4.0
+License
+
+The license hase been updated to GPL version 3.
+
+Installation
+
+The package has been updated with newer gettext, automake, and autoconf.
+The use of GUILE is optional, but it's a good idea.  I added a check on
+the configuration to see if libguile.h had been found to decide whether 
+to run the GUILE-specific configuration.  If it doesn't work for you, 
+please send a bug report, including information about your system, and 
+what error you got.
+
+Documentation
+
+There have been small updates fixing typos and making things more readable.
+
+0.3.4
+Bugs
+
+Corrected memory leaks in temporary key values when processing matches 
+between files.
+
+Functionality
+
+A field delimiter specified for the data file is now used as the input field 
+delimiter for any reference files and as the output field delimiter for any
+reference files.  This can be stopped by specifying a different delimiter for
+one or more files or by using the new options --no-input-field-delimiter or 
+--no-output-field-delimiter to specify no-delimiter (fixed format) treatment.
+
+Installation
+
+The package has been re-configured so that we are using the latest
+versions of gettext, autoconf, and automake.  As a result, the right
+files and the right versions should be installed.  -- Reported by
+Gerritt Haase
+
+Compatibility
+
+

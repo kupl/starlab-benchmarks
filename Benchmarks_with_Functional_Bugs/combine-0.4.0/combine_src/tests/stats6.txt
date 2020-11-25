@@ -1,0 +1,12 @@
+Statistics for data file test.6
+  Number of records read:                            5
+  Number of records dropped by filter:               0
+  Number of records matched on key:                  4
+  Number of records written:                         0
+Statistics for reference file test.5
+  Number of records read:                            2
+  Number of records dropped by filter:               0
+  Number of records stored:                          2
+  Number of records matched on key:                  2
+  Number of records matched fully:                   2
+  Number of reference-data matches:                  4

@@ -1,0 +1,47 @@
+; sun-1.rc, comparison of sunrise / sunset, day length and night
+; length of two locations, namely:  Muenster.DE / Bangkok.TH
+; All references are based on Muenster.DE !
+;
+; Common definitions
+$p=0*d1#999
+$v=%2%4 for that places local time
+$z=actual local time in
+; Definitions for winter time
+$a=%e#1980 %e0@a#0@b-1
+$x=Sun:~%o$c,$w rise, %s$c,$w set, %u$c,$w day, %z$c,$w night~$l
+; Winter time in Germany == CEWT/GMT-1 (+60 minutes)
+$w=+60
+; Starting date of winter time in Germany
+b=10sun9
+; Definitions for summer time (daylight-saving time)
+$b=%e#1980 %i0@a#0@b-1
+$y=Sun:~%o$c,$s rise, %s$c,$s set, %u$c,$s day, %z$c,$s night~$l
+; Summer time in Germany == CEST/GMT-2 (+120 minutes)
+$s=+120
+; Starting date of summer time in Germany
+a=03sun9
+; Geographic co-ordinate and name of the location Muenster, Germany
+$c=+5158+00738+61
+$l=%1Muenster
+; Muenster's local time sunrise etc. for that places local time
+$p $a $x$v
+$p $b $y$v
+; Muenster's actual local time
+0 $a %1%@$w %2 $z $l
+0 $b %1%@$s %2 $z $l
+; Geographic co-ordinate and name of the location Bangkok, Thailand
+$c=+1345+10031+10
+$l=%3Bangkok%4-time converted to $l's%2 local time
+; Bangkok's sunrise etc. based on Muenster's local time
+$p $a $x
+$p $b $y
+; Bangkok's local time == WAST/GMT-7 (+420 minutes)
+$t=+420
+$w=$t
+; Bangkok's actual local time
+$l=%3Bangkok
+0 $a %3%@$t %4 $z $l
+0 $b %3%@$t %4 $z $l
+; Bangkok's sunrise etc. for that places local time
+$l=$l$v
+$p $x

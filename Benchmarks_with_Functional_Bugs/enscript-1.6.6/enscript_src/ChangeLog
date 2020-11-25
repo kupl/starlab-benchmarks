@@ -1,0 +1,499 @@
+2012-09-19  Tim Retout  <diocles@gnu.org>
+
+	* NEWS: Update for new release.
+
+	* afm/MustRead.html: New file containing licensing of Adobe AFM
+	files.  Savannah bug #35883.
+
+2011-07-10  Tim Retout  <diocles@gnu.org>
+
+	* po/: Sync all translations from the Translation Project.
+
+	* compat/gettext.h: New file.
+	* compat/Makefile.am (EXTRA_DIST): Add gettext.h.
+	* src/gsint.h: Use gettext.h instead of own libintl.h include.
+	* src/mkafmmap.c: Likewise.
+	* states/defs.h: Likewise.
+
+	* src/main.c (main): Join ENSCRIPT_LIBRARY error string together
+	for the benefit of translators.
+	Use ngettext when printing number of pages/copies.
+
+	* states/hl/mail.st: Support extended mail headers.
+	Savannah bug #25440.
+
+	* src/main.c (usage): Clarify documentation for short forms of
+	optional arguments.
+
+2011-07-09  Tim Retout  <diocles@gnu.org>
+
+	* src/main.c (handle_options): Add missing 'w' from
+	getopt_long call. Savannah bug #30651.
+
+	Apply patch 393791-sliceprint from Debian:
+	* scripts/sliceprint.1: Complete documentation.
+	* scripts/sliceprint.in: Force C locale.
+	Use more liberal regexp when parsing wrapped lines message.
+	Add missing space from before args. Savannah bug #31259.
+
+	* Makefile.am (SUBDIRS): Move intl to be built before compat.
+
+	* states/Makefile.am: Use $(datadir) instead of $(prefix)/share.
+	  Savannah bug #31609.
+	* src/Makefile.am: Likewise.
+
+	* src/Makefile.am: Remove ansi2knr option and supporting files.
+	* afmlib/Makefile.am: Likewise.
+
+	* states/utils.c (eval_expr): Fix typo in error string.
+	* states/main.c (usage): Fix typo in --define usage string.
+
+2010-09-10  W. Trevor King  <wking@drexel.edu>
+
+	* docs/FAQ.html: Fix typo.
+
+2010-06-02  Tim Retout  <diocles@gnu.org>
+
+	Fix Savannah bug #28769 (segfault when parsing config file).
+
+	* src/util.c (CFG_FATAL): Call buffer_ptr on &fname to get
+	configuration filename.
+	* src/util.c (read_config): Delay buffer_uninit call on fname
+	until return points.
+
+2010-03-17  Juergen Daubert  <jue@jue.li>
+	* src/main.c: Fix ngettext calls to use '1' explicitly.  Fixes
+	Savannah bug #29198.
+
+2010-03-07  Tim Retout  <diocles@gnu.org>
+
+	* src/gsint.h: Remove version_string and ps_version_string.
+	* src/main.c: Likewise.
+	* src/main.c (version): Update copyright and licensing
+	information. Use autoconf variables instead of hardcoded strings.
+	* src/main.c (usage): Add angle brackets around bug address.
+	* src/psgen.c (dump_ps_header): Set ps_version_string here.
+
+2010-03-06  Tim Retout  <diocles@gnu.org>
+
+	* configure.ac: Set version to 1.6.5.1.
+
+	* states/hl/Makefile.am (highlightings): Add f90.st.
+
+	* INSTALL: Move enscript-specific details into README, and remove
+	from the repository (i.e. just use the standard INSTALL file).
+	* README: Replace all old web/mail addresses.
+
+	* All Makefile.am files: Add ChangeLog.old to EXTRA_DIST.
+
+2010-02-03  Tim Retout  <diocles@gnu.org>
+
+	* All ChangeLog files in subdirectories have been renamed to
+	ChangeLog.old.  All change log entries from 1.6.5 onwards will be
+	made in this file.
+
+2010-01-28  Tim Retout  <diocles@gnu.org>
+
+	* docs/states.man (are): Fix typo of 'beginning'.
+	* docs/enscript.man: Fix three misspellings of 'dependent'.
+
+2010-01-25  Tim Retout  <diocles@gnu.org>
+
+	* configure.ac: Set version to 1.6.5.
+
+2009-12-31  Tim Retout  <diocles@gnu.org>
+
+	* configure.ac: Set version to 1.6.4.91.
+
+2009-12-27  Tim Retout  <diocles@gnu.org>
+
+	* configure.ac: Set version to 1.6.4.90.
+	* NEWS: Add noteworthy changes for 1.6.5, and a placeholder for
+	1.6.4.
+
+2009-01-13  Tim Retout  <diocles@gnu.org>
+
+	* COPYING: Update to GPLv3
+	* All files: Update license headers to GPLv3.
+
+2008-02-03  Tim Retout  <diocles@gnu.org>
+
+	* Makefile.am (EXTRA_DIST): Remove ABOUT-NLS, THANKS and config.rpath,
+	because these will be distributed anyway.
+
+	Remove autoconf-generated files.
+
+	* configure: Remove from repository.
+
+	Remove automake-generated files.
+
+	* Makefile.in: Remove from repository.
+	* afm/Makefile.in: Likewise.
+	* afmlib/Makefile.in: Likewise.
+	* afmlib/ansi2knr.1: Likewise.
+	* afmlib/ansi2knr.c: Likewise.
+	* compat/Makefile.in: Likewise.
+	* config.guess: Likewise.
+	* config.sub: Likewise.
+	* depcomp: Likewise.
+	* docs/Makefile.in: Likewise.
+	* docs/mdate-sh: Likewise.
+	* docs/texinfo.tex: Likewise.
+	* install-sh: Likewise.
+	* lib/Makefile.in: Likewise.
+	* missing: Likewise.
+	* mkinstalldirs: Likewise.
+	* scripts/Makefile.in: Likewise.
+	* src/Makefile.in: Likewise.
+	* src/ansi2knr.1: Likewise.
+	* src/ansi2knr.c: Likewise.
+	* src/tests/Makefile.in: Likewise.
+	* states/Makefile.in: Likewise.
+	* states/hl/Makefile.in: Likewise.
+	* states/tests/Makefile.in: Likewise.
+	* w32/Makefile.in: Likewise.
+
+	Remove autopoint-generated files.
+
+	* ABOUT-NLS: Remove from repository.
+	* config.rpath: Likewise.
+	* intl/ChangeLog: Likewise.
+	* intl/Makefile.in: Likewise.
+	* intl/VERSION: Likewise.
+	* intl/bindtextdom.c: Likewise.
+	* intl/config.charset: Likewise.
+	* intl/dcgettext.c: Likewise.
+	* intl/dcigettext.c: Likewise.
+	* intl/dcngettext.c: Likewise.
+	* intl/dgettext.c: Likewise.
+	* intl/dngettext.c: Likewise.
+	* intl/eval-plural.h: Likewise.
+	* intl/explodename.c: Likewise.
+	* intl/finddomain.c: Likewise.
+	* intl/gettext.c: Likewise.
+	* intl/gettextP.h: Likewise.
+	* intl/gmo.h: Likewise.
+	* intl/hash-string.h: Likewise.
+	* intl/intl-compat.c: Likewise.
+	* intl/l10nflist.c: Likewise.
+	* intl/libgnuintl.h: Likewise.
+	* intl/loadinfo.h: Likewise.
+	* intl/loadmsgcat.c: Likewise.
+	* intl/localcharset.c: Likewise.
+	* intl/locale.alias: Likewise.
+	* intl/localealias.c: Likewise.
+	* intl/localename.c: Likewise.
+	* intl/ngettext.c: Likewise.
+	* intl/os2compat.c: Likewise.
+	* intl/os2compat.h: Likewise.
+	* intl/osdep.c: Likewise.
+	* intl/plural-exp.c: Likewise.
+	* intl/plural-exp.h: Likewise.
+	* intl/plural.c: Likewise.
+	* intl/plural.y: Likewise.
+	* intl/ref-add.sin: Likewise.
+	* intl/ref-del.sin: Likewise.
+	* intl/textdomain.c: Likewise.
+
+	Remove the 'm4' directory from the repository.
+
+	* Makefile.am (SUBDIRS): Remove 'm4' directory.
+	* configure.ac: Remove 'm4/Makefile' from AC_CONFIG_FILES.
+	* m4/ChangeLog: Remove from repository.
+	* m4/codeset.m4: Likewise.
+	* m4/gettext.m4: Likewise.
+	* m4/glibc21.m4: Likewise.
+	* m4/iconv.m4: Likewise.
+	* m4/intdiv0.m4: Likewise.
+	* m4/inttypes_h.m4: Likewise.
+	* m4/inttypes.m4: Likewise.
+	* m4/inttypes-pri.m4: Likewise.
+	* m4/isc-posix.m4: Likewise.
+	* m4/lcmessage.m4: Likewise.
+	* m4/lib-ld.m4: Likewise.
+	* m4/lib-link.m4: Likewise.
+	* m4/lib-prefix.m4: Likewise.
+	* m4/Makefile.am: Likewise.
+	* m4/Makefile.in: Likewise.
+	* m4/progtest.m4: Likewise.
+	* m4/stdint_h.m4: Likewise.
+	* m4/uintmax_t.m4: Likewise.
+	* m4/ulonglong.m4: Likewise.
+
+2008-01-29  Tim Retout  <diocles@gnu.org>
+
+	* configure.ac: Remove AC_CONFIG_COMMANDS macro that was leaving
+	stamp-h files around after `make clean'.
+
+	* aclocal.m4: Removed from repository. Can be generated with `aclocal'.
+	* config.h.in: Likewise. Can be generated with `autoheader'.
+
+2008-01-06  Tim Retout  <diocles@gnu.org>
+
+	* configure.ac: Add AM_GNU_GETTEXT_VERSION([0.17]).
+	Remove ALL_LINGUAS.
+
+2008-01-02  Tim Retout  <diocles@gnu.org>
+
+	* configure.ac: Add description to PATH_SEPARATOR and
+	PATH_SEPARATOR_STR definitions.
+	* acconfig.h: Remove. Silences autoheader warning.
+
+	* configure.ac (AC_INIT): Quote arguments.
+	(AC_PREREQ): Bump required autoconf version to 2.61.
+	(AM_CONFIG_HEADER): Change to AC_CONFIG_HEADERS, quote arguments.
+	(AC_STDC_HEADERS): Change to AC_HEADER_STDC, quote arguments.
+	(AC_HAVE_HEADERS): Change to AC_CHECK_HEADERS, quote arguments.
+	Result of running autoupdate.
+	Also tidy order of macros.
+
+	* configure.ac (AC_ISC_POSIX): Replace with AC_USE_SYSTEM_EXTENSIONS
+	to silence some aclocal warnings.
+
+	* configure.ac (AC_REVISION): Remove.
+
+	* configure.in: Rename to `configure.ac'.
+
+2008-01-01  Tim Retout  <diocles@gnu.org>
+
+	* configure.in: Remove --with-cc option from configure script.
+	Remove test for empty CC from around AC_PROG_CC macro.
+
+	* configure.in (AC_INIT): Change bug report address to
+	<bug-enscript@gnu.org>.
+	Change package name to `GNU Enscript'.
+
+	* ChangeLog: Run M-x change-log-redate. Add copyright notice at end.
+
+2007-12-29  Tim Retout  <diocles@gnu.org>
+
+	* Makefile.am (SUBDIRS): Remove duplicate intl.
+
+2007-10-31  Tim Retout  <diocles@gnu.org>
+
+	* COPYING: Update to latest revision of GPLv2.
+	* all files: Update FSF address in copyright header.
+
+2003-02-28  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Add intl.
+	* configure.in (AC_OUTPUT): Add intl/Makefile,
+
+2003-02-28  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Add m4.
+	(ACLOCAL_AMFLAGS): New variable.
+	(EXTRA_DIST): Add config.rpath.
+	* configure.in (AC_OUTPUT): Add po/Makefile.in,
+	(AM_GNU_GETTEXT_VERSION): Bump to 0.11.5.
+
+1999-07-21  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* README: Added a special note for all US users about the
+	enscript's default output media (which is A4 instead of Letter).
+
+1999-01-19  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* Updated automake to version 1.4.
+
+1999-01-14  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* configure.in: Changed autoconf prereq to 2.13.
+
+1999-01-07  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* Updated development tools: autoconf-2.13, automake-1.3d.
+
+1998-12-31  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* configure.in: Removed a historical call of the AC_LINK_FILES.
+	It is handled in the AM_GNU_GETTEXT.
+
+1998-12-29  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* configure.in: Beta version 1.6.2 released.
+
+1998-12-08  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* Updated gettext to version 0.10.35.
+
+	* configure.in (ALL_LINGUAS): Added `ru'.
+
+1998-11-11  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* configure.in: Added checks for sys/types.h and sys/stat.h
+	headers.
+
+1998-10-23  Markku Rossi  <mtr@ngs.fi>
+
+	* Moved all documentation stuffs to the `docs' subdirectory.
+
+	* enscript.1.in: Documented the new highlighting options.
+
+1998-10-16  Markku Rossi  <mtr@ngs.fi>
+
+	* enscript.1.in: Updated the ^@font{} escape's syntax.
+
+1998-10-02  Markku Rossi  <mtr@ngs.fi>
+
+	* configure.in: Added more rules to lookup the gethostname()
+	function.  It is located in `libsocket.a' in the SCO OpenServer 5.
+
+1998-09-22  Markku Rossi  <mtr@ngs.fi>
+
+	* enscript.1.in: Replaced `@prefix@/share' and `@prefix@/etc' with
+	`@datadir@' and `@sysconfdir@'.
+
+1998-07-06  Markku Rossi  <mtr@ngs.fi>
+
+	* configure.in: Updated version number to 1.6.2.
+
+1998-07-01  Markku Rossi  <mtr@ngs.fi>
+
+	* 88591.txt: Changed 0xb9 to be `/onesuperior' instead of
+	`/dottlessi'.
+
+1998-06-25  Markku Rossi  <mtr@ngs.fi>
+
+	* configure.in: Added check for the strtoul() function.
+
+1998-06-23  Markku Rossi  <mtr@ngs.fi>
+
+	* configure.in (PSLEVEL): added option --with-ps-level to specify
+	the default PostScript language level that enscript should use.
+
+1998-06-16  Markku Rossi  <mtr@ngs.fi>
+
+	* configure.in: Updated version number to 1.6.1.
+
+1998-06-11  Markku Rossi  <mtr@ngs.fi>
+
+	* Renamed all ISO-8859-* encodings to conform their ISO names.
+	All uses changed.
+
+1998-03-25  Markku Rossi  <mtr@ngs.fi>
+
+	* 88597.txt: Added encoding for ISO-8859-7.  Thanks to Manolis
+	Lourakis <lourakis@csd.uch.gr>.
+
+1998-03-09  Markku Rossi  <mtr@ngs.fi>
+
+	* Upgraded automake to version 1.2e.
+
+	* configure.in: Updated version number to 1.5.6.
+
+1997-09-30  Markku Rossi  <mtr@ngs.fi>
+
+	* 88594.txt: Added encoding for ISO-8859-4 character set.  Thanks
+	to Ricardas Cepas <rch@pub.osf.lt> for the patches.
+
+1997-07-17  Markku Rossi  <mtr@ngs.fi>
+
+	* Upgraded automake to version 1.2.
+
+1997-07-16  Markku Rossi  <mtr@ngs.fi>
+
+	* Makefile.am: Added THANKS file.
+
+1997-05-22  Markku Rossi  <mtr@ngs.fi>
+
+	* configure.in (SPOOLER): added option --with-spooler to specify
+	the system printer spooler.
+
+	* Added a banner which shows the user definable options and their
+	current values.  This should save some emails.
+
+1997-04-14  Markku Rossi  <mtr@ngs.fi>
+
+	* INSTALL: Updated Autoconf related installation information.
+
+	* Updated COPYING and COPYING.LIB files to the latest ones.
+
+1997-02-12  Markku Rossi  <mtr@ngs.fi>
+
+	* Makefile.am: Added all FAQ related files to the distribution.
+
+1997-01-23  Markku Rossi  <mtr@ngs.fi>
+
+	* configure.in: Added checks form memmove() and memcpy() and added
+	their replacements to compat.
+	Added check for alloca().
+
+1997-01-21  Markku Rossi  <mtr@ngs.fi>
+
+	* Created a new tests subdirectory which holds the enscript
+	testsuite.
+
+	* Automake-1.1l.
+
+1996-11-05  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* 88595.txt: New encoding for ISO-8859-5 (ISO Cyrillic) character
+	set. Thanks for Ildar Khabibrakhmanov <ildar@hawking.math.mun.ca>
+	for the 88595.txt encoding file.
+
+1996-09-08  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* All encoding description files: changed name of the character
+	0x2d (-) from `/minus' to `/hyphen'.
+
+1996-09-07  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* koi8.txt: New encoding for Adobe's Standard Cyrillic Font KOI8.
+	Thanks for Ildar Khabibrakhmanov <ildar@hawking.math.mun.ca> for
+	the koi8.txt encoding file.
+
+1996-08-24  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* Updated developement tools: autoconf-2.10, automake-1.1c,
+	gettext-0.10.23.
+
+1996-07-28  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* Changed __P() macro to ___P() in all files where it was used.
+  	Now we won't clash with solaris' math.h which defines __P().
+
+1996-06-13  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* Automake-1.0.
+
+	* New subdirectory `scripts' for utility scripts.
+
+1996-06-06  Markku Rossi  <mtr@ngs.ngs.fi>
+
+	* gettext-0.10.16.
+
+1996-05-06  Markku Rossi  <mtr@ngs.fi>
+
+	* Automake-0.32.
+
+1996-03-14  Markku Rossi  <mtr@ngs.fi>
+
+	* Automake-0.31.
+
+	* configure.in: Removed CFLAGS and LDFLAGS defaults, use whatever
+ 	autoconf gives to us.
+
+1996-03-11  Markku Rossi  <mtr@ngs.fi>
+
+	* 88592.txt: fixed character 0xf0 from /eth to /dbar.
+
+1996-02-25  Markku Rossi  <mtr@ngs.fi>
+
+	* Reorganized source tree:
+	  - enscript source is moved to the new `src' sub-directory
+	  - `afm' directory is renamed to `afmlib'
+	  - `afmfiles' directory is renamed to `afm'
+
+	* Renamed program to `GNU enscript'.
+
+	* Made to use Automake utility.  The old top level Change log has
+	moved to the src subdirectory.
+
+
+Copyright (C) 1996, 1997, 1998, 1999, 2003, 2007, 2008 Free Software
+Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

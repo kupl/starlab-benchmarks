@@ -1,0 +1,36 @@
+2008-01-01  Tim Retout  <diocles@gnu.org>
+
+	* ChangeLog: Run M-x change-log-redate. Add copyright notice at end.
+
+1997-08-27  Markku Rossi  <mtr@ngs.fi>
+
+	* primregexp_syntax.test (result): Added test for regexp syntax
+	tables.
+
+	* primregexp.test: Added test for regexp() primitive.
+
+1997-07-18  Markku Rossi  <mtr@ngs.fi>
+
+	* icase.test: Added check for case-insensitive regular
+	expressions.
+
+1997-06-06  Markku Rossi  <mtr@ngs.fi>
+
+	* primfloat.test: Added checks for float() primitive.
+
+1997-04-14  Markku Rossi  <mtr@ngs.fi>
+
+	* exprs.test: Added tests for States language's expressions.
+
+1997-02-27  Markku Rossi  <mtr@ngs.fi>
+
+	* Cleaned up tests to work if buildir != srcdir.
+	Redirected stderr to stdout so more errors are caught at the run
+	time.
+
+
+Copyright (C) 1997, 2008 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

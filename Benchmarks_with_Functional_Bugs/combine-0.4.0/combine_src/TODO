@@ -1,0 +1,121 @@
+TASKS-----------------------------
+
+Fill out the --verbose option to cover all the options.
+
+Add the options that make sense to the join emulaiton.
+
+FInish the cut emulation.
+
+Where possible, use the library files in other GNU packages to ensure 
+maintenance and stability.
+
+Allow the user to record a set of options in a file to be used as base options, 
+modified by the command line.  This would allow common settings for input and 
+output delimiters not to clutter the command line.
+
+If a record delimiter is specified for the data file, make that the delimiter 
+for any reference files and the output file, unless someone says otherwise.  
+This will probably require an option for 'no delimiter'.
+
+More and better test cases, to test more features.  Also, fix problems in 
+running tests on other systems (shell compatibility).  In particular, more 
+negative tests such as full disk for output.
+
+Null Characters: Is it necessary to have a case-insensitive string comparison 
+that works with null characters?  Laziness demands use of existing functions.
+
+Categorizations of reference records and multiplication of flags and counters.
+
+Internationalization. Of messages. (Added gettext calls for error messages.  
+Now need translations.)
+
+Internationalization. Working with various character sets to allow 
+specifications in characters rather than bytes.
+
+Validation of more options for consistency.  (In the beginning before we waste 
+a lot of processing time.)
+
+Allow the insertion of data values into the hash table in the event that the 
+reference file does not have all the keys.
+
+Take an option for the record delimiter (and maybe the field delimiter) to 
+specify how much of it should be removed from consideration and how much should 
+be left in place either in the prior or the following string. (Example: \n0 in 
+a GEDCOM record should leave the 0 in the following record since the first 
+record will start with a 0) A similar problem is something like a \ before a 
+record end.  It may be that there should be a mechanism to treat \\\n as not a 
+record delimiter even if \n is normally one.
+
+Handle quoted ranges in delimited fields (and records?).
+
+Add an option to allow the user to set the base buffer size, which will be 
+increased as necessary to allow an entire record to fit into the buffer
+
+Better collision handling in the hash table.
+
+CONSIDER--------------------------
+
+INDEXING
+
+External sql-like options for calling combine.  Would first need to justify why 
+this would fall into the combine scope rather than MySQL or some separate front 
+end.
+
+Restate the user's options in an SQL-like statement.  (Likewise on 
+justification.  What is the balance of educating a particular user group and 
+other project needs?)
+
+Possible floating-point sum fields. (I'm thinking not, but there could be a 
+good reason in the future.)
+
+DONE------------------------------
+A If a field delimiter is specified for the data file, make that the delimiter 
+  for any reference files and the output file, unless someone says otherwise.  
+  This will probably require an option for 'no delimiter'.
+A Add more hash methods.  At the moment, direct conversion to a number should be
+  of interest for consecutive numbers.  In general the current algorithm 
+  overloads 0 and 1 and underloads the other numbers.
+A Extensibility?
+  A Reading in a base file of definitions.
+  A Adding hooks to call guile.
+    A Reading output fields
+    A Reading key fields
+    A Reading sum fields
+    A Filtering (perhaps a null response to reading a record?)
+    A Matches (additional criteria)
+    Extra Calculations
+    A Setup time
+    A Finish time.
+    A Reading an entire record.
+  A Date comparisons. (In guile)
+  A Pre-processing fields before matching.
+  A Post-processing fields for output. (ASCII/EBCDIC, Packed Decimal,
+    Date Formats, case/accent insensitivity, etc.)
+A Precision for the sum fields, for fixed decimal processing.
+A Possible quad-word sum fields.
+A Optional statistics.
+A Choice of verbose output.
+A Update flags and counters for all reference records with the same key.
+A Figure out how to handle possible cartesian joins with multiple reference records in one or more files.
+A Strings that may include null characters.
+A Working with more than one reference record with the same key.
+A Working with delimited input fields.
+A Working with records of a fixed non-delimited length.
+A Remove various length variables when they can be had from the string descriptors.
+A Storing fields individually rather than in a concatenated string. (Now done for output fields.  Not necessary for key fields.)
+A Explicit specification of order of output fields.
+A Handling of 0-length strings in dstring.
+A Fields from the reference and data files available for extensions.
+A Allow a data file field or other reference-file field to be the backup
+  for an optional reference field (rather than just spaces).
+A Allow a reference file to be treated as the data file as well in cases
+  where the keys are the same and our only goal is to summarize.
+A Create the ability to perform hierarchy looping: treating records in turn
+  as reference and then data records or looping through the hierarchy to
+  the end (or a given point).
+A Add an option to make either file optional: i.e. at the end of processing,
+  include all reference records that were not matched by a data record.
+A Null Characters: Check a non-c-string way to make guile variables.
+
+A Allow a range of input fields when delimited.  Currently only allows
+  one per comma.

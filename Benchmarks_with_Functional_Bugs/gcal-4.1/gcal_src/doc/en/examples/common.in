@@ -1,0 +1,59 @@
+; common.in
+;
+
+; The command(s) used within this example are prefixed with `%%%'.
+; The real call(s) of these command(s) are prefixed with `***'.
+;
+%%%cat common.rc
+***cat ./common.rc
+
+; The resource file line(s) used within this example are prefixed with `:::'.
+;
+:::; common.rc, a common example of a resource file.
+:::;
+:::19940715 Local time: %t  --> Dentist at 10:00
+:::00000921 My %B1962  birthday%i1952#2062
+:::0000093 Gregorian~Reformation\~is %y1752  years ago
+:::0000Sep03 Gregorian~Reformation\~is %y1752 years ago
+:::0 Every day in every month in every year
+:::0000 Every day in every month in every year
+:::00000000 Every day in every month in every year
+:::199400fri        Every Friday in 1994
+:::000007mo3 Every third Monday~in July every year less 1980%i#1979
+:::0000@e-10 Easter Sunday-10 days every year
+:::0@e-10 Easter Sunday-10 days every year
+:::0000@e+10 Easter Sunday+10 days every year
+:::a=1127
+:::0@a+20 20 days after date of date variable `a'
+:::a=*W10FR
+:::0@a-1 The Thursday of the 10th week every year
+:::0@a   The Friday of the 10th week every year
+:::0@a1  The Saturday of the 10th week every year
+:::1995*d10    The 10th absolute day in 1995
+:::1995*d99tue The last Tuesday in 1995
+:::0*w99su The Sunday of the last week every year
+:::;
+:::; Next entry is respected by ALL fixed date period modifiers.
+:::;
+:::1994*d1sun#99SUN.7 Each Sunday in 1994
+:::;
+:::; Day of Prayer & Repentance is Wednesday before the Sunday,
+:::;   which is before the 1st Advent's Sunday.
+:::;
+:::a=1225
+:::a=a-5sun
+:::0@a-4 Day of Prayer & Repentance
+:::; or
+:::0@a-1wed Day of Prayer & Repentance
+
+; Additionally leading Texinfo commands are prefixed with `+++'.
+;
++++example
++++group
++++cartouche
+
+; Additionally trailing Texinfo commands are prefixed with `---'.
+;
+---end cartouche
+---end group
+---end example

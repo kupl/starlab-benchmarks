@@ -1,0 +1,7 @@
+; redir.rc, run shell command $c and redirect it to $f
+;
+$p=0*d1#999
+$c=$p %!$c
+$g=|txt2gcal - $p
+;
+$c $g>$f

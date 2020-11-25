@@ -1,0 +1,31 @@
+;00001031 ^\
+                        .......^\
+                        ;::;::,^\
+                        ;::;::;,^\
+                       ;;::;;:;;,^\
+          .vmnv\%vnv\%,.;;;:::;;:;;,  .,vnmv\%vnn,^\
+       vmmmn\%vmmnv\%vnmmnv\%;;;;;;\%nmmmnv\%vnmv\%vmmv^\
+     vmmnv\%vmmmnv\%vnmmmmmnv\%;:\%nmmmmmmnv\%vnm\%vnmmmv^\
+    vmmnv\%vmmmnv\%vnmmmmmmmmnv\%nmmmmmmmmnv\%vnmm\%vnmmmv^\
+   vmmnv\%vmmmnv\%vnmmmmmmmmnv\%vmmmmmmmmmmnv\%vnmv\%vnmmmv^\
+  vmmnv\%vmmmnv\%vnmm;mmmmmmnv\%vmmmmmmmm;mmnv\%vnmv\%vnmmmv,^\
+ vmmnv\%vmmmnv\%vnmm;' mmmmmnv\%vmmmmmmm;' mmnv\%vnmv\%vnmmmv,^\
+ vmmnv\%vmmmnv\%vn;;    mmmmnv\%vmmmmmm;;    nv\%vnmmv\%vnmmmv^\
+vmmnv\%vmmmmnv\%v;;      mmmnv\%vmmmmm;;      v\%vnmmmv\%vnmmmv^\
+vmmnv\%vmmmmnv\%vnmmmmmmmmm;;      mmmmmmmmmnv\%vnmmmmv\%vnmmmv^\
+vmmnv\%vmmmmnv\%vnmmmmmmmmmm;;    mmmmmmmmmmnv\%vnmmmmv\%vnmmmv^\
+vmmnv\%vmmmmnv\%vnmmmmmmmmmmnv;,mmmmmmmmmmmmnv\%vn;mmmv\%vnmmmv^\
+vmmnv\%vmmm. nv\%vnmmmmmmmmmnv\%;mmmmmmmmmmmnv\%vn; mmmv\%vnmmmv^\
+`vmmnv\%vmm,  v\%vnmmmmmmmmmmnv\%nmmmmmmmmmmnv\%v;  mmv\%vnnmmv'^\
+ vmmnv\%vmm;,   \%vnmmmmmmmmmnv\%nmmmmmmmmmnv\%;'   mv\%vnmmmmv^\
+  vmmnv\%vmm;;,   nmmm;'             mmmm;;'    mv\%vnmmmmv'^\
+  `vmmnv\%vmmm;;,.         mmnvv;,            mmv\%vnmmmmv'^\
+   `vmmnv\%vmmmmnv\%vnmmmmmmmmnvvnmmmmmmnv\%vnmmmv\%vnmmmmv'^\
+     `vmvn\%vmmmmnv\%vnmmmmmmmnvvnmmmmmnv\%vnmmmm\%vnmmmv'^\
+         `v\%mmmmmn%:\%vnmnmmmmn\%vnmmmnv%:\%vnmv\%nmv'
+
+; A remarked line
+      ; Also a remarked line
+;     A                          \
+      formatted and multi-line   \
+      remark

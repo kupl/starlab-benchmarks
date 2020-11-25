@@ -1,0 +1,47 @@
+Chronology of Introduction of the Gregorian calendar.
+
+
+Country         Last day of   First day of  Gcal option
+                Julian        Gregorian
+                calendar      calendar
+
+------------------------------------------------------------------------------
+
+Italy           04-Oct-1582   15-Oct-1582   `--gregorian-reform=1582,10,05,14'
+Spain           04-Oct-1582   15-Oct-1582   `--gregorian-reform=1582,10,05,14'
+Portugal        04-Oct-1582   15-Oct-1582   `--gregorian-reform=1582,10,05,14'
+Poland          04-Oct-1582   15-Oct-1582   `--gregorian-reform=1582,10,05,14'
+France          09-Dec-1582   20-Dec-1582   `--gregorian-reform=1582,12,10,19'
+Luxembourg      21-Dec-1582   01-Jan-1583   `--gregorian-reform=1582,12,22,31'
+Netherlands     21-Dec-1582   01-Jan-1583   `--gregorian-reform=1582,12,22,31'
+Bavaria         05-Oct-1583   16-Oct-1583   `--gregorian-reform=1583,10,06,15'
+Austria         06-Jan-1584   17-Jan-1584   `--gregorian-reform=1584,01,07,16'
+Switzerland     11-Jan-1584   22-Jan-1584   `--gregorian-reform=1584,01,12,21'
+Hungary         21-Oct-1587   01-Nov-1587   `--gregorian-reform=1587,10,22,31'
+Germany         18-Feb-1700   01-Mar-1700   `--gregorian-reform=1700,02,19,28'
+                (1)
+Norway          18-Feb-1700   01-Mar-1700   `--gregorian-reform=1700,02,19,28'
+Denmark         18-Feb-1700   01-Mar-1700   `--gregorian-reform=1700,02,19,28'
+Great Britain   02-Sep-1752   14-Sep-1752   `--gregorian-reform=1752,09,03,13'
+Sweden          17-Feb-1753   01-Mar-1753   `--gregorian-reform=1753,02,18,28'
+Finland         17-Feb-1753   01-Mar-1753   `--gregorian-reform=1753,02,18,28'
+Japan                --       01-Jan-1873   `--gregorian-reform=1872,12,20,31'
+China                --       20-Nov-1911   `--gregorian-reform=1911,11,07,19'
+Bulgaria        31-Mar-1916   14-Apr-1916   `--gregorian-reform=1916,04,01,13'
+U.S.S.R.        31-Jan-1918   14-Feb-1918   `--gregorian-reform=1918,02,01,13'
+Serbia          18-Jan-1919   01-Feb-1919   `--gregorian-reform=1919,01,19,31'
+Romania         18-Jan-1919   01-Feb-1919   `--gregorian-reform=1919,01,19,31'
+Greece          09-Mar-1924   23-Mar-1924   `--gregorian-reform=1924,03,10,22'
+Turkey          18-Dec-1925   01-Jan-1926   `--gregorian-reform=1925,12,19,31'
+Egypt           17-Sep-1928   01-Oct-1928   `--gregorian-reform=1928,09,18,30'
+
+Reference:
+     S.J. Seleschnikow, "Wieviele Monde hat das Jahr?" (Kleine
+     Kalenderkunde), Aulis-Verlag Deubner & Co. KG, K"oln, 1'te Auflage
+     1981, ISBN 3-7516-060-2
+
+   ---------- Footnotes ----------
+
+   (1)  In protestant parts of Germany.  In some catholic minor states
+(Westfalen, W"urzburg, Mainz, Freiburg etc.), the new calendar was
+introduced during the years 1583/1584.

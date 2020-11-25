@@ -1,0 +1,46 @@
+2008-01-01  Tim Retout  <diocles@gnu.org>
+
+	* ChangeLog: Add copyright notice at end.
+
+1998-10-20  Markku Rossi  <mtr@ngs.fi>
+
+	* strerror.c: Removed the inclusion of `stdio.h'.
+
+	* regex.c: On Apple environment, add __private_extern__ before
+	symbols that conflict with the system's libc.
+
+1998-06-25  Markku Rossi  <mtr@ngs.fi>
+
+	* Makefile.am: Added strtoul() replacement.  The source files
+	strto{u,}l.c are borrowed from the glibc-2.0.
+
+1997-08-27  Markku Rossi  <mtr@ngs.fi>
+
+	* regex.c (re_set_character_syntax): New function to modify the
+	character syntax table.
+
+1997-07-03  Markku Rossi  <mtr@ngs.fi>
+
+	* Updated regex.{c,h} and getopt*.{c,h} files to the latest
+	versions found from GNU libc.
+
+1997-01-23  Markku Rossi  <mtr@ngs.fi>
+
+	* Makefile.am: Added memmove and memcpy replacements (from
+	textutils).
+
+1996-05-06  Markku Rossi  <mtr@ngs.fi>
+
+	* Makefile.am (EXTRA_DIST): Added EXTRA_DIST files to the
+	distribution.
+
+1996-03-14  Markku Rossi  <mtr@ngs.fi>
+
+	* Created this file.
+
+
+Copyright (C) 1996, 1997, 1998, 2008 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

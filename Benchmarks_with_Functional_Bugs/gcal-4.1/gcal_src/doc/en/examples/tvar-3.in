@@ -1,0 +1,30 @@
+; tvar-3.in
+;
+
+; The command(s) used within this example are prefixed with `%%%'.
+; The real call(s) of these command(s) are prefixed with `***'.
+;
+%%%cat tvar-3.rc
+***cat ./tvar-3.rc
+
+; The resource file line(s) used within this example are prefixed with `:::'.
+;
+:::; tvar-3.rc
+:::;
+:::$c=+00+000
+:::$h=
+:::$d=$c$h
+:::0 %o$d  %s$d
+:::0 \$c=$c  \$h=$h  \$d=$d  \$x=$x
+
+; Additionally leading Texinfo commands are prefixed with `+++'.
+;
++++example
++++group
++++cartouche
+
+; Additionally trailing Texinfo commands are prefixed with `---'.
+;
+---end cartouche
+---end group
+---end example

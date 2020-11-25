@@ -1,0 +1,31 @@
+; speci-1.in
+;
+
+; The command(s) used within this example are prefixed with `%%%'.
+; The real call(s) of these command(s) are prefixed with `***'.
+;
+%%%cat speci-1.rc
+***cat ./speci-1.rc
+
+; The resource file line(s) used within this example are prefixed with `:::'.
+;
+:::; I'm veracious very special :)
+:::;
+:::0 1. Today is %>1u*K , %>02&*D  %U  %Y !
+:::0 2. It's the %>03&*N  day of the year.
+:::0 3. The actual week number is: %k .
+:::0 4. Currently, it's %t*  o'clock, Mr. %-USER .
+:::0 5. Hurry up with your work~\
+:::   by reason sunrise is at %o+5158+00738+61,2: .
+
+; Additionally leading Texinfo commands are prefixed with `+++'.
+;
++++example
++++group
++++cartouche
+
+; Additionally trailing Texinfo commands are prefixed with `---'.
+;
+---end cartouche
+---end group
+---end example

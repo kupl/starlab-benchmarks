@@ -1,0 +1,6145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the GNU gcal package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU gcal 4.1\n"
+"Report-Msgid-Bugs-To: bug-gcal@gnu.org\n"
+"POT-Creation-Date: 2017-01-22 18:12+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/error.c:191
+msgid "Unknown system error"
+msgstr ""
+
+#: lib/regcomp.c:135
+msgid "Success"
+msgstr ""
+
+#: lib/regcomp.c:138
+msgid "No match"
+msgstr ""
+
+#: lib/regcomp.c:141
+msgid "Invalid regular expression"
+msgstr ""
+
+#: lib/regcomp.c:144
+msgid "Invalid collation character"
+msgstr ""
+
+#: lib/regcomp.c:147
+msgid "Invalid character class name"
+msgstr ""
+
+#: lib/regcomp.c:150
+msgid "Trailing backslash"
+msgstr ""
+
+#: lib/regcomp.c:153
+msgid "Invalid back reference"
+msgstr ""
+
+#: lib/regcomp.c:156
+msgid "Unmatched [, [^, [:, [., or [="
+msgstr ""
+
+#: lib/regcomp.c:159
+msgid "Unmatched ( or \\("
+msgstr ""
+
+#: lib/regcomp.c:162
+msgid "Unmatched \\{"
+msgstr ""
+
+#: lib/regcomp.c:165
+msgid "Invalid content of \\{\\}"
+msgstr ""
+
+#: lib/regcomp.c:168
+msgid "Invalid range end"
+msgstr ""
+
+#: lib/regcomp.c:171
+msgid "Memory exhausted"
+msgstr ""
+
+#: lib/regcomp.c:174
+msgid "Invalid preceding regular expression"
+msgstr ""
+
+#: lib/regcomp.c:177
+msgid "Premature end of regular expression"
+msgstr ""
+
+#: lib/regcomp.c:180
+msgid "Regular expression too big"
+msgstr ""
+
+#: lib/regcomp.c:183
+msgid "Unmatched ) or \\)"
+msgstr ""
+
+#: lib/regcomp.c:687
+msgid "No previous regular expression"
+msgstr ""
+
+#: lib/spawn-pipe.c:137 lib/spawn-pipe.c:140 lib/spawn-pipe.c:261
+#: lib/spawn-pipe.c:264
+#, c-format
+msgid "cannot create pipe"
+msgstr ""
+
+#: lib/spawn-pipe.c:231 lib/spawn-pipe.c:345 lib/wait-process.c:282
+#: lib/wait-process.c:356
+#, c-format
+msgid "%s subprocess failed"
+msgstr ""
+
+#: lib/w32spawn.h:45
+#, c-format
+msgid "_open_osfhandle failed"
+msgstr ""
+
+#: lib/w32spawn.h:86
+#, c-format
+msgid "cannot restore fd %d: dup2 failed"
+msgstr ""
+
+#: lib/wait-process.c:223 lib/wait-process.c:255 lib/wait-process.c:317
+#, c-format
+msgid "%s subprocess"
+msgstr ""
+
+#: lib/wait-process.c:274 lib/wait-process.c:346
+#, c-format
+msgid "%s subprocess got fatal signal %d"
+msgstr ""
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr ""
+
+#: src/file-io.c:1562
+#, c-format
+msgid "Try to write %s `%s'... %s%s%s"
+msgstr ""
+
+#: src/file-io.c:1565 src/file-io.c:1690 src/file-io.c:1703
+msgid "failed"
+msgstr ""
+
+#: src/file-io.c:1565 src/file-io.c:1690 src/file-io.c:1703
+msgid "success"
+msgstr ""
+
+#: src/file-io.c:1685
+#, c-format
+msgid "Try to open%sresource file `%s'... %s%s%s"
+msgstr ""
+
+#: src/file-io.c:1686
+msgid " `HERE' "
+msgstr ""
+
+#: src/file-io.c:1698
+#, c-format
+msgid "Try to open (level: %02d) include file `%s'... %s%s%s"
+msgstr ""
+
+#: src/gcal.c:346 src/gcal.c:517 src/gcal.c:2022
+msgid "ARG"
+msgstr ""
+
+#: src/gcal.c:1074 src/hd-data.c:70
+msgid "Germany"
+msgstr ""
+
+#: src/gcal.c:1075
+msgid "U.S.A."
+msgstr ""
+
+#: src/gcal.c:1076 src/hd-data.c:73
+msgid "Great Britain"
+msgstr ""
+
+#: src/gcal.c:1852
+msgid "default"
+msgstr ""
+
+#: src/gcal.c:1951
+msgid ":"
+msgstr ""
+
+#: src/gcal.c:1961
+msgid "Y"
+msgstr ""
+
+#: src/gcal.c:1966
+msgid "M"
+msgstr ""
+
+#: src/gcal.c:1971
+msgid "W"
+msgstr ""
+
+#: src/gcal.c:1976
+msgid "D"
+msgstr ""
+
+#: src/gcal.c:2067
+msgid "Fixed date list:"
+msgstr ""
+
+#: src/gcal.c:2084 src/gcal.c:2099
+msgid "environment variable"
+msgstr ""
+
+#: src/gcal.c:2268
+#, c-format
+msgid ""
+"%s: command in environment variable `%s' found -- %s\n"
+"%s\n"
+"%s\n"
+msgstr ""
+
+#: src/gcal.c:2455 src/gcal.c:2483 src/gcal.c:6231 src/rc-use.c:1829
+#: src/rc-use.c:1889 src/rc-use.c:1938 src/rc-use.c:2208 src/rc-utils.c:391
+#: src/rc-utils.c:412 src/utils.c:343 src/utils.c:366 src/utils.c:680
+msgid "Internal"
+msgstr ""
+
+#: src/gcal.c:2864
+msgid "response file"
+msgstr ""
+
+#: src/gcal.c:2864 src/gcal.c:2872
+msgid "Created"
+msgstr ""
+
+#: src/gcal.c:2872
+msgid "shell script"
+msgstr ""
+
+#: src/gcal.c:3083
+#, c-format
+msgid "Mail from \\`%s' (%02d-%s-%04d %02d%s%02d%s%02d"
+msgstr ""
+
+#: src/gcal.c:3135
+#, c-format
+msgid "%s: warning, eMail with empty message body not sent to <%s>.\n"
+msgstr ""
+
+#: src/gcal.c:4945 src/gcal.c:4978
+msgid "command line"
+msgstr ""
+
+#: src/gcal.c:5895
+#, c-format
+msgid "%s: option `%s' is ambiguous"
+msgstr ""
+
+#: src/gcal.c:5900 src/tcal.c:897 src/txt2gcal.c:717 src/gcal2txt.c:716
+#, c-format
+msgid "%s: unrecognized option `%s'"
+msgstr ""
+
+#: src/gcal.c:5903
+#, c-format
+msgid "%s: invalid option -- %s"
+msgstr ""
+
+#: src/gcal.c:5910
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument"
+msgstr ""
+
+#: src/gcal.c:5915
+#, c-format
+msgid "%s: option `%s' doesn't allow an argument"
+msgstr ""
+
+#: src/gcal.c:5921
+#, c-format
+msgid "%s: option `%s' requires an argument"
+msgstr ""
+
+#: src/gcal.c:5925
+#, c-format
+msgid "%s: option requires an argument -- %s"
+msgstr ""
+
+#: src/gcal.c:5930 src/tcal.c:943
+#, c-format
+msgid "%s: option with invalid argument -- %s"
+msgstr ""
+
+#: src/gcal.c:5935
+#, c-format
+msgid "%s: option with ambiguous argument -- %s"
+msgstr ""
+
+#: src/gcal.c:5995
+#, c-format
+msgid ""
+"%s: invalid date given -- %c%s\n"
+"%s\n"
+"%s\n"
+msgstr ""
+
+#: src/hd-data.c:64
+msgid "Australia"
+msgstr ""
+
+#: src/hd-data.c:65 src/hd-data.c:113
+msgid "Belgium"
+msgstr ""
+
+#: src/hd-data.c:66 src/hd-data.c:122
+msgid "Brazil"
+msgstr ""
+
+#: src/hd-data.c:67
+msgid "Canada"
+msgstr ""
+
+#: src/hd-data.c:68
+msgid "Switzerland"
+msgstr ""
+
+#: src/hd-data.c:69 src/hd-data.c:175
+msgid "China"
+msgstr ""
+
+#: src/hd-data.c:71 src/hd-data.c:209
+msgid "Spain"
+msgstr ""
+
+#: src/hd-data.c:72 src/hd-data.c:216
+msgid "France"
+msgstr ""
+
+#: src/hd-data.c:74 src/hd-data.c:245
+msgid "Israel"
+msgstr ""
+
+#: src/hd-data.c:75 src/hd-data.c:250
+msgid "Italy"
+msgstr ""
+
+#: src/hd-data.c:76 src/hd-data.c:253
+msgid "Japan"
+msgstr ""
+
+#: src/hd-data.c:77 src/hd-data.c:261
+msgid "Republic of Korea"
+msgstr ""
+
+#: src/hd-data.c:78 src/hd-data.c:293
+msgid "Mexico"
+msgstr ""
+
+#: src/hd-data.c:79 src/hd-data.c:302
+msgid "Netherlands"
+msgstr ""
+
+#: src/hd-data.c:80 src/hd-data.c:308
+msgid "New Zealand"
+msgstr ""
+
+#: src/hd-data.c:81 src/hd-data.c:320
+msgid "Portugal"
+msgstr ""
+
+#: src/hd-data.c:82 src/hd-data.c:326
+msgid "Russian Federation"
+msgstr ""
+
+#: src/hd-data.c:83
+msgid "United States"
+msgstr ""
+
+#: src/hd-data.c:85
+msgid "Andorra"
+msgstr ""
+
+#: src/hd-data.c:86
+msgid "United Arab Emirates"
+msgstr ""
+
+#: src/hd-data.c:87
+msgid "Afghanistan"
+msgstr ""
+
+#: src/hd-data.c:88
+msgid "Antigua and Barbuda"
+msgstr ""
+
+#: src/hd-data.c:89
+msgid "Anguilla"
+msgstr ""
+
+#: src/hd-data.c:90
+msgid "Albania"
+msgstr ""
+
+#: src/hd-data.c:91
+msgid "Armenia"
+msgstr ""
+
+#: src/hd-data.c:92
+msgid "Netherlands Antilles/Bonaire"
+msgstr ""
+
+#: src/hd-data.c:93
+msgid "Netherlands Antilles/Curaçao"
+msgstr ""
+
+#: src/hd-data.c:94
+msgid "Netherlands Antilles/St Maarten"
+msgstr ""
+
+#: src/hd-data.c:95
+msgid "Netherlands Antilles/Saba and Statia"
+msgstr ""
+
+#: src/hd-data.c:96
+msgid "Angola #"
+msgstr ""
+
+#: src/hd-data.c:97
+msgid "Argentina"
+msgstr ""
+
+#: src/hd-data.c:98
+msgid "American Samoa"
+msgstr ""
+
+#: src/hd-data.c:99
+msgid "Austria"
+msgstr ""
+
+#: src/hd-data.c:100
+msgid "Australia/Canberra"
+msgstr ""
+
+#: src/hd-data.c:101
+msgid "Australia/Northern Territory"
+msgstr ""
+
+#: src/hd-data.c:102
+msgid "Australia/Queensland"
+msgstr ""
+
+#: src/hd-data.c:103
+msgid "Australia/Southern Australia"
+msgstr ""
+
+#: src/hd-data.c:104
+msgid "Australia/New South Wales"
+msgstr ""
+
+#: src/hd-data.c:105
+msgid "Australia/Tasmania"
+msgstr ""
+
+#: src/hd-data.c:106
+msgid "Australia/Victoria"
+msgstr ""
+
+#: src/hd-data.c:107
+msgid "Australia/Western Australia"
+msgstr ""
+
+#: src/hd-data.c:108
+msgid "Aruba"
+msgstr ""
+
+#: src/hd-data.c:109
+msgid "Azerbaijan"
+msgstr ""
+
+#: src/hd-data.c:110
+msgid "Bosnia-Herzegovina"
+msgstr ""
+
+#: src/hd-data.c:111
+msgid "Barbados"
+msgstr ""
+
+#: src/hd-data.c:112
+msgid "Bangladesh #"
+msgstr ""
+
+#: src/hd-data.c:114
+msgid "Burkina Faso"
+msgstr ""
+
+#: src/hd-data.c:115
+msgid "Bulgaria"
+msgstr ""
+
+#: src/hd-data.c:116
+msgid "Bahrain"
+msgstr ""
+
+#: src/hd-data.c:117
+msgid "Burundi #"
+msgstr ""
+
+#: src/hd-data.c:118
+msgid "Benin #"
+msgstr ""
+
+#: src/hd-data.c:119
+msgid "Bermuda"
+msgstr ""
+
+#: src/hd-data.c:120
+msgid "Brunei"
+msgstr ""
+
+#: src/hd-data.c:121
+msgid "Bolivia"
+msgstr ""
+
+#: src/hd-data.c:123
+msgid "Bahamas"
+msgstr ""
+
+#: src/hd-data.c:124
+msgid "Bhutan #"
+msgstr ""
+
+#: src/hd-data.c:125
+msgid "Bouvet Island"
+msgstr ""
+
+#: src/hd-data.c:126
+msgid "Botswana"
+msgstr ""
+
+#: src/hd-data.c:127
+msgid "Belarus"
+msgstr ""
+
+#: src/hd-data.c:128
+msgid "Belize"
+msgstr ""
+
+#: src/hd-data.c:129
+msgid "Canada/Alberta"
+msgstr ""
+
+#: src/hd-data.c:130
+msgid "Canada/British Columbia"
+msgstr ""
+
+#: src/hd-data.c:131
+msgid "Canada/Manitoba"
+msgstr ""
+
+#: src/hd-data.c:132
+msgid "Canada/New Brunswick"
+msgstr ""
+
+#: src/hd-data.c:133
+msgid "Canada/Newfoundland and Labrador"
+msgstr ""
+
+#: src/hd-data.c:134
+msgid "Canada/Nova Scotia"
+msgstr ""
+
+#: src/hd-data.c:135
+msgid "Canada/Northwest Territories"
+msgstr ""
+
+#: src/hd-data.c:136
+msgid "Canada/Ontario"
+msgstr ""
+
+#: src/hd-data.c:137
+msgid "Canada/Prince Edward Island"
+msgstr ""
+
+#: src/hd-data.c:138
+msgid "Canada/Québec"
+msgstr ""
+
+#: src/hd-data.c:139
+msgid "Canada/Saskatchewan"
+msgstr ""
+
+#: src/hd-data.c:140
+msgid "Canada/Yukon"
+msgstr ""
+
+#: src/hd-data.c:141
+msgid "Cocos Islands (Keeling)"
+msgstr ""
+
+#: src/hd-data.c:142
+msgid "Democratic Republic of Congo #"
+msgstr ""
+
+#: src/hd-data.c:143
+msgid "Central African Republic #"
+msgstr ""
+
+#: src/hd-data.c:144
+msgid "Republic of Congo #"
+msgstr ""
+
+#: src/hd-data.c:145
+msgid "Switzerland/Aargau"
+msgstr ""
+
+#: src/hd-data.c:146
+msgid "Switzerland/Appenzell Innerrhoden"
+msgstr ""
+
+#: src/hd-data.c:147
+msgid "Switzerland/Appenzell Ausserrhoden"
+msgstr ""
+
+#: src/hd-data.c:148
+msgid "Switzerland/Bern"
+msgstr ""
+
+#: src/hd-data.c:149
+msgid "Switzerland/Basel-Landschaft"
+msgstr ""
+
+#: src/hd-data.c:150
+msgid "Switzerland/Basel-Stadt"
+msgstr ""
+
+#: src/hd-data.c:151
+msgid "Switzerland/Fribourg"
+msgstr ""
+
+#: src/hd-data.c:152
+msgid "Switzerland/Genève"
+msgstr ""
+
+#: src/hd-data.c:153
+msgid "Switzerland/Glarus"
+msgstr ""
+
+#: src/hd-data.c:154
+msgid "Switzerland/Graubünden"
+msgstr ""
+
+#: src/hd-data.c:155
+msgid "Switzerland/Jura"
+msgstr ""
+
+#: src/hd-data.c:156
+msgid "Switzerland/Luzern"
+msgstr ""
+
+#: src/hd-data.c:157
+msgid "Switzerland/Neuchâtel"
+msgstr ""
+
+#: src/hd-data.c:158
+msgid "Switzerland/Nidwalden"
+msgstr ""
+
+#: src/hd-data.c:159
+msgid "Switzerland/Obwalden"
+msgstr ""
+
+#: src/hd-data.c:160
+msgid "Switzerland/St Gallen"
+msgstr ""
+
+#: src/hd-data.c:161
+msgid "Switzerland/Schaffhausen"
+msgstr ""
+
+#: src/hd-data.c:162
+msgid "Switzerland/Solothurn"
+msgstr ""
+
+#: src/hd-data.c:163
+msgid "Switzerland/Schwyz"
+msgstr ""
+
+#: src/hd-data.c:164
+msgid "Switzerland/Thurgau"
+msgstr ""
+
+#: src/hd-data.c:165
+msgid "Switzerland/Ticino"
+msgstr ""
+
+#: src/hd-data.c:166
+msgid "Switzerland/Uri"
+msgstr ""
+
+#: src/hd-data.c:167
+msgid "Switzerland/Vaud"
+msgstr ""
+
+#: src/hd-data.c:168
+msgid "Switzerland/Valais"
+msgstr ""
+
+#: src/hd-data.c:169
+msgid "Switzerland/Zug"
+msgstr ""
+
+#: src/hd-data.c:170
+msgid "Switzerland/Zürich"
+msgstr ""
+
+#: src/hd-data.c:171
+msgid "Côte d'Ivoire"
+msgstr ""
+
+#: src/hd-data.c:172
+msgid "Cook Islands"
+msgstr ""
+
+#: src/hd-data.c:173
+msgid "Chile"
+msgstr ""
+
+#: src/hd-data.c:174
+msgid "Cameroon"
+msgstr ""
+
+#: src/hd-data.c:176
+msgid "Colombia"
+msgstr ""
+
+#: src/hd-data.c:177
+msgid "Costa Rica"
+msgstr ""
+
+#: src/hd-data.c:178
+msgid "Cuba"
+msgstr ""
+
+#: src/hd-data.c:179
+msgid "Cape Verde"
+msgstr ""
+
+#: src/hd-data.c:180
+msgid "Christmas Islands"
+msgstr ""
+
+#: src/hd-data.c:181
+msgid "Cyprus"
+msgstr ""
+
+#: src/hd-data.c:182
+msgid "Czech Republic"
+msgstr ""
+
+#: src/hd-data.c:183
+msgid "Germany/Brandenburg"
+msgstr ""
+
+#: src/hd-data.c:184
+msgid "Germany/Berlin"
+msgstr ""
+
+#: src/hd-data.c:185
+msgid "Germany/Baden-Württemberg"
+msgstr ""
+
+#: src/hd-data.c:186
+msgid "Germany/Bavaria"
+msgstr ""
+
+#: src/hd-data.c:187
+msgid "Germany/Bremen"
+msgstr ""
+
+#: src/hd-data.c:188
+msgid "Germany/Hesse"
+msgstr ""
+
+#: src/hd-data.c:189
+msgid "Germany/Hamburg"
+msgstr ""
+
+#: src/hd-data.c:190
+msgid "Germany/Mecklenburg-West Pomerania"
+msgstr ""
+
+#: src/hd-data.c:191
+msgid "Germany/Lower Saxony"
+msgstr ""
+
+#: src/hd-data.c:192
+msgid "Germany/North Rhine-Westphalia"
+msgstr ""
+
+#: src/hd-data.c:193
+msgid "Germany/Rhineland Palatinate"
+msgstr ""
+
+#: src/hd-data.c:194
+msgid "Germany/Schleswig-Holstein"
+msgstr ""
+
+#: src/hd-data.c:195
+msgid "Germany/Saarland"
+msgstr ""
+
+#: src/hd-data.c:196
+msgid "Germany/Saxony"
+msgstr ""
+
+#: src/hd-data.c:197
+msgid "Germany/Saxony-Anhalt"
+msgstr ""
+
+#: src/hd-data.c:198
+msgid "Germany/Thuringia"
+msgstr ""
+
+#: src/hd-data.c:199
+msgid "Djibouti"
+msgstr ""
+
+#: src/hd-data.c:200
+msgid "Denmark"
+msgstr ""
+
+#: src/hd-data.c:201
+msgid "Dominica"
+msgstr ""
+
+#: src/hd-data.c:202
+msgid "Dominican Republic"
+msgstr ""
+
+#: src/hd-data.c:203
+msgid "Algeria"
+msgstr ""
+
+#: src/hd-data.c:204
+msgid "Ecuador"
+msgstr ""
+
+#: src/hd-data.c:205
+msgid "Estonia"
+msgstr ""
+
+#: src/hd-data.c:206
+msgid "Egypt"
+msgstr ""
+
+#: src/hd-data.c:207
+msgid "Western Sahara"
+msgstr ""
+
+#: src/hd-data.c:208
+msgid "Eritrea"
+msgstr ""
+
+#: src/hd-data.c:210
+msgid "Ethiopia"
+msgstr ""
+
+#: src/hd-data.c:211
+msgid "Finland"
+msgstr ""
+
+#: src/hd-data.c:212
+msgid "Fiji #"
+msgstr ""
+
+#: src/hd-data.c:213
+msgid "Falkland Islands (Malvinas)"
+msgstr ""
+
+#: src/hd-data.c:214
+msgid "Federated States of Micronesia"
+msgstr ""
+
+#: src/hd-data.c:215
+msgid "Faroes"
+msgstr ""
+
+#: src/hd-data.c:217
+msgid "Gabon #"
+msgstr ""
+
+#: src/hd-data.c:218
+msgid "Great Britain/England and Wales"
+msgstr ""
+
+#: src/hd-data.c:219
+msgid "Great Britain/Northern Ireland"
+msgstr ""
+
+#: src/hd-data.c:220
+msgid "Great Britain/Scotland"
+msgstr ""
+
+#: src/hd-data.c:221
+msgid "Grenada"
+msgstr ""
+
+#: src/hd-data.c:222
+msgid "Georgia"
+msgstr ""
+
+#: src/hd-data.c:223
+msgid "French Guiana"
+msgstr ""
+
+#: src/hd-data.c:224
+msgid "Ghana"
+msgstr ""
+
+#: src/hd-data.c:225
+msgid "Gibraltar"
+msgstr ""
+
+#: src/hd-data.c:226
+msgid "Greenland"
+msgstr ""
+
+#: src/hd-data.c:227
+msgid "Gambia"
+msgstr ""
+
+#: src/hd-data.c:228
+msgid "Guinea"
+msgstr ""
+
+#: src/hd-data.c:229
+msgid "Guadeloupe"
+msgstr ""
+
+#: src/hd-data.c:230
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: src/hd-data.c:231
+msgid "Greece"
+msgstr ""
+
+#: src/hd-data.c:232
+msgid "South Georgia and South Sandwich Islands"
+msgstr ""
+
+#: src/hd-data.c:233
+msgid "Guatemala"
+msgstr ""
+
+#: src/hd-data.c:234
+msgid "Guam"
+msgstr ""
+
+#: src/hd-data.c:235
+msgid "Guinea-Bissau #"
+msgstr ""
+
+#: src/hd-data.c:236
+msgid "Guyana #"
+msgstr ""
+
+#: src/hd-data.c:237
+msgid "Hong Kong"
+msgstr ""
+
+#: src/hd-data.c:238
+msgid "Heard and Mc Donald Islands"
+msgstr ""
+
+#: src/hd-data.c:239
+msgid "Honduras"
+msgstr ""
+
+#: src/hd-data.c:240
+msgid "Croatia"
+msgstr ""
+
+#: src/hd-data.c:241
+msgid "Haiti"
+msgstr ""
+
+#: src/hd-data.c:242
+msgid "Hungary"
+msgstr ""
+
+#: src/hd-data.c:243
+msgid "Indonesia #"
+msgstr ""
+
+#: src/hd-data.c:244
+msgid "Ireland"
+msgstr ""
+
+#: src/hd-data.c:246
+msgid "India #"
+msgstr ""
+
+#: src/hd-data.c:247
+msgid "Iraq"
+msgstr ""
+
+#: src/hd-data.c:248
+msgid "Islamic Republic of Iran"
+msgstr ""
+
+#: src/hd-data.c:249
+msgid "Iceland"
+msgstr ""
+
+#: src/hd-data.c:251
+msgid "Jamaica"
+msgstr ""
+
+#: src/hd-data.c:252
+msgid "Jordan"
+msgstr ""
+
+#: src/hd-data.c:254
+msgid "Kenya #"
+msgstr ""
+
+#: src/hd-data.c:255
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: src/hd-data.c:256
+msgid "Cambodia #"
+msgstr ""
+
+#: src/hd-data.c:257
+msgid "Kiribati #"
+msgstr ""
+
+#: src/hd-data.c:258
+msgid "Comoros"
+msgstr ""
+
+#: src/hd-data.c:259
+msgid "St Kitts and Nevis"
+msgstr ""
+
+#: src/hd-data.c:260
+msgid "Democratic People's Republic of Korea"
+msgstr ""
+
+#: src/hd-data.c:262
+msgid "Kuwait"
+msgstr ""
+
+#: src/hd-data.c:263
+msgid "Cayman Islands"
+msgstr ""
+
+#: src/hd-data.c:264
+msgid "Kazakhstan"
+msgstr ""
+
+#: src/hd-data.c:265
+msgid "Laos People's Democratic Republic #"
+msgstr ""
+
+#: src/hd-data.c:266
+msgid "Lebanon"
+msgstr ""
+
+#: src/hd-data.c:267
+msgid "St Lucia"
+msgstr ""
+
+#: src/hd-data.c:268
+msgid "Liechtenstein"
+msgstr ""
+
+#: src/hd-data.c:269
+msgid "Sri Lanka #"
+msgstr ""
+
+#: src/hd-data.c:270
+msgid "Liberia"
+msgstr ""
+
+#: src/hd-data.c:271
+msgid "Lesotho"
+msgstr ""
+
+#: src/hd-data.c:272
+msgid "Lithuania"
+msgstr ""
+
+#: src/hd-data.c:273
+msgid "Luxembourg"
+msgstr ""
+
+#: src/hd-data.c:274
+msgid "Latvia"
+msgstr ""
+
+#: src/hd-data.c:275
+msgid "Libyan Arab Jamahiriya (Libya)"
+msgstr ""
+
+#: src/hd-data.c:276
+msgid "Morocco"
+msgstr ""
+
+#: src/hd-data.c:277
+msgid "Monaco"
+msgstr ""
+
+#: src/hd-data.c:278
+msgid "Republic of Moldova"
+msgstr ""
+
+#: src/hd-data.c:279
+msgid "Madagascar #"
+msgstr ""
+
+#: src/hd-data.c:280
+msgid "Marshall Islands"
+msgstr ""
+
+#: src/hd-data.c:281
+msgid "Former Yugoslav Republic of Macedonia"
+msgstr ""
+
+#: src/hd-data.c:282
+msgid "Mali"
+msgstr ""
+
+#: src/hd-data.c:283
+msgid "Mongolia #"
+msgstr ""
+
+#: src/hd-data.c:284
+msgid "Macau"
+msgstr ""
+
+#: src/hd-data.c:285
+msgid "Northern Marian Islands (Saipan)"
+msgstr ""
+
+#: src/hd-data.c:286
+msgid "Martinique"
+msgstr ""
+
+#: src/hd-data.c:287
+msgid "Mauritania"
+msgstr ""
+
+#: src/hd-data.c:288
+msgid "Montserrat"
+msgstr ""
+
+#: src/hd-data.c:289
+msgid "Malta"
+msgstr ""
+
+#: src/hd-data.c:290
+msgid "Mauritius"
+msgstr ""
+
+#: src/hd-data.c:291
+msgid "Maldives"
+msgstr ""
+
+#: src/hd-data.c:292
+msgid "Malawi"
+msgstr ""
+
+#: src/hd-data.c:294
+msgid "Malaysia #"
+msgstr ""
+
+#: src/hd-data.c:295
+msgid "Mozambique"
+msgstr ""
+
+#: src/hd-data.c:296
+msgid "Namibia"
+msgstr ""
+
+#: src/hd-data.c:297
+msgid "New Caledonia"
+msgstr ""
+
+#: src/hd-data.c:298
+msgid "Niger"
+msgstr ""
+
+#: src/hd-data.c:299
+msgid "Norfolk Island"
+msgstr ""
+
+#: src/hd-data.c:300
+msgid "Nigeria"
+msgstr ""
+
+#: src/hd-data.c:301
+msgid "Nicaragua"
+msgstr ""
+
+#: src/hd-data.c:303
+msgid "Myanmar (Burma) #"
+msgstr ""
+
+#: src/hd-data.c:304
+msgid "Norway"
+msgstr ""
+
+#: src/hd-data.c:305
+msgid "Nepal #"
+msgstr ""
+
+#: src/hd-data.c:306
+msgid "Nauru"
+msgstr ""
+
+#: src/hd-data.c:307
+msgid "Niue"
+msgstr ""
+
+#: src/hd-data.c:309
+msgid "Oman"
+msgstr ""
+
+#: src/hd-data.c:310
+msgid "Panama"
+msgstr ""
+
+#: src/hd-data.c:311
+msgid "Peru"
+msgstr ""
+
+#: src/hd-data.c:312
+msgid "French Polynesia"
+msgstr ""
+
+#: src/hd-data.c:313
+msgid "Papua New Guinea"
+msgstr ""
+
+#: src/hd-data.c:314
+msgid "Philippines"
+msgstr ""
+
+#: src/hd-data.c:315
+msgid "Pakistan"
+msgstr ""
+
+#: src/hd-data.c:316
+msgid "Poland"
+msgstr ""
+
+#: src/hd-data.c:317
+msgid "Saint-Pierre and Miquelon"
+msgstr ""
+
+#: src/hd-data.c:318
+msgid "Pitcairn"
+msgstr ""
+
+#: src/hd-data.c:319
+msgid "Puerto Rico"
+msgstr ""
+
+#: src/hd-data.c:321
+msgid "Palau"
+msgstr ""
+
+#: src/hd-data.c:322
+msgid "Paraguay"
+msgstr ""
+
+#: src/hd-data.c:323
+msgid "Qatar"
+msgstr ""
+
+#: src/hd-data.c:324
+msgid "Réunion"
+msgstr ""
+
+#: src/hd-data.c:325
+msgid "Romania"
+msgstr ""
+
+#: src/hd-data.c:327
+msgid "Rwanda"
+msgstr ""
+
+#: src/hd-data.c:328
+msgid "Saudi Arabia"
+msgstr ""
+
+#: src/hd-data.c:329
+msgid "Solomon Islands"
+msgstr ""
+
+#: src/hd-data.c:330
+msgid "Seychellen"
+msgstr ""
+
+#: src/hd-data.c:331
+msgid "Sudan"
+msgstr ""
+
+#: src/hd-data.c:332
+msgid "Sweden"
+msgstr ""
+
+#: src/hd-data.c:333
+msgid "Singapore #"
+msgstr ""
+
+#: src/hd-data.c:334
+msgid "St Helena"
+msgstr ""
+
+#: src/hd-data.c:335
+msgid "Slovenia"
+msgstr ""
+
+#: src/hd-data.c:336
+msgid "Svalbard and Jan Mayen Islands"
+msgstr ""
+
+#: src/hd-data.c:337
+msgid "Slovakia"
+msgstr ""
+
+#: src/hd-data.c:338
+msgid "Sierra Leone"
+msgstr ""
+
+#: src/hd-data.c:339
+msgid "San Marino"
+msgstr ""
+
+#: src/hd-data.c:340
+msgid "Senegal"
+msgstr ""
+
+#: src/hd-data.c:341
+msgid "Somalia"
+msgstr ""
+
+#: src/hd-data.c:342
+msgid "Suriname #"
+msgstr ""
+
+#: src/hd-data.c:343
+msgid "Sao Tomé and Principe"
+msgstr ""
+
+#: src/hd-data.c:344
+msgid "El Salvador"
+msgstr ""
+
+#: src/hd-data.c:345
+msgid "Syrian Arab Republic (Syria)"
+msgstr ""
+
+#: src/hd-data.c:346
+msgid "Swaziland"
+msgstr ""
+
+#: src/hd-data.c:347
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#: src/hd-data.c:348
+msgid "Chad"
+msgstr ""
+
+#: src/hd-data.c:349
+msgid "Togo #"
+msgstr ""
+
+#: src/hd-data.c:350
+msgid "Thailand #"
+msgstr ""
+
+#: src/hd-data.c:351
+msgid "Tajikistan"
+msgstr ""
+
+#: src/hd-data.c:352
+msgid "Tokelau"
+msgstr ""
+
+#: src/hd-data.c:353
+msgid "Turkmenistan"
+msgstr ""
+
+#: src/hd-data.c:354
+msgid "Tunisia"
+msgstr ""
+
+#: src/hd-data.c:355
+msgid "Tonga"
+msgstr ""
+
+#: src/hd-data.c:356
+msgid "Turkey"
+msgstr ""
+
+#: src/hd-data.c:357
+msgid "Trinidad and Tobago #"
+msgstr ""
+
+#: src/hd-data.c:358
+msgid "Tuvalu"
+msgstr ""
+
+#: src/hd-data.c:359
+msgid "Taiwan"
+msgstr ""
+
+#: src/hd-data.c:360
+msgid "Tanzania"
+msgstr ""
+
+#: src/hd-data.c:361
+msgid "Ukraine"
+msgstr ""
+
+#: src/hd-data.c:362
+msgid "Uganda"
+msgstr ""
+
+#: src/hd-data.c:363
+msgid "United States/Alaska"
+msgstr ""
+
+#: src/hd-data.c:364
+msgid "United States/Alabama"
+msgstr ""
+
+#: src/hd-data.c:365
+msgid "United States/Arkansas"
+msgstr ""
+
+#: src/hd-data.c:366
+msgid "United States/Arizona"
+msgstr ""
+
+#: src/hd-data.c:367
+msgid "United States/California"
+msgstr ""
+
+#: src/hd-data.c:368
+msgid "United States/Colorado"
+msgstr ""
+
+#: src/hd-data.c:369
+msgid "United States/Connecticut"
+msgstr ""
+
+#: src/hd-data.c:370
+msgid "United States/District of Columbia"
+msgstr ""
+
+#: src/hd-data.c:371
+msgid "United States/Delaware"
+msgstr ""
+
+#: src/hd-data.c:372
+msgid "United States/Florida"
+msgstr ""
+
+#: src/hd-data.c:373
+msgid "United States/Georgia"
+msgstr ""
+
+#: src/hd-data.c:374
+msgid "United States/Hawaii"
+msgstr ""
+
+#: src/hd-data.c:375
+msgid "United States/Iowa"
+msgstr ""
+
+#: src/hd-data.c:376
+msgid "United States/Idaho"
+msgstr ""
+
+#: src/hd-data.c:377
+msgid "United States/Illinois"
+msgstr ""
+
+#: src/hd-data.c:378
+msgid "United States/Indiana"
+msgstr ""
+
+#: src/hd-data.c:379
+msgid "United States/Kansas"
+msgstr ""
+
+#: src/hd-data.c:380
+msgid "United States/Kentucky"
+msgstr ""
+
+#: src/hd-data.c:381
+msgid "United States/Louisiana"
+msgstr ""
+
+#: src/hd-data.c:382
+msgid "United States/Massachusetts"
+msgstr ""
+
+#: src/hd-data.c:383
+msgid "United States/Maryland"
+msgstr ""
+
+#: src/hd-data.c:384
+msgid "United States/Maine"
+msgstr ""
+
+#: src/hd-data.c:385
+msgid "United States/Michigan"
+msgstr ""
+
+#: src/hd-data.c:386
+msgid "United States/Minnesota"
+msgstr ""
+
+#: src/hd-data.c:387
+msgid "United States/Missouri"
+msgstr ""
+
+#: src/hd-data.c:388
+msgid "United States/Mississippi"
+msgstr ""
+
+#: src/hd-data.c:389
+msgid "United States/Montana"
+msgstr ""
+
+#: src/hd-data.c:390
+msgid "United States/North Carolina"
+msgstr ""
+
+#: src/hd-data.c:391
+msgid "United States/North Dakota"
+msgstr ""
+
+#: src/hd-data.c:392
+msgid "United States/Nebraska"
+msgstr ""
+
+#: src/hd-data.c:393
+msgid "United States/New Hampshire"
+msgstr ""
+
+#: src/hd-data.c:394
+msgid "United States/New Jersey"
+msgstr ""
+
+#: src/hd-data.c:395
+msgid "United States/New Mexico"
+msgstr ""
+
+#: src/hd-data.c:396
+msgid "United States/Nevada"
+msgstr ""
+
+#: src/hd-data.c:397
+msgid "United States/New York"
+msgstr ""
+
+#: src/hd-data.c:398
+msgid "United States/Ohio"
+msgstr ""
+
+#: src/hd-data.c:399
+msgid "United States/Oklahoma"
+msgstr ""
+
+#: src/hd-data.c:400
+msgid "United States/Oregon"
+msgstr ""
+
+#: src/hd-data.c:401
+msgid "United States/Pennsylvania"
+msgstr ""
+
+#: src/hd-data.c:402
+msgid "United States/Rhode Island"
+msgstr ""
+
+#: src/hd-data.c:403
+msgid "United States/South Carolina"
+msgstr ""
+
+#: src/hd-data.c:404
+msgid "United States/South Dakota"
+msgstr ""
+
+#: src/hd-data.c:405
+msgid "United States/Tennessee"
+msgstr ""
+
+#: src/hd-data.c:406
+msgid "United States/Texas"
+msgstr ""
+
+#: src/hd-data.c:407
+msgid "United States/Utah"
+msgstr ""
+
+#: src/hd-data.c:408
+msgid "United States/Virginia"
+msgstr ""
+
+#: src/hd-data.c:409
+msgid "United States/Vermont"
+msgstr ""
+
+#: src/hd-data.c:410
+msgid "United States/Washington"
+msgstr ""
+
+#: src/hd-data.c:411
+msgid "United States/Wisconsin"
+msgstr ""
+
+#: src/hd-data.c:412
+msgid "United States/West Virginia"
+msgstr ""
+
+#: src/hd-data.c:413
+msgid "United States/Wyoming"
+msgstr ""
+
+#: src/hd-data.c:414
+msgid "Uruguay"
+msgstr ""
+
+#: src/hd-data.c:415
+msgid "Uzbekistan"
+msgstr ""
+
+#: src/hd-data.c:416
+msgid "St Vincent and Grenadines"
+msgstr ""
+
+#: src/hd-data.c:417
+msgid "Venezuela"
+msgstr ""
+
+#: src/hd-data.c:418
+msgid "British Virgin Islands"
+msgstr ""
+
+#: src/hd-data.c:419
+msgid "U.S. Virgin Islands"
+msgstr ""
+
+#: src/hd-data.c:420
+msgid "Viet Nam"
+msgstr ""
+
+#: src/hd-data.c:421
+msgid "Vanuatu"
+msgstr ""
+
+#: src/hd-data.c:422
+msgid "Wallis and Futuna Islands"
+msgstr ""
+
+#: src/hd-data.c:423
+msgid "Samoa"
+msgstr ""
+
+#: src/hd-data.c:424
+msgid "Yemen"
+msgstr ""
+
+#: src/hd-data.c:425
+msgid "Mayotte"
+msgstr ""
+
+#: src/hd-data.c:426
+msgid "Serbia and Montenegro"
+msgstr ""
+
+#: src/hd-data.c:427
+msgid "South Africa"
+msgstr ""
+
+#: src/hd-data.c:428
+msgid "Zambia"
+msgstr ""
+
+#: src/hd-data.c:429
+msgid "Zimbabwe"
+msgstr ""
+
+#: src/hd-data.c:459
+msgid "1st Advent"
+msgstr ""
+
+#: src/hd-data.c:460
+msgid "1st Sunday in Lent"
+msgstr ""
+
+#: src/hd-data.c:461
+msgid "2nd Advent"
+msgstr ""
+
+#: src/hd-data.c:462
+msgid "2nd Sunday in Lent"
+msgstr ""
+
+#: src/hd-data.c:463
+msgid "3rd Advent"
+msgstr ""
+
+#: src/hd-data.c:464
+msgid "3rd Sunday in Lent"
+msgstr ""
+
+#: src/hd-data.c:465
+msgid "4th Advent"
+msgstr ""
+
+#: src/hd-data.c:466
+msgid "4th Sunday in Lent"
+msgstr ""
+
+#: src/hd-data.c:467
+msgid "7-5-3 Festival"
+msgstr ""
+
+#: src/hd-data.c:468
+msgid "Aborigines Day"
+msgstr ""
+
+#: src/hd-data.c:469
+msgid "All Fool's Day"
+msgstr ""
+
+#: src/hd-data.c:470
+msgid "All Saints' Day"
+msgstr ""
+
+#: src/hd-data.c:471
+msgid "All Souls' Day"
+msgstr ""
+
+#: src/hd-data.c:472
+msgid "Alphabet Day"
+msgstr ""
+
+#: src/hd-data.c:473
+msgid "Anniversary of Auckland"
+msgstr ""
+
+#: src/hd-data.c:474
+msgid "Anniversary of Canterbury North"
+msgstr ""
+
+#: src/hd-data.c:475
+msgid "Anniversary of Canterbury South"
+msgstr ""
+
+#: src/hd-data.c:476
+msgid "Anniversary of Chatham Islands"
+msgstr ""
+
+#: src/hd-data.c:477
+msgid "Anniversary of Hawkes' Bay"
+msgstr ""
+
+#: src/hd-data.c:478
+msgid "Anniversary of Marlborough"
+msgstr ""
+
+#: src/hd-data.c:479
+msgid "Anniversary of Nelson"
+msgstr ""
+
+#: src/hd-data.c:480
+msgid "Anniversary of Otago"
+msgstr ""
+
+#: src/hd-data.c:481
+msgid "Anniversary of Southland"
+msgstr ""
+
+#: src/hd-data.c:482
+msgid "Anniversary of Taranaki"
+msgstr ""
+
+#: src/hd-data.c:483
+msgid "Anniversary of Wellington"
+msgstr ""
+
+#: src/hd-data.c:484
+msgid "Anniversary of Westland"
+msgstr ""
+
+#: src/hd-data.c:485
+msgid "Anzac Day"
+msgstr ""
+
+#: src/hd-data.c:486
+msgid "Arbor Day"
+msgstr ""
+
+#: src/hd-data.c:487
+msgid "Armed Forces Day"
+msgstr ""
+
+#: src/hd-data.c:488
+msgid "Armistice Day"
+msgstr ""
+
+#: src/hd-data.c:489
+msgid "Ash Monday"
+msgstr ""
+
+#: src/hd-data.c:490
+msgid "Ash Wednesday"
+msgstr ""
+
+#: src/hd-data.c:491
+msgid "Ascension of Abdu'l-Baha"
+msgstr ""
+
+#: src/hd-data.c:492
+msgid "Ascension of Baha'u'llah"
+msgstr ""
+
+#: src/hd-data.c:493
+msgid "Birth of Baha'u'llah"
+msgstr ""
+
+#: src/hd-data.c:494
+msgid "Birth of the Bab"
+msgstr ""
+
+#: src/hd-data.c:495
+msgid "Day of the Covenant"
+msgstr ""
+
+#: src/hd-data.c:496
+msgid "Declaration of the Bab"
+msgstr ""
+
+#: src/hd-data.c:497
+msgid "First Day of Ridvan"
+msgstr ""
+
+#: src/hd-data.c:498
+msgid "Martyrdom of the Bab"
+msgstr ""
+
+#: src/hd-data.c:499
+msgid "Bahá'i New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:500
+msgid "Ninth Day of Ridvan"
+msgstr ""
+
+#: src/hd-data.c:501
+msgid "Twelfth Day of Ridvan"
+msgstr ""
+
+#: src/hd-data.c:502
+msgid "Bank Holiday"
+msgstr ""
+
+#: src/hd-data.c:503
+msgid "Basque National Day"
+msgstr ""
+
+#: src/hd-data.c:504
+msgid "Battle of Boyne"
+msgstr ""
+
+#: src/hd-data.c:505
+msgid "Battle of Puebla"
+msgstr ""
+
+#: src/hd-data.c:506
+msgid "Beginning of Financial Year"
+msgstr ""
+
+#: src/hd-data.c:507
+msgid "Benito Juárez Day"
+msgstr ""
+
+#: src/hd-data.c:508
+msgid "Bodhidharma's Birthday"
+msgstr ""
+
+#: src/hd-data.c:509
+msgid "Bosses' Day"
+msgstr ""
+
+#: src/hd-data.c:510
+msgid "Boxing Day"
+msgstr ""
+
+#: src/hd-data.c:511
+msgid "Bringing Home the Herds Day"
+msgstr ""
+
+#: src/hd-data.c:512
+msgid "Bringing in the Harvest Day"
+msgstr ""
+
+#: src/hd-data.c:513
+msgid "Buddha's Birthday"
+msgstr ""
+
+#: src/hd-data.c:514
+msgid "Burns Night"
+msgstr ""
+
+#: src/hd-data.c:515
+msgid "Camoes Day"
+msgstr ""
+
+#: src/hd-data.c:516
+msgid "Carnival"
+msgstr ""
+
+#: src/hd-data.c:517
+msgid "Beltane"
+msgstr ""
+
+#: src/hd-data.c:518
+msgid "Imbolg"
+msgstr ""
+
+#: src/hd-data.c:519
+msgid "Lughnasa"
+msgstr ""
+
+#: src/hd-data.c:520
+msgid "Samhain/Celtic New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:521
+msgid "Children's Day"
+msgstr ""
+
+#: src/hd-data.c:522
+msgid "Cycle"
+msgstr ""
+
+#: src/hd-data.c:523
+msgid "Chinese New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:524
+msgid "Chinese New Year's Eve"
+msgstr ""
+
+#: src/hd-data.c:525
+msgid "Christmas Day"
+msgstr ""
+
+#: src/hd-data.c:526
+msgid "Christmas Eve"
+msgstr ""
+
+#: src/hd-data.c:527
+msgid "Christ's Ascension Day"
+msgstr ""
+
+#: src/hd-data.c:528
+msgid "Chrysanthenum Day"
+msgstr ""
+
+#: src/hd-data.c:529
+msgid "Citizenship Day"
+msgstr ""
+
+#: src/hd-data.c:530
+msgid "Civic Holiday"
+msgstr ""
+
+#: src/hd-data.c:531
+msgid "Columbus Day"
+msgstr ""
+
+#: src/hd-data.c:532
+msgid "Coming of Age Day"
+msgstr ""
+
+#: src/hd-data.c:533
+msgid "Confucius' Birthday"
+msgstr ""
+
+#: src/hd-data.c:534
+msgid "Constitution Anniversary"
+msgstr ""
+
+#: src/hd-data.c:535
+msgid "Coptic New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:536
+msgid "Cosmonauts' Day"
+msgstr ""
+
+#: src/hd-data.c:537
+msgid "Cross Raising Day"
+msgstr ""
+
+#: src/hd-data.c:538
+msgid "Culture Day"
+msgstr ""
+
+#: src/hd-data.c:539
+msgid "Day after Mid-Autumn Festival"
+msgstr ""
+
+#: src/hd-data.c:540
+msgid "Day after Tomb-Sweeping Day"
+msgstr ""
+
+#: src/hd-data.c:541
+msgid "Day of Andalucia"
+msgstr ""
+
+#: src/hd-data.c:542
+msgid "Day of Catalonia"
+msgstr ""
+
+#: src/hd-data.c:543
+msgid "Day of Galicia"
+msgstr ""
+
+#: src/hd-data.c:544
+msgid "Day of Prayer and Repentance"
+msgstr ""
+
+#: src/hd-data.c:545
+msgid "Day of Reconciliation"
+msgstr ""
+
+#: src/hd-data.c:546
+msgid "Defenders of Motherland Day"
+msgstr ""
+
+#: src/hd-data.c:547
+msgid "Double-9 Day"
+msgstr ""
+
+#: src/hd-data.c:548
+msgid "Dragon Boat Festival"
+msgstr ""
+
+#: src/hd-data.c:549
+msgid "Dynasty Day"
+msgstr ""
+
+#: src/hd-data.c:550
+msgid "Easter Monday"
+msgstr ""
+
+#: src/hd-data.c:551
+msgid "Easter Sunday"
+msgstr ""
+
+#: src/hd-data.c:552
+msgid "Lunar Eclipse"
+msgstr ""
+
+#: src/hd-data.c:553
+msgid "Solar Eclipse"
+msgstr ""
+
+#: src/hd-data.c:554
+msgid "Annular"
+msgstr ""
+
+#: src/hd-data.c:555
+msgid "Partial"
+msgstr ""
+
+#: src/hd-data.c:556
+msgid "Penumbral"
+msgstr ""
+
+#: src/hd-data.c:557
+msgid "Total"
+msgstr ""
+
+#: src/hd-data.c:558
+msgid "Eindhoven's Liberation"
+msgstr ""
+
+#: src/hd-data.c:559
+msgid "Election Day"
+msgstr ""
+
+#: src/hd-data.c:560
+msgid "Emperor's Birthday"
+msgstr ""
+
+#: src/hd-data.c:561
+msgid "Equinox Day"
+msgstr ""
+
+#: src/hd-data.c:562
+msgid "Ethiopic New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:563
+msgid "Father's Day"
+msgstr ""
+
+#: src/hd-data.c:564
+msgid "Feast of Corpus Christi"
+msgstr ""
+
+#: src/hd-data.c:565
+msgid "Feast of Fortune"
+msgstr ""
+
+#: src/hd-data.c:566
+msgid "Feast of Heart Jesus"
+msgstr ""
+
+#: src/hd-data.c:567
+msgid "Festival of Lanterns"
+msgstr ""
+
+#: src/hd-data.c:568
+msgid "Festival of Sadeh"
+msgstr ""
+
+#: src/hd-data.c:569
+msgid "Flag Day"
+msgstr ""
+
+#: src/hd-data.c:570
+msgid "Flemish Culture Day"
+msgstr ""
+
+#: src/hd-data.c:571
+msgid "Founding of the Communist Party"
+msgstr ""
+
+#: src/hd-data.c:572
+msgid "French Culture Day"
+msgstr ""
+
+#: src/hd-data.c:573
+msgid "French Revolutionary"
+msgstr ""
+
+#: src/hd-data.c:574
+msgid "Friendship Day"
+msgstr ""
+
+#: src/hd-data.c:575
+msgid "German Unity Day"
+msgstr ""
+
+#: src/hd-data.c:576
+msgid "Good Friday"
+msgstr ""
+
+#: src/hd-data.c:577
+msgid "Good Saturday/Easter Eve"
+msgstr ""
+
+#: src/hd-data.c:578
+msgid "Grandparents' Day"
+msgstr ""
+
+#: src/hd-data.c:579
+msgid "Greenery Day"
+msgstr ""
+
+#: src/hd-data.c:580
+msgid "Grotto Day"
+msgstr ""
+
+#: src/hd-data.c:581
+msgid "Groundhog Day"
+msgstr ""
+
+#: src/hd-data.c:582
+msgid "Guadalupe Virgin's Day"
+msgstr ""
+
+#: src/hd-data.c:583
+msgid "Guy Fawkes Day"
+msgstr ""
+
+#: src/hd-data.c:584
+msgid "Halloween"
+msgstr ""
+
+#: src/hd-data.c:585
+msgid "Health and Sport's Day"
+msgstr ""
+
+#: src/hd-data.c:586
+msgid "Hannukah/Festival of Lights"
+msgstr ""
+
+#: src/hd-data.c:587
+msgid "Lag B'Omer"
+msgstr ""
+
+#: src/hd-data.c:588
+msgid "Pesach/Passover"
+msgstr ""
+
+#: src/hd-data.c:589
+msgid "Purim/Feast of Lots"
+msgstr ""
+
+#: src/hd-data.c:590
+msgid "Rosh Hashana/New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:591
+msgid "Shavuot/Giving of the Torah"
+msgstr ""
+
+#: src/hd-data.c:592
+msgid "Shushan Purim"
+msgstr ""
+
+#: src/hd-data.c:593
+msgid "Simchat Torah"
+msgstr ""
+
+#: src/hd-data.c:594
+msgid "Sukkot/Feast of Tabernacles"
+msgstr ""
+
+#: src/hd-data.c:595
+msgid "Tisha B'Av/Fasting Day"
+msgstr ""
+
+#: src/hd-data.c:596
+msgid "Tu B'Shevat/New Year of Trees"
+msgstr ""
+
+#: src/hd-data.c:597
+msgid "Yom Hashoah/Holocaust Memorial"
+msgstr ""
+
+#: src/hd-data.c:598
+msgid "Yom Hazikaron/Soldiers Memorial"
+msgstr ""
+
+#: src/hd-data.c:599
+msgid "Yom Ha Azmaut/Independence Day"
+msgstr ""
+
+#: src/hd-data.c:600
+msgid "Yom Kippur/Atonement Day"
+msgstr ""
+
+#: src/hd-data.c:601
+msgid "Yom Yerushalayim/Jerusalem Day"
+msgstr ""
+
+#: src/hd-data.c:602
+msgid "Holy Innocent's Day"
+msgstr ""
+
+#: src/hd-data.c:603
+msgid "Holy Trinity"
+msgstr ""
+
+#: src/hd-data.c:604
+msgid "Huravee Day"
+msgstr ""
+
+#: src/hd-data.c:605
+msgid "Independence Day"
+msgstr ""
+
+#: src/hd-data.c:606
+msgid "Independence Movement Day"
+msgstr ""
+
+#: src/hd-data.c:607
+msgid "Independence Proclamation"
+msgstr ""
+
+#: src/hd-data.c:608
+msgid "Indian New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:609
+msgid "Aga Khan's Birthday"
+msgstr ""
+
+#: src/hd-data.c:610
+msgid "Ashura'"
+msgstr ""
+
+#: src/hd-data.c:611
+msgid "Eid-al-Adha"
+msgstr ""
+
+#: src/hd-data.c:612
+msgid "Eid-al-Fitr"
+msgstr ""
+
+#: src/hd-data.c:613
+msgid "Eid-i-Milad-un-Nabi"
+msgstr ""
+
+#: src/hd-data.c:614
+msgid "Ghadir"
+msgstr ""
+
+#: src/hd-data.c:615
+msgid "Imamat Day"
+msgstr ""
+
+#: src/hd-data.c:616
+msgid "Islamic New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:617
+msgid "Nuzul-al-Qur'an"
+msgstr ""
+
+#: src/hd-data.c:618
+msgid "Quds Day"
+msgstr ""
+
+#: src/hd-data.c:619
+msgid "Ramadan"
+msgstr ""
+
+#: src/hd-data.c:620
+msgid "Shab-e-Bara't"
+msgstr ""
+
+#: src/hd-data.c:621
+msgid "Shab-e-Mi'raj"
+msgstr ""
+
+#: src/hd-data.c:622
+msgid "Shab-e Qadr"
+msgstr ""
+
+#: src/hd-data.c:623
+msgid "Waqf-al-Arafat"
+msgstr ""
+
+#: src/hd-data.c:624
+msgid "Japanese New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:625
+msgid "Japanese New Year's Eve"
+msgstr ""
+
+#: src/hd-data.c:626
+msgid "Jesus' Circumcision"
+msgstr ""
+
+#: src/hd-data.c:627
+msgid "Kwanzaa"
+msgstr ""
+
+#: src/hd-data.c:628
+msgid "Labour Day"
+msgstr ""
+
+#: src/hd-data.c:629
+msgid "Labour Thanksgiving Day"
+msgstr ""
+
+#: src/hd-data.c:630
+msgid "Lao Tze's Birthday"
+msgstr ""
+
+#: src/hd-data.c:631
+msgid "Liberation Day"
+msgstr ""
+
+#: src/hd-data.c:632
+msgid "Marine Day"
+msgstr ""
+
+#: src/hd-data.c:633
+msgid "Martinimas"
+msgstr ""
+
+#: src/hd-data.c:634
+msgid "Martin L. King's Day"
+msgstr ""
+
+#: src/hd-data.c:635
+msgid "Martyrs' Day"
+msgstr ""
+
+#: src/hd-data.c:636
+msgid "Mary's Annunciation Day"
+msgstr ""
+
+#: src/hd-data.c:637
+msgid "Mary's Ascension Day"
+msgstr ""
+
+#: src/hd-data.c:638
+msgid "Mary's Candlemas"
+msgstr ""
+
+#: src/hd-data.c:639
+msgid "Mary's Expectation"
+msgstr ""
+
+#: src/hd-data.c:640
+msgid "Mary's Immaculate Conception"
+msgstr ""
+
+#: src/hd-data.c:641
+msgid "Mary's Maternity"
+msgstr ""
+
+#: src/hd-data.c:642
+msgid "Mary's Name"
+msgstr ""
+
+#: src/hd-data.c:643
+msgid "Mary's Nativity"
+msgstr ""
+
+#: src/hd-data.c:644
+msgid "Mary's Sacrifice"
+msgstr ""
+
+#: src/hd-data.c:645
+msgid "Mary's Visitation"
+msgstr ""
+
+#: src/hd-data.c:646
+msgid "Mary - Blessed Virgin"
+msgstr ""
+
+#: src/hd-data.c:647
+msgid "Maundy Thursday"
+msgstr ""
+
+#: src/hd-data.c:648
+msgid "May Day"
+msgstr ""
+
+#: src/hd-data.c:649
+msgid "St John's/Midsummer Day"
+msgstr ""
+
+#: src/hd-data.c:650
+msgid "Mid-Autumn Festival"
+msgstr ""
+
+#: src/hd-data.c:651
+msgid "Mid-Spring Festival"
+msgstr ""
+
+#: src/hd-data.c:652
+msgid "Mid-Year Festival"
+msgstr ""
+
+#: src/hd-data.c:653
+msgid "Waxing Half Moon"
+msgstr ""
+
+#: src/hd-data.c:654
+msgid "Full Moon"
+msgstr ""
+
+#: src/hd-data.c:655
+msgid "Waning Half Moon"
+msgstr ""
+
+#: src/hd-data.c:656
+msgid "New Moon"
+msgstr ""
+
+#: src/hd-data.c:657
+msgid "Mother's Day"
+msgstr ""
+
+#: src/hd-data.c:658
+msgid "Mother in Law's Day"
+msgstr ""
+
+#: src/hd-data.c:659
+msgid "Music Water Banquet"
+msgstr ""
+
+#: src/hd-data.c:660
+msgid "National Foundation Day"
+msgstr ""
+
+#: src/hd-data.c:661
+msgid "National Holiday"
+msgstr ""
+
+#: src/hd-data.c:662
+msgid "National Mourning Day"
+msgstr ""
+
+#: src/hd-data.c:663
+msgid "New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:664
+msgid "Nurses' Day"
+msgstr ""
+
+#: src/hd-data.c:665
+msgid "Old-Armenic New Year"
+msgstr ""
+
+#: src/hd-data.c:666
+msgid "Old-Egyptic New Year"
+msgstr ""
+
+#: src/hd-data.c:667
+msgid "Orthodox New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:668
+msgid "Our Lady Aparecida Day"
+msgstr ""
+
+#: src/hd-data.c:669
+msgid "Palm Sunday"
+msgstr ""
+
+#: src/hd-data.c:670
+msgid "Parent's Day"
+msgstr ""
+
+#: src/hd-data.c:671
+msgid "Passion Sunday"
+msgstr ""
+
+#: src/hd-data.c:672
+msgid "Peace Festival"
+msgstr ""
+
+#: src/hd-data.c:673
+msgid "Peach Festival"
+msgstr ""
+
+#: src/hd-data.c:674
+msgid "Whitsunday/Pentecost"
+msgstr ""
+
+#: src/hd-data.c:675
+msgid "Noruz/Persian New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:676
+msgid "Prayer Day"
+msgstr ""
+
+#: src/hd-data.c:677
+msgid "Presidential Inauguration"
+msgstr ""
+
+#: src/hd-data.c:678
+msgid "Presidents' Day"
+msgstr ""
+
+#: src/hd-data.c:679
+msgid "Presidents' Inform"
+msgstr ""
+
+#: src/hd-data.c:680
+msgid "President Lincoln's Birthday"
+msgstr ""
+
+#: src/hd-data.c:681
+msgid "Princess' Day"
+msgstr ""
+
+#: src/hd-data.c:682
+msgid "Quinquagesima Sunday"
+msgstr ""
+
+#: src/hd-data.c:683
+msgid "Reformation Day"
+msgstr ""
+
+#: src/hd-data.c:684
+msgid "Remembrance/Memorial Day"
+msgstr ""
+
+#: src/hd-data.c:685
+msgid "Republic Day"
+msgstr ""
+
+#: src/hd-data.c:686
+msgid "Respect for the Aged Day"
+msgstr ""
+
+#: src/hd-data.c:687
+msgid "Revolution Day"
+msgstr ""
+
+#: src/hd-data.c:688
+msgid "Rio de Janeiro Anniversary"
+msgstr ""
+
+#: src/hd-data.c:689
+msgid "Rogation Sunday"
+msgstr ""
+
+#: src/hd-data.c:690
+msgid "Sao Paulo Anniversary"
+msgstr ""
+
+#: src/hd-data.c:691
+msgid "Sapporo Snow Festival"
+msgstr ""
+
+#: src/hd-data.c:692
+msgid "Season Change/Bean-Festival"
+msgstr ""
+
+#: src/hd-data.c:693
+msgid "Septuagesima Sunday"
+msgstr ""
+
+#: src/hd-data.c:694
+msgid "Seven Sleepers Day"
+msgstr ""
+
+#: src/hd-data.c:695
+msgid "Sexagesima Sunday"
+msgstr ""
+
+#: src/hd-data.c:696
+msgid "Shrove Tuesday/Mardi Gras"
+msgstr ""
+
+#: src/hd-data.c:697
+msgid "Solstice Day"
+msgstr ""
+
+#: src/hd-data.c:698
+msgid "Soot-Sweeping Day"
+msgstr ""
+
+#: src/hd-data.c:699
+msgid "Spring Festival"
+msgstr ""
+
+#: src/hd-data.c:700
+msgid "Start of common month"
+msgstr ""
+
+#: src/hd-data.c:701
+msgid "Start of leap month"
+msgstr ""
+
+#: src/hd-data.c:702
+msgid "Star Festival"
+msgstr ""
+
+#: src/hd-data.c:703
+msgid "St Andrew's Day"
+msgstr ""
+
+#: src/hd-data.c:704
+msgid "St Bartholomew Day"
+msgstr ""
+
+#: src/hd-data.c:705
+msgid "St Berchtold's Day"
+msgstr ""
+
+#: src/hd-data.c:706
+msgid "St David's Day"
+msgstr ""
+
+#: src/hd-data.c:707
+msgid "St Edward's Day"
+msgstr ""
+
+#: src/hd-data.c:708
+msgid "St George's Day"
+msgstr ""
+
+#: src/hd-data.c:709
+msgid "St James' Day"
+msgstr ""
+
+#: src/hd-data.c:710
+msgid "St Joseph's Day"
+msgstr ""
+
+#: src/hd-data.c:711
+msgid "St Laurentius Day"
+msgstr ""
+
+#: src/hd-data.c:712
+msgid "St Nicholas' Day"
+msgstr ""
+
+#: src/hd-data.c:713
+msgid "St Nicholas' Eve"
+msgstr ""
+
+#: src/hd-data.c:714
+msgid "St Patrick's Day"
+msgstr ""
+
+#: src/hd-data.c:715
+msgid "St Peter and St Paul"
+msgstr ""
+
+#: src/hd-data.c:716
+msgid "St Stephen's Day"
+msgstr ""
+
+#: src/hd-data.c:717
+msgid "St Valentine's Day"
+msgstr ""
+
+#: src/hd-data.c:718
+msgid "Sunday of the Dead"
+msgstr ""
+
+#: src/hd-data.c:719
+msgid "Swallow Day"
+msgstr ""
+
+#: src/hd-data.c:720
+msgid "Sweetest Day"
+msgstr ""
+
+#: src/hd-data.c:721
+msgid "Sylvester/New Year's Eve"
+msgstr ""
+
+#: src/hd-data.c:722
+msgid "Teacher's Day"
+msgstr ""
+
+#: src/hd-data.c:723
+msgid "Thai New Year's Day"
+msgstr ""
+
+#: src/hd-data.c:724
+msgid "Thanksgiving Day"
+msgstr ""
+
+#: src/hd-data.c:725
+msgid "The King's Birthday"
+msgstr ""
+
+#: src/hd-data.c:726
+msgid "The Queen's Birthday"
+msgstr ""
+
+#: src/hd-data.c:727
+msgid "Epiphany/Three King's Day"
+msgstr ""
+
+#: src/hd-data.c:728
+msgid "Tiradentes Day"
+msgstr ""
+
+#: src/hd-data.c:729
+msgid "Tomb-Sweeping Day"
+msgstr ""
+
+#: src/hd-data.c:730
+msgid "Transfiguration Day"
+msgstr ""
+
+#: src/hd-data.c:731
+msgid "Tynwald Day"
+msgstr ""
+
+#: src/hd-data.c:732
+msgid "Valborg's Eve"
+msgstr ""
+
+#: src/hd-data.c:733
+msgid "Venice Carnival"
+msgstr ""
+
+#: src/hd-data.c:734
+msgid "Veteran's Day"
+msgstr ""
+
+#: src/hd-data.c:735
+msgid "Victoria Day"
+msgstr ""
+
+#: src/hd-data.c:736
+msgid "Victory Day"
+msgstr ""
+
+#: src/hd-data.c:737
+msgid "Whit Monday"
+msgstr ""
+
+#: src/hd-data.c:738
+msgid "Women's Day"
+msgstr ""
+
+#: src/hd-data.c:739
+msgid "Women's Shrove Day"
+msgstr ""
+
+#: src/hd-data.c:740
+msgid "World Animal Day"
+msgstr ""
+
+#: src/hd-data.c:741
+msgid "Youth Day"
+msgstr ""
+
+#: src/hd-data.c:747
+msgid "Adelaide Cup Day"
+msgstr ""
+
+#: src/hd-data.c:748
+msgid "Admission Day"
+msgstr ""
+
+#: src/hd-data.c:749
+msgid "Alaska Day"
+msgstr ""
+
+#: src/hd-data.c:750
+msgid "Aleksis Kivi Day"
+msgstr ""
+
+#: src/hd-data.c:751
+msgid "Alice-Springs Show Day"
+msgstr ""
+
+#: src/hd-data.c:752
+msgid "All Saints' Eve"
+msgstr ""
+
+#: src/hd-data.c:753
+msgid "Americas Day"
+msgstr ""
+
+#: src/hd-data.c:754
+msgid "Angam Day"
+msgstr ""
+
+#: src/hd-data.c:756
+msgid "Anniversary of Amir's Succession"
+msgstr ""
+
+#: src/hd-data.c:757
+msgid "Anniversary of Armed Struggle"
+msgstr ""
+
+#: src/hd-data.c:758
+msgid "Anniversary of Green March"
+msgstr ""
+
+#: src/hd-data.c:759
+msgid "Antillian Day"
+msgstr ""
+
+#: src/hd-data.c:760
+msgid "Arab League Day"
+msgstr ""
+
+#: src/hd-data.c:762
+msgid "Archbishop Makarios' Memorial Day"
+msgstr ""
+
+#: src/hd-data.c:763
+msgid "Archbishop Makarios' Name-Day"
+msgstr ""
+
+#: src/hd-data.c:764
+msgid "Arengo Anniversary"
+msgstr ""
+
+#: src/hd-data.c:765
+msgid "Army Coup Day"
+msgstr ""
+
+#: src/hd-data.c:766
+msgid "Arrival of the Swiss"
+msgstr ""
+
+#: src/hd-data.c:767
+msgid "Artigas' Birthday"
+msgstr ""
+
+#: src/hd-data.c:768
+msgid "Asuncion Day"
+msgstr ""
+
+#: src/hd-data.c:769
+msgid "Ataturk Memorial Day"
+msgstr ""
+
+#: src/hd-data.c:770
+msgid "Authority's Power Day"
+msgstr ""
+
+#: src/hd-data.c:771
+msgid "Ba'ath Revolution Day"
+msgstr ""
+
+#: src/hd-data.c:772
+msgid "Baron Bliss Day"
+msgstr ""
+
+#: src/hd-data.c:773
+msgid "Bataan Day"
+msgstr ""
+
+#: src/hd-data.c:774
+msgid "Battle of Angamos"
+msgstr ""
+
+#: src/hd-data.c:775
+msgid "Battle of Boyacá"
+msgstr ""
+
+#: src/hd-data.c:776
+msgid "Battle of Carabobo"
+msgstr ""
+
+#: src/hd-data.c:777
+msgid "Battle of Iquique"
+msgstr ""
+
+#: src/hd-data.c:778
+msgid "Battle of Las Piedras"
+msgstr ""
+
+#: src/hd-data.c:779
+msgid "Battle of Näfels"
+msgstr ""
+
+#: src/hd-data.c:780
+msgid "Beginning of Summer"
+msgstr ""
+
+#: src/hd-data.c:781
+msgid "Belgrade's Day"
+msgstr ""
+
+#: src/hd-data.c:782
+msgid "Bennington Battle Day"
+msgstr ""
+
+#: src/hd-data.c:783
+msgid "Blessing of the Water"
+msgstr ""
+
+#: src/hd-data.c:784
+msgid "Bloomsday"
+msgstr ""
+
+#: src/hd-data.c:785
+msgid "Boganda Day"
+msgstr ""
+
+#: src/hd-data.c:786
+msgid "Bonaire Day"
+msgstr ""
+
+#: src/hd-data.c:787
+msgid "Boqueron Battle Day"
+msgstr ""
+
+#: src/hd-data.c:788
+msgid "Botswana Day"
+msgstr ""
+
+#: src/hd-data.c:789
+msgid "Bounty Day"
+msgstr ""
+
+#: src/hd-data.c:790
+msgid "Bunker Hill Day"
+msgstr ""
+
+#: src/hd-data.c:791
+msgid "Burning of Jan Hus"
+msgstr ""
+
+#: src/hd-data.c:792
+msgid "Canberra Day"
+msgstr ""
+
+#: src/hd-data.c:793
+msgid "Caricom Day"
+msgstr ""
+
+#: src/hd-data.c:794
+msgid "Casimir Pulaski's Birthday"
+msgstr ""
+
+#: src/hd-data.c:795
+msgid "Cassinga Day"
+msgstr ""
+
+#: src/hd-data.c:796
+msgid "Cayenne Festival"
+msgstr ""
+
+#: src/hd-data.c:797
+msgid "Cesar Chavez Day"
+msgstr ""
+
+#: src/hd-data.c:798
+msgid "Charter Day"
+msgstr ""
+
+#: src/hd-data.c:799
+msgid "Chiang Kai-shek's Birthday"
+msgstr ""
+
+#: src/hd-data.c:800
+msgid "Children's White Sunday"
+msgstr ""
+
+#: src/hd-data.c:801
+msgid "Colon Day"
+msgstr ""
+
+#: src/hd-data.c:802
+msgid "Colorado Day"
+msgstr ""
+
+#: src/hd-data.c:803
+msgid "Commonwealth Day"
+msgstr ""
+
+#: src/hd-data.c:804
+msgid "Compact Day"
+msgstr ""
+
+#: src/hd-data.c:805
+msgid "Confederal Agreement Day"
+msgstr ""
+
+#: src/hd-data.c:806
+msgid "Coronation Day"
+msgstr ""
+
+#: src/hd-data.c:807
+msgid "Cup Match Day"
+msgstr ""
+
+#: src/hd-data.c:808
+msgid "Custom Chief's Day"
+msgstr ""
+
+#: src/hd-data.c:809
+msgid "C. Mapinduzi Day"
+msgstr ""
+
+#: src/hd-data.c:810
+msgid "Darwin Show Day"
+msgstr ""
+
+#: src/hd-data.c:811
+msgid "Day of Goodwill"
+msgstr ""
+
+#: src/hd-data.c:812
+msgid "Day of Students Revolt"
+msgstr ""
+
+#: src/hd-data.c:813
+msgid "Day of the Free Laos"
+msgstr ""
+
+#: src/hd-data.c:814
+msgid "Death of H. Christophe"
+msgstr ""
+
+#: src/hd-data.c:815
+msgid "Death of J. Dessalines"
+msgstr ""
+
+#: src/hd-data.c:816
+msgid "Death of President Abdallah"
+msgstr ""
+
+#: src/hd-data.c:817
+msgid "Death of President Cheikh"
+msgstr ""
+
+#: src/hd-data.c:818
+msgid "Death of President Soilih"
+msgstr ""
+
+#: src/hd-data.c:819
+msgid "Death of Qaid-i-Azam"
+msgstr ""
+
+#: src/hd-data.c:820
+msgid "Death of T. Louverture"
+msgstr ""
+
+#: src/hd-data.c:821
+msgid "Defenders Day"
+msgstr ""
+
+#: src/hd-data.c:822
+msgid "Dia del Padre"
+msgstr ""
+
+#: src/hd-data.c:823
+msgid "Dia de los Maestros"
+msgstr ""
+
+#: src/hd-data.c:824
+msgid "Discovery Day"
+msgstr ""
+
+#: src/hd-data.c:825
+msgid "Downfall of the Dergue"
+msgstr ""
+
+#: src/hd-data.c:826
+msgid "Dry Season Celebration"
+msgstr ""
+
+#: src/hd-data.c:827
+msgid "Dr. Sun Yat-sen's Birthday"
+msgstr ""
+
+#: src/hd-data.c:828
+msgid "Duarte's Birthday"
+msgstr ""
+
+#: src/hd-data.c:829
+msgid "Easter Tuesday"
+msgstr ""
+
+#: src/hd-data.c:830
+msgid "Economic Liberation Day"
+msgstr ""
+
+#: src/hd-data.c:831
+msgid "Eight Hours Day"
+msgstr ""
+
+#: src/hd-data.c:832
+msgid "Elections for National Assembly"
+msgstr ""
+
+#: src/hd-data.c:833
+msgid "Errol Barrow Day"
+msgstr ""
+
+#: src/hd-data.c:834
+msgid "Evacuation Day"
+msgstr ""
+
+#: src/hd-data.c:835
+msgid "Eve of Epiphany"
+msgstr ""
+
+#: src/hd-data.c:836
+msgid "Expedition of the 33"
+msgstr ""
+
+#: src/hd-data.c:837
+msgid "E. Hostos' Birthday"
+msgstr ""
+
+#: src/hd-data.c:838
+msgid "Family Day"
+msgstr ""
+
+#: src/hd-data.c:839
+msgid "FAO Day"
+msgstr ""
+
+#: src/hd-data.c:840
+msgid "Farmers' Day"
+msgstr ""
+
+#: src/hd-data.c:841
+msgid "Father Leval Day"
+msgstr ""
+
+#: src/hd-data.c:842
+msgid "Feast of Our Theotokos"
+msgstr ""
+
+#: src/hd-data.c:843
+msgid "Fisherman's Day"
+msgstr ""
+
+#: src/hd-data.c:844
+msgid "Foundation of NPLA Day"
+msgstr ""
+
+#: src/hd-data.c:845
+msgid "Founding of People's Party"
+msgstr ""
+
+#: src/hd-data.c:846
+msgid "Garifuna Day"
+msgstr ""
+
+#: src/hd-data.c:848
+msgid "General San Martin's Anniversary"
+msgstr ""
+
+#: src/hd-data.c:849
+msgid "Gospel Day"
+msgstr ""
+
+#: src/hd-data.c:850
+msgid "Guacanaste Day"
+msgstr ""
+
+#: src/hd-data.c:851
+msgid "Gustavus Adolphus' Day"
+msgstr ""
+
+#: src/hd-data.c:852
+msgid "Heritage Day"
+msgstr ""
+
+#: src/hd-data.c:853
+msgid "Heroes Day"
+msgstr ""
+
+#: src/hd-data.c:854
+msgid "Hobart Show Day"
+msgstr ""
+
+#: src/hd-data.c:855
+msgid "Holy Wednesday"
+msgstr ""
+
+#: src/hd-data.c:856
+msgid "Ho Chi Minh's Birthday"
+msgstr ""
+
+#: src/hd-data.c:857
+msgid "Human Rights Day"
+msgstr ""
+
+#: src/hd-data.c:858
+msgid "Hurricane Supplication Day"
+msgstr ""
+
+#: src/hd-data.c:859
+msgid "Hurricane Thanksgiving Day"
+msgstr ""
+
+#: src/hd-data.c:860
+msgid "Independence of Cartagena"
+msgstr ""
+
+#: src/hd-data.c:861
+msgid "Independence of Cuenca"
+msgstr ""
+
+#: src/hd-data.c:862
+msgid "Independence of Guayaquil"
+msgstr ""
+
+#: src/hd-data.c:863
+msgid "Independence of Quito"
+msgstr ""
+
+#: src/hd-data.c:864
+msgid "Indian Arrival Day"
+msgstr ""
+
+#: src/hd-data.c:865
+msgid "Internal Autonomy Day"
+msgstr ""
+
+#: src/hd-data.c:866
+msgid "Jefferson Davis' Birthday"
+msgstr ""
+
+#: src/hd-data.c:867
+msgid "June Holiday"
+msgstr ""
+
+#: src/hd-data.c:868
+msgid "J. Barbosa's Birthday"
+msgstr ""
+
+#: src/hd-data.c:869
+msgid "J. Chilembwe Day"
+msgstr ""
+
+#: src/hd-data.c:870
+msgid "J. Diego's Birthday"
+msgstr ""
+
+#: src/hd-data.c:871
+msgid "J. Robert's Birthday"
+msgstr ""
+
+#: src/hd-data.c:872
+msgid "Kamarampaka Day"
+msgstr ""
+
+#: src/hd-data.c:873
+msgid "Kartini Day"
+msgstr ""
+
+#: src/hd-data.c:874
+msgid "Catherine Show Day"
+msgstr ""
+
+#: src/hd-data.c:875
+msgid "Kiev Day"
+msgstr ""
+
+#: src/hd-data.c:876
+msgid "Kim Il-Sung's Birthday"
+msgstr ""
+
+#: src/hd-data.c:877
+msgid "Kim Jong-Il's Birthday"
+msgstr ""
+
+#: src/hd-data.c:878
+msgid "King Kamehameha Day"
+msgstr ""
+
+#: src/hd-data.c:879
+msgid "King Rama I Memorial Day/Chakri"
+msgstr ""
+
+#: src/hd-data.c:880
+msgid "King Rama V Memorial Day"
+msgstr ""
+
+#: src/hd-data.c:881
+msgid "Knabenschiessen"
+msgstr ""
+
+#: src/hd-data.c:882
+msgid "Konstantin and Methodius"
+msgstr ""
+
+#: src/hd-data.c:883
+msgid "Lapp National Holiday"
+msgstr ""
+
+#: src/hd-data.c:884
+msgid "Launceston Cup Day"
+msgstr ""
+
+#: src/hd-data.c:885
+msgid "Liberty Day"
+msgstr ""
+
+#: src/hd-data.c:886
+msgid "Loss of Muslim Nation"
+msgstr ""
+
+#: src/hd-data.c:887
+msgid "Luxembourg City Kermis"
+msgstr ""
+
+#: src/hd-data.c:888
+msgid "Lyndon B. Johnson Day"
+msgstr ""
+
+#: src/hd-data.c:889
+msgid "L. Rivera's Birthday"
+msgstr ""
+
+#: src/hd-data.c:890
+msgid "Madaraka Day"
+msgstr ""
+
+#: src/hd-data.c:891
+msgid "Mahatma Gandhi's Birthday"
+msgstr ""
+
+#: src/hd-data.c:892
+msgid "Malvinas Day"
+msgstr ""
+
+#: src/hd-data.c:893
+msgid "Manila Day"
+msgstr ""
+
+#: src/hd-data.c:894
+msgid "Maputo City Day"
+msgstr ""
+
+#: src/hd-data.c:895
+msgid "Marien Ngouabi Day"
+msgstr ""
+
+#: src/hd-data.c:896
+msgid "Maryland Day"
+msgstr ""
+
+#: src/hd-data.c:897
+msgid "Melbourne Cup Day"
+msgstr ""
+
+#: src/hd-data.c:898
+msgid "Merchant Day"
+msgstr ""
+
+#: src/hd-data.c:899
+msgid "St John's/Midsummers Eve"
+msgstr ""
+
+#: src/hd-data.c:900
+msgid "Missionary Day"
+msgstr ""
+
+#: src/hd-data.c:901
+msgid "Mi-Carême Day"
+msgstr ""
+
+#: src/hd-data.c:902
+msgid "Morazan Day"
+msgstr ""
+
+#: src/hd-data.c:903
+msgid "Mosheshoe's Day"
+msgstr ""
+
+#: src/hd-data.c:904
+msgid "Motherhood and Beauty Day"
+msgstr ""
+
+#: src/hd-data.c:905
+msgid "Naming Day"
+msgstr ""
+
+#: src/hd-data.c:906
+msgid "National Bun Day"
+msgstr ""
+
+#: src/hd-data.c:907
+msgid "National Heroes Day"
+msgstr ""
+
+#: src/hd-data.c:908
+msgid "National Redemption Day"
+msgstr ""
+
+#: src/hd-data.c:909
+msgid "National Resistance Day"
+msgstr ""
+
+#: src/hd-data.c:910
+msgid "National Revival Day"
+msgstr ""
+
+#: src/hd-data.c:911
+msgid "National Unity Day"
+msgstr ""
+
+#: src/hd-data.c:912
+msgid "Ndadaye Day"
+msgstr ""
+
+#: src/hd-data.c:913
+msgid "Neutrality Day"
+msgstr ""
+
+#: src/hd-data.c:914
+msgid "Nevada Day"
+msgstr ""
+
+#: src/hd-data.c:915
+msgid "New Regime Anniversary"
+msgstr ""
+
+#: src/hd-data.c:916
+msgid "Nobel Day"
+msgstr ""
+
+#: src/hd-data.c:917
+msgid "Noi Day"
+msgstr ""
+
+#: src/hd-data.c:918
+msgid "OAU Day"
+msgstr ""
+
+#: src/hd-data.c:919
+msgid "October Holiday"
+msgstr ""
+
+#: src/hd-data.c:920
+msgid "Oil Industry Day"
+msgstr ""
+
+#: src/hd-data.c:921
+msgid "Our Lady of Altagracia Day"
+msgstr ""
+
+#: src/hd-data.c:922
+msgid "Our Lady of Camarin Day"
+msgstr ""
+
+#: src/hd-data.c:923
+msgid "Our Lady of Las Mercedes Day"
+msgstr ""
+
+#: src/hd-data.c:924
+msgid "Our Lady of Los Angeles Day"
+msgstr ""
+
+#: src/hd-data.c:925
+msgid "Our Lady of Seven Sorrows"
+msgstr ""
+
+#: src/hd-data.c:926
+msgid "Our Lady of Victories Day"
+msgstr ""
+
+#: src/hd-data.c:927
+msgid "Panama City Day"
+msgstr ""
+
+#: src/hd-data.c:928
+msgid "Panamerica Day"
+msgstr ""
+
+#: src/hd-data.c:929
+msgid "Paris Peace Agreement Day"
+msgstr ""
+
+#: src/hd-data.c:930
+msgid "Patriot's Day"
+msgstr ""
+
+#: src/hd-data.c:931
+msgid "People's Uprising Day"
+msgstr ""
+
+#: src/hd-data.c:932
+msgid "People Power Day"
+msgstr ""
+
+#: src/hd-data.c:933
+msgid "Philippine-American Friendship"
+msgstr ""
+
+#: src/hd-data.c:934
+msgid "Pichincha Day"
+msgstr ""
+
+#: src/hd-data.c:935
+msgid "Picnic Day"
+msgstr ""
+
+#: src/hd-data.c:936
+msgid "Pioneer Day"
+msgstr ""
+
+#: src/hd-data.c:937
+msgid "Poya Day"
+msgstr ""
+
+#: src/hd-data.c:938
+msgid "Prince Kalanianaole Day"
+msgstr ""
+
+#: src/hd-data.c:939
+msgid "Prince of Wales' Birthday"
+msgstr ""
+
+#: src/hd-data.c:940
+msgid "Proclamation Day"
+msgstr ""
+
+#: src/hd-data.c:941
+msgid "Qaid-i-Azam's Birthday"
+msgstr ""
+
+#: src/hd-data.c:942
+msgid "Ratu Sukuma Day"
+msgstr ""
+
+#: src/hd-data.c:943
+msgid "Recreation Day"
+msgstr ""
+
+#: src/hd-data.c:944
+msgid "Referendum Day"
+msgstr ""
+
+#: src/hd-data.c:945
+msgid "Regatta Day"
+msgstr ""
+
+#: src/hd-data.c:946
+msgid "Regency Exchange"
+msgstr ""
+
+#: src/hd-data.c:947
+msgid "Restoration Day"
+msgstr ""
+
+#: src/hd-data.c:948
+msgid "Return Day"
+msgstr ""
+
+#: src/hd-data.c:949
+msgid "Reunification Day"
+msgstr ""
+
+#: src/hd-data.c:950
+msgid "Rizal Day"
+msgstr ""
+
+#: src/hd-data.c:951
+msgid "Rwagasore Day"
+msgstr ""
+
+#: src/hd-data.c:952
+msgid "Saba Day"
+msgstr ""
+
+#: src/hd-data.c:953
+msgid "San Jacinto Day"
+msgstr ""
+
+#: src/hd-data.c:954
+msgid "San José Day"
+msgstr ""
+
+#: src/hd-data.c:955
+msgid "SAR Establishment Day"
+msgstr ""
+
+#: src/hd-data.c:956
+msgid "School Holiday"
+msgstr ""
+
+#: src/hd-data.c:957
+msgid "Sechseläuten"
+msgstr ""
+
+#: src/hd-data.c:958
+msgid "Separation Day"
+msgstr ""
+
+#: src/hd-data.c:959
+msgid "Seretse Khama Day"
+msgstr ""
+
+#: src/hd-data.c:960
+msgid "Settlers Day"
+msgstr ""
+
+#: src/hd-data.c:961
+msgid "Seward's Day"
+msgstr ""
+
+#: src/hd-data.c:962
+msgid "Shaheed Day"
+msgstr ""
+
+#: src/hd-data.c:963
+msgid "Sheep Festival"
+msgstr ""
+
+#: src/hd-data.c:964
+msgid "Sheikh Zayed's Ascension Day"
+msgstr ""
+
+#: src/hd-data.c:965
+msgid "Simon Bolivar's Day"
+msgstr ""
+
+#: src/hd-data.c:966
+msgid "Sinai-Liberation Day"
+msgstr ""
+
+#: src/hd-data.c:967
+msgid "Slave-Liberation Day"
+msgstr ""
+
+#: src/hd-data.c:968
+msgid "Sniff the Breeze Day"
+msgstr ""
+
+#: src/hd-data.c:969
+msgid "Solidarity Day"
+msgstr ""
+
+#: src/hd-data.c:970
+msgid "Somers Day"
+msgstr ""
+
+#: src/hd-data.c:971
+msgid "Statia-American Day"
+msgstr ""
+
+#: src/hd-data.c:972
+msgid "Student's Day"
+msgstr ""
+
+#: src/hd-data.c:973
+msgid "St Agata Day"
+msgstr ""
+
+#: src/hd-data.c:974
+msgid "St Canute's Day"
+msgstr ""
+
+#: src/hd-data.c:975
+msgid "St Cedilia's Day"
+msgstr ""
+
+#: src/hd-data.c:976
+msgid "St Charles' Day"
+msgstr ""
+
+#: src/hd-data.c:977
+msgid "St Demetrius' Day"
+msgstr ""
+
+#: src/hd-data.c:978
+msgid "St Dévote Day"
+msgstr ""
+
+#: src/hd-data.c:979
+msgid "St Eliah's Day"
+msgstr ""
+
+#: src/hd-data.c:980
+msgid "St Jean Baptiste Day"
+msgstr ""
+
+#: src/hd-data.c:981
+msgid "St Lucia's Day"
+msgstr ""
+
+#: src/hd-data.c:982
+msgid "St Marguerite's Day"
+msgstr ""
+
+#: src/hd-data.c:983
+msgid "St Maroon's Day"
+msgstr ""
+
+#: src/hd-data.c:984
+msgid "St Michael's Day"
+msgstr ""
+
+#: src/hd-data.c:985
+msgid "St Olav's Day"
+msgstr ""
+
+#: src/hd-data.c:986
+msgid "St Olav's Eve"
+msgstr ""
+
+#: src/hd-data.c:987
+msgid "St Paul's Shipswreck"
+msgstr ""
+
+#: src/hd-data.c:988
+msgid "St Rose of Lima"
+msgstr ""
+
+#: src/hd-data.c:989
+msgid "St Ursula's Day"
+msgstr ""
+
+#: src/hd-data.c:990
+msgid "St Vincent de Paul's Day"
+msgstr ""
+
+#: src/hd-data.c:991
+msgid "Suez Victory Day"
+msgstr ""
+
+#: src/hd-data.c:992
+msgid "Sultan Qaboos' Birthday"
+msgstr ""
+
+#: src/hd-data.c:993
+msgid "Svetitskhovloba"
+msgstr ""
+
+#: src/hd-data.c:994
+msgid "Sweden Day"
+msgstr ""
+
+#: src/hd-data.c:995
+msgid "S. Doe's Birthday"
+msgstr ""
+
+#: src/hd-data.c:996
+msgid "Tennant-Creek Show Day"
+msgstr ""
+
+#: src/hd-data.c:997
+msgid "Territory Day"
+msgstr ""
+
+#: src/hd-data.c:998
+msgid "The Crown Princesse's Birthday"
+msgstr ""
+
+#: src/hd-data.c:999
+msgid "The Crown Princesse's Name-Day"
+msgstr ""
+
+#: src/hd-data.c:1000
+msgid "The Crown Prince's Birthday"
+msgstr ""
+
+#: src/hd-data.c:1001
+msgid "The King's Name-Day"
+msgstr ""
+
+#: src/hd-data.c:1002
+msgid "The Queen's Name-Day"
+msgstr ""
+
+#: src/hd-data.c:1003
+msgid "Topou I Day"
+msgstr ""
+
+#: src/hd-data.c:1004
+msgid "Town Meeting Day"
+msgstr ""
+
+#: src/hd-data.c:1005
+msgid "Traditional Day"
+msgstr ""
+
+#: src/hd-data.c:1006
+msgid "Transfer Day"
+msgstr ""
+
+#: src/hd-data.c:1007
+msgid "Truman Day"
+msgstr ""
+
+#: src/hd-data.c:1008
+msgid "Union Day"
+msgstr ""
+
+#: src/hd-data.c:1009
+msgid "Union with Sweden dissolved"
+msgstr ""
+
+#: src/hd-data.c:1010
+msgid "United Nations Day"
+msgstr ""
+
+#: src/hd-data.c:1011
+msgid "Unity Factory Day"
+msgstr ""
+
+#: src/hd-data.c:1012
+msgid "Victor-Schoelcher Day"
+msgstr ""
+
+#: src/hd-data.c:1013
+msgid "Vidovdan"
+msgstr ""
+
+#: src/hd-data.c:1014
+msgid "West Virginia Day"
+msgstr ""
+
+#: src/hd-data.c:1015
+msgid "Whitsun Eve"
+msgstr ""
+
+#: src/hd-data.c:1016
+msgid "W. Tubman's Birthday"
+msgstr ""
+
+#: src/hd-data.c:1017
+msgid "Yap Day"
+msgstr ""
+
+#: src/hd-data.c:1018
+msgid "Day of Czech Statehood"
+msgstr ""
+
+#: src/hd-data.c:1083
+msgid "Zi/Rat"
+msgstr ""
+
+#: src/hd-data.c:1083
+msgid "Chou/Ox"
+msgstr ""
+
+#: src/hd-data.c:1084
+msgid "Yin/Tiger"
+msgstr ""
+
+#: src/hd-data.c:1084
+msgid "Mao/Rabbit"
+msgstr ""
+
+#: src/hd-data.c:1085
+msgid "Chen/Dragon"
+msgstr ""
+
+#: src/hd-data.c:1085
+msgid "Si/Snake"
+msgstr ""
+
+#: src/hd-data.c:1086
+msgid "Wu/Horse"
+msgstr ""
+
+#: src/hd-data.c:1086
+msgid "Wei/Sheep"
+msgstr ""
+
+#: src/hd-data.c:1087
+msgid "Shen/Monkey"
+msgstr ""
+
+#: src/hd-data.c:1087
+msgid "You/Rooster"
+msgstr ""
+
+#: src/hd-data.c:1088
+msgid "Xu/Dog"
+msgstr ""
+
+#: src/hd-data.c:1088
+msgid "Hai/Pig"
+msgstr ""
+
+#: src/hd-data.c:1287
+msgid "Ast"
+msgstr ""
+
+#: src/hd-data.c:1400 src/hd-data.c:1483
+msgid "Bah"
+msgstr ""
+
+#: src/hd-data.c:1550
+msgid "Cel"
+msgstr ""
+
+#: src/hd-data.c:1692 src/hd-data.c:2225
+msgid "Chi"
+msgstr ""
+
+#: src/hd-data.c:1806 src/hd-data.c:2325 src/hd-data.c:3842
+#, c-format
+msgid "Cannot calculate lunisolar calendar for %d correctly"
+msgstr ""
+
+#: src/hd-data.c:2227 src/hd-data.c:3730
+msgid "Jap"
+msgstr ""
+
+#: src/hd-data.c:2423
+msgid "Chr"
+msgstr ""
+
+#: src/hd-data.c:2657 src/hd-data.c:4174
+msgid "FRR"
+msgstr ""
+
+#: src/hd-data.c:2778 src/hd-data.c:2960
+msgid "Heb"
+msgstr ""
+
+#: src/hd-data.c:3190 src/hd-data.c:3619
+msgid "Isl"
+msgstr ""
+
+#: src/hd-data.c:4244 src/hd-data.c:4339
+msgid "AMO"
+msgstr ""
+
+#: src/hd-data.c:4265 src/hd-data.c:4337
+msgid "EGO"
+msgstr ""
+
+#: src/hd-data.c:4447
+msgid "OxN"
+msgstr ""
+
+#: src/hd-data.c:4449
+msgid "OxO"
+msgstr ""
+
+#: src/hd-data.c:4650 src/hd-data.c:4779
+msgid "Per"
+msgstr ""
+
+#: src/hd-data.c:4847
+msgid "Zod"
+msgstr ""
+
+#: src/hd-use.c:929
+msgid " day"
+msgstr ""
+
+#: src/hd-use.c:1974 src/hd-use.c:1979 src/hd-use.c:1983 src/hd-use.c:1990
+#: src/hd-use.c:1994 src/hd-use.c:2090 src/hd-use.c:2274
+msgid "Eternal holiday list"
+msgstr ""
+
+#: src/hd-use.c:1978
+#, c-format
+msgid "%s:%*sThe year %0*d is A leap year"
+msgstr ""
+
+#: src/hd-use.c:1982
+#, c-format
+msgid "%s:%*sThe year %0*d is NO leap year"
+msgstr ""
+
+#: src/hd-use.c:1989
+#, c-format
+msgid "%s:%*sThe year %d is A leap year"
+msgstr ""
+
+#: src/hd-use.c:1993
+#, c-format
+msgid "%s:%*sThe year %d is NO leap year"
+msgstr ""
+
+#: src/hd-use.c:2243
+#, c-format
+msgid " = %+4d day"
+msgstr ""
+
+#: src/hd-use.c:2245
+#, c-format
+msgid " = %+4d days"
+msgstr ""
+
+#: src/hd-use.c:2272
+#, c-format
+msgid "%s%s contains %d maximum entries now!%s"
+msgstr ""
+
+#: src/help.c:65
+#, c-format
+msgid "Compiled with %s%s for %s%s%s%s"
+msgstr ""
+
+#: src/help.c:75
+msgid "# Day number (must be defined)"
+msgstr ""
+
+#: src/help.c:76
+msgid "# Year number (must be defined)"
+msgstr ""
+
+#: src/help.c:77
+msgid "# Weekday name (may be defined)"
+msgstr ""
+
+#: src/help.c:78
+msgid "Month group (exactly one member must be defined):"
+msgstr ""
+
+#: src/help.c:79
+msgid "# Month number"
+msgstr ""
+
+#: src/help.c:80
+msgid "# Month name"
+msgstr ""
+
+#: src/help.c:81
+msgid "Highlighting group (all members must be defined):"
+msgstr ""
+
+#: src/help.c:82
+msgid "Start of highlighting sequence/marking character"
+msgstr ""
+
+#: src/help.c:84
+msgid "End of highlighting sequence/marking character"
+msgstr ""
+
+#: src/help.c:86
+msgid "Character replacement:"
+msgstr ""
+
+#: src/help.c:87
+#, c-format
+msgid "Space/blank ('%c') character"
+msgstr ""
+
+#: src/help.c:88
+#, c-format
+msgid "Underscore ('%c') character"
+msgstr ""
+
+#: src/help.c:89
+#, c-format
+msgid "Percent ('%c') character"
+msgstr ""
+
+#: src/help.c:90
+#, c-format
+msgid "Backslash ('%c') character"
+msgstr ""
+
+#: src/help.c:91
+msgid "All format elements marked by # may optionally"
+msgstr ""
+
+#: src/help.c:92
+msgid "contain a format instruction, which template is like:"
+msgstr ""
+
+#: src/help.c:93
+msgid "[ALIGNMENT [SIGN] [ZERO] WIDTH [STYLE] [SUFFIX] FORMAT]"
+msgstr ""
+
+#: src/help.c:94
+msgid "ALIGNMENT group (exactly one member must be defined):"
+msgstr ""
+
+#: src/help.c:95
+msgid "Field contents placed at the left margin using width WIDTH"
+msgstr ""
+
+#: src/help.c:97
+msgid "Field contents placed in centered manner using width WIDTH"
+msgstr ""
+
+#: src/help.c:99
+msgid "Field contents placed at the right margin using width WIDTH"
+msgstr ""
+
+#: src/help.c:101
+msgid "SIGN (may be defined):"
+msgstr ""
+
+#: src/help.c:102
+msgid "Numerical value is provided with leading sign"
+msgstr ""
+
+#: src/help.c:103
+msgid "ZERO (may be defined):"
+msgstr ""
+
+#: src/help.c:104
+msgid "Numerical value is filled with leading zero(es)"
+msgstr ""
+
+#: src/help.c:105
+msgid "WIDTH (must be defined):"
+msgstr ""
+
+#: src/help.c:106
+#, c-format
+msgid "Field has the width N (%d...%d)"
+msgstr ""
+
+#: src/help.c:107
+msgid "STYLE group (exactly one member may be defined):"
+msgstr ""
+
+#: src/help.c:108
+msgid "Field contents is converted to upper-case letters"
+msgstr ""
+
+#: src/help.c:109
+msgid "Field contents is converted to lower-case letters"
+msgstr ""
+
+#: src/help.c:110
+msgid "Field contents is converted to capitalized words"
+msgstr ""
+
+#: src/help.c:111
+msgid "SUFFIX (may be defined):"
+msgstr ""
+
+#: src/help.c:112
+msgid "Numerical value is provided with an ordinal number suffix"
+msgstr ""
+
+#: src/help.c:114
+msgid "FORMAT group (exactly one member must be defined):"
+msgstr ""
+
+#: src/help.c:115
+msgid "Field contents is not cut after position WIDTH"
+msgstr ""
+
+#: src/help.c:116
+msgid "Field contents is cut after position WIDTH"
+msgstr ""
+
+#: src/help.c:130
+msgid "legal holidays"
+msgstr ""
+
+#: src/help.c:131
+msgid "holidays"
+msgstr ""
+
+#: src/help.c:132
+msgid "Mondays"
+msgstr ""
+
+#: src/help.c:133
+msgid "Tuesdays"
+msgstr ""
+
+#: src/help.c:134
+msgid "Wednesdays"
+msgstr ""
+
+#: src/help.c:135
+msgid "Thursdays"
+msgstr ""
+
+#: src/help.c:136
+msgid "Fridays"
+msgstr ""
+
+#: src/help.c:137
+msgid "Saturdays"
+msgstr ""
+
+#: src/help.c:138
+msgid "Sundays"
+msgstr ""
+
+#: src/help.c:139
+msgid "Mondays...Thursdays"
+msgstr ""
+
+#: src/help.c:140
+msgid "Mondays...Fridays"
+msgstr ""
+
+#: src/help.c:170
+#, c-format
+msgid "%s: Use `%s %s' with one of these arguments"
+msgstr ""
+
+#: src/help.c:243
+msgid "OPTION"
+msgstr ""
+
+#: src/help.c:256
+msgid "          Display help text and quit program"
+msgstr ""
+
+#: src/help.c:273
+msgid "          Display extended help text and quit program"
+msgstr ""
+
+#: src/help.c:291
+msgid "          Display software license and quit program"
+msgstr ""
+
+#: src/help.c:302
+msgid "          Display version information and quit program"
+msgstr ""
+
+#: src/help.c:313
+#, c-format
+msgid "          Set EXIT status of program to %d on `%s' etc."
+msgstr ""
+
+#: src/help.c:326
+#, c-format
+msgid "          Create response file for the `%cFILE' option"
+msgstr ""
+
+#: src/help.c:330
+#, c-format
+msgid "   %-3s    = Store arguments of command line in file %s"
+msgstr ""
+
+#: src/help.c:344
+#, c-format
+msgid ""
+"          Create shell script which contains the arguments of command line"
+msgstr ""
+
+#: src/help.c:346
+#, c-format
+msgid "   %-3s    = File name of the shell script"
+msgstr ""
+
+#: src/help.c:360
+msgid "          Define global date variable(s) \"DVAR->a...d|f...s|u...|z\""
+msgstr ""
+
+#: src/help.c:364
+#, c-format
+msgid "   %-3s    = \"DVAR%s%s%s\" definitions separated by `%s' characters"
+msgstr ""
+
+#: src/help.c:369
+#, c-format
+msgid ""
+"            E.g.  %sv a%s1127%sb%s054   Set `a' to Nov 27 and `b' to May 4"
+msgstr ""
+
+#: src/help.c:381
+msgid "          Export local date variables from file to file"
+msgstr ""
+
+#: src/help.c:393
+#, c-format
+msgid "          Define global text variable(s) \"TVAR->%ca...%cz\""
+msgstr ""
+
+#: src/help.c:398
+#, c-format
+msgid "   %-3s    = \"TVAR%sTEXT\" definitions separated by `%s' characters"
+msgstr ""
+
+#: src/help.c:403
+#, c-format
+msgid ""
+"            E.g.  %sr %ca%sfoo%s%cb%sbar   Set `%ca' to `foo' and `%cb' to "
+"`bar'"
+msgstr ""
+
+#: src/help.c:409
+#, c-format
+msgid ""
+"          = \"TVAR[%s|%c%s]COMMAND\" definitions separated by `%s' characters"
+msgstr ""
+
+#: src/help.c:414
+#, c-format
+msgid ""
+"            E.g.  %sr %ca%sfoo   Assign output of command `foo' to `%ca'"
+msgstr ""
+
+#: src/help.c:426
+msgid "          Export local text variables from file to file"
+msgstr ""
+
+#: src/help.c:438 src/help.c:468
+#, c-format
+msgid ""
+"          Display only those fixed dates, whose date is not excluded by %s"
+msgstr ""
+
+#: src/help.c:443
+#, c-format
+msgid "   %-3s    = One or more of the following characters.  If character"
+msgstr ""
+
+#: src/help.c:448
+msgid "            is a LOWER-CASE-LETTER, it means a non-exclusion!"
+msgstr ""
+
+#: src/help.c:452
+#, c-format
+msgid "            %c = Exclusion of all %s"
+msgstr ""
+
+#: src/help.c:473
+#, c-format
+msgid "   %-3s    = List of `%c[DATE][%c[DATE]]' and/or `%c[DATE][%c[DATE]]'"
+msgstr ""
+
+#: src/help.c:477
+#, c-format
+msgid "            expressions separated by `%s' characters"
+msgstr ""
+
+#: src/help.c:490
+#, c-format
+msgid "          Display only those fixed dates, whose text is matched by %s"
+msgstr ""
+
+#: src/help.c:495
+#, c-format
+msgid "   %-3s    = Any text respectively \"regular expression\" you like"
+msgstr ""
+
+#: src/help.c:508
+#, c-format
+msgid "          Ignore case distinctions if `%s' option is given"
+msgstr ""
+
+#: src/help.c:520
+#, c-format
+msgid "          Revert the sense of matching of the `%s' option"
+msgstr ""
+
+#: src/help.c:531
+msgid "          Display some debug information"
+msgstr ""
+
+#: src/help.c:539
+#, c-format
+msgid ""
+"  [%-3s]   = internal    Information if program internal maximums are reached"
+msgstr ""
+
+#: src/help.c:548
+msgid ""
+"          = handled     Like `internal' and file names which are handled"
+msgstr ""
+
+#: src/help.c:556
+msgid ""
+"          = unhandled   Like `internal' and file names which are unhandled"
+msgstr ""
+
+#: src/help.c:564
+msgid "          = all         Like `handled' and `unhandled' together"
+msgstr ""
+
+#: src/help.c:572
+msgid ""
+"          = abort       Like `all' and abort if file name can't be handled"
+msgstr ""
+
+#: src/help.c:582
+msgid "          Use special format for calendar sheet"
+msgstr ""
+
+#: src/help.c:585
+msgid "  [MOD]   = -   Use standard format for calendar sheet"
+msgstr ""
+
+#: src/help.c:596
+msgid "          Use leap year rule of Eastern Orthodox churches"
+msgstr ""
+
+#: src/help.c:606
+msgid "          Provide calendar sheet with week numbers"
+msgstr ""
+
+#: src/help.c:617
+#, c-format
+msgid "          Determine type of week numbers (actual:  %s)"
+msgstr ""
+
+#: src/help.c:618
+msgid "Standard"
+msgstr ""
+
+#: src/help.c:624
+#, c-format
+msgid "   %-3s    = yes   ISO-8601:1988 week numbers"
+msgstr ""
+
+#: src/help.c:631
+msgid "          = no    Standard week numbers"
+msgstr ""
+
+#: src/help.c:642
+msgid "          Suppress output of calendar sheet explicitly"
+msgstr ""
+
+#: src/help.c:655
+#, c-format
+msgid "          Direct output through external `%s' pager"
+msgstr ""
+
+#: src/help.c:661 src/help.c:663
+msgid "          Direct output through simple internal pager"
+msgstr ""
+
+#: src/help.c:680
+msgid "          Disable highlighting of text, holiday resp., actual day"
+msgstr ""
+
+#: src/help.c:695
+msgid "          Forces highlighting sequences if output is redirected/piped"
+msgstr ""
+
+#: src/help.c:707
+msgid ""
+"          Set highlighting sequence pairs 1 (=actual day) and 2 (=holiday)"
+msgstr ""
+
+#: src/help.c:711
+#, c-format
+msgid "   %-3s    = Highlighting sequence pairs separated by `%s' characters"
+msgstr ""
+
+#: src/help.c:716
+#, c-format
+msgid ""
+"            E.g.  %sH \\x2%s\\xAE   Use hex values 2 and AE for sequence 1"
+msgstr ""
+
+#: src/help.c:721
+#, c-format
+msgid ""
+"            E.g.  %sH %s%s*%s*      Use characters `*' and `*' for sequence 2"
+msgstr ""
+
+#: src/help.c:732
+msgid "          Modify format of year calendar"
+msgstr ""
+
+#: src/help.c:736
+#, c-format
+msgid "   %-3s    = 1|2|3|4|6|12   Number of blocks (actual:  %d)"
+msgstr ""
+
+#: src/help.c:748
+msgid "          Use consecutive day of year in calendar sheet"
+msgstr ""
+
+#: src/help.c:752
+msgid "  [MOD]   = b   Use both date notations (day of month+year)"
+msgstr ""
+
+#: src/help.c:764
+msgid "          Use consecutive day of year in eternal holiday list"
+msgstr ""
+
+#: src/help.c:768 src/help.c:784
+msgid "   [MOD]  = b   Use both date notations (day of month+year)"
+msgstr ""
+
+#: src/help.c:780
+msgid "          Use consecutive day of year in fixed date list"
+msgstr ""
+
+#: src/help.c:795
+#, c-format
+msgid "          Set starting day of week (actual:  %s)"
+msgstr ""
+
+#: src/help.c:828
+#, c-format
+msgid "          Send output via `%s' program to user"
+msgstr ""
+
+#: src/help.c:857
+msgid "UNKNOWN"
+msgstr ""
+
+#: src/help.c:860
+#, c-format
+msgid "  [%-3s]   = Email address, otherwise eMail is send to user `%s'"
+msgstr ""
+
+#: src/help.c:878
+#, c-format
+msgid "          Display eternal holiday list (Year in range: %d...%d)"
+msgstr ""
+
+#: src/help.c:881
+msgid " n        = Legal days and memorial days"
+msgstr ""
+
+#: src/help.c:883
+msgid "   N      = Legal days only"
+msgstr ""
+
+#: src/help.c:885 src/help.c:1631
+#, c-format
+msgid "    [MOD] = %s   Descending sort order"
+msgstr ""
+
+#: src/help.c:897
+msgid "          Suppress leading blank line of eternal holiday list"
+msgstr ""
+
+#: src/help.c:907
+msgid "          Exclude title of eternal holiday list"
+msgstr ""
+
+#: src/help.c:919
+msgid "          Provide eternal holiday list with astronomical data"
+msgstr ""
+
+#: src/help.c:931
+msgid "          Provide eternal holiday list with Bahá'i calendar holidays"
+msgstr ""
+
+#: src/help.c:943
+msgid "          Provide eternal holiday list with Bahá'i calendar months"
+msgstr ""
+
+#: src/help.c:955
+msgid "          Provide eternal holiday list with Celtic calendar holidays"
+msgstr ""
+
+#: src/help.c:967
+msgid ""
+"          Provide eternal holiday list with Chinese flexible calendar "
+"holidays"
+msgstr ""
+
+#: src/help.c:979
+msgid ""
+"          Provide eternal holiday list with Chinese flexible calendar months"
+msgstr ""
+
+#: src/help.c:991
+msgid "          Provide eternal holiday list with Chinese calendar holidays"
+msgstr ""
+
+#: src/help.c:1003
+msgid "          Provide eternal holiday list with Chinese calendar months"
+msgstr ""
+
+#: src/help.c:1015
+msgid ""
+"          Provide eternal holiday list with Christian Western calendar "
+"holidays"
+msgstr ""
+
+#: src/help.c:1027
+msgid "          Provide eternal holiday list with Coptic calendar months"
+msgstr ""
+
+#: src/help.c:1039
+msgid "          Provide eternal holiday list with Ethiopic calendar months"
+msgstr ""
+
+#: src/help.c:1051
+msgid ""
+"          Provide eternal holiday list with French Revolutionary calendar "
+"months"
+msgstr ""
+
+#: src/help.c:1063
+msgid "          Provide eternal holiday list with Hebrew calendar holidays"
+msgstr ""
+
+#: src/help.c:1075
+msgid "          Provide eternal holiday list with Hebrew calendar months"
+msgstr ""
+
+#: src/help.c:1087
+msgid ""
+"          Provide eternal holiday list with Indian civil-calendar months"
+msgstr ""
+
+#: src/help.c:1099
+msgid ""
+"          Provide eternal holiday list with Islamic civil-calendar holidays"
+msgstr ""
+
+#: src/help.c:1111
+msgid ""
+"          Provide eternal holiday list with Islamic civil-calendar months"
+msgstr ""
+
+#: src/help.c:1123
+msgid ""
+"          Provide eternal holiday list with Japanese flexible calendar "
+"holidays"
+msgstr ""
+
+#: src/help.c:1135
+msgid ""
+"          Provide eternal holiday list with Japanese flexible calendar months"
+msgstr ""
+
+#: src/help.c:1147
+msgid "          Provide eternal holiday list with Japanese calendar holidays"
+msgstr ""
+
+#: src/help.c:1159
+msgid "          Provide eternal holiday list with Japanese calendar months"
+msgstr ""
+
+#: src/help.c:1172
+msgid ""
+"          Provide eternal holiday list with multicultural New Year holidays"
+msgstr ""
+
+#: src/help.c:1184
+msgid "          Provide eternal holiday list with Old-Armenic calendar months"
+msgstr ""
+
+#: src/help.c:1196
+msgid "          Provide eternal holiday list with Old-Egyptic calendar months"
+msgstr ""
+
+#: src/help.c:1208
+msgid ""
+"          Provide eternal holiday list with Orthodox new-calendar holidays"
+msgstr ""
+
+#: src/help.c:1220
+msgid ""
+"          Provide eternal holiday list with Orthodox old-calendar holidays"
+msgstr ""
+
+#: src/help.c:1232
+msgid ""
+"          Provide eternal holiday list with Persian Jalaali-calendar holidays"
+msgstr ""
+
+#: src/help.c:1244
+msgid ""
+"          Provide eternal holiday list with Persian Jalaali-calendar months"
+msgstr ""
+
+#: src/help.c:1256
+msgid "          Provide eternal holiday list with zodiacal marker data"
+msgstr ""
+
+#: src/help.c:1268
+msgid "          Provide eternal holiday list with country specific holidays"
+msgstr ""
+
+#: src/help.c:1272
+#, c-format
+msgid "   %-3s    = Single country resp., territory code or a list of these,"
+msgstr ""
+
+#: src/help.c:1277
+#, c-format
+msgid ""
+"            which are connected by `%s' characters. Countries/territories,"
+msgstr ""
+
+#: src/help.c:1282
+msgid "            marked by # have an incomplete recording of holidays"
+msgstr ""
+
+#: src/help.c:1286
+#, c-format
+msgid "            %-*s = Holidays in %s"
+msgstr ""
+
+#: src/help.c:1307
+msgid ""
+"          Set reference value for rise/set time respectively shadow length"
+msgstr ""
+
+#: src/help.c:1311
+#, c-format
+msgid "   %-3s    = Angular value respectively factor in range:  %+.1f...%+.1f"
+msgstr ""
+
+#: src/help.c:1322
+msgid "          Set base data of Earth's atmosphere"
+msgstr ""
+
+#: src/help.c:1326
+#, c-format
+msgid "   %-3s    = Air pressure and temperature separated by `%s' character"
+msgstr ""
+
+#: src/help.c:1329
+#, c-format
+msgid "            Air pressure in Millibar (actual:  %.3f)"
+msgstr ""
+
+#: src/help.c:1334
+#, c-format
+msgid "            Air temperature in degrees Celsius (actual:  %+.3f)"
+msgstr ""
+
+#: src/help.c:1344
+msgid "          Limit rise/set times of Sun to the day"
+msgstr ""
+
+#: src/help.c:1356
+msgid "          Represent astronomical times and data with utmost precision"
+msgstr ""
+
+#: src/help.c:1366
+#, c-format
+msgid "          Execute `%c%c[%s]' shell commands"
+msgstr ""
+
+#: src/help.c:1369
+#, c-format
+msgid "          and \"TVAR[%s|%c%s]COMMAND\" assignments"
+msgstr ""
+
+#: src/help.c:1381
+msgid "          Change base time of astronomical functions"
+msgstr ""
+
+#: src/help.c:1384
+msgid "          respectively, change cycle-starting time"
+msgstr ""
+
+#: src/help.c:1394
+#, c-format
+msgid ""
+"   %-3s    = %c|%c|[%c|%c][%s|%s]MMMM|HH%s[MM]   Time offset value (actual:  "
+"%s%02d%s%02d == GMT%s)"
+msgstr ""
+
+#: src/help.c:1402
+#, c-format
+msgid ""
+"   %-3s    = %c|[%c][%s|%s]MMMM|HH%s[MM]   Time offset value (actual:  %s%02d"
+"%s%02d == GMT%s)"
+msgstr ""
+
+#: src/help.c:1418
+msgid "          Change cycle-ending time"
+msgstr ""
+
+#: src/help.c:1422
+#, c-format
+msgid ""
+"   %-3s    = %c|%c|[%c|%c][%s|%s]MMMM|HH%s[MM]   Ending time value (actual:  "
+"%02d%s%02d)"
+msgstr ""
+
+#: src/help.c:1436
+msgid "          Change cycle-timestep"
+msgstr ""
+
+#: src/help.c:1440
+#, c-format
+msgid "   %-3s    = MMMM|HH%s[MM]   Timestep value (actual:  %02d%s%02d)"
+msgstr ""
+
+#: src/help.c:1453
+msgid "          Change base year of calendar"
+msgstr ""
+
+#: src/help.c:1457
+#, c-format
+msgid "   %-3s    = [%s|%s]YYYY   Year offset value (actual:  %d)"
+msgstr ""
+
+#: src/help.c:1469
+msgid "          Set period of Gregorian Reformation"
+msgstr ""
+
+#: src/help.c:1471
+#, c-format
+msgid "          Actual respected period:  %02d-%02d %s %0*d"
+msgstr ""
+
+#: src/help.c:1477
+#, c-format
+msgid "   %-*d%*s = Set period to:  %02d-%02d %s %0*d"
+msgstr ""
+
+#: src/help.c:1485
+#, c-format
+msgid "   %-3s    = %s%c%s%s%s%s%s%s   Set period explicitly"
+msgstr ""
+
+#: src/help.c:1499
+#, c-format
+msgid "          Set order of date elements using the %s format text"
+msgstr ""
+
+#: src/help.c:1502
+#, c-format
+msgid "          Actual:  (%s) `%s' (%s)"
+msgstr ""
+
+#: src/help.c:1504
+msgid "self-defined"
+msgstr ""
+
+#: src/help.c:1509
+#, c-format
+msgid "   %-6s = Format is:  `%s' (%s)"
+msgstr ""
+
+#: src/help.c:1517
+#, c-format
+msgid "   %-3s    = Define individual format. Respected format elements are:"
+msgstr ""
+
+#: src/help.c:1560
+msgid "          Define translatable country specific special character pairs"
+msgstr ""
+
+#: src/help.c:1564
+#, c-format
+msgid "   %-3s    = UPPER-CASE-LETTER\"\"LOWER-CASE-LETTER... definitions"
+msgstr ""
+
+#: src/help.c:1569
+#, c-format
+msgid ""
+"            E.g. a `%s%s%s%s%s%s%s%s' %-3s causes the correct conversion of"
+msgstr ""
+
+#: src/help.c:1574
+msgid ""
+"            the preceding special characters in an individual date format,"
+msgstr ""
+
+#: src/help.c:1578
+msgid ""
+"            which has a STYLE format instruction component, and that, how"
+msgstr ""
+
+#: src/help.c:1582
+msgid "            they are used by the character set used in Germany"
+msgstr ""
+
+#: src/help.c:1591
+#, c-format
+msgid "+++ FIXED DATES +++"
+msgstr ""
+
+#: src/help.c:1612
+#, c-format
+msgid "          Use standard resource file `.%s%s' for fixed date list"
+msgstr ""
+
+#: src/help.c:1617
+#, c-format
+msgid "          Use standard resource file `%s%s' for fixed date list"
+msgstr ""
+
+#: src/help.c:1621 src/help.c:2161
+msgid "          Implies period:  Today"
+msgstr ""
+
+#: src/help.c:1625
+msgid " c        = Display only those dates, for which fixed dates exists"
+msgstr ""
+
+#: src/help.c:1629
+msgid ""
+"   C      = Display those dates, for which fixed dates doesn't exist, too"
+msgstr ""
+
+#: src/help.c:1641
+msgid ""
+"    [MOD] = One or more of the following modifiers which are marked by #"
+msgstr ""
+
+#: src/help.c:1654
+#, c-format
+msgid "            %-3s         = Heading/Title text used for fixed date list"
+msgstr ""
+
+#: src/help.c:1657
+#, c-format
+msgid "                          Actual:  `%s'"
+msgstr ""
+
+#: src/help.c:1670
+msgid "          # g[MOD]       = Group fixed dates by day using text MOD"
+msgstr ""
+
+#: src/help.c:1682
+msgid "          1. Representation of text"
+msgstr ""
+
+#: src/help.c:1694
+msgid "                         = Set width of the biorhythm text graphics"
+msgstr ""
+
+#: src/help.c:1698
+#, c-format
+msgid "                           %-3s = %d...%d   Length of a single axis"
+msgstr ""
+
+#: src/help.c:1711
+msgid "                         = Set height of the Moon phase text graphics"
+msgstr ""
+
+#: src/help.c:1715
+#, c-format
+msgid "                           %-3s = %d...%d   Total number of lines"
+msgstr ""
+
+#: src/help.c:1727
+msgid "          # a            = Display origin of fixed date"
+msgstr ""
+
+#: src/help.c:1739
+msgid "          # A            = Display using alternative list format"
+msgstr ""
+
+#: src/help.c:1751
+msgid "          # e            = Include legal days and memorial days"
+msgstr ""
+
+#: src/help.c:1753
+msgid "          # E            = Include legal days only"
+msgstr ""
+
+#: src/help.c:1763
+msgid "          # k            = Display week number"
+msgstr ""
+
+#: src/help.c:1775
+msgid "          # o            = Omit repeating date part of fixed dates"
+msgstr ""
+
+#: src/help.c:1787
+msgid ""
+"          # Q            = Suppress leading blank line of fixed dates list"
+msgstr ""
+
+#: src/help.c:1799
+msgid "          # U            = Suppress date part of fixed dates"
+msgstr ""
+
+#: src/help.c:1811
+msgid "          # J            = Suppress text part of fixed dates"
+msgstr ""
+
+#: src/help.c:1823
+msgid "          # x            = Exclude title of fixed date list"
+msgstr ""
+
+#: src/help.c:1835
+msgid "          # z            = Display consecutive number of fixed date"
+msgstr ""
+
+#: src/help.c:1847
+msgid ""
+"          # Z            = Display dates, for which fixed dates doesn't exist"
+msgstr ""
+
+#: src/help.c:1855
+msgid "          2. Respected period"
+msgstr ""
+
+#: src/help.c:1867
+msgid "                         = Manage `29-FEBRUARY' in non-leap years"
+msgstr ""
+
+#: src/help.c:1875
+#, c-format
+msgid "                           %-3s = february   Respect at `28-FEBRUARY'"
+msgstr ""
+
+#: src/help.c:1884
+#, c-format
+msgid "                           %-3s = march      Respect at `01-MARCH'"
+msgstr ""
+
+#: src/help.c:1897
+msgid ""
+"          # d            = Include actual date if list of periods is "
+"generated"
+msgstr ""
+
+#: src/help.c:1909
+msgid ""
+"          # l            = Generate list of periods instead of a single "
+"period"
+msgstr ""
+
+#: src/help.c:1925
+msgid "          # Nd           = Single absolute day N"
+msgstr ""
+
+#: src/help.c:1927
+#, c-format
+msgid "          # %cdN          = Single absolute day N"
+msgstr ""
+
+#: src/help.c:1932
+msgid "          # NMOD         = Single day N relative to today"
+msgstr ""
+
+#: src/help.c:1934
+#, c-format
+msgid "             MOD           = %s   Forwards"
+msgstr ""
+
+#: src/help.c:1936
+#, c-format
+msgid "                           = %s   Backwards"
+msgstr ""
+
+#: src/help.c:1939
+msgid "          # Nw           = Complete week N"
+msgstr ""
+
+#: src/help.c:1943
+msgid ""
+"                           N = 0        1st week / last week of previous year"
+msgstr ""
+
+#: src/help.c:1947
+msgid "                           N = 1...52   1st...52nd week (always)"
+msgstr ""
+
+#: src/help.c:1951
+msgid "                           N = 53       53rd week (sometimes)"
+msgstr ""
+
+#: src/help.c:1953
+msgid "                           N = 99       Last week"
+msgstr ""
+
+#: src/help.c:1956
+#, c-format
+msgid "          # %s%s         = Single day %s of month %s"
+msgstr ""
+
+#: src/help.c:1962
+#, c-format
+msgid "          # %s%sN       = Single N'th weekday %s of month %s"
+msgstr ""
+
+#: src/help.c:1967
+#, c-format
+msgid "                           N = 1...4   1st...4th weekday %s (always)"
+msgstr ""
+
+#: src/help.c:1972
+#, c-format
+msgid "                           N = 5       5th weekday %s (sometimes)"
+msgstr ""
+
+#: src/help.c:1976
+#, c-format
+msgid "                           N = 9       Last weekday %s"
+msgstr ""
+
+#: src/help.c:1980
+#, c-format
+msgid "          # %cdN%s       = Single N'th weekday %s"
+msgstr ""
+
+#: src/help.c:1985
+#, c-format
+msgid "                           N = 1...51   1st...51st weekday %s (always)"
+msgstr ""
+
+#: src/help.c:1990
+#, c-format
+msgid "                           N = 52|53    52|53rd weekday %s (sometimes)"
+msgstr ""
+
+#: src/help.c:1994
+#, c-format
+msgid "                           N = 99       Last weekday %s"
+msgstr ""
+
+#: src/help.c:1999
+#, c-format
+msgid "          # %cwN%s       = Single weekday %s of N'th week"
+msgstr ""
+
+#: src/help.c:2004
+#, c-format
+msgid ""
+"                           N = 0        %s which isn't located in 1st week"
+msgstr ""
+
+#: src/help.c:2009
+#, c-format
+msgid "                           N = 1...51   %s of 1st...51st week (always)"
+msgstr ""
+
+#: src/help.c:2014
+#, c-format
+msgid "                           N = 52|53    %s of 52|53rd week (sometimes)"
+msgstr ""
+
+#: src/help.c:2018
+#, c-format
+msgid "                           N = 99       %s of last week"
+msgstr ""
+
+#: src/help.c:2024
+#, c-format
+msgid "          # %c%c[[%s|%s]N]   = Single day N relative to Easter Sunday"
+msgstr ""
+
+#: src/help.c:2030
+#, c-format
+msgid ""
+"          # %c%c[%s|%s]N%s  = Single N'th weekday relative to Easter Sunday"
+msgstr ""
+
+#: src/help.c:2036
+#, c-format
+msgid "          # %c%c[[%s|%s]N]   = Single day N relative to today's date"
+msgstr ""
+
+#: src/help.c:2042
+#, c-format
+msgid ""
+"          # %c%c[%s|%s]N%s  = Single N'th weekday relative to today's date"
+msgstr ""
+
+#: src/help.c:2048
+#, c-format
+msgid "          # %c?[[%s|%s]N]   = Single day N relative to date variable"
+msgstr ""
+
+#: src/help.c:2054
+#, c-format
+msgid ""
+"          # %c?[%s|%s]N%s  = Single N'th weekday relative to date variable"
+msgstr ""
+
+#: src/help.c:2062
+msgid "          # t|T          = List tomorrow"
+msgstr ""
+
+#: src/help.c:2079
+msgid "          # w|W[MOD]     = List complete week"
+msgstr ""
+
+#: src/help.c:2083
+#, c-format
+msgid ""
+"               [MOD]       = %s   List tomorrow until ending day of week"
+msgstr ""
+
+#: src/help.c:2088
+#, c-format
+msgid ""
+"                           = %s   List yesterday until starting day of week"
+msgstr ""
+
+#: src/help.c:2108
+msgid "          # m|M[MOD]     = List complete month"
+msgstr ""
+
+#: src/help.c:2112
+#, c-format
+msgid ""
+"               [MOD]       = %s   List tomorrow until ending day of month"
+msgstr ""
+
+#: src/help.c:2117
+#, c-format
+msgid ""
+"                           = %s   List yesterday until starting day of month"
+msgstr ""
+
+#: src/help.c:2137
+msgid "          # y|Y[MOD]     = List complete year"
+msgstr ""
+
+#: src/help.c:2141
+#, c-format
+msgid ""
+"               [MOD]       = %s   List tomorrow until ending day of year"
+msgstr ""
+
+#: src/help.c:2146
+#, c-format
+msgid ""
+"                           = %s   List yesterday until starting day of year"
+msgstr ""
+
+#: src/help.c:2159
+msgid "          Use alternative file(s) instead of standard resource file"
+msgstr ""
+
+#: src/help.c:2165
+msgid " f        = Display only those dates, for which fixed dates exists"
+msgstr ""
+
+#: src/help.c:2169
+msgid ""
+"   F      = Display those dates, for which fixed dates doesn't exist, too"
+msgstr ""
+
+#: src/help.c:2173
+#, c-format
+msgid "     %-3s  = Single file or list of files connected by `%s' characters"
+msgstr ""
+
+#: src/help.c:2184
+msgid "          Define additional resource file line"
+msgstr ""
+
+#: src/help.c:2186
+#, c-format
+msgid "   %-3s    = Any possible resource file line"
+msgstr ""
+
+#: src/help.c:2196
+#, c-format
+msgid "%cDATE"
+msgstr ""
+
+#: src/help.c:2198
+msgid "Use given `DATE' instead of today's date"
+msgstr ""
+
+#: src/help.c:2202
+#, c-format
+msgid ""
+"Date format:  %s[%s[%s|%s[N]]], %s%c%c|%c|DVAR[[%s|%s]N[%s]], %s%cdN[%s]"
+msgstr ""
+
+#: src/help.c:2209
+#, c-format
+msgid "              %s%cwN[%s], month name[%s], weekday name[N] or %s"
+msgstr ""
+
+#: src/help.c:2218
+#, c-format
+msgid "%cFILE"
+msgstr ""
+
+#: src/help.c:2220
+msgid "Preload options and commands from `FILE'"
+msgstr ""
+
+#: src/help.c:2224
+msgid "COMMAND"
+msgstr ""
+
+#: src/help.c:2226
+#, c-format
+msgid "%s        = Month in range:  %d...%d"
+msgstr ""
+
+#: src/help.c:2231
+#, c-format
+msgid "                        or:  month name | %s | %s%s | %s%s | %s%s"
+msgstr ""
+
+#: src/help.c:2236
+#, c-format
+msgid "            List:   %s[%s%s]%s...%s%s[%s%s]"
+msgstr ""
+
+#: src/help.c:2242
+#, c-format
+msgid "            Range:  %s[%s%s]%s%s[%s%s] | %s%s%s%s%s | %s %s%s%s"
+msgstr ""
+
+#: src/help.c:2248
+#, c-format
+msgid "%s%*s    = Year  in range:  %d...%d"
+msgstr ""
+
+#: src/help.c:2252
+#, c-format
+msgid "            List:   [%s%s]%s%s...%s[%s%s]%s"
+msgstr ""
+
+#: src/help.c:2257
+#, c-format
+msgid "            Range:  [%s%s]%s%s[%s%s]%s | %s%s%s %s%s%s"
+msgstr ""
+
+#: src/help.c:2283
+#, c-format
+msgid "  %sh,  %s          Display this help text and quit program"
+msgstr ""
+
+#: src/help.c:2286
+#, c-format
+msgid "  %shh, %s   Display extended help text and quit program"
+msgstr ""
+
+#: src/help.c:2290
+#, c-format
+msgid "  %sL,  %s       Display software license and quit program"
+msgstr ""
+
+#: src/help.c:2294
+#, c-format
+msgid "  %sV,  %s       Display version information and quit program"
+msgstr ""
+
+#: src/help.c:2302
+#, c-format
+msgid "  %sp,  %s         Direct output through external `%s' pager"
+msgstr ""
+
+#: src/help.c:2309 src/help.c:2314
+#, c-format
+msgid "  %sp,  %s         Direct output through simple internal pager"
+msgstr ""
+
+#: src/help.c:2339
+msgid "This software doesn't claim completeness, correctness or usability."
+msgstr ""
+
+#: src/help.c:2343
+msgid "On principle I will not be liable for ANY damages or losses (implicit"
+msgstr ""
+
+#: src/help.c:2347
+msgid "or explicit), which result from using or handling my software."
+msgstr ""
+
+#: src/help.c:2351
+msgid "If you use this software, you agree without any exception to this"
+msgstr ""
+
+#: src/help.c:2353
+msgid "agreement, which binds you LEGALLY !!"
+msgstr ""
+
+#: src/help.c:2358
+msgid "This program is free software; you can redistribute it and/or modify"
+msgstr ""
+
+#: src/help.c:2362
+msgid "it under the terms of the `GNU General Public License' as published by"
+msgstr ""
+
+#: src/help.c:2366
+msgid "the `Free Software Foundation'; either version 3, or (at your option)"
+msgstr ""
+
+#: src/help.c:2368
+msgid "any later version."
+msgstr ""
+
+#: src/help.c:2373
+msgid "You should have received a copy of the `GNU General Public License'"
+msgstr ""
+
+#: src/help.c:2375
+msgid "along with this program; if not, write to the:"
+msgstr ""
+
+#: src/help.c:2424
+#, c-format
+msgid ""
+"Usage:  %s [%s|%s{[?|h|??|hh|L|V]|{%sHKNOR%sXb%sijn%sq%ssu%s}}] [[%s] [%s]]"
+msgstr ""
+
+#: src/help.c:2452
+#, c-format
+msgid "Use `%s %s|[%s?]"
+msgstr ""
+
+#: src/help.c:2461
+msgid "for more information."
+msgstr ""
+
+#: src/help.c:2565 src/tcal.c:199 src/txt2gcal.c:137 src/gcal2txt.c:137
+#, c-format
+msgid "Email bug reports to <%s>"
+msgstr ""
+
+#: src/help.c:2567
+#, c-format
+msgid "GNU gcal home page: <%s>"
+msgstr ""
+
+#: src/help.c:2569
+#, c-format
+msgid "General help using GNU software: <%s>"
+msgstr ""
+
+#: src/help.c:2595 src/tcal.c:221 src/txt2gcal.c:159 src/gcal2txt.c:159
+#, c-format
+msgid "This is free software; see the source for copying conditions."
+msgstr ""
+
+#: src/help.c:2599 src/tcal.c:224 src/txt2gcal.c:162 src/gcal2txt.c:162
+#, c-format
+msgid "There is NO warranty, without even the implied warranty of"
+msgstr ""
+
+#: src/help.c:2601 src/tcal.c:226 src/txt2gcal.c:164 src/gcal2txt.c:164
+#, c-format
+msgid "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+msgstr ""
+
+#: src/help.c:2617
+#, c-format
+msgid "%s: The Gregorian calendar program (GNU cal) %s"
+msgstr ""
+
+#: src/help.c:2625
+#, c-format
+msgid "Usage:  %s [[OPTION...] [%cDATE] [%cFILE...]] [COMMAND]"
+msgstr ""
+
+#: src/help.c:2628
+#, c-format
+msgid "Usage:  %s [[OPTION...] [%cFILE...]] [COMMAND]"
+msgstr ""
+
+#: src/help.c:2704 src/help.c:2850
+msgid " 4.0 or 4.02"
+msgstr ""
+
+#: src/help.c:2712 src/help.c:2858
+msgid " later than 5.0"
+msgstr ""
+
+#: src/help.c:2723 src/help.c:2865
+msgid "++ 3.0 or later"
+msgstr ""
+
+#: src/help.c:2750 src/help.c:2971
+msgid "5.1 or earlier"
+msgstr ""
+
+#: src/help.c:2753 src/help.c:2974 src/help.c:3129 src/help.c:3199
+msgid "unknown compiler"
+msgstr ""
+
+#: src/help.c:2788 src/help.c:2877 src/help.c:3011 src/help.c:3033
+#: src/help.c:3102 src/help.c:3139 src/help.c:3157 src/help.c:3214
+#: src/help.c:3429
+msgid " on "
+msgstr ""
+
+#: src/help.c:2827
+msgid "(bad version)"
+msgstr ""
+
+#: src/help.c:2874
+msgid "unknown compiler (SDK?)"
+msgstr ""
+
+#: src/help.c:2942
+msgid " later than 4.5"
+msgstr ""
+
+#: src/help.c:2952
+msgid "++ 1.0 or later"
+msgstr ""
+
+#: src/help.c:2960
+msgid " 1.0 or 1.5?"
+msgstr ""
+
+#: src/help.c:3075
+msgid "unknown "
+msgstr ""
+
+#: src/help.c:3087
+#, c-format
+msgid "version %d.%d"
+msgstr ""
+
+#: src/help.c:3090 src/help.c:3123 src/help.c:3249
+#, c-format
+msgid "version %d"
+msgstr ""
+
+#: src/help.c:3092
+#, c-format
+msgid "unknown version"
+msgstr ""
+
+#: src/help.c:3206
+#, c-format
+msgid " (%.4s for Alpha)"
+msgstr ""
+
+#: src/help.c:3209
+#, c-format
+msgid " (%.4s for VAX)"
+msgstr ""
+
+#: src/help.c:3360
+msgid " (NetBSD before 0.9)"
+msgstr ""
+
+#: src/help.c:3360
+msgid " (NetBSD 1.2 or later)"
+msgstr ""
+
+#: src/help.c:3367
+msgid " (FreeBSD 2.0 or later)"
+msgstr ""
+
+#: src/help.c:3370
+msgid " (BSD/386 1.1 or later)"
+msgstr ""
+
+#: src/print.c:545 src/print.c:979 src/print.c:1034
+msgid "CW"
+msgstr ""
+
+#: src/print.c:566
+msgid "Week"
+msgstr ""
+
+#: src/rc-insert.c:1707 src/rc-insert.c:2825
+msgid "pm"
+msgstr ""
+
+#: src/rc-insert.c:1716 src/rc-insert.c:2834
+msgid "am"
+msgstr ""
+
+#: src/rc-insert.c:2019 src/rc-insert.c:2029
+msgid "d'\""
+msgstr ""
+
+#: src/rc-insert.c:2039
+msgid "h'\""
+msgstr ""
+
+#: src/rc-insert.c:3729 src/rc-utils.c:2586
+#, c-format
+msgid ""
+"Cannot execute command in file `%s'\n"
+"Line: %ld %s"
+msgstr ""
+
+#: src/rc-insert.c:3751 src/rc-utils.c:2610
+#, c-format
+msgid ""
+"Command executed (exit code=%d) in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+
+#: src/rc-use.c:514
+msgid "Emo"
+msgstr ""
+
+#: src/rc-use.c:519
+msgid "Int"
+msgstr ""
+
+#: src/rc-use.c:524
+msgid "Phy"
+msgstr ""
+
+#: src/rc-use.c:1087 src/rc-use.c:1178
+msgid "`Eternal holiday list'"
+msgstr ""
+
+#: src/rc-use.c:1878 src/rc-use.c:1927 src/rc-use.c:2016 src/rc-use.c:2108
+msgid "`Internal'"
+msgstr ""
+
+#: src/rc-use.c:2340
+#, c-format
+msgid " ; Week %s"
+msgstr ""
+
+#: src/rc-use.c:2349
+#, c-format
+msgid "Week %s"
+msgstr ""
+
+#: src/rc-utils.c:398 src/rc-utils.c:415
+#, c-format
+msgid ""
+"%s: invalid date given -- %s\n"
+"%s\n"
+"%s\n"
+msgstr ""
+
+#: src/rc-utils.c:3270
+#, c-format
+msgid "Leap-day set to `%02d-%s' in file `%s'."
+msgstr ""
+
+#: src/rc-utils.c:3273 src/rc-utils.c:3687
+#, c-format
+msgid "Line %ld: %s"
+msgstr ""
+
+#: src/rc-utils.c:3634 src/utils.c:275
+#, c-format
+msgid "%s: abort, "
+msgstr ""
+
+#: src/rc-utils.c:3642
+#, c-format
+msgid "illegal variable definition in file `%s'"
+msgstr ""
+
+#: src/rc-utils.c:3644
+#, c-format
+msgid "illegal definition of variable `%c'"
+msgstr ""
+
+#: src/rc-utils.c:3651
+#, c-format
+msgid "illegal variable operation in file `%s'"
+msgstr ""
+
+#: src/rc-utils.c:3653
+#, c-format
+msgid "illegal operation on variable `%c'"
+msgstr ""
+
+#: src/rc-utils.c:3659
+#, c-format
+msgid "variable `%c' undefined in file `%s'"
+msgstr ""
+
+#: src/rc-utils.c:3663
+#, c-format
+msgid "invalid value assigned to variable `%c' in file `%s'"
+msgstr ""
+
+#: src/rc-utils.c:3684
+#, c-format
+msgid "Invalid argument in command line given -- %s"
+msgstr ""
+
+#: src/rc-utils.c:3696
+#, c-format
+msgid "Argument `%s' of command line ignored."
+msgstr ""
+
+#: src/rc-utils.c:3699
+#, c-format
+msgid "Line %ld ignored: %s"
+msgstr ""
+
+#: src/tty.c:425
+#, c-format
+msgid "%s: <Return> for more, <%s> to quit..."
+msgstr ""
+
+#: src/tty.c:1020
+#, c-format
+msgid "environment variable `%s' not found"
+msgstr ""
+
+#: src/tty.c:1027
+#, c-format
+msgid "environment variable `%s' not set"
+msgstr ""
+
+#: src/tty.c:1067
+msgid "`termcap' file not found"
+msgstr ""
+
+#: src/tty.c:1072
+#, c-format
+msgid "unknown terminal type defined in `%s'"
+msgstr ""
+
+#: src/tty.c:1081
+#, c-format
+msgid ""
+"\n"
+"%s: warning, %s.\n"
+"\n"
+msgstr ""
+
+#: src/utils.c:281
+#, c-format
+msgid ""
+"invalid year for computing Easter Sundays date\n"
+"Year must be in range (%d...%d)"
+msgstr ""
+
+#: src/utils.c:285 src/tcal.c:326 src/txt2gcal.c:264 src/gcal2txt.c:264
+#, c-format
+msgid "`%s' line %ld: virtual memory exhausted (%s=%d)"
+msgstr ""
+
+#: src/utils.c:290
+#, c-format
+msgid ""
+"invalid date part in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+
+#: src/utils.c:295
+#, c-format
+msgid ""
+"invalid month field(%02d) in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+
+#: src/utils.c:300
+#, c-format
+msgid ""
+"invalid day field(%02d) in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+
+#: src/utils.c:304
+#, c-format
+msgid ""
+"malformed %s in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+
+#: src/utils.c:309
+#, c-format
+msgid ""
+"invalid recursive/cyclic %s in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+
+#: src/utils.c:313
+#, c-format
+msgid "file `%s' not found"
+msgstr ""
+
+#: src/utils.c:317
+#, c-format
+msgid ""
+"invalid N'th weekday field(%d) in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+
+#: src/utils.c:323
+#, c-format
+msgid ""
+"missing `whitespace' character after date part in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+
+#: src/utils.c:328
+#, c-format
+msgid ""
+"file `%s' can't be written\n"
+"Storage media full!"
+msgstr ""
+
+#: src/utils.c:333
+#, c-format
+msgid "sending eMail to <%s> failed"
+msgstr ""
+
+#: src/utils.c:335 src/utils.c:353
+#, c-format
+msgid ""
+"\n"
+"`%s' line %ld: "
+msgstr ""
+
+#: src/utils.c:342
+#, c-format
+msgid "`%s' line %ld: (`%s') `%s%d' failed"
+msgstr ""
+
+#: src/utils.c:351
+#, c-format
+msgid "read error in file `%s'"
+msgstr ""
+
+#: src/utils.c:359
+#, c-format
+msgid ""
+"illegal character in response file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+
+#: src/utils.c:365 src/tcal.c:332 src/txt2gcal.c:270 src/gcal2txt.c:270
+#, c-format
+msgid "`%s' line %ld: (`%s') invalid value for table size `sizeof %s>%d'"
+msgstr ""
+
+#: src/utils.c:370
+#, c-format
+msgid "(`%s') date format `%s' is invalid"
+msgstr ""
+
+#: src/utils.c:376
+#, c-format
+msgid "%s in search pattern `%s'"
+msgstr ""
+
+#: src/utils.c:379
+#, c-format
+msgid "invalid search pattern `%s' specified"
+msgstr ""
+
+#: src/utils.c:384 src/tcal.c:340 src/txt2gcal.c:275 src/gcal2txt.c:275
+#, c-format
+msgid "`%s' line %ld: (`%s') unmanaged error (%d)"
+msgstr ""
+
+#: src/utils.c:385 src/tcal.c:333 src/tcal.c:341 src/txt2gcal.c:271
+#: src/txt2gcal.c:276 src/gcal2txt.c:271 src/gcal2txt.c:276
+msgid "internal"
+msgstr ""
+
+#: src/utils.c:404 src/tcal.c:360 src/txt2gcal.c:295 src/gcal2txt.c:295
+#, c-format
+msgid ""
+"\n"
+"%s: program aborted by signal %d\n"
+msgstr ""
+
+#: src/utils.c:1081
+msgid "th"
+msgstr ""
+
+#: src/utils.c:1085
+msgid "st"
+msgstr ""
+
+#: src/utils.c:1089
+msgid "nd"
+msgstr ""
+
+#: src/utils.c:1093
+msgid "rd"
+msgstr ""
+
+#: src/utils.c:1124 src/utils.c:1175 src/utils.c:1226
+msgid "invalid day"
+msgstr ""
+
+#: src/utils.c:1129
+msgid "Mon"
+msgstr ""
+
+#: src/utils.c:1134
+msgid "Tue"
+msgstr ""
+
+#: src/utils.c:1139
+msgid "Wed"
+msgstr ""
+
+#: src/utils.c:1144
+msgid "Thu"
+msgstr ""
+
+#: src/utils.c:1149
+msgid "Fri"
+msgstr ""
+
+#: src/utils.c:1154
+msgid "Sat"
+msgstr ""
+
+#: src/utils.c:1159
+msgid "Sun"
+msgstr ""
+
+#: src/utils.c:1180
+msgid "Mo"
+msgstr ""
+
+#: src/utils.c:1185
+msgid "Tu"
+msgstr ""
+
+#: src/utils.c:1190
+msgid "We"
+msgstr ""
+
+#: src/utils.c:1195
+msgid "Th"
+msgstr ""
+
+#: src/utils.c:1200
+msgid "Fr"
+msgstr ""
+
+#: src/utils.c:1205
+msgid "Sa"
+msgstr ""
+
+#: src/utils.c:1210
+msgid "Su"
+msgstr ""
+
+#: src/utils.c:1227
+msgid "Monday"
+msgstr ""
+
+#: src/utils.c:1227
+msgid "Tuesday"
+msgstr ""
+
+#: src/utils.c:1227
+msgid "Wednesday"
+msgstr ""
+
+#: src/utils.c:1227
+msgid "Thursday"
+msgstr ""
+
+#: src/utils.c:1228
+msgid "Friday"
+msgstr ""
+
+#: src/utils.c:1228
+msgid "Saturday"
+msgstr ""
+
+#: src/utils.c:1228
+msgid "Sunday"
+msgstr ""
+
+#: src/utils.c:1244 src/utils.c:1321
+msgid "invalid month"
+msgstr ""
+
+#: src/utils.c:1249
+msgid "Jan"
+msgstr ""
+
+#: src/utils.c:1254
+msgid "Feb"
+msgstr ""
+
+#: src/utils.c:1259
+msgid "Mar"
+msgstr ""
+
+#: src/utils.c:1264
+msgid "Apr"
+msgstr ""
+
+#: src/utils.c:1269
+msgid "May"
+msgstr ""
+
+#: src/utils.c:1274
+msgid "Jun"
+msgstr ""
+
+#: src/utils.c:1279
+msgid "Jul"
+msgstr ""
+
+#: src/utils.c:1284
+msgid "Aug"
+msgstr ""
+
+#: src/utils.c:1289
+msgid "Sep"
+msgstr ""
+
+#: src/utils.c:1294
+msgid "Oct"
+msgstr ""
+
+#: src/utils.c:1299
+msgid "Nov"
+msgstr ""
+
+#: src/utils.c:1304
+msgid "Dec"
+msgstr ""
+
+#: src/utils.c:1322
+msgid "January"
+msgstr ""
+
+#: src/utils.c:1322
+msgid "February"
+msgstr ""
+
+#: src/utils.c:1323
+msgid "March"
+msgstr ""
+
+#: src/utils.c:1323
+msgid "April"
+msgstr ""
+
+#: src/utils.c:1333
+msgid "May "
+msgstr ""
+
+#: src/utils.c:1334
+msgid "June"
+msgstr ""
+
+#: src/utils.c:1334
+msgid "July"
+msgstr ""
+
+#: src/utils.c:1335
+msgid "August"
+msgstr ""
+
+#: src/utils.c:1335
+msgid "September"
+msgstr ""
+
+#: src/utils.c:1336
+msgid "October"
+msgstr ""
+
+#: src/utils.c:1336
+msgid "November"
+msgstr ""
+
+#: src/utils.c:1336
+msgid "December"
+msgstr ""
+
+#: src/tcal.c:193
+#, c-format
+msgid "Usage:  %s  [--%s | --%s] | [--%s=[+|-]NUMBER] [ARGUMENT...]\n"
+msgstr ""
+
+#: src/tcal.c:322 src/txt2gcal.c:260 src/gcal2txt.c:260
+#, c-format
+msgid ""
+"\n"
+"%s: abort, "
+msgstr ""
+
+#: src/tcal.c:337
+#, c-format
+msgid "shift value `%s' is invalid"
+msgstr ""
+
+#: src/tcal.c:909
+#, c-format
+msgid "%s: option `--%s' requires an argument"
+msgstr ""
+
+#: src/tcal.c:1073
+#, c-format
+msgid "%s: error during program execution of `%s'\n"
+msgstr ""
+
+#: src/txt2gcal.c:132
+#, c-format
+msgid "Usage:  %s  [--%s | --%s] | [TEXT-FILE | -] [DATE-PART]\n"
+msgstr ""
+
+#: src/txt2gcal.c:756 src/gcal2txt.c:755
+#, c-format
+msgid "%s: no regular file\n"
+msgstr ""
+
+#: src/txt2gcal.c:761 src/gcal2txt.c:760
+#, c-format
+msgid "%s: file not found\n"
+msgstr ""
+
+#: src/gcal2txt.c:132
+#, c-format
+msgid "Usage:  %s  [--%s | --%s] | [RESOURCE-FILE | -]\n"
+msgstr ""

@@ -1,0 +1,34 @@
+; wspc-1.in
+;
+
+; The command(s) used within this example are prefixed with `%%%'.
+; The real call(s) of these command(s) are prefixed with `***'.
+;
+%%%cat wspc-1.rc
+***cat ./wspc-1.rc
+
+; The resource file line(s) used within this example are prefixed with `:::'.
+;
+:::0 BANG BANG
+:::0 bogus
+:::0         bogomips
+:::0    \hello world
+:::0    \ main(){for(;;)fork();}
+:::0 \     sh $0 & $0 &
+:::0    \  a  \  b  \\  c  \\\  d
+:::0    What happens now?\
+:::~0  \  This!
+:::0    What happens now?\\
+:::~0  \  That!
+
+; Additionally leading Texinfo commands are prefixed with `+++'.
+;
++++example
++++group
++++cartouche
+
+; Additionally trailing Texinfo commands are prefixed with `---'.
+;
+---end cartouche
+---end group
+---end example

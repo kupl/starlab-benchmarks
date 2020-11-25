@@ -1,0 +1,23 @@
+; redir-1a.in
+;
+
+; The command(s) used within this example are prefixed with `%%%'.
+; The real call(s) of these command(s) are prefixed with `***'.
+;
+%%%gcal --exe -QUx -f./redir-1.rc+XX -r'\$f=XX:\$c=echo \$f' -#'0 %!rm \$f'
+***LANGUAGE=en GCAL= GCALPATH=. ../../../src/gcal --exe -QUx -f./redir-1.rc+XX -r'$f=XX:$c=echo $f' -#'0 %!rm $f' $*
+
+; The resource file line(s) used within this example are prefixed with `:::'.
+;
+
+; Additionally leading Texinfo commands are prefixed with `+++'.
+;
++++example
++++group
++++cartouche
+
+; Additionally trailing Texinfo commands are prefixed with `---'.
+;
+---end cartouche
+---end group
+---end example

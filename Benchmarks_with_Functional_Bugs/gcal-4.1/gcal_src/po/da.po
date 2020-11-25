@@ -1,0 +1,6534 @@
+# Danish messages for gcal 3.00
+# Copyright (C) 2001 Thomas Esken (msgids)
+# This file is distributed under the same license as the gcal package.
+#
+# Keld Jørn Simonsen <keld@dkuug.dk>, 2001.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2011.
+#
+# Jeg har brugt henvisningerne fra
+#
+# http://da.wikipedia.org/wiki/Verdens_landes_arealer
+#
+# til at finde formelle navne på lande
+msgid ""
+msgstr ""
+"Project-Id-Version: gcal-3.6\n"
+"Report-Msgid-Bugs-To: bug-gcal@gnu.org\n"
+"POT-Creation-Date: 2017-01-22 18:12+0100\n"
+"PO-Revision-Date: 2011-03-20 15:58+0100\n"
+"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+
+#: lib/error.c:191
+msgid "Unknown system error"
+msgstr ""
+
+#: lib/regcomp.c:135
+#, fuzzy
+msgid "Success"
+msgstr "lykkedes"
+
+#: lib/regcomp.c:138
+msgid "No match"
+msgstr ""
+
+#: lib/regcomp.c:141
+msgid "Invalid regular expression"
+msgstr ""
+
+#: lib/regcomp.c:144
+msgid "Invalid collation character"
+msgstr ""
+
+#: lib/regcomp.c:147
+msgid "Invalid character class name"
+msgstr ""
+
+#: lib/regcomp.c:150
+msgid "Trailing backslash"
+msgstr ""
+
+#: lib/regcomp.c:153
+msgid "Invalid back reference"
+msgstr ""
+
+#: lib/regcomp.c:156
+msgid "Unmatched [, [^, [:, [., or [="
+msgstr ""
+
+#: lib/regcomp.c:159
+msgid "Unmatched ( or \\("
+msgstr ""
+
+#: lib/regcomp.c:162
+msgid "Unmatched \\{"
+msgstr ""
+
+#: lib/regcomp.c:165
+msgid "Invalid content of \\{\\}"
+msgstr ""
+
+#: lib/regcomp.c:168
+msgid "Invalid range end"
+msgstr ""
+
+#: lib/regcomp.c:171
+msgid "Memory exhausted"
+msgstr ""
+
+#: lib/regcomp.c:174
+msgid "Invalid preceding regular expression"
+msgstr ""
+
+#: lib/regcomp.c:177
+msgid "Premature end of regular expression"
+msgstr ""
+
+#: lib/regcomp.c:180
+msgid "Regular expression too big"
+msgstr ""
+
+#: lib/regcomp.c:183
+msgid "Unmatched ) or \\)"
+msgstr ""
+
+#: lib/regcomp.c:687
+msgid "No previous regular expression"
+msgstr ""
+
+#: lib/spawn-pipe.c:137 lib/spawn-pipe.c:140 lib/spawn-pipe.c:261
+#: lib/spawn-pipe.c:264
+#, c-format
+msgid "cannot create pipe"
+msgstr ""
+
+#: lib/spawn-pipe.c:231 lib/spawn-pipe.c:345 lib/wait-process.c:282
+#: lib/wait-process.c:356
+#, c-format
+msgid "%s subprocess failed"
+msgstr ""
+
+#: lib/w32spawn.h:45
+#, c-format
+msgid "_open_osfhandle failed"
+msgstr ""
+
+#: lib/w32spawn.h:86
+#, c-format
+msgid "cannot restore fd %d: dup2 failed"
+msgstr ""
+
+#: lib/wait-process.c:223 lib/wait-process.c:255 lib/wait-process.c:317
+#, fuzzy, c-format
+msgid "%s subprocess"
+msgstr "lykkedes"
+
+#: lib/wait-process.c:274 lib/wait-process.c:346
+#, c-format
+msgid "%s subprocess got fatal signal %d"
+msgstr ""
+
+#: lib/xalloc-die.c:34
+msgid "memory exhausted"
+msgstr ""
+
+#: src/file-io.c:1562
+#, c-format
+msgid "Try to write %s `%s'... %s%s%s"
+msgstr "Forsøg at skrive %s \"%s\"... %s%s%s"
+
+#: src/file-io.c:1565 src/file-io.c:1690 src/file-io.c:1703
+msgid "failed"
+msgstr "mislykkedes"
+
+#: src/file-io.c:1565 src/file-io.c:1690 src/file-io.c:1703
+msgid "success"
+msgstr "lykkedes"
+
+#: src/file-io.c:1685
+#, c-format
+msgid "Try to open%sresource file `%s'... %s%s%s"
+msgstr "Forsøg at åbne%sresursefilen \"%s\"... %s%s%s"
+
+#: src/file-io.c:1686
+msgid " `HERE' "
+msgstr " \"HER\" "
+
+#: src/file-io.c:1698
+#, c-format
+msgid "Try to open (level: %02d) include file `%s'... %s%s%s"
+msgstr "Forsøg at åbne (niveau: %02d) inkluderingsfil \"%s\"... %s%s%s"
+
+#: src/gcal.c:346 src/gcal.c:517 src/gcal.c:2022
+msgid "ARG"
+msgstr "ARG"
+
+#: src/gcal.c:1074 src/hd-data.c:70
+msgid "Germany"
+msgstr "Tyskland"
+
+#: src/gcal.c:1075
+msgid "U.S.A."
+msgstr "USA"
+
+#: src/gcal.c:1076 src/hd-data.c:73
+msgid "Great Britain"
+msgstr "Storbritannien"
+
+#: src/gcal.c:1852
+msgid "default"
+msgstr "standard"
+
+#: src/gcal.c:1951
+msgid ":"
+msgstr ":"
+
+#: src/gcal.c:1961
+msgid "Y"
+msgstr "Å"
+
+#: src/gcal.c:1966
+msgid "M"
+msgstr "M"
+
+#: src/gcal.c:1971
+msgid "W"
+msgstr "U"
+
+#: src/gcal.c:1976
+msgid "D"
+msgstr "D"
+
+#: src/gcal.c:2067
+msgid "Fixed date list:"
+msgstr "Fast datoliste:"
+
+#: src/gcal.c:2084 src/gcal.c:2099
+msgid "environment variable"
+msgstr "miljøvariabel"
+
+#: src/gcal.c:2268
+#, c-format
+msgid ""
+"%s: command in environment variable `%s' found -- %s\n"
+"%s\n"
+"%s\n"
+msgstr ""
+"%s: kommando fundet i miljøvariablen \"%s\" - %s\n"
+"%s\n"
+"%s\n"
+
+#: src/gcal.c:2455 src/gcal.c:2483 src/gcal.c:6231 src/rc-use.c:1829
+#: src/rc-use.c:1889 src/rc-use.c:1938 src/rc-use.c:2208 src/rc-utils.c:391
+#: src/rc-utils.c:412 src/utils.c:343 src/utils.c:366 src/utils.c:680
+msgid "Internal"
+msgstr "Intern"
+
+#: src/gcal.c:2864
+msgid "response file"
+msgstr "responsfil"
+
+#: src/gcal.c:2864 src/gcal.c:2872
+msgid "Created"
+msgstr "Oprettet"
+
+#: src/gcal.c:2872
+msgid "shell script"
+msgstr "skalprogram"
+
+#: src/gcal.c:3083
+#, c-format
+msgid "Mail from \\`%s' (%02d-%s-%04d %02d%s%02d%s%02d"
+msgstr "E-post fra \\\"%s\" (%02d-%s-%04d %02d%s%02d%s%02d"
+
+#: src/gcal.c:3135
+#, c-format
+msgid "%s: warning, eMail with empty message body not sent to <%s>.\n"
+msgstr "%s: Advarsel, eMail med tom brødtekst ikke sendt til <%s>.\n"
+
+#: src/gcal.c:4945 src/gcal.c:4978
+msgid "command line"
+msgstr "kommandolinje"
+
+#: src/gcal.c:5895
+#, c-format
+msgid "%s: option `%s' is ambiguous"
+msgstr "%s: flag \"%s\" er tvetydig"
+
+#: src/gcal.c:5900 src/tcal.c:897 src/txt2gcal.c:717 src/gcal2txt.c:716
+#, c-format
+msgid "%s: unrecognized option `%s'"
+msgstr "%s: ukendt flag \"%s\""
+
+#: src/gcal.c:5903
+#, c-format
+msgid "%s: invalid option -- %s"
+msgstr "%s: ugyldigt flag -- %s"
+
+#: src/gcal.c:5910
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument"
+msgstr "%s: flaget \"--%s\" tillader intet argument"
+
+#: src/gcal.c:5915
+#, c-format
+msgid "%s: option `%s' doesn't allow an argument"
+msgstr "%s: flag \"%s\" tager intet argument"
+
+#: src/gcal.c:5921
+#, c-format
+msgid "%s: option `%s' requires an argument"
+msgstr "%s: flag \"%s\" behøver et argument"
+
+#: src/gcal.c:5925
+#, c-format
+msgid "%s: option requires an argument -- %s"
+msgstr "%s: flag behøver et argument -- %s"
+
+#: src/gcal.c:5930 src/tcal.c:943
+#, c-format
+msgid "%s: option with invalid argument -- %s"
+msgstr "%s: flag med ugyldigt argument -- %s"
+
+#: src/gcal.c:5935
+#, c-format
+msgid "%s: option with ambiguous argument -- %s"
+msgstr "%s: flag med tvetydigt argument -- %s"
+
+#: src/gcal.c:5995
+#, c-format
+msgid ""
+"%s: invalid date given -- %c%s\n"
+"%s\n"
+"%s\n"
+msgstr ""
+"%s: ugyldig dato angivet -- %c%s\n"
+"%s\n"
+"%s\n"
+
+#: src/hd-data.c:64
+msgid "Australia"
+msgstr "Australien"
+
+#: src/hd-data.c:65 src/hd-data.c:113
+msgid "Belgium"
+msgstr "Belgien"
+
+#: src/hd-data.c:66 src/hd-data.c:122
+msgid "Brazil"
+msgstr "Brasilien"
+
+#: src/hd-data.c:67
+msgid "Canada"
+msgstr "Canada"
+
+#: src/hd-data.c:68
+msgid "Switzerland"
+msgstr "Schweiz"
+
+#: src/hd-data.c:69 src/hd-data.c:175
+msgid "China"
+msgstr "Kina"
+
+#: src/hd-data.c:71 src/hd-data.c:209
+msgid "Spain"
+msgstr "Spanien"
+
+#: src/hd-data.c:72 src/hd-data.c:216
+msgid "France"
+msgstr "Frankrig"
+
+#: src/hd-data.c:74 src/hd-data.c:245
+msgid "Israel"
+msgstr "Israel"
+
+#: src/hd-data.c:75 src/hd-data.c:250
+msgid "Italy"
+msgstr "Italien"
+
+#: src/hd-data.c:76 src/hd-data.c:253
+msgid "Japan"
+msgstr "Japan"
+
+#: src/hd-data.c:77 src/hd-data.c:261
+msgid "Republic of Korea"
+msgstr "Republikken Korea"
+
+#: src/hd-data.c:78 src/hd-data.c:293
+msgid "Mexico"
+msgstr "Mexico"
+
+#: src/hd-data.c:79 src/hd-data.c:302
+msgid "Netherlands"
+msgstr "Holland"
+
+#: src/hd-data.c:80 src/hd-data.c:308
+msgid "New Zealand"
+msgstr "New Zealand"
+
+#: src/hd-data.c:81 src/hd-data.c:320
+msgid "Portugal"
+msgstr "Portugal"
+
+#: src/hd-data.c:82 src/hd-data.c:326
+msgid "Russian Federation"
+msgstr "Den Russiske Føderation"
+
+#: src/hd-data.c:83
+msgid "United States"
+msgstr "USA"
+
+#: src/hd-data.c:85
+msgid "Andorra"
+msgstr "Andorra"
+
+#: src/hd-data.c:86
+msgid "United Arab Emirates"
+msgstr "De Forenede Arabiske Emirater"
+
+#: src/hd-data.c:87
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#: src/hd-data.c:88
+msgid "Antigua and Barbuda"
+msgstr "Antigua og Barbuda"
+
+#: src/hd-data.c:89
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: src/hd-data.c:90
+msgid "Albania"
+msgstr "Albanien"
+
+#: src/hd-data.c:91
+msgid "Armenia"
+msgstr "Armenien"
+
+#: src/hd-data.c:92
+msgid "Netherlands Antilles/Bonaire"
+msgstr "Nederlandske Antiller/Bonaire"
+
+#: src/hd-data.c:93
+msgid "Netherlands Antilles/Curaçao"
+msgstr "Nederlandske Antiller/Curaçao"
+
+#: src/hd-data.c:94
+msgid "Netherlands Antilles/St Maarten"
+msgstr "Nederlandske Antiller/St Maarten"
+
+#: src/hd-data.c:95
+msgid "Netherlands Antilles/Saba and Statia"
+msgstr "Nederlandske Antiller/Saba og Statia"
+
+#: src/hd-data.c:96
+msgid "Angola #"
+msgstr "Angola #"
+
+#: src/hd-data.c:97
+msgid "Argentina"
+msgstr "Argentina"
+
+#: src/hd-data.c:98
+msgid "American Samoa"
+msgstr "Amerikansk Samoa"
+
+#: src/hd-data.c:99
+msgid "Austria"
+msgstr "Østrig"
+
+#: src/hd-data.c:100
+msgid "Australia/Canberra"
+msgstr "Australien/Canberra"
+
+#: src/hd-data.c:101
+msgid "Australia/Northern Territory"
+msgstr "Australien/Northern Territory"
+
+#: src/hd-data.c:102
+msgid "Australia/Queensland"
+msgstr "Australien/Queensland"
+
+#: src/hd-data.c:103
+msgid "Australia/Southern Australia"
+msgstr "Australien/Southern Australia"
+
+#: src/hd-data.c:104
+msgid "Australia/New South Wales"
+msgstr "Australien/New South Wales"
+
+#: src/hd-data.c:105
+msgid "Australia/Tasmania"
+msgstr "Australien/Tasmanien"
+
+#: src/hd-data.c:106
+msgid "Australia/Victoria"
+msgstr "Australien/Victoria"
+
+#: src/hd-data.c:107
+msgid "Australia/Western Australia"
+msgstr "Australien/Western Australia"
+
+#: src/hd-data.c:108
+msgid "Aruba"
+msgstr "Aruba"
+
+#: src/hd-data.c:109
+msgid "Azerbaijan"
+msgstr "Aserbajdsjan"
+
+#: src/hd-data.c:110
+msgid "Bosnia-Herzegovina"
+msgstr "Bosnien-Hercegovina"
+
+#: src/hd-data.c:111
+msgid "Barbados"
+msgstr "Barbados"
+
+#: src/hd-data.c:112
+msgid "Bangladesh #"
+msgstr "Bangladesh #"
+
+#: src/hd-data.c:114
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: src/hd-data.c:115
+msgid "Bulgaria"
+msgstr "Bulgarien"
+
+#: src/hd-data.c:116
+msgid "Bahrain"
+msgstr "Bahrain"
+
+#: src/hd-data.c:117
+msgid "Burundi #"
+msgstr "Burundi #"
+
+#: src/hd-data.c:118
+msgid "Benin #"
+msgstr "Benin #"
+
+#: src/hd-data.c:119
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: src/hd-data.c:120
+msgid "Brunei"
+msgstr "Brunei"
+
+#: src/hd-data.c:121
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: src/hd-data.c:123
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: src/hd-data.c:124
+msgid "Bhutan #"
+msgstr "Bhutan #"
+
+#: src/hd-data.c:125
+msgid "Bouvet Island"
+msgstr "Bouvetøen"
+
+#: src/hd-data.c:126
+msgid "Botswana"
+msgstr "Botswana"
+
+#: src/hd-data.c:127
+msgid "Belarus"
+msgstr "Hviderusland"
+
+#: src/hd-data.c:128
+msgid "Belize"
+msgstr "Belize"
+
+#: src/hd-data.c:129
+msgid "Canada/Alberta"
+msgstr "Canada/Alberta"
+
+#: src/hd-data.c:130
+msgid "Canada/British Columbia"
+msgstr "Canada/British Columbia"
+
+#: src/hd-data.c:131
+msgid "Canada/Manitoba"
+msgstr "Canada/Manitoba"
+
+#: src/hd-data.c:132
+msgid "Canada/New Brunswick"
+msgstr "Canada/New Brunswick"
+
+#: src/hd-data.c:133
+msgid "Canada/Newfoundland and Labrador"
+msgstr "Canada/Newfoundland og Labrador"
+
+#: src/hd-data.c:134
+msgid "Canada/Nova Scotia"
+msgstr "Canada/Nova Scotia"
+
+#: src/hd-data.c:135
+#, fuzzy
+msgid "Canada/Northwest Territories"
+msgstr "Canada/Nordwest Territories"
+
+#: src/hd-data.c:136
+msgid "Canada/Ontario"
+msgstr "Canada/Ontario"
+
+#: src/hd-data.c:137
+msgid "Canada/Prince Edward Island"
+msgstr "Canada/Prince Edward Island"
+
+#: src/hd-data.c:138
+msgid "Canada/Québec"
+msgstr "Canada/Québec"
+
+#: src/hd-data.c:139
+msgid "Canada/Saskatchewan"
+msgstr "Canada/Saskatchewan"
+
+#: src/hd-data.c:140
+msgid "Canada/Yukon"
+msgstr "Canada/Yukon"
+
+#: src/hd-data.c:141
+msgid "Cocos Islands (Keeling)"
+msgstr "Kokosøerne (Keeling)"
+
+#: src/hd-data.c:142
+msgid "Democratic Republic of Congo #"
+msgstr "Den Demokratiske Republik Congo #"
+
+#: src/hd-data.c:143
+msgid "Central African Republic #"
+msgstr "Den Centralafrikanske Republik #"
+
+#: src/hd-data.c:144
+msgid "Republic of Congo #"
+msgstr "Republikken Congo #"
+
+#: src/hd-data.c:145
+msgid "Switzerland/Aargau"
+msgstr "Schweiz/Aargau"
+
+#: src/hd-data.c:146
+msgid "Switzerland/Appenzell Innerrhoden"
+msgstr "Schweiz/Appenzell Innerrhoden"
+
+#: src/hd-data.c:147
+msgid "Switzerland/Appenzell Ausserrhoden"
+msgstr "Schweiz/Appenzell Ausserrhoden"
+
+#: src/hd-data.c:148
+msgid "Switzerland/Bern"
+msgstr "Schweiz/Bern"
+
+#: src/hd-data.c:149
+#, fuzzy
+msgid "Switzerland/Basel-Landschaft"
+msgstr "Schweiz/Basel-Land"
+
+#: src/hd-data.c:150
+msgid "Switzerland/Basel-Stadt"
+msgstr "Schweiz/Basel-Stadt"
+
+#: src/hd-data.c:151
+msgid "Switzerland/Fribourg"
+msgstr "Schweiz/Fribourg"
+
+#: src/hd-data.c:152
+msgid "Switzerland/Genève"
+msgstr "Schweiz/Genève"
+
+#: src/hd-data.c:153
+msgid "Switzerland/Glarus"
+msgstr "Schweiz/Glarus"
+
+#: src/hd-data.c:154
+msgid "Switzerland/Graubünden"
+msgstr "Schweiz/Graubünden"
+
+#: src/hd-data.c:155
+msgid "Switzerland/Jura"
+msgstr "Schweiz/Jura"
+
+#: src/hd-data.c:156
+msgid "Switzerland/Luzern"
+msgstr "Schweiz/Luzern"
+
+#: src/hd-data.c:157
+msgid "Switzerland/Neuchâtel"
+msgstr "Schweiz/Neuchâtel"
+
+#: src/hd-data.c:158
+msgid "Switzerland/Nidwalden"
+msgstr "Schweiz/Nidwalden"
+
+#: src/hd-data.c:159
+msgid "Switzerland/Obwalden"
+msgstr "Schweiz/Obwalden"
+
+#: src/hd-data.c:160
+msgid "Switzerland/St Gallen"
+msgstr "Schweiz/St Gallen"
+
+#: src/hd-data.c:161
+msgid "Switzerland/Schaffhausen"
+msgstr "Schweiz/Schaffhausen"
+
+#: src/hd-data.c:162
+msgid "Switzerland/Solothurn"
+msgstr "Schweiz/Solothurn"
+
+#: src/hd-data.c:163
+msgid "Switzerland/Schwyz"
+msgstr "Schweiz/Schwyz"
+
+#: src/hd-data.c:164
+msgid "Switzerland/Thurgau"
+msgstr "Schweiz/Thurgau"
+
+#: src/hd-data.c:165
+msgid "Switzerland/Ticino"
+msgstr "Schweiz/Ticino"
+
+#: src/hd-data.c:166
+msgid "Switzerland/Uri"
+msgstr "Schweiz/Uri"
+
+#: src/hd-data.c:167
+msgid "Switzerland/Vaud"
+msgstr "Schweiz/Vaud"
+
+#: src/hd-data.c:168
+msgid "Switzerland/Valais"
+msgstr "Schweiz/Valais"
+
+#: src/hd-data.c:169
+msgid "Switzerland/Zug"
+msgstr "Schweiz/Zug"
+
+#: src/hd-data.c:170
+msgid "Switzerland/Zürich"
+msgstr "Schweiz/Zürich"
+
+#: src/hd-data.c:171
+msgid "Côte d'Ivoire"
+msgstr "Elfenbenskysten"
+
+#: src/hd-data.c:172
+msgid "Cook Islands"
+msgstr "Cookøerne"
+
+#: src/hd-data.c:173
+msgid "Chile"
+msgstr "Chile"
+
+#: src/hd-data.c:174
+msgid "Cameroon"
+msgstr "Cameroon"
+
+#: src/hd-data.c:176
+msgid "Colombia"
+msgstr "Columbia"
+
+#: src/hd-data.c:177
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: src/hd-data.c:178
+msgid "Cuba"
+msgstr "Cuba"
+
+#: src/hd-data.c:179
+msgid "Cape Verde"
+msgstr "Kap Verde"
+
+#: src/hd-data.c:180
+msgid "Christmas Islands"
+msgstr "Juleøerne"
+
+#: src/hd-data.c:181
+msgid "Cyprus"
+msgstr "Cypern"
+
+#: src/hd-data.c:182
+msgid "Czech Republic"
+msgstr "Den Tjekkiske Republik"
+
+#: src/hd-data.c:183
+msgid "Germany/Brandenburg"
+msgstr "Tyskland/Brandenburg"
+
+#: src/hd-data.c:184
+msgid "Germany/Berlin"
+msgstr "Tyskland/Berlin"
+
+#: src/hd-data.c:185
+msgid "Germany/Baden-Württemberg"
+msgstr "Tyskland/Baden-Württemberg"
+
+#: src/hd-data.c:186
+msgid "Germany/Bavaria"
+msgstr "Tyskland/Bayern"
+
+#: src/hd-data.c:187
+msgid "Germany/Bremen"
+msgstr "Tyskland/Bremen"
+
+#: src/hd-data.c:188
+msgid "Germany/Hesse"
+msgstr "Tyskland/Hessen"
+
+#: src/hd-data.c:189
+msgid "Germany/Hamburg"
+msgstr "Tyskland/Hamburg"
+
+#: src/hd-data.c:190
+msgid "Germany/Mecklenburg-West Pomerania"
+msgstr "Tyskland/Mecklenburg-Vorpommern"
+
+#: src/hd-data.c:191
+msgid "Germany/Lower Saxony"
+msgstr "Tyskland/Niedersachsen"
+
+#: src/hd-data.c:192
+msgid "Germany/North Rhine-Westphalia"
+msgstr "Tyskland/Nordrhein-Westfalen"
+
+#: src/hd-data.c:193
+msgid "Germany/Rhineland Palatinate"
+msgstr "Tyskland/Rheinland-Pfalz"
+
+#: src/hd-data.c:194
+msgid "Germany/Schleswig-Holstein"
+msgstr "Tyskland/Schleswig-Holstein"
+
+#: src/hd-data.c:195
+#, fuzzy
+msgid "Germany/Saarland"
+msgstr "Tyskland/Saarland"
+
+#: src/hd-data.c:196
+msgid "Germany/Saxony"
+msgstr "Tyskland/Sachsen"
+
+#: src/hd-data.c:197
+msgid "Germany/Saxony-Anhalt"
+msgstr "Tyskland/Sachsen-Anhalt"
+
+#: src/hd-data.c:198
+msgid "Germany/Thuringia"
+msgstr "Tyskland/Thüringen"
+
+#: src/hd-data.c:199
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: src/hd-data.c:200
+msgid "Denmark"
+msgstr "Danmark"
+
+#: src/hd-data.c:201
+msgid "Dominica"
+msgstr "Dominica"
+
+#: src/hd-data.c:202
+msgid "Dominican Republic"
+msgstr "Dominikanske Republik"
+
+#: src/hd-data.c:203
+msgid "Algeria"
+msgstr "Algeriet"
+
+#: src/hd-data.c:204
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: src/hd-data.c:205
+msgid "Estonia"
+msgstr "Estland"
+
+#: src/hd-data.c:206
+msgid "Egypt"
+msgstr "Ægypten"
+
+#: src/hd-data.c:207
+msgid "Western Sahara"
+msgstr "Vestsahara"
+
+#: src/hd-data.c:208
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: src/hd-data.c:210
+msgid "Ethiopia"
+msgstr "Etiopien"
+
+#: src/hd-data.c:211
+msgid "Finland"
+msgstr "Finland"
+
+#: src/hd-data.c:212
+msgid "Fiji #"
+msgstr "Fiji #"
+
+#: src/hd-data.c:213
+msgid "Falkland Islands (Malvinas)"
+msgstr "Falklandsøerne (Malvinas)"
+
+#: src/hd-data.c:214
+msgid "Federated States of Micronesia"
+msgstr "Føderale Statsforbund Mikronesien"
+
+#: src/hd-data.c:215
+msgid "Faroes"
+msgstr "Færøerne"
+
+#: src/hd-data.c:217
+msgid "Gabon #"
+msgstr "Gabon #"
+
+#: src/hd-data.c:218
+msgid "Great Britain/England and Wales"
+msgstr "Storbritannien/England og Wales"
+
+#: src/hd-data.c:219
+msgid "Great Britain/Northern Ireland"
+msgstr "Storbritannien/Nordirland"
+
+#: src/hd-data.c:220
+msgid "Great Britain/Scotland"
+msgstr "Storbritannien/Skotland"
+
+#: src/hd-data.c:221
+msgid "Grenada"
+msgstr "Grenada"
+
+#: src/hd-data.c:222
+msgid "Georgia"
+msgstr "Georgien"
+
+#: src/hd-data.c:223
+msgid "French Guiana"
+msgstr "Fransk Guyana"
+
+#: src/hd-data.c:224
+msgid "Ghana"
+msgstr "Ghana"
+
+#: src/hd-data.c:225
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: src/hd-data.c:226
+msgid "Greenland"
+msgstr "Grønland"
+
+#: src/hd-data.c:227
+msgid "Gambia"
+msgstr "Gambia"
+
+#: src/hd-data.c:228
+msgid "Guinea"
+msgstr "Guinea"
+
+#: src/hd-data.c:229
+msgid "Guadeloupe"
+msgstr "Guadeloupe"
+
+#: src/hd-data.c:230
+msgid "Equatorial Guinea"
+msgstr "Ækvatorialguinea"
+
+#: src/hd-data.c:231
+msgid "Greece"
+msgstr "Grækenland"
+
+#: src/hd-data.c:232
+msgid "South Georgia and South Sandwich Islands"
+msgstr "Sydgeorgien og Sydsandwichøerne"
+
+#: src/hd-data.c:233
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: src/hd-data.c:234
+msgid "Guam"
+msgstr "Guam"
+
+#: src/hd-data.c:235
+msgid "Guinea-Bissau #"
+msgstr "Guinea-Bissau #"
+
+#: src/hd-data.c:236
+msgid "Guyana #"
+msgstr "Guyana #"
+
+#: src/hd-data.c:237
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: src/hd-data.c:238
+msgid "Heard and Mc Donald Islands"
+msgstr "Heard- og McDonaldøerne"
+
+#: src/hd-data.c:239
+msgid "Honduras"
+msgstr "Honduras"
+
+#: src/hd-data.c:240
+msgid "Croatia"
+msgstr "Kroatien"
+
+#: src/hd-data.c:241
+msgid "Haiti"
+msgstr "Haiti"
+
+#: src/hd-data.c:242
+msgid "Hungary"
+msgstr "Ungarn"
+
+#: src/hd-data.c:243
+msgid "Indonesia #"
+msgstr "Indonesien #"
+
+#: src/hd-data.c:244
+msgid "Ireland"
+msgstr "Irland"
+
+#: src/hd-data.c:246
+msgid "India #"
+msgstr "Indien #"
+
+#: src/hd-data.c:247
+msgid "Iraq"
+msgstr "Irak"
+
+#: src/hd-data.c:248
+msgid "Islamic Republic of Iran"
+msgstr "Den Islamiske Republik Iran"
+
+#: src/hd-data.c:249
+msgid "Iceland"
+msgstr "Island"
+
+#: src/hd-data.c:251
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: src/hd-data.c:252
+msgid "Jordan"
+msgstr "Jordan"
+
+#: src/hd-data.c:254
+msgid "Kenya #"
+msgstr "Kenya #"
+
+#: src/hd-data.c:255
+msgid "Kyrgyzstan"
+msgstr "Kirgisistan"
+
+#: src/hd-data.c:256
+msgid "Cambodia #"
+msgstr "Cambodia #"
+
+#: src/hd-data.c:257
+msgid "Kiribati #"
+msgstr "Kiribati #"
+
+#: src/hd-data.c:258
+msgid "Comoros"
+msgstr "Comoros"
+
+#: src/hd-data.c:259
+msgid "St Kitts and Nevis"
+msgstr "St Kitts og Nevis"
+
+#: src/hd-data.c:260
+msgid "Democratic People's Republic of Korea"
+msgstr "Den Demokratiske Folkerepublik Korea"
+
+#: src/hd-data.c:262
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: src/hd-data.c:263
+msgid "Cayman Islands"
+msgstr "Caymanøerne"
+
+#: src/hd-data.c:264
+msgid "Kazakhstan"
+msgstr "Kazakhstan"
+
+#: src/hd-data.c:265
+msgid "Laos People's Democratic Republic #"
+msgstr "Den Demokratiske Folkerepublik Laos #"
+
+#: src/hd-data.c:266
+msgid "Lebanon"
+msgstr "Libanon"
+
+#: src/hd-data.c:267
+msgid "St Lucia"
+msgstr "St Lucia"
+
+#: src/hd-data.c:268
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: src/hd-data.c:269
+msgid "Sri Lanka #"
+msgstr "Sri Lanka #"
+
+#: src/hd-data.c:270
+msgid "Liberia"
+msgstr "Liberia"
+
+#: src/hd-data.c:271
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: src/hd-data.c:272
+msgid "Lithuania"
+msgstr "Litauen"
+
+#: src/hd-data.c:273
+msgid "Luxembourg"
+msgstr "Luxembourg"
+
+#: src/hd-data.c:274
+msgid "Latvia"
+msgstr "Letland"
+
+#: src/hd-data.c:275
+msgid "Libyan Arab Jamahiriya (Libya)"
+msgstr "Den Store Folkesocialistiske Libyske Arabiske Jamahiriya (Libyen)"
+
+#: src/hd-data.c:276
+msgid "Morocco"
+msgstr "Marokko"
+
+#: src/hd-data.c:277
+msgid "Monaco"
+msgstr "Monaco"
+
+#: src/hd-data.c:278
+msgid "Republic of Moldova"
+msgstr "Republikken Moldova"
+
+#: src/hd-data.c:279
+msgid "Madagascar #"
+msgstr "Madagaskar #"
+
+#: src/hd-data.c:280
+msgid "Marshall Islands"
+msgstr "Marshalløerne"
+
+#: src/hd-data.c:281
+msgid "Former Yugoslav Republic of Macedonia"
+msgstr "Tidligere Jugoslaviske Republik Makedonien"
+
+#: src/hd-data.c:282
+msgid "Mali"
+msgstr "Mali"
+
+#: src/hd-data.c:283
+msgid "Mongolia #"
+msgstr "Mongoliet #"
+
+#: src/hd-data.c:284
+msgid "Macau"
+msgstr "Macau"
+
+#: src/hd-data.c:285
+msgid "Northern Marian Islands (Saipan)"
+msgstr "De nordlige Marianerøer (Saipan)"
+
+#: src/hd-data.c:286
+msgid "Martinique"
+msgstr "Martinique"
+
+#: src/hd-data.c:287
+msgid "Mauritania"
+msgstr "Mauretanien"
+
+#: src/hd-data.c:288
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: src/hd-data.c:289
+msgid "Malta"
+msgstr "Malta"
+
+#: src/hd-data.c:290
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: src/hd-data.c:291
+msgid "Maldives"
+msgstr "Maldiverne"
+
+#: src/hd-data.c:292
+msgid "Malawi"
+msgstr "Malawi"
+
+#: src/hd-data.c:294
+msgid "Malaysia #"
+msgstr "Malaysia #"
+
+#: src/hd-data.c:295
+msgid "Mozambique"
+msgstr "Mozambique"
+
+#: src/hd-data.c:296
+msgid "Namibia"
+msgstr "Namibia"
+
+#: src/hd-data.c:297
+msgid "New Caledonia"
+msgstr "Ny Kaledonien"
+
+#: src/hd-data.c:298
+msgid "Niger"
+msgstr "Niger"
+
+#: src/hd-data.c:299
+#, fuzzy
+msgid "Norfolk Island"
+msgstr "Norfolkøerne"
+
+#: src/hd-data.c:300
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: src/hd-data.c:301
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: src/hd-data.c:303
+msgid "Myanmar (Burma) #"
+msgstr "Myanmar (Burma) #"
+
+#: src/hd-data.c:304
+msgid "Norway"
+msgstr "Norge"
+
+#: src/hd-data.c:305
+msgid "Nepal #"
+msgstr "Nepal #"
+
+#: src/hd-data.c:306
+msgid "Nauru"
+msgstr "Nauru"
+
+#: src/hd-data.c:307
+msgid "Niue"
+msgstr "Niue"
+
+#: src/hd-data.c:309
+msgid "Oman"
+msgstr "Oman"
+
+#: src/hd-data.c:310
+msgid "Panama"
+msgstr "Panama"
+
+#: src/hd-data.c:311
+msgid "Peru"
+msgstr "Peru"
+
+#: src/hd-data.c:312
+msgid "French Polynesia"
+msgstr "Fransk Polynesien"
+
+#: src/hd-data.c:313
+msgid "Papua New Guinea"
+msgstr "Papua Ny Guinea"
+
+#: src/hd-data.c:314
+msgid "Philippines"
+msgstr "Filippinerne"
+
+#: src/hd-data.c:315
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: src/hd-data.c:316
+msgid "Poland"
+msgstr "Polen"
+
+#: src/hd-data.c:317
+msgid "Saint-Pierre and Miquelon"
+msgstr "Saint-Pierre og Miquelon"
+
+#: src/hd-data.c:318
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: src/hd-data.c:319
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: src/hd-data.c:321
+msgid "Palau"
+msgstr "Palau"
+
+#: src/hd-data.c:322
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: src/hd-data.c:323
+msgid "Qatar"
+msgstr "Qatar"
+
+#: src/hd-data.c:324
+msgid "Réunion"
+msgstr "Réunion"
+
+#: src/hd-data.c:325
+msgid "Romania"
+msgstr "Rumænien"
+
+#: src/hd-data.c:327
+msgid "Rwanda"
+msgstr "Rwanda"
+
+#: src/hd-data.c:328
+msgid "Saudi Arabia"
+msgstr "Saudi-arabien"
+
+#: src/hd-data.c:329
+msgid "Solomon Islands"
+msgstr "Salomonøerne"
+
+#: src/hd-data.c:330
+msgid "Seychellen"
+msgstr "Seychellerne"
+
+#: src/hd-data.c:331
+msgid "Sudan"
+msgstr "Sudan"
+
+#: src/hd-data.c:332
+msgid "Sweden"
+msgstr "Sverige"
+
+#: src/hd-data.c:333
+msgid "Singapore #"
+msgstr "Singapore #"
+
+#: src/hd-data.c:334
+msgid "St Helena"
+msgstr "St Helena"
+
+#: src/hd-data.c:335
+msgid "Slovenia"
+msgstr "Slovenien"
+
+#: src/hd-data.c:336
+msgid "Svalbard and Jan Mayen Islands"
+msgstr "Svalbard og Jan Mayen-øerne"
+
+#: src/hd-data.c:337
+msgid "Slovakia"
+msgstr "Slovakiet"
+
+#: src/hd-data.c:338
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: src/hd-data.c:339
+msgid "San Marino"
+msgstr "San Marino"
+
+#: src/hd-data.c:340
+msgid "Senegal"
+msgstr "Senegal"
+
+#: src/hd-data.c:341
+msgid "Somalia"
+msgstr "Somalia"
+
+#: src/hd-data.c:342
+msgid "Suriname #"
+msgstr "Surinam #"
+
+#: src/hd-data.c:343
+msgid "Sao Tomé and Principe"
+msgstr "Sao Tomé og Principe"
+
+#: src/hd-data.c:344
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: src/hd-data.c:345
+msgid "Syrian Arab Republic (Syria)"
+msgstr "Den Syriske Arabiske Republik (Syrien)"
+
+#: src/hd-data.c:346
+msgid "Swaziland"
+msgstr "Swaziland"
+
+#: src/hd-data.c:347
+msgid "Turks and Caicos Islands"
+msgstr "Turks- og Caicosøerne"
+
+#: src/hd-data.c:348
+msgid "Chad"
+msgstr "Tchad"
+
+#: src/hd-data.c:349
+msgid "Togo #"
+msgstr "Togo #"
+
+#: src/hd-data.c:350
+msgid "Thailand #"
+msgstr "Thailand #"
+
+#: src/hd-data.c:351
+msgid "Tajikistan"
+msgstr "Tajikistan"
+
+#: src/hd-data.c:352
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: src/hd-data.c:353
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: src/hd-data.c:354
+msgid "Tunisia"
+msgstr "Tunesien"
+
+#: src/hd-data.c:355
+msgid "Tonga"
+msgstr "Tonga"
+
+#: src/hd-data.c:356
+msgid "Turkey"
+msgstr "Tyrkiet"
+
+#: src/hd-data.c:357
+msgid "Trinidad and Tobago #"
+msgstr "Trinidad og Tobago #"
+
+#: src/hd-data.c:358
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: src/hd-data.c:359
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: src/hd-data.c:360
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: src/hd-data.c:361
+msgid "Ukraine"
+msgstr "Ukraine"
+
+#: src/hd-data.c:362
+msgid "Uganda"
+msgstr "Uganda"
+
+#: src/hd-data.c:363
+msgid "United States/Alaska"
+msgstr "USA/Alaska"
+
+#: src/hd-data.c:364
+msgid "United States/Alabama"
+msgstr "USA/Alabama"
+
+#: src/hd-data.c:365
+msgid "United States/Arkansas"
+msgstr "USA/Arkansas"
+
+#: src/hd-data.c:366
+msgid "United States/Arizona"
+msgstr "USA/Arizona"
+
+#: src/hd-data.c:367
+msgid "United States/California"
+msgstr "USA/Californien"
+
+#: src/hd-data.c:368
+msgid "United States/Colorado"
+msgstr "USA/Colorado"
+
+#: src/hd-data.c:369
+msgid "United States/Connecticut"
+msgstr "USA/Connecticut"
+
+#: src/hd-data.c:370
+msgid "United States/District of Columbia"
+msgstr "USA/District of Columbia"
+
+#: src/hd-data.c:371
+msgid "United States/Delaware"
+msgstr "USA/Delaware"
+
+#: src/hd-data.c:372
+msgid "United States/Florida"
+msgstr "USA/Florida"
+
+#: src/hd-data.c:373
+msgid "United States/Georgia"
+msgstr "USA/Georgia"
+
+#: src/hd-data.c:374
+msgid "United States/Hawaii"
+msgstr "USA/Hawaii"
+
+#: src/hd-data.c:375
+msgid "United States/Iowa"
+msgstr "USA/Iowa"
+
+#: src/hd-data.c:376
+msgid "United States/Idaho"
+msgstr "USA/Idaho"
+
+#: src/hd-data.c:377
+msgid "United States/Illinois"
+msgstr "USA/Illinois"
+
+#: src/hd-data.c:378
+msgid "United States/Indiana"
+msgstr "USA/Indiana"
+
+#: src/hd-data.c:379
+msgid "United States/Kansas"
+msgstr "USA/Kansas"
+
+#: src/hd-data.c:380
+msgid "United States/Kentucky"
+msgstr "USA/Kentucky"
+
+#: src/hd-data.c:381
+msgid "United States/Louisiana"
+msgstr "USA/Louisiana"
+
+#: src/hd-data.c:382
+msgid "United States/Massachusetts"
+msgstr "USA/Massachusetts"
+
+#: src/hd-data.c:383
+msgid "United States/Maryland"
+msgstr "USA/Maryland"
+
+#: src/hd-data.c:384
+msgid "United States/Maine"
+msgstr "USA/Maine"
+
+#: src/hd-data.c:385
+msgid "United States/Michigan"
+msgstr "USA/Michigan"
+
+#: src/hd-data.c:386
+msgid "United States/Minnesota"
+msgstr "USA/Minnesota"
+
+#: src/hd-data.c:387
+msgid "United States/Missouri"
+msgstr "USA/Missouri"
+
+#: src/hd-data.c:388
+msgid "United States/Mississippi"
+msgstr "USA/Mississippi"
+
+#: src/hd-data.c:389
+msgid "United States/Montana"
+msgstr "USA/Montana"
+
+#: src/hd-data.c:390
+msgid "United States/North Carolina"
+msgstr "USA/North Carolina"
+
+#: src/hd-data.c:391
+msgid "United States/North Dakota"
+msgstr "USA/North Dakota"
+
+#: src/hd-data.c:392
+msgid "United States/Nebraska"
+msgstr "USA/Nebraska"
+
+#: src/hd-data.c:393
+msgid "United States/New Hampshire"
+msgstr "USA/New Hampshire"
+
+#: src/hd-data.c:394
+msgid "United States/New Jersey"
+msgstr "USA/New Jersey"
+
+#: src/hd-data.c:395
+msgid "United States/New Mexico"
+msgstr "USA/New Mexico"
+
+#: src/hd-data.c:396
+msgid "United States/Nevada"
+msgstr "USA/Nevada"
+
+#: src/hd-data.c:397
+msgid "United States/New York"
+msgstr "USA/New York"
+
+#: src/hd-data.c:398
+msgid "United States/Ohio"
+msgstr "USA/Ohio"
+
+#: src/hd-data.c:399
+msgid "United States/Oklahoma"
+msgstr "USA/Oklahoma"
+
+#: src/hd-data.c:400
+msgid "United States/Oregon"
+msgstr "USA/Oregon"
+
+#: src/hd-data.c:401
+msgid "United States/Pennsylvania"
+msgstr "USA/Pennsylvania"
+
+#: src/hd-data.c:402
+msgid "United States/Rhode Island"
+msgstr "USA/Rhode Island"
+
+#: src/hd-data.c:403
+msgid "United States/South Carolina"
+msgstr "USA/South Carolina"
+
+#: src/hd-data.c:404
+msgid "United States/South Dakota"
+msgstr "USA/South Dakota"
+
+#: src/hd-data.c:405
+msgid "United States/Tennessee"
+msgstr "USA/Tennessee"
+
+#: src/hd-data.c:406
+msgid "United States/Texas"
+msgstr "USA/Texas"
+
+#: src/hd-data.c:407
+msgid "United States/Utah"
+msgstr "USA/Utah"
+
+#: src/hd-data.c:408
+msgid "United States/Virginia"
+msgstr "USA/Virginia"
+
+#: src/hd-data.c:409
+msgid "United States/Vermont"
+msgstr "USA/Vermont"
+
+#: src/hd-data.c:410
+msgid "United States/Washington"
+msgstr "USA/Washington"
+
+#: src/hd-data.c:411
+msgid "United States/Wisconsin"
+msgstr "USA/Wisconsin"
+
+#: src/hd-data.c:412
+msgid "United States/West Virginia"
+msgstr "USA/West Virginia"
+
+#: src/hd-data.c:413
+msgid "United States/Wyoming"
+msgstr "USA/Wyoming"
+
+#: src/hd-data.c:414
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: src/hd-data.c:415
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#: src/hd-data.c:416
+msgid "St Vincent and Grenadines"
+msgstr "Saint Vincent og Grenadinerne"
+
+#: src/hd-data.c:417
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: src/hd-data.c:418
+msgid "British Virgin Islands"
+msgstr "De Britiske Jomfruøer"
+
+#: src/hd-data.c:419
+msgid "U.S. Virgin Islands"
+msgstr "De Amerikanske Jomfruøer"
+
+#: src/hd-data.c:420
+msgid "Viet Nam"
+msgstr "Vietnam"
+
+#: src/hd-data.c:421
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: src/hd-data.c:422
+msgid "Wallis and Futuna Islands"
+msgstr "Wallis og Futuna-øerne"
+
+#: src/hd-data.c:423
+msgid "Samoa"
+msgstr "Samoa"
+
+#: src/hd-data.c:424
+msgid "Yemen"
+msgstr "Yemen"
+
+#: src/hd-data.c:425
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: src/hd-data.c:426
+msgid "Serbia and Montenegro"
+msgstr "Serbien og Montenegro"
+
+#: src/hd-data.c:427
+msgid "South Africa"
+msgstr "Sydafrika"
+
+#: src/hd-data.c:428
+msgid "Zambia"
+msgstr "Zambia"
+
+#: src/hd-data.c:429
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: src/hd-data.c:459
+msgid "1st Advent"
+msgstr "1. søndag i advent"
+
+#: src/hd-data.c:460
+msgid "1st Sunday in Lent"
+msgstr "Første fastesøndag"
+
+#: src/hd-data.c:461
+msgid "2nd Advent"
+msgstr "2. søndag i advent"
+
+#: src/hd-data.c:462
+msgid "2nd Sunday in Lent"
+msgstr "Anden fastesøndag"
+
+#: src/hd-data.c:463
+msgid "3rd Advent"
+msgstr "3. søndag i advent"
+
+#: src/hd-data.c:464
+msgid "3rd Sunday in Lent"
+msgstr "Tredje fastesøndag"
+
+#: src/hd-data.c:465
+msgid "4th Advent"
+msgstr "4. søndag i advent"
+
+#: src/hd-data.c:466
+msgid "4th Sunday in Lent"
+msgstr "Fjerde fastesøndag"
+
+#: src/hd-data.c:467
+msgid "7-5-3 Festival"
+msgstr "7-5-3-festivalen"
+
+#: src/hd-data.c:468
+msgid "Aborigines Day"
+msgstr "Aboriginerdagen"
+
+#: src/hd-data.c:469
+msgid "All Fool's Day"
+msgstr "Første april"
+
+#: src/hd-data.c:470
+msgid "All Saints' Day"
+msgstr "Allehelgensdag"
+
+#: src/hd-data.c:471
+msgid "All Souls' Day"
+msgstr "Alle sjæles dag"
+
+#: src/hd-data.c:472
+msgid "Alphabet Day"
+msgstr "Alfabet-dagen"
+
+#: src/hd-data.c:473
+msgid "Anniversary of Auckland"
+msgstr "Aucklands årsdag"
+
+#: src/hd-data.c:474
+msgid "Anniversary of Canterbury North"
+msgstr "Canterbury Norths årsdag"
+
+#: src/hd-data.c:475
+msgid "Anniversary of Canterbury South"
+msgstr "Canterbury Souths årsdag"
+
+#: src/hd-data.c:476
+msgid "Anniversary of Chatham Islands"
+msgstr "Chathamøernes årsdag"
+
+#: src/hd-data.c:477
+msgid "Anniversary of Hawkes' Bay"
+msgstr "Hawkes' Bays årsdag"
+
+#: src/hd-data.c:478
+msgid "Anniversary of Marlborough"
+msgstr "Marlboroughs årsdag"
+
+#: src/hd-data.c:479
+msgid "Anniversary of Nelson"
+msgstr "Nelsons årsdag"
+
+#: src/hd-data.c:480
+msgid "Anniversary of Otago"
+msgstr "Otagos årsdag"
+
+#: src/hd-data.c:481
+msgid "Anniversary of Southland"
+msgstr "Southlands årsdag"
+
+#: src/hd-data.c:482
+msgid "Anniversary of Taranaki"
+msgstr "Taranakis årsdag"
+
+#: src/hd-data.c:483
+msgid "Anniversary of Wellington"
+msgstr "Wellingtons årsdag"
+
+#: src/hd-data.c:484
+msgid "Anniversary of Westland"
+msgstr "Westlands årsdag"
+
+#: src/hd-data.c:485
+msgid "Anzac Day"
+msgstr "Anzacdagen"
+
+#: src/hd-data.c:486
+msgid "Arbor Day"
+msgstr "Plant et træ"
+
+#: src/hd-data.c:487
+msgid "Armed Forces Day"
+msgstr "Militærets dag"
+
+#: src/hd-data.c:488
+msgid "Armistice Day"
+msgstr "Våbenstilstandsdagen"
+
+#: src/hd-data.c:489
+msgid "Ash Monday"
+msgstr ""
+
+#: src/hd-data.c:490
+msgid "Ash Wednesday"
+msgstr "Askeonsdag"
+
+#: src/hd-data.c:491
+msgid "Ascension of Abdu'l-Baha"
+msgstr ""
+
+#: src/hd-data.c:492
+msgid "Ascension of Baha'u'llah"
+msgstr ""
+
+#: src/hd-data.c:493
+msgid "Birth of Baha'u'llah"
+msgstr "Baha'u'llahs fødsel"
+
+#: src/hd-data.c:494
+msgid "Birth of the Bab"
+msgstr ""
+
+#: src/hd-data.c:495
+msgid "Day of the Covenant"
+msgstr ""
+
+#: src/hd-data.c:496
+msgid "Declaration of the Bab"
+msgstr ""
+
+#: src/hd-data.c:497
+msgid "First Day of Ridvan"
+msgstr ""
+
+#: src/hd-data.c:498
+msgid "Martyrdom of the Bab"
+msgstr ""
+
+#: src/hd-data.c:499
+msgid "Bahá'i New Year's Day"
+msgstr "Bahá'i nytårsdag"
+
+#: src/hd-data.c:500
+msgid "Ninth Day of Ridvan"
+msgstr "Ridvans niende dag"
+
+#: src/hd-data.c:501
+msgid "Twelfth Day of Ridvan"
+msgstr "Ridvans tolvte dag"
+
+#: src/hd-data.c:502
+msgid "Bank Holiday"
+msgstr "Bankfridag"
+
+#: src/hd-data.c:503
+msgid "Basque National Day"
+msgstr "Den baskiske nationaldag"
+
+#: src/hd-data.c:504
+msgid "Battle of Boyne"
+msgstr "Slaget ved Boyne"
+
+#: src/hd-data.c:505
+msgid "Battle of Puebla"
+msgstr "Slaget ved Puebla"
+
+#: src/hd-data.c:506
+msgid "Beginning of Financial Year"
+msgstr "Finansårets begyndelse"
+
+#: src/hd-data.c:507
+msgid "Benito Juárez Day"
+msgstr "Benito Juárez-dag"
+
+#: src/hd-data.c:508
+msgid "Bodhidharma's Birthday"
+msgstr "Bodhidharmas fødselsdag"
+
+#: src/hd-data.c:509
+msgid "Bosses' Day"
+msgstr "Bosses' dag"
+
+# Boxing Day is a bank or public holiday that occurs on 26 December, or the first or second weekday after Christmas Day, depending on national or regional laws. It is observed in Australia, Canada, New Zealand, the United Kingdom and some other Commonwealth nations.
+#: src/hd-data.c:510
+#, fuzzy
+msgid "Boxing Day"
+msgstr "Anden juledag"
+
+#: src/hd-data.c:511
+msgid "Bringing Home the Herds Day"
+msgstr ""
+
+#: src/hd-data.c:512
+msgid "Bringing in the Harvest Day"
+msgstr ""
+
+#: src/hd-data.c:513
+msgid "Buddha's Birthday"
+msgstr "Buddhas fødselsdag"
+
+#: src/hd-data.c:514
+msgid "Burns Night"
+msgstr "Burns nat"
+
+#: src/hd-data.c:515
+msgid "Camoes Day"
+msgstr "Camoes dag"
+
+#: src/hd-data.c:516
+msgid "Carnival"
+msgstr "Karneval"
+
+#: src/hd-data.c:517
+msgid "Beltane"
+msgstr "Beltane"
+
+#: src/hd-data.c:518
+msgid "Imbolg"
+msgstr "Imbolg"
+
+#: src/hd-data.c:519
+msgid "Lughnasa"
+msgstr "Lughnasa"
+
+#: src/hd-data.c:520
+msgid "Samhain/Celtic New Year's Day"
+msgstr "Samhain/keltisk nytårsdag"
+
+#: src/hd-data.c:521
+msgid "Children's Day"
+msgstr "Børnenes dag"
+
+#: src/hd-data.c:522
+msgid "Cycle"
+msgstr ""
+
+#: src/hd-data.c:523
+msgid "Chinese New Year's Day"
+msgstr "Kinesisk nytårsdag"
+
+#: src/hd-data.c:524
+msgid "Chinese New Year's Eve"
+msgstr "Kinesisk nytårsaften"
+
+#: src/hd-data.c:525
+msgid "Christmas Day"
+msgstr "Juledag"
+
+#: src/hd-data.c:526
+msgid "Christmas Eve"
+msgstr "Juleaften"
+
+#: src/hd-data.c:527
+msgid "Christ's Ascension Day"
+msgstr "Kristi himmelsfartsdag"
+
+#: src/hd-data.c:528
+msgid "Chrysanthenum Day"
+msgstr "Chrysanthemumsdag"
+
+#: src/hd-data.c:529
+msgid "Citizenship Day"
+msgstr "Borgerskabsdag"
+
+#: src/hd-data.c:530
+msgid "Civic Holiday"
+msgstr ""
+
+#: src/hd-data.c:531
+msgid "Columbus Day"
+msgstr "Columbus dag"
+
+#: src/hd-data.c:532
+msgid "Coming of Age Day"
+msgstr ""
+
+#: src/hd-data.c:533
+msgid "Confucius' Birthday"
+msgstr "Confusius' fødselsdag"
+
+#: src/hd-data.c:534
+msgid "Constitution Anniversary"
+msgstr ""
+
+#: src/hd-data.c:535
+msgid "Coptic New Year's Day"
+msgstr "Koptisk nytårsdag"
+
+#: src/hd-data.c:536
+msgid "Cosmonauts' Day"
+msgstr "Kosmonautdag"
+
+#: src/hd-data.c:537
+msgid "Cross Raising Day"
+msgstr ""
+
+#: src/hd-data.c:538
+msgid "Culture Day"
+msgstr "Kulturdagen"
+
+#: src/hd-data.c:539
+msgid "Day after Mid-Autumn Festival"
+msgstr ""
+
+#: src/hd-data.c:540
+msgid "Day after Tomb-Sweeping Day"
+msgstr ""
+
+#: src/hd-data.c:541
+msgid "Day of Andalucia"
+msgstr "Andalusiens dag"
+
+#: src/hd-data.c:542
+msgid "Day of Catalonia"
+msgstr "Kataloniens dag"
+
+#: src/hd-data.c:543
+msgid "Day of Galicia"
+msgstr "Galiciens dag"
+
+#: src/hd-data.c:544
+msgid "Day of Prayer and Repentance"
+msgstr "Bøne- og ångerdagen"
+
+#: src/hd-data.c:545
+msgid "Day of Reconciliation"
+msgstr ""
+
+#: src/hd-data.c:546
+msgid "Defenders of Motherland Day"
+msgstr ""
+
+#: src/hd-data.c:547
+#, fuzzy
+msgid "Double-9 Day"
+msgstr "Nobeldagen"
+
+#: src/hd-data.c:548
+msgid "Dragon Boat Festival"
+msgstr "Dragebådsfestivalen"
+
+#: src/hd-data.c:549
+msgid "Dynasty Day"
+msgstr "Dynastidagen"
+
+#: src/hd-data.c:550
+msgid "Easter Monday"
+msgstr "Anden påskedag"
+
+#: src/hd-data.c:551
+msgid "Easter Sunday"
+msgstr "Påskedag"
+
+#: src/hd-data.c:552
+msgid "Lunar Eclipse"
+msgstr "Måneformørkelse"
+
+#: src/hd-data.c:553
+msgid "Solar Eclipse"
+msgstr "Solformørkelse"
+
+#: src/hd-data.c:554
+msgid "Annular"
+msgstr "Ringformet"
+
+#: src/hd-data.c:555
+msgid "Partial"
+msgstr "Delvis"
+
+#: src/hd-data.c:556
+msgid "Penumbral"
+msgstr "Halvskygge"
+
+#: src/hd-data.c:557
+msgid "Total"
+msgstr "Total"
+
+#: src/hd-data.c:558
+msgid "Eindhoven's Liberation"
+msgstr "Eindhovens befrielse"
+
+#: src/hd-data.c:559
+msgid "Election Day"
+msgstr "Valgdagen"
+
+#: src/hd-data.c:560
+msgid "Emperor's Birthday"
+msgstr "Kejserens fødselsdag"
+
+#: src/hd-data.c:561
+#, fuzzy
+msgid "Equinox Day"
+msgstr "Valdagen"
+
+#: src/hd-data.c:562
+msgid "Ethiopic New Year's Day"
+msgstr "Etiopisk nytårsdag"
+
+#: src/hd-data.c:563
+msgid "Father's Day"
+msgstr "Fars dag"
+
+#: src/hd-data.c:564
+msgid "Feast of Corpus Christi"
+msgstr ""
+
+#: src/hd-data.c:565
+#, fuzzy
+msgid "Feast of Fortune"
+msgstr "Kristi kropps og blods høgtid"
+
+#: src/hd-data.c:566
+#, fuzzy
+msgid "Feast of Heart Jesus"
+msgstr "Theotokos høgtid"
+
+#: src/hd-data.c:567
+msgid "Festival of Lanterns"
+msgstr ""
+
+#: src/hd-data.c:568
+msgid "Festival of Sadeh"
+msgstr "Sadehfestivalen"
+
+#: src/hd-data.c:569
+msgid "Flag Day"
+msgstr "Flagets dag"
+
+#: src/hd-data.c:570
+msgid "Flemish Culture Day"
+msgstr "Flamske kulturdag"
+
+#: src/hd-data.c:571
+msgid "Founding of the Communist Party"
+msgstr "Kommunistpartiets grundlæggelse"
+
+#: src/hd-data.c:572
+msgid "French Culture Day"
+msgstr "Franske kulturdag"
+
+#: src/hd-data.c:573
+#, fuzzy
+msgid "French Revolutionary"
+msgstr "Revolutionsdagen"
+
+#: src/hd-data.c:574
+#, fuzzy
+msgid "Friendship Day"
+msgstr "Presidentens dag"
+
+#: src/hd-data.c:575
+msgid "German Unity Day"
+msgstr "Dagen for Tysklands forening"
+
+#: src/hd-data.c:576
+msgid "Good Friday"
+msgstr "Langfredag"
+
+#: src/hd-data.c:577
+msgid "Good Saturday/Easter Eve"
+msgstr "Påskeaften"
+
+#: src/hd-data.c:578
+msgid "Grandparents' Day"
+msgstr "Bedsteforælderdagen"
+
+#: src/hd-data.c:579
+#, fuzzy
+msgid "Greenery Day"
+msgstr "Bønedagen"
+
+#: src/hd-data.c:580
+msgid "Grotto Day"
+msgstr "Grottodagen"
+
+#: src/hd-data.c:581
+msgid "Groundhog Day"
+msgstr "Jordsvinedagen"
+
+#: src/hd-data.c:582
+msgid "Guadalupe Virgin's Day"
+msgstr "Guadalupe Virgins dag"
+
+#: src/hd-data.c:583
+#, fuzzy
+msgid "Guy Fawkes Day"
+msgstr "Guy Fawkes dag"
+
+#: src/hd-data.c:584
+msgid "Halloween"
+msgstr "Allehelligensaften"
+
+#: src/hd-data.c:585
+msgid "Health and Sport's Day"
+msgstr "Sundheds- og idrætsdag"
+
+#: src/hd-data.c:586
+msgid "Hannukah/Festival of Lights"
+msgstr "Hannukah/lysets festival"
+
+#: src/hd-data.c:587
+msgid "Lag B'Omer"
+msgstr "Lag B'Omer"
+
+#: src/hd-data.c:588
+msgid "Pesach/Passover"
+msgstr ""
+
+#: src/hd-data.c:589
+msgid "Purim/Feast of Lots"
+msgstr ""
+
+#: src/hd-data.c:590
+msgid "Rosh Hashana/New Year's Day"
+msgstr "Rosh Hashana/nytårsdag"
+
+#: src/hd-data.c:591
+msgid "Shavuot/Giving of the Torah"
+msgstr ""
+
+#: src/hd-data.c:592
+msgid "Shushan Purim"
+msgstr "Shushan Purim"
+
+#: src/hd-data.c:593
+msgid "Simchat Torah"
+msgstr "Simchat Torah"
+
+#: src/hd-data.c:594
+msgid "Sukkot/Feast of Tabernacles"
+msgstr ""
+
+#: src/hd-data.c:595
+msgid "Tisha B'Av/Fasting Day"
+msgstr ""
+
+#: src/hd-data.c:596
+msgid "Tu B'Shevat/New Year of Trees"
+msgstr "Tu B'Shevat/Træernes nytår"
+
+#: src/hd-data.c:597
+#, fuzzy
+msgid "Yom Hashoah/Holocaust Memorial"
+msgstr "Yom Hashoah/holocaust-mindedagen"
+
+#: src/hd-data.c:598
+msgid "Yom Hazikaron/Soldiers Memorial"
+msgstr ""
+
+#: src/hd-data.c:599
+msgid "Yom Ha Azmaut/Independence Day"
+msgstr "Yom Ha Azmaut/uafhængighedsdagen"
+
+#: src/hd-data.c:600
+msgid "Yom Kippur/Atonement Day"
+msgstr ""
+
+#: src/hd-data.c:601
+msgid "Yom Yerushalayim/Jerusalem Day"
+msgstr "Yom Yerushalayim/Jerusalemdag"
+
+#: src/hd-data.c:602
+msgid "Holy Innocent's Day"
+msgstr ""
+
+#: src/hd-data.c:603
+msgid "Holy Trinity"
+msgstr ""
+
+#: src/hd-data.c:604
+#, fuzzy
+msgid "Huravee Day"
+msgstr "Bønedagen"
+
+#: src/hd-data.c:605
+msgid "Independence Day"
+msgstr "Uafhængighedsdagen"
+
+#: src/hd-data.c:606
+#, fuzzy
+msgid "Independence Movement Day"
+msgstr "Oavhængighedsdagen"
+
+#: src/hd-data.c:607
+msgid "Independence Proclamation"
+msgstr "Uafhængighedserklæringen"
+
+#: src/hd-data.c:608
+msgid "Indian New Year's Day"
+msgstr "Indisk nytårsdag"
+
+#: src/hd-data.c:609
+msgid "Aga Khan's Birthday"
+msgstr "Aga Khans fødselsdag"
+
+#: src/hd-data.c:610
+msgid "Ashura'"
+msgstr "Ashura'"
+
+#: src/hd-data.c:611
+msgid "Eid-al-Adha"
+msgstr "Eid-al-Adha"
+
+#: src/hd-data.c:612
+msgid "Eid-al-Fitr"
+msgstr "Eid-al-Fitr"
+
+#: src/hd-data.c:613
+msgid "Eid-i-Milad-un-Nabi"
+msgstr "Eid-i-Milad-un-Nabi"
+
+#: src/hd-data.c:614
+msgid "Ghadir"
+msgstr "Ghadir"
+
+#: src/hd-data.c:615
+msgid "Imamat Day"
+msgstr "Imamat-dagen"
+
+#: src/hd-data.c:616
+msgid "Islamic New Year's Day"
+msgstr "Islamisk nytårsdag"
+
+#: src/hd-data.c:617
+msgid "Nuzul-al-Qur'an"
+msgstr "Nuzul-al-Qur'an"
+
+#: src/hd-data.c:618
+msgid "Quds Day"
+msgstr "Quds dag"
+
+#: src/hd-data.c:619
+msgid "Ramadan"
+msgstr "Ramadanen"
+
+#: src/hd-data.c:620
+msgid "Shab-e-Bara't"
+msgstr "Shab-e-Bara't"
+
+#: src/hd-data.c:621
+msgid "Shab-e-Mi'raj"
+msgstr "Shab-e-Mi'raj"
+
+#: src/hd-data.c:622
+msgid "Shab-e Qadr"
+msgstr "Shab-e Qadr"
+
+#: src/hd-data.c:623
+msgid "Waqf-al-Arafat"
+msgstr "Waqf-al-Arafat"
+
+#: src/hd-data.c:624
+msgid "Japanese New Year's Day"
+msgstr "Japansk nytårsdag"
+
+#: src/hd-data.c:625
+msgid "Japanese New Year's Eve"
+msgstr "Japansk nytårsaften"
+
+#: src/hd-data.c:626
+msgid "Jesus' Circumcision"
+msgstr ""
+
+#: src/hd-data.c:627
+msgid "Kwanzaa"
+msgstr "Kwanzaa"
+
+#: src/hd-data.c:628
+msgid "Labour Day"
+msgstr "Første maj"
+
+#: src/hd-data.c:629
+#, fuzzy
+msgid "Labour Thanksgiving Day"
+msgstr "Tacksægelsedagen"
+
+#: src/hd-data.c:630
+msgid "Lao Tze's Birthday"
+msgstr "Lao Tzes fødselsdag"
+
+#: src/hd-data.c:631
+msgid "Liberation Day"
+msgstr "Befrielsedagen"
+
+#: src/hd-data.c:632
+#, fuzzy
+msgid "Marine Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:633
+msgid "Martinimas"
+msgstr "Martinimas"
+
+#: src/hd-data.c:634
+msgid "Martin L. King's Day"
+msgstr "Martin L. Kings dag"
+
+#: src/hd-data.c:635
+msgid "Martyrs' Day"
+msgstr "Martyrernes dag"
+
+#: src/hd-data.c:636
+msgid "Mary's Annunciation Day"
+msgstr "Marie bebudelsedag"
+
+#: src/hd-data.c:637
+msgid "Mary's Ascension Day"
+msgstr "Marie himmelsfarts dag"
+
+#: src/hd-data.c:638
+msgid "Mary's Candlemas"
+msgstr ""
+
+#: src/hd-data.c:639
+#, fuzzy
+msgid "Mary's Expectation"
+msgstr "Marie bebådelsedag"
+
+#: src/hd-data.c:640
+msgid "Mary's Immaculate Conception"
+msgstr ""
+
+#: src/hd-data.c:641
+#, fuzzy
+msgid "Mary's Maternity"
+msgstr "Marie himmelsfærds dag"
+
+#: src/hd-data.c:642
+msgid "Mary's Name"
+msgstr ""
+
+#: src/hd-data.c:643
+msgid "Mary's Nativity"
+msgstr ""
+
+#: src/hd-data.c:644
+msgid "Mary's Sacrifice"
+msgstr ""
+
+#: src/hd-data.c:645
+#, fuzzy
+msgid "Mary's Visitation"
+msgstr "Marie bebådelsedag"
+
+#: src/hd-data.c:646
+msgid "Mary - Blessed Virgin"
+msgstr ""
+
+#: src/hd-data.c:647
+msgid "Maundy Thursday"
+msgstr "Skærtorsdagen"
+
+#: src/hd-data.c:648
+msgid "May Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:649
+msgid "St John's/Midsummer Day"
+msgstr ""
+
+#: src/hd-data.c:650
+msgid "Mid-Autumn Festival"
+msgstr "Midt-efterårsfestival"
+
+#: src/hd-data.c:651
+msgid "Mid-Spring Festival"
+msgstr "Midt-forårsfestival"
+
+#: src/hd-data.c:652
+msgid "Mid-Year Festival"
+msgstr "Midt-årsfestival"
+
+#: src/hd-data.c:653
+msgid "Waxing Half Moon"
+msgstr "Tiltagende halvmåne"
+
+#: src/hd-data.c:654
+msgid "Full Moon"
+msgstr "Fuldmåne"
+
+#: src/hd-data.c:655
+msgid "Waning Half Moon"
+msgstr "Aftagende halvmåne"
+
+#: src/hd-data.c:656
+msgid "New Moon"
+msgstr "Nymåne"
+
+#: src/hd-data.c:657
+msgid "Mother's Day"
+msgstr "Mors dag"
+
+#: src/hd-data.c:658
+msgid "Mother in Law's Day"
+msgstr "Svigermordag"
+
+#: src/hd-data.c:659
+msgid "Music Water Banquet"
+msgstr ""
+
+#: src/hd-data.c:660
+msgid "National Foundation Day"
+msgstr "Den nationale grundlæggelsesdag"
+
+#: src/hd-data.c:661
+msgid "National Holiday"
+msgstr "National helligdag"
+
+#: src/hd-data.c:662
+msgid "National Mourning Day"
+msgstr "National sørgedag"
+
+#: src/hd-data.c:663
+msgid "New Year's Day"
+msgstr "Nyårsdag"
+
+#: src/hd-data.c:664
+msgid "Nurses' Day"
+msgstr ""
+
+#: src/hd-data.c:665
+msgid "Old-Armenic New Year"
+msgstr "Oldarmensk nytår"
+
+#: src/hd-data.c:666
+msgid "Old-Egyptic New Year"
+msgstr "Oldægyptisk nytår"
+
+#: src/hd-data.c:667
+msgid "Orthodox New Year's Day"
+msgstr "Ortodoks nytårsdag"
+
+#: src/hd-data.c:668
+msgid "Our Lady Aparecida Day"
+msgstr ""
+
+#: src/hd-data.c:669
+msgid "Palm Sunday"
+msgstr "Palmesøndag"
+
+#: src/hd-data.c:670
+#, fuzzy
+msgid "Parent's Day"
+msgstr "Presidentens dag"
+
+#: src/hd-data.c:671
+#, fuzzy
+msgid "Passion Sunday"
+msgstr "Palmsøndagen"
+
+#: src/hd-data.c:672
+msgid "Peace Festival"
+msgstr "Fredsfestival"
+
+#: src/hd-data.c:673
+msgid "Peach Festival"
+msgstr "Ferskenfestival"
+
+#: src/hd-data.c:674
+msgid "Whitsunday/Pentecost"
+msgstr "Pinsedag"
+
+#: src/hd-data.c:675
+msgid "Noruz/Persian New Year's Day"
+msgstr "Noruz/persisk nytårsdag"
+
+#: src/hd-data.c:676
+msgid "Prayer Day"
+msgstr "Bededag"
+
+#: src/hd-data.c:677
+#, fuzzy
+msgid "Presidential Inauguration"
+msgstr "Presidentens tal"
+
+#: src/hd-data.c:678
+msgid "Presidents' Day"
+msgstr "Præsidentdag"
+
+#: src/hd-data.c:679
+#, fuzzy
+msgid "Presidents' Inform"
+msgstr "Presidentens tal"
+
+#: src/hd-data.c:680
+#, fuzzy
+msgid "President Lincoln's Birthday"
+msgstr "Præsident Lincolns fødselsdag"
+
+#: src/hd-data.c:681
+msgid "Princess' Day"
+msgstr "Prinsessans dag"
+
+#: src/hd-data.c:682
+msgid "Quinquagesima Sunday"
+msgstr "Quinquagesima-søndag"
+
+#: src/hd-data.c:683
+msgid "Reformation Day"
+msgstr "Reformationsdagen"
+
+#: src/hd-data.c:684
+msgid "Remembrance/Memorial Day"
+msgstr ""
+
+#: src/hd-data.c:685
+msgid "Republic Day"
+msgstr "Republikens dag"
+
+#: src/hd-data.c:686
+msgid "Respect for the Aged Day"
+msgstr "Respekt for de ældre-dagen"
+
+#: src/hd-data.c:687
+msgid "Revolution Day"
+msgstr "Revolutionsdagen"
+
+#: src/hd-data.c:688
+msgid "Rio de Janeiro Anniversary"
+msgstr "Rio de Janeiros årsdag"
+
+#: src/hd-data.c:689
+#, fuzzy
+msgid "Rogation Sunday"
+msgstr "Domsøndagen"
+
+#: src/hd-data.c:690
+msgid "Sao Paulo Anniversary"
+msgstr "Sao Paulos årsdag"
+
+#: src/hd-data.c:691
+msgid "Sapporo Snow Festival"
+msgstr "Sapporos snefestival"
+
+#: src/hd-data.c:692
+msgid "Season Change/Bean-Festival"
+msgstr "Årstidsændring/bønnefestival"
+
+#: src/hd-data.c:693
+#, fuzzy
+msgid "Septuagesima Sunday"
+msgstr "Palmsøndagen"
+
+#: src/hd-data.c:694
+#, fuzzy
+msgid "Seven Sleepers Day"
+msgstr "S:t Stefans dag"
+
+#: src/hd-data.c:695
+#, fuzzy
+msgid "Sexagesima Sunday"
+msgstr "Palmsøndagen"
+
+#: src/hd-data.c:696
+msgid "Shrove Tuesday/Mardi Gras"
+msgstr "Hvidetirsdag"
+
+#: src/hd-data.c:697
+#, fuzzy
+msgid "Solstice Day"
+msgstr "Vapenstilleståndsdagen"
+
+#: src/hd-data.c:698
+msgid "Soot-Sweeping Day"
+msgstr "Skorstensfejerdag"
+
+#: src/hd-data.c:699
+msgid "Spring Festival"
+msgstr "Forårsfestival"
+
+#: src/hd-data.c:700
+msgid "Start of common month"
+msgstr "Start på almindelig måned"
+
+#: src/hd-data.c:701
+msgid "Start of leap month"
+msgstr "Start på skudmåned"
+
+#: src/hd-data.c:702
+msgid "Star Festival"
+msgstr "Stjernefestival"
+
+#: src/hd-data.c:703
+#, fuzzy
+msgid "St Andrew's Day"
+msgstr "S:t Gørans dag"
+
+#: src/hd-data.c:704
+#, fuzzy
+msgid "St Bartholomew Day"
+msgstr "S:t Berchtolds dag"
+
+#: src/hd-data.c:705
+#, fuzzy
+msgid "St Berchtold's Day"
+msgstr "S:t Berchtolds dag"
+
+#: src/hd-data.c:706
+#, fuzzy
+msgid "St David's Day"
+msgstr "S:t Davids dag"
+
+#: src/hd-data.c:707
+#, fuzzy
+msgid "St Edward's Day"
+msgstr "S:t Edwards dag"
+
+#: src/hd-data.c:708
+#, fuzzy
+msgid "St George's Day"
+msgstr "S:t Gørans dag"
+
+#: src/hd-data.c:709
+#, fuzzy
+msgid "St James' Day"
+msgstr "S:t James dag"
+
+#: src/hd-data.c:710
+#, fuzzy
+msgid "St Joseph's Day"
+msgstr "S:t Josefs dag"
+
+#: src/hd-data.c:711
+#, fuzzy
+msgid "St Laurentius Day"
+msgstr "Alla hjærtans dag"
+
+#: src/hd-data.c:712
+#, fuzzy
+msgid "St Nicholas' Day"
+msgstr "S:t Nikolaus dag"
+
+#: src/hd-data.c:713
+#, fuzzy
+msgid "St Nicholas' Eve"
+msgstr "S:t Nikolaus aften"
+
+#: src/hd-data.c:714
+#, fuzzy
+msgid "St Patrick's Day"
+msgstr "S:t Patricks dag"
+
+#: src/hd-data.c:715
+msgid "St Peter and St Paul"
+msgstr ""
+
+#: src/hd-data.c:716
+#, fuzzy
+msgid "St Stephen's Day"
+msgstr "S:t Stefans dag"
+
+#: src/hd-data.c:717
+#, fuzzy
+msgid "St Valentine's Day"
+msgstr "Alla hjærtans dag"
+
+#: src/hd-data.c:718
+msgid "Sunday of the Dead"
+msgstr ""
+
+#: src/hd-data.c:719
+msgid "Swallow Day"
+msgstr ""
+
+#: src/hd-data.c:720
+#, fuzzy
+msgid "Sweetest Day"
+msgstr "Veteranernas dag"
+
+#: src/hd-data.c:721
+msgid "Sylvester/New Year's Eve"
+msgstr ""
+
+#: src/hd-data.c:722
+msgid "Teacher's Day"
+msgstr "Lærerens dag"
+
+#: src/hd-data.c:723
+#, fuzzy
+msgid "Thai New Year's Day"
+msgstr "Nyårsdagen"
+
+#: src/hd-data.c:724
+#, fuzzy
+msgid "Thanksgiving Day"
+msgstr "Tacksægelsedagen"
+
+#: src/hd-data.c:725
+msgid "The King's Birthday"
+msgstr "Kongens fødselsdag"
+
+#: src/hd-data.c:726
+msgid "The Queen's Birthday"
+msgstr "Dronningens fødselsdag"
+
+#: src/hd-data.c:727
+msgid "Epiphany/Three King's Day"
+msgstr "Hellig tre kongers dag"
+
+#: src/hd-data.c:728
+#, fuzzy
+msgid "Tiradentes Day"
+msgstr "Presidentens dag"
+
+#: src/hd-data.c:729
+msgid "Tomb-Sweeping Day"
+msgstr ""
+
+#: src/hd-data.c:730
+#, fuzzy
+msgid "Transfiguration Day"
+msgstr "Krøningsdagen"
+
+#: src/hd-data.c:731
+#, fuzzy
+msgid "Tynwald Day"
+msgstr "Dynastidagen"
+
+#: src/hd-data.c:732
+msgid "Valborg's Eve"
+msgstr ""
+
+#: src/hd-data.c:733
+msgid "Venice Carnival"
+msgstr ""
+
+#: src/hd-data.c:734
+msgid "Veteran's Day"
+msgstr "Veteranernes dag"
+
+#: src/hd-data.c:735
+msgid "Victoria Day"
+msgstr "Viktoriadagen"
+
+#: src/hd-data.c:736
+msgid "Victory Day"
+msgstr "Sejersdagen"
+
+#: src/hd-data.c:737
+msgid "Whit Monday"
+msgstr "Anden pinsedag"
+
+#: src/hd-data.c:738
+#, fuzzy
+msgid "Women's Day"
+msgstr "Mors dag"
+
+#: src/hd-data.c:739
+#, fuzzy
+msgid "Women's Shrove Day"
+msgstr "Kvinnans fastedag"
+
+#: src/hd-data.c:740
+msgid "World Animal Day"
+msgstr ""
+
+#: src/hd-data.c:741
+#, fuzzy
+msgid "Youth Day"
+msgstr "Mors dag"
+
+#: src/hd-data.c:747
+msgid "Adelaide Cup Day"
+msgstr ""
+
+#: src/hd-data.c:748
+#, fuzzy
+msgid "Admission Day"
+msgstr "Vapenstilleståndsdagen"
+
+#: src/hd-data.c:749
+#, fuzzy
+msgid "Alaska Day"
+msgstr "Flaggans dag"
+
+#: src/hd-data.c:750
+msgid "Aleksis Kivi Day"
+msgstr ""
+
+#: src/hd-data.c:751
+msgid "Alice-Springs Show Day"
+msgstr ""
+
+#: src/hd-data.c:752
+#, fuzzy
+msgid "All Saints' Eve"
+msgstr "Allhelligonadagen"
+
+#: src/hd-data.c:753
+#, fuzzy
+msgid "Americas Day"
+msgstr "Militærens dag"
+
+#: src/hd-data.c:754
+#, fuzzy
+msgid "Angam Day"
+msgstr "Anzacdagen"
+
+#: src/hd-data.c:756
+msgid "Anniversary of Amir's Succession"
+msgstr ""
+
+#: src/hd-data.c:757
+msgid "Anniversary of Armed Struggle"
+msgstr ""
+
+#: src/hd-data.c:758
+msgid "Anniversary of Green March"
+msgstr ""
+
+#: src/hd-data.c:759
+#, fuzzy
+msgid "Antillian Day"
+msgstr "Allhelligonadagen"
+
+#: src/hd-data.c:760
+msgid "Arab League Day"
+msgstr ""
+
+#: src/hd-data.c:762
+msgid "Archbishop Makarios' Memorial Day"
+msgstr ""
+
+#: src/hd-data.c:763
+msgid "Archbishop Makarios' Name-Day"
+msgstr ""
+
+#: src/hd-data.c:764
+#, fuzzy
+msgid "Arengo Anniversary"
+msgstr "Førfattningsdagen"
+
+#: src/hd-data.c:765
+#, fuzzy
+msgid "Army Coup Day"
+msgstr "Militærens dag"
+
+#: src/hd-data.c:766
+msgid "Arrival of the Swiss"
+msgstr ""
+
+#: src/hd-data.c:767
+#, fuzzy
+msgid "Artigas' Birthday"
+msgstr "Konungens fødselsdag"
+
+#: src/hd-data.c:768
+#, fuzzy
+msgid "Asuncion Day"
+msgstr "Anzacdagen"
+
+#: src/hd-data.c:769
+msgid "Ataturk Memorial Day"
+msgstr ""
+
+#: src/hd-data.c:770
+msgid "Authority's Power Day"
+msgstr ""
+
+#: src/hd-data.c:771
+#, fuzzy
+msgid "Ba'ath Revolution Day"
+msgstr "Revolutionsdagen"
+
+#: src/hd-data.c:772
+msgid "Baron Bliss Day"
+msgstr ""
+
+#: src/hd-data.c:773
+#, fuzzy
+msgid "Bataan Day"
+msgstr "Veteranernas dag"
+
+#: src/hd-data.c:774
+#, fuzzy
+msgid "Battle of Angamos"
+msgstr "Slaget vid Boyne"
+
+#: src/hd-data.c:775
+#, fuzzy
+msgid "Battle of Boyacá"
+msgstr "Slaget vid Boyne"
+
+#: src/hd-data.c:776
+#, fuzzy
+msgid "Battle of Carabobo"
+msgstr "Slaget vid Boyne"
+
+#: src/hd-data.c:777
+#, fuzzy
+msgid "Battle of Iquique"
+msgstr "Slaget vid Boyne"
+
+#: src/hd-data.c:778
+#, fuzzy
+msgid "Battle of Las Piedras"
+msgstr "Slaget vid Boyne"
+
+#: src/hd-data.c:779
+msgid "Battle of Näfels"
+msgstr "Slaget ved Näfels"
+
+#: src/hd-data.c:780
+msgid "Beginning of Summer"
+msgstr "Start på sommeren"
+
+#: src/hd-data.c:781
+msgid "Belgrade's Day"
+msgstr "Beograds dag"
+
+#: src/hd-data.c:782
+#, fuzzy
+msgid "Bennington Battle Day"
+msgstr "Benito Juarez dag"
+
+#: src/hd-data.c:783
+msgid "Blessing of the Water"
+msgstr ""
+
+#: src/hd-data.c:784
+msgid "Bloomsday"
+msgstr ""
+
+#: src/hd-data.c:785
+#, fuzzy
+msgid "Boganda Day"
+msgstr "Annandag jul"
+
+#: src/hd-data.c:786
+#, fuzzy
+msgid "Bonaire Day"
+msgstr "Annandag jul"
+
+#: src/hd-data.c:787
+#, fuzzy
+msgid "Boqueron Battle Day"
+msgstr "Krøningsdagen"
+
+#: src/hd-data.c:788
+#, fuzzy
+msgid "Botswana Day"
+msgstr "Annandag jul"
+
+#: src/hd-data.c:789
+#, fuzzy
+msgid "Bounty Day"
+msgstr "Annandag jul"
+
+#: src/hd-data.c:790
+msgid "Bunker Hill Day"
+msgstr ""
+
+#: src/hd-data.c:791
+msgid "Burning of Jan Hus"
+msgstr "Jan Hus eldbegængelse"
+
+#: src/hd-data.c:792
+#, fuzzy
+msgid "Canberra Day"
+msgstr "Bønedagen"
+
+#: src/hd-data.c:793
+#, fuzzy
+msgid "Caricom Day"
+msgstr "Juldagen"
+
+#: src/hd-data.c:794
+msgid "Casimir Pulaski's Birthday"
+msgstr ""
+
+#: src/hd-data.c:795
+#, fuzzy
+msgid "Cassinga Day"
+msgstr "Annandag jul"
+
+#: src/hd-data.c:796
+msgid "Cayenne Festival"
+msgstr "Cayennefestivalen"
+
+#: src/hd-data.c:797
+msgid "Cesar Chavez Day"
+msgstr ""
+
+#: src/hd-data.c:798
+#, fuzzy
+msgid "Charter Day"
+msgstr "Fars dag"
+
+#: src/hd-data.c:799
+#, fuzzy
+msgid "Chiang Kai-shek's Birthday"
+msgstr "Konungens fødselsdag"
+
+#: src/hd-data.c:800
+#, fuzzy
+msgid "Children's White Sunday"
+msgstr "Barnens dag"
+
+#: src/hd-data.c:801
+#, fuzzy
+msgid "Colon Day"
+msgstr "Revolutionsdagen"
+
+#: src/hd-data.c:802
+#, fuzzy
+msgid "Colorado Day"
+msgstr "Krøningsdagen"
+
+#: src/hd-data.c:803
+#, fuzzy
+msgid "Commonwealth Day"
+msgstr "Krøningsdagen"
+
+#: src/hd-data.c:804
+#, fuzzy
+msgid "Compact Day"
+msgstr "Krøningsdagen"
+
+#: src/hd-data.c:805
+msgid "Confederal Agreement Day"
+msgstr ""
+
+#: src/hd-data.c:806
+msgid "Coronation Day"
+msgstr "Krøningsdagen"
+
+#: src/hd-data.c:807
+#, fuzzy
+msgid "Cup Match Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:808
+#, fuzzy
+msgid "Custom Chief's Day"
+msgstr "Barnens dag"
+
+#: src/hd-data.c:809
+msgid "C. Mapinduzi Day"
+msgstr ""
+
+#: src/hd-data.c:810
+msgid "Darwin Show Day"
+msgstr ""
+
+#: src/hd-data.c:811
+msgid "Day of Goodwill"
+msgstr ""
+
+#: src/hd-data.c:812
+msgid "Day of Students Revolt"
+msgstr "Studentrevoltens dag"
+
+#: src/hd-data.c:813
+msgid "Day of the Free Laos"
+msgstr ""
+
+#: src/hd-data.c:814
+msgid "Death of H. Christophe"
+msgstr "H. Christophes død"
+
+#: src/hd-data.c:815
+msgid "Death of J. Dessalines"
+msgstr "J. Dessalines' død"
+
+#: src/hd-data.c:816
+msgid "Death of President Abdallah"
+msgstr "Præsident Abdallahs død"
+
+#: src/hd-data.c:817
+msgid "Death of President Cheikh"
+msgstr "Præsident Cheikhs død"
+
+#: src/hd-data.c:818
+msgid "Death of President Soilih"
+msgstr "Præsident Soilihs død"
+
+#: src/hd-data.c:819
+msgid "Death of Qaid-i-Azam"
+msgstr "Qaid-i-Azams død"
+
+#: src/hd-data.c:820
+msgid "Death of T. Louverture"
+msgstr "T. Louvertures død"
+
+#: src/hd-data.c:821
+#, fuzzy
+msgid "Defenders Day"
+msgstr "Oavhængighedsdagen"
+
+#: src/hd-data.c:822
+msgid "Dia del Padre"
+msgstr ""
+
+#: src/hd-data.c:823
+msgid "Dia de los Maestros"
+msgstr ""
+
+#: src/hd-data.c:824
+#, fuzzy
+msgid "Discovery Day"
+msgstr "Segerdagen"
+
+#: src/hd-data.c:825
+msgid "Downfall of the Dergue"
+msgstr ""
+
+#: src/hd-data.c:826
+msgid "Dry Season Celebration"
+msgstr ""
+
+#: src/hd-data.c:827
+#, fuzzy
+msgid "Dr. Sun Yat-sen's Birthday"
+msgstr "Drottningens fødselsdag"
+
+#: src/hd-data.c:828
+#, fuzzy
+msgid "Duarte's Birthday"
+msgstr "Drottningens fødselsdag"
+
+#: src/hd-data.c:829
+#, fuzzy
+msgid "Easter Tuesday"
+msgstr "Påskdagen"
+
+#: src/hd-data.c:830
+#, fuzzy
+msgid "Economic Liberation Day"
+msgstr "Befrielsedagen"
+
+#: src/hd-data.c:831
+#, fuzzy
+msgid "Eight Hours Day"
+msgstr "Segerdagen"
+
+#: src/hd-data.c:832
+msgid "Elections for National Assembly"
+msgstr ""
+
+#: src/hd-data.c:833
+msgid "Errol Barrow Day"
+msgstr ""
+
+#: src/hd-data.c:834
+#, fuzzy
+msgid "Evacuation Day"
+msgstr "Valdagen"
+
+#: src/hd-data.c:835
+msgid "Eve of Epiphany"
+msgstr ""
+
+#: src/hd-data.c:836
+msgid "Expedition of the 33"
+msgstr ""
+
+#: src/hd-data.c:837
+msgid "E. Hostos' Birthday"
+msgstr ""
+
+#: src/hd-data.c:838
+#, fuzzy
+msgid "Family Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:839
+#, fuzzy
+msgid "FAO Day"
+msgstr "Flaggans dag"
+
+#: src/hd-data.c:840
+#, fuzzy
+msgid "Farmers' Day"
+msgstr "Fars dag"
+
+#: src/hd-data.c:841
+#, fuzzy
+msgid "Father Leval Day"
+msgstr "Fars dag"
+
+#: src/hd-data.c:842
+msgid "Feast of Our Theotokos"
+msgstr "Theotokos højtid"
+
+#: src/hd-data.c:843
+#, fuzzy
+msgid "Fisherman's Day"
+msgstr "Fars dag"
+
+#: src/hd-data.c:844
+#, fuzzy
+msgid "Foundation of NPLA Day"
+msgstr "Krøningsdagen"
+
+#: src/hd-data.c:845
+msgid "Founding of People's Party"
+msgstr ""
+
+#: src/hd-data.c:846
+msgid "Garifuna Day"
+msgstr ""
+
+#: src/hd-data.c:848
+msgid "General San Martin's Anniversary"
+msgstr ""
+
+#: src/hd-data.c:849
+#, fuzzy
+msgid "Gospel Day"
+msgstr "Nobeldagen"
+
+#: src/hd-data.c:850
+#, fuzzy
+msgid "Guacanaste Day"
+msgstr "Dynastidagen"
+
+#: src/hd-data.c:851
+msgid "Gustavus Adolphus' Day"
+msgstr "Gustav Adolfsdagen"
+
+#: src/hd-data.c:852
+#, fuzzy
+msgid "Heritage Day"
+msgstr "Vapenstilleståndsdagen"
+
+#: src/hd-data.c:853
+#, fuzzy
+msgid "Heroes Day"
+msgstr "Fars dag"
+
+#: src/hd-data.c:854
+msgid "Hobart Show Day"
+msgstr ""
+
+#: src/hd-data.c:855
+#, fuzzy
+msgid "Holy Wednesday"
+msgstr "onsdag"
+
+#: src/hd-data.c:856
+#, fuzzy
+msgid "Ho Chi Minh's Birthday"
+msgstr "Konungens fødselsdag"
+
+#: src/hd-data.c:857
+#, fuzzy
+msgid "Human Rights Day"
+msgstr "Dagen for Tysklands enande"
+
+#: src/hd-data.c:858
+msgid "Hurricane Supplication Day"
+msgstr ""
+
+#: src/hd-data.c:859
+#, fuzzy
+msgid "Hurricane Thanksgiving Day"
+msgstr "Tacksægelsedagen"
+
+#: src/hd-data.c:860
+#, fuzzy
+msgid "Independence of Cartagena"
+msgstr "Oavhængighedsdagen"
+
+#: src/hd-data.c:861
+#, fuzzy
+msgid "Independence of Cuenca"
+msgstr "Oavhængighedsdagen"
+
+#: src/hd-data.c:862
+#, fuzzy
+msgid "Independence of Guayaquil"
+msgstr "Oavhængighedsdagen"
+
+#: src/hd-data.c:863
+msgid "Independence of Quito"
+msgstr ""
+
+#: src/hd-data.c:864
+msgid "Indian Arrival Day"
+msgstr ""
+
+#: src/hd-data.c:865
+#, fuzzy
+msgid "Internal Autonomy Day"
+msgstr "Internationella kvinnodagen"
+
+#: src/hd-data.c:866
+#, fuzzy
+msgid "Jefferson Davis' Birthday"
+msgstr "Kronprinsessans fødselsdag"
+
+#: src/hd-data.c:867
+#, fuzzy
+msgid "June Holiday"
+msgstr "Bankfridag"
+
+#: src/hd-data.c:868
+#, fuzzy
+msgid "J. Barbosa's Birthday"
+msgstr "Konungens fødselsdag"
+
+#: src/hd-data.c:869
+#, fuzzy
+msgid "J. Chilembwe Day"
+msgstr "Barnens dag"
+
+#: src/hd-data.c:870
+#, fuzzy
+msgid "J. Diego's Birthday"
+msgstr "Konungens fødselsdag"
+
+#: src/hd-data.c:871
+#, fuzzy
+msgid "J. Robert's Birthday"
+msgstr "Drottningens fødselsdag"
+
+#: src/hd-data.c:872
+msgid "Kamarampaka Day"
+msgstr "Kamarampaka-dag"
+
+#: src/hd-data.c:873
+#, fuzzy
+msgid "Kartini Day"
+msgstr "Mårtensmæssa"
+
+#: src/hd-data.c:874
+#, fuzzy
+msgid "Catherine Show Day"
+msgstr "Fars dag"
+
+#: src/hd-data.c:875
+msgid "Kiev Day"
+msgstr ""
+
+#: src/hd-data.c:876
+#, fuzzy
+msgid "Kim Il-Sung's Birthday"
+msgstr "Konungens fødselsdag"
+
+#: src/hd-data.c:877
+#, fuzzy
+msgid "Kim Jong-Il's Birthday"
+msgstr "Konungens fødselsdag"
+
+#: src/hd-data.c:878
+msgid "King Kamehameha Day"
+msgstr ""
+
+#: src/hd-data.c:879
+msgid "King Rama I Memorial Day/Chakri"
+msgstr ""
+
+#: src/hd-data.c:880
+#, fuzzy
+msgid "King Rama V Memorial Day"
+msgstr "Minnesdagen"
+
+#: src/hd-data.c:881
+msgid "Knabenschiessen"
+msgstr "Knabenschiessen"
+
+#: src/hd-data.c:882
+msgid "Konstantin and Methodius"
+msgstr ""
+
+#: src/hd-data.c:883
+msgid "Lapp National Holiday"
+msgstr "Samernas nationaldag"
+
+#: src/hd-data.c:884
+msgid "Launceston Cup Day"
+msgstr ""
+
+#: src/hd-data.c:885
+#, fuzzy
+msgid "Liberty Day"
+msgstr "Befrielsedagen"
+
+#: src/hd-data.c:886
+msgid "Loss of Muslim Nation"
+msgstr ""
+
+#: src/hd-data.c:887
+msgid "Luxembourg City Kermis"
+msgstr ""
+
+#: src/hd-data.c:888
+#, fuzzy
+msgid "Lyndon B. Johnson Day"
+msgstr "S:t Johns dag"
+
+#: src/hd-data.c:889
+#, fuzzy
+msgid "L. Rivera's Birthday"
+msgstr "Konungens fødselsdag"
+
+#: src/hd-data.c:890
+#, fuzzy
+msgid "Madaraka Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:891
+#, fuzzy
+msgid "Mahatma Gandhi's Birthday"
+msgstr "Konungens fødselsdag"
+
+#: src/hd-data.c:892
+#, fuzzy
+msgid "Malvinas Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:893
+#, fuzzy
+msgid "Manila Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:894
+#, fuzzy
+msgid "Maputo City Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:895
+msgid "Marien Ngouabi Day"
+msgstr ""
+
+#: src/hd-data.c:896
+#, fuzzy
+msgid "Maryland Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:897
+msgid "Melbourne Cup Day"
+msgstr ""
+
+#: src/hd-data.c:898
+#, fuzzy
+msgid "Merchant Day"
+msgstr "Dagen for Tysklands enande"
+
+#: src/hd-data.c:899
+#, fuzzy
+msgid "St John's/Midsummers Eve"
+msgstr "Midsommaraften"
+
+#: src/hd-data.c:900
+#, fuzzy
+msgid "Missionary Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:901
+#, fuzzy
+msgid "Mi-Carême Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:902
+#, fuzzy
+msgid "Morazan Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:903
+#, fuzzy
+msgid "Mosheshoe's Day"
+msgstr "Mors dag"
+
+#: src/hd-data.c:904
+msgid "Motherhood and Beauty Day"
+msgstr ""
+
+#: src/hd-data.c:905
+#, fuzzy
+msgid "Naming Day"
+msgstr "Annandag jul"
+
+#: src/hd-data.c:906
+#, fuzzy
+msgid "National Bun Day"
+msgstr "Nationell sorgedag"
+
+#: src/hd-data.c:907
+#, fuzzy
+msgid "National Heroes Day"
+msgstr "Nationell helligdag"
+
+#: src/hd-data.c:908
+#, fuzzy
+msgid "National Redemption Day"
+msgstr "Nationell sorgedag"
+
+#: src/hd-data.c:909
+msgid "National Resistance Day"
+msgstr ""
+
+#: src/hd-data.c:910
+#, fuzzy
+msgid "National Revival Day"
+msgstr "Nationella motståndsrørelsens dag"
+
+#: src/hd-data.c:911
+#, fuzzy
+msgid "National Unity Day"
+msgstr "Nationell sorgedag"
+
+#: src/hd-data.c:912
+#, fuzzy
+msgid "Ndadaye Day"
+msgstr "Bønedagen"
+
+#: src/hd-data.c:913
+#, fuzzy
+msgid "Neutrality Day"
+msgstr "Dagen for Tysklands enande"
+
+#: src/hd-data.c:914
+#, fuzzy
+msgid "Nevada Day"
+msgstr "Nobeldagen"
+
+#: src/hd-data.c:915
+msgid "New Regime Anniversary"
+msgstr ""
+
+#: src/hd-data.c:916
+msgid "Nobel Day"
+msgstr "Nobeldagen"
+
+#: src/hd-data.c:917
+#, fuzzy
+msgid "Noi Day"
+msgstr "Nobeldagen"
+
+#: src/hd-data.c:918
+#, fuzzy
+msgid "OAU Day"
+msgstr "Anzacdagen"
+
+#: src/hd-data.c:919
+#, fuzzy
+msgid "October Holiday"
+msgstr "Nationell helligdag"
+
+#: src/hd-data.c:920
+msgid "Oil Industry Day"
+msgstr ""
+
+#: src/hd-data.c:921
+msgid "Our Lady of Altagracia Day"
+msgstr ""
+
+#: src/hd-data.c:922
+msgid "Our Lady of Camarin Day"
+msgstr ""
+
+#: src/hd-data.c:923
+msgid "Our Lady of Las Mercedes Day"
+msgstr ""
+
+#: src/hd-data.c:924
+msgid "Our Lady of Los Angeles Day"
+msgstr ""
+
+#: src/hd-data.c:925
+msgid "Our Lady of Seven Sorrows"
+msgstr ""
+
+#: src/hd-data.c:926
+msgid "Our Lady of Victories Day"
+msgstr ""
+
+#: src/hd-data.c:927
+#, fuzzy
+msgid "Panama City Day"
+msgstr "Dagen for Tysklands enande"
+
+#: src/hd-data.c:928
+#, fuzzy
+msgid "Panamerica Day"
+msgstr "Bønedagen"
+
+#: src/hd-data.c:929
+msgid "Paris Peace Agreement Day"
+msgstr ""
+
+#: src/hd-data.c:930
+#, fuzzy
+msgid "Patriot's Day"
+msgstr "S:t Patricks dag"
+
+#: src/hd-data.c:931
+#, fuzzy
+msgid "People's Uprising Day"
+msgstr "Tjeckiska folkets majuppror"
+
+#: src/hd-data.c:932
+msgid "People Power Day"
+msgstr ""
+
+#: src/hd-data.c:933
+msgid "Philippine-American Friendship"
+msgstr ""
+
+#: src/hd-data.c:934
+#, fuzzy
+msgid "Pichincha Day"
+msgstr "Viktoriadagen"
+
+#: src/hd-data.c:935
+#, fuzzy
+msgid "Picnic Day"
+msgstr "Prinsessans dag"
+
+#: src/hd-data.c:936
+#, fuzzy
+msgid "Pioneer Day"
+msgstr "Bønedagen"
+
+#: src/hd-data.c:937
+#, fuzzy
+msgid "Poya Day"
+msgstr "Bønedagen"
+
+#: src/hd-data.c:938
+msgid "Prince Kalanianaole Day"
+msgstr ""
+
+#: src/hd-data.c:939
+#, fuzzy
+msgid "Prince of Wales' Birthday"
+msgstr "Kronprinsessans fødselsdag"
+
+#: src/hd-data.c:940
+#, fuzzy
+msgid "Proclamation Day"
+msgstr "Krøningsdagen"
+
+#: src/hd-data.c:941
+msgid "Qaid-i-Azam's Birthday"
+msgstr ""
+
+#: src/hd-data.c:942
+msgid "Ratu Sukuma Day"
+msgstr ""
+
+#: src/hd-data.c:943
+#, fuzzy
+msgid "Recreation Day"
+msgstr "Reformationsdagen"
+
+#: src/hd-data.c:944
+#, fuzzy
+msgid "Referendum Day"
+msgstr "Reformationsdagen"
+
+#: src/hd-data.c:945
+#, fuzzy
+msgid "Regatta Day"
+msgstr "Reformationsdagen"
+
+#: src/hd-data.c:946
+msgid "Regency Exchange"
+msgstr ""
+
+#: src/hd-data.c:947
+#, fuzzy
+msgid "Restoration Day"
+msgstr "Reformationsdagen"
+
+#: src/hd-data.c:948
+#, fuzzy
+msgid "Return Day"
+msgstr "Veteranernas dag"
+
+#: src/hd-data.c:949
+#, fuzzy
+msgid "Reunification Day"
+msgstr "Reformationsdagen"
+
+#: src/hd-data.c:950
+#, fuzzy
+msgid "Rizal Day"
+msgstr "Anzacdagen"
+
+#: src/hd-data.c:951
+#, fuzzy
+msgid "Rwagasore Day"
+msgstr "Førsta maj"
+
+#: src/hd-data.c:952
+#, fuzzy
+msgid "Saba Day"
+msgstr "Førsta maj"
+
+#: src/hd-data.c:953
+#, fuzzy
+msgid "San Jacinto Day"
+msgstr "S:t Jean Baptistes dag"
+
+#: src/hd-data.c:954
+#, fuzzy
+msgid "San José Day"
+msgstr "S:t Johns dag"
+
+#: src/hd-data.c:955
+msgid "SAR Establishment Day"
+msgstr ""
+
+#: src/hd-data.c:956
+#, fuzzy
+msgid "School Holiday"
+msgstr "Nationell helligdag"
+
+#: src/hd-data.c:957
+msgid "Sechseläuten"
+msgstr "Sechseläuten"
+
+#: src/hd-data.c:958
+#, fuzzy
+msgid "Separation Day"
+msgstr "Befrielsedagen"
+
+#: src/hd-data.c:959
+msgid "Seretse Khama Day"
+msgstr ""
+
+#: src/hd-data.c:960
+#, fuzzy
+msgid "Settlers Day"
+msgstr "Veteranernas dag"
+
+#: src/hd-data.c:961
+#, fuzzy
+msgid "Seward's Day"
+msgstr "S:t Edwards dag"
+
+#: src/hd-data.c:962
+#, fuzzy
+msgid "Shaheed Day"
+msgstr "Fars dag"
+
+#: src/hd-data.c:963
+msgid "Sheep Festival"
+msgstr ""
+
+#: src/hd-data.c:964
+#, fuzzy
+msgid "Sheikh Zayed's Ascension Day"
+msgstr "Marie himmelsfærds dag"
+
+#: src/hd-data.c:965
+msgid "Simon Bolivar's Day"
+msgstr "Simon Bolivars dag"
+
+#: src/hd-data.c:966
+msgid "Sinai-Liberation Day"
+msgstr "Sinais befrielsesdag"
+
+#: src/hd-data.c:967
+msgid "Slave-Liberation Day"
+msgstr "Slavernes befrielsesdag"
+
+#: src/hd-data.c:968
+msgid "Sniff the Breeze Day"
+msgstr ""
+
+#: src/hd-data.c:969
+msgid "Solidarity Day"
+msgstr ""
+
+#: src/hd-data.c:970
+#, fuzzy
+msgid "Somers Day"
+msgstr "Mors dag"
+
+#: src/hd-data.c:971
+#, fuzzy
+msgid "Statia-American Day"
+msgstr "S:t Patricks dag"
+
+#: src/hd-data.c:972
+#, fuzzy
+msgid "Student's Day"
+msgstr "Presidentens dag"
+
+#: src/hd-data.c:973
+#, fuzzy
+msgid "St Agata Day"
+msgstr "Tjugondag Knut"
+
+#: src/hd-data.c:974
+#, fuzzy
+msgid "St Canute's Day"
+msgstr "Tjugondag Knut"
+
+#: src/hd-data.c:975
+#, fuzzy
+msgid "St Cedilia's Day"
+msgstr "Luciadagen"
+
+#: src/hd-data.c:976
+#, fuzzy
+msgid "St Charles' Day"
+msgstr "S:t James dag"
+
+#: src/hd-data.c:977
+#, fuzzy
+msgid "St Demetrius' Day"
+msgstr "S:t James dag"
+
+#: src/hd-data.c:978
+#, fuzzy
+msgid "St Dévote Day"
+msgstr "S:t Josefs dag"
+
+#: src/hd-data.c:979
+#, fuzzy
+msgid "St Eliah's Day"
+msgstr "Luciadagen"
+
+#: src/hd-data.c:980
+#, fuzzy
+msgid "St Jean Baptiste Day"
+msgstr "S:t Jean Baptistes dag"
+
+#: src/hd-data.c:981
+#, fuzzy
+msgid "St Lucia's Day"
+msgstr "Luciadagen"
+
+#: src/hd-data.c:982
+#, fuzzy
+msgid "St Marguerite's Day"
+msgstr "Tjugondag Knut"
+
+#: src/hd-data.c:983
+#, fuzzy
+msgid "St Maroon's Day"
+msgstr "S:t Johns dag"
+
+#: src/hd-data.c:984
+#, fuzzy
+msgid "St Michael's Day"
+msgstr "S:t Nikolaus dag"
+
+#: src/hd-data.c:985
+#, fuzzy
+msgid "St Olav's Day"
+msgstr "S:t Davids dag"
+
+#: src/hd-data.c:986
+#, fuzzy
+msgid "St Olav's Eve"
+msgstr "S:t Nikolaus aften"
+
+#: src/hd-data.c:987
+msgid "St Paul's Shipswreck"
+msgstr ""
+
+#: src/hd-data.c:988
+#, fuzzy
+msgid "St Rose of Lima"
+msgstr "S:t Josefs dag"
+
+#: src/hd-data.c:989
+#, fuzzy
+msgid "St Ursula's Day"
+msgstr "Luciadagen"
+
+#: src/hd-data.c:990
+#, fuzzy
+msgid "St Vincent de Paul's Day"
+msgstr "Alla hjærtans dag"
+
+#: src/hd-data.c:991
+#, fuzzy
+msgid "Suez Victory Day"
+msgstr "Segerdagen"
+
+#: src/hd-data.c:992
+msgid "Sultan Qaboos' Birthday"
+msgstr "Sultan Qaboos' fødselsdag"
+
+#: src/hd-data.c:993
+msgid "Svetitskhovloba"
+msgstr "Svetitskhovloba"
+
+#: src/hd-data.c:994
+#, fuzzy
+msgid "Sweden Day"
+msgstr "Presidentens dag"
+
+#: src/hd-data.c:995
+#, fuzzy
+msgid "S. Doe's Birthday"
+msgstr "Drottningens fødselsdag"
+
+#: src/hd-data.c:996
+msgid "Tennant-Creek Show Day"
+msgstr ""
+
+#: src/hd-data.c:997
+#, fuzzy
+msgid "Territory Day"
+msgstr "Segerdagen"
+
+#: src/hd-data.c:998
+msgid "The Crown Princesse's Birthday"
+msgstr "Kronprinsessans fødselsdag"
+
+#: src/hd-data.c:999
+msgid "The Crown Princesse's Name-Day"
+msgstr "Kronprinsessans navnsdag"
+
+#: src/hd-data.c:1000
+#, fuzzy
+msgid "The Crown Prince's Birthday"
+msgstr "Kronprinsessans fødselsdag"
+
+#: src/hd-data.c:1001
+msgid "The King's Name-Day"
+msgstr "Konungens navnsdag"
+
+#: src/hd-data.c:1002
+msgid "The Queen's Name-Day"
+msgstr "Drottningens navnsdag"
+
+#: src/hd-data.c:1003
+msgid "Topou I Day"
+msgstr ""
+
+#: src/hd-data.c:1004
+#, fuzzy
+msgid "Town Meeting Day"
+msgstr "Annandag jul"
+
+#: src/hd-data.c:1005
+#, fuzzy
+msgid "Traditional Day"
+msgstr "Krøningsdagen"
+
+#: src/hd-data.c:1006
+#, fuzzy
+msgid "Transfer Day"
+msgstr "Bønedagen"
+
+#: src/hd-data.c:1007
+#, fuzzy
+msgid "Truman Day"
+msgstr "Reformationsdagen"
+
+#: src/hd-data.c:1008
+#, fuzzy
+msgid "Union Day"
+msgstr "Krøningsdagen"
+
+#: src/hd-data.c:1009
+msgid "Union with Sweden dissolved"
+msgstr "Unionsopløsningen med Sverige"
+
+#: src/hd-data.c:1010
+msgid "United Nations Day"
+msgstr "FN-dagen"
+
+#: src/hd-data.c:1011
+#, fuzzy
+msgid "Unity Factory Day"
+msgstr "Segerdagen"
+
+#: src/hd-data.c:1012
+#, fuzzy
+msgid "Victor-Schoelcher Day"
+msgstr "Segerdagen"
+
+#: src/hd-data.c:1013
+msgid "Vidovdan"
+msgstr ""
+
+#: src/hd-data.c:1014
+#, fuzzy
+msgid "West Virginia Day"
+msgstr "Viktoriadagen"
+
+#: src/hd-data.c:1015
+msgid "Whitsun Eve"
+msgstr "Pinseaften"
+
+#: src/hd-data.c:1016
+#, fuzzy
+msgid "W. Tubman's Birthday"
+msgstr "Drottningens fødselsdag"
+
+#: src/hd-data.c:1017
+#, fuzzy
+msgid "Yap Day"
+msgstr "Majdagen"
+
+#: src/hd-data.c:1018
+msgid "Day of Czech Statehood"
+msgstr ""
+
+#: src/hd-data.c:1083
+msgid "Zi/Rat"
+msgstr "Zi/rotte"
+
+#: src/hd-data.c:1083
+msgid "Chou/Ox"
+msgstr "Chou/okse"
+
+#: src/hd-data.c:1084
+msgid "Yin/Tiger"
+msgstr "Yin/tiger"
+
+#: src/hd-data.c:1084
+msgid "Mao/Rabbit"
+msgstr "Mao/kanin"
+
+#: src/hd-data.c:1085
+msgid "Chen/Dragon"
+msgstr "Chen/drage"
+
+#: src/hd-data.c:1085
+msgid "Si/Snake"
+msgstr "Si/slange"
+
+#: src/hd-data.c:1086
+msgid "Wu/Horse"
+msgstr "Wu/hest"
+
+#: src/hd-data.c:1086
+msgid "Wei/Sheep"
+msgstr "Wei/får"
+
+#: src/hd-data.c:1087
+msgid "Shen/Monkey"
+msgstr "Shen/abe"
+
+#: src/hd-data.c:1087
+msgid "You/Rooster"
+msgstr "You/hane"
+
+#: src/hd-data.c:1088
+msgid "Xu/Dog"
+msgstr "Xu/hund"
+
+#: src/hd-data.c:1088
+msgid "Hai/Pig"
+msgstr "Hai/gris"
+
+#: src/hd-data.c:1287
+msgid "Ast"
+msgstr "Ast"
+
+#: src/hd-data.c:1400 src/hd-data.c:1483
+msgid "Bah"
+msgstr "Bah"
+
+#: src/hd-data.c:1550
+msgid "Cel"
+msgstr "Cel"
+
+#: src/hd-data.c:1692 src/hd-data.c:2225
+msgid "Chi"
+msgstr "Chi"
+
+#: src/hd-data.c:1806 src/hd-data.c:2325 src/hd-data.c:3842
+#, c-format
+msgid "Cannot calculate lunisolar calendar for %d correctly"
+msgstr ""
+
+#: src/hd-data.c:2227 src/hd-data.c:3730
+#, fuzzy
+msgid "Jap"
+msgstr "jan"
+
+#: src/hd-data.c:2423
+msgid "Chr"
+msgstr "Kr"
+
+#: src/hd-data.c:2657 src/hd-data.c:4174
+msgid "FRR"
+msgstr ""
+
+#: src/hd-data.c:2778 src/hd-data.c:2960
+#, fuzzy
+msgid "Heb"
+msgstr "feb"
+
+#: src/hd-data.c:3190 src/hd-data.c:3619
+msgid "Isl"
+msgstr ""
+
+#: src/hd-data.c:4244 src/hd-data.c:4339
+msgid "AMO"
+msgstr ""
+
+#: src/hd-data.c:4265 src/hd-data.c:4337
+msgid "EGO"
+msgstr ""
+
+#: src/hd-data.c:4447
+msgid "OxN"
+msgstr ""
+
+#: src/hd-data.c:4449
+msgid "OxO"
+msgstr ""
+
+#: src/hd-data.c:4650 src/hd-data.c:4779
+msgid "Per"
+msgstr ""
+
+#: src/hd-data.c:4847
+msgid "Zod"
+msgstr ""
+
+#: src/hd-use.c:929
+msgid " day"
+msgstr " dag"
+
+#: src/hd-use.c:1974 src/hd-use.c:1979 src/hd-use.c:1983 src/hd-use.c:1990
+#: src/hd-use.c:1994 src/hd-use.c:2090 src/hd-use.c:2274
+msgid "Eternal holiday list"
+msgstr "Evighedskalender for helligdage"
+
+#: src/hd-use.c:1978
+#, c-format
+msgid "%s:%*sThe year %0*d is A leap year"
+msgstr "%s:%*sÅr %0*d ER et skudår"
+
+#: src/hd-use.c:1982
+#, c-format
+msgid "%s:%*sThe year %0*d is NO leap year"
+msgstr "%s:%*sÅr %0*d ER IKKE et skudår"
+
+#: src/hd-use.c:1989
+#, c-format
+msgid "%s:%*sThe year %d is A leap year"
+msgstr "%s:%*sÅr %d ER et skudår"
+
+#: src/hd-use.c:1993
+#, c-format
+msgid "%s:%*sThe year %d is NO leap year"
+msgstr "%s:%*sÅr %d ER IKKE et skudår"
+
+#: src/hd-use.c:2243
+#, c-format
+msgid " = %+4d day"
+msgstr " = %+4d dag"
+
+#: src/hd-use.c:2245
+#, c-format
+msgid " = %+4d days"
+msgstr " = %+4d dage"
+
+#: src/hd-use.c:2272
+#, c-format
+msgid "%s%s contains %d maximum entries now!%s"
+msgstr "%s%s indeholder nu %d maxposter!%s"
+
+#: src/help.c:65
+#, c-format
+msgid "Compiled with %s%s for %s%s%s%s"
+msgstr "Kompileret med %s%s for %s%s%s%s"
+
+#: src/help.c:75
+#, fuzzy
+msgid "# Day number (must be defined)"
+msgstr "Daggruppe (exakt en medlem måste definieras):"
+
+#: src/help.c:76
+#, fuzzy
+msgid "# Year number (must be defined)"
+msgstr "Årsgruppe (exakt en medlem måste definieras):"
+
+#: src/help.c:77
+#, fuzzy
+msgid "# Weekday name (may be defined)"
+msgstr "Namngruppe med ugedage (en medlem kan definieras):"
+
+#: src/help.c:78
+msgid "Month group (exactly one member must be defined):"
+msgstr "Månedsgruppe (exakt en medlem måste definieras):"
+
+#: src/help.c:79
+msgid "# Month number"
+msgstr "# Månedsnummer"
+
+#: src/help.c:80
+msgid "# Month name"
+msgstr "# Månedsnavn"
+
+#: src/help.c:81
+msgid "Highlighting group (all members must be defined):"
+msgstr "Fremhæver gruppe (alle medlemmer skal være defineret):"
+
+#: src/help.c:82
+msgid "Start of highlighting sequence/marking character"
+msgstr "Start på fremhævningssekvens/markeringstegn"
+
+#: src/help.c:84
+msgid "End of highlighting sequence/marking character"
+msgstr "Slut på fremhævningssekvens/markeringstegn"
+
+#: src/help.c:86
+msgid "Character replacement:"
+msgstr "Erstatningstegn:"
+
+#: src/help.c:87
+#, c-format
+msgid "Space/blank ('%c') character"
+msgstr "Mellemrumstegn (\"%c\")"
+
+#: src/help.c:88
+#, c-format
+msgid "Underscore ('%c') character"
+msgstr "Bundstregstegn (\"%c\")"
+
+#: src/help.c:89
+#, c-format
+msgid "Percent ('%c') character"
+msgstr "Procenttegn (\"%c\")"
+
+#: src/help.c:90
+#, c-format
+msgid "Backslash ('%c') character"
+msgstr "Omvendt skråstreg (\"%c\")"
+
+#: src/help.c:91
+msgid "All format elements marked by # may optionally"
+msgstr "Alle formatelementer, der er markeret med #, kan valgfrit"
+
+#: src/help.c:92
+msgid "contain a format instruction, which template is like:"
+msgstr "indeholde en formateringsinstruktion, hvis skabelon ligner:"
+
+#: src/help.c:93
+msgid "[ALIGNMENT [SIGN] [ZERO] WIDTH [STYLE] [SUFFIX] FORMAT]"
+msgstr "[JUSTERING [FORTEGN] [NUL] BREDDE [STIL] [SUFFIKS] FORMAT]"
+
+#: src/help.c:94
+#, fuzzy
+msgid "ALIGNMENT group (exactly one member must be defined):"
+msgstr "Månedsgruppe (exakt en medlem måste definieras):"
+
+#: src/help.c:95
+msgid "Field contents placed at the left margin using width WIDTH"
+msgstr "Feltindhold placeres ved venstre margen med bredden BREDDE"
+
+#: src/help.c:97
+msgid "Field contents placed in centered manner using width WIDTH"
+msgstr "Feltindhold placeres centreret med bredden BREDDE"
+
+#: src/help.c:99
+msgid "Field contents placed at the right margin using width WIDTH"
+msgstr "Feltindhold placeres ved højre margen med bredden BREDDE"
+
+# (i modsætning til "must be defined", så denne fortolkning burde være rigtig)
+#: src/help.c:101
+msgid "SIGN (may be defined):"
+msgstr "FORTEGN (kan defineres):"
+
+#: src/help.c:102
+msgid "Numerical value is provided with leading sign"
+msgstr "Numerisk værdi udstyres med foranstillet fortegn"
+
+#: src/help.c:103
+msgid "ZERO (may be defined):"
+msgstr "NUL (kan defineres):"
+
+#: src/help.c:104
+#, fuzzy
+msgid "Numerical value is filled with leading zero(es)"
+msgstr "Dagnummer med inledende nollor"
+
+#: src/help.c:105
+msgid "WIDTH (must be defined):"
+msgstr "BREDDE (skal defineres):"
+
+#: src/help.c:106
+#, c-format
+msgid "Field has the width N (%d...%d)"
+msgstr "Felt har bredden N (%d...%d)"
+
+#: src/help.c:107
+#, fuzzy
+msgid "STYLE group (exactly one member may be defined):"
+msgstr "Årsgruppe (exakt en medlem måste definieras):"
+
+#: src/help.c:108
+msgid "Field contents is converted to upper-case letters"
+msgstr "Feltindhold omdannes til store bogstaver"
+
+#: src/help.c:109
+msgid "Field contents is converted to lower-case letters"
+msgstr "Feltindhold omdannes til små bogstaver"
+
+#: src/help.c:110
+msgid "Field contents is converted to capitalized words"
+msgstr "Feltindhold omdannes til ord med stort begyndelsesbogstav"
+
+#: src/help.c:111
+msgid "SUFFIX (may be defined):"
+msgstr "SUFFIKS (kan defineres):"
+
+#: src/help.c:112
+msgid "Numerical value is provided with an ordinal number suffix"
+msgstr ""
+
+#: src/help.c:114
+#, fuzzy
+msgid "FORMAT group (exactly one member must be defined):"
+msgstr "Månedsgruppe (exakt en medlem måste definieras):"
+
+#: src/help.c:115
+msgid "Field contents is not cut after position WIDTH"
+msgstr ""
+
+#: src/help.c:116
+msgid "Field contents is cut after position WIDTH"
+msgstr ""
+
+#: src/help.c:130
+msgid "legal holidays"
+msgstr "offentlige helligdage"
+
+#: src/help.c:131
+msgid "holidays"
+msgstr "helligdage"
+
+#: src/help.c:132
+msgid "Mondays"
+msgstr "mandage"
+
+#: src/help.c:133
+msgid "Tuesdays"
+msgstr "tirsdage"
+
+#: src/help.c:134
+msgid "Wednesdays"
+msgstr "onsdage"
+
+#: src/help.c:135
+msgid "Thursdays"
+msgstr "torsdage"
+
+#: src/help.c:136
+msgid "Fridays"
+msgstr "fredage"
+
+#: src/help.c:137
+msgid "Saturdays"
+msgstr "lørdage"
+
+#: src/help.c:138
+msgid "Sundays"
+msgstr "søndage"
+
+#: src/help.c:139
+msgid "Mondays...Thursdays"
+msgstr "mandage - torsdage"
+
+#: src/help.c:140
+msgid "Mondays...Fridays"
+msgstr "mandage - fredage"
+
+#: src/help.c:170
+#, c-format
+msgid "%s: Use `%s %s' with one of these arguments"
+msgstr "%s: Brug \"%s %s\" med et af dessa argument"
+
+#: src/help.c:243
+msgid "OPTION"
+msgstr "FLAG"
+
+#: src/help.c:256
+msgid "          Display help text and quit program"
+msgstr "          Vis hjælpetekst og afslut"
+
+#: src/help.c:273
+msgid "          Display extended help text and quit program"
+msgstr "          Visa udvidet hjælpetekst og afslut"
+
+#: src/help.c:291
+msgid "          Display software license and quit program"
+msgstr "          Visa programlicens og afslut"
+
+#: src/help.c:302
+#, fuzzy
+msgid "          Display version information and quit program"
+msgstr "          Visa versionsnummer og afslut"
+
+#: src/help.c:313
+#, fuzzy, c-format
+msgid "          Set EXIT status of program to %d on `%s' etc."
+msgstr ""
+"          Sæt programmets slutstatus til 127 vid --help, --version osv."
+
+#: src/help.c:326
+#, c-format
+msgid "          Create response file for the `%cFILE' option"
+msgstr "          Opret responsfil for \"%cFIL-flaget\""
+
+#: src/help.c:330
+#, c-format
+msgid "   %-3s    = Store arguments of command line in file %s"
+msgstr "   %-3s    = Gem argumenter fra kommandolinjen i filen %s"
+
+#: src/help.c:344
+#, c-format
+msgid ""
+"          Create shell script which contains the arguments of command line"
+msgstr ""
+"          Skapa et skalprogram som inneholder argumenten fra kommandolinjen"
+
+#: src/help.c:346
+#, c-format
+msgid "   %-3s    = File name of the shell script"
+msgstr "   %-3s    = Skalprogrammets filnavn"
+
+#: src/help.c:360
+#, fuzzy
+msgid "          Define global date variable(s) \"DVAR->a...d|f...s|u...|z\""
+msgstr "          Definiera globala datovariabler \"dvar->a...d|f...s|u...|z\""
+
+#: src/help.c:364
+#, fuzzy, c-format
+msgid "   %-3s    = \"DVAR%s%s%s\" definitions separated by `%s' characters"
+msgstr "   %-3s    = Definition af \"dvar%s'%s%s'\" skilda åt med \"%s\"-tegn"
+
+#: src/help.c:369
+#, fuzzy, c-format
+msgid ""
+"            E.g.  %sv a%s1127%sb%s054   Set `a' to Nov 27 and `b' to May 4"
+msgstr ""
+"            t.ex.  %sv a%s1127%sb%s054   Sætt \"a\" til 27 nov og \"b\" til "
+"4 maj"
+
+#: src/help.c:381
+msgid "          Export local date variables from file to file"
+msgstr "          Exportera lokala datovariabler fra fil til fil"
+
+#: src/help.c:393
+#, fuzzy, c-format
+msgid "          Define global text variable(s) \"TVAR->%ca...%cz\""
+msgstr "          Definiera globala textvariabler \"tvar->%ca...%cz\""
+
+#: src/help.c:398
+#, fuzzy, c-format
+msgid "   %-3s    = \"TVAR%sTEXT\" definitions separated by `%s' characters"
+msgstr "   %-3s    = Definition af \"dvar%s'%s%s'\" skilda åt med \"%s\"-tegn"
+
+#: src/help.c:403
+#, fuzzy, c-format
+msgid ""
+"            E.g.  %sr %ca%sfoo%s%cb%sbar   Set `%ca' to `foo' and `%cb' to "
+"`bar'"
+msgstr ""
+"            t.ex.  %sr %ca%sfoo%s%cb%sbar   Sætt \"%ca\" til \"foo\" og \"%cb"
+"\" til \"bar\""
+
+#: src/help.c:409
+#, fuzzy, c-format
+msgid ""
+"          = \"TVAR[%s|%c%s]COMMAND\" definitions separated by `%s' characters"
+msgstr "            uttryck skilda åt med \"%s\"-tegn"
+
+#: src/help.c:414
+#, fuzzy, c-format
+msgid ""
+"            E.g.  %sr %ca%sfoo   Assign output of command `foo' to `%ca'"
+msgstr ""
+"            t.ex.  %sr %ca%sfoo%s%cb%sbar   Sætt \"%ca\" til \"foo\" og \"%cb"
+"\" til \"bar\""
+
+#: src/help.c:426
+msgid "          Export local text variables from file to file"
+msgstr "          Exportera lokala textvariabler fra fil til fil"
+
+#: src/help.c:438 src/help.c:468
+#, c-format
+msgid ""
+"          Display only those fixed dates, whose date is not excluded by %s"
+msgstr "          Visa bara de fasta dato, som ikke utesluts af %s"
+
+#: src/help.c:443
+#, c-format
+msgid "   %-3s    = One or more of the following characters.  If character"
+msgstr "   %-3s    = Ett eller fler af føljende tegn.  Hvis tecknet"
+
+#: src/help.c:448
+#, fuzzy
+msgid "            is a LOWER-CASE-LETTER, it means a non-exclusion!"
+msgstr "            er en GEMEN, betyder det \"icke uteslutning\"!"
+
+#: src/help.c:452
+#, c-format
+msgid "            %c = Exclusion of all %s"
+msgstr "            %c = Uteslutning af %s"
+
+#: src/help.c:473
+#, c-format
+msgid "   %-3s    = List of `%c[DATE][%c[DATE]]' and/or `%c[DATE][%c[DATE]]'"
+msgstr ""
+"   %-3s    = Lista med \"%c[DATUM][%c[DATUM]]\" og/eller \"%c[DATUM]"
+"[%c[DATUM]]\""
+
+#: src/help.c:477
+#, c-format
+msgid "            expressions separated by `%s' characters"
+msgstr "            uttryck skilda åt med \"%s\"-tegn"
+
+#: src/help.c:490
+#, c-format
+msgid "          Display only those fixed dates, whose text is matched by %s"
+msgstr "          Visa bara de fasta dato, vars text overensstæmmer med %s"
+
+#: src/help.c:495
+#, c-format
+msgid "   %-3s    = Any text respectively \"regular expression\" you like"
+msgstr "   %-3s    = Vilken text eller \"reguljært uttryck\" som helst"
+
+#: src/help.c:508
+#, c-format
+msgid "          Ignore case distinctions if `%s' option is given"
+msgstr ""
+"          Ingen forskel på store/små bogstaver hvis tilvalget \"%s\" er givet"
+
+#: src/help.c:520
+#, fuzzy, c-format
+msgid "          Revert the sense of matching of the `%s' option"
+msgstr "          Skapa responsfil for \"%cFIL-flaggan\""
+
+#: src/help.c:531
+#, fuzzy
+msgid "          Display some debug information"
+msgstr "          Visa lite fejlsøkningsinformation"
+
+#: src/help.c:539
+#, fuzzy, c-format
+msgid ""
+"  [%-3s]   = internal    Information if program internal maximums are reached"
+msgstr ""
+"  [%-3s]   = internal    Information ifall programmets interne maxima opnås"
+
+#: src/help.c:548
+msgid ""
+"          = handled     Like `internal' and file names which are handled"
+msgstr "          = handled     Som \"internal\" plus filnavn som hanteras"
+
+#: src/help.c:556
+msgid ""
+"          = unhandled   Like `internal' and file names which are unhandled"
+msgstr ""
+"          = unhandled   Som \"internal\" plus filnavn som ikke hanteras"
+
+#: src/help.c:564
+msgid "          = all         Like `handled' and `unhandled' together"
+msgstr "          = all         Som \"handled\" og \"unhandled\" tillsammans"
+
+#: src/help.c:572
+msgid ""
+"          = abort       Like `all' and abort if file name can't be handled"
+msgstr ""
+"          = abort       Som \"all\" men afbryt om filnavnet ikke kan hanteras"
+
+#: src/help.c:582
+msgid "          Use special format for calendar sheet"
+msgstr "          Anvænd speciellt format for kalenderblad"
+
+#: src/help.c:585
+msgid "  [MOD]   = -   Use standard format for calendar sheet"
+msgstr "  [MOD]   = -   Anvænd standardformat for kalenderblad"
+
+#: src/help.c:596
+#, fuzzy
+msgid "          Use leap year rule of Eastern Orthodox churches"
+msgstr "          Anvænd regeln for skudår i ortodoxa kyrkan"
+
+#: src/help.c:606
+#, fuzzy
+msgid "          Provide calendar sheet with week numbers"
+msgstr "          Tillhandahåll kalenderblad med ugenummer"
+
+#: src/help.c:617
+#, fuzzy, c-format
+msgid "          Determine type of week numbers (actual:  %s)"
+msgstr "          Bestem typen af ugenumre (nuværende:  %s)"
+
+#: src/help.c:618
+msgid "Standard"
+msgstr "Standard"
+
+#: src/help.c:624
+#, c-format
+msgid "   %-3s    = yes   ISO-8601:1988 week numbers"
+msgstr ""
+
+#: src/help.c:631
+#, fuzzy
+msgid "          = no    Standard week numbers"
+msgstr "          Tillhandahåll kalenderblad med ugenummer"
+
+#: src/help.c:642
+msgid "          Suppress output of calendar sheet explicitly"
+msgstr "          Undertryck utmatning af kalenderblad explicit"
+
+#: src/help.c:655
+#, c-format
+msgid "          Direct output through external `%s' pager"
+msgstr "          Skicka utdata genom en extern \"%s\"-sidvisare"
+
+#: src/help.c:661 src/help.c:663
+msgid "          Direct output through simple internal pager"
+msgstr "          Skicka utdata genom en enkel intern sidvisare"
+
+#: src/help.c:680
+msgid "          Disable highlighting of text, holiday resp., actual day"
+msgstr "          Stæng af framhævning af text, helligdage resp. aktuell dag"
+
+#: src/help.c:695
+msgid "          Forces highlighting sequences if output is redirected/piped"
+msgstr "          Framtvinga framhævningssekvens om utdata styrs om"
+
+#: src/help.c:707
+msgid ""
+"          Set highlighting sequence pairs 1 (=actual day) and 2 (=holiday)"
+msgstr ""
+"          Sætt framhævningssekvenspar 1 (=aktuell dag) og 2 (=helligdag)"
+
+#: src/help.c:711
+#, c-format
+msgid "   %-3s    = Highlighting sequence pairs separated by `%s' characters"
+msgstr "   %-3s    = Framhævningssekvenspar skilda åt med \"%s\"-tegn"
+
+#: src/help.c:716
+#, fuzzy, c-format
+msgid ""
+"            E.g.  %sH \\x2%s\\xAE   Use hex values 2 and AE for sequence 1"
+msgstr ""
+"            t.ex.  %sH \\x2%s\\xAE   Anvænd hexværdina 2 og AE for sekvens 1"
+
+#: src/help.c:721
+#, fuzzy, c-format
+msgid ""
+"            E.g.  %sH %s%s*%s*      Use characters `*' and `*' for sequence 2"
+msgstr ""
+"            t.ex.  %sH %s%s*%s*      Anvænd tecknen \"*\" og \"*\" for "
+"sekvens 2"
+
+#: src/help.c:732
+msgid "          Modify format of year calendar"
+msgstr "          Ändra format på årskalender"
+
+#: src/help.c:736
+#, fuzzy, c-format
+msgid "   %-3s    = 1|2|3|4|6|12   Number of blocks (actual:  %d)"
+msgstr "   %-3s    = 1|2|3|4|6|12   Antalet block"
+
+#: src/help.c:748
+msgid "          Use consecutive day of year in calendar sheet"
+msgstr "          Anvænd fortløbende dage på året på kalenderbladet"
+
+#: src/help.c:752
+msgid "  [MOD]   = b   Use both date notations (day of month+year)"
+msgstr ""
+"  [MOD]   = b   Anvænd båda datobeteckningarna (dag i måneden+dag på året)"
+
+#: src/help.c:764
+msgid "          Use consecutive day of year in eternal holiday list"
+msgstr "          Anvænd fortløbende dage på året i evighedskalendern"
+
+#: src/help.c:768 src/help.c:784
+msgid "   [MOD]  = b   Use both date notations (day of month+year)"
+msgstr ""
+"  [MOD]   = b   Anvænd båda datobeteckningarna (dag i måneden+dag på året)"
+
+#: src/help.c:780
+msgid "          Use consecutive day of year in fixed date list"
+msgstr "          Anvænd fortløbende dage på året på listan med fasta dato"
+
+#: src/help.c:795
+#, fuzzy, c-format
+msgid "          Set starting day of week (actual:  %s)"
+msgstr "          Sætt dag som veckan begynder med"
+
+#: src/help.c:828
+#, c-format
+msgid "          Send output via `%s' program to user"
+msgstr "          Skicka utdata via programmet \"%s\" til anvændare"
+
+#: src/help.c:857
+msgid "UNKNOWN"
+msgstr ""
+
+#: src/help.c:860
+#, c-format
+msgid "  [%-3s]   = Email address, otherwise eMail is send to user `%s'"
+msgstr ""
+
+#: src/help.c:878
+#, c-format
+msgid "          Display eternal holiday list (Year in range: %d...%d)"
+msgstr ""
+"          Visa evighedskalender for helligdage (år i intervallet: %d - %d)"
+
+#: src/help.c:881
+msgid " n        = Legal days and memorial days"
+msgstr " n        = Allmænna helligdage og minnesdage"
+
+#: src/help.c:883
+msgid "   N      = Legal days only"
+msgstr "   N      = Enbart allmænna helligdage"
+
+#: src/help.c:885 src/help.c:1631
+#, c-format
+msgid "    [MOD] = %s   Descending sort order"
+msgstr "    [MOD] = %s   Fallende sorteringsordning"
+
+#: src/help.c:897
+#, fuzzy
+msgid "          Suppress leading blank line of eternal holiday list"
+msgstr "          Evighedskalender for helligdage uden titel"
+
+#: src/help.c:907
+msgid "          Exclude title of eternal holiday list"
+msgstr "          Evighedskalender for helligdage uden titel"
+
+#: src/help.c:919
+#, fuzzy
+msgid "          Provide eternal holiday list with astronomical data"
+msgstr "          Tillhandahåll en evighedskalender med kristna helligdage"
+
+#: src/help.c:931
+#, fuzzy
+msgid "          Provide eternal holiday list with Bahá'i calendar holidays"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:943
+#, fuzzy
+msgid "          Provide eternal holiday list with Bahá'i calendar months"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:955
+#, fuzzy
+msgid "          Provide eternal holiday list with Celtic calendar holidays"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:967
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Chinese flexible calendar "
+"holidays"
+msgstr "          Tillhandahåll en evighedskalender med kristna helligdage"
+
+#: src/help.c:979
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Chinese flexible calendar months"
+msgstr "          Tillhandahåll en evighedskalender med kristna helligdage"
+
+#: src/help.c:991
+#, fuzzy
+msgid "          Provide eternal holiday list with Chinese calendar holidays"
+msgstr "          Tillhandahåll en evighedskalender med kristna helligdage"
+
+#: src/help.c:1003
+#, fuzzy
+msgid "          Provide eternal holiday list with Chinese calendar months"
+msgstr "          Tillhandahåll en evighedskalender med kristna helligdage"
+
+#: src/help.c:1015
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Christian Western calendar "
+"holidays"
+msgstr "          Tillhandahåll en evighedskalender med kristna helligdage"
+
+#: src/help.c:1027
+#, fuzzy
+msgid "          Provide eternal holiday list with Coptic calendar months"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1039
+#, fuzzy
+msgid "          Provide eternal holiday list with Ethiopic calendar months"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1051
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with French Revolutionary calendar "
+"months"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1063
+#, fuzzy
+msgid "          Provide eternal holiday list with Hebrew calendar holidays"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1075
+#, fuzzy
+msgid "          Provide eternal holiday list with Hebrew calendar months"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1087
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Indian civil-calendar months"
+msgstr "          Tillhandahåll en evighedskalender med kristna helligdage"
+
+#: src/help.c:1099
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Islamic civil-calendar holidays"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1111
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Islamic civil-calendar months"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1123
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Japanese flexible calendar "
+"holidays"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1135
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Japanese flexible calendar months"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1147
+#, fuzzy
+msgid "          Provide eternal holiday list with Japanese calendar holidays"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1159
+#, fuzzy
+msgid "          Provide eternal holiday list with Japanese calendar months"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1172
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with multicultural New Year holidays"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1184
+#, fuzzy
+msgid "          Provide eternal holiday list with Old-Armenic calendar months"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1196
+#, fuzzy
+msgid "          Provide eternal holiday list with Old-Egyptic calendar months"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1208
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Orthodox new-calendar holidays"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1220
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Orthodox old-calendar holidays"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1232
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Persian Jalaali-calendar holidays"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1244
+#, fuzzy
+msgid ""
+"          Provide eternal holiday list with Persian Jalaali-calendar months"
+msgstr "          Tillhandahåll en evighedskalender med kristna helligdage"
+
+#: src/help.c:1256
+#, fuzzy
+msgid "          Provide eternal holiday list with zodiacal marker data"
+msgstr "          Tillhandahåll en evighedskalender uden standardhelligdage"
+
+#: src/help.c:1268
+msgid "          Provide eternal holiday list with country specific holidays"
+msgstr ""
+"          Tillhandahåll en evighedskalender med landsspecifika helligdage"
+
+#: src/help.c:1272
+#, fuzzy, c-format
+msgid "   %-3s    = Single country resp., territory code or a list of these,"
+msgstr "   %-3s    = Enstaka landskod eller en lista med landskoder"
+
+#: src/help.c:1277
+#, fuzzy, c-format
+msgid ""
+"            which are connected by `%s' characters. Countries/territories,"
+msgstr "            som er sammanbundna med \"%s\"-tegn"
+
+#: src/help.c:1282
+msgid "            marked by # have an incomplete recording of holidays"
+msgstr ""
+
+#: src/help.c:1286
+#, fuzzy, c-format
+msgid "            %-*s = Holidays in %s"
+msgstr "            %s = %s helligdage"
+
+#: src/help.c:1307
+msgid ""
+"          Set reference value for rise/set time respectively shadow length"
+msgstr ""
+
+#: src/help.c:1311
+#, c-format
+msgid "   %-3s    = Angular value respectively factor in range:  %+.1f...%+.1f"
+msgstr ""
+
+#: src/help.c:1322
+#, fuzzy
+msgid "          Set base data of Earth's atmosphere"
+msgstr "          Sætt dag som veckan begynder med"
+
+#: src/help.c:1326
+#, fuzzy, c-format
+msgid "   %-3s    = Air pressure and temperature separated by `%s' character"
+msgstr "   %-3s    = Framhævningssekvenspar skilda åt med \"%s\"-tegn"
+
+#: src/help.c:1329
+#, c-format
+msgid "            Air pressure in Millibar (actual:  %.3f)"
+msgstr ""
+
+#: src/help.c:1334
+#, c-format
+msgid "            Air temperature in degrees Celsius (actual:  %+.3f)"
+msgstr ""
+
+#: src/help.c:1344
+#, fuzzy
+msgid "          Limit rise/set times of Sun to the day"
+msgstr "          1. Representation af text"
+
+#: src/help.c:1356
+msgid "          Represent astronomical times and data with utmost precision"
+msgstr ""
+
+#: src/help.c:1366
+#, fuzzy, c-format
+msgid "          Execute `%c%c[%s]' shell commands"
+msgstr "          # B            = Utfør ikke skalkommandona \"%c%c[%s]\""
+
+#: src/help.c:1369
+#, fuzzy, c-format
+msgid "          and \"TVAR[%s|%c%s]COMMAND\" assignments"
+msgstr "            uttryck skilda åt med \"%s\"-tegn"
+
+#: src/help.c:1381
+msgid "          Change base time of astronomical functions"
+msgstr ""
+
+#: src/help.c:1384
+msgid "          respectively, change cycle-starting time"
+msgstr ""
+
+#: src/help.c:1394
+#, c-format
+msgid ""
+"   %-3s    = %c|%c|[%c|%c][%s|%s]MMMM|HH%s[MM]   Time offset value (actual:  "
+"%s%02d%s%02d == GMT%s)"
+msgstr ""
+
+#: src/help.c:1402
+#, c-format
+msgid ""
+"   %-3s    = %c|[%c][%s|%s]MMMM|HH%s[MM]   Time offset value (actual:  %s%02d"
+"%s%02d == GMT%s)"
+msgstr ""
+
+#: src/help.c:1418
+msgid "          Change cycle-ending time"
+msgstr ""
+
+#: src/help.c:1422
+#, c-format
+msgid ""
+"   %-3s    = %c|%c|[%c|%c][%s|%s]MMMM|HH%s[MM]   Ending time value (actual:  "
+"%02d%s%02d)"
+msgstr ""
+
+#: src/help.c:1436
+msgid "          Change cycle-timestep"
+msgstr ""
+
+#: src/help.c:1440
+#, c-format
+msgid "   %-3s    = MMMM|HH%s[MM]   Timestep value (actual:  %02d%s%02d)"
+msgstr ""
+
+#: src/help.c:1453
+#, fuzzy
+msgid "          Change base year of calendar"
+msgstr "          Ändra format på årskalender"
+
+#: src/help.c:1457
+#, c-format
+msgid "   %-3s    = [%s|%s]YYYY   Year offset value (actual:  %d)"
+msgstr ""
+
+#: src/help.c:1469
+msgid "          Set period of Gregorian Reformation"
+msgstr "          Stæll in perioden for gregorianska reformationen"
+
+#: src/help.c:1471
+#, c-format
+msgid "          Actual respected period:  %02d-%02d %s %0*d"
+msgstr "          Aktuell tidsperiod:  %02d-%02d %s %0*d"
+
+#: src/help.c:1477
+#, c-format
+msgid "   %-*d%*s = Set period to:  %02d-%02d %s %0*d"
+msgstr "   %-*d%*s = Sætt tidsperioden till:  %02d-%02d %s %0*d"
+
+#: src/help.c:1485
+#, fuzzy, c-format
+msgid "   %-3s    = %s%c%s%s%s%s%s%s   Set period explicitly"
+msgstr "   %-3s    = %s%s%s%s%s%s%s   Sætt tidsperioden uttryckligen"
+
+#: src/help.c:1499
+#, c-format
+msgid "          Set order of date elements using the %s format text"
+msgstr ""
+"          Sætt ordningen på datoelementen genom at anvænda formattexten %s"
+
+#: src/help.c:1502
+#, fuzzy, c-format
+msgid "          Actual:  (%s) `%s' (%s)"
+msgstr "          Aktuellt format:  (%s) \"%s\" (%s)"
+
+#: src/help.c:1504
+msgid "self-defined"
+msgstr "eget"
+
+#: src/help.c:1509
+#, fuzzy, c-format
+msgid "   %-6s = Format is:  `%s' (%s)"
+msgstr "   %-6s = Sætt formatet till:  \"%s\" (%s)"
+
+#: src/help.c:1517
+#, fuzzy, c-format
+msgid "   %-3s    = Define individual format. Respected format elements are:"
+msgstr "   %-3s    = Definiera eget format. Formatelement som kænns igen ær:"
+
+#: src/help.c:1560
+msgid "          Define translatable country specific special character pairs"
+msgstr ""
+
+#: src/help.c:1564
+#, c-format
+msgid "   %-3s    = UPPER-CASE-LETTER\"\"LOWER-CASE-LETTER... definitions"
+msgstr ""
+
+#: src/help.c:1569
+#, c-format
+msgid ""
+"            E.g. a `%s%s%s%s%s%s%s%s' %-3s causes the correct conversion of"
+msgstr ""
+
+#: src/help.c:1574
+msgid ""
+"            the preceding special characters in an individual date format,"
+msgstr ""
+
+#: src/help.c:1578
+msgid ""
+"            which has a STYLE format instruction component, and that, how"
+msgstr ""
+
+#: src/help.c:1582
+#, fuzzy
+msgid "            they are used by the character set used in Germany"
+msgstr "            som er sammanbundna med \"%s\"-tegn"
+
+#: src/help.c:1591
+#, c-format
+msgid "+++ FIXED DATES +++"
+msgstr "+++ FASTA DATUM +++"
+
+#: src/help.c:1612
+#, c-format
+msgid "          Use standard resource file `.%s%s' for fixed date list"
+msgstr ""
+"          Anvænd standardresursfilen \".%s%s\" for listan med fasta dato"
+
+#: src/help.c:1617
+#, c-format
+msgid "          Use standard resource file `%s%s' for fixed date list"
+msgstr ""
+"          Anvænd standardresursfilen \"%s%s\" for listan med fasta dato"
+
+#: src/help.c:1621 src/help.c:2161
+msgid "          Implies period:  Today"
+msgstr "          Medfør tidsperioden:  idag"
+
+#: src/help.c:1625
+msgid " c        = Display only those dates, for which fixed dates exists"
+msgstr " c        = Visa bara de dage, som har fasta dato"
+
+#: src/help.c:1629
+msgid ""
+"   C      = Display those dates, for which fixed dates doesn't exist, too"
+msgstr "   C      = Visa också de dage, som ikke har fasta dato"
+
+#: src/help.c:1641
+msgid ""
+"    [MOD] = One or more of the following modifiers which are marked by #"
+msgstr "    [MOD] = En eller fler af føljende modifierare markerede med #"
+
+#: src/help.c:1654
+#, fuzzy, c-format
+msgid "            %-3s         = Heading/Title text used for fixed date list"
+msgstr "          # x            = Lista med fasta dato uden titel"
+
+#: src/help.c:1657
+#, fuzzy, c-format
+msgid "                          Actual:  `%s'"
+msgstr "                           = %s   Bakåt"
+
+#: src/help.c:1670
+msgid "          # g[MOD]       = Group fixed dates by day using text MOD"
+msgstr ""
+"          # g[MOD]       = Gruppera fasta dato genom at anvænda texten MOD"
+
+#: src/help.c:1682
+msgid "          1. Representation of text"
+msgstr "          1. Representation af text"
+
+#: src/help.c:1694
+msgid "                         = Set width of the biorhythm text graphics"
+msgstr "                         = Sætt bredden på biorytmens textgrafik"
+
+#: src/help.c:1698
+#, c-format
+msgid "                           %-3s = %d...%d   Length of a single axis"
+msgstr "                           %-3s = %d - %d   Længden på en axel"
+
+#: src/help.c:1711
+#, fuzzy
+msgid "                         = Set height of the Moon phase text graphics"
+msgstr "                         = Sætt højden på månfasens textgrafik"
+
+#: src/help.c:1715
+#, c-format
+msgid "                           %-3s = %d...%d   Total number of lines"
+msgstr "                           %-3s = %d...%d   Totala antalet linjer"
+
+#: src/help.c:1727
+msgid "          # a            = Display origin of fixed date"
+msgstr "          # a            = Visa ursprunget til fast dato"
+
+#: src/help.c:1739
+msgid "          # A            = Display using alternative list format"
+msgstr ""
+"          # A            = Visa genom at anvænda et alternativt listformat"
+
+#: src/help.c:1751
+msgid "          # e            = Include legal days and memorial days"
+msgstr "          # e            = Tag med allmænna helligdage og minnesdage"
+
+#: src/help.c:1753
+msgid "          # E            = Include legal days only"
+msgstr "          # E            = Tag bara med allmænna helligdage"
+
+#: src/help.c:1763
+#, fuzzy
+msgid "          # k            = Display week number"
+msgstr "          # k            = Visa ugenummer"
+
+#: src/help.c:1775
+msgid "          # o            = Omit repeating date part of fixed dates"
+msgstr "          # o            = Utelæmna del af datoet som oprepas"
+
+#: src/help.c:1787
+#, fuzzy
+msgid ""
+"          # Q            = Suppress leading blank line of fixed dates list"
+msgstr "          # U            = Utelæmna datodelen af fasta dato"
+
+#: src/help.c:1799
+msgid "          # U            = Suppress date part of fixed dates"
+msgstr "          # U            = Utelæmna datodelen af fasta dato"
+
+#: src/help.c:1811
+#, fuzzy
+msgid "          # J            = Suppress text part of fixed dates"
+msgstr "          # U            = Utelæmna datodelen af fasta dato"
+
+#: src/help.c:1823
+msgid "          # x            = Exclude title of fixed date list"
+msgstr "          # x            = Lista med fasta dato uden titel"
+
+#: src/help.c:1835
+msgid "          # z            = Display consecutive number of fixed date"
+msgstr "          # z            = Visa fortløbende fasta dato"
+
+#: src/help.c:1847
+msgid ""
+"          # Z            = Display dates, for which fixed dates doesn't exist"
+msgstr "          # Z            = Visa dage, som mangler fasta dato"
+
+#: src/help.c:1855
+msgid "          2. Respected period"
+msgstr "          2. Aktuell tidsperiod"
+
+#: src/help.c:1867
+msgid "                         = Manage `29-FEBRUARY' in non-leap years"
+msgstr "                         = Hantera 29 FEBRUARI under icke skudår"
+
+#: src/help.c:1875
+#, c-format
+msgid "                           %-3s = february   Respect at `28-FEBRUARY'"
+msgstr "                           %-3s = february   Beakta den 28 FEBRUARI"
+
+#: src/help.c:1884
+#, c-format
+msgid "                           %-3s = march      Respect at `01-MARCH'"
+msgstr "                           %-3s = march      Beakta den 1 MARS"
+
+#: src/help.c:1897
+msgid ""
+"          # d            = Include actual date if list of periods is "
+"generated"
+msgstr "          # d            = Tag med aktuellt dato om periodlista skapas"
+
+#: src/help.c:1909
+msgid ""
+"          # l            = Generate list of periods instead of a single "
+"period"
+msgstr ""
+"          # l            = Skapa periodlista i stællet for en enstaka period"
+
+#: src/help.c:1925
+msgid "          # Nd           = Single absolute day N"
+msgstr "          # Nd           = Enstaka dag N"
+
+#: src/help.c:1927
+#, c-format
+msgid "          # %cdN          = Single absolute day N"
+msgstr "          # %cdN          = Enstaka dag N"
+
+#: src/help.c:1932
+msgid "          # NMOD         = Single day N relative to today"
+msgstr "          # NMOD         = Enstaka dag N relativt idag"
+
+#: src/help.c:1934
+#, c-format
+msgid "             MOD           = %s   Forwards"
+msgstr "             MOD           = %s   Framåt"
+
+#: src/help.c:1936
+#, c-format
+msgid "                           = %s   Backwards"
+msgstr "                           = %s   Bakåt"
+
+#: src/help.c:1939
+msgid "          # Nw           = Complete week N"
+msgstr "          # Nw           = Hel vecka N"
+
+#: src/help.c:1943
+msgid ""
+"                           N = 0        1st week / last week of previous year"
+msgstr ""
+"                           N = 0        1:a veckan / sista veckan foregående "
+"år"
+
+#: src/help.c:1947
+msgid "                           N = 1...52   1st...52nd week (always)"
+msgstr "                           N = 1 - 52   1:a - 52:a veckan (alltid)"
+
+#: src/help.c:1951
+msgid "                           N = 53       53rd week (sometimes)"
+msgstr "                           N = 53       53:e veckan (ibland)"
+
+#: src/help.c:1953
+msgid "                           N = 99       Last week"
+msgstr "                           N = 99       Sista veckan"
+
+#: src/help.c:1956
+#, fuzzy, c-format
+msgid "          # %s%s         = Single day %s of month %s"
+msgstr "          # \"%s%s\"       = Enstaka dag \"%s\" i måneden \"%s\""
+
+#: src/help.c:1962
+#, fuzzy, c-format
+msgid "          # %s%sN       = Single N'th weekday %s of month %s"
+msgstr "          # \"%s%s\"N     = Enstaka N:e ugedag \"%s\" i måneden \"%s\""
+
+#: src/help.c:1967
+#, fuzzy, c-format
+msgid "                           N = 1...4   1st...4th weekday %s (always)"
+msgstr ""
+"                           N = 1 - 4   1:a - 4:e ugedagen \"%s\" (alltid)"
+
+#: src/help.c:1972
+#, fuzzy, c-format
+msgid "                           N = 5       5th weekday %s (sometimes)"
+msgstr "                           N = 5       5:e ugedagen \"%s\" (ibland)"
+
+#: src/help.c:1976
+#, fuzzy, c-format
+msgid "                           N = 9       Last weekday %s"
+msgstr "                           N = 9       Sista ugedagen \"%s\""
+
+#: src/help.c:1980
+#, fuzzy, c-format
+msgid "          # %cdN%s       = Single N'th weekday %s"
+msgstr "          # %cdN\"%s\"     = Enstaka N:e ugedag \"%s\""
+
+#: src/help.c:1985
+#, fuzzy, c-format
+msgid "                           N = 1...51   1st...51st weekday %s (always)"
+msgstr ""
+"                           N = 1 - 51   1:a - 51:a ugedagen \"%s\" (alltid)"
+
+#: src/help.c:1990
+#, fuzzy, c-format
+msgid "                           N = 52|53    52|53rd weekday %s (sometimes)"
+msgstr ""
+"                           N = 52|53    52|53:e ugedagen \"%s\" (ibland)"
+
+#: src/help.c:1994
+#, fuzzy, c-format
+msgid "                           N = 99       Last weekday %s"
+msgstr "                           N = 99       Sista ugedagen \"%s\""
+
+#: src/help.c:1999
+#, fuzzy, c-format
+msgid "          # %cwN%s       = Single weekday %s of N'th week"
+msgstr "          # %cwN\"%s\"     = Enstaka ugedag \"%s\" i N:e veckan"
+
+#: src/help.c:2004
+#, fuzzy, c-format
+msgid ""
+"                           N = 0        %s which isn't located in 1st week"
+msgstr ""
+"                           N = 0        \"%s\" som ikke finns i 1:a veckan"
+
+#: src/help.c:2009
+#, fuzzy, c-format
+msgid "                           N = 1...51   %s of 1st...51st week (always)"
+msgstr ""
+"                           N = 1 - 51   \"%s\" i 1:a - 51:a veckan (alltid)"
+
+#: src/help.c:2014
+#, fuzzy, c-format
+msgid "                           N = 52|53    %s of 52|53rd week (sometimes)"
+msgstr ""
+"                           N = 52|53    \"%s\" i 52:a|53:e veckan (ibland)"
+
+#: src/help.c:2018
+#, fuzzy, c-format
+msgid "                           N = 99       %s of last week"
+msgstr "                           N = 99       \"%s\" i sista veckan"
+
+#: src/help.c:2024
+#, c-format
+msgid "          # %c%c[[%s|%s]N]   = Single day N relative to Easter Sunday"
+msgstr "          # %c%c[[%s|%s]N]   = Enstaka dag N relativt påskdagen"
+
+#: src/help.c:2030
+#, fuzzy, c-format
+msgid ""
+"          # %c%c[%s|%s]N%s  = Single N'th weekday relative to Easter Sunday"
+msgstr "          # %c%c[%s|%s]N\"%s\"= Enstaka N:e ugedag relativt påskdagen"
+
+#: src/help.c:2036
+#, c-format
+msgid "          # %c%c[[%s|%s]N]   = Single day N relative to today's date"
+msgstr "          # %c%c[[%s|%s]N]   = Enstaka dag N relativt dagens dato"
+
+#: src/help.c:2042
+#, fuzzy, c-format
+msgid ""
+"          # %c%c[%s|%s]N%s  = Single N'th weekday relative to today's date"
+msgstr ""
+"          # %c%c[%s|%s]N\"%s\"= Enstaka N:e ugedag relativt dagens dato"
+
+#: src/help.c:2048
+#, c-format
+msgid "          # %c?[[%s|%s]N]   = Single day N relative to date variable"
+msgstr "          # %c?[[%s|%s]N]   = Enstaka dag N relativt datovariabel"
+
+#: src/help.c:2054
+#, fuzzy, c-format
+msgid ""
+"          # %c?[%s|%s]N%s  = Single N'th weekday relative to date variable"
+msgstr ""
+"          # %c?[%s|%s]N\"%s\"= Enstaka N:e ugedag relativt datovariabel"
+
+#: src/help.c:2062
+msgid "          # t|T          = List tomorrow"
+msgstr "          # t|T          = Lista imorgon"
+
+#: src/help.c:2079
+msgid "          # w|W[MOD]     = List complete week"
+msgstr "          # w|W[MOD]     = Lista hela veckan"
+
+#: src/help.c:2083
+#, c-format
+msgid ""
+"               [MOD]       = %s   List tomorrow until ending day of week"
+msgstr ""
+"               [MOD]       = %s   Lista fra imorgon til slutet på veckan"
+
+#: src/help.c:2088
+#, c-format
+msgid ""
+"                           = %s   List yesterday until starting day of week"
+msgstr ""
+"                           = %s   Lista fra igår til begyndelsen på veckan"
+
+#: src/help.c:2108
+msgid "          # m|M[MOD]     = List complete month"
+msgstr "          # m|M[MOD]     = Lista hela måneden"
+
+#: src/help.c:2112
+#, c-format
+msgid ""
+"               [MOD]       = %s   List tomorrow until ending day of month"
+msgstr ""
+"               [MOD]       = %s   Lista fra imorgon til slutet på måneden"
+
+#: src/help.c:2117
+#, c-format
+msgid ""
+"                           = %s   List yesterday until starting day of month"
+msgstr ""
+"                           = %s   Lista fra igår til begyndelsen på måneden"
+
+#: src/help.c:2137
+msgid "          # y|Y[MOD]     = List complete year"
+msgstr "          # y|Y[MOD]     = Lista hela året"
+
+#: src/help.c:2141
+#, c-format
+msgid ""
+"               [MOD]       = %s   List tomorrow until ending day of year"
+msgstr "               [MOD]       = %s   Lista fra imorgon til slutet på året"
+
+#: src/help.c:2146
+#, c-format
+msgid ""
+"                           = %s   List yesterday until starting day of year"
+msgstr ""
+"                           = %s   Lista fra igår til begyndelsen på året"
+
+#: src/help.c:2159
+msgid "          Use alternative file(s) instead of standard resource file"
+msgstr "          Anvænd alternativ(a) fil(er) i stællet for standardresursfil"
+
+#: src/help.c:2165
+msgid " f        = Display only those dates, for which fixed dates exists"
+msgstr " f        = Visa bara de dage, som har fasta dato"
+
+#: src/help.c:2169
+#, fuzzy
+msgid ""
+"   F      = Display those dates, for which fixed dates doesn't exist, too"
+msgstr "   F      = Visa också de dage, som ikke har fasta dato"
+
+#: src/help.c:2173
+#, fuzzy, c-format
+msgid "     %-3s  = Single file or list of files connected by `%s' characters"
+msgstr ""
+"     %-3s  = Enstaka fil eller lista med filer sammanbundna med \"%s\"-tegn"
+
+#: src/help.c:2184
+#, fuzzy
+msgid "          Define additional resource file line"
+msgstr "          Definiera ytterligare linjer i resursfilen"
+
+#: src/help.c:2186
+#, fuzzy, c-format
+msgid "   %-3s    = Any possible resource file line"
+msgstr "   %-3s    = Vilken resursfillinje som helst"
+
+#: src/help.c:2196
+#, c-format
+msgid "%cDATE"
+msgstr "%cDATO"
+
+#: src/help.c:2198
+msgid "Use given `DATE' instead of today's date"
+msgstr "Anvend angivet \"DATO\" i stedet for dagens dato"
+
+#: src/help.c:2202
+#, c-format
+msgid ""
+"Date format:  %s[%s[%s|%s[N]]], %s%c%c|%c|DVAR[[%s|%s]N[%s]], %s%cdN[%s]"
+msgstr ""
+"Datoformat:  %s[%s[%s|%s[N]]], %s%c%c|%c|dvar[[%s|%s]N[%s]], %s%cdN[%s]"
+
+#: src/help.c:2209
+#, c-format
+msgid "              %s%cwN[%s], month name[%s], weekday name[N] or %s"
+msgstr ""
+"              %s%cwN[%s], navn på måned[%s], navn på ugedag[N] eller %s"
+
+#: src/help.c:2218
+#, c-format
+msgid "%cFILE"
+msgstr "%cFIL"
+
+#: src/help.c:2220
+msgid "Preload options and commands from `FILE'"
+msgstr "Læs flag og kommandon fra \"FIL\""
+
+#: src/help.c:2224
+msgid "COMMAND"
+msgstr "KOMMANDO"
+
+#: src/help.c:2226
+#, c-format
+msgid "%s        = Month in range:  %d...%d"
+msgstr "%s        = Måned i intervallet:  %d - %d"
+
+#: src/help.c:2231
+#, c-format
+msgid "                        or:  month name | %s | %s%s | %s%s | %s%s"
+msgstr "                        eller: navn på måned | %s | %s%s | %s%s | %s%s"
+
+#: src/help.c:2236
+#, fuzzy, c-format
+msgid "            List:   %s[%s%s]%s...%s%s[%s%s]"
+msgstr "            Lista:     %s[%s%s]%s...%s%s[%s%s]"
+
+#: src/help.c:2242
+#, c-format
+msgid "            Range:  %s[%s%s]%s%s[%s%s] | %s%s%s%s%s | %s %s%s%s"
+msgstr "            Interval: %s[%s%s]%s%s[%s%s] | %s%s%s%s%s | %s %s%s%s"
+
+#: src/help.c:2248
+#, c-format
+msgid "%s%*s    = Year  in range:  %d...%d"
+msgstr "%s%*s    = År i intervallet:  %d - %d"
+
+#: src/help.c:2252
+#, fuzzy, c-format
+msgid "            List:   [%s%s]%s%s...%s[%s%s]%s"
+msgstr "            Lista:     [%s%s]%s%s...%s[%s%s]%s"
+
+#: src/help.c:2257
+#, fuzzy, c-format
+msgid "            Range:  [%s%s]%s%s[%s%s]%s | %s%s%s %s%s%s"
+msgstr "            Intervall: %s[%s%s]%s%s[%s%s] | %s%s%s%s%s | %s %s%s%s"
+
+#: src/help.c:2283
+#, fuzzy, c-format
+msgid "  %sh,  %s          Display this help text and quit program"
+msgstr "          Visa hjælptext og afslutte"
+
+#: src/help.c:2286
+#, fuzzy, c-format
+msgid "  %shh, %s   Display extended help text and quit program"
+msgstr "          Visa utvidgad hjælptext og afslutte"
+
+#: src/help.c:2290
+#, fuzzy, c-format
+msgid "  %sL,  %s       Display software license and quit program"
+msgstr "          Visa programlicens og afslutte"
+
+#: src/help.c:2294
+#, fuzzy, c-format
+msgid "  %sV,  %s       Display version information and quit program"
+msgstr "          Visa versionsnummer og afslutte"
+
+#: src/help.c:2302
+#, fuzzy, c-format
+msgid "  %sp,  %s         Direct output through external `%s' pager"
+msgstr "          Skicka utdata genom en extern \"%s\"-sidvisare"
+
+#: src/help.c:2309 src/help.c:2314
+#, fuzzy, c-format
+msgid "  %sp,  %s         Direct output through simple internal pager"
+msgstr "          Skicka utdata genom en enkel intern sidvisare"
+
+#: src/help.c:2339
+#, fuzzy
+msgid "This software doesn't claim completeness, correctness or usability."
+msgstr "Dette program gør ikke anspråk på fullstændighet, korrekthet eller"
+
+#: src/help.c:2343
+#, fuzzy
+msgid "On principle I will not be liable for ANY damages or losses (implicit"
+msgstr "anvændbarhet. Jag tar af princip ikke ansvar for NÅGON skada eller"
+
+#: src/help.c:2347
+#, fuzzy
+msgid "or explicit), which result from using or handling my software."
+msgstr "forlust (direkt eller indirekt), som anvændendet eller handhavandet"
+
+#: src/help.c:2351
+#, fuzzy
+msgid "If you use this software, you agree without any exception to this"
+msgstr "af mitt program gett ophov till. Hvis du anvænder detta program,"
+
+#: src/help.c:2353
+#, fuzzy
+msgid "agreement, which binds you LEGALLY !!"
+msgstr "accepterar du uden undantag detta aftal!!"
+
+#: src/help.c:2358
+msgid "This program is free software; you can redistribute it and/or modify"
+msgstr "Dette program er fri software; du må distribuere det og/eller ændre"
+
+#: src/help.c:2362
+msgid "it under the terms of the `GNU General Public License' as published by"
+msgstr "det under vilkårene i \"GNU General Public License\" udgivet af"
+
+#: src/help.c:2366
+msgid "the `Free Software Foundation'; either version 3, or (at your option)"
+msgstr ""
+"\"Free Software Foundation\"; enten version 3, eller (hvis du ønsker det)"
+
+#: src/help.c:2368
+msgid "any later version."
+msgstr "enhver senere version."
+
+#: src/help.c:2373
+#, fuzzy
+msgid "You should have received a copy of the `GNU General Public License'"
+msgstr "Du skall ha fått en kopia af \"GNU General Public License\""
+
+#: src/help.c:2375
+#, fuzzy
+msgid "along with this program; if not, write to the:"
+msgstr "tillsammans med detta program; om inte, skriv till:"
+
+#: src/help.c:2424
+#, c-format
+msgid ""
+"Usage:  %s [%s|%s{[?|h|??|hh|L|V]|{%sHKNOR%sXb%sijn%sq%ssu%s}}] [[%s] [%s]]"
+msgstr ""
+"Brug:   %s [%s|%s{[?|h|??|hh|L|V]|{%sHKNOR%sXb%sijn%sq%ssu%s}}] [[%s] [%s]]"
+
+#: src/help.c:2452
+#, c-format
+msgid "Use `%s %s|[%s?]"
+msgstr "Brug '%s %s|[%s?]"
+
+#: src/help.c:2461
+msgid "for more information."
+msgstr "for at få mere information."
+
+#: src/help.c:2565 src/tcal.c:199 src/txt2gcal.c:137 src/gcal2txt.c:137
+#, c-format
+msgid "Email bug reports to <%s>"
+msgstr "Rapportér fejl til <%s>"
+
+#: src/help.c:2567
+#, c-format
+msgid "GNU gcal home page: <%s>"
+msgstr ""
+
+#: src/help.c:2569
+#, c-format
+msgid "General help using GNU software: <%s>"
+msgstr ""
+
+#: src/help.c:2595 src/tcal.c:221 src/txt2gcal.c:159 src/gcal2txt.c:159
+#, c-format
+msgid "This is free software; see the source for copying conditions."
+msgstr "Detta er fri programvara; se kællkoden for kopieringsvillkor"
+
+#: src/help.c:2599 src/tcal.c:224 src/txt2gcal.c:162 src/gcal2txt.c:162
+#, c-format
+msgid "There is NO warranty, without even the implied warranty of"
+msgstr "Det finns INGEN garanti, ej heller någon underforstådd garanti om"
+
+#: src/help.c:2601 src/tcal.c:226 src/txt2gcal.c:164 src/gcal2txt.c:164
+#, c-format
+msgid "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+msgstr "SÄLJBARHET eller LÄMPLIGHET FØR NÅGOT SPECIELLT ÄNDAMÅL"
+
+#: src/help.c:2617
+#, c-format
+msgid "%s: The Gregorian calendar program (GNU cal) %s"
+msgstr "%s: Det gregorianske kalenderprogram  (GNU cal) %s"
+
+#: src/help.c:2625
+#, c-format
+msgid "Usage:  %s [[OPTION...] [%cDATE] [%cFILE...]] [COMMAND]"
+msgstr "Brug:  %s [[FLAG...] [%cDATUM] [%cFIL...]] [KOMMANDO]"
+
+#: src/help.c:2628
+#, c-format
+msgid "Usage:  %s [[OPTION...] [%cFILE...]] [COMMAND]"
+msgstr "Brug:  %s [[FLAG...] [%cFIL...]] [KOMMANDO]"
+
+#: src/help.c:2704 src/help.c:2850
+msgid " 4.0 or 4.02"
+msgstr " 4.0 eller 4.02"
+
+#: src/help.c:2712 src/help.c:2858
+msgid " later than 5.0"
+msgstr " senere end 5.0"
+
+#: src/help.c:2723 src/help.c:2865
+msgid "++ 3.0 or later"
+msgstr "++ 3.0 eller senere"
+
+#: src/help.c:2750 src/help.c:2971
+msgid "5.1 or earlier"
+msgstr "5.1 eller tidigare"
+
+#: src/help.c:2753 src/help.c:2974 src/help.c:3129 src/help.c:3199
+msgid "unknown compiler"
+msgstr "ukendt oversætter"
+
+#: src/help.c:2788 src/help.c:2877 src/help.c:3011 src/help.c:3033
+#: src/help.c:3102 src/help.c:3139 src/help.c:3157 src/help.c:3214
+#: src/help.c:3429
+msgid " on "
+msgstr " på "
+
+#: src/help.c:2827
+msgid "(bad version)"
+msgstr "(dålig version)"
+
+#: src/help.c:2874
+msgid "unknown compiler (SDK?)"
+msgstr "ukendt oversætter (SDK?)"
+
+#: src/help.c:2942
+msgid " later than 4.5"
+msgstr " senere end 4.5"
+
+#: src/help.c:2952
+msgid "++ 1.0 or later"
+msgstr "++ 1.0 eller senere"
+
+#: src/help.c:2960
+msgid " 1.0 or 1.5?"
+msgstr " 1.0 eller 1.5?"
+
+#: src/help.c:3075
+msgid "unknown "
+msgstr "ukendt "
+
+#: src/help.c:3087
+#, c-format
+msgid "version %d.%d"
+msgstr "version %d.%d"
+
+#: src/help.c:3090 src/help.c:3123 src/help.c:3249
+#, c-format
+msgid "version %d"
+msgstr "version %d"
+
+#: src/help.c:3092
+#, c-format
+msgid "unknown version"
+msgstr "ukendt version"
+
+#: src/help.c:3206
+#, c-format
+msgid " (%.4s for Alpha)"
+msgstr " (%.4s for Alpha)"
+
+#: src/help.c:3209
+#, c-format
+msgid " (%.4s for VAX)"
+msgstr " (%.4s for VAX)"
+
+#: src/help.c:3360
+msgid " (NetBSD before 0.9)"
+msgstr " (NetBSD før 0.9)"
+
+#: src/help.c:3360
+msgid " (NetBSD 1.2 or later)"
+msgstr " (NetBSD 1.2 eller senere)"
+
+#: src/help.c:3367
+msgid " (FreeBSD 2.0 or later)"
+msgstr " (FreeBSD 2.0 eller senere)"
+
+#: src/help.c:3370
+msgid " (BSD/386 1.1 or later)"
+msgstr " (BSD/386 1.1 eller senere)"
+
+#: src/print.c:545 src/print.c:979 src/print.c:1034
+msgid "CW"
+msgstr "VE"
+
+#: src/print.c:566
+msgid "Week"
+msgstr "Vecka"
+
+#: src/rc-insert.c:1707 src/rc-insert.c:2825
+msgid "pm"
+msgstr "em"
+
+#: src/rc-insert.c:1716 src/rc-insert.c:2834
+msgid "am"
+msgstr "fm"
+
+#: src/rc-insert.c:2019 src/rc-insert.c:2029
+#, fuzzy
+msgid "d'\""
+msgstr "d'\""
+
+#: src/rc-insert.c:2039
+#, fuzzy
+msgid "h'\""
+msgstr "t'\""
+
+#: src/rc-insert.c:3729 src/rc-utils.c:2586
+#, c-format
+msgid ""
+"Cannot execute command in file `%s'\n"
+"Line: %ld %s"
+msgstr ""
+"Kan ikke utføra kommando i filen \"%s\"\n"
+"Linje: %ld %s"
+
+#: src/rc-insert.c:3751 src/rc-utils.c:2610
+#, c-format
+msgid ""
+"Command executed (exit code=%d) in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+"Kommando udført (statuskode=%d) i filen \"%s\"\n"
+"Linje %ld: %s"
+
+#: src/rc-use.c:514
+msgid "Emo"
+msgstr "Emo"
+
+#: src/rc-use.c:519
+msgid "Int"
+msgstr "Int"
+
+#: src/rc-use.c:524
+msgid "Phy"
+msgstr "Fys"
+
+#: src/rc-use.c:1087 src/rc-use.c:1178
+msgid "`Eternal holiday list'"
+msgstr "\"Evighedskalender for helligdage\""
+
+#: src/rc-use.c:1878 src/rc-use.c:1927 src/rc-use.c:2016 src/rc-use.c:2108
+msgid "`Internal'"
+msgstr "\"Intern\""
+
+#: src/rc-use.c:2340
+#, c-format
+msgid " ; Week %s"
+msgstr " ; uge %s"
+
+#: src/rc-use.c:2349
+#, c-format
+msgid "Week %s"
+msgstr "Uge %s"
+
+#: src/rc-utils.c:398 src/rc-utils.c:415
+#, c-format
+msgid ""
+"%s: invalid date given -- %s\n"
+"%s\n"
+"%s\n"
+msgstr ""
+"%s: ugyldig dato angivet -- %s\n"
+"%s\n"
+"%s\n"
+
+#: src/rc-utils.c:3270
+#, c-format
+msgid "Leap-day set to `%02d-%s' in file `%s'."
+msgstr "Skottdagen satt til \"%02d-%s\" i filen \"%s\"."
+
+#: src/rc-utils.c:3273 src/rc-utils.c:3687
+#, c-format
+msgid "Line %ld: %s"
+msgstr "Linje %ld: %s"
+
+#: src/rc-utils.c:3634 src/utils.c:275
+#, c-format
+msgid "%s: abort, "
+msgstr "%s: afbryd, "
+
+#: src/rc-utils.c:3642
+#, c-format
+msgid "illegal variable definition in file `%s'"
+msgstr "ugyldig variabeldefinition i filen \"%s\""
+
+#: src/rc-utils.c:3644
+#, c-format
+msgid "illegal definition of variable `%c'"
+msgstr "ugyldig variabeldefinition \"%c\""
+
+#: src/rc-utils.c:3651
+#, c-format
+msgid "illegal variable operation in file `%s'"
+msgstr "ugyldig variabeloperation i filen \"%s\""
+
+#: src/rc-utils.c:3653
+#, c-format
+msgid "illegal operation on variable `%c'"
+msgstr "ugyldig operation på variabel \"%c\""
+
+#: src/rc-utils.c:3659
+#, c-format
+msgid "variable `%c' undefined in file `%s'"
+msgstr "variabel \"%c\" udefineret i filen \"%s\""
+
+#: src/rc-utils.c:3663
+#, c-format
+msgid "invalid value assigned to variable `%c' in file `%s'"
+msgstr "ugyldig værdi tildelt variabel \"%c\" i filen \"%s\""
+
+#: src/rc-utils.c:3684
+#, c-format
+msgid "Invalid argument in command line given -- %s"
+msgstr "Ugyldigt argument givet i kommandolinje -- %s"
+
+#: src/rc-utils.c:3696
+#, c-format
+msgid "Argument `%s' of command line ignored."
+msgstr "Argumentet \"%s\" på kommandolinjen ignoreres."
+
+#: src/rc-utils.c:3699
+#, c-format
+msgid "Line %ld ignored: %s"
+msgstr "Linje %ld ignoreret: %s"
+
+#: src/tty.c:425
+#, c-format
+msgid "%s: <Return> for more, <%s> to quit..."
+msgstr "%s: <Retur> for mere, <%s> for at afslutte..."
+
+#: src/tty.c:1020
+#, c-format
+msgid "environment variable `%s' not found"
+msgstr "Miljøvariablen \"%s\" blev ikke fundet"
+
+#: src/tty.c:1027
+#, c-format
+msgid "environment variable `%s' not set"
+msgstr "miljøvariablen \"%s\" er ikke sat"
+
+#: src/tty.c:1067
+msgid "`termcap' file not found"
+msgstr "\"termcap\"-fil blev ikke fundet"
+
+#: src/tty.c:1072
+#, c-format
+msgid "unknown terminal type defined in `%s'"
+msgstr "ukendt terminaltype defineret i \"%s\""
+
+#: src/tty.c:1081
+#, c-format
+msgid ""
+"\n"
+"%s: warning, %s.\n"
+"\n"
+msgstr ""
+"\n"
+"%s: advarsel, %s.\n"
+"\n"
+
+#: src/utils.c:281
+#, c-format
+msgid ""
+"invalid year for computing Easter Sundays date\n"
+"Year must be in range (%d...%d)"
+msgstr ""
+"ugyldigt år for at kunne beregne dato for påskedag\n"
+"Året skal vare i intervallet (%d - %d)"
+
+#: src/utils.c:285 src/tcal.c:326 src/txt2gcal.c:264 src/gcal2txt.c:264
+#, c-format
+msgid "`%s' line %ld: virtual memory exhausted (%s=%d)"
+msgstr "\"%s\" linje %ld: virtuel hukommelse slut (%s=%d)"
+
+#: src/utils.c:290
+#, c-format
+msgid ""
+"invalid date part in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+"del af dato ugyldig i filen \"%s\"\n"
+"Linje %ld: %s"
+
+#: src/utils.c:295
+#, c-format
+msgid ""
+"invalid month field(%02d) in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+"ugyldigt månedsfelt(%02d) i filen \"%s\"\n"
+"Linje %ld: %s"
+
+#: src/utils.c:300
+#, c-format
+msgid ""
+"invalid day field(%02d) in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+"ugyldigt dagsfelt(%02d) i filen \"%s\"\n"
+"Linje %ld: %s"
+
+#: src/utils.c:304
+#, c-format
+msgid ""
+"malformed %s in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+"ugyldig %s i filen \"%s\"\n"
+"Linje %ld: %s"
+
+#: src/utils.c:309
+#, c-format
+msgid ""
+"invalid recursive/cyclic %s in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+"ugyldig rekursiv/cyklisk %s i filen \"%s\"\n"
+"Linje %ld: %s"
+
+#: src/utils.c:313
+#, c-format
+msgid "file `%s' not found"
+msgstr "filen \"%s\" ej fundet"
+
+#: src/utils.c:317
+#, c-format
+msgid ""
+"invalid N'th weekday field(%d) in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+"ugyldigt N. ugedagsfelt(%d) i filen \"%s\"\n"
+"Linje %ld: %s"
+
+#: src/utils.c:323
+#, c-format
+msgid ""
+"missing `whitespace' character after date part in file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+"blanktegn mangler efter datodelen i filen \"%s\"\n"
+"Linje %ld: %s"
+
+#: src/utils.c:328
+#, c-format
+msgid ""
+"file `%s' can't be written\n"
+"Storage media full!"
+msgstr ""
+"filen \"%s\" kan ikke skrivas\n"
+"Lagringsmediet fuldt!"
+
+#: src/utils.c:333
+#, c-format
+msgid "sending eMail to <%s> failed"
+msgstr "forsendelse af e-post til <%s> mislykkedes"
+
+#: src/utils.c:335 src/utils.c:353
+#, c-format
+msgid ""
+"\n"
+"`%s' line %ld: "
+msgstr ""
+"\n"
+"\"%s\" linje %ld: "
+
+#: src/utils.c:342
+#, c-format
+msgid "`%s' line %ld: (`%s') `%s%d' failed"
+msgstr "\"%s\" linje %ld: (\"%s\") \"%s%d\" mislykkedes"
+
+#: src/utils.c:351
+#, c-format
+msgid "read error in file `%s'"
+msgstr "læsefejl i filen \"%s\""
+
+#: src/utils.c:359
+#, c-format
+msgid ""
+"illegal character in response file `%s'\n"
+"Line %ld: %s"
+msgstr ""
+"ugyldigt tegn i responsfilen \"%s\"\n"
+"Linje %ld: %s"
+
+#: src/utils.c:365 src/tcal.c:332 src/txt2gcal.c:270 src/gcal2txt.c:270
+#, c-format
+msgid "`%s' line %ld: (`%s') invalid value for table size `sizeof %s>%d'"
+msgstr ""
+"\"%s\" linje %ld: (\"%s\") ugyldig værdi på tabelstørrelsen \"sizeof %s>%d\""
+
+#: src/utils.c:370
+#, c-format
+msgid "(`%s') date format `%s' is invalid"
+msgstr "(\"%s\") datoformatet \"%s\" er ugyldigt"
+
+#: src/utils.c:376
+#, c-format
+msgid "%s in search pattern `%s'"
+msgstr "%s i søgemønstret \"%s\""
+
+#: src/utils.c:379
+#, c-format
+msgid "invalid search pattern `%s' specified"
+msgstr "ugyldigt søgemønster \"%s\" specificeret"
+
+#: src/utils.c:384 src/tcal.c:340 src/txt2gcal.c:275 src/gcal2txt.c:275
+#, c-format
+msgid "`%s' line %ld: (`%s') unmanaged error (%d)"
+msgstr "\"%s\" linje %ld: (\"%s\") ikke-behandlet fejl (%d)"
+
+#: src/utils.c:385 src/tcal.c:333 src/tcal.c:341 src/txt2gcal.c:271
+#: src/txt2gcal.c:276 src/gcal2txt.c:271 src/gcal2txt.c:276
+#, fuzzy
+msgid "internal"
+msgstr "Intern"
+
+#: src/utils.c:404 src/tcal.c:360 src/txt2gcal.c:295 src/gcal2txt.c:295
+#, c-format
+msgid ""
+"\n"
+"%s: program aborted by signal %d\n"
+msgstr ""
+"\n"
+"%s: programmet afbrudt af signalet %d\n"
+
+#: src/utils.c:1081
+msgid "th"
+msgstr "."
+
+#: src/utils.c:1085
+msgid "st"
+msgstr "."
+
+#: src/utils.c:1089
+msgid "nd"
+msgstr "."
+
+#: src/utils.c:1093
+msgid "rd"
+msgstr "."
+
+#: src/utils.c:1124 src/utils.c:1175 src/utils.c:1226
+msgid "invalid day"
+msgstr "ugyldig dag"
+
+#: src/utils.c:1129
+msgid "Mon"
+msgstr "man"
+
+#: src/utils.c:1134
+msgid "Tue"
+msgstr "tir"
+
+#: src/utils.c:1139
+msgid "Wed"
+msgstr "ons"
+
+#: src/utils.c:1144
+msgid "Thu"
+msgstr "tor"
+
+#: src/utils.c:1149
+msgid "Fri"
+msgstr "fre"
+
+#: src/utils.c:1154
+msgid "Sat"
+msgstr "lør"
+
+#: src/utils.c:1159
+msgid "Sun"
+msgstr "søn"
+
+#: src/utils.c:1180
+msgid "Mo"
+msgstr "ma"
+
+#: src/utils.c:1185
+msgid "Tu"
+msgstr "ti"
+
+#: src/utils.c:1190
+msgid "We"
+msgstr "on"
+
+#: src/utils.c:1195
+msgid "Th"
+msgstr "to"
+
+#: src/utils.c:1200
+msgid "Fr"
+msgstr "fr"
+
+#: src/utils.c:1205
+msgid "Sa"
+msgstr "lø"
+
+#: src/utils.c:1210
+msgid "Su"
+msgstr "sø"
+
+#: src/utils.c:1227
+msgid "Monday"
+msgstr "mandag"
+
+#: src/utils.c:1227
+msgid "Tuesday"
+msgstr "tirsdag"
+
+#: src/utils.c:1227
+msgid "Wednesday"
+msgstr "onsdag"
+
+#: src/utils.c:1227
+msgid "Thursday"
+msgstr "torsdag"
+
+#: src/utils.c:1228
+msgid "Friday"
+msgstr "fredag"
+
+#: src/utils.c:1228
+msgid "Saturday"
+msgstr "lørdag"
+
+#: src/utils.c:1228
+msgid "Sunday"
+msgstr "søndag"
+
+#: src/utils.c:1244 src/utils.c:1321
+msgid "invalid month"
+msgstr "ugyldig måned"
+
+#: src/utils.c:1249
+msgid "Jan"
+msgstr "jan"
+
+#: src/utils.c:1254
+msgid "Feb"
+msgstr "feb"
+
+#: src/utils.c:1259
+msgid "Mar"
+msgstr "mar"
+
+#: src/utils.c:1264
+msgid "Apr"
+msgstr "apr"
+
+#: src/utils.c:1269
+msgid "May"
+msgstr "maj"
+
+#: src/utils.c:1274
+msgid "Jun"
+msgstr "jun"
+
+#: src/utils.c:1279
+msgid "Jul"
+msgstr "jul"
+
+#: src/utils.c:1284
+msgid "Aug"
+msgstr "aug"
+
+#: src/utils.c:1289
+msgid "Sep"
+msgstr "sep"
+
+#: src/utils.c:1294
+msgid "Oct"
+msgstr "okt"
+
+#: src/utils.c:1299
+msgid "Nov"
+msgstr "nov"
+
+#: src/utils.c:1304
+msgid "Dec"
+msgstr "dec"
+
+#: src/utils.c:1322
+msgid "January"
+msgstr "januar"
+
+#: src/utils.c:1322
+msgid "February"
+msgstr "februar"
+
+#: src/utils.c:1323
+msgid "March"
+msgstr "marts"
+
+#: src/utils.c:1323
+msgid "April"
+msgstr "april"
+
+#: src/utils.c:1333
+msgid "May "
+msgstr "maj"
+
+#: src/utils.c:1334
+msgid "June"
+msgstr "juni"
+
+#: src/utils.c:1334
+msgid "July"
+msgstr "juli"
+
+#: src/utils.c:1335
+msgid "August"
+msgstr "august"
+
+#: src/utils.c:1335
+msgid "September"
+msgstr "september"
+
+#: src/utils.c:1336
+msgid "October"
+msgstr "oktober"
+
+#: src/utils.c:1336
+msgid "November"
+msgstr "november"
+
+#: src/utils.c:1336
+msgid "December"
+msgstr "december"
+
+#: src/tcal.c:193
+#, c-format
+msgid "Usage:  %s  [--%s | --%s] | [--%s=[+|-]NUMBER] [ARGUMENT...]\n"
+msgstr "Brug:  %s  [--%s | --%s] | [--%s=[+|-]TAL] [ARGUMENT...]\n"
+
+#: src/tcal.c:322 src/txt2gcal.c:260 src/gcal2txt.c:260
+#, c-format
+msgid ""
+"\n"
+"%s: abort, "
+msgstr ""
+"\n"
+"%s: abrudt, "
+
+#: src/tcal.c:337
+#, c-format
+msgid "shift value `%s' is invalid"
+msgstr "skifteværdien \"%s\" er ugyldigt"
+
+#: src/tcal.c:909
+#, c-format
+msgid "%s: option `--%s' requires an argument"
+msgstr "%s: flaget \"--%s\" behøver et argument"
+
+#: src/tcal.c:1073
+#, c-format
+msgid "%s: error during program execution of `%s'\n"
+msgstr "%s: fejl da programmet \"%s\" kørtes\n"
+
+#: src/txt2gcal.c:132
+#, c-format
+msgid "Usage:  %s  [--%s | --%s] | [TEXT-FILE | -] [DATE-PART]\n"
+msgstr "Brug:  %s  [--%s | --%s] | [TEKSTFIL | -] [DATO-DEL]\n"
+
+#: src/txt2gcal.c:756 src/gcal2txt.c:755
+#, c-format
+msgid "%s: no regular file\n"
+msgstr "%s: ingen normal fil\n"
+
+#: src/txt2gcal.c:761 src/gcal2txt.c:760
+#, c-format
+msgid "%s: file not found\n"
+msgstr "%s: filen ikke fundet\n"
+
+#: src/gcal2txt.c:132
+#, c-format
+msgid "Usage:  %s  [--%s | --%s] | [RESOURCE-FILE | -]\n"
+msgstr "Brug:  %s  [--%s| --%s] | [RESSOURCEFIL | -]\n"
+
+#~ msgid ""
+#~ "   +++  If you specify two digits for the year I DON'T assume %2d%s  +++"
+#~ msgstr "    +++ Hvis du anger året med två siffror ANTAR JAG IKKE %2d%s +++"
+
+#~ msgid "   +++  `%s' is free software, enjoy   =8^)  +++"
+#~ msgstr "   +++  \"%s\" er \"fri programvara\". Mycket nøje!   =8^)  +++"

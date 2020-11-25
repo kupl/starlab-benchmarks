@@ -1,0 +1,74 @@
+2009-12-30  Tim Retout  <diocles@gnu.org>
+
+	* enscript.man: Explicitly use minus signs rather than hyphens in
+	various places in --ul-position and in PRINTING EXAMPLES.
+
+	* states.man (STATES PROGRAM FILES): Escape backslashes in
+	namerules and startrules examples.
+
+	Small corrections probably originally by Michael Fedrowitz.
+
+	* enscript.man (SYNOPSIS): Correct '-W' to '-w'.
+	(OPTIONS): Likewise.
+	(PRINTING EXAMPLES): Likewise.
+	(--header): Correct date/data typo.
+	(--help): Correct path to states files.
+	(--style): Correct emacs_verbose.
+
+2009-01-11  Tim Retout  <diocles@gnu.org>
+
+	* enscript.texi: Update to FDL v1.3.
+	* fdl.text: Deleted.
+	* fdl-1.3.texi: New file.
+	* Makefile.am: Update appropriately.
+
+2008-02-03  Tim Retout  <diocles@gnu.org>
+
+	* enscript.info: Remove from repository.
+	* stamp-vti: Likewise.
+	* version.texi: Likewise.
+
+2008-01-29  Tim Retout  <diocles@gnu.org>
+
+	* Makefile.am (CLEANFILES): Clean installed man pages.
+
+2007-11-05  Tim Retout  <diocles@gnu.org>
+
+	* enscript.texi: Relicense under GNU FDL.
+	Change copyright holder to FSF.
+	* fdl.texi: New file.
+
+1999-09-17  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* enscript.man (files): Documented `--footer' option and its
+	`user_footer_{p,{left,center,right}_str}' PostScript variables.
+
+1999-09-13  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* enscript.man (are): Documented `--extended-return-values'
+	option.
+
+1999-08-26  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* enscript.man: Documented new user string format `$p'.
+
+1998-12-31  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* enscript.texi: Added documentation about the highlighting
+	definitions.
+
+1998-10-23  Markku Rossi  <mtr@ngs.fi>
+
+	* enscript.texi: Started to write Texinfo documentation.
+
+	* Makefile.am: The manual pages are now created during the
+	compilation, not during the configuration.
+
+	* New directory to hold the enscript documentation.
+
+
+Copyright (C) 1998, 1999, 2007, 2008 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

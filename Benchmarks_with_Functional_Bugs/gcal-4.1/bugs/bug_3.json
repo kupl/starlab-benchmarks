@@ -1,0 +1,7 @@
+{
+    "Error_Type": "Segmentation fault",
+    "Test-Cases":
+    {
+        "@...//" "@.." "@../" "--u=Z="
+    } 
+}

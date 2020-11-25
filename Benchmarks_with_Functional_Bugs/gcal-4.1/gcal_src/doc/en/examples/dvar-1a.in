@@ -1,0 +1,26 @@
+; dvar-1a.in
+;
+
+; The command(s) used within this example are prefixed with `%%%'.
+; The real call(s) of these command(s) are prefixed with `***'.
+;
+%%%gcal %1777 -H no -x -v z=1212 -f ./dvar-1.rc -y
+***LANGUAGE=en GCAL= GCALPATH=. ../../../src/gcal %1777 -H no -x -v z=1212 -f ./dvar-1.rc -y $*
+;
+%%%gcal %1777 -H no -x -f ./dvar-1.rc -y
+***LANGUAGE=en GCAL= GCALPATH=. ../../../src/gcal %1777 -H no -x -f ./dvar-1.rc -y
+
+; The resource file line(s) used within this example are prefixed with `:::'.
+;
+
+; Additionally leading Texinfo commands are prefixed with `+++'.
+;
++++example
++++group
++++cartouche
+
+; Additionally trailing Texinfo commands are prefixed with `---'.
+;
+---end cartouche
+---end group
+---end example

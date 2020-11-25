@@ -1,0 +1,30 @@
+This is the combine package.  It implements programs for working
+flexibly with the contents of files, joining them and summarizing
+them as necessary.
+
+combine is a part of the GNU Project.  More information on the
+GNU Project and free software can be found at http://www.gnu.org
+
+The program that is built by this package is combine.
+
+See the file NEWS for a list of major changes in the current release.
+
+See the file INSTALL for compilation and installation instructions.
+
+These programs all recognize the `--version' option.  When reporting
+bugs, please include in the subject line both the package name/version
+and the name of the program for which you found a problem.
+
+For general documentation on the coding and usage standards
+this distribution follows, see the GNU standards document
+http://www.gnu.org/prep/standards.html, and the documentation
+for automake and autoconf:
+http://www.gnu.org/software/autoconf/autoconf.html,
+http://www.gnu.org/software/automake/automake.html.
+
+This project differs from the recommended formatting of C programs with
+regard to braces by placing open braces on the same line as preceding 
+text and closing braces indented the same amount as the text enclosed.
+
+Mail suggestions and bug reports for these programs to
+bug-combine@gnu.org

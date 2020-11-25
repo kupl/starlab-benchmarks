@@ -1,0 +1,39 @@
+2008-02-03  Tim Retout  <diocles@gnu.org>
+
+	* Makefile.am (install-data-local): Remove.
+	(uninstall-local): Likewise.
+	(EXTRA_DIST): Likewise.
+	(afmdir): New variable for location of afm files.
+	(dist_afm_DATA): New variable with previous contents of EXTRA_DIST.
+
+2008-01-29  Tim Retout  <diocles@gnu.org>
+
+	* Makefile.am (install-data-local): Prefix install paths with
+	$(DESTDIR) so as not to break `make distcheck'.
+	(uninstall-local): Likewise.
+
+2008-01-01  Tim Retout  <diocles@gnu.org>
+
+	* ChangeLog: Add copyright notice at end.
+
+1999-04-12  Markku Rossi  <mtr@amme.ssh.fi>
+
+	* matrix.pfa: Added the `Matrix' font to support matrix printers
+	;-)  Thanks to Tero Kivinen.
+
+1998-10-23  Markku Rossi  <mtr@ngs.fi>
+
+	* Makefile.am: Changed to install the afm files to
+	`PREFIX/share/enscript/afm/' directory.
+
+1998-06-11  Markku Rossi  <mtr@ngs.fi>
+
+	* Back to the basics.  We distribute only the AFM files for the
+	standard 35 PostScript fonts.
+
+
+Copyright (C) 1998, 1999, 2008 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

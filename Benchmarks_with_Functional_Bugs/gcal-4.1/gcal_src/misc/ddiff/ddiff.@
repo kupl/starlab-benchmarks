@@ -1,0 +1,9 @@
+; `gcal' response file `ddiff.@' --- Created 20-Mar-2000 11:21:17 MET
+;
+--date-format=%>04*Y%>02*M%>02*D%1%2
+-#0*d1#999_$l_%u$c_d_%z$c_n_$c_%>04*Y$y@t_-%>02*M$y@t_-%>02*D$y@t__%t_%=
+-fNUL:
+-Hno
+-Qxy
+-u
+--precise
