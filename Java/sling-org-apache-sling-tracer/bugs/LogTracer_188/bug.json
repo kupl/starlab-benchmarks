@@ -1,7 +1,0 @@
-{
-    "filepath": "sling-org-apache-sling-tracer/src/main/java/org/apache/sling/tracer/internal/LogTracer.java",
-    "line": 189,
-    "npe_method": "getTracerContext",
-    "deref_field": "tracerConfig",
-    "npe_class": "LogTracer"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "sling-org-apache-sling-tracer/src/main/java/org/apache/sling/tracer/internal/LogTracer.java",
-    "line": 347,
-    "npe_method": "doFilter",
-    "deref_field": "tracerContext",
-    "npe_class": "SlingTracerFilter"
-}
