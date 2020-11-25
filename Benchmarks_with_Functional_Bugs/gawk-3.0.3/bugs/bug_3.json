@@ -1,7 +1,4 @@
 {
     "Error_Type": "Abnormal-termination",
-    "Test-Cases":
-    {
-        "f[][][][][y]^/#["
-    } 
+    "Test-Cases": "\"f[][][][][y]^/#[\""
 }

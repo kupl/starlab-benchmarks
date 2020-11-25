@@ -1,7 +1,4 @@
 {
     "Error_Type": "Non-termination",
-    "Test-Cases":
-    {
-        "\({**+**\)*\++*\1*\+"
-    } 
+    "Test-Cases": "'\\({**+**\\)*\\++*\\1*\\+'"
 }

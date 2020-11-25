@@ -1,7 +1,4 @@
 {
     "Error_Type": "Segmentation fault",
-    "Test-Cases":
-    {
-        "@/?" (? denotes an ASCII character of 1.)
-    } 
+    "Test-Cases": "\"@...//\" \"@..\" \"@../\" \"--u=Z=\""
 }

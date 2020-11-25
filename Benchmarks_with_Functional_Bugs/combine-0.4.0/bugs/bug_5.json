@@ -1,7 +1,4 @@
 {
     "Error_Type": "Memory-exhaustion",
-    "Test-Cases":
-    {
-        "--emu" "cut" "-b" "" "-f-1,--1"
-    } 
+    "Test-Cases": "\"--emu\" \"cut\" \"-b\" \"\" \"-f-1,--1\""
 }

@@ -1,7 +1,4 @@
 {
     "Error_Type": "Segmentation fault",
-    "Test-Cases":
-    {
-        "\(\)\1^*@*\?\1*\+*\?"
-    } 
+    "Test-Cases": "'\\(\\)\\1^*@*\\?\\1*\\+*\\?'"
 }

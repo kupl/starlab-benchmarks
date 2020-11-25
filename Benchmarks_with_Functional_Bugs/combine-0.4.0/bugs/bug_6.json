@@ -1,7 +1,4 @@
 {
     "Error_Type": "Segmentation fault",
-    "Test-Cases":
-    {
-        "--fi=r.o1’" "-r" ""
-    } 
+    "Test-Cases": "\"--fi=r.o1'\" \"-r\" \"\""
 }

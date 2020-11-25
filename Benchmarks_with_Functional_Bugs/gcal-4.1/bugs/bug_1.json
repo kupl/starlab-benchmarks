@@ -1,7 +1,4 @@
 {
     "Error_Type": "Segmentation fault",
-    "Test-Cases":
-    {
-        "@...//" "@..." "@.../" "--at=5"
-    } 
+    "Test-Cases": "\"@...//\" \"@...\" \"@.../\" \"--at=5\""
 }

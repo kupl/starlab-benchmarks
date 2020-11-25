@@ -1,4 +1,4 @@
 {
     "Error_Type": "Abnormal-termination",
-    "Test-Cases": "\"-f@6E307\" \"\" \"\""
+    "Test-Cases": "\"\\n\\w*\\'*\\n\" \"-\""
 }

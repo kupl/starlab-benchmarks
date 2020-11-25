@@ -1,7 +1,4 @@
 {
     "Error_Type": "Abnormal-termination",
-    "Test-Cases":
-    {
-        "-W" "nost"
-    } 
+    "Test-Cases": "\"-W\" \"nost\""
 }

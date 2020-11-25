@@ -1,7 +1,4 @@
 {
     "Error_Type": "Segmentation fault",
-    "Test-Cases":
-    {
-        "--to" "" "" "" ""
-    } 
+    "Test-Cases": "\"--to\" \"\" \"\" \"\" \"\""
 }

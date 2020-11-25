@@ -1,7 +1,4 @@
 {
     "Error_Type": "Segmentation fault",
-    "Test-Cases":
-    {
-        "-fPs" "" "--field-o="
-    } 
+    "Test-Cases": "\"-fPs\" \"\" \"--field-o=\""
 }
