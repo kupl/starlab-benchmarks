@@ -11,14 +11,14 @@ This repository features two sorts of bugs: functional bugs and safety bugs. Fun
     - The C projects show faults in memory management, namely, memory-leak, double-free, or use-after-free. 
     - Teh Solidity smart contracts show faults in integer arithmetic, such as integer overflows or underflows.
 
-## 스타랩 dataset
+## Dataset Overview
 <table>
   <tbody>
     <tr>
       <th>Bug Type</th>
       <th align="center">Target Language</th>
       <th align="center">Fault kind</th>
-      <th align="right"># of Faults</th>
+      <th align="center"># of Faults</th>
       <th align="center">Sum</th>
     </tr>
   <tr>
@@ -36,7 +36,7 @@ This repository features two sorts of bugs: functional bugs and safety bugs. Fun
   <tr>
     <td align="center">Solidity</td>
     <td align="center">Integer<br>Overflow</th>
-    <td align="center">200</td>  
+    <td align="center">200</td>
   </tr>
   <tr>
     <td align="center" rowspan="3">Functional</td>
