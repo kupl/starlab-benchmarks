@@ -55,9 +55,3 @@ This repository features two sorts of bugs: functional bugs and safety bugs. Fun
   </tr>
   </tbody>
 </table>
-
-
-  
-
-## License
-### ToDo
