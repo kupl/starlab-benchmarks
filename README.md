@@ -1,6 +1,6 @@
 # SW STARLAB Benchmarks<br>by Software Analysis Laboratory
 
-This repository features two sorts of bugs: functional bugs and safety bugs. Functional bugs are software errors that violates the programmer's intention or other expectations that the software is supposed to meet. These are typically manifested as simple expectation violations such as assertion violations, or unexpected software errors such as crashes, infinite loop, or resource exhaustion. On the other hand, safety bugs are software errors that may result in software crashes or other software problems such as memory leak, use-after-free, or double free. Unlike functional bugs, these do not induce assertion errors or crashes; rather, they are typically manifested as software vulnerabilities such as memory management faults in C projects or overflow/underflow during integer arithmetic in Solidity smart contracts.
+This repository features two sorts of bugs: functional bugs and safety bugs. Functional bugs are software errors that violates the programmer's intention or other expectations that the software is supposed to meet. These are typically manifested as simple expectation violations such as assertion violations, or unexpected software errors such as crashes, infinite loop, or resource exhaustion. On the other hand, safety bugs are software errors that cause problems such as memory leak, use-after-free, or double free. Unlike functional bugs, these do not induce assertion errors or crashes; rather, they are typically manifested as software vulnerabilities such as memory management faults in C projects or overflow/underflow during integer arithmetic in Solidity smart contracts.
 
 ## Directory Overview
 
@@ -9,7 +9,7 @@ This repository features two sorts of bugs: functional bugs and safety bugs. Fun
     - The OCaml student submissions feature assertion violations required by the respective exercise problems.
 - `Benchmarks_with_Safety_Bugs` contains safety bugs found from open-source C projects and Real-world Ethereum smart contracts written in Solidity.
     - The C projects show faults in memory management, namely, memory-leak, double-free, or use-after-free. 
-    - Teh Solidity smart contracts show faults in integer arithmetic, such as integer overflows or underflows.
+    - The Solidity smart contracts show faults in integer arithmetic, such as integer overflows or underflows.
 
 ## Dataset Overview
 <table>
