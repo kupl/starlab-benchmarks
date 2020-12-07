@@ -1,4 +1,0 @@
-{
-    "original_filepath": "src/main/java/org/apache/any23/servlet/conneg/ContentTypeNegotiator.java",
-    "patched_lines": [114]
-}
