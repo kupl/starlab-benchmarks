@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <Match>
+      <!-- That code is auto generated -->
+      <Package name="~com\.puppycrawl\.tools\.checkstyle\.grammars.*" />
+    </Match>
+    <Match>
+      <!-- We are not aware of encoding of files that user has, so using user encoding is ok -->
+      <Class name="com.puppycrawl.tools.checkstyle.checks.LineSeparatorOption" />
+      <Bug pattern="DM_DEFAULT_ENCODING" />
+    </Match>
+    <Match>
+      <!-- see a reason of suppression at #910 -->
+      <Class name="com.puppycrawl.tools.checkstyle.checks.UniquePropertiesCheck$UniqueProperties" />
+      <Bug pattern="EQ_DOESNT_OVERRIDE_EQUALS" />
+    </Match>
+    <Match>
+      <!-- false-positive, as Map will return null if key is not found -->
+      <Class name="com.puppycrawl.tools.checkstyle.checks.indentation.LineWrappingHandler" />
+      <Method name="collectFirstNodes" />
+      <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" />
+    </Match>
+    <Match>
+      <!-- it is ok here, as business meaning of that cases is not the same, it is occasional similarity -->
+      <Class name="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck" />
+      <Method name="visitToken" />
+      <Bug pattern="DB_DUPLICATE_SWITCH_CLAUSES" />
+    </Match>
+    <Match>
+      <!-- false positive, condition elements are not the same -->
+      <Class name="com.puppycrawl.tools.checkstyle.checks.indentation.LineWrappingHandler" />
+      <Method name="collectFirstNodes" />
+      <Bug pattern="RpC_REPEATED_CONDITIONAL_TEST" />
+    </Match>
+    <Match>
+      <!-- false positive, "preceded" is returned from method as result -->
+      <Class name="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck" />
+      <Method name="getPreceded" />
+      <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+    </Match>
+    <Match>
+      <!-- till #922 -->
+      <Class name="com.puppycrawl.tools.checkstyle.Checker" />
+      <Method name="setClassloader" />
+      <Bug pattern="NM_CONFUSING" />
+    </Match>
+    <Match>
+      <!-- that CLI class so we need system exit code there, but only in main(...) method -->
+      <Class name="com.puppycrawl.tools.checkstyle.Main" />
+      <Method name="main" />
+      <Bug pattern="DM_EXIT" />
+    </Match>
+    <Match>
+      <!-- have never been a case for years, Eclipse does not show any other classes inherited from CommonASTWithHiddenTokens -->
+      <Class name="com.puppycrawl.tools.checkstyle.api.DetailAST" />
+      <Bug pattern="BC_UNCONFIRMED_CAST" />
+    </Match>
+    <Match>
+      <!-- till SonarQube update Checkstyle version. Support both getFileName() and getFilename() -->
+      <and>
+        <Class name="com.puppycrawl.tools.checkstyle.api.FileContents" />
+        <Method name="~setFile[nN]ame" />
+      </and>
+      <Bug pattern="NM_CONFUSING" />
+    </Match>
+    <Match>
+      <!-- false positive, beginTree is a kind of constructor for Checks -->
+      <Or>
+        <Class name="com.puppycrawl.tools.checkstyle.checks.AbstractDeclarationCollector" />
+        <Class name="com.puppycrawl.tools.checkstyle.checks.OuterTypeFilenameCheck" />
+        <Class name="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpCheck" />
+        <!-- createJavadocNode is private and can not be launched without visitToken-->
+        <Class name="com.puppycrawl.tools.checkstyle.checks.javadoc.AbstractJavadocCheck" />
+        <!-- has only one public method and all initialized in that method-->
+        <Class name="com.puppycrawl.tools.checkstyle.checks.regexp.MultilineDetector" />
+        <!-- beginProcessing() is kind of c-tor -->
+        <Class name="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck" />
+        <Class name="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck" />
+      </Or>
+      <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+    </Match>
+</FindBugsFilter>

@@ -1,0 +1,8 @@
+{
+    "filepath": "modules/activiti-engine/src/main/java/org/activiti/engine/impl/event/AbstractEventHandler.java",
+    "line": 44,
+    "deref_field": "getActivity",
+    "npe_class": "AbstractEventHandler",
+    "npe_method": "handleEvent",
+    "nullpointer": "execution.getActivity()"
+}

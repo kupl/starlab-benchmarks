@@ -1,0 +1,8 @@
+{
+    "filepath": "code/spi-support/src/main/java/org/apache/tamaya/spisupport/EnumConverter.java",
+    "line": 63,
+    "deref_field": "value",
+    "npe_class": "EnumConverter",
+    "npe_method": "convert",
+    "nullpointer": "value"
+}

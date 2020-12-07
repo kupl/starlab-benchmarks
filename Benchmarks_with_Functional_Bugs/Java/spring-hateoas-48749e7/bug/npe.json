@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/springframework/hateoas/ResourceSupport.java",
+    "line": 145,
+    "deref_field": "obj",
+    "sink_field": "getClass",
+    "npe_class": "ResourceSupport",
+    "npe_method": "equals",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "obj"
+}

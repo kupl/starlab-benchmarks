@@ -1,0 +1,4 @@
+{
+    "original_filepath": "src/main/java/org/apache/felix/framework/BundleRevisionImpl.java",
+    "patched_lines": [528]
+}

@@ -1,0 +1,8 @@
+{
+    "filepath": "pinot-core/src/main/java/com/linkedin/pinot/core/data/manager/realtime/LLRealtimeSegmentDataManager.java",
+    "line": 142,
+    "deref_field": "_segmentFile",
+    "npe_class": "SegmentFileAndOffset",
+    "npe_method": "deleteSegmentFile",
+    "nullpointer": "_segmentFile"
+}

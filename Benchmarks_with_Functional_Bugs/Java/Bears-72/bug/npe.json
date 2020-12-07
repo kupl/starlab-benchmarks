@@ -1,0 +1,11 @@
+{
+    "filepath": "src/main/java/spoon/reflect/visitor/DefaultJavaPrettyPrinter.java",
+    "line": 739,
+    "deref_field": "field",
+    "npe_class": "DefaultJavaPrettyPrinter",
+    "npe_method": "printCtFieldAccess",
+    "sink_field": "getSimpleName",
+    "jvmti_identify_succeed": true,
+    "is_original": true,
+    "nullpointer": "field"
+}

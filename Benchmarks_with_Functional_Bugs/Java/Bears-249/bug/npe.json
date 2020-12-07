@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/imdea/vcd/queue/clock/Clock.java",
+    "line": 24,
+    "deref_field": "clock",
+    "sink_field": "map",
+    "npe_class": "Clock",
+    "npe_method": "<init>",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "clock"
+}

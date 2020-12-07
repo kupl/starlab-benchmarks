@@ -1,0 +1,7 @@
+{
+  "filepath": "stella-core/src/main/java/br/com/caelum/stella/validation/CNPJValidator.java",
+  "line": 125,
+  "deref_field": "value",
+  "npe_class": "CNPJValidator",
+  "npe_method": "isEligible"
+}

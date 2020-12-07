@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/spoon/reflect/visitor/ImportScannerImpl.java",
+    "line": 566,
+    "deref_field": "targetType",
+    "sink_field": "getSimpleName",
+    "npe_class": "ImportScannerImpl",
+    "npe_method": "isTypeInCollision",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "targetType"
+}

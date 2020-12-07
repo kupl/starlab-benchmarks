@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/apache/sling/security/impl/ContentDispositionFilter.java",
+    "line": 294,
+    "deref_field": "props",
+    "sink_field": "containsKey",
+    "npe_class": "ContentDispositionFilter",
+    "npe_method": "isJcrData",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "props"
+}

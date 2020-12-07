@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/edu/harvard/h2ms/service/utils/H2msRestUtils.java",
+    "line": 52,
+    "deref_field": "month",
+    "sink_field": "equals",
+    "npe_class": "H2msRestUtils",
+    "npe_method": "formatMonth",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "month"
+}

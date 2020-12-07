@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/springframework/data/jpa/util/JpaMetamodel.java",
+    "line": 79,
+    "deref_field": "getJavaType",
+    "sink_field": "equals",
+    "npe_class": "JpaMetamodel",
+    "npe_method": "lambda$isSingleIdAttribute$0",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "it.getJavaType()"
+}

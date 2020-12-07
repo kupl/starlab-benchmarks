@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/com/zaxxer/hikari/pool/ProxyConnection.java",
+    "line": 198,
+    "deref_field": "openStatements",
+    "sink_field": "size",
+    "npe_class": "ProxyConnection",
+    "npe_method": "closeStatements",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "openStatements"
+}

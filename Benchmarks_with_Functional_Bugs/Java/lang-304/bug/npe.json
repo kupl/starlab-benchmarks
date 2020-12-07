@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang/LocaleUtils.java",
+    "line": 223,
+    "deref_field": "cAvailableLocaleSet",
+    "sink_field": "contains",
+    "npe_class": "LocaleUtils",
+    "npe_method": "isAvailableLocale",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "cAvailableLocaleSet"
+}

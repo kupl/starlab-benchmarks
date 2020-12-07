@@ -1,0 +1,8 @@
+{
+    "filepath": "stella-faces/src/main/java/br/com/caelum/stella/faces/validation/StellaCPFValidator.java",
+    "line": 65,
+    "deref_field": "value",
+    "npe_class": "StellaCPFValidator",
+    "npe_method": "validate",
+    "nullpointer": "value"
+}

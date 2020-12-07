@@ -1,0 +1,11 @@
+{
+    "filepath": "src/main/java/io/opentracing/contrib/p6spy/TracingP6SpyListener.java",
+    "line": 143,
+    "deref_field": "url",
+    "npe_class": "TracingP6SpyListener",
+    "npe_method": "extractPeerService",
+    "sink_field": null,
+    "jvmti_identify_succeed": null,
+    "is_original": true,
+    "nullpointer": "url"
+}

@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/com/squareup/javapoet/TypeName.java",
+    "line": 107,
+    "deref_field": "mirror",
+    "sink_field": "accept",
+    "npe_class": "TypeName",
+    "npe_method": "get",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "mirror"
+}

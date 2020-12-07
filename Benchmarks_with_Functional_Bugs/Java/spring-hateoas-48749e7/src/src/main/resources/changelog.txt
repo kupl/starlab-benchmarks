@@ -1,0 +1,126 @@
+Spring HATEOAS Changelog
+========================
+
+Changes in version 0.10.0.RELEASE (2014-05-01)
+----------------------------------------------
+- #173 - Release 0.110.
+- #172 - Link should be serializable.
+- #170 - Proxy header detection should honor X-Forwarded-Port.
+- #114 - linkTo(methodOn()) problem when method is defined by super class of controller.
+
+Changes in version 0.10.0.RELEASE (2014-03-30)
+----------------------------------------------
+- #165 - Drop Jackson 1.x support
+- #162 - Documentation - @RelationType
+- #160 - Fix UriTemplate.expand(…) method signature to prevent accidental binding to varargs overload
+- #158 - HalEmbeddedBuilder should forward proxy target class to RelProviders
+- #154 - Build fails with Java 7
+- #148 - Cant't get HAL-Type serialization to work
+- #103 - Spring HATEOAS fails in WebSphere 8
+
+Changes in version 0.9.0.RELEASE (2014-01-29)
+---------------------------------------------
+- #147 - Add convenience toString to VndErrors
+- #142 - Support multiple curies to be returned from CurieProvider
+- #139 - PagedResourcesAssember and URL Variables
+- #138 - MethodParameters should be able to return parameters by type
+- #137 - Add support for link templates
+- #133 - LinkDiscoverer must not throw exceptions if link container is not present
+- #132 - Resource should reject collection content
+- #130 - Guard @EnableHypermediaSupport against issue in Spring 3.2.x
+- #128 - Improve LinkDiscoverer API
+- #125 - Add support for HAL curies
+- #124 - Fix mapping annotations in ResourceSupport and subclasses
+- #123 - Deprecate Jackson 1.9.x support
+- #122 - ControllerLinkBuilder creates parameter names for optional request parameters even if they're null.
+- #121 - OSGi imports for spring-plugin-core are incorrect
+- #112 - Added support for X-Forwarded-Ssl header during link construction.
+- #110 - HalEmbeddedBuilder fails to properly encode odd number of elements
+- #140 - Upgrade to latest Spring 3.2.x
+- #126 - Release 0.9
+
+Changes in version 0.8.0.RELEASE (2013-08-09)
+---------------------------------------------
+- #101 - Enable annotation based parameter name discovery on MethodParameters
+- #89 - PagedMetadata issue
+- #106 - Upgrade to Jackson 2.2.0
+- #105 - Release 0.8
+
+Changes in version 0.7.0.RELEASE (2013-16-07)
+---------------------------------------------
+- #91 - Improve proxying for links build from method references
+- #99 - HalLinkListSerializers don't guarantee stable link order
+- #98 - PagedResources JAXB un-marshalling is broken
+- #94 - Fix for issue #93
+- #93 - Jackson can't deserialize VndErrors
+- #92 - Remove JsonAutoDetect annotations from PagedResources
+- #90 - Consider port number when setting the host from the X-Forward-Host header
+- #86 - Make sure all test run during build
+- #85 - Add support to render resource links as headers instead of in the body
+- #84 - Make Resource more defenisive against null content
+- #83 - #81: handle null content when adding Resource or Resources
+- #81 - Nullpointer in HalEmbeddedBuilder
+- #74 - Release 0.7
+
+Changes in version 0.6.0.RELEASE (2013-31-05)
+---------------------------------------------
+- #73 - ControllerLinkBuilder should allow pointing to unmapped controllers
+- #72 - AnnotationMappingDiscoverer should return polished mapping for root slash mapping
+- #70 - Fixed problem with Controllers having a path parameter on the class mapping
+- #64 - Add HAL support for PagedResources
+- #63 - HAL : Wrong rel name for embedded collections
+- #62 - Add support for vnd.error
+- #61 - Release 0.6
+
+Changes in version 0.5.0.RELEASE (2013-30-04)
+---------------------------------------------
+- #57 - Support formatting of @PathVariables
+- #56 - Improve fragment handling in LinkBuilderSupport
+- #54 - Add basic support for RFC5988 style link headers
+- #53 - Use slf4j for logging
+- #52 - Add SPI to let HandlerMethodArgumentResolver implementations contribute to URI building
+- #51 - Add LinkDiscoverer implementation for HAL
+- #50 - Add @EnableHypermediaSupport to default configuration
+- #48 - Make source encoding explicit in pom.xml
+- #39 - Fix for #26 Add support for request parameters to Link builder
+- #26 - Add support for request parameters to Link builder
+- #44 - Release 0.5
+
+Changes in version 0.4.0.RELEASE (2013-28-01)
+---------------------------------------------
+- #18 - Added support to build links pointing to controller methods
+- #32 - Added @EnableEntityLinks to transparently expose controllers managing entities
+- Introduced EntityLinks API to build links pointing to components exposing URIs for entities
+- Introduced LinkDiscoverer API to find links by their rels in representations (incl. JSONPath based implementation)
+- #27 - Added support for Jackson 2
+- #29 - Added support for HAL-style link representations
+- #41, #42 - Extracted ResourceAssemblerSupport for non-Identifiables
+- #43 - Fixed potential stack-overflow in ControllerLinkBuilder
+- #33 - ControllerLinkBuilder now considers X-Forwarded-Host header if present
+
+Changes in version 0.3.0.RELEASE (2012-10-09)
+---------------------------------------------
+- #15 - Upgraded to Jackson 1.9.10
+- #14 - Added integration test to make sure default (de)serialization works
+- #13 - Added LinkBuilder implementation that inspects JAX-RS @Path annotations
+- #12 - Introduced factories for LinkBuilder to improve client testability
+- #11 - Moved to Set and back to List for Links inside ResourceSupport
+- #10 - Renamed (Paged)Resources.fromEntities(…) to ….wrap(…)
+- #9 - Added constructor to PagedResources to take an Iterable of Links
+- #7 - Excluded getId() of ResourceSupport from default JSON rendering
+- Switched from Collection to Iterable in constructor of Resources 
+- Moved from ResourceEnricher to ResourceProcessor to allow manipulating the resource instance
+
+Changes in version 0.2.0.RELEASE (2012-08-23)
+---------------------------------------------
+- added ResourceEnricher SPI
+- fixed equals(…)/hashCode() in Resource/Resources/PagedResources 
+- Added PagedResources abstraction (collection resource with pagination information)
+- Enhanced resource abstraction with default implementation for Resource and Resources
+
+Changes in version 0.1.0.RELEASE (2012-07-19)
+---------------------------------------------
+- Initial release with basic support
+- Common abstractions like Link, Identifiable, ResourceSupport (JAXB marshable)
+- ControllerLinkBuilder to easily create Link instances to point to Spring MVC controllers
+- ResourceAssemblerSupport base class to easily create resource (DTO) instances

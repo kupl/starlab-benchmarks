@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/spoon/support/reflect/declaration/CtElementImpl.java",
+    "line": 389,
+    "deref_field": "metadata",
+    "sink_field": "keySet",
+    "npe_class": "CtElementImpl",
+    "npe_method": "getMetadataKeys",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "metadata"
+}

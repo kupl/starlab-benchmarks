@@ -1,0 +1,9 @@
+{
+    "filepath": "src/org/traccar/BaseProtocolDecoder.java",
+    "line": 109,
+    "deref_field": "channel",
+    "npe_class": "BaseProtocolDecoder",
+    "npe_method": "getDeviceSession",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "channel"
+}

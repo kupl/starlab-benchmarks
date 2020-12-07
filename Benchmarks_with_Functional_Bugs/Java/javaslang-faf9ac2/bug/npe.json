@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/javaslang/Tuples.java",
+    "line": 840,
+    "deref_field": "get",
+    "sink_field": "booleanValue",
+    "npe_class": "Tuples$AbstractTuple",
+    "npe_method": "decycle",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "isLocked.get()"
+}
