@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/datasketches/pig/theta/Union.java",
+    "line": 487,
+    "npe_method": "exec",
+    "deref_field": "f0",
+    "npe_class": "IntermediateFinal"
+}

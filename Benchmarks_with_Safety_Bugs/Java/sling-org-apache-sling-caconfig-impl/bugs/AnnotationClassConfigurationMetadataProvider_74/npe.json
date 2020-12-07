@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/caconfig/impl/metadata/AnnotationClassConfigurationMetadataProvider.java",
+    "line": 76,
+    "npe_method": "getConfigurationMetadata",
+    "deref_field": "mapping",
+    "npe_class": "AnnotationClassConfigurationMetadataProvider"
+}

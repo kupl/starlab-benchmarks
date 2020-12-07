@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/BeanIntrospectionData.java",
+    "line": 116,
+    "npe_method": "getWriteMethod",
+    "deref_field": "methodName",
+    "npe_class": "BeanIntrospectionData"
+}

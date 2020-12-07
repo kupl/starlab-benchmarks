@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/locale/LocaleConvertUtilsBean.java",
+    "line": 439,
+    "npe_method": "lookup",
+    "deref_field": "locale",
+    "npe_class": "LocaleConvertUtilsBean"
+}

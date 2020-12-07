@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/datasketches/pig/sampling/ReservoirSampling.java",
+    "line": 110,
+    "npe_method": "getValue",
+    "deref_field": "reservoir_",
+    "npe_class": "ReservoirSampling"
+}

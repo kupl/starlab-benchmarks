@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/horn/core/HornJob.java",
+    "line": 98,
+    "npe_method": "addLayer",
+    "deref_field": "func",
+    "npe_class": "HornJob"
+}

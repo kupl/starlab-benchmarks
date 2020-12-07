@@ -1,0 +1,10 @@
+{
+  "id": "${project.groupId}:${project.artifactId}:slingfeature:slingtest:${project.version}",
+  "vendor": "The Apache Sling Team",
+  "bundles":[
+    {
+      "id":"org.osgi:org.osgi.framework:${osgi.framework.version}",
+      "start-level":"20"
+    }
+  ]
+}

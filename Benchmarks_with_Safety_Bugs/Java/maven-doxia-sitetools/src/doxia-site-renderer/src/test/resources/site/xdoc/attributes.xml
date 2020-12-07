@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<!-- Voluntarily no XSD -->
+<document>
+  <body>
+    <section name="section">
+      <p id="ID" class="CLASS" title="TITLE" lang="LANG" style="STYLE">
+        <!-- DOXIA-227 -->
+        <img src="project.png" dummy="" width="150" height="93" style="border: 1px solid silver" alt="Project" />
+      </p>
+      <!-- DOXIA-78 -->
+      <table border="1" class="none">
+        <tr>
+          <th>Name</th>
+          <th colspan="2" align="center" width="50%">Telephone</th>
+        </tr>
+        <tr>
+          <th rowspan="2" valign="middle">Telephone</th>
+          <td align="right">555 77 854</td>
+          <td align="right">555 77 855</td>
+        </tr>
+        <tr>
+          <td valign="top">555 77 854</td>
+          <td valign="bottom">555 77 855</td>
+        </tr>
+      </table>
+      <p>
+        <!-- DOXIA-163, DOXIA 164 -->
+        <u>underline</u> <s>strike-through</s> <sub>subscript</sub> <sup>superscript</sup>
+      </p>
+      <p>
+        <!-- nested text attributes -->
+        <b><i>bold-italic</i></b> <i><b>italic-bold</b></i>
+      </p>
+      <!-- multiple style attributes -->
+      <p style="color: red; margin-left: 20px"></p>
+
+      <!-- Anchors / Links -->
+      <a name="Anchor"/>
+      <p>
+        Link to <a href="#Anchor">anchor</a>.
+        Link to anchor <a href="#Anchor">showing alternate text</a>.
+        Link to <a href="http://maven.apache.org/">Maven home page</a>.
+        Link to <a href="./cdc.html">other document</a>.
+        Link to <a href="cdc.html">other document</a>.
+        Link to <a href="cdc.pdf">other document</a>.
+        Link to <a href="./cdc.txt">other document</a>.
+        Link to <a href="/index.html">root document</a>.
+      </p>
+
+      <!-- DOXIA-446 -->
+      <source class="pretty">some source</source>
+      <source id="pretty">some source</source>
+
+    </section>
+
+    <!-- DOXIA-245 -->
+    <section name="Section without id">
+      <subsection name="Subsection without id">
+      </subsection>
+    </section>
+
+    <section name="Section with id" id="section-id">
+      <subsection name="Subsection with id" id="subsection-id">
+      </subsection>
+    </section>
+
+    <!-- DOXIA-448 -->
+    <section name="Section name" id="foo" class="bar">
+      <subsection name="Subsection name" id="subfoo" class="subbar">
+      </subsection>
+    </section>
+
+  </body>
+</document>

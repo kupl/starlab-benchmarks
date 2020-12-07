@@ -1,0 +1,7 @@
+{
+    "filepath": "doxia-site-renderer/src/main/java/org/apache/maven/doxia/siterenderer/DefaultSiteRenderer.java",
+    "line": 651,
+    "npe_method": "createSiteTemplateVelocityContext",
+    "deref_field": "getDefaultWindowTitle()",
+    "npe_class": "DefaultSiteRenderer"
+}

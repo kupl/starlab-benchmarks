@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/feature/extension/apiregions/api/ApiExport.java",
+    "line": 157,
+    "npe_method": "equals",
+    "deref_field": "toggle",
+    "npe_class": "ApiExport"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/datasketches/pig/cpc/DataToSketch.java",
+    "line": 173,
+    "npe_method": "getValue",
+    "deref_field": "accumSketch_",
+    "npe_class": "DataToSketch"
+}

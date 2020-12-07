@@ -1,0 +1,9 @@
+{
+  "id":"g1:a1:slingfeature:c1:9.9.9",
+  "bundles":[
+    {
+      "id":"mygroup:org.apache.aries.util:1.1.3",
+      "start-level":"20"
+    }
+  ]
+}

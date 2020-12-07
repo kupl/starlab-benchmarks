@@ -1,0 +1,17 @@
+{
+  "id":"org.apache.sling:slingfeature-maven-plugin-test:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"org.apache.aries:org.apache.aries.util:1.1.1"
+    }
+  ],
+  "api-regions:JSON|false": [
+    {
+      "name": "base",
+      "exports": [
+        "org.apache.aries.util",
+        "org.apache.aries.util.messages"
+      ]
+    }
+  ]
+}

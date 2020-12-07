@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/BeanComparator.java",
+    "line": 175,
+    "npe_method": "equals",
+    "deref_field": "property",
+    "npe_class": "BeanComparator"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/LazyDynaBean.java",
+    "line": 672,
+    "npe_method": "createProperty",
+    "deref_field": "type",
+    "npe_class": "LazyDynaBean"
+}

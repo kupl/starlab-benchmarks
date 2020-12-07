@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/models/impl/AdapterImplementations.java",
+    "line": 333,
+    "npe_method": "getClassFromResourceTypeMap",
+    "deref_field": "resourceType",
+    "npe_class": "AdapterImplementations"
+}

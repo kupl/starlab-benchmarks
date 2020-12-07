@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/converters/ArrayConverter.java",
+    "line": 389,
+    "npe_method": "getDefault",
+    "deref_field": "defaultValue",
+    "npe_class": "ArrayConverter"
+}

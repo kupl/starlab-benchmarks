@@ -1,0 +1,17 @@
+{
+  "id":"org.apache.sling:slingfeature-maven-plugin-test:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"org.apache.servicemix.bundles:org.apache.servicemix.bundles.xmlbeans:3.1.0_1",
+      "source-ids": "org.apache.xmlbeans:xmlbeans:jar:sources:3.1.0"
+    }
+  ],
+  "api-regions:JSON|false": [
+    {
+      "name": "base",
+      "exports": [
+        "org.apache.xmlbeans.impl.xb.xmlschema"
+      ]
+    }
+  ]
+}

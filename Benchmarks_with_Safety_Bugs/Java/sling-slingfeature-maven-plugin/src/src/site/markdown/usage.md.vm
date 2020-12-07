@@ -1,0 +1,12 @@
+#set($h1 = '#')
+#set($h2 = '##')
+#set($h3 = '###')
+#set($h4 = '####')
+#set($sp = '${')
+#set($sp2 = '${{')
+#set($sp3 = '${{{')
+#set($ep = '}')
+
+$h2 Usage
+
+Additional Documentation can be found in the [README](https://github.com/apache/sling-slingfeature-maven-plugin/blob/master/README.md) page.

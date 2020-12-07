@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/plugins/install/InstallFileMojo.java",
+    "line": 266,
+    "npe_method": "execute",
+    "deref_field": "temporaryPom",
+    "npe_class": "InstallFileMojo"
+}

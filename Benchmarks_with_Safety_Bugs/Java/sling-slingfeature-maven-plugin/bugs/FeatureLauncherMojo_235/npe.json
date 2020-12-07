@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/feature/maven/mojos/FeatureLauncherMojo.java",
+    "line": 237,
+    "npe_method": "handleStringList",
+    "deref_field": "list",
+    "npe_class": "FeatureLauncherMojo"
+}

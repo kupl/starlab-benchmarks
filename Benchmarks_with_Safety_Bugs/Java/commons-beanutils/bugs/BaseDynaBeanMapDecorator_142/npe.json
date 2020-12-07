@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/BaseDynaBeanMapDecorator.java",
+    "line": 147,
+    "npe_method": "containsValue",
+    "deref_field": "value",
+    "npe_class": "BaseDynaBeanMapDecorator"
+}

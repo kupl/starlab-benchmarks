@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/BasicDynaBean.java",
+    "line": 339,
+    "npe_method": "set",
+    "deref_field": "prop",
+    "npe_class": "BasicDynaBean"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/models/impl/ModelAdapterFactory.java",
+    "line": 1168,
+    "npe_method": "deactivate",
+    "deref_field": "jobRegistration",
+    "npe_class": "ModelAdapterFactory"
+}

@@ -1,0 +1,33 @@
+{
+  "id":"org.apache.sling:slingfeature-maven-plugin-test:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"org.apache.felix:org.apache.felix.inventory:1.0.6",
+      "start-level":"5"
+    },
+    {
+      "id":"org.apache.felix:org.apache.felix.metatype:1.2.2",
+      "start-level":"4"
+    },
+    {
+      "id":"org.apache.felix:org.apache.felix.scr:2.1.14",
+      "start-level":"4"
+    }
+  ],
+  "api-regions:JSON|false": [
+    {
+      "name": "base",
+      "exports": [
+        "org.apache.felix.inventory",
+        "org.apache.felix.metatype"
+      ]
+    },
+    {
+      "name": "extended",
+      "exports": [
+        "org.apache.felix.scr.component",
+        "org.apache.felix.scr.info"
+      ]
+    }
+  ]
+}

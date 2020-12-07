@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/BeanMap.java",
+    "line": 546,
+    "npe_method": "initialise",
+    "deref_field": "propertyDescriptor",
+    "npe_class": "BeanMap"
+}

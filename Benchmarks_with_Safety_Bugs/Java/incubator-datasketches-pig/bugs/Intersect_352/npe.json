@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/datasketches/pig/theta/Intersect.java",
+    "line": 357,
+    "npe_method": "exec",
+    "deref_field": "outerBag",
+    "npe_class": "IntermediateFinal"
+}

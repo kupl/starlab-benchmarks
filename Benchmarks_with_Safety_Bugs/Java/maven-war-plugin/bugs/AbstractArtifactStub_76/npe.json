@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/maven/plugins/war/stub/AbstractArtifactStub.java",
+    "line": 78,
+    "npe_method": "compareTo",
+    "deref_field": "getGroupId()",
+    "npe_class": "AbstractArtifactStub"
+}

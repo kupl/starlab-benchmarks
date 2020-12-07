@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/LazyDynaMap.java",
+    "line": 483,
+    "npe_method": "isDynaProperty",
+    "deref_field": "name",
+    "npe_class": "LazyDynaMap"
+}

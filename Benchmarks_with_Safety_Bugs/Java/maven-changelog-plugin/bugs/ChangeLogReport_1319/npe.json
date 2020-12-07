@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/plugin/changelog/ChangeLogReport.java",
+    "line": 1319,
+    "npe_method": "countFilesChanged",
+    "deref_field": "list",
+    "npe_class": "ChangeLogReport"
+}

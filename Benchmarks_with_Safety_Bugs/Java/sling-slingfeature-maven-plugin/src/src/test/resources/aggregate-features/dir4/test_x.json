@@ -1,0 +1,20 @@
+{
+  "id":"test:test:9.9.9:x:slingfeature",
+  "configurations": {
+    "t.pid": {
+      "t": "x"
+    },
+    "v.pid": {
+      "v": "x"
+    },
+    "x.pid": {
+      "x": "x"
+    },    
+    "y.pid": {
+      "y": "x"
+    },
+    "z.pid": {
+      "z": "x"
+    }
+  }
+}

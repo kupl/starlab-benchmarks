@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/superimposing/impl/SuperimposingManagerImpl.java",
+    "line": 334,
+    "npe_method": "deactivate",
+    "deref_field": "resolver",
+    "npe_class": "SuperimposingManagerImpl"
+}

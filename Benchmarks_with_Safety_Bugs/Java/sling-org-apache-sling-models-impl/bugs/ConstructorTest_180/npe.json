@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/sling/models/impl/ConstructorTest.java",
+    "line": 178,
+    "npe_method": "testMultiThreadedConstructorInjection",
+    "deref_field": "res",
+    "npe_class": "ConstructorTest"
+}

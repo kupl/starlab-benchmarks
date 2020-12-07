@@ -1,0 +1,7 @@
+{
+    "filepath": "maven-release-plugin/src/main/java/org/apache/maven/plugins/release/AbstractScmReleaseMojo.java",
+    "line": 130,
+    "npe_method": "execute",
+    "deref_field": "providerImplementations",
+    "npe_class": "AbstractScmReleaseMojo"
+}

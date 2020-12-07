@@ -1,0 +1,7 @@
+{
+    "filepath": "maven-plugin-tools-generators/src/main/java/org/apache/maven/tools/plugin/generator/PluginDescriptorGenerator.java",
+    "line": 132,
+    "npe_method": "writeDescriptor",
+    "deref_field": "getMojos()",
+    "npe_class": "PluginDescriptorGenerator"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/cli/shell/BourneShell.java",
+    "line": 106,
+    "npe_method": "getExecutionPreamble",
+    "deref_field": "getWorkingDirectoryAsString()",
+    "npe_class": "BourneShell"
+}

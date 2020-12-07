@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/resourcemerger/impl/picker/ResourceTypeHierarchyBasedResourcePicker.java",
+    "line": 75,
+    "npe_method": "pickResources",
+    "deref_field": "info.resource",
+    "npe_class": "ResourceTypeHierarchyBasedResourcePicker"
+}

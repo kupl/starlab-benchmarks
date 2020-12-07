@@ -1,0 +1,21 @@
+{
+  "id":"org.apache.sling:slingfeature-maven-plugin-test:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"org.apache.jackrabbit:oak-lucene:1.10.2",
+      "start-level":"4"
+    },
+    {
+      "id":"org.apache.jackrabbit:oak-solr-osgi:1.10.2",
+      "start-level":"5"
+    }
+  ],
+  "api-regions:JSON|false": [
+    {
+      "name": "base",
+      "exports": [
+        "org.apache.jackrabbit.oak.plugins.index.lucene"
+      ]
+    }
+  ]
+}

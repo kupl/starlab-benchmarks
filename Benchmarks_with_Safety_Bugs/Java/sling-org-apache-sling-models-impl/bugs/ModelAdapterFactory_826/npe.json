@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/models/impl/ModelAdapterFactory.java",
+    "line": 827,
+    "npe_method": "injectDefaultValue",
+    "deref_field": "processor",
+    "npe_class": "ModelAdapterFactory"
+}

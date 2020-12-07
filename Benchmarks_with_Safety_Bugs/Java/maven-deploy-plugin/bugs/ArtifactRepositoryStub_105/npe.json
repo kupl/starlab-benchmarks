@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/maven/plugins/deploy/stubs/ArtifactRepositoryStub.java",
+    "line": 106,
+    "npe_method": "getLayout",
+    "deref_field": "layout",
+    "npe_class": "ArtifactRepositoryStub"
+}

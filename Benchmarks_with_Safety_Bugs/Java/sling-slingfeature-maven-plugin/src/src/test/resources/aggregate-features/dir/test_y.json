@@ -1,0 +1,9 @@
+{
+  "id":"test:test:9.9.9:y:slingfeature",
+  "bundles":[
+    {
+      "id":"org.apache.aries:org.apache.aries.util:1.1.3",
+      "start-level":"20"
+    }
+  ]
+}

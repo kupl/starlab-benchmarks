@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/resourcemerger/impl/MergingResourceProvider.java",
+    "line": 159,
+    "npe_method": "isHidden",
+    "deref_field": "result",
+    "npe_class": "ParentHidingHandler"
+}

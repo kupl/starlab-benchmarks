@@ -1,0 +1,7 @@
+{
+  "id":"test:test:1.0.0:a:slingosgifeature",
+  "bundles":[
+    "org.apache.sling:mybundle:1",
+    "org.apache.sling:myotherbundle:3"
+  ]
+}

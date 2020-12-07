@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/models/impl/ModelAdapterFactory.java",
+    "line": 726,
+    "npe_method": "createObject",
+    "deref_field": "t",
+    "npe_class": "ModelAdapterFactory"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/models/impl/ModelAdapterFactory.java",
+    "line": 1159,
+    "npe_method": "deactivate",
+    "deref_field": "this.requestDisposalCallbacks",
+    "npe_class": "ModelAdapterFactory"
+}

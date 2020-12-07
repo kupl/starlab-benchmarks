@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/datasketches/pig/quantiles/GetPmfFromStringsSketch.java",
+    "line": 62,
+    "npe_method": "exec",
+    "deref_field": "pmf",
+    "npe_class": "GetPmfFromStringsSketch"
+}

@@ -1,0 +1,23 @@
+{
+  "id":"org.apache.sling:slingfeature-maven-plugin-test:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"org.osgi:org.osgi.framework:1.9.0",
+      "start-level":"20"
+    }
+  ],
+  "api-regions:JSON|false": [
+    {
+      "name": "global",
+      "exports": [
+        "org.osgi.util.function.doesnotexist"
+      ]
+    },
+    {
+      "name": "asf",
+      "exports": [
+        "org.osgi.util.function.doesnotexist"
+      ]
+    }
+  ]
+}

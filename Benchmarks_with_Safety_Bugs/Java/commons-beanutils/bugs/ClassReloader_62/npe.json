@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/beanutils2/converters/ClassReloader.java",
+    "line": 69,
+    "npe_method": "reload",
+    "deref_field": "classStream",
+    "npe_class": "ClassReloader"
+}

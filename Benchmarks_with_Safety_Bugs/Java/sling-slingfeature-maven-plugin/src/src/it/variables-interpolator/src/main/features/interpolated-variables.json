@@ -1,0 +1,21 @@
+{
+  "id": "${project.groupId}:${project.artifactId}:slingfeature:slingtest:${project.version}",
+  "title": "${project.name}",
+  "description": "${project.description}",
+  "vendor": "${project.organization.name}",
+  "variables": {
+    "interpolated_variable": "${interpolated_variable}",
+    "osgi_version": "${project.osgiVersion}"
+  },
+  "framework-properties": {
+    "sling.framework.install.incremental": "${sling.framework.install.incremental}",
+    "sling.framework.install.startlevel": "${sling.framework.install.startlevel}",
+    "sling.ignoreSystemProperties": "${sling.ignoreSystemProperties}"
+  },
+  "bundles":[
+    {
+      "id":"org.osgi:org.osgi.framework:${osgi.framework.version}",
+      "start-level":"20"
+    }
+  ]
+}

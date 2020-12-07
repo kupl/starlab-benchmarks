@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/jcr/contentparser/impl/ParserHelper.java",
+    "line": 131,
+    "npe_method": "convertSingleTypeArray",
+    "deref_field": "itemType",
+    "npe_class": "ParserHelper"
+}

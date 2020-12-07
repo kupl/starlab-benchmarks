@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/converters/AbstractConverter.java",
+    "line": 370,
+    "npe_method": "setDefaultValue",
+    "deref_field": "defaultValue",
+    "npe_class": "AbstractConverter"
+}

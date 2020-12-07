@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/sling/oak/restrictions/impl/ResourceTypePatternTest.java",
+    "line": 190,
+    "npe_method": "setupTreeMock",
+    "deref_field": "parentTree",
+    "npe_class": "ResourceTypePatternTest"
+}

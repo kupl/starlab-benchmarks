@@ -1,0 +1,74 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+import java.io.*;
+import java.util.*;
+import org.codehaus.plexus.util.*;
+
+    boolean check() {
+        // Check folder and file existence
+
+        String group = "org.apache.sling";
+        String groupPath = group.replaceAll("\\.", "/");
+        String artifact = "slingfeature-maven-plugin-test-include-artifact-simple";
+        String version = "1.0.0-SNAPSHOT";
+        File localMavenRepositoryInstallationFolder = new File(
+            localRepositoryPath, groupPath + "/" + artifact + "/" + version
+        );
+        if(!localMavenRepositoryInstallationFolder.exists()) {
+            System.out.println("Installation Folder does not exist: " + localMavenRepositoryInstallationFolder);
+            return false;
+        }
+
+        String classifier = "test";
+        String extension = "slingosgifeature";
+        File fmDescriptorFile = new File(
+            localMavenRepositoryInstallationFolder, artifact + "-" + version + "-" + classifier + "." + extension
+        );
+        if(!fmDescriptorFile.exists()) {
+            System.out.println("FM Descriptor file does not exist: " + fmDescriptorFile);
+            return false;
+        }
+
+        // Check FM Descriptor Content
+        String fmContent = FileUtils.fileRead(fmDescriptorFile);
+        System.out.println("FM Descriptor File Content: " + fmContent);
+        String dependentGroup = "org.codehaus.janino";
+        String dependentArtifact = "janino";
+        String dependentVersion = "2.7.5";
+        String[] values = {
+            "\"id\":\"" + group + ":" + artifact + ":slingosgifeature:" + classifier + ":" + version + "\"",
+            "\"bundles\":[",
+            group + ":" + artifact + ":" + version + "\"",
+            dependentGroup + ":" + dependentArtifact + ":" + dependentVersion + "\"",
+        };
+        for (String value : values) {
+            if (fmContent.indexOf(value) < 0) {
+                System.out.println("Did not find line: " + value + " -> FAILED!");
+                return false;
+            }
+        }
+
+        return true;
+    }
+    try {
+        return check();
+    }
+    catch(Throwable t) {
+        t.printStackTrace();
+        return false;
+    }
+    return true;

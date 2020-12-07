@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/plugins/invoker/AbstractInvokerMojo.java",
+    "line": 2659,
+    "npe_method": "getInterpolationValueSource",
+    "deref_field": "getLocalRepository()",
+    "npe_class": "AbstractInvokerMojo"
+}

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~  Licensed to the Apache Software Foundation (ASF) under one
+  ~  or more contributor license agreements.  See the NOTICE file
+  ~  distributed with this work for additional information
+  ~  regarding copyright ownership.  The ASF licenses this file
+  ~  to you under the Apache License, Version 2.0 (the
+  ~  "License"); you may not use this file except in compliance
+  ~  with the License.  You may obtain a copy of the License at
+  ~
+  ~  http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing,
+  ~  software distributed under the License is distributed on an
+  ~  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~  KIND, either express or implied.  See the License for the
+  ~  specific language governing permissions and limitations
+  ~  under the License.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache</groupId>
+    <artifactId>apache</artifactId>
+    <version>18</version>
+  </parent>
+
+  <groupId>org.apache.geronimo</groupId>
+  <artifactId>geronimo-jcache-simple</artifactId>
+  <version>1.0.5-SNAPSHOT</version>
+  <name>Geronimo :: Simple JCache Implementation</name>
+
+  <properties>
+
+    <implementation-groupId>${project.groupId}</implementation-groupId>
+    <implementation-artifactId>${project.artifactId}</implementation-artifactId>
+    <implementation-version>${project.version}</implementation-version>
+
+    <CacheManagerImpl>org.apache.geronimo.jcache.simple.SimpleManager</CacheManagerImpl>
+    <CacheImpl>org.apache.geronimo.jcache.simple.SimpleCache</CacheImpl>
+    <CacheEntryImpl>org.apache.geronimo.jcache.simple.SimpleEntry</CacheEntryImpl>
+    <CacheInvocationContextImpl>org.apache.geronimo.jcache.simple.cdi.CacheKeyInvocationContextImpl
+    </CacheInvocationContextImpl>
+
+    <javax.management.builder.initial>org.apache.geronimo.jcache.simple.ConfigurableMBeanServerIdBuilder
+    </javax.management.builder.initial>
+    <org.jsr107.tck.management.agentId>MBeanServerGeronimo</org.jsr107.tck.management.agentId>
+
+    <domain-lib-dir>${project.build.directory}/domainlib</domain-lib-dir>
+    <domain-jar>domain.jar</domain-jar>
+
+    <jcache.version>1.0.0</jcache.version>
+    <tck.version>1.1.0</tck.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>osgi.core</artifactId>
+      <version>7.0.0</version>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>osgi.annotation</artifactId>
+      <version>7.0.0</version>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-jcache_1.0_spec</artifactId>
+      <version>1.0-alpha-1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-jcdi_2.0_spec</artifactId>
+      <version>1.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-atinject_1.0_spec</artifactId>
+      <version>1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-interceptor_1.2_spec</artifactId>
+      <version>1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-annotation_1.3_spec</artifactId>
+      <version>1.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <version>1.3</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.cache</groupId>
+      <artifactId>test-domain</artifactId>
+      <version>${jcache.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.cache</groupId>
+      <artifactId>app-domain</artifactId>
+      <version>${jcache.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.cache</groupId>
+      <artifactId>cache-tests</artifactId>
+      <version>${tck.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.cache</groupId>
+      <artifactId>cache-tests</artifactId>
+      <version>${tck.version}</version>
+      <classifier>tests</classifier>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.openwebbeans</groupId>
+      <artifactId>openwebbeans-impl</artifactId>
+      <version>2.0.5</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <testResources>
+      <testResource>
+        <directory>src/test/resources</directory>
+        <filtering>true</filtering>
+      </testResource>
+    </testResources>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
+        <executions>
+          <execution> <!-- standalone + cdi -->
+            <id>default-jar</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <archive>
+                <manifestFile>${project.build.directory}/manifest/global/MANIFEST.MF</manifestFile>
+              </archive>
+            </configuration>
+          </execution>
+          <execution> <!-- cdi only -->
+            <id>cdi-jar</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <classifier>cdi</classifier>
+              <includes>
+                <include>org/apache/geronimo/jcache/simple/cdi/*</include>
+                <include>META-INF/services/javax.enterprise.inject.spi.Extension</include>
+              </includes>
+            </configuration>
+          </execution>
+          <execution> <!-- standalone only -->
+            <id>no-cdi-jar</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <classifier>standalone</classifier>
+              <excludes>
+                <exclude>org/apache/geronimo/jcache/simple/cdi/</exclude>
+                <exclude>META-INF/services/javax.enterprise.inject.spi.Extension</exclude>
+              </excludes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-cache-tests</id>
+            <phase>generate-test-resources</phase>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.testOutputDirectory}</outputDirectory>
+              <includeArtifactIds>cache-tests</includeArtifactIds>
+              <includeScope>test</includeScope>
+              <excludes>**/unwrap.properties</excludes>
+            </configuration>
+          </execution>
+          <execution>
+            <id>copy-domain</id>
+            <phase>generate-test-resources</phase>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>javax.cache</groupId>
+                  <artifactId>app-domain</artifactId>
+                  <version>${jcache.version}</version>
+                  <outputDirectory>${domain-lib-dir}</outputDirectory>
+                  <destFileName>${domain-jar}</destFileName>
+                </artifactItem>
+              </artifactItems>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.20.1</version>
+        <configuration>
+          <systemPropertyVariables>
+            <java.net.preferIPv4Stack>true</java.net.preferIPv4Stack>
+            <domainJar>${domain-lib-dir}/${domain-jar}</domainJar>
+            <javax.management.builder.initial>${javax.management.builder.initial}</javax.management.builder.initial>
+            <org.jsr107.tck.management.agentId>${org.jsr107.tck.management.agentId}</org.jsr107.tck.management.agentId>
+            <javax.cache.CacheManager>${CacheManagerImpl}</javax.cache.CacheManager>
+            <javax.cache.Cache>${CacheImpl}</javax.cache.Cache>
+            <javax.cache.Cache.Entry>${CacheEntryImpl}</javax.cache.Cache.Entry>
+            <javax.cache.annotation.CacheInvocationContext>${CacheInvocationContextImpl}
+            </javax.cache.annotation.CacheInvocationContext>
+          </systemPropertyVariables>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>4.2.1</version>
+        <executions>
+          <execution>
+            <id>global-manifest</id>
+            <goals>
+              <goal>manifest</goal>
+            </goals>
+            <configuration>
+              <manifestLocation>${project.build.directory}/manifest/global</manifestLocation>
+              <instructions>
+                <Bundle-Activator>org.apache.geronimo.jcache.simple.osgi.JCacheActivator</Bundle-Activator>
+              </instructions>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/geronimo-jcache-simple.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/geronimo-jcache-simple.git</developerConnection>
+    <url>https://gitbox.apache.org/repos/asf/geronimo-jcache-simple.git</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <organization>
+    <name>The Apache Software Foundation</name>
+    <url>http://www.apache.org/</url>
+  </organization>
+
+  <inceptionYear>2017</inceptionYear>
+
+  <developers>
+    <developer>
+      <name>Apache Geronimo Community</name>
+      <url>https://geronimo.apache.org</url>
+      <organization>Apache</organization>
+    </developer>
+  </developers>
+
+  <issueManagement>
+    <system>ASF JIRA</system>
+    <url>https://issues.apache.org/jira/browse/GERONIMO</url>
+  </issueManagement>
+</project>

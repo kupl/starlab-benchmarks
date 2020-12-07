@@ -1,0 +1,5 @@
+{
+  "id":"org.apache.sling:slingfeature-maven-plugin-test:1.0.0-SNAPSHOT",
+  "model-version": 5,
+  "bundles": [ false ]
+}

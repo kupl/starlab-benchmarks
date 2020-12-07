@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/maven/plugins/war/stub/JarArtifactStub.java",
+    "line": 92,
+    "npe_method": "getVersion",
+    "deref_field": "version",
+    "npe_class": "JarArtifactStub"
+}

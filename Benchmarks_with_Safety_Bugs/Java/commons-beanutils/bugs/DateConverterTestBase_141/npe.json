@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/beanutils2/converters/DateConverterTestBase.java",
+    "line": 141,
+    "npe_method": "stringConversion",
+    "deref_field": "value",
+    "npe_class": "DateConverterTestBase"
+}

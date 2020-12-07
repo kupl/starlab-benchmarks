@@ -1,0 +1,11 @@
+{
+  "id":"test:test:9.9.9:u:slingfeature",
+  "configurations": {
+    "u.pid": {
+      "u": "u"
+    },
+    "y.pid": {
+      "y": "u"
+    }
+  }
+}

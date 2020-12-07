@@ -1,0 +1,7 @@
+{
+    "filepath": "mavibot/src/main/java/org/apache/directory/mavibot/btree/comparator/LongArrayComparator.java",
+    "line": 67,
+    "npe_method": "compare",
+    "deref_field": "longArray2",
+    "npe_class": "LongArrayComparator"
+}

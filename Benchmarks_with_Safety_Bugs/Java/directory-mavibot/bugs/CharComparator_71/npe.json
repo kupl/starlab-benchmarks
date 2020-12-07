@@ -1,0 +1,7 @@
+{
+    "filepath": "mavibot/src/main/java/org/apache/directory/mavibot/btree/comparator/CharComparator.java",
+    "line": 67,
+    "npe_method": "compare",
+    "deref_field": "char2",
+    "npe_class": "CharComparator"
+}

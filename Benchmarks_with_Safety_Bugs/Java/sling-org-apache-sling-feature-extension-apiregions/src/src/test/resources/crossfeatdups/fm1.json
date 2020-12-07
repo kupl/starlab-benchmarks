@@ -1,0 +1,35 @@
+{
+  "id":"g:fm1:1.2.3",
+  "bundles":[
+    {
+      "id":"g:exp1:1",
+      "feature-origins":"g:f1:1"
+    },
+    {
+      "id":"g:exp2:1",
+      "feature-origins":"g:f2:1,g:f3:1"
+    },
+    "g:noexp:1",
+    {
+      "id": "g:extra:1",
+      "feature-origins":"g:f3:1"
+    }
+  ],
+  "api-regions:JSON|false":[
+    {
+      "name":"foo",
+      "exports":[
+        "a.b.c",
+        "d.e.f"
+      ],
+      "feature-origins":[
+        "g:f1:1","g:f2:1"
+      ]
+    },{
+      "name":"global",
+      "exports":[
+        "zzz.zzz"
+      ]
+    }
+  ]
+}

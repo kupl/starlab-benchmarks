@@ -1,0 +1,8 @@
+{
+  "id":"test:test:9.9.9:w:slingfeature",
+  "configurations": {
+    "some.pid": {
+      "x": "z"
+    }
+  }
+}

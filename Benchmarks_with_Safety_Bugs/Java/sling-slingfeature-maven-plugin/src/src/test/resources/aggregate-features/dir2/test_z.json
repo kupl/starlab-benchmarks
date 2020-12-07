@@ -1,0 +1,12 @@
+{
+  "id":"test:test:1.0.1:z:slingfeature",
+  "configurations": {
+    "some.pid": {
+      "x": "y"
+    },
+    "another.pid": {
+      "foo": 123,
+      "bar": true
+    }
+  }
+}

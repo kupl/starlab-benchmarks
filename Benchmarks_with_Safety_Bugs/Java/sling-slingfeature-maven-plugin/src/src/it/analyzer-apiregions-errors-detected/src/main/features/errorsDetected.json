@@ -1,0 +1,23 @@
+{
+  "id":"org.apache.sling:slingfeature-maven-plugin-test:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"org.apache.aries.versioning:org.apache.aries.versioning.checker:0.3.1",
+      "start-level":"20"
+    }
+  ],
+  "api-regions:JSON|false": [
+    {
+      "name": "my-global",
+      "exports": [
+        "org.apache.aries.versioning.check"
+      ]
+    },
+    {
+      "name": "my-deprecated",
+      "exports": [
+        "org.objectweb.asm"
+      ]
+    }
+  ]
+}

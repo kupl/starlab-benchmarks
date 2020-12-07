@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/LazyDynaList.java",
+    "line": 662,
+    "npe_method": "transform",
+    "deref_field": "element",
+    "npe_class": "LazyDynaList"
+}

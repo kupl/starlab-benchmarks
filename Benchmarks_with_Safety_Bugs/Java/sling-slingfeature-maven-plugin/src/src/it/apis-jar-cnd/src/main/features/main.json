@@ -1,0 +1,8 @@
+{
+  "id":"org.apache.sling:slingfeature-maven-plugin-test:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"org.apache.sling:org.apache.sling.i18n:2.5.14"
+    }
+  ]
+}

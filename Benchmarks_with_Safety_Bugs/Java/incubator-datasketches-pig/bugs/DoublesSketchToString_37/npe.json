@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/datasketches/pig/quantiles/DoublesSketchToString.java",
+    "line": 39,
+    "npe_method": "exec",
+    "deref_field": "input",
+    "npe_class": "DoublesSketchToString"
+}

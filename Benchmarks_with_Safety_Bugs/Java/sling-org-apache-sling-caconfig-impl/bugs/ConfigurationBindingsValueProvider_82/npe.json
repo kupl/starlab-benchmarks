@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/caconfig/impl/ConfigurationBindingsValueProvider.java",
+    "line": 84,
+    "npe_method": "addBindings",
+    "deref_field": "resource",
+    "npe_class": "ConfigurationBindingsValueProvider"
+}
