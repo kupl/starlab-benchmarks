@@ -1,0 +1,10 @@
+{
+    "filepath": "src/main/java/com/fasterxml/jackson/databind/AnnotationIntrospector.java",
+    "line": 1336,
+    "deref_field": "annotated",
+    "sink_field": "getAnnotation",
+    "npe_class": "AnnotationIntrospector",
+    "npe_method": "_findAnnotation",
+    "jvmti_identify_succeed": true,
+    "nullpointer": "annotated"
+}
