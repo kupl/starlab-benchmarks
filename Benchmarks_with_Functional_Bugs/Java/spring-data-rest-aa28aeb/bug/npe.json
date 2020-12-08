@@ -1,0 +1,9 @@
+{
+    "filepath": "spring-data-rest-webmvc/src/main/java/org/springframework/data/rest/webmvc/RepositoryEntityController.java",
+    "line": 363,
+    "deref_field": "domainObj",
+    "sink_field": null,
+    "npe_class": "RepositoryEntityController",
+    "npe_method": "setApplicationEventPublisher",
+    "nullpointer": "domainObj"
+}

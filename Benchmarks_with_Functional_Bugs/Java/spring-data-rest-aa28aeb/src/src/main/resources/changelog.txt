@@ -1,0 +1,211 @@
+Spring Data REST Changelog
+==========================
+
+Changes in version 2.2.0.M1 (2014-07-10)
+----------------------------------------
+* DATAREST-352 - Remove links to forum.spring.io.
+* DATAREST-351 - Upgrade to Evo Inflector 1.2 to stay Java 6 compatible.
+* DATAREST-350 - Release 2.2 M1.
+* DATAREST-348 - Add support for application/json-patch+json and application/merge-patch+json.
+* DATAREST-346 - ReflectionRepositoryInvoker doesn't apply conversion on invocation of an overridden delete(…) method.
+* DATAREST-345 - Nulling out fields doesn't work on PATCH requests.
+* DATAREST-343 - Fix Jackson dependency setup.
+* DATAREST-341 - Upgrade to Spring HATEOAS 0.14.0.RELEASE.
+* DATAREST-340 - Non-persistent properties not rendered.
+* DATAREST-336 - Default mapping setup to render ISO8601 dates by default.
+* DATAREST-335 - Overriding repositories delete method results in "argument type mismatch" exception.
+* DATAREST-333 - Handle OPTIONS request for CORS.
+* DATAREST-331 - Improvements in ResourceProcessorHandlerMethodReturnValueHandler.
+* DATAREST-330 - Resources should support HEAD method.
+* DATAREST-329 - RepositoryRestMvcConfiguration causes eager initialization of beans.
+* DATAREST-328 - Serialization errors if type contains only renamed properties.
+* DATAREST-327 - Collection references are removed on PUT and PATCH if defaulted to empty collections.
+* DATAREST-325 - ReflectionRepositoryInvoker fails to invoke non-public methods.
+* DATAREST-324 - Fix typos.
+* DATAREST-323 - Clean up README and docbook text.
+* DATAREST-320 - Fields with @JsonProperty are ignored on serialization.
+* DATAREST-318 - BaseUri does not strip template variables correctly if invoked with NativeWebRequest.
+* DATAREST-317 - Add support for excerpt projections.
+* DATAREST-316 - UriStringDeserializer should guard against URI templates submitted.
+* DATAREST-311 - executeSearchCompact - Mismatch argument name and path variable name.
+* DATAREST-230 - Add the ability to expose an ALPS resource for service documentation.
+* DATAREST-212 - Update documentation to reflect new way of parsing sorting options.
+* DATAREST-182 - PlatformTransactionManager can't be autowired if more than one available in ApplicationContext.
+
+
+Changes in version 2.1.1.RELEASE (2014-06-30)
+---------------------------------------------
+* DATAREST-341 - Upgrade to Spring HATEOAS 0.14.0.RELEASE.
+* DATAREST-340 - Non-persistent properties not rendered.
+* DATAREST-337 - Release 2.1.1.
+* DATAREST-335 - Overriding repositories delete method results in "argument type mismatch" exception.
+* DATAREST-331 - Improvements in ResourceProcessorHandlerMethodReturnValueHandler.
+* DATAREST-330 - Resources should support HEAD method.
+* DATAREST-329 - RepositoryRestMvcConfiguration causes eager initialization of beans.
+* DATAREST-328 - Serialization errors if type contains only renamed properties.
+* DATAREST-327 - Collection references are removed on PUT and PATCH if defaulted to empty collections.
+* DATAREST-325 - ReflectionRepositoryInvoker fails to invoke non-public methods.
+* DATAREST-320 - Fields with @JsonProperty are ignored on serialization.
+* DATAREST-318 - BaseUri does not strip template variables correctly if invoked with NativeWebRequest.
+* DATAREST-316 - UriStringDeserializer should guard against URI templates submitted.
+* DATAREST-311 - executeSearchCompact - Mismatch argument name and path variable name.
+* DATAREST-182 - PlatformTransactionManager can't be autowired if more than one available in ApplicationContext.
+
+
+Changes in version 2.0.3.RELEASE (2014-06-18)
+---------------------------------------------
+* DATAREST-322 - Release 2.0.3.
+* DATAREST-318 - BaseUri does not strip template variables correctly if invoked with NativeWebRequest.
+* DATAREST-316 - UriStringDeserializer should guard against URI templates submitted.
+* DATAREST-311 - executeSearchCompact - Mismatch argument name and path variable name.
+* DATAREST-305 - Enable Java 8 build in maven configuration.
+* DATAREST-301 - Illegal character '{' in URL when using projection and PUT request.
+* DATAREST-300 - Request processing shouldn't fail for unexpanded URI templates.
+* DATAREST-298 - "rel" attribute of @RestResource should be optional.
+* DATAREST-292 - Reconfiguring baseUri isn't enough to change path to resolve URI links.
+* DATAREST-276 - 500 returned if URL ends with /.
+
+
+Changes in version 2.1.0.RELEASE (2014-05-20)
+---------------------------------------------
+* DATAREST-307 - Root mapping not discovered on Tomcat.
+* DATAREST-306 - Release 2.1 GA.
+* DATAREST-305 - Enable Java 8 build in maven configuration.
+* DATAREST-301 - Illegal character '{' in URL when using projection and PUT request.
+* DATAREST-300 - Request processing shouldn't fail for unexpanded URI templates.
+
+
+Changes in version 2.1.0.RC1 (2014-05-02)
+-----------------------------------------
+* DATAREST-298 - "rel" attribute of @RestResource should be optional.
+* DATAREST-297 - Release 2.1 RC1.
+* DATAREST-296 - Absolute base URI not applied correctly.
+* DATAREST-294 - Improve media type defaulting.
+* DATAREST-292 - Reconfiguring baseUri isn't enough to change path to resolve URI links.
+* DATAREST-288 - RepositorySchemaController must not depend on javax.validation.
+* DATAREST-276 - 500 returned if URL ends with /.
+
+
+Changes in version 2.0.2.RELEASE (2014-04-15)
+---------------------------------------------
+** Bug
+    * [DATAREST-288] - RepositorySchemaController must not depend on javax.validation
+
+** Task
+    * [DATAREST-291] - Release 2.0.2
+
+Changes in version 2.1.0.M1 (2014-03-31)
+----------------------------------------
+** Bug
+    * [DATAREST-150] - PUT vs PATCH with JPA
+    * [DATAREST-247] - NPE when calling count Queries in SD MongoDB Repositories
+    * [DATAREST-253] - AssociationOmittingSerializerModifier suffers from potential NullPointerException
+    * [DATAREST-254] - org.springframework.data.rest.webmvc.json.PersistentEntityJackson2Module does not properly handle JPA @Transient annotation during serialization yeilding a NPE
+    * [DATAREST-261] - RepositoryRelProvider is not registered
+    * [DATAREST-265] - POST/Create with Non-CRUD Repository doesn't save (only checks exists())
+    * [DATAREST-267] - (Potentially) unwanted behaviour for self hrefs with projections
+    * [DATAREST-268] - Exception when putting element with return type
+    * [DATAREST-271] - PaginationCustomizations are not applied
+
+** Improvement
+    * [DATAREST-155] - Allow overriding which field gets exposed in the URI
+    * [DATAREST-262] - Support nested association creation for updating operations
+    * [DATAREST-277] - Adapt changes in BeanWrapper API
+    * [DATAREST-278] - Add converters to bind new geo-types from request parameters
+    * [DATAREST-279] - Add marshalling support for newly introduced geo types
+    * [DATAREST-280] - Let configuration lookup MappingContexts less aggressively
+    * [DATAREST-281] - Upgrade to Spring Data Gemfire 1.4.x branch
+
+** New Feature
+    * [DATAREST-221] - Support use case-driven inlining of managed resources
+
+** Task
+    * [DATAREST-257] - Release 2.1 M1
+
+Changes in version 2.0.1.RELEASE (2014-03-13)
+---------------------------------------------
+** Bug
+    * [DATAREST-150] - PUT vs PATCH with JPA
+    * [DATAREST-247] - NPE when calling count Queries in SD MongoDB Repositories
+    * [DATAREST-253] - AssociationOmittingSerializerModifier suffers from potential NullPointerException
+    * [DATAREST-254] - org.springframework.data.rest.webmvc.json.PersistentEntityJackson2Module does not properly handle JPA @Transient annotation during serialization yeilding a NPE
+    * [DATAREST-261] - RepositoryRelProvider is not registered
+    * [DATAREST-267] - (Potentially) unwanted behaviour for self hrefs with projections
+    * [DATAREST-268] - Exception when putting element with return type
+    * [DATAREST-271] - PaginationCustomizations are not applied
+
+** Task
+    * [DATAREST-258] - Release 2.0.1
+
+Changes in version 2.0.0.RELEASE (2014-02-24)
+---------------------------------------------
+** Bug
+    * [DATAREST-50] - Properties with null values are always omitted from the JSON
+    * [DATAREST-117] - @JsonIgnore and other Jackson annotations are ignored
+    * [DATAREST-143] - PUT of entity with links fails..
+    * [DATAREST-216] - AOP proxying does not work for findOne(ID) method
+    * [DATAREST-217] - Crud or PagingAndSorting based repository entites still listed when findAll method is 'exported = false'
+    * [DATAREST-238] - PUT on entity with self links causes changes to be overwritten with old values
+    * [DATAREST-246] - ValidatingRepositoryEventListener should use Repositories more lenient
+    * [DATAREST-250] - Embedded associations do not get rendered
+
+** Improvement
+    * [DATAREST-95] - Add support for partial updates using PATCH
+    * [DATAREST-228] - Add enforcer plugin to the maven build process
+    * [DATAREST-248] - Creating resources using POST should support providing URIs for non-optional associations
+    * [DATAREST-252] - Documentation overhaul
+
+** Task
+    * [DATAREST-249] - Release 2.0 GA
+
+Changes in version 2.0.0.RC1 (2014-01-29)
+-----------------------------------------
+** Bug
+    * [DATAREST-107] - @RestResource exported=false ignored on methods
+    * [DATAREST-130] - Updating value to NULL using Spring Data REST and PUT Method
+    * [DATAREST-188] - Spring data rest wrongly handles jpa collection attributes
+    * [DATAREST-195] - Limiting page size
+    * [DATAREST-198] - NullPointerException when accessing OneToMany Relationship
+    * [DATAREST-199] - Collection/Object conversion broken in PersistentEntityJackson2Module
+    * [DATAREST-200] - Embedded associations do not get rendered
+    * [DATAREST-209] - Hard Dependency on Jackson-Hibernate
+    * [DATAREST-210] - ApplicationContext fails to load with HAL enabled snapshot
+    * [DATAREST-213] - Make old presentation available for smooth migration to HAL
+    * [DATAREST-222] - Path.matches(…) should escape reference before trying to match it
+
+** Improvement
+    * [DATAREST-75] - PersistentEntityJackson2Module should be more lenient regarding other registered modules
+    * [DATAREST-203] - Move to HAL as default hypermedia format
+    * [DATAREST-219] - Improve handling of updates to related collection properties
+    * [DATAREST-229] - RepositoryEntityLinks should exposed templated link for pageable collection resources
+    * [DATAREST-233] - Improve annotation based customization 
+
+** Task
+    * [DATAREST-220] - Add contribution guidelines
+    * [DATAREST-224] - Switch to Maven build system
+    * [DATAREST-226] - Release Spring Data REST 2.0.0.RC1
+
+Changes in version 2.0.0 M1 (2013-11-21)
+----------------------------------------
+** Bug
+    * [DATAREST-72] - @RestResource(exported = false) is not considered on repository interfaces
+    * [DATAREST-83] - Controller implementations should not be annotated with @Controller
+    * [DATAREST-88] - Build broken
+    * [DATAREST-103] - Add support for non-CrudRepositories
+    * [DATAREST-113] - /{repository}/schema fails on binding parameter - RepositoryRestRequest
+    * [DATAREST-114] - Could not initialize proxy - no Session
+    * [DATAREST-135] - Lost paging after upgrading to 1.1.0.M1
+    * [DATAREST-163] - One-to-one relations in embedded Mongo Documents do not get rendered...
+    * [DATAREST-168] - Master branch build is broken
+    * [DATAREST-169] - Property-link throws Null-pointer exception when property is lazy-loaded
+    * [DATAREST-184] - org.neo4j.graphdb.NotInTransactionException on DELETE
+
+** Improvement
+    * [DATAREST-162] - Support link path definition via @RestResource
+
+** Task
+    * [DATAREST-89] - Upgrade to latest Spring Data milestones
+    * [DATAREST-94] - Remove dependency on Guava
+    * [DATAREST-170] - Upgrade to dependencies of the Codd release train
+    * [DATAREST-185] - Upgrade to Spring 3.2.5
+    * [DATAREST-193] - Release 2.0 M1.

@@ -2,20 +2,16 @@ import sys, os
 
 
 repos = [
-'Chart-16',
-'Chart-4',
-'Lang-39',
-'Chart-25',
-'Lang-47',
-'felix-5464',
+'spring-data-rest-aa28aeb',
+#'collections-39',
 ]
 #'spring-data-rest-aa28aeb',
-#'collections-39',
 
 #'Chart-15',
 for i, val in enumerate(repos):
   print ''
   print 'Processing {}'.format(val)
+  #branch_name =  val + :'-buggy'
   branch_name = 'benchmarks/'+ val +'-buggy'
   cmd = 'git clone -b {} --single-branch https://github.com/kupl/NPEX_Data.git'.format(branch_name)
   os.system(cmd)

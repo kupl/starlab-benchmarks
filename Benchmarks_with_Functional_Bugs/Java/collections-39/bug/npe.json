@@ -1,0 +1,9 @@
+{
+    "filepath": "/src/java/org/apache/commons/collections/ExtendedProperties.java",
+    "line": 367,
+    "deref_field": "readLine",
+    "sink_field": "trim",
+    "npe_class": "ExtendedProperties",
+    "npe_method": "readProperty",
+    "nullpointer": "readLine()"
+}
