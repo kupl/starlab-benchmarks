@@ -1,0 +1,9 @@
+{
+    "filepath": "source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java",
+    "line": 260,
+    "deref_field": "meanValue",
+    "sink_field": "doubleValue",
+    "npe_class": "StatisticalBarRenderer",
+    "npe_method": "drawHorizontalItem",
+    "nullpointer": "beanDefinition.getConstructorArgumentValues().getArgumentValue(0, Class.class)"
+}

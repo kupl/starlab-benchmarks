@@ -1,0 +1,9 @@
+{
+    "filepath": "source/org/jfree/chart/plot/PiePlot.java",
+    "line": 1379,
+    "deref_field": "dataset",
+    "sink_field": "getKeys",
+    "npe_class": "PiePlot",
+    "npe_method": "getMaximumExplodePercent",
+    "nullpointer": "this.dataset"
+}
