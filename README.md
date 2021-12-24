@@ -31,7 +31,7 @@ This repository features two sorts of bugs: functional bugs and safety bugs. Fun
   <tr>
     <td align="center">Java</td>
     <td align="center">Null Pointer<br>Exception</th>
-    <td align="center">778</td>
+    <td align="center">617</td>
   </tr>
   <tr>
     <td align="center">Solidity</td>
