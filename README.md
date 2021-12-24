@@ -26,7 +26,7 @@ This repository features two sorts of bugs: functional bugs and safety bugs. Fun
     <td align="center">C</td>
     <td align="center">Resource Leak,<br>Memory Leak</th>
     <td align="center">198</td>
-    <td rowspan="3" align="center">1176</td> 
+    <td rowspan="3" align="center">1015</td> 
   </tr>
   <tr>
     <td align="center">Java</td>
