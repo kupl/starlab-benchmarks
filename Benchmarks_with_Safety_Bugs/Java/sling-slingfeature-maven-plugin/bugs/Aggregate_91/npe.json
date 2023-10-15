@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/maven/mojos/Aggregate.java",
-    "line": 94,
-    "npe_method": "getConfigurationOverrideRules",
-    "deref_field": "configurationOverrides",
-    "npe_class": "Aggregate"
-}

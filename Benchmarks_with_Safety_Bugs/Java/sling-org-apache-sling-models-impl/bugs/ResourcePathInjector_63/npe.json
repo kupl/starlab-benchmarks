@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/models/impl/injectors/ResourcePathInjector.java",
-    "line": 68,
-    "npe_method": "getValue",
-    "deref_field": "pathAnnotation",
-    "npe_class": "ResourcePathInjector"
-}

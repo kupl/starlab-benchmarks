@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/maven/mojos/AbstractFeatureMojo.java",
-    "line": 255,
-    "npe_method": "handleGeneratedFeatures",
-    "deref_field": "dir",
-    "npe_class": "AbstractFeatureMojo"
-}

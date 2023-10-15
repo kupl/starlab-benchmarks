@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/jcr/contentparser/impl/XmlContentParser.java",
-    "line": 78,
-    "npe_method": "parse",
-    "deref_field": "parentPath",
-    "npe_class": "XmlContentParser"
-}

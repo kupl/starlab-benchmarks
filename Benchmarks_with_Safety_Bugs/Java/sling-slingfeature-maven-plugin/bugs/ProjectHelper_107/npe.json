@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/maven/ProjectHelper.java",
-    "line": 109,
-    "npe_method": "getFeatures",
-    "deref_field": "size",
-    "npe_class": "ProjectHelper"
-}

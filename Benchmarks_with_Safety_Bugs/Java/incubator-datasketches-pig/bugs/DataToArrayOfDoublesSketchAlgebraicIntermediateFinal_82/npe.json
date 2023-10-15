@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/datasketches/pig/tuple/DataToArrayOfDoublesSketchAlgebraicIntermediateFinal.java",
-    "line": 81,
-    "npe_method": "exec",
-    "deref_field": "bag",
-    "npe_class": "DataToArrayOfDoublesSketchAlgebraicIntermediateFinal"
-}

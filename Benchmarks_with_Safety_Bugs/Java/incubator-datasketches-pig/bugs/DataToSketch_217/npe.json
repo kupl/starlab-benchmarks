@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/datasketches/pig/theta/DataToSketch.java",
-    "line": 222,
-    "npe_method": "outputSchema",
-    "deref_field": "input",
-    "npe_class": "DataToSketch"
-}

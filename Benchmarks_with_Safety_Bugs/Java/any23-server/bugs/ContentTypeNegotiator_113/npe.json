@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/any23/servlet/conneg/ContentTypeNegotiator.java",
-    "line": 115,
-    "npe_method": "toAcceptRanges",
-    "deref_field": "accept",
-    "npe_class": "ContentTypeNegotiator"
-}

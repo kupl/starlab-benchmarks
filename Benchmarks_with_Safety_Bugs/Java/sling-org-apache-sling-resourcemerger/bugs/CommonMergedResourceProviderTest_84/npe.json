@@ -1,7 +1,0 @@
-{
-    "filepath": "src/test/java/org/apache/sling/resourcemerger/impl/CommonMergedResourceProviderTest.java",
-    "line": 86,
-    "npe_method": "pickResources",
-    "deref_field": "resourceToPick",
-    "npe_class": "SimpleMergedResourcePicker"
-}

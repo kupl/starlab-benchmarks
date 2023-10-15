@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/maven/mojos/Aggregate.java",
-    "line": 86,
-    "npe_method": "getArtifactOverrideRules",
-    "deref_field": "artifactsOverrides",
-    "npe_class": "Aggregate"
-}

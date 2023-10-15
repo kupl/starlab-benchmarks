@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/datasketches/pig/quantiles/StringsSketchToString.java",
-    "line": 41,
-    "npe_method": "exec",
-    "deref_field": "input",
-    "npe_class": "StringsSketchToString"
-}

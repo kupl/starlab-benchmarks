@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/models/impl/injectors/ValueMapInjector.java",
-    "line": 72,
-    "npe_method": "getValue",
-    "deref_field": "map",
-    "npe_class": "ValueMapInjector"
-}

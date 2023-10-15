@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/models/impl/AdapterImplementations.java",
-    "line": 311,
-    "npe_method": "getModelClassForResource",
-    "deref_field": "modelClass",
-    "npe_class": "AdapterImplementations"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/datasketches/pig/sampling/ReservoirUnion.java",
-    "line": 103,
-    "npe_method": "getValue",
-    "deref_field": "union_",
-    "npe_class": "ReservoirUnion"
-}

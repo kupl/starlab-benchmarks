@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/maven/mojos/AggregateFeaturesMojo.java",
-    "line": 78,
-    "npe_method": "execute",
-    "deref_field": "aggregate.variablesOverrides",
-    "npe_class": "AggregateFeaturesMojo"
-}

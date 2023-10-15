@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/datasketches/pig/quantiles/DataToDoublesSketch.java",
-    "line": 208,
-    "npe_method": "exec",
-    "deref_field": "resultSketch",
-    "npe_class": "DataToDoublesSketch"
-}

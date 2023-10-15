@@ -1,8 +1,0 @@
-{
-  "id":"test:test:1.0.1:z:slingfeature",
-  "configurations": {
-    "z.pid": {
-      "z": "z"
-    }
-  }
-}

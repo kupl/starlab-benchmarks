@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/maven/mojos/selection/IncludeExcludeMatcher.java",
-    "line": 58,
-    "npe_method": "parseMatches",
-    "deref_field": "separator",
-    "npe_class": "IncludeExcludeMatcher"
-}

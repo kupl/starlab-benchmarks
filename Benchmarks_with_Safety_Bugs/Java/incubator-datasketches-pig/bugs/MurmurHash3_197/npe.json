@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/datasketches/pig/hash/MurmurHash3.java",
-    "line": 208,
-    "npe_method": "outputSchema",
-    "deref_field": "input",
-    "npe_class": "MurmurHash3"
-}

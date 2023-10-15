@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/maven/Substitution.java",
-    "line": 125,
-    "npe_method": "getOSGiVersion",
-    "deref_field": "getQualifier()",
-    "npe_class": "Substitution"
-}

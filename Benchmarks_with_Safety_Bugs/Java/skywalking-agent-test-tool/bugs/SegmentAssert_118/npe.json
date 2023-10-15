@@ -1,7 +1,0 @@
-{
-    "filepath": "validator/src/main/java/org/apache/skywalking/plugin/test/agent/tool/validator/assertor/SegmentAssert.java",
-    "line": 121,
-    "npe_method": "refEquals",
-    "deref_field": "excepted",
-    "npe_class": "SegmentAssert"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/superimposing/impl/SuperimposingManagerImpl.java",
-    "line": 205,
-    "npe_method": "registerProvider",
-    "deref_field": "oldSrp",
-    "npe_class": "SuperimposingManagerImpl"
-}

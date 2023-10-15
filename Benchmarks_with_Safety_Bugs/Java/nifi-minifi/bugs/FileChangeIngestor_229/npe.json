@@ -1,7 +1,0 @@
-{
-    "filepath": "minifi-bootstrap/src/main/java/org/apache/nifi/minifi/bootstrap/configuration/ingestors/FileChangeIngestor.java",
-    "line": 231,
-    "npe_method": "close",
-    "deref_field": "this.executorService",
-    "npe_class": "FileChangeIngestor"
-}

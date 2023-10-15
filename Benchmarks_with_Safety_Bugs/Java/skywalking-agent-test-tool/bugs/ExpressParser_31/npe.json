@@ -1,7 +1,0 @@
-{
-    "filepath": "validator/src/main/java/org/apache/skywalking/plugin/test/agent/tool/validator/assertor/ExpressParser.java",
-    "line": 33,
-    "npe_method": "parse",
-    "deref_field": "express",
-    "npe_class": "ExpressParser"
-}

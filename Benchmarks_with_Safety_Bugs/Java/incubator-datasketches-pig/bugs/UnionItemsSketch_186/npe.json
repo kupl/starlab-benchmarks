@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/datasketches/pig/quantiles/UnionItemsSketch.java",
-    "line": 194,
-    "npe_method": "getValue",
-    "deref_field": "accumUnion_",
-    "npe_class": "UnionItemsSketch"
-}

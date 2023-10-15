@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/models/impl/AdapterImplementations.java",
-    "line": 270,
-    "npe_method": "registerModelToResourceType",
-    "deref_field": "existingMapping",
-    "npe_class": "AdapterImplementations"
-}

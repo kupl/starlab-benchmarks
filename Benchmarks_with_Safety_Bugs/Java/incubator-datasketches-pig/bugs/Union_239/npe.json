@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/datasketches/pig/theta/Union.java",
-    "line": 255,
-    "npe_method": "accumulate",
-    "deref_field": "bag",
-    "npe_class": "Union"
-}

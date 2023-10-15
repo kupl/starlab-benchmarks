@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/jcr/contentparser/impl/ParserHelper.java",
-    "line": 67,
-    "npe_method": "ensureDefaultPrimaryType",
-    "deref_field": "defaultPrimaryType",
-    "npe_class": "ParserHelper"
-}

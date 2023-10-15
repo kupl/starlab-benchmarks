@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/datasketches/pig/kll/GetPmf.java",
-    "line": 62,
-    "npe_method": "exec",
-    "deref_field": "pmf",
-    "npe_class": "GetPmf"
-}

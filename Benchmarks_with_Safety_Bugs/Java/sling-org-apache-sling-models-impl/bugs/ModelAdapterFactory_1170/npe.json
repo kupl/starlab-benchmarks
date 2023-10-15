@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/models/impl/ModelAdapterFactory.java",
-    "line": 1172,
-    "npe_method": "deactivate",
-    "deref_field": "configPrinterRegistration",
-    "npe_class": "ModelAdapterFactory"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/datasketches/pig/theta/Intersect.java",
-    "line": 153,
-    "npe_method": "outputSchema",
-    "deref_field": "input",
-    "npe_class": "Intersect"
-}
