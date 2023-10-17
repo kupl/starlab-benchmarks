@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+    "line": 814,
+    "npe_method": "divideBy",
+    "deref_field": "fraction",
+    "npe_class": "Fraction"
+}

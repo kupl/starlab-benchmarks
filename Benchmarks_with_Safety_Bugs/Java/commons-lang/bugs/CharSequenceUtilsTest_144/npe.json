@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java",
+    "line": 147,
+    "npe_method": "run",
+    "deref_field": "data.throwable",
+    "npe_class": "RunTest"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+    "line": 949,
+    "npe_method": "ceiling",
+    "deref_field": "date",
+    "npe_class": "DateUtils"
+}

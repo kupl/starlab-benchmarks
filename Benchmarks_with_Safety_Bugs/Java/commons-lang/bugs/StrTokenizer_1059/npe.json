@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/text/StrTokenizer.java",
+    "line": 1062,
+    "npe_method": "getContent",
+    "deref_field": "chars",
+    "npe_class": "StrTokenizer"
+}

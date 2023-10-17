@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+    "line": 1667,
+    "npe_method": "insert",
+    "deref_field": "chars",
+    "npe_class": "StrBuilder"
+}

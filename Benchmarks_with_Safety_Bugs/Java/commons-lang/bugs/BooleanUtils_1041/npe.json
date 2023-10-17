@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/BooleanUtils.java",
+    "line": 1044,
+    "npe_method": "xor",
+    "deref_field": "array",
+    "npe_class": "BooleanUtils"
+}

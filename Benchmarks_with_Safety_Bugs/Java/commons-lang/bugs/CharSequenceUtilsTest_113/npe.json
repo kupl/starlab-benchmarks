@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/CharSequenceUtilsTest.java",
+    "line": 114,
+    "npe_method": "toString",
+    "deref_field": "throwable",
+    "npe_class": "TestData"
+}

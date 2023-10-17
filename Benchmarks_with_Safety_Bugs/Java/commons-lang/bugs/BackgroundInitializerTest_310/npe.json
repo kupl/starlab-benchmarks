@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/concurrent/BackgroundInitializerTest.java",
+    "line": 311,
+    "npe_method": "initialize",
+    "deref_field": "ex",
+    "npe_class": "BackgroundInitializerTestImpl"
+}

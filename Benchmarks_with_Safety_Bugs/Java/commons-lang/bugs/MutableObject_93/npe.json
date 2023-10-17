@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/mutable/MutableObject.java",
+    "line": 96,
+    "npe_method": "equals",
+    "deref_field": "obj",
+    "npe_class": "MutableObject"
+}

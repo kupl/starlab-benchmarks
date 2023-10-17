@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
+    "line": 638,
+    "npe_method": "mode",
+    "deref_field": "count",
+    "npe_class": "ObjectUtils"
+}

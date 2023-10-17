@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/concurrent/ConstantInitializerTest.java",
+    "line": 51,
+    "npe_method": "checkEquals",
+    "deref_field": "obj",
+    "npe_class": "ConstantInitializerTest"
+}

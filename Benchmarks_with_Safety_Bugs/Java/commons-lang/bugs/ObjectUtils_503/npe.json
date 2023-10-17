@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
+    "line": 504,
+    "npe_method": "min",
+    "deref_field": "values",
+    "npe_class": "ObjectUtils"
+}

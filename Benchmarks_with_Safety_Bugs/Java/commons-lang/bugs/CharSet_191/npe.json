@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/CharSet.java",
+    "line": 195,
+    "npe_method": "add",
+    "deref_field": "str",
+    "npe_class": "CharSet"
+}

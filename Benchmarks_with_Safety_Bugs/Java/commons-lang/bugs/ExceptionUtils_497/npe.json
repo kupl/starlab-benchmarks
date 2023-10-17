@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java",
+    "line": 502,
+    "npe_method": "printRootCauseStackTrace",
+    "deref_field": "writer",
+    "npe_class": "ExceptionUtils"
+}

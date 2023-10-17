@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/BooleanUtils.java",
+    "line": 976,
+    "npe_method": "or",
+    "deref_field": "array",
+    "npe_class": "BooleanUtils"
+}

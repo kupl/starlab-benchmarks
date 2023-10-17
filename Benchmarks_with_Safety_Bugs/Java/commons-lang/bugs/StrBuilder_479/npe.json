@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+    "line": 483,
+    "npe_method": "appendNewLine",
+    "deref_field": "newLine",
+    "npe_class": "StrBuilder"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+    "line": 117,
+    "npe_method": "getEnum",
+    "deref_field": "enumName",
+    "npe_class": "EnumUtils"
+}

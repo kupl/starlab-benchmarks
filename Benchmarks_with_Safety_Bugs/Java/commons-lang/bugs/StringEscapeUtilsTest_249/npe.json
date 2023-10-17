@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/StringEscapeUtilsTest.java",
+    "line": 242,
+    "npe_method": "testUnescapeHtml4",
+    "deref_field": "original",
+    "npe_class": "StringEscapeUtilsTest"
+}

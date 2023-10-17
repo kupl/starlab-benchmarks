@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+    "line": 2825,
+    "npe_method": "equals",
+    "deref_field": "other",
+    "npe_class": "StrBuilder"
+}

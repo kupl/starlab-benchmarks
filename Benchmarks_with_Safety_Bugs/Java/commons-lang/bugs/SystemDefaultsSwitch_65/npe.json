@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/test/SystemDefaultsSwitch.java",
+    "line": 68,
+    "npe_method": "apply",
+    "deref_field": "defaults",
+    "npe_class": "SystemDefaultsSwitch"
+}

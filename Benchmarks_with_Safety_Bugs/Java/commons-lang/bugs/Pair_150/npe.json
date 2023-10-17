@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/tuple/Pair.java",
+    "line": 151,
+    "npe_method": "hashCode",
+    "deref_field": "getValue()",
+    "npe_class": "Pair"
+}

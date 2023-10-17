@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java",
+    "line": 834,
+    "npe_method": "append",
+    "deref_field": "rhs",
+    "npe_class": "CompareToBuilder"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/CharSequenceUtils.java",
+    "line": 57,
+    "npe_method": "subSequence",
+    "deref_field": "cs",
+    "npe_class": "CharSequenceUtils"
+}

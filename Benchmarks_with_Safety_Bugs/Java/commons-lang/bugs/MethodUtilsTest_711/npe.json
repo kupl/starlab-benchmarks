@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/reflect/MethodUtilsTest.java",
+    "line": 710,
+    "npe_method": "expectMatchingAccessibleMethodParameterTypes",
+    "deref_field": "requestTypes",
+    "npe_class": "MethodUtilsTest"
+}

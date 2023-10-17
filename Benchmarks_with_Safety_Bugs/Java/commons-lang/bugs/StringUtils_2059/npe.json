@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
+    "line": 2062,
+    "npe_method": "containsAny",
+    "deref_field": "searchChars",
+    "npe_class": "StringUtils"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+    "line": 330,
+    "npe_method": "resolveClass",
+    "deref_field": "cls",
+    "npe_class": "ClassLoaderAwareObjectInputStream"
+}
