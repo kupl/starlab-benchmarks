@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
-    "line": 454,
+    "line": 458,
     "npe_method": "isAssignable",
     "deref_field": "fromTypeVarAssigns",
     "npe_class": "TypeUtils"

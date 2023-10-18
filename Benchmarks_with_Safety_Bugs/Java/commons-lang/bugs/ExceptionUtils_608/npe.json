@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java",
-    "line": 611,
+    "line": 624,
     "npe_method": "getStackFrames",
     "deref_field": "throwable",
     "npe_class": "ExceptionUtils"

@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java",
-    "line": 553,
+    "line": 560,
     "npe_method": "lexx",
     "deref_field": "value",
     "npe_class": "DurationFormatUtils"

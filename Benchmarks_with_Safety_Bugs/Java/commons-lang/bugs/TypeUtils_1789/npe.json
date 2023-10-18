@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
-    "line": 1792,
+    "line": 1798,
     "npe_method": "parameterizedTypeToString",
     "deref_field": "useOwner",
     "npe_class": "TypeUtils"

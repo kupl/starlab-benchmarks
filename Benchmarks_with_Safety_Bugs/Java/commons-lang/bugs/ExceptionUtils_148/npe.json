@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java",
-    "line": 149,
+    "line": 164,
     "npe_method": "getCause",
     "deref_field": "cause",
     "npe_class": "ExceptionUtils"

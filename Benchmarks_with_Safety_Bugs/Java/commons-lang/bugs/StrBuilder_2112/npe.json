@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
-    "line": 2112,
+    "line": 2132,
     "npe_method": "replaceImpl",
     "deref_field": "replaceStr",
     "npe_class": "StrBuilder"

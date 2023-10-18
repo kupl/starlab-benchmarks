@@ -1,7 +1,7 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
-    "line": 222,
+    "line": 231,
     "npe_method": "initializeThread",
-    "deref_field": "getNamingPattern()",
+    "deref_field": "getNamingPattern",
     "npe_class": "BasicThreadFactory"
 }

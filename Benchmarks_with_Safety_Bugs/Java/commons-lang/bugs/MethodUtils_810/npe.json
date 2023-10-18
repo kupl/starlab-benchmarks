@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
-    "line": 813,
+    "line": 821,
     "npe_method": "getOverrideHierarchy",
     "deref_field": "m",
     "npe_class": "MethodUtils"

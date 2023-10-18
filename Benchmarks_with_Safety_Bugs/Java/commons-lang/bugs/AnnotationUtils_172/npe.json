@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/AnnotationUtils.java",
-    "line": 176,
+    "line": 189,
     "npe_method": "hashCode",
     "deref_field": "value",
     "npe_class": "AnnotationUtils"

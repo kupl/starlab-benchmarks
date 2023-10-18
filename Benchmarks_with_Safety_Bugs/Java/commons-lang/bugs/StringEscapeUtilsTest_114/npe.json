@@ -1,6 +1,6 @@
 {
     "filepath": "src/test/java/org/apache/commons/lang3/StringEscapeUtilsTest.java",
-    "line": 114,
+    "line": 115,
     "npe_method": "assertEscapeJava",
     "deref_field": "message",
     "npe_class": "StringEscapeUtilsTest"

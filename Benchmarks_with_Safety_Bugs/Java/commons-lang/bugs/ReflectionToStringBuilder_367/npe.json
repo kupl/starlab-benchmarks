@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
-    "line": 370,
+    "line": 369,
     "npe_method": "checkNotNull",
     "deref_field": "obj",
     "npe_class": "ReflectionToStringBuilder"

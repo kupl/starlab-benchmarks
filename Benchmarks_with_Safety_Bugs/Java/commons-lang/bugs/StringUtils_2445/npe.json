@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
-    "line": 2448,
+    "line": 2475,
     "npe_method": "lastIndexOfAny",
     "deref_field": "search",
     "npe_class": "StringUtils"

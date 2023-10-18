@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/builder/EqualsBuilder.java",
-    "line": 200,
+    "line": 215,
     "npe_method": "unregister",
     "deref_field": "registry",
     "npe_class": "EqualsBuilder"

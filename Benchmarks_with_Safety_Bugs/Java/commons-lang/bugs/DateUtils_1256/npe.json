@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
-    "line": 1259,
+    "line": 1278,
     "npe_method": "iterator",
     "deref_field": "focus",
     "npe_class": "DateUtils"

@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/CharUtils.java",
-    "line": 383,
+    "line": 399,
     "npe_method": "unicodeEscaped",
     "deref_field": "ch",
     "npe_class": "CharUtils"

@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
-    "line": 456,
+    "line": 477,
     "npe_method": "invokeStaticMethod",
     "deref_field": "method",
     "npe_class": "MethodUtils"

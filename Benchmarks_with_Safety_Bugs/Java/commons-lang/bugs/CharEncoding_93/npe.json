@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/CharEncoding.java",
-    "line": 97,
+    "line": 107,
     "npe_method": "isSupported",
     "deref_field": "name",
     "npe_class": "CharEncoding"

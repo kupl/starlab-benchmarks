@@ -1,6 +1,6 @@
 {
     "filepath": "src/test/java/org/apache/commons/lang3/concurrent/TimedSemaphoreTest.java",
-    "line": 467,
+    "line": 474,
     "npe_method": "acquire",
     "deref_field": "latch",
     "npe_class": "TimedSemaphoreTestImpl"

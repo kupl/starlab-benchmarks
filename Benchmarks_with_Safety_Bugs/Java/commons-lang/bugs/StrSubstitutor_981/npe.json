@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java",
-    "line": 984,
+    "line": 996,
     "npe_method": "setVariablePrefixMatcher",
     "deref_field": "prefixMatcher",
     "npe_class": "StrSubstitutor"

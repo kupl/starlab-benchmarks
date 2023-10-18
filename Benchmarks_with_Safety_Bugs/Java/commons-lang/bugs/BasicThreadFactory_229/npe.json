@@ -1,7 +1,7 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
-    "line": 230,
+    "line": 237,
     "npe_method": "initializeThread",
-    "deref_field": "getPriority()",
+    "deref_field": "getPriority",
     "npe_class": "BasicThreadFactory"
 }

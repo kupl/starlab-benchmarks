@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
-    "line": 320,
+    "line": 340,
     "npe_method": "getFraction",
     "deref_field": "str",
     "npe_class": "Fraction"

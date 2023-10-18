@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java",
-    "line": 2625,
+    "line": 2621,
     "npe_method": "appendFieldStart",
     "deref_field": "fieldName",
     "npe_class": "JsonToStringStyle"

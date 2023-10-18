@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
-    "line": 354,
+    "line": 372,
     "npe_method": "invokeExactMethod",
     "deref_field": "method",
     "npe_class": "MethodUtils"

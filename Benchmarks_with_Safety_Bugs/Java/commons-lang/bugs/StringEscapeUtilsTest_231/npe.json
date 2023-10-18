@@ -1,6 +1,6 @@
 {
     "filepath": "src/test/java/org/apache/commons/lang3/StringEscapeUtilsTest.java",
-    "line": 225,
+    "line": 226,
     "npe_method": "testEscapeHtml",
     "deref_field": "original",
     "npe_class": "StringEscapeUtilsTest"

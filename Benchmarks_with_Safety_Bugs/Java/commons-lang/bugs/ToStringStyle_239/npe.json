@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java",
-    "line": 242,
+    "line": 255,
     "npe_method": "unregister",
     "deref_field": "value",
     "npe_class": "ToStringStyle"

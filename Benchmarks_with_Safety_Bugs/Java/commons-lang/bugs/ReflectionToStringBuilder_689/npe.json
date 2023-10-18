@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
-    "line": 691,
+    "line": 700,
     "npe_method": "setUpToClass",
     "deref_field": "clazz",
     "npe_class": "ReflectionToStringBuilder"

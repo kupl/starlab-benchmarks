@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
-    "line": 126,
+    "line": 144,
     "npe_method": "toInt",
     "deref_field": "str",
     "npe_class": "NumberUtils"

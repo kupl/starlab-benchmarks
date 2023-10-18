@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
-    "line": 921,
+    "line": 929,
     "npe_method": "getTypeArguments",
     "deref_field": "subtypeVarAssigns",
     "npe_class": "TypeUtils"

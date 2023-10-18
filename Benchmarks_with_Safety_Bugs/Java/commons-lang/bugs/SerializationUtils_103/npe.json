@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
-    "line": 104,
+    "line": 122,
     "npe_method": "clone",
     "deref_field": "in",
     "npe_class": "SerializationUtils"

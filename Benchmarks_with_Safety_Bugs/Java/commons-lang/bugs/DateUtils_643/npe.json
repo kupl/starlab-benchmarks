@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
-    "line": 649,
+    "line": 665,
     "npe_method": "set",
     "deref_field": "date",
     "npe_class": "DateUtils"

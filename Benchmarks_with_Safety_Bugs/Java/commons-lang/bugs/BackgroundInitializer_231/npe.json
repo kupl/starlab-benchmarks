@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/concurrent/BackgroundInitializer.java",
-    "line": 235,
+    "line": 241,
     "npe_method": "getFuture",
     "deref_field": "future",
     "npe_class": "BackgroundInitializer"

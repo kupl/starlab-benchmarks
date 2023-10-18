@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
-    "line": 674,
+    "line": 680,
     "npe_method": "setExcludeFieldNames",
     "deref_field": "excludeFieldNamesParam",
     "npe_class": "ReflectionToStringBuilder"

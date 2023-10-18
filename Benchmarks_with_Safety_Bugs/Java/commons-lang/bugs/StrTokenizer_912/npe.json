@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/StrTokenizer.java",
-    "line": 913,
+    "line": 924,
     "npe_method": "setQuoteMatcher",
     "deref_field": "quote",
     "npe_class": "StrTokenizer"

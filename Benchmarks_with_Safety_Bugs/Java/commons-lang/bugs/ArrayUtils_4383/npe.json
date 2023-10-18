@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
-    "line": 4385,
+    "line": 4394,
     "npe_method": "toObject",
     "deref_field": "array",
     "npe_class": "ArrayUtils"

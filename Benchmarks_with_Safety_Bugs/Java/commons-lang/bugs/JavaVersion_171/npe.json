@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/JavaVersion.java",
-    "line": 174,
+    "line": 183,
     "npe_method": "get",
     "deref_field": "nom",
     "npe_class": "JavaVersion"

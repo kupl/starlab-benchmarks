@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
-    "line": 1228,
+    "line": 1239,
     "npe_method": "appendAll",
     "deref_field": "it",
     "npe_class": "StrBuilder"

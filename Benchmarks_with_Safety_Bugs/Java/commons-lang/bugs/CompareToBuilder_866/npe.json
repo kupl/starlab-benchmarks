@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java",
-    "line": 874,
+    "line": 889,
     "npe_method": "append",
     "deref_field": "lhs",
     "npe_class": "CompareToBuilder"

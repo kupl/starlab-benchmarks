@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/BooleanUtils.java",
-    "line": 429,
+    "line": 443,
     "npe_method": "toIntegerObject",
     "deref_field": "bool",
     "npe_class": "BooleanUtils"

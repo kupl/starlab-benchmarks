@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
-    "line": 160,
+    "line": 181,
     "npe_method": "serialize",
     "deref_field": "out",
     "npe_class": "SerializationUtils"

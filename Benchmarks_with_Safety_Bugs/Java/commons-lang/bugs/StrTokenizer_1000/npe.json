@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/StrTokenizer.java",
-    "line": 1001,
+    "line": 1012,
     "npe_method": "setTrimmerMatcher",
     "deref_field": "trimmer",
     "npe_class": "StrTokenizer"

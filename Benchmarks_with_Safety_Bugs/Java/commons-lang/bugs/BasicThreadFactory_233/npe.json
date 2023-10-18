@@ -1,7 +1,7 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
-    "line": 234,
+    "line": 240,
     "npe_method": "initializeThread",
-    "deref_field": "getDaemonFlag()",
+    "deref_field": "getDaemonFlag",
     "npe_class": "BasicThreadFactory"
 }

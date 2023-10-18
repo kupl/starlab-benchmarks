@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/StrLookup.java",
-    "line": 152,
+    "line": 161,
     "npe_method": "lookup",
     "deref_field": "map",
     "npe_class": "MapStrLookup"

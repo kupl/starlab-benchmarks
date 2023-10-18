@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/mutable/MutableObject.java",
-    "line": 113,
+    "line": 119,
     "npe_method": "hashCode",
     "deref_field": "value",
     "npe_class": "MutableObject"

@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/AnnotationUtils.java",
-    "line": 226,
+    "line": 237,
     "npe_method": "isValidAnnotationMemberType",
     "deref_field": "type",
     "npe_class": "AnnotationUtils"

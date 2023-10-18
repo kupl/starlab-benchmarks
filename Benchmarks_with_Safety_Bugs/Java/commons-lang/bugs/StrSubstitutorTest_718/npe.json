@@ -1,6 +1,6 @@
 {
     "filepath": "src/test/java/org/apache/commons/lang3/text/StrSubstitutorTest.java",
-    "line": 733,
+    "line": 719,
     "npe_method": "doTestNoReplace",
     "deref_field": "replaceTemplate",
     "npe_class": "StrSubstitutorTest"

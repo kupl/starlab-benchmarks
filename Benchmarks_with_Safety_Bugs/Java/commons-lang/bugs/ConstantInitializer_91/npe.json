@@ -1,7 +1,7 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/concurrent/ConstantInitializer.java",
-    "line": 91,
+    "line": 98,
     "npe_method": "hashCode",
-    "deref_field": "getObject()",
+    "deref_field": "getObject",
     "npe_class": "ConstantInitializer"
 }

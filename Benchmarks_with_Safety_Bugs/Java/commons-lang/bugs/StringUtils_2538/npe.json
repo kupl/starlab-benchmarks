@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
-    "line": 2544,
+    "line": 2580,
     "npe_method": "substring",
     "deref_field": "str",
     "npe_class": "StringUtils"

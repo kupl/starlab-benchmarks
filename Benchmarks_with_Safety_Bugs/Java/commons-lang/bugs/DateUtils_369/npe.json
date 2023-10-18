@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
-    "line": 369,
+    "line": 391,
     "npe_method": "parseDateWithLeniency",
     "deref_field": "locale",
     "npe_class": "DateUtils"

@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/StrTokenizer.java",
-    "line": 1093,
+    "line": 1102,
     "npe_method": "cloneReset",
     "deref_field": "cloned.chars",
     "npe_class": "StrTokenizer"

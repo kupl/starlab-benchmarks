@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java",
-    "line": 84,
+    "line": 94,
     "npe_method": "translate",
     "deref_field": "input",
     "npe_class": "CharSequenceTranslator"

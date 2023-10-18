@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
-    "line": 1700,
-    "npe_method": "toLongString",
-    "deref_field": "getEnclosingClass()",
-    "npe_class": "TypeUtils"
-}

@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java",
-    "line": 268,
+    "line": 274,
     "npe_method": "equals",
     "deref_field": "obj",
     "npe_class": "ExtendedMessageFormat"

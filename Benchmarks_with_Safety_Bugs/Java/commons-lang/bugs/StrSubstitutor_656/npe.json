@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java",
-    "line": 659,
+    "line": 669,
     "npe_method": "replaceIn",
     "deref_field": "source",
     "npe_class": "StrSubstitutor"

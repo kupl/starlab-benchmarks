@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
-    "line": 713,
+    "line": 734,
     "npe_method": "getMatchingAccessibleMethod",
     "deref_field": "bestMatch",
     "npe_class": "MethodUtils"

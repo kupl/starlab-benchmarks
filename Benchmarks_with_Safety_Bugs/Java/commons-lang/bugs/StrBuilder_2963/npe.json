@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
-    "line": 2966,
+    "line": 2968,
     "npe_method": "tokenize",
     "deref_field": "chars",
     "npe_class": "StrBuilderTokenizer"

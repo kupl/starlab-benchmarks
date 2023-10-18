@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/Range.java",
-    "line": 235,
+    "line": 241,
     "npe_method": "isAfter",
     "deref_field": "element",
     "npe_class": "Range"

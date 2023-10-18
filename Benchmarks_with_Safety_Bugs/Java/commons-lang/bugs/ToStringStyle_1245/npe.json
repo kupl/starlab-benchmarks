@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java",
-    "line": 1249,
+    "line": 1262,
     "npe_method": "append",
     "deref_field": "array",
     "npe_class": "ToStringStyle"

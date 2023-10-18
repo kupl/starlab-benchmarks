@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
-    "line": 750,
+    "line": 757,
     "npe_method": "getMatchingMethod",
     "deref_field": "inexactMatch",
     "npe_class": "MethodUtils"
