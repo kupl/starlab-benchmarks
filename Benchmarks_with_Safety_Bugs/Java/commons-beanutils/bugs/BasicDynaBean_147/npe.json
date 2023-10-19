@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/BasicDynaBean.java",
-    "line": 148,
+    "line": 158,
     "npe_method": "get",
     "deref_field": "value",
     "npe_class": "BasicDynaBean"

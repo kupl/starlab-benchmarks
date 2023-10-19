@@ -2,6 +2,6 @@
     "filepath": "maven-script/maven-plugin-tools-model/src/main/java/org/apache/maven/tools/plugin/extractor/model/PluginMetadataParser.java",
     "line": 107,
     "npe_method": "asDescriptor",
-    "deref_field": "getCall()",
+    "deref_field": "getCall",
     "npe_class": "PluginMetadataParser"
 }

@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/DefaultBeanIntrospector.java",
-    "line": 170,
+    "line": 181,
     "npe_method": "handleIndexedPropertyDescriptors",
     "deref_field": "writeMethod",
     "npe_class": "DefaultBeanIntrospector"

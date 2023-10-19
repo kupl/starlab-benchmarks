@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/ConvertUtilsBean.java",
-    "line": 322,
+    "line": 335,
     "npe_method": "convert",
     "deref_field": "value",
     "npe_class": "ConvertUtilsBean"

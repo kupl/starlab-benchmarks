@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/DynaProperty.java",
-    "line": 188,
+    "line": 192,
     "npe_method": "isMapped",
     "deref_field": "type",
     "npe_class": "DynaProperty"

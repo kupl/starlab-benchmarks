@@ -1,6 +1,6 @@
 {
     "filepath": "mavibot/src/main/java/org/apache/directory/mavibot/btree/comparator/IntArrayComparator.java",
-    "line": 67,
+    "line": 68,
     "npe_method": "compare",
     "deref_field": "intArray2",
     "npe_class": "IntArrayComparator"

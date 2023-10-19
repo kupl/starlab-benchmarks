@@ -2,6 +2,6 @@
     "filepath": "log4j-catalog/log4j-catalog-jpa/src/main/java/org/apache/logging/log4j/catalog/jpa/model/ConstraintModel.java",
     "line": 82,
     "npe_method": "setAttribute",
-    "deref_field": "getConstraints()",
+    "deref_field": "getConstraints",
     "npe_class": "ConstraintModel"
 }

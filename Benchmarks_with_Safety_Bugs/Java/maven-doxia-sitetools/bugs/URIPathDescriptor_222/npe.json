@@ -2,6 +2,6 @@
     "filepath": "doxia-decoration-model/src/main/java/org/apache/maven/doxia/site/decoration/inheritance/URIPathDescriptor.java",
     "line": 221,
     "npe_method": "sameSite",
-    "deref_field": "getHost()",
+    "deref_field": "getHost",
     "npe_class": "URIPathDescriptor"
 }

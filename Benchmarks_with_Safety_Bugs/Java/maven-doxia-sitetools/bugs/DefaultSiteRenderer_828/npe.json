@@ -2,6 +2,6 @@
     "filepath": "doxia-site-renderer/src/main/java/org/apache/maven/doxia/siterenderer/DefaultSiteRenderer.java",
     "line": 817,
     "npe_method": "createContextForSkin",
-    "deref_field": "getPrerequisites()",
+    "deref_field": "getPrerequisites",
     "npe_class": "DefaultSiteRenderer"
 }

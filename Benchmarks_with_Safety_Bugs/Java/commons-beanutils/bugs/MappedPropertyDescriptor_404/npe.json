@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/MappedPropertyDescriptor.java",
-    "line": 399,
+    "line": 401,
     "npe_method": "getMethod",
     "deref_field": "parameterTypes",
     "npe_class": "MappedPropertyDescriptor"

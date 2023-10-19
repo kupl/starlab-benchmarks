@@ -2,6 +2,6 @@
     "filepath": "src/main/java/org/apache/commons/validator/Field.java",
     "line": 352,
     "npe_method": "addArg",
-    "deref_field": "getName()",
+    "deref_field": "getName",
     "npe_class": "Field"
 }

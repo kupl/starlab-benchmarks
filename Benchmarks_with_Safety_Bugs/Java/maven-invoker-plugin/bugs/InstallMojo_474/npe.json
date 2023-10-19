@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/maven/plugins/invoker/InstallMojo.java",
-    "line": 479,
+    "line": 470,
     "npe_method": "installProjectDependencies",
     "deref_field": "dependencyProject",
     "npe_class": "InstallMojo"

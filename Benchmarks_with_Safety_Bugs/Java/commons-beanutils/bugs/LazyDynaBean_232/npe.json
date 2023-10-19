@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/LazyDynaBean.java",
-    "line": 236,
+    "line": 242,
     "npe_method": "size",
     "deref_field": "name",
     "npe_class": "LazyDynaBean"

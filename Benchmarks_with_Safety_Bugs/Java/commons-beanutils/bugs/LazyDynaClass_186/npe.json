@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/LazyDynaClass.java",
-    "line": 189,
+    "line": 203,
     "npe_method": "add",
     "deref_field": "type",
     "npe_class": "LazyDynaClass"

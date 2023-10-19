@@ -2,6 +2,6 @@
     "filepath": "src/main/java/org/apache/sling/serviceusermapping/impl/ServiceUserMapperImpl.java",
     "line": 382,
     "npe_method": "executeServiceRegistrations",
-    "deref_field": "getSubServiceName()",
+    "deref_field": "getSubServiceName",
     "npe_class": "ServiceUserMapperImpl"
 }

@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/ConstructorUtils.java",
-    "line": 326,
+    "line": 332,
     "npe_method": "getAccessibleConstructor",
     "deref_field": "ctor",
     "npe_class": "ConstructorUtils"

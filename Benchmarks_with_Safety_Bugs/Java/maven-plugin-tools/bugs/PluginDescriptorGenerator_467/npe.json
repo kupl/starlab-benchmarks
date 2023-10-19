@@ -2,6 +2,6 @@
     "filepath": "maven-plugin-tools-generators/src/main/java/org/apache/maven/tools/plugin/generator/PluginDescriptorGenerator.java",
     "line": 384,
     "npe_method": "processMojoDescriptor",
-    "deref_field": "getAlias()",
+    "deref_field": "getAlias",
     "npe_class": "PluginDescriptorGenerator"
 }

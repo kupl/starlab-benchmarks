@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/sling/auth/core/impl/PathBasedHolderCache.java",
-    "line": 81,
+    "line": 82,
     "npe_method": "removeHolder",
     "deref_field": "byHostMap",
     "npe_class": "PathBasedHolderCache"

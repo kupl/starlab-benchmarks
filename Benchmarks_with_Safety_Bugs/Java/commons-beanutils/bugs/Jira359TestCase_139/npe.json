@@ -1,6 +1,6 @@
 {
     "filepath": "src/test/java/org/apache/commons/beanutils2/bugs/Jira359TestCase.java",
-    "line": 142,
+    "line": 144,
     "npe_method": "showArray",
     "deref_field": "array",
     "npe_class": "Jira359TestCase"

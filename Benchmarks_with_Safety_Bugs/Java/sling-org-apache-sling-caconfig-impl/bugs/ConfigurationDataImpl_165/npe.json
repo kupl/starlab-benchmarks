@@ -2,6 +2,6 @@
     "filepath": "src/main/java/org/apache/sling/caconfig/management/impl/ConfigurationDataImpl.java",
     "line": 168,
     "npe_method": "getEffectiveValues",
-    "deref_field": "getDefaultValue()",
+    "deref_field": "getDefaultValue",
     "npe_class": "ConfigurationDataImpl"
 }

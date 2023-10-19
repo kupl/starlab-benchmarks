@@ -2,6 +2,6 @@
     "filepath": "src/main/java/org/apache/commons/beanutils2/DefaultBeanIntrospector.java",
     "line": 155,
     "npe_method": "handleIndexedPropertyDescriptors",
-    "deref_field": "getIndexedReadMethod()",
+    "deref_field": "getIndexedReadMethod",
     "npe_class": "DefaultBeanIntrospector"
 }

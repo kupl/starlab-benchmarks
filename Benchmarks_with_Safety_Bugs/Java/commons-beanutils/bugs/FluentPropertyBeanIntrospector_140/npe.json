@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/FluentPropertyBeanIntrospector.java",
-    "line": 143,
+    "line": 150,
     "npe_method": "introspect",
     "deref_field": "pd",
     "npe_class": "FluentPropertyBeanIntrospector"

@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/ConvertUtilsBean.java",
-    "line": 680,
+    "line": 689,
     "npe_method": "lookup",
     "deref_field": "targetType",
     "npe_class": "ConvertUtilsBean"

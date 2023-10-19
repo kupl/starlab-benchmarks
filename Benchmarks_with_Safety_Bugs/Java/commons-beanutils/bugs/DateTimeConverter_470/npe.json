@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/converters/DateTimeConverter.java",
-    "line": 473,
+    "line": 490,
     "npe_method": "toDate",
     "deref_field": "locale",
     "npe_class": "DateTimeConverter"

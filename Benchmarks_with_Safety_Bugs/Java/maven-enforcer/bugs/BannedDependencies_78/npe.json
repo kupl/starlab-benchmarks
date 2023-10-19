@@ -1,6 +1,6 @@
 {
     "filepath": "enforcer-rules/src/main/java/org/apache/maven/plugins/enforcer/BannedDependencies.java",
-    "line": 72,
+    "line": 73,
     "npe_method": "checkDependencies",
     "deref_field": "included",
     "npe_class": "BannedDependencies"

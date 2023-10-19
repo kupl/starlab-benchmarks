@@ -1,6 +1,6 @@
 {
     "filepath": "src/main/java/org/apache/commons/beanutils2/converters/AbstractConverter.java",
-    "line": 318,
+    "line": 331,
     "npe_method": "handleMissing",
     "deref_field": "value",
     "npe_class": "AbstractConverter"

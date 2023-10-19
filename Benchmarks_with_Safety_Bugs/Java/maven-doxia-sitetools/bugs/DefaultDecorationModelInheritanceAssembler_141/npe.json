@@ -2,6 +2,6 @@
     "filepath": "doxia-decoration-model/src/main/java/org/apache/maven/doxia/site/decoration/inheritance/DefaultDecorationModelInheritanceAssembler.java",
     "line": 137,
     "npe_method": "resolvePaths",
-    "deref_field": "getBody()",
+    "deref_field": "getBody",
     "npe_class": "DefaultDecorationModelInheritanceAssembler"
 }

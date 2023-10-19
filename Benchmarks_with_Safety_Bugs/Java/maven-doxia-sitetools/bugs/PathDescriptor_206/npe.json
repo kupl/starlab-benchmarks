@@ -2,6 +2,6 @@
     "filepath": "doxia-decoration-model/src/main/java/org/apache/maven/doxia/site/decoration/inheritance/PathDescriptor.java",
     "line": 213,
     "npe_method": "getPath",
-    "deref_field": "getPathUrl()",
+    "deref_field": "getPathUrl",
     "npe_class": "PathDescriptor"
 }
