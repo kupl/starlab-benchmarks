@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "src/core/base.c",
+        "line": 554
+    },
+    "sink": {
+        "filepath": "src/core/base.c",
+        "line": 563
+    }
+}

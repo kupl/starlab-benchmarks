@@ -1,0 +1,180 @@
+checking for -Werror=unknown-warning-option... yes
+x264 configure script
+
+checking whether clang works... yes
+checking whether clang supports for( int i = 0; i < 9; i++ ); with -std=gnu99... yes
+checking for -mpreferred-stack-boundary=6... no
+Failed commandline was:
+--------------------------------------------------
+clang conftest.c -m64  -Wall -I. -I$(SRCPATH) -std=gnu99 -D_GNU_SOURCE  -Werror=unknown-warning-option -mpreferred-stack-boundary=6  -m64  -lm -o conftest
+clang-15: error: unknown argument: '-mpreferred-stack-boundary=6'
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -mstack-alignment=64... yes
+checking whether nasm supports vmovdqa32 [eax]{k1}{z}, zmm0... yes
+checking whether clang supports __asm__("pabsw %xmm0, %xmm0");... yes
+checking for pthread_create(0,0,0,0); in pthread.h... yes
+checking for cpu_set_t p_aff; return CPU_COUNT(&p_aff); in sched.h... yes
+checking for volatile float x = 2; return log2f(x); in math.h... yes
+checking for strtok_r(0, 0, 0); in string.h... yes
+checking for clock_gettime(CLOCK_MONOTONIC, 0); in time.h... yes
+checking whether defined(MAP_PRIVATE) is true... yes
+checking for MADV_HUGEPAGE; in sys/mman.h... yes
+checking for packages: libswscale libavutil... no
+Failed commandline was:
+--------------------------------------------------
+pkg-config --exists libswscale libavutil
+--------------------------------------------------
+checking for sws_init_context(0,0,0); in libswscale/swscale.h... no
+Failed commandline was:
+--------------------------------------------------
+clang conftest.c -m64  -Wall -I. -I$(SRCPATH) -std=gnu99 -D_GNU_SOURCE -mstack-alignment=64  -Werror=unknown-warning-option  -lswscale -lavutil  -m64  -lm -lpthread -o conftest
+conftest.c:1:10: fatal error: 'libswscale/swscale.h' file not found
+#include <libswscale/swscale.h>
+         ^~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <libswscale/swscale.h>
+int main (void) { sws_init_context(0,0,0); return 0; }
+--------------------------------------------------
+checking for packages: libavformat libavcodec libavutil... no
+Failed commandline was:
+--------------------------------------------------
+pkg-config --exists libavformat libavcodec libavutil
+--------------------------------------------------
+checking for -lavformat... no
+Failed commandline was:
+--------------------------------------------------
+clang conftest.c -m64  -Wall -I. -I$(SRCPATH) -std=gnu99 -D_GNU_SOURCE -mstack-alignment=64  -Werror=unknown-warning-option -lavformat  -m64  -lm -lpthread -o conftest
+/usr/bin/ld: cannot find -lavformat
+clang-15: error: linker command failed with exit code 1 (use -v to see invocation)
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for av_register_all(); in libavformat/avformat.h... no
+Failed commandline was:
+--------------------------------------------------
+clang conftest.c -m64  -Wall -I. -I$(SRCPATH) -std=gnu99 -D_GNU_SOURCE -mstack-alignment=64  -Werror=unknown-warning-option    -m64  -lm -lpthread -o conftest
+conftest.c:1:10: fatal error: 'libavformat/avformat.h' file not found
+#include <libavformat/avformat.h>
+         ^~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <libavformat/avformat.h>
+int main (void) { av_register_all(); return 0; }
+--------------------------------------------------
+checking for packages: ffms2... no
+Failed commandline was:
+--------------------------------------------------
+pkg-config --exists ffms2
+--------------------------------------------------
+checking for FFMS_DestroyVideoSource(0); in ffms.h... no
+Failed commandline was:
+--------------------------------------------------
+clang conftest.c -m64  -Wall -I. -I$(SRCPATH) -std=gnu99 -D_GNU_SOURCE -mstack-alignment=64  -Werror=unknown-warning-option  -lffms2  -m64  -lm -lpthread -o conftest
+conftest.c:1:10: fatal error: 'ffms.h' file not found
+#include <ffms.h>
+         ^~~~~~~~
+1 error generated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <ffms.h>
+int main (void) { FFMS_DestroyVideoSource(0); return 0; }
+--------------------------------------------------
+checking for FFMS_DestroyVideoSource(0); in ffms.h... no
+Failed commandline was:
+--------------------------------------------------
+clang conftest.c -m64  -Wall -I. -I$(SRCPATH) -std=gnu99 -D_GNU_SOURCE -mstack-alignment=64  -Werror=unknown-warning-option  -lffms2 -lstdc++   -m64  -lm -lpthread -o conftest
+conftest.c:1:10: fatal error: 'ffms.h' file not found
+#include <ffms.h>
+         ^~~~~~~~
+1 error generated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <ffms.h>
+int main (void) { FFMS_DestroyVideoSource(0); return 0; }
+--------------------------------------------------
+checking for packages: liblsmash... no
+Failed commandline was:
+--------------------------------------------------
+pkg-config --exists liblsmash
+--------------------------------------------------
+checking for lsmash_destroy_root(0); in lsmash.h... no
+Failed commandline was:
+--------------------------------------------------
+clang conftest.c -m64  -Wall -I. -I$(SRCPATH) -std=gnu99 -D_GNU_SOURCE -mstack-alignment=64  -Werror=unknown-warning-option  -llsmash  -m64  -lm -lpthread -o conftest
+conftest.c:1:10: fatal error: 'lsmash.h' file not found
+#include <lsmash.h>
+         ^~~~~~~~~~
+1 error generated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <lsmash.h>
+int main (void) { lsmash_destroy_root(0); return 0; }
+--------------------------------------------------
+checking for -lz... yes
+checking for gf_isom_close(0); in gpac/isomedia.h... no
+Failed commandline was:
+--------------------------------------------------
+clang conftest.c -m64  -Wall -I. -I$(SRCPATH) -std=gnu99 -D_GNU_SOURCE -mstack-alignment=64  -Werror=unknown-warning-option -lgpac_static -lz  -m64  -lm -lpthread -o conftest
+conftest.c:1:10: fatal error: 'gpac/isomedia.h' file not found
+#include <gpac/isomedia.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <gpac/isomedia.h>
+int main (void) { gf_isom_close(0); return 0; }
+--------------------------------------------------
+checking for uint32_t test_vec __attribute__ ((vector_size (16))) = {0,1,2,3}; in stdint.h... yes
+checking for -fno-tree-vectorize... yes
+checking for fseeko(stdin,0,0); in stdio.h... yes
+checking for -Wshadow... yes
+checking for -Wmaybe-uninitialized... no
+Failed commandline was:
+--------------------------------------------------
+clang conftest.c -Wshadow -O3 -ffast-math -m64  -Wall -I. -I$(SRCPATH) -std=gnu99 -D_GNU_SOURCE -mstack-alignment=64 -fomit-frame-pointer -fno-tree-vectorize  -Werror=unknown-warning-option -Wmaybe-uninitialized -ldl  -m64  -lm -lpthread -o conftest
+error: unknown warning option '-Wmaybe-uninitialized'; did you mean '-Wuninitialized'? [-Werror,-Wunknown-warning-option]
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+
+platform:      X86_64
+byte order:    little-endian
+system:        LINUX
+cli:           yes
+libx264:       internal
+shared:        no
+static:        no
+asm:           yes
+interlaced:    yes
+avs:           avxsynth
+lavf:          no
+ffms:          no
+mp4:           no
+gpl:           yes
+thread:        posix
+opencl:        yes
+filters:       crop select_every
+lto:           no
+debug:         no
+gprof:         no
+strip:         no
+PIC:           no
+bit depth:     all
+chroma format: all

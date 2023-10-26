@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "trust/save.c",
+        "line": 549
+    },
+    "sink": {
+        "filepath": "trust/save.c",
+        "line": 566
+    }
+}

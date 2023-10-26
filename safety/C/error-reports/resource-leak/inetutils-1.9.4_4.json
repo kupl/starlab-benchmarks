@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "ifconfig/system/linux.c",
+        "line": 913
+    },
+    "sink": {
+        "filepath": "ifconfig/system/linux.c",
+        "line": 919
+    }
+}

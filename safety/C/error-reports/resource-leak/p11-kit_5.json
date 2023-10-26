@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "p11-kit/rpc-transport.c",
+        "line": 1084
+    },
+    "sink": {
+        "filepath": "p11-kit/rpc-transport.c",
+        "line": 1096 
+    }
+}

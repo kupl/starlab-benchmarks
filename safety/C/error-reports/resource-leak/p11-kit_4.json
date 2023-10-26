@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "trust/token.c",
+        "line": 257 
+    },
+    "sink": {
+        "filepath": "trust/token.c",
+        "line": 266 
+    }
+}

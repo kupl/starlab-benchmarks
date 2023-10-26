@@ -1,4 +1,0 @@
-libyywrap.lo: libyywrap.c \
-  /home/junhee/projects/saver_original/infer/bin/../lib/clang_wrappers/global_defines.h
-
-/home/junhee/projects/saver_original/infer/bin/../lib/clang_wrappers/global_defines.h:

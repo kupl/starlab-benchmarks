@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "src/lxc/tools/lxc_usernsexec.c",
+        "line": 83
+    },
+    "sink": {
+        "filepath": "src/lxc/tools/lxc_usernsexec.c",
+        "line": 92
+    }
+}

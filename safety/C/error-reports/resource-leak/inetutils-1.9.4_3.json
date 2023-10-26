@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "ftpd.c",
+        "line": 2212
+    },
+    "sink": {
+        "filepath": "ftpd.c",
+        "line": 2264
+    }
+}

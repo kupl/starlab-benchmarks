@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "p11-kit/conf.c",
+        "line": 403
+    },
+    "sink": {
+        "filepath": "p11-kit/conf.c",
+        "line": 422
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "swoole_async.c",
+        "line": 528
+    },
+    "sink": {
+        "filepath": "swoole_async.c",
+        "line": 537
+    }
+}

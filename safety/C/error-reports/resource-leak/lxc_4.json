@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "hooks/unmount-namespace.c",
+        "line": 120
+    },
+    "sink": {
+        "filepath": "hooks/unmount-namespace.c",
+        "line": 144
+    }
+}

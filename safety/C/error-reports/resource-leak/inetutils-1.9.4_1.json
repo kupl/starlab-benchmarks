@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "libls/fts.c",
+        "line": 601
+    },
+    "sink": {
+        "filepath": "libls/fts.c",
+        "line": 605
+    }
+}

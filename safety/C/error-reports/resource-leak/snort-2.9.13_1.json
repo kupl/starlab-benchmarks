@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "src/output-plugins/spo_unified2.c",
+        "line": 274
+    },
+    "sink": {
+        "filepath": "src/output-plugins/spo_unified2.c",
+        "line": 278
+    }
+}

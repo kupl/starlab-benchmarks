@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "sink": {
+        "filepath": "input/y4m.c",
+        "line": 107
+    },
+    "source": {
+        "filepath": "input/y4m.c",
+        "line": 89
+    }
+}

@@ -1,4 +1,0 @@
-wavpack-md5.o: md5.c \
-  /home/junhee/projects/saver/infer/bin/../lib/clang_wrappers/global_defines.h
-
-/home/junhee/projects/saver/infer/bin/../lib/clang_wrappers/global_defines.h:

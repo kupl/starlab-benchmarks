@@ -1,0 +1,11 @@
+{
+    "err_type": "RESOURCE_LEAK",
+    "source": {
+        "filepath": "tools/u2spewfoo/u2spewfoo.c",
+        "line": 762
+    },
+    "sink": {
+        "filepath": "tools/u2spewfoo/u2spewfoo.c",
+        "line": 771
+    }
+}
