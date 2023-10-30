@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/geronimo/jcache/simple/cdi/CacheResultInterceptor.java",
-    "line": 77,
-    "npe_method": "cache",
-    "deref_field": "result",
-    "npe_class": "CacheResultInterceptor"
-}

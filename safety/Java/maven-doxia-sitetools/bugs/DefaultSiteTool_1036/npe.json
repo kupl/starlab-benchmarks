@@ -1,7 +1,0 @@
-{
-    "filepath": "doxia-integration-tools/src/main/java/org/apache/maven/doxia/tools/DefaultSiteTool.java",
-    "line": 1043,
-    "npe_method": "getNormalizedPath",
-    "deref_field": "normalized",
-    "npe_class": "DefaultSiteTool"
-}

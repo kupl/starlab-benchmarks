@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/serviceusermapping/impl/ServiceUserMapperImpl.java",
-    "line": 422,
-    "npe_method": "internalGetUserId",
-    "deref_field": "userId",
-    "npe_class": "ServiceUserMapperImpl"
-}

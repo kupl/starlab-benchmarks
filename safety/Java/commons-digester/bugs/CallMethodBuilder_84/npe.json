@@ -1,7 +1,0 @@
-{
-    "filepath": "core/src/main/java/org/apache/commons/digester3/binder/CallMethodBuilder.java",
-    "line": 95,
-    "npe_method": "withParamTypes",
-    "deref_field": "paramTypeNames",
-    "npe_class": "CallMethodBuilder"
-}

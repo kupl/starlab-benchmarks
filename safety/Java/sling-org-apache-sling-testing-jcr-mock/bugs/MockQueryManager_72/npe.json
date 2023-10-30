@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/testing/mock/jcr/MockQueryManager.java",
-    "line": 74,
-    "npe_method": "executeQuery",
-    "deref_field": "result",
-    "npe_class": "MockQueryManager"
-}

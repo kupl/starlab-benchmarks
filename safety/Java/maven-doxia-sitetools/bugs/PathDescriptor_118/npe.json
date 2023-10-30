@@ -1,7 +1,0 @@
-{
-    "filepath": "doxia-decoration-model/src/main/java/org/apache/maven/doxia/site/decoration/inheritance/PathDescriptor.java",
-    "line": 119,
-    "npe_method": "buildBaseUrl",
-    "deref_field": "base",
-    "npe_class": "PathDescriptor"
-}

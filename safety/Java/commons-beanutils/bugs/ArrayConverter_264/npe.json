@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/converters/ArrayConverter.java",
-    "line": 270,
-    "npe_method": "convertToString",
-    "deref_field": "iterator",
-    "npe_class": "ArrayConverter"
-}

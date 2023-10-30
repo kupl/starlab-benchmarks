@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/auth/core/impl/PathBasedHolderCache.java",
-    "line": 61,
-    "npe_method": "addHolder",
-    "deref_field": "currentPathSet",
-    "npe_class": "PathBasedHolderCache"
-}

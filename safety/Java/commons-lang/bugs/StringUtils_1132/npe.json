@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
-    "line": 1176,
-    "npe_method": "compareIgnoreCase",
-    "deref_field": "str2",
-    "npe_class": "StringUtils"
-}

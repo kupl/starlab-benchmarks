@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/geronimo/jcache/simple/ConfigurableMBeanServerIdBuilder.java",
-    "line": 79,
-    "npe_method": "hashCode",
-    "deref_field": "outer",
-    "npe_class": "Key"
-}

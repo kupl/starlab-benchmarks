@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/locale/converters/DateLocaleConverter.java",
-    "line": 262,
-    "npe_method": "parse",
-    "deref_field": "pattern",
-    "npe_class": "DateLocaleConverter"
-}

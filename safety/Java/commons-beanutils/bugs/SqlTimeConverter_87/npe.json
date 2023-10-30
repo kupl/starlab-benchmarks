@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/converters/SqlTimeConverter.java",
-    "line": 99,
-    "npe_method": "getFormat",
-    "deref_field": "timeZone",
-    "npe_class": "SqlTimeConverter"
-}

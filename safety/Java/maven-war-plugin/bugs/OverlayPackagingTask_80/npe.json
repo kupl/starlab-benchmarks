@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugins/war/packaging/OverlayPackagingTask.java",
-    "line": 73,
-    "npe_method": "performPackaging",
-    "deref_field": "getTargetPath",
-    "npe_class": "OverlayPackagingTask"
-}

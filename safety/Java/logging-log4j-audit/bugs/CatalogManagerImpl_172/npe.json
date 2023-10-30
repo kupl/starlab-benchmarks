@@ -1,7 +1,0 @@
-{
-    "filepath": "log4j-audit/log4j-audit-api/src/main/java/org/apache/logging/log4j/audit/catalog/CatalogManagerImpl.java",
-    "line": 174,
-    "npe_method": "addEntry",
-    "deref_field": "attribute",
-    "npe_class": "CatalogManagerImpl"
-}

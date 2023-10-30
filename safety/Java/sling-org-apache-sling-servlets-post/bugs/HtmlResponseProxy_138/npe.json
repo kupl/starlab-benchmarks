@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/servlets/post/impl/helper/HtmlResponseProxy.java",
-    "line": 142,
-    "npe_method": "setCreateRequest",
-    "deref_field": "postResponse",
-    "npe_class": "HtmlResponseProxy"
-}

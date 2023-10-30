@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/MappedPropertyDescriptor.java",
-    "line": 301,
-    "npe_method": "findMappedPropertyType",
-    "deref_field": "mappedWriteMethod",
-    "npe_class": "MappedPropertyDescriptor"
-}

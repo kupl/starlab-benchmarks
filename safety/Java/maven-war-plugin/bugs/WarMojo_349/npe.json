@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugins/war/WarMojo.java",
-    "line": 363,
-    "npe_method": "getTargetFile",
-    "deref_field": "classifier",
-    "npe_class": "WarMojo"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/converters/ArrayConverter.java",
-    "line": 492,
-    "npe_method": "parseElements",
-    "deref_field": "st.sval",
-    "npe_class": "ArrayConverter"
-}

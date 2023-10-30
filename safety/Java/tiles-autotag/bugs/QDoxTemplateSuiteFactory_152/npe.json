@@ -1,7 +1,0 @@
-{
-    "filepath": "tiles-autotag-core/src/main/java/org/apache/tiles/autotag/core/QDoxTemplateSuiteFactory.java",
-    "line": 153,
-    "npe_method": "createTemplateSuite",
-    "deref_field": "executeMethod",
-    "npe_class": "QDoxTemplateSuiteFactory"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/test/java/org/apache/commons/beanutils2/converters/DateConverterTestBase.java",
-    "line": 588,
-    "npe_method": "validConversion",
-    "deref_field": "expected",
-    "npe_class": "DateConverterTestBase"
-}

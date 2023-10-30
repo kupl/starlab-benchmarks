@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugins/invoker/SelectorUtils.java",
-    "line": 137,
-    "npe_method": "getMavenVersion",
-    "deref_field": "version",
-    "npe_class": "SelectorUtils"
-}

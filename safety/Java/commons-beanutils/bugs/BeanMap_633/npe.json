@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/BeanMap.java",
-    "line": 653,
-    "npe_method": "createWriteMethodArguments",
-    "deref_field": "value",
-    "npe_class": "BeanMap"
-}

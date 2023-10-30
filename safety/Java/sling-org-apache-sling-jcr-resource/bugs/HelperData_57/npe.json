@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/jcr/resource/internal/HelperData.java",
-    "line": 59,
-    "npe_method": "getDynamicClassLoader",
-    "deref_field": "dclm",
-    "npe_class": "HelperData"
-}

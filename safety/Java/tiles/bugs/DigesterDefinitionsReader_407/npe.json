@@ -1,7 +1,0 @@
-{
-    "filepath": "tiles-core/src/main/java/org/apache/tiles/definition/digester/DigesterDefinitionsReader.java",
-    "line": 416,
-    "npe_method": "addDefinition",
-    "deref_field": "name",
-    "npe_class": "DigesterDefinitionsReader"
-}

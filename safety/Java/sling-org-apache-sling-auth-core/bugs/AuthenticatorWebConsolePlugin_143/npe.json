@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/auth/core/impl/AuthenticatorWebConsolePlugin.java",
-    "line": 143,
-    "npe_method": "printAuthenticationConfiguration",
-    "deref_field": "anonUser",
-    "npe_class": "AuthenticatorWebConsolePlugin"
-}

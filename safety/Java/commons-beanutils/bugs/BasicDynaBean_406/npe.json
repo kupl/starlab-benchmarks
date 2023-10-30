@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/BasicDynaBean.java",
-    "line": 417,
-    "npe_method": "getDynaProperty",
-    "deref_field": "descriptor",
-    "npe_class": "BasicDynaBean"
-}

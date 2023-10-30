@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/servlets/post/impl/helper/RequestProperty.java",
-    "line": 160,
-    "npe_method": "providesValue",
-    "deref_field": "sv",
-    "npe_class": "RequestProperty"
-}

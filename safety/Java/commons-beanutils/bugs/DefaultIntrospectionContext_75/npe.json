@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/DefaultIntrospectionContext.java",
-    "line": 77,
-    "npe_method": "addPropertyDescriptors",
-    "deref_field": "descs",
-    "npe_class": "DefaultIntrospectionContext"
-}

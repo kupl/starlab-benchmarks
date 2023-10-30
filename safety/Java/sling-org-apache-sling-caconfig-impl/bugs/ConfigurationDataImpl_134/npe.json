@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/caconfig/management/impl/ConfigurationDataImpl.java",
-    "line": 137,
-    "npe_method": "getPropertyNames",
-    "deref_field": "configMetadata",
-    "npe_class": "ConfigurationDataImpl"
-}

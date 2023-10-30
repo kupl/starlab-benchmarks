@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/PathTool.java",
-    "line": 279,
-    "npe_method": "uppercaseDrive",
-    "deref_field": "path",
-    "npe_class": "PathTool"
-}

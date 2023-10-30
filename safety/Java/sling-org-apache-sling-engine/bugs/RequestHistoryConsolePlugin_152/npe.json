@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/engine/impl/console/RequestHistoryConsolePlugin.java",
-    "line": 154,
-    "npe_method": "printLinksTable",
-    "deref_field": "values",
-    "npe_class": "RequestHistoryConsolePlugin"
-}

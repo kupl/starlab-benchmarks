@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugins/deploy/DeployFileMojo.java",
-    "line": 217,
-    "npe_method": "initProperties",
-    "deref_field": "pomFile",
-    "npe_class": "DeployFileMojo"
-}

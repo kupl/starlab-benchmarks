@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugins/install/InstallFileMojo.java",
-    "line": 397,
-    "npe_method": "readingPomFromJarFile",
-    "deref_field": "jarFile",
-    "npe_class": "InstallFileMojo"
-}

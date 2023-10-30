@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/CharSet.java",
-    "line": 226,
-    "npe_method": "getInstance",
-    "deref_field": "common",
-    "npe_class": "CharSet"
-}

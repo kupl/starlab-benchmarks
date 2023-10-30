@@ -1,7 +1,0 @@
-{
-    "filepath": "log4j-catalog/log4j-catalog-api/src/main/java/org/apache/logging/log4j/catalog/api/Event.java",
-    "line": 181,
-    "npe_method": "toString",
-    "deref_field": "attributes",
-    "npe_class": "Event"
-}

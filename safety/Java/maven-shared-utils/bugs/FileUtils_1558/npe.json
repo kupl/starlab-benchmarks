@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/io/FileUtils.java",
-    "line": 1573,
-    "npe_method": "getFileAndDirectoryNames",
-    "deref_field": "excludes",
-    "npe_class": "FileUtils"
-}

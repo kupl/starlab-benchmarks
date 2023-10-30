@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/Os.java",
-    "line": 369,
-    "npe_method": "isOs",
-    "deref_field": "version",
-    "npe_class": "Os"
-}

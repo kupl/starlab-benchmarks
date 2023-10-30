@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java",
-    "line": 622,
-    "npe_method": "append",
-    "deref_field": "array",
-    "npe_class": "HashCodeBuilder"
-}

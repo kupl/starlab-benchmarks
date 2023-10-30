@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java",
-    "line": 1092,
-    "npe_method": "setVariableSuffix",
-    "deref_field": "suffix",
-    "npe_class": "StrSubstitutor"
-}

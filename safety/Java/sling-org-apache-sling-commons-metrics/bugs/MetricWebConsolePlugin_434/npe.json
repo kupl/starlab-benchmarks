@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/commons/metrics/internal/MetricWebConsolePlugin.java",
-    "line": 437,
-    "npe_method": "getConsolidatedRegistry",
-    "deref_field": "metricRegistryName",
-    "npe_class": "MetricWebConsolePlugin"
-}

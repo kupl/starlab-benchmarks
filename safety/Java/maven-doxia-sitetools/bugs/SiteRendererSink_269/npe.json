@@ -1,7 +1,0 @@
-{
-    "filepath": "doxia-site-renderer/src/main/java/org/apache/maven/doxia/siterenderer/sink/SiteRendererSink.java",
-    "line": 274,
-    "npe_method": "text",
-    "deref_field": "sectionTitleBuffer",
-    "npe_class": "SiteRendererSink"
-}

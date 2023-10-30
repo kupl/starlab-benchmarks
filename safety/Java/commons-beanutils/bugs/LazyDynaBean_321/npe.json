@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/LazyDynaBean.java",
-    "line": 330,
-    "npe_method": "get",
-    "deref_field": "value",
-    "npe_class": "LazyDynaBean"
-}

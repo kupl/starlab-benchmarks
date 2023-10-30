@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/MappedPropertyDescriptor.java",
-    "line": 479,
-    "npe_method": "get",
-    "deref_field": "clazz",
-    "npe_class": "MappedMethodReference"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/test/java/org/apache/commons/lang3/time/DurationFormatUtilsTest.java",
-    "line": 626,
-    "npe_method": "assertEqualDuration",
-    "deref_field": "message",
-    "npe_class": "DurationFormatUtilsTest"
-}

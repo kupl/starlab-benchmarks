@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugins/war/packaging/AbstractWarPackagingTask.java",
-    "line": 123,
-    "npe_method": "copyFiles",
-    "deref_field": "targetPrefix",
-    "npe_class": "AbstractWarPackagingTask"
-}

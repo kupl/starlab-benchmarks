@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugins/invoker/AbstractInvokerMojo.java",
-    "line": 1088,
-    "npe_method": "cloneProjects",
-    "deref_field": "cloneSubdir",
-    "npe_class": "AbstractInvokerMojo"
-}

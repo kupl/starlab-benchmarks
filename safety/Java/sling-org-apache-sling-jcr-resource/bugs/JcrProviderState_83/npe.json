@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/jcr/resource/internal/helper/jcr/JcrProviderState.java",
-    "line": 86,
-    "npe_method": "logout",
-    "deref_field": "bundleContext",
-    "npe_class": "JcrProviderState"
-}

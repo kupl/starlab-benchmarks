@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/ConstructorUtils.java",
-    "line": 435,
-    "npe_method": "getMatchingAccessibleConstructor",
-    "deref_field": "ctor",
-    "npe_class": "ConstructorUtils"
-}

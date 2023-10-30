@@ -1,7 +1,0 @@
-{
-    "filepath": "tiles-core/src/main/java/org/apache/tiles/definition/pattern/wildcard/WildcardDefinitionPatternMatcher.java",
-    "line": 81,
-    "npe_method": "createDefinition",
-    "deref_field": "vars",
-    "npe_class": "WildcardDefinitionPatternMatcher"
-}
