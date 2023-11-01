@@ -1,8 +1,0 @@
-{
-    "err_type": "IO",
-    "source": null,
-    "sink": {
-        "filepath": "files/2018-13180.sol",
-        "line": "214"
-    }
-}
