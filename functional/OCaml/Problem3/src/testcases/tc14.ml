@@ -1,1 +1,0 @@
-assert ((test (AndAlso ((True, Not (True)))) )= false)

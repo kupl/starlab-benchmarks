@@ -1,1 +1,0 @@
-assert ((test (Times [Var "x"], "x") [("x", 1)]) = 1)

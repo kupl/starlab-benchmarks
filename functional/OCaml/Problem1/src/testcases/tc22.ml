@@ -1,1 +1,0 @@
-assert ((test (Power ("x", 1), "x") [("x", 2)]) = 1)

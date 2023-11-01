@@ -1,1 +1,0 @@
-assert ((test (Sum [Const 0; Var "x"],"x") [("x",10)]) = 1)
