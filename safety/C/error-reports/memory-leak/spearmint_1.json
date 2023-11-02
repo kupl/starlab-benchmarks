@@ -1,5 +1,5 @@
 {
-  "err_type": "RESOURCE_LEAK",
+  "err_type": "MEMORY_LEAK",
   "source": {
     "filepath": "code/opusfile-0.9/src/opusfile.c",
     "line": 1437
