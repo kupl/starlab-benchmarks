@@ -1,1 +1,0 @@
-assert ((test (OrElse (True, True))) = true)

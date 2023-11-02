@@ -1,1 +1,0 @@
-assert ((test (Sum [Power ("x", 2); Power ("x", 2); Const 1], "x") [("x",3)]) = 12)

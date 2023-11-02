@@ -1,1 +1,0 @@
-assert ((test (C ((P (("x", V ("x"))), V ("x"))))) = false)

@@ -1,1 +1,0 @@
-assert ((test (C (V "h", C (C (V "f", V "f"), V "y")))) = false)

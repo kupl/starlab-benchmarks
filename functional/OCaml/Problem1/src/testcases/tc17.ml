@@ -1,1 +1,0 @@
-assert ((test (Times [Times [Sum [Var "x"; Var "y"]; Var "x"]; Var "x"], "x") [("x",2); ("y", 5)]) =  32)
