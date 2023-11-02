@@ -1,0 +1,11 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": {
+    "filepath": "src/fmpz_mpoly_factor/sort.c",
+    "line": 61
+  },
+  "sink": {
+    "filepath": "src/fmpz_mpoly_factor/sort.c",
+    "line": 71
+  }
+}

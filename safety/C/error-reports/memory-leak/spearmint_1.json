@@ -1,0 +1,11 @@
+{
+  "err_type": "RESOURCE_LEAK",
+  "source": {
+    "filepath": "code/opusfile-0.9/src/opusfile.c",
+    "line": 1437
+  },
+  "sink": {
+    "filepath": "code/opusfile-0.9/src/opusfile.c",
+    "line": 1464
+  }
+}
