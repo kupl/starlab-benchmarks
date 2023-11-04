@@ -1,9 +1,0 @@
-{
-	"filepath": "src/java/org/apache/commons/lang3/StringUtils.java",
-	"line": 3678,
-	"deref_field": "__NPEX_tmp",
-	"sink_field": "length",
-	"npe_class": "StringUtils",
-	"npe_method": "replaceEach",
-  "nullpointer": "__NPEX_tmp"
-}

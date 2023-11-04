@@ -1,9 +1,0 @@
-{
-    "filepath": "source/org/jfree/chart/plot/XYPlot.java",
-    "line": 4493,
-    "deref_field": "r",
-    "sink_field": "getAnnotations",
-    "npe_class": "XYPlot",
-    "npe_method": "getDataRange",
-    "nullpointer": "r"
-}
