@@ -1,4 +1,0 @@
-{
-    "Error_Type": "Abnormal-termination",
-    "Test-Cases":  "'\\(\\)\\1*?*?\\|\\W*\\1W*'"
-}

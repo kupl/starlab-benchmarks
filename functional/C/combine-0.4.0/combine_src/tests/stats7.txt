@@ -1,5 +1,0 @@
-Statistics for data file test.5
-  Number of records read:                            2
-  Number of records dropped by filter:               0
-  Number of records matched on key:                  2
-  Number of records written:                         2

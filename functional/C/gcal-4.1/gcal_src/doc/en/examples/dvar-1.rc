@@ -1,8 +1,0 @@
-; dvar-1.rc
-;
-z=0202
-0@z The local assigned date to `z'
-z=
-0@z The global assigned date to `z'
-z=0404
-0@z The local assigned date to `z'
