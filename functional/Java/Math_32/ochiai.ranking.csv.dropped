@@ -1,0 +1,7 @@
+name;suspiciousness_value
+org.apache.commons.math3.geometry.partitioning.utilities$AVLTree#getNotSmaller(java.lang.Comparable):167;1.0
+org.apache.commons.math3.geometry.euclidean.threed$PolyhedronsSet#PolyhedronsSet(java.util.Collection):83;1.0
+org.apache.commons.math3.geometry.euclidean.threed$PolyhedronsSet#PolyhedronsSet(java.util.Collection):84;1.0
+org.apache.commons.math3.geometry.euclidean.twod$PolygonsSet#computeGeometricalProperties():135;1.0
+org.apache.commons.math3.geometry.euclidean.twod$PolygonsSet#computeGeometricalProperties():136;1.0
+org.apache.commons.math3.geometry.euclidean.twod$PolygonsSet#followLoop(org.apache.commons.math3.geometry.partitioning.utilities.AVLTree$Node,org.apache.commons.math3.geometry.partitioning.utilities.AVLTree):330;1.0

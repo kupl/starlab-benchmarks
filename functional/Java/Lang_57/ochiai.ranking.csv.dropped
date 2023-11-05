@@ -1,0 +1,7 @@
+name;suspiciousness_value
+org.apache.commons.lang$LocaleUtils#<clinit>():47;0.82915619758885
+org.apache.commons.lang$LocaleUtils#<clinit>():49;0.82915619758885
+org.apache.commons.lang$LocaleUtils#<clinit>():51;0.82915619758885
+org.apache.commons.lang$LocaleUtils#<clinit>():52;0.82915619758885
+org.apache.commons.lang$LocaleUtils#<clinit>():53;0.82915619758885
+org.apache.commons.lang$LocaleUtils#isAvailableLocale(java.util.Locale):223;0.82915619758885

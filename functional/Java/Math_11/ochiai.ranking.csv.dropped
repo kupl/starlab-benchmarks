@@ -1,0 +1,12 @@
+name;suspiciousness_value
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#density(double[]):178;0.5773502691896258
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#density(double[]):179;0.5773502691896258
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#density(double[]):183;0.5773502691896258
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#getExponentTerm(double[]):229;0.5773502691896258
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#getExponentTerm(double[]):230;0.5773502691896258
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#getExponentTerm(double[]):231;0.5773502691896258
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#getExponentTerm(double[]):233;0.5773502691896258
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#getExponentTerm(double[]):234;0.5773502691896258
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#getExponentTerm(double[]):235;0.5773502691896258
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#getExponentTerm(double[]):236;0.5773502691896258
+org.apache.commons.math3.distribution$MultivariateNormalDistribution#getExponentTerm(double[]):238;0.5773502691896258

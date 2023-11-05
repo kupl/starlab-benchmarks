@@ -1,0 +1,8 @@
+name;suspiciousness_value
+org.apache.commons.math.analysis.solvers$BaseAbstractUnivariateRealSolver#incrementEvaluationCount():295;0.5773502691896258
+org.apache.commons.math.analysis.solvers$BaseAbstractUnivariateRealSolver#incrementEvaluationCount():296;0.5773502691896258
+org.apache.commons.math.exception$MathIllegalStateException#getLocalizedMessage():84;0.5773502691896258
+org.apache.commons.math.exception.util$ExceptionContext#getLocalizedMessage():116;0.5
+org.apache.commons.math.exception.util$ExceptionContext#buildMessage(java.util.Locale,java.lang.String):161;0.5
+org.apache.commons.math.exception.util$ExceptionContext#getMessage(java.util.Locale):126;0.3779644730092272
+org.apache.commons.math.analysis.solvers$BaseSecantSolver#doSolve():189;0.3779644730092272

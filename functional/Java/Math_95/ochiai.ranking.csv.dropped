@@ -1,0 +1,7 @@
+name;suspiciousness_value
+org.apache.commons.math.analysis$UnivariateRealSolverUtils#bracket(org.apache.commons.math.analysis.UnivariateRealFunction,double,double,double,int):179;0.7071067811865475
+org.apache.commons.math.distribution$FDistributionImpl#getDomainLowerBound(double):119;0.5773502691896258
+org.apache.commons.math.distribution$FDistributionImpl#getDomainUpperBound(double):132;0.5773502691896258
+org.apache.commons.math.distribution$FDistributionImpl#getInitialDomain(double):145;0.5773502691896258
+org.apache.commons.math.distribution$FDistributionImpl#getInitialDomain(double):147;0.5773502691896258
+org.apache.commons.math.distribution$FDistributionImpl#getInitialDomain(double):148;0.5773502691896258

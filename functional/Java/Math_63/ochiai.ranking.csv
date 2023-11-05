@@ -1,0 +1,11 @@
+name;suspiciousness_value
+org.apache.commons.math.util$MathUtils#equals(double,double):417;1.0
+org.apache.commons.math.util$MathUtils#equals(double[],double[]):523;1.0
+org.apache.commons.math.util$MathUtils#equals(double[],double[]):524;1.0
+org.apache.commons.math.util$MathUtils#equals(double[],double[]):526;1.0
+org.apache.commons.math.util$MathUtils#equals(double[],double[]):527;1.0
+org.apache.commons.math.util$MathUtils#equals(double[],double[]):529;1.0
+org.apache.commons.math.util$MathUtils#equals(double[],double[]):530;1.0
+org.apache.commons.math.util$MathUtils#equals(double[],double[]):534;1.0
+org.apache.commons.math.util$MathUtils#<clinit>():33;0.047298376984040214
+org.apache.commons.math.util$MathUtils#<clinit>():75;0.047298376984040214

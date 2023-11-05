@@ -1,0 +1,13 @@
+name;suspiciousness_value
+org.apache.commons.math.complex$ComplexFormat#parse(java.lang.String,java.text.ParsePosition):349;0.3779644730092272
+org.apache.commons.math.complex$ComplexFormat#parse(java.lang.String,java.text.ParsePosition):350;0.3779644730092272
+org.apache.commons.math.complex$ComplexFormat#ComplexFormat():58;0.35355339059327373
+org.apache.commons.math.complex$ComplexFormat#ComplexFormat():59;0.35355339059327373
+org.apache.commons.math.complex$ComplexFormat#getDefaultNumberFormat():237;0.35355339059327373
+org.apache.commons.math.complex$ComplexFormat#parse(java.lang.String,java.text.ParsePosition):361;0.2886751345948129
+org.apache.commons.math.complex$ComplexFormat#parse(java.lang.String,java.text.ParsePosition):364;0.2886751345948129
+org.apache.commons.math.complex$ComplexFormat#parse(java.lang.String,java.text.ParsePosition):365;0.2886751345948129
+org.apache.commons.math.complex$ComplexFormat#parse(java.lang.String,java.text.ParsePosition):374;0.2886751345948129
+org.apache.commons.math.complex$ComplexFormat#parse(java.lang.String,java.text.ParsePosition):375;0.2886751345948129
+org.apache.commons.math.complex$ComplexFormat#parse(java.lang.String,java.text.ParsePosition):376;0.2886751345948129
+org.apache.commons.math.complex$ComplexFormat#parse(java.lang.String,java.text.ParsePosition):377;0.2886751345948129

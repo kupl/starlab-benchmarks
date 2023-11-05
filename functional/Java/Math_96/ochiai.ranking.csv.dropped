@@ -1,0 +1,7 @@
+name;suspiciousness_value
+org.apache.commons.math.complex$Complex#hashCode():277;0.7071067811865475
+org.apache.commons.math.complex$Complex#hashCode():280;0.7071067811865475
+org.apache.commons.math.complex$Complex#multiply(org.apache.commons.math.complex.Complex):363;0.22360679774997896
+org.apache.commons.math.complex$Complex#multiply(org.apache.commons.math.complex.Complex):358;0.20412414523193154
+org.apache.commons.math.complex$Complex#equals(java.lang.Object):258;0.18257418583505536
+org.apache.commons.math.complex$Complex#multiply(org.apache.commons.math.complex.Complex):355;0.18257418583505536

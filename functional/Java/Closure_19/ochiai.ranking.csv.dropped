@@ -1,0 +1,3 @@
+name;suspiciousness_value
+com.google.javascript.rhino$Token#name(int):217;1.0
+com.google.javascript.jscomp.type$ChainableReverseAbstractInterpreter#declareNameInScope(com.google.javascript.jscomp.type.FlowScope,com.google.javascript.rhino.Node,com.google.javascript.rhino.jstype.JSType):175;1.0
