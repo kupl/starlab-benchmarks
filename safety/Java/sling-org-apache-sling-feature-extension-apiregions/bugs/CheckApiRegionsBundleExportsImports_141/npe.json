@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/extension/apiregions/analyser/CheckApiRegionsBundleExportsImports.java",
-    "line": 139,
-    "npe_method": "execute",
-    "deref_field": "getFrameworkDescriptor",
-    "npe_class": "CheckApiRegionsBundleExportsImports"
-}

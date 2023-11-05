@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/caconfig/impl/metadata/AnnotationClassParser.java",
-    "line": 75,
-    "npe_method": "getConfigurationName",
-    "deref_field": "configAnnotation",
-    "npe_class": "AnnotationClassParser"
-}

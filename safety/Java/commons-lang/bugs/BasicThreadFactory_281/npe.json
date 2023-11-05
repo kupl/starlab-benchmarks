@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
-    "line": 294,
-    "npe_method": "wrappedFactory",
-    "deref_field": "factory",
-    "npe_class": "Builder"
-}

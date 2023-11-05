@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/caconfig/impl/ConfigurationInheritanceStrategyMultiplexerImpl.java",
-    "line": 83,
-    "npe_method": "getResource",
-    "deref_field": "result",
-    "npe_class": "ConfigurationInheritanceStrategyMultiplexerImpl"
-}

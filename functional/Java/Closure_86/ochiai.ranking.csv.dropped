@@ -1,3 +1,0 @@
-name;suspiciousness_value
-com.google.javascript.jscomp$NodeUtil#functionCallHasSideEffects(com.google.javascript.rhino.Node,com.google.javascript.jscomp.AbstractCompiler):762;0.7559289460184544
-com.google.javascript.jscomp$NodeUtil#evaluatesToLocalValue(com.google.javascript.rhino.Node,com.google.common.base.Predicate):2465;0.6236095644623235

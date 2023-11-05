@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
-    "line": 325,
-    "npe_method": "hashCodeMulti",
-    "deref_field": "objects",
-    "npe_class": "ObjectUtils"
-}

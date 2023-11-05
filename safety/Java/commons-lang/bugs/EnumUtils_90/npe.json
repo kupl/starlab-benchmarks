@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
-    "line": 107,
-    "npe_method": "isValidEnum",
-    "deref_field": "enumName",
-    "npe_class": "EnumUtils"
-}

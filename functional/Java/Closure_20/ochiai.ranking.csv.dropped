@@ -1,7 +1,0 @@
-name;suspiciousness_value
-com.google.javascript.jscomp$PeepholeSubstituteAlternateSyntax#tryFoldSimpleFunctionCall(com.google.javascript.rhino.Node):219;1.0
-com.google.javascript.jscomp$PeepholeSubstituteAlternateSyntax#tryFoldSimpleFunctionCall(com.google.javascript.rhino.Node):220;1.0
-com.google.javascript.jscomp$PeepholeSubstituteAlternateSyntax#tryFoldSimpleFunctionCall(com.google.javascript.rhino.Node):221;1.0
-com.google.javascript.jscomp$PeepholeSubstituteAlternateSyntax#tryFoldSimpleFunctionCall(com.google.javascript.rhino.Node):224;1.0
-com.google.javascript.jscomp$PeepholeSubstituteAlternateSyntax#tryFoldSimpleFunctionCall(com.google.javascript.rhino.Node):225;1.0
-com.google.javascript.jscomp$PeepholeSubstituteAlternateSyntax#tryFoldSimpleFunctionCall(com.google.javascript.rhino.Node):226;1.0

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/Range.java",
-    "line": 381,
-    "npe_method": "isBeforeRange",
-    "deref_field": "otherRange",
-    "npe_class": "Range"
-}

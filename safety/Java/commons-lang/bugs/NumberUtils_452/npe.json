@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
-    "line": 522,
-    "npe_method": "createNumber",
-    "deref_field": "str",
-    "npe_class": "NumberUtils"
-}

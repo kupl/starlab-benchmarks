@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
-    "line": 174,
-    "npe_method": "isValid",
-    "deref_field": "domain",
-    "npe_class": "DomainValidator"
-}

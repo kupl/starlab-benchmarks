@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/caconfig/management/impl/ConfigurationDataImpl.java",
-    "line": 183,
-    "npe_method": "resolveNestedConfigs",
-    "deref_field": "configMetadata",
-    "npe_class": "ConfigurationDataImpl"
-}

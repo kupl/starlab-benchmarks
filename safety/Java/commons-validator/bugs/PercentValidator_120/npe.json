@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/validator/routines/PercentValidator.java",
-    "line": 133,
-    "npe_method": "parse",
-    "deref_field": "parsedValue",
-    "npe_class": "PercentValidator"
-}

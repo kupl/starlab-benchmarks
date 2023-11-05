@@ -1,5 +1,0 @@
-name;suspiciousness_value
-com.google.javascript.jscomp$BasicErrorManager$LeveledJSErrorComparator#compare(com.google.javascript.jscomp.BasicErrorManager$ErrorWithLevel,com.google.javascript.jscomp.BasicErrorManager$ErrorWithLevel):161;0.2773500981126146
-com.google.javascript.rhino.jstype$PrototypeObjectType#toStringHelper(boolean):375;0.20851441405707477
-com.google.javascript.jscomp$TypedScopeCreator$AbstractScopeBuilder#getDeclaredType(java.lang.String,com.google.javascript.rhino.JSDocInfo,com.google.javascript.rhino.Node,com.google.javascript.rhino.Node):1295;0.2
-com.google.javascript.jscomp$TypedScopeCreator$AbstractScopeBuilder#getDeclaredType(java.lang.String,com.google.javascript.rhino.JSDocInfo,com.google.javascript.rhino.Node,com.google.javascript.rhino.Node):1291;0.18569533817705186

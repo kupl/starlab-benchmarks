@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java",
-    "line": 418,
-    "npe_method": "appendStart",
-    "deref_field": "object",
-    "npe_class": "ToStringStyle"
-}

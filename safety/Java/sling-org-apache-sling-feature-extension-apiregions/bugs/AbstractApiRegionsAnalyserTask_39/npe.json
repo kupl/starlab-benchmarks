@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/extension/apiregions/analyser/AbstractApiRegionsAnalyserTask.java",
-    "line": 39,
-    "npe_method": "execute",
-    "deref_field": "apiRegionsExtension",
-    "npe_class": "AbstractApiRegionsAnalyserTask"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
-    "line": 271,
-    "npe_method": "toMap",
-    "deref_field": "array",
-    "npe_class": "ArrayUtils"
-}

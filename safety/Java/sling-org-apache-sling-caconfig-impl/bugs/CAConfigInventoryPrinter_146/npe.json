@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/caconfig/management/impl/console/CAConfigInventoryPrinter.java",
-    "line": 148,
-    "npe_method": "getServiceRanking",
-    "deref_field": "serviceRanking",
-    "npe_class": "CAConfigInventoryPrinter"
-}

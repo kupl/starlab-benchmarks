@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java",
-    "line": 940,
-    "npe_method": "reflectionAppendArrayDetail",
-    "deref_field": "item",
-    "npe_class": "ToStringStyle"
-}

@@ -1,8 +1,0 @@
-name;suspiciousness_value
-com.google.javascript.jscomp$MinimizeExitPoints#tryMinimizeExits(com.google.javascript.rhino.Node,int,java.lang.String):142;1.0
-com.google.javascript.jscomp$MinimizeExitPoints#tryMinimizeExits(com.google.javascript.rhino.Node,int,java.lang.String):143;1.0
-com.google.javascript.jscomp$MinimizeExitPoints#tryMinimizeExits(com.google.javascript.rhino.Node,int,java.lang.String):128;0.5773502691896258
-com.google.javascript.jscomp$MinimizeExitPoints#tryMinimizeExits(com.google.javascript.rhino.Node,int,java.lang.String):129;0.5773502691896258
-com.google.javascript.jscomp$MinimizeExitPoints#tryMinimizeExits(com.google.javascript.rhino.Node,int,java.lang.String):130;0.5773502691896258
-com.google.javascript.jscomp$MinimizeExitPoints#tryMinimizeExits(com.google.javascript.rhino.Node,int,java.lang.String):131;0.5773502691896258
-com.google.javascript.jscomp$MinimizeExitPoints#tryMinimizeExits(com.google.javascript.rhino.Node,int,java.lang.String):141;0.5773502691896258

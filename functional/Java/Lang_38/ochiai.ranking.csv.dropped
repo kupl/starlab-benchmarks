@@ -1,5 +1,0 @@
-name;suspiciousness_value
-org.apache.commons.lang3.time$FastDateFormat#parsePattern():642;1.0
-org.apache.commons.lang3.time$FastDateFormat#parsePattern():643;1.0
-org.apache.commons.lang3.time$FastDateFormat#format(java.util.Calendar,java.lang.StringBuffer):872;1.0
-org.apache.commons.lang3.time$FastDateFormat#format(java.util.Calendar,java.lang.StringBuffer):873;1.0

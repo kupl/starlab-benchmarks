@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/caconfig/impl/override/ConfigurationOverrideMultiplexerImpl.java",
-    "line": 130,
-    "npe_method": "overrideProperties",
-    "deref_field": "configResource",
-    "npe_class": "ConfigurationOverrideMultiplexerImpl"
-}

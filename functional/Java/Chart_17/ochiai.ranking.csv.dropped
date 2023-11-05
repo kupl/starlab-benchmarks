@@ -1,6 +1,0 @@
-name;suspiciousness_value
-org.jfree.data.time.junit$TimeSeriesTests#testBug1832432():616;1.0
-org.jfree.data.time.junit$TimeSeriesTests#testBug1832432():617;1.0
-org.jfree.data.time.junit$TimeSeriesTests#testBug1832432():619;1.0
-org.jfree.data.time$TimeSeries#createCopy(int,int):880;0.7071067811865475
-org.jfree.data.time$TimeSeries#clone():857;0.5773502691896258

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
-    "line": 499,
-    "npe_method": "appendNull",
-    "deref_field": "nullText",
-    "npe_class": "StrBuilder"
-}

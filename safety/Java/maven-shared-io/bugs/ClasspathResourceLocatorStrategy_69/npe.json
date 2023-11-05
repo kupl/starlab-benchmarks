@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/io/location/ClasspathResourceLocatorStrategy.java",
-    "line": 70,
-    "npe_method": "resolve",
-    "deref_field": "resource",
-    "npe_class": "ClasspathResourceLocatorStrategy"
-}

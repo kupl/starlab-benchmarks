@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
-    "line": 356,
-    "npe_method": "toNoNullStringArray",
-    "deref_field": "e",
-    "npe_class": "ReflectionToStringBuilder"
-}

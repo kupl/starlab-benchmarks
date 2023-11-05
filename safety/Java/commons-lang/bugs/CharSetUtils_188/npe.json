@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/CharSetUtils.java",
-    "line": 213,
-    "npe_method": "keep",
-    "deref_field": "str",
-    "npe_class": "CharSetUtils"
-}
