@@ -445,26 +445,11 @@ public class RandomStringUtils {
      * @return the random string
      * @throws IllegalArgumentException if {@code count} &lt; 0.
      */
-/**
- * <p>Creates a random string whose length is the number of characters
- * specified.</p>
- *
- * <p>Characters will be chosen from the set of characters specified.</p>
- *
- * @param count
- * 		the length of random string to create
- * @param chars
- * 		the character array containing the set of characters to use,
- * 		may be null
- * @return the random string
- * @throws IllegalArgumentException
- * 		if {@code count} &lt; 0.
- */
-public static java.lang.String random(final int count, final char... chars) {
-    {
-        return org.apache.commons.lang3.RandomStringUtils.random(count, 0, /* NPEX_NULL_EXP */
-        chars.length, false, false, chars, org.apache.commons.lang3.RandomStringUtils.RANDOM);
+    public static String random(final int count, final char... chars) {
+        if (chars == null) {
+            return random(count, 0, 0, false, false, null, RANDOM);
+        }
+        return random(count, 0, chars.length, false, false, chars, RANDOM);
     }
-}
     
 }

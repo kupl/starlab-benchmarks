@@ -2435,15 +2435,20 @@ public abstract class ToStringStyle implements Serializable {
         }
 
         @Override
-public void append(java.lang.StringBuffer buffer, java.lang.String fieldName, int[] array, java.lang.Boolean fullDetail) {
-    {
-        if (!isFullDetail(fullDetail)) {
-            throw new java.lang.UnsupportedOperationException("FullDetail must be true when using JsonToStringStyle");
+        public void append(StringBuffer buffer, String fieldName, int[] array,
+                           Boolean fullDetail) {
+
+            if (fieldName == null) {
+                throw new UnsupportedOperationException(
+                        "Field names are mandatory when using JsonToStringStyle");
+            }
+            if (!isFullDetail(fullDetail)){
+                throw new UnsupportedOperationException(
+                        "FullDetail must be true when using JsonToStringStyle");
+            }
+
+            super.append(buffer, fieldName, array, fullDetail);
         }
-        super.append(buffer, /* NPEX_NULL_EXP */
-        fieldName, array, fullDetail);
-    }
-}
 
         @Override
         public void append(StringBuffer buffer, String fieldName,

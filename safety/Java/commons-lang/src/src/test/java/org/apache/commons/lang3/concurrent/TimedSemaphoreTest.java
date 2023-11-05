@@ -481,13 +481,9 @@ public class TimedSemaphoreTest {
          * Either returns the mock future or calls the super method.
          */
         @Override
-/**
- * Either returns the mock future or calls the super method.
- */
-protected java.util.concurrent.ScheduledFuture<?> startTimer() {
-    return /* NPEX_NULL_EXP */
-    schedFuture;
-}
+        protected ScheduledFuture<?> startTimer() {
+            return schedFuture != null ? schedFuture : super.startTimer();
+        }
     }
 
     /**

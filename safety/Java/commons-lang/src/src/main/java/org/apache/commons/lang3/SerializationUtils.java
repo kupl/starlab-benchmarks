@@ -74,58 +74,40 @@ public class SerializationUtils {
      * @return the cloned object
      * @throws SerializationException (runtime) if the serialization fails
      */
-// Clone
-// -----------------------------------------------------------------------
-/**
- * <p>Deep clone an {@code Object} using serialization.</p>
- *
- * <p>This is many times slower than writing clone methods by hand
- * on all objects in your object graph. However, for complex object
- * graphs, or for those that don't support deep cloning this can
- * be a simple alternative implementation. Of course all the objects
- * must be {@code Serializable}.</p>
- *
- * @param <T>
- * 		the type of the object involved
- * @param object
- * 		the {@code Serializable} object to clone
- * @return the cloned object
- * @throws SerializationException
- * 		(runtime) if the serialization fails
- */
-public static <T extends java.io.Serializable> T clone(final T object) {
-    if (object == null) {
-        return null;
-    }
-    final byte[] objectData = org.apache.commons.lang3.SerializationUtils.serialize(object);
-    final java.io.ByteArrayInputStream bais = new java.io.ByteArrayInputStream(objectData);
-    org.apache.commons.lang3.SerializationUtils.ClassLoaderAwareObjectInputStream in = null;
-    try {
-        // stream closed in the finally
-        in = new org.apache.commons.lang3.SerializationUtils.ClassLoaderAwareObjectInputStream(bais, object.getClass().getClassLoader());
-        /* when we serialize and deserialize an object,
-        it is reasonable to assume the deserialized object
-        is of the same type as the original serialized object
-         */
-        // see above
-        @java.lang.SuppressWarnings("unchecked")
-        final T readObject = ((T) (in.readObject()));
-        return readObject;
-    } catch (final java.lang.ClassNotFoundException ex) {
-        throw new org.apache.commons.lang3.SerializationException("ClassNotFoundException while reading cloned object data", ex);
-    } catch (final java.io.IOException ex) {
-        throw new org.apache.commons.lang3.SerializationException("IOException while reading cloned object data", ex);
-    } finally {
+    public static <T extends Serializable> T clone(final T object) {
+        if (object == null) {
+            return null;
+        }
+        final byte[] objectData = serialize(object);
+        final ByteArrayInputStream bais = new ByteArrayInputStream(objectData);
+
+        ClassLoaderAwareObjectInputStream in = null;
         try {
-            {
-                /* NPEX_NULL_EXP */
-                in.close();
+            // stream closed in the finally
+            in = new ClassLoaderAwareObjectInputStream(bais, object.getClass().getClassLoader());
+            /*
+             * when we serialize and deserialize an object,
+             * it is reasonable to assume the deserialized object
+             * is of the same type as the original serialized object
+             */
+            @SuppressWarnings("unchecked") // see above
+            final T readObject = (T) in.readObject();
+            return readObject;
+
+        } catch (final ClassNotFoundException ex) {
+            throw new SerializationException("ClassNotFoundException while reading cloned object data", ex);
+        } catch (final IOException ex) {
+            throw new SerializationException("IOException while reading cloned object data", ex);
+        } finally {
+            try {
+                if (in != null) {
+                    in.close();
+                }
+            } catch (final IOException ex) {
+                throw new SerializationException("IOException on closing cloned object data InputStream.", ex);
             }
-        } catch (final java.io.IOException ex) {
-            throw new org.apache.commons.lang3.SerializationException("IOException on closing cloned object data InputStream.", ex);
         }
     }
-}
 
     /**
      * Performs a serialization roundtrip. Serializes and deserializes the given object, great for testing objects that

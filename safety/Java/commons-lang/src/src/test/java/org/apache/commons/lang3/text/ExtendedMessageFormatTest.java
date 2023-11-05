@@ -362,36 +362,24 @@ public class ExtendedMessageFormatTest {
      * @param args Object[]
      * @param locale Locale
      */
-/**
- * Create an ExtendedMessageFormat for the specified pattern and locale and check the
- * formated output matches the expected result for the parameters.
- *
- * @param pattern
- * 		string
- * @param registryUnused
- * 		map (currently unused)
- * @param args
- * 		Object[]
- * @param locale
- * 		Locale
- */
-private void checkBuiltInFormat(final java.lang.String pattern, final java.util.Map<java.lang.String, ?> registryUnused, final java.lang.Object[] args, final java.util.Locale locale) {
-    final java.lang.StringBuilder buffer = new java.lang.StringBuilder();
-    buffer.append("Pattern=[");
-    buffer.append(pattern);
-    buffer.append("], locale=[");
-    buffer.append(locale);
-    buffer.append("]");
-    final java.text.MessageFormat mf = createMessageFormat(pattern, locale);
-    // System.out.println(buffer + ", result=[" + mf.format(args) +"]");
-    org.apache.commons.lang3.text.ExtendedMessageFormat emf = null;
-    {
-        emf = new org.apache.commons.lang3.text.ExtendedMessageFormat(pattern, /* NPEX_NULL_EXP */
-        locale);
+    private void checkBuiltInFormat(final String pattern, final Map<String, ?> registryUnused, final Object[] args, final Locale locale) {
+        final StringBuilder buffer = new StringBuilder();
+        buffer.append("Pattern=[");
+        buffer.append(pattern);
+        buffer.append("], locale=[");
+        buffer.append(locale);
+        buffer.append("]");
+        final MessageFormat mf = createMessageFormat(pattern, locale);
+        // System.out.println(buffer + ", result=[" + mf.format(args) +"]");
+        ExtendedMessageFormat emf = null;
+        if (locale == null) {
+            emf = new ExtendedMessageFormat(pattern);
+        } else {
+            emf = new ExtendedMessageFormat(pattern, locale);
+        }
+        assertEquals("format "    + buffer.toString(), mf.format(args), emf.format(args));
+        assertPatternsEqual("toPattern " + buffer.toString(), mf.toPattern(),  emf.toPattern());
     }
-    assertEquals("format " + buffer.toString(), mf.format(args), emf.format(args));
-    assertPatternsEqual("toPattern " + buffer.toString(), mf.toPattern(), emf.toPattern());
-}
 
     //can't trust what MessageFormat does with toPattern() pre 1.4:
     private void assertPatternsEqual(final String message, final String expected, final String actual) {

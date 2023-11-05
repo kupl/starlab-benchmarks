@@ -124,48 +124,42 @@ public class DefaultExceptionContext implements ExceptionContext, Serializable {
      * @return the exception message <b>with</b> context information appended, never null
      */
     @Override
-/**
- * Builds the message containing the contextual information.
- *
- * @param baseMessage
- * 		the base exception message <b>without</b> context information appended
- * @return the exception message <b>with</b> context information appended, never null
- */
-public java.lang.String getFormattedExceptionMessage(final java.lang.String baseMessage) {
-    final java.lang.StringBuilder buffer = new java.lang.StringBuilder(256);
-    {
-        buffer.append(/* NPEX_NULL_EXP */
-        baseMessage);
-    }
-    if (contextValues.size() > 0) {
-        if (buffer.length() > 0) {
-            buffer.append('\n');
+    public String getFormattedExceptionMessage(final String baseMessage){
+        final StringBuilder buffer = new StringBuilder(256);
+        if (baseMessage != null) {
+            buffer.append(baseMessage);
         }
-        buffer.append("Exception Context:\n");
-        int i = 0;
-        for (final org.apache.commons.lang3.tuple.Pair<java.lang.String, java.lang.Object> pair : contextValues) {
-            buffer.append("\t[");
-            buffer.append(++i);
-            buffer.append(':');
-            buffer.append(pair.getKey());
-            buffer.append("=");
-            final java.lang.Object value = pair.getValue();
-            if (value == null) {
-                buffer.append("null");
-            } else {
-                java.lang.String valueStr;
-                try {
-                    valueStr = value.toString();
-                } catch (final java.lang.Exception e) {
-                    valueStr = "Exception thrown on toString(): " + org.apache.commons.lang3.exception.ExceptionUtils.getStackTrace(e);
-                }
-                buffer.append(valueStr);
+        
+        if (contextValues.size() > 0) {
+            if (buffer.length() > 0) {
+                buffer.append('\n');
             }
-            buffer.append("]\n");
+            buffer.append("Exception Context:\n");
+            
+            int i = 0;
+            for (final Pair<String, Object> pair : contextValues) {
+                buffer.append("\t[");
+                buffer.append(++i);
+                buffer.append(':');
+                buffer.append(pair.getKey());
+                buffer.append("=");
+                final Object value = pair.getValue();
+                if (value == null) {
+                    buffer.append("null");
+                } else {
+                    String valueStr;
+                    try {
+                        valueStr = value.toString();
+                    } catch (final Exception e) {
+                        valueStr = "Exception thrown on toString(): " + ExceptionUtils.getStackTrace(e);
+                    }
+                    buffer.append(valueStr);
+                }
+                buffer.append("]\n");
+            }
+            buffer.append("---------------------------------");
         }
-        buffer.append("---------------------------------");
+        return buffer.toString();
     }
-    return buffer.toString();
-}
 
 }

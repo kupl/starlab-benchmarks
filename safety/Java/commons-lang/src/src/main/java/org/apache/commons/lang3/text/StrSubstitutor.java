@@ -630,33 +630,17 @@ public class StrSubstitutor {
      * @param length  the length within the buffer to be processed, must be valid
      * @return true if altered
      */
-/**
- * Replaces all the occurrences of variables within the given source buffer
- * with their matching values from the resolver.
- * The buffer is updated with the result.
- * <p>
- * Only the specified portion of the buffer will be processed.
- * The rest of the buffer is not processed, but it is not deleted.
- *
- * @param source
- * 		the buffer to replace in, updated, null returns zero
- * @param offset
- * 		the start offset within the array, must be valid
- * @param length
- * 		the length within the buffer to be processed, must be valid
- * @return true if altered
- */
-public boolean replaceIn(final java.lang.StringBuffer source, final int offset, final int length) {
-    {
-        final org.apache.commons.lang3.text.StrBuilder buf = new org.apache.commons.lang3.text.StrBuilder(length).append(/* NPEX_NULL_EXP */
-        source, offset, length);
+    public boolean replaceIn(final StringBuffer source, final int offset, final int length) {
+        if (source == null) {
+            return false;
+        }
+        final StrBuilder buf = new StrBuilder(length).append(source, offset, length);
         if (substitute(buf, 0, length) == false) {
             return false;
         }
         source.replace(offset, offset + length, buf.toString());
         return true;
     }
-}
 
   //-----------------------------------------------------------------------
     /**

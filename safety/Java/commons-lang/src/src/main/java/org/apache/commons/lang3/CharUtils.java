@@ -329,30 +329,12 @@ public class CharUtils {
      * @param ch  the character to convert
      * @return a String containing the one specified character
      */
-/**
- * <p>Converts the character to a String that contains the one character.</p>
- *
- * <p>For ASCII 7 bit characters, this uses a cache that will return the
- * same String object each time.</p>
- *
- * <p>If {@code null} is passed in, {@code null} will be returned.</p>
- *
- * <pre>
- * CharUtils.toString(null) = null
- * CharUtils.toString(' ')  = " "
- * CharUtils.toString('A')  = "A"
- * </pre>
- *
- * @param ch
- * 		the character to convert
- * @return a String containing the one specified character
- */
-public static java.lang.String toString(final java.lang.Character ch) {
-    {
-        return org.apache.commons.lang3.CharUtils.toString(/* NPEX_NULL_EXP */
-        ch.charValue());
+    public static String toString(final Character ch) {
+        if (ch == null) {
+            return null;
+        }
+        return toString(ch.charValue());
     }
-}
     
     //--------------------------------------------------------------------------
     /**

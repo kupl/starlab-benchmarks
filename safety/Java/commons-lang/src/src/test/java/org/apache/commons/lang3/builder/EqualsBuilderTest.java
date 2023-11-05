@@ -75,19 +75,16 @@ public class EqualsBuilderTest {
             this.b = b;
         }
         @Override
-public boolean equals(final java.lang.Object o) {
-    {
-        if (/* NPEX_NULL_EXP */
-        o == this) {
-            return true;
+        public boolean equals(final Object o) {
+            if (o == null) { return false; }
+            if (o == this) { return true; }
+            if (o.getClass() != getClass()) {
+                return false;
+            }
+
+            final TestSubObject rhs = (TestSubObject) o;
+            return super.equals(o) && b == rhs.b;
         }
-        if (o.getClass() != getClass()) {
-            return false;
-        }
-        final org.apache.commons.lang3.builder.EqualsBuilderTest.TestSubObject rhs = ((org.apache.commons.lang3.builder.EqualsBuilderTest.TestSubObject) (o));
-        return super.equals(o) && (b == rhs.b);
-    }
-}
 
         @Override
         public int hashCode() {

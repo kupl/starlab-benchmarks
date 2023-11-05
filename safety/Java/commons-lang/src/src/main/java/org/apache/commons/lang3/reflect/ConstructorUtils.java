@@ -104,47 +104,22 @@ public class ConstructorUtils {
      * @throws InstantiationException if an error occurs on instantiation
      * @see Constructor#newInstance
      */
-/**
- * <p>Returns a new instance of the specified class choosing the right constructor
- * from the list of parameter types.</p>
- *
- * <p>This locates and calls a constructor.
- * The constructor signature must match the parameter types by assignment compatibility.</p>
- *
- * @param <T>
- * 		the type to be constructed
- * @param cls
- * 		the class to be constructed, not {@code null}
- * @param args
- * 		the array of arguments, {@code null} treated as empty
- * @param parameterTypes
- * 		the array of parameter types, {@code null} treated as empty
- * @return new instance of {@code cls}, not {@code null}
- * @throws NullPointerException
- * 		if {@code cls} is {@code null}
- * @throws NoSuchMethodException
- * 		if a matching constructor cannot be found
- * @throws IllegalAccessException
- * 		if invocation is not permitted by security
- * @throws InvocationTargetException
- * 		if an error occurs on invocation
- * @throws InstantiationException
- * 		if an error occurs on instantiation
- * @see Constructor#newInstance
- */
-public static <T> T invokeConstructor(final java.lang.Class<T> cls, java.lang.Object[] args, java.lang.Class<?>[] parameterTypes) throws java.lang.NoSuchMethodException, java.lang.IllegalAccessException, java.lang.reflect.InvocationTargetException, java.lang.InstantiationException {
-    args = org.apache.commons.lang3.ArrayUtils.nullToEmpty(args);
-    parameterTypes = org.apache.commons.lang3.ArrayUtils.nullToEmpty(parameterTypes);
-    final java.lang.reflect.Constructor<T> ctor = org.apache.commons.lang3.reflect.ConstructorUtils.getMatchingAccessibleConstructor(cls, parameterTypes);
-    {
-        if (/* NPEX_NULL_EXP */
-        ctor.isVarArgs()) {
-            java.lang.Class<?>[] methodParameterTypes = ctor.getParameterTypes();
-            args = org.apache.commons.lang3.reflect.MethodUtils.getVarArgs(args, methodParameterTypes);
+    public static <T> T invokeConstructor(final Class<T> cls, Object[] args, Class<?>[] parameterTypes)
+            throws NoSuchMethodException, IllegalAccessException, InvocationTargetException,
+            InstantiationException {
+        args = ArrayUtils.nullToEmpty(args);
+        parameterTypes = ArrayUtils.nullToEmpty(parameterTypes);
+        final Constructor<T> ctor = getMatchingAccessibleConstructor(cls, parameterTypes);
+        if (ctor == null) {
+            throw new NoSuchMethodException(
+                "No such accessible constructor on object: " + cls.getName());
+        }
+        if (ctor.isVarArgs()) {
+            Class<?>[] methodParameterTypes = ctor.getParameterTypes();
+            args = MethodUtils.getVarArgs(args, methodParameterTypes);
         }
         return ctor.newInstance(args);
     }
-}
 
     /**
      * <p>Returns a new instance of the specified class inferring the right constructor

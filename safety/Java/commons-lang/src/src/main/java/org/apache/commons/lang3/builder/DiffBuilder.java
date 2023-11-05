@@ -985,57 +985,25 @@ public class DiffBuilder implements Builder<DiffResult> {
      *             if field name is {@code null}
      * @since 3.5
      */
-/**
- * <p>
- * Append diffs from another {@code DiffResult}.
- * </p>
- *
- * <p>
- * This method is useful if you want to compare properties which are
- * themselves Diffable and would like to know which specific part of
- * it is different.
- * </p>
- *
- * <pre>
- * public class Person implements Diffable&lt;Person&gt; {
- * String name;
- * Address address; // implements Diffable&lt;Address&gt;
- *
- * ...
- *
- * public DiffResult diff(Person obj) {
- * return new DiffBuilder(this, obj, ToStringStyle.SHORT_PREFIX_STYLE)
- * .append("name", this.name, obj.name)
- * .append("address", this.address.diff(obj.address))
- * .build();
- * }
- * }
- * </pre>
- *
- * @param fieldName
- * 		the field name
- * @param diffResult
- * 		the {@code DiffResult} to append
- * @return this
- * @throws IllegalArgumentException
- * 		if field name is {@code null}
- * @since 3.5
- */
-public org.apache.commons.lang3.builder.DiffBuilder append(final java.lang.String fieldName, final org.apache.commons.lang3.builder.DiffResult diffResult) {
-    {
+    public DiffBuilder append(final String fieldName,
+            final DiffResult diffResult) {
+        if (fieldName == null) {
+            throw new IllegalArgumentException("Field name cannot be null");
+        }
         if (diffResult == null) {
-            throw new java.lang.IllegalArgumentException("Diff result cannot be null");
+            throw new IllegalArgumentException("Diff result cannot be null");
         }
         if (objectsTriviallyEqual) {
             return this;
         }
-        for (org.apache.commons.lang3.builder.Diff<?> diff : diffResult.getDiffs()) {
-            append((/* NPEX_NULL_EXP */
-            fieldName + ".") + diff.getFieldName(), diff.getLeft(), diff.getRight());
+
+        for (Diff<?> diff : diffResult.getDiffs()) {
+            append(fieldName + "." + diff.getFieldName(),
+                   diff.getLeft(), diff.getRight());
         }
+
         return this;
     }
-}
 
     /**
      * <p>

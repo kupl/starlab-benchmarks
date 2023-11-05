@@ -1252,38 +1252,18 @@ public class DateUtils {
      * @throws IllegalArgumentException if the date is <code>null</code>
      * @throws ClassCastException if the object type is not a {@code Date} or {@code Calendar}
      */
-/**
- * <p>Constructs an <code>Iterator</code> over each day in a date
- * range defined by a focus date and range style.</p>
- *
- * <p>For instance, passing Thursday, July 4, 2002 and a
- * <code>RANGE_MONTH_SUNDAY</code> will return an <code>Iterator</code>
- * that starts with Sunday, June 30, 2002 and ends with Saturday, August 3,
- * 2002, returning a Calendar instance for each intermediate day.</p>
- *
- * @param focus
- * 		the date to work with, either {@code Date} or {@code Calendar}, not null
- * @param rangeStyle
- * 		the style constant to use. Must be one of the range
- * 		styles listed for the {@link #iterator(Calendar, int)} method.
- * @return the date iterator, not null
- * @throws IllegalArgumentException
- * 		if the date is <code>null</code>
- * @throws ClassCastException
- * 		if the object type is not a {@code Date} or {@code Calendar}
- */
-public static java.util.Iterator<?> iterator(final java.lang.Object focus, final int rangeStyle) {
-    {
-        if (/* NPEX_NULL_EXP */
-        focus instanceof java.util.Date) {
-            return org.apache.commons.lang3.time.DateUtils.iterator(((java.util.Date) (focus)), rangeStyle);
-        } else if (focus instanceof java.util.Calendar) {
-            return org.apache.commons.lang3.time.DateUtils.iterator(((java.util.Calendar) (focus)), rangeStyle);
+    public static Iterator<?> iterator(final Object focus, final int rangeStyle) {
+        if (focus == null) {
+            throw new IllegalArgumentException("The date must not be null");
+        }
+        if (focus instanceof Date) {
+            return iterator((Date) focus, rangeStyle);
+        } else if (focus instanceof Calendar) {
+            return iterator((Calendar) focus, rangeStyle);
         } else {
-            throw new java.lang.ClassCastException("Could not iterate based on " + focus);
+            throw new ClassCastException("Could not iterate based on " + focus);
         }
     }
-}
     
     /**
      * <p>Returns the number of milliseconds within the 

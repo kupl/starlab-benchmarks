@@ -398,17 +398,15 @@ public class MultiBackgroundInitializerTest {
          * Records this invocation. Optionally throws an exception.
          */
         @Override
-/**
- * Records this invocation. Optionally throws an exception.
- */
-protected java.lang.Integer initialize() throws java.lang.Exception {
-    currentExecutor = getActiveExecutor();
-    initializeCalls++;
-    {
-        throw /* NPEX_NULL_EXP */
-        ex;
-    }
-    return java.lang.Integer.valueOf(initializeCalls);
-}
+        protected Integer initialize() throws Exception {
+            currentExecutor = getActiveExecutor();
+            initializeCalls++;
+
+            if (ex != null) {
+                throw ex;
+            }
+
+            return Integer.valueOf(initializeCalls);
+        }
     }
 }

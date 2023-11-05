@@ -277,24 +277,15 @@ public class BasicThreadFactory implements ThreadFactory {
          * @throws NullPointerException if the passed in {@code ThreadFactory}
          * is <b>null</b>
          */
-/**
- * Sets the {@code ThreadFactory} to be wrapped by the new {@code BasicThreadFactory}.
- *
- * @param factory
- * 		the wrapped {@code ThreadFactory} (must not be
- * 		<b>null</b>)
- * @return a reference to this {@code Builder}
- * @throws NullPointerException
- * 		if the passed in {@code ThreadFactory}
- * 		is <b>null</b>
- */
-public org.apache.commons.lang3.concurrent.BasicThreadFactory.Builder wrappedFactory(final java.util.concurrent.ThreadFactory factory) {
-    {
-        wrappedFactory = /* NPEX_NULL_EXP */
-        factory;
-        return this;
-    }
-}
+        public Builder wrappedFactory(final ThreadFactory factory) {
+            if (factory == null) {
+                throw new NullPointerException(
+                        "Wrapped ThreadFactory must not be null!");
+            }
+
+            wrappedFactory = factory;
+            return this;
+        }
 
         /**
          * Sets the naming pattern to be used by the new {@code

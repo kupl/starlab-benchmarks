@@ -145,26 +145,16 @@ public abstract class StrLookup<V> {
          * @return the matching value, null if no match
          */
         @Override
-/**
- * Looks up a String key to a String value using the map.
- * <p>
- * If the map is null, then null is returned.
- * The map result object is converted to a string using toString().
- *
- * @param key
- * 		the key to be looked up, may be null
- * @return the matching value, null if no match
- */
-public java.lang.String lookup(final java.lang.String key) {
-    if (map == null) {
-        return null;
-    }
-    final java.lang.Object obj = map.get(key);
-    {
-        return /* NPEX_NULL_EXP */
-        obj.toString();
-    }
-}
+        public String lookup(final String key) {
+            if (map == null) {
+                return null;
+            }
+            final Object obj = map.get(key);
+            if (obj == null) {
+                return null;
+            }
+            return obj.toString();
+        }
     }
 
     //-----------------------------------------------------------------------

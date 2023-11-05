@@ -89,26 +89,15 @@ public class CharEncoding {
      * @param name  the name of the requested charset; may be either a canonical name or an alias, null returns false
      * @return {@code true} if the charset is available in the current Java virtual machine
      */
-/**
- * <p>Returns whether the named charset is supported.</p>
- *
- * <p>This is similar to <a
- * href="http://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html#isSupported%28java.lang.String%29">
- * java.nio.charset.Charset.isSupported(String)</a> but handles more formats</p>
- *
- * @param name
- * 		the name of the requested charset; may be either a canonical name or an alias, null returns false
- * @return {@code true} if the charset is available in the current Java virtual machine
- */
-public static boolean isSupported(final java.lang.String name) {
-    {
+    public static boolean isSupported(final String name) {
+        if (name == null) {
+            return false;
+        }
         try {
-            return java.nio.charset.Charset.isSupported(/* NPEX_NULL_EXP */
-            name);
-        } catch (final java.nio.charset.IllegalCharsetNameException ex) {
+            return Charset.isSupported(name);
+        } catch (final IllegalCharsetNameException ex) {
             return false;
         }
     }
-}
 
 }

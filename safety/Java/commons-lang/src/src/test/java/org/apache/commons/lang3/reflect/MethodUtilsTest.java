@@ -704,12 +704,16 @@ public class MethodUtilsTest {
         MethodUtils.getMethodsListWithAnnotation(null, null);
     }
 
-private void expectMatchingAccessibleMethodParameterTypes(final java.lang.Class<?> cls, final java.lang.String methodName, final java.lang.Class<?>[] requestTypes, final java.lang.Class<?>[] actualTypes) {
-    final java.lang.reflect.Method m = org.apache.commons.lang3.reflect.MethodUtils.getMatchingAccessibleMethod(cls, methodName, /* NPEX_NULL_EXP */
-    requestTypes);
-    Assert.assertNotNull(((("could not find any matches for " + methodName) + " (") + toString(requestTypes)) + ")", m);
-    Assert.assertTrue((toString(m.getParameterTypes()) + " not equals ") + toString(actualTypes), java.util.Arrays.equals(actualTypes, m.getParameterTypes()));
-}
+    private void expectMatchingAccessibleMethodParameterTypes(final Class<?> cls,
+            final String methodName, final Class<?>[] requestTypes, final Class<?>[] actualTypes) {
+        final Method m = MethodUtils.getMatchingAccessibleMethod(cls, methodName,
+                requestTypes);
+        assertNotNull("could not find any matches for " + methodName
+                + " (" + (requestTypes == null ? null : toString(requestTypes)) + ")", m);
+        assertTrue(toString(m.getParameterTypes()) + " not equals "
+                + toString(actualTypes), Arrays.equals(actualTypes, m
+                .getParameterTypes()));
+    }
 
     private String toString(final Class<?>[] c) {
         return Arrays.asList(c).toString();

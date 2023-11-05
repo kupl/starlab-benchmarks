@@ -471,39 +471,33 @@ public class ExtendedMessageFormat extends MessageFormat {
      * @param appendTo optional StringBuilder to append
      * @return <code>appendTo</code>
      */
-/**
- * Consume a quoted string, adding it to <code>appendTo</code> if
- * specified.
- *
- * @param pattern
- * 		pattern to parse
- * @param pos
- * 		current parse position
- * @param appendTo
- * 		optional StringBuilder to append
- * @return <code>appendTo</code>
- */
-private java.lang.StringBuilder appendQuotedString(final java.lang.String pattern, final java.text.ParsePosition pos, final java.lang.StringBuilder appendTo) {
-    assert pattern.toCharArray()[pos.getIndex()] == org.apache.commons.lang3.text.ExtendedMessageFormat.QUOTE : "Quoted string must start with quote character";
-    {
-        /* NPEX_NULL_EXP */
-        appendTo.append(org.apache.commons.lang3.text.ExtendedMessageFormat.QUOTE);
-    }
-    next(pos);
-    final int start = pos.getIndex();
-    final char[] c = pattern.toCharArray();
-    int lastHold = start;
-    for (int i = pos.getIndex(); i < pattern.length(); i++) {
-        switch (c[pos.getIndex()]) {
-            case org.apache.commons.lang3.text.ExtendedMessageFormat.QUOTE :
-                next(pos);
-                return appendTo == null ? null : appendTo.append(c, lastHold, pos.getIndex() - lastHold);
-            default :
-                next(pos);
+    private StringBuilder appendQuotedString(final String pattern, final ParsePosition pos,
+            final StringBuilder appendTo) {
+        assert pattern.toCharArray()[pos.getIndex()] == QUOTE : 
+            "Quoted string must start with quote character";
+
+        // handle quote character at the beginning of the string
+        if(appendTo != null) {
+            appendTo.append(QUOTE);
         }
+        next(pos);
+
+        final int start = pos.getIndex();
+        final char[] c = pattern.toCharArray();
+        int lastHold = start;
+        for (int i = pos.getIndex(); i < pattern.length(); i++) {
+            switch (c[pos.getIndex()]) {
+            case QUOTE:
+                next(pos);
+                return appendTo == null ? null : appendTo.append(c, lastHold,
+                        pos.getIndex() - lastHold);
+            default:
+                next(pos);
+            }
+        }
+        throw new IllegalArgumentException(
+                "Unterminated quoted string at position " + start);
     }
-    throw new java.lang.IllegalArgumentException("Unterminated quoted string at position " + start);
-}
 
     /**
      * Consume quoted string only

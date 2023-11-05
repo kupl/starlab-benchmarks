@@ -68,23 +68,20 @@ public class AnnotationUtils {
          * {@inheritDoc}
          */
         @Override
-/**
- * {@inheritDoc }
- */
-protected java.lang.String getShortClassName(final java.lang.Class<?> cls) {
-    java.lang.Class<? extends java.lang.annotation.Annotation> annotationType = null;
-    for (final java.lang.Class<?> iface : org.apache.commons.lang3.ClassUtils.getAllInterfaces(cls)) {
-        if (java.lang.annotation.Annotation.class.isAssignableFrom(iface)) {
-            // OK because we just checked the assignability
-            @java.lang.SuppressWarnings("unchecked")
-            final java.lang.Class<? extends java.lang.annotation.Annotation> found = ((java.lang.Class<? extends java.lang.annotation.Annotation>) (iface));
-            annotationType = found;
-            break;
+        protected String getShortClassName(final java.lang.Class<?> cls) {
+            Class<? extends Annotation> annotationType = null;
+            for (final Class<?> iface : ClassUtils.getAllInterfaces(cls)) {
+                if (Annotation.class.isAssignableFrom(iface)) {
+                    @SuppressWarnings("unchecked") // OK because we just checked the assignability
+                    final
+                    Class<? extends Annotation> found = (Class<? extends Annotation>) iface;
+                    annotationType = found;
+                    break;
+                }
+            }
+            return new StringBuilder(annotationType == null ? StringUtils.EMPTY : annotationType.getName())
+                    .insert(0, '@').toString();
         }
-    }
-    return new java.lang.StringBuilder(/* NPEX_NULL_EXP */
-    annotationType.getName()).insert(0, '@').toString();
-}
 
         /**
          * {@inheritDoc}

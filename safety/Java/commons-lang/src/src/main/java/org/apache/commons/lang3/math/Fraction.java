@@ -732,57 +732,45 @@ public final class Fraction extends Number implements Comparable<Fraction> {
      * @throws ArithmeticException if the resulting numerator or denominator
      *   cannot be represented in an <code>int</code>.
      */
-/**
- * Implement add and subtract using algorithm described in Knuth 4.5.1.
- *
- * @param fraction
- * 		the fraction to subtract, must not be <code>null</code>
- * @param isAdd
- * 		true to add, false to subtract
- * @return a <code>Fraction</code> instance with the resulting values
- * @throws IllegalArgumentException
- * 		if the fraction is <code>null</code>
- * @throws ArithmeticException
- * 		if the resulting numerator or denominator
- * 		cannot be represented in an <code>int</code>.
- */
-private org.apache.commons.lang3.math.Fraction addSub(final org.apache.commons.lang3.math.Fraction fraction, final boolean isAdd) {
-    {
+    private Fraction addSub(final Fraction fraction, final boolean isAdd) {
+        if (fraction == null) {
+            throw new IllegalArgumentException("The fraction must not be null");
+        }
         // zero is identity for addition.
         if (numerator == 0) {
-            return isAdd ? /* NPEX_NULL_EXP */
-            fraction : fraction.negate();
+            return isAdd ? fraction : fraction.negate();
         }
         if (fraction.numerator == 0) {
             return this;
         }
         // if denominators are randomly distributed, d1 will be 1 about 61%
         // of the time.
-        final int d1 = org.apache.commons.lang3.math.Fraction.greatestCommonDivisor(denominator, fraction.denominator);
+        final int d1 = greatestCommonDivisor(denominator, fraction.denominator);
         if (d1 == 1) {
             // result is ( (u*v' +/- u'v) / u'v')
-            final int uvp = org.apache.commons.lang3.math.Fraction.mulAndCheck(numerator, fraction.denominator);
-            final int upv = org.apache.commons.lang3.math.Fraction.mulAndCheck(fraction.numerator, denominator);
-            return new org.apache.commons.lang3.math.Fraction(isAdd ? org.apache.commons.lang3.math.Fraction.addAndCheck(uvp, upv) : org.apache.commons.lang3.math.Fraction.subAndCheck(uvp, upv), org.apache.commons.lang3.math.Fraction.mulPosAndCheck(denominator, fraction.denominator));
+            final int uvp = mulAndCheck(numerator, fraction.denominator);
+            final int upv = mulAndCheck(fraction.numerator, denominator);
+            return new Fraction(isAdd ? addAndCheck(uvp, upv) : subAndCheck(uvp, upv), mulPosAndCheck(denominator,
+                    fraction.denominator));
         }
         // the quantity 't' requires 65 bits of precision; see knuth 4.5.1
         // exercise 7. we're going to use a BigInteger.
         // t = u(v'/d1) +/- v(u'/d1)
-        final java.math.BigInteger uvp = java.math.BigInteger.valueOf(numerator).multiply(java.math.BigInteger.valueOf(fraction.denominator / d1));
-        final java.math.BigInteger upv = java.math.BigInteger.valueOf(fraction.numerator).multiply(java.math.BigInteger.valueOf(denominator / d1));
-        final java.math.BigInteger t = (isAdd) ? uvp.add(upv) : uvp.subtract(upv);
+        final BigInteger uvp = BigInteger.valueOf(numerator).multiply(BigInteger.valueOf(fraction.denominator / d1));
+        final BigInteger upv = BigInteger.valueOf(fraction.numerator).multiply(BigInteger.valueOf(denominator / d1));
+        final BigInteger t = isAdd ? uvp.add(upv) : uvp.subtract(upv);
         // but d2 doesn't need extra precision because
         // d2 = gcd(t,d1) = gcd(t mod d1, d1)
-        final int tmodd1 = t.mod(java.math.BigInteger.valueOf(d1)).intValue();
-        final int d2 = (tmodd1 == 0) ? d1 : org.apache.commons.lang3.math.Fraction.greatestCommonDivisor(tmodd1, d1);
+        final int tmodd1 = t.mod(BigInteger.valueOf(d1)).intValue();
+        final int d2 = tmodd1 == 0 ? d1 : greatestCommonDivisor(tmodd1, d1);
+
         // result is (t/d2) / (u'/d1)(v'/d2)
-        final java.math.BigInteger w = t.divide(java.math.BigInteger.valueOf(d2));
+        final BigInteger w = t.divide(BigInteger.valueOf(d2));
         if (w.bitLength() > 31) {
-            throw new java.lang.ArithmeticException("overflow: numerator too large after multiply");
+            throw new ArithmeticException("overflow: numerator too large after multiply");
         }
-        return new org.apache.commons.lang3.math.Fraction(w.intValue(), org.apache.commons.lang3.math.Fraction.mulPosAndCheck(denominator / d1, fraction.denominator / d2));
+        return new Fraction(w.intValue(), mulPosAndCheck(denominator / d1, fraction.denominator / d2));
     }
-}
 
     /**
      * <p>Multiplies the value of this fraction by another, returning the 

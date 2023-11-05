@@ -187,40 +187,34 @@ public class CharSet implements Serializable {
      *
      * @param str  set definition string
      */
-// -----------------------------------------------------------------------
-/**
- * <p>Add a set definition string to the {@code CharSet}.</p>
- *
- * @param str
- * 		set definition string
- */
-protected void add(final java.lang.String str) {
-    {
-        final int len = /* NPEX_NULL_EXP */
-        str.length();
+    protected void add(final String str) {
+        if (str == null) {
+            return;
+        }
+
+        final int len = str.length();
         int pos = 0;
         while (pos < len) {
             final int remainder = len - pos;
-            if (((remainder >= 4) && (str.charAt(pos) == '^')) && (str.charAt(pos + 2) == '-')) {
+            if (remainder >= 4 && str.charAt(pos) == '^' && str.charAt(pos + 2) == '-') {
                 // negated range
-                set.add(org.apache.commons.lang3.CharRange.isNotIn(str.charAt(pos + 1), str.charAt(pos + 3)));
+                set.add(CharRange.isNotIn(str.charAt(pos + 1), str.charAt(pos + 3)));
                 pos += 4;
-            } else if ((remainder >= 3) && (str.charAt(pos + 1) == '-')) {
+            } else if (remainder >= 3 && str.charAt(pos + 1) == '-') {
                 // range
-                set.add(org.apache.commons.lang3.CharRange.isIn(str.charAt(pos), str.charAt(pos + 2)));
+                set.add(CharRange.isIn(str.charAt(pos), str.charAt(pos + 2)));
                 pos += 3;
-            } else if ((remainder >= 2) && (str.charAt(pos) == '^')) {
+            } else if (remainder >= 2 && str.charAt(pos) == '^') {
                 // negated char
-                set.add(org.apache.commons.lang3.CharRange.isNot(str.charAt(pos + 1)));
+                set.add(CharRange.isNot(str.charAt(pos + 1)));
                 pos += 2;
             } else {
                 // char
-                set.add(org.apache.commons.lang3.CharRange.is(str.charAt(pos)));
+                set.add(CharRange.is(str.charAt(pos)));
                 pos += 1;
             }
-        } 
+        }
     }
-}
 
     //-----------------------------------------------------------------------
     /**

@@ -712,24 +712,16 @@ public class HashCodeBuilder implements Builder<Integer> {
      *            the array to add to the <code>hashCode</code>
      * @return this
      */
-/**
- * <p>
- * Append a <code>hashCode</code> for a <code>double</code> array.
- * </p>
- *
- * @param array
- * 		the array to add to the <code>hashCode</code>
- * @return this
- */
-public org.apache.commons.lang3.builder.HashCodeBuilder append(final double[] array) {
-    {
-        for (final double element : /* NPEX_NULL_EXP */
-        array) {
-            append(element);
+    public HashCodeBuilder append(final double[] array) {
+        if (array == null) {
+            iTotal = iTotal * iConstant;
+        } else {
+            for (final double element : array) {
+                append(element);
+            }
         }
+        return this;
     }
-    return this;
-}
 
     /**
      * <p>

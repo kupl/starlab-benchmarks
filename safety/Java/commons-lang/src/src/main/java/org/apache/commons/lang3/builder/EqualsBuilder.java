@@ -193,31 +193,16 @@ public class EqualsBuilder implements Builder<Boolean> {
      * @param rhs the other object to unregister
      * @since 3.0
      */
-/**
- * <p>
- * Unregisters the given object pair.
- * </p>
- *
- * <p>
- * Used by the reflection methods to avoid infinite loops.
- *
- * @param lhs
- * 		<code>this</code> object to unregister
- * @param rhs
- * 		the other object to unregister
- * @since 3.0
- */
-private static void unregister(final java.lang.Object lhs, final java.lang.Object rhs) {
-    java.util.Set<org.apache.commons.lang3.tuple.Pair<org.apache.commons.lang3.builder.IDKey, org.apache.commons.lang3.builder.IDKey>> registry = org.apache.commons.lang3.builder.EqualsBuilder.getRegistry();
-    {
-        final org.apache.commons.lang3.tuple.Pair<org.apache.commons.lang3.builder.IDKey, org.apache.commons.lang3.builder.IDKey> pair = org.apache.commons.lang3.builder.EqualsBuilder.getRegisterPair(lhs, rhs);
-        /* NPEX_NULL_EXP */
-        registry.remove(pair);
-        if (registry.isEmpty()) {
-            org.apache.commons.lang3.builder.EqualsBuilder.REGISTRY.remove();
+    private static void unregister(final Object lhs, final Object rhs) {
+        Set<Pair<IDKey, IDKey>> registry = getRegistry();
+        if (registry != null) {
+            final Pair<IDKey, IDKey> pair = getRegisterPair(lhs, rhs);
+            registry.remove(pair);
+            if (registry.isEmpty()) {
+                REGISTRY.remove();
+            }
         }
     }
-}
 
     /**
      * If the fields tested are equals.

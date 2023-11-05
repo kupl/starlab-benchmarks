@@ -4357,30 +4357,19 @@ public class ArrayUtils {
      * @param valueForNull  the value to insert if {@code null} found
      * @return a {@code long} array, {@code null} if null array input
      */
-/**
- * <p>Converts an array of object Long to primitives handling {@code null}.
- *
- * <p>This method returns {@code null} for a {@code null} input array.
- *
- * @param array
- * 		a {@code Long} array, may be {@code null}
- * @param valueForNull
- * 		the value to insert if {@code null} found
- * @return a {@code long} array, {@code null} if null array input
- */
-public static long[] toPrimitive(final java.lang.Long[] array, final long valueForNull) {
-    {
-        if (array.length == 0) {
-            return org.apache.commons.lang3.ArrayUtils.EMPTY_LONG_ARRAY;
+    public static long[] toPrimitive(final Long[] array, final long valueForNull) {
+        if (array == null) {
+            return null;
+        } else if (array.length == 0) {
+            return EMPTY_LONG_ARRAY;
         }
+        final long[] result = new long[array.length];
+        for (int i = 0; i < array.length; i++) {
+            final Long b = array[i];
+            result[i] = (b == null ? valueForNull : b.longValue());
+        }
+        return result;
     }
-    final long[] result = new long[array.length];
-    for (int i = 0; i < array.length; i++) {
-        final java.lang.Long b = array[i];
-        result[i] = (b == null) ? valueForNull : b.longValue();
-    }
-    return result;
-}
 
     /**
      * <p>Converts an array of primitive longs to objects.

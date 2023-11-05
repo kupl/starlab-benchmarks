@@ -125,15 +125,11 @@ public abstract class Triple<L, M, R> implements Comparable<Triple<L, M, R>>, Se
      * @return the hash code
      */
     @Override
-/**
- * <p>Returns a suitable hash code.</p>
- *
- * @return the hash code
- */
-public int hashCode() {
-    return ((getLeft() == null ? 0 : getLeft().hashCode()) ^ (getMiddle() == null ? 0 : getMiddle().hashCode())) ^ /* NPEX_NULL_EXP */
-    getRight().hashCode();
-}
+    public int hashCode() {
+        return (getLeft() == null ? 0 : getLeft().hashCode()) ^
+            (getMiddle() == null ? 0 : getMiddle().hashCode()) ^
+            (getRight() == null ? 0 : getRight().hashCode());
+    }
 
     /**
      * <p>Returns a String representation of this triple using the format {@code ($left,$middle,$right)}.</p>

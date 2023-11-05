@@ -87,16 +87,9 @@ public class ConstantInitializer<T> implements ConcurrentInitializer<T> {
      * @return a hash code for this object
      */
     @Override
-/**
- * Returns a hash code for this object. This implementation returns the hash
- * code of the managed object.
- *
- * @return a hash code for this object
- */
-public int hashCode() {
-    return /* NPEX_NULL_EXP */
-    getObject().hashCode();
-}
+    public int hashCode() {
+        return getObject() != null ? getObject().hashCode() : 0;
+    }
 
     /**
      * Compares this object with another one. This implementation returns

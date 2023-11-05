@@ -86,31 +86,17 @@ public class EnumUtils {
      * @param enumName   the enum name, null returns false
      * @return true if the enum name is valid, otherwise false
      */
-/**
- * <p>Checks if the specified name is a valid enum for the class.</p>
- *
- * <p>This method differs from {@link Enum#valueOf} in that checks if the name is
- * a valid enum without needing to catch the exception.</p>
- *
- * @param <E>
- * 		the type of the enumeration
- * @param enumClass
- * 		the class of the enum to query, not null
- * @param enumName
- * 		the enum name, null returns false
- * @return true if the enum name is valid, otherwise false
- */
-public static <E extends java.lang.Enum<E>> boolean isValidEnum(final java.lang.Class<E> enumClass, final java.lang.String enumName) {
-    {
+    public static <E extends Enum<E>> boolean isValidEnum(final Class<E> enumClass, final String enumName) {
+        if (enumName == null) {
+            return false;
+        }
         try {
-            java.lang.Enum.valueOf(enumClass, /* NPEX_NULL_EXP */
-            enumName);
+            Enum.valueOf(enumClass, enumName);
             return true;
-        } catch (final java.lang.IllegalArgumentException ex) {
+        } catch (final IllegalArgumentException ex) {
             return false;
         }
     }
-}
 
     /**
      * <p>Gets the enum for the class, returning {@code null} if not found.</p>

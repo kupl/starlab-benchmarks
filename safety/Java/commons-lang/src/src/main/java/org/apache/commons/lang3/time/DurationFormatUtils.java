@@ -493,86 +493,78 @@ public class DurationFormatUtils {
      * @param format  the format to parse, not null
      * @return array of Token[]
      */
-/**
- * Parses a classic date format string into Tokens
- *
- * @param format
- * 		the format to parse, not null
- * @return array of Token[]
- */
-static org.apache.commons.lang3.time.DurationFormatUtils.Token[] lexx(final java.lang.String format) {
-    final java.util.ArrayList<org.apache.commons.lang3.time.DurationFormatUtils.Token> list = new java.util.ArrayList<org.apache.commons.lang3.time.DurationFormatUtils.Token>(format.length());
-    boolean inLiteral = false;
-    // Although the buffer is stored in a Token, the Tokens are only
-    // used internally, so cannot be accessed by other threads
-    java.lang.StringBuilder buffer = null;
-    org.apache.commons.lang3.time.DurationFormatUtils.Token previous = null;
-    for (int i = 0; i < format.length(); i++) {
-        final char ch = format.charAt(i);
-        if (inLiteral && (ch != '\'')) {
-            buffer.append(ch);// buffer can't be null if inLiteral is true
+    static Token[] lexx(final String format) {
+        final ArrayList<Token> list = new ArrayList<Token>(format.length());
 
-            continue;
-        }
-        java.lang.Object value = null;
-        switch (ch) {
+        boolean inLiteral = false;
+        // Although the buffer is stored in a Token, the Tokens are only
+        // used internally, so cannot be accessed by other threads
+        StringBuilder buffer = null;
+        Token previous = null;
+        for (int i = 0; i < format.length(); i++) {
+            final char ch = format.charAt(i);
+            if (inLiteral && ch != '\'') {
+                buffer.append(ch); // buffer can't be null if inLiteral is true
+                continue;
+            }
+            Object value = null;
+            switch (ch) {
             // TODO: Need to handle escaping of '
-            case '\'' :
+            case '\'':
                 if (inLiteral) {
                     buffer = null;
                     inLiteral = false;
                 } else {
-                    buffer = new java.lang.StringBuilder();
-                    list.add(new org.apache.commons.lang3.time.DurationFormatUtils.Token(buffer));
+                    buffer = new StringBuilder();
+                    list.add(new Token(buffer));
                     inLiteral = true;
                 }
                 break;
-            case 'y' :
-                value = org.apache.commons.lang3.time.DurationFormatUtils.y;
+            case 'y':
+                value = y;
                 break;
-            case 'M' :
-                value = org.apache.commons.lang3.time.DurationFormatUtils.M;
+            case 'M':
+                value = M;
                 break;
-            case 'd' :
-                value = org.apache.commons.lang3.time.DurationFormatUtils.d;
+            case 'd':
+                value = d;
                 break;
-            case 'H' :
-                value = org.apache.commons.lang3.time.DurationFormatUtils.H;
+            case 'H':
+                value = H;
                 break;
-            case 'm' :
-                value = org.apache.commons.lang3.time.DurationFormatUtils.m;
+            case 'm':
+                value = m;
                 break;
-            case 's' :
-                value = org.apache.commons.lang3.time.DurationFormatUtils.s;
+            case 's':
+                value = s;
                 break;
-            case 'S' :
-                value = org.apache.commons.lang3.time.DurationFormatUtils.S;
+            case 'S':
+                value = S;
                 break;
-            default :
+            default:
                 if (buffer == null) {
-                    buffer = new java.lang.StringBuilder();
-                    list.add(new org.apache.commons.lang3.time.DurationFormatUtils.Token(buffer));
+                    buffer = new StringBuilder();
+                    list.add(new Token(buffer));
                 }
                 buffer.append(ch);
-        }
-        {
-            if ((previous != null) && previous.getValue().equals(/* NPEX_NULL_EXP */
-            value)) {
-                previous.increment();
-            } else {
-                final org.apache.commons.lang3.time.DurationFormatUtils.Token token = new org.apache.commons.lang3.time.DurationFormatUtils.Token(value);
-                list.add(token);
-                previous = token;
             }
-            buffer = null;
+
+            if (value != null) {
+                if (previous != null && previous.getValue().equals(value)) {
+                    previous.increment();
+                } else {
+                    final Token token = new Token(value);
+                    list.add(token);
+                    previous = token;
+                }
+                buffer = null;
+            }
         }
+        if (inLiteral) { // i.e. we have not found the end of the literal
+            throw new IllegalArgumentException("Unmatched quote in format: " + format);
+        }
+        return list.toArray(new Token[list.size()]);
     }
-    if (inLiteral) {
-        // i.e. we have not found the end of the literal
-        throw new java.lang.IllegalArgumentException("Unmatched quote in format: " + format);
-    }
-    return list.toArray(new org.apache.commons.lang3.time.DurationFormatUtils.Token[list.size()]);
-}
 
     //-----------------------------------------------------------------------
     /**

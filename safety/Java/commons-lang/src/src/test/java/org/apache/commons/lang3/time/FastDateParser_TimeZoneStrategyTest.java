@@ -28,25 +28,32 @@ import org.junit.Test;
 public class FastDateParser_TimeZoneStrategyTest {
 
     @Test
-public void testTimeZoneStrategyPattern() {
-    for (final java.util.Locale locale : java.util.Locale.getAvailableLocales()) {
-        final org.apache.commons.lang3.time.FastDateParser parser = new org.apache.commons.lang3.time.FastDateParser("z", java.util.TimeZone.getDefault(), locale);
-        final java.lang.String[][] zones = java.text.DateFormatSymbols.getInstance(locale).getZoneStrings();
-        for (final java.lang.String[] zone : zones) {
-            for (int t = 1; t < zone.length; ++t) {
-                final java.lang.String tzDisplay = zone[t];
-                {
+    public void testTimeZoneStrategyPattern() {
+        for(final Locale locale : Locale.getAvailableLocales()) {
+            final FastDateParser parser = new FastDateParser("z", TimeZone.getDefault(), locale);
+            final String[][] zones = DateFormatSymbols.getInstance(locale).getZoneStrings();
+            for(final String[] zone :  zones) {
+                for(int t = 1; t<zone.length; ++t) {
+                    final String tzDisplay = zone[t];
+                    if (tzDisplay == null) {
+                        break;
+                    }
                     try {
-                        parser.parse(/* NPEX_NULL_EXP */
-                        tzDisplay);
-                    } catch (java.lang.Exception ex) {
-                        org.junit.Assert.fail((((((((((((("'" + tzDisplay) + "'") + " Locale: '") + locale.getDisplayName()) + "'") + " TimeZone: ") + zone[0]) + " offset: ") + t) + " defaultLocale: ") + java.util.Locale.getDefault()) + " defaultTimeZone: ") + java.util.TimeZone.getDefault().getDisplayName());
+                        parser.parse(tzDisplay);
+                    }
+                    catch(Exception ex) {
+                        Assert.fail("'" + tzDisplay + "'"
+                                + " Locale: '" + locale.getDisplayName() + "'"
+                                + " TimeZone: " + zone[0]
+                                + " offset: " + t
+                                + " defaultLocale: " + Locale.getDefault()
+                                + " defaultTimeZone: " + TimeZone.getDefault().getDisplayName()
+                                );
                     }
                 }
             }
         }
     }
-}
 
     @Test
     public void testLang1219() throws ParseException {

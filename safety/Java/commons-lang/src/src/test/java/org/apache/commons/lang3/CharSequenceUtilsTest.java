@@ -104,18 +104,19 @@ public class CharSequenceUtilsTest {
             this.expected = false;
             this.throwable = throwable;
         }
-public java.lang.String toString() {
-    java.lang.StringBuilder sb = new java.lang.StringBuilder();
-    sb.append(source).append("[").append(toffset).append("]");
-    sb.append(ignoreCase ? " caseblind " : " samecase ");
-    sb.append(other).append("[").append(ooffset).append("]");
-    sb.append(" ").append(len).append(" => ");
-    {
-        sb.append(/* NPEX_NULL_EXP */
-        throwable);
-    }
-    return sb.toString();
-}
+        public String toString(){
+            StringBuilder sb = new StringBuilder();
+            sb.append(source).append("[").append(toffset).append("]");
+            sb.append(ignoreCase? " caseblind ":" samecase ");
+            sb.append(other).append("[").append(ooffset).append("]");
+            sb.append(" ").append(len).append(" => ");
+            if (throwable != null) {
+                sb.append(throwable);
+            } else {
+                sb.append(expected);
+            }
+            return sb.toString();
+        }
     }
 
     private static final TestData[] TEST_DATA = {

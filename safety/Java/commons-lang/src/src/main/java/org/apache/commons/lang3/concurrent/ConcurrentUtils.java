@@ -178,26 +178,10 @@ public class ConcurrentUtils {
      * @throws ConcurrentException if the {@code ConcurrentInitializer} throws
      * an exception
      */
-// -----------------------------------------------------------------------
-/**
- * Invokes the specified {@code ConcurrentInitializer} and returns the
- * object produced by the initializer. This method just invokes the {@code get()} method of the given {@code ConcurrentInitializer}. It is
- * <b>null</b>-safe: if the argument is <b>null</b>, result is also
- * <b>null</b>.
- *
- * @param <T>
- * 		the type of the object produced by the initializer
- * @param initializer
- * 		the {@code ConcurrentInitializer} to be invoked
- * @return the object managed by the {@code ConcurrentInitializer}
- * @throws ConcurrentException
- * 		if the {@code ConcurrentInitializer} throws
- * 		an exception
- */
-public static <T> T initialize(final org.apache.commons.lang3.concurrent.ConcurrentInitializer<T> initializer) throws org.apache.commons.lang3.concurrent.ConcurrentException {
-    return /* NPEX_NULL_EXP */
-    initializer.get();
-}
+    public static <T> T initialize(final ConcurrentInitializer<T> initializer)
+            throws ConcurrentException {
+        return initializer != null ? initializer.get() : null;
+    }
 
     /**
      * Invokes the specified {@code ConcurrentInitializer} and transforms

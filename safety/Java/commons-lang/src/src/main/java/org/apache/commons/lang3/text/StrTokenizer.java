@@ -468,22 +468,15 @@ public class StrTokenizer implements ListIterator<String>, Cloneable {
      * @param input  the new string to tokenize, null sets no text to parse
      * @return this, to enable chaining
      */
-/**
- * Reset this tokenizer, giving it a new input string to parse.
- * In this manner you can re-use a tokenizer with the same settings
- * on multiple input lines.
- *
- * @param input
- * 		the new string to tokenize, null sets no text to parse
- * @return this, to enable chaining
- */
-public org.apache.commons.lang3.text.StrTokenizer reset(final java.lang.String input) {
-    reset();
-    {
-        this.chars = input.toCharArray();
+    public StrTokenizer reset(final String input) {
+        reset();
+        if (input != null) {
+            this.chars = input.toCharArray();
+        } else {
+            this.chars = null;
+        }
+        return this;
     }
-    return this;
-}
 
     /**
      * Reset this tokenizer, giving it a new input string to parse.

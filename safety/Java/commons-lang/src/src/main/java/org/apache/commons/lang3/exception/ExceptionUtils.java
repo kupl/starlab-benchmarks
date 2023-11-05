@@ -457,41 +457,19 @@ public class ExceptionUtils {
      * @throws IllegalArgumentException if the stream is <code>null</code>
      * @since 2.0
      */
-/**
- * <p>Prints a compact stack trace for the root cause of a throwable.</p>
- *
- * <p>The compact stack trace starts with the root cause and prints
- * stack frames up to the place where it was caught and wrapped.
- * Then it prints the wrapped exception and continues with stack frames
- * until the wrapper exception is caught and wrapped again, etc.</p>
- *
- * <p>The output of this method is consistent across JDK versions.
- * Note that this is the opposite order to the JDK1.4 display.</p>
- *
- * <p>The method is equivalent to <code>printStackTrace</code> for throwables
- * that don't have nested causes.</p>
- *
- * @param throwable
- * 		the throwable to output, may be null
- * @param stream
- * 		the stream to output to, may not be null
- * @throws IllegalArgumentException
- * 		if the stream is <code>null</code>
- * @since 2.0
- */
-public static void printRootCauseStackTrace(final java.lang.Throwable throwable, final java.io.PrintStream stream) {
-    {
-        if (stream == null) {
-            throw new java.lang.IllegalArgumentException("The PrintStream must not be null");
+    public static void printRootCauseStackTrace(final Throwable throwable, final PrintStream stream) {
+        if (throwable == null) {
+            return;
         }
-        final java.lang.String[] trace = org.apache.commons.lang3.exception.ExceptionUtils.getRootCauseStackTrace(/* NPEX_NULL_EXP */
-        throwable);
-        for (final java.lang.String element : trace) {
+        if (stream == null) {
+            throw new IllegalArgumentException("The PrintStream must not be null");
+        }
+        final String trace[] = getRootCauseStackTrace(throwable);
+        for (final String element : trace) {
             stream.println(element);
         }
         stream.flush();
     }
-}
 
     /**
      * <p>Prints a compact stack trace for the root cause of a throwable.</p>

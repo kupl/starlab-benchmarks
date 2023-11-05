@@ -306,22 +306,14 @@ public class BackgroundInitializerTest {
          * @throws Exception in case of an error
          */
         @Override
-/**
- * Records this invocation. Optionally throws an exception or sleeps a
- * while.
- *
- * @throws Exception
- * 		in case of an error
- */
-protected java.lang.Integer initialize() throws java.lang.Exception {
-    {
-        throw /* NPEX_NULL_EXP */
-        ex;
-    }
-    if (shouldSleep) {
-        java.lang.Thread.sleep(60000L);
-    }
-    return java.lang.Integer.valueOf(++initializeCalls);
-}
+        protected Integer initialize() throws Exception {
+            if (ex != null) {
+                throw ex;
+            }
+            if (shouldSleep) {
+                Thread.sleep(60000L);
+            }
+            return Integer.valueOf(++initializeCalls);
+        }
     }
 }

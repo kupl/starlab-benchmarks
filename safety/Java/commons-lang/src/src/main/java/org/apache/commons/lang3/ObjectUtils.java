@@ -267,27 +267,10 @@ public class ObjectUtils {
      * removed in future releases
      */
     @Deprecated
-/**
- * <p>Gets the hash code of an object returning zero when the
- * object is {@code null}.</p>
- *
- * <pre>
- * ObjectUtils.hashCode(null)   = 0
- * ObjectUtils.hashCode(obj)    = obj.hashCode()
- * </pre>
- *
- * @param obj
- * 		the object to obtain the hash code of, may be {@code null}
- * @return the hash code of the object, or zero if null
- * @since 2.1
- * @deprecated this method has been replaced by {@code java.util.Objects.hashCode(Object)} in Java 7 and will be
-removed in future releases
- */
-public static int hashCode(final java.lang.Object obj) {
-    // hashCode(Object) retained for performance, as hash code is often critical
-    return /* NPEX_NULL_EXP */
-    obj.hashCode();
-}
+    public static int hashCode(final Object obj) {
+        // hashCode(Object) retained for performance, as hash code is often critical
+        return obj == null ? 0 : obj.hashCode();
+    }
 
     /**
      * <p>Gets the hash code for multiple objects.</p>

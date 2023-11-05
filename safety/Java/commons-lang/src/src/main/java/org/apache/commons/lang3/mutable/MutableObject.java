@@ -120,15 +120,8 @@ public class MutableObject<T> implements Mutable<T>, Serializable {
      * @return the mutable value as a string
      */
     @Override
-// -----------------------------------------------------------------------
-/**
- * Returns the String value of this mutable.
- *
- * @return the mutable value as a string
- */
-public java.lang.String toString() {
-    return /* NPEX_NULL_EXP */
-    value.toString();
-}
+    public String toString() {
+        return value == null ? "null" : value.toString();
+    }
 
 }

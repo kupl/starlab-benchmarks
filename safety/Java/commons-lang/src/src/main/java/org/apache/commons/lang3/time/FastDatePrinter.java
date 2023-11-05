@@ -1312,33 +1312,19 @@ public class FastDatePrinter implements DatePrinter, Serializable {
      * @param locale  the locale to use
      * @return the textual name of the time zone
      */
-/**
- * <p>Gets the time zone display name, using a cache for performance.</p>
- *
- * @param tz
- * 		the zone to query
- * @param daylight
- * 		true if daylight savings
- * @param style
- * 		the style to use {@code TimeZone.LONG} or {@code TimeZone.SHORT}
- * @param locale
- * 		the locale to use
- * @return the textual name of the time zone
- */
-static java.lang.String getTimeZoneDisplay(final java.util.TimeZone tz, final boolean daylight, final int style, final java.util.Locale locale) {
-    final org.apache.commons.lang3.time.FastDatePrinter.TimeZoneDisplayKey key = new org.apache.commons.lang3.time.FastDatePrinter.TimeZoneDisplayKey(tz, daylight, style, locale);
-    java.lang.String value = org.apache.commons.lang3.time.FastDatePrinter.cTimeZoneDisplayCache.get(key);
-    if (value == null) {
-        // This is a very slow call, so cache the results.
-        value = tz.getDisplayName(daylight, style, locale);
-        final java.lang.String prior = org.apache.commons.lang3.time.FastDatePrinter.cTimeZoneDisplayCache.putIfAbsent(key, value);
-        {
-            value = /* NPEX_NULL_EXP */
-            prior;
+    static String getTimeZoneDisplay(final TimeZone tz, final boolean daylight, final int style, final Locale locale) {
+        final TimeZoneDisplayKey key = new TimeZoneDisplayKey(tz, daylight, style, locale);
+        String value = cTimeZoneDisplayCache.get(key);
+        if (value == null) {
+            // This is a very slow call, so cache the results.
+            value = tz.getDisplayName(daylight, style, locale);
+            final String prior = cTimeZoneDisplayCache.putIfAbsent(key, value);
+            if (prior != null) {
+                value= prior;
+            }
         }
+        return value;
     }
-    return value;
-}
 
     /**
      * <p>Inner class to output a time zone name.</p>

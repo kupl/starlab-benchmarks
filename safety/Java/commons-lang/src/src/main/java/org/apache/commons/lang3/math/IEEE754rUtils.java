@@ -62,30 +62,21 @@ public class IEEE754rUtils {
      * @throws IllegalArgumentException if <code>array</code> is empty
      * @since 3.4 Changed signature from min(float[]) to min(float...)
      */
-/**
- * <p>Returns the minimum value in an array.</p>
- *
- * @param array
- * 		an array, must not be null or empty
- * @return the minimum value in the array
- * @throws IllegalArgumentException
- * 		if <code>array</code> is <code>null</code>
- * @throws IllegalArgumentException
- * 		if <code>array</code> is empty
- * @since 3.4 Changed signature from min(float[]) to min(float...)
- */
-public static float min(final float... array) {
-    {
-        org.apache.commons.lang3.Validate.isTrue(/* NPEX_NULL_EXP */
-        array.length != 0, "Array cannot be empty.");
+    public static float min(final float... array) {
+        // Validates input
+        if (array == null) {
+            throw new IllegalArgumentException("The Array must not be null");
+        } 
+        Validate.isTrue(array.length != 0, "Array cannot be empty.");
+        
         // Finds and returns min
         float min = array[0];
         for (int i = 1; i < array.length; i++) {
-            min = org.apache.commons.lang3.math.IEEE754rUtils.min(array[i], min);
+            min = min(array[i], min);
         }
+    
         return min;
     }
-}
 
     /**
      * <p>Gets the minimum of three <code>double</code> values.</p>

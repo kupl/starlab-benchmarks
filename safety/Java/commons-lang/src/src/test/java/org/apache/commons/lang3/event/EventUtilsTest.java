@@ -216,14 +216,19 @@ public class EventUtilsTest
         }
 
         @Override
-public java.lang.Object invoke(final java.lang.Object proxy, final java.lang.reflect.Method method, final java.lang.Object[] args) throws java.lang.Throwable {
-    final java.lang.Integer count = eventCounts.get(method.getName());
-    {
-        eventCounts.put(method.getName(), java.lang.Integer.valueOf(/* NPEX_NULL_EXP */
-        count.intValue() + 1));
-    }
-    return null;
-}
+        public Object invoke(final Object proxy, final Method method, final Object[] args) throws Throwable
+        {
+            final Integer count = eventCounts.get(method.getName());
+            if (count == null)
+            {
+                eventCounts.put(method.getName(), Integer.valueOf(1));
+            }
+            else
+            {
+                eventCounts.put(method.getName(), Integer.valueOf(count.intValue() + 1));
+            }
+            return null;
+        }
     }
 
     public static class MultipleEventSource

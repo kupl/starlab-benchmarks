@@ -73,38 +73,28 @@ public abstract class CharSequenceTranslator {
      * @param out Writer to translate the text to
      * @throws IOException if and only if the Writer produces an IOException
      */
-/**
- * Translate an input onto a Writer. This is intentionally final as its algorithm is
- * tightly coupled with the abstract method of this class.
- *
- * @param input
- * 		CharSequence that is being translated
- * @param out
- * 		Writer to translate the text to
- * @throws IOException
- * 		if and only if the Writer produces an IOException
- */
-public final void translate(final java.lang.CharSequence input, final java.io.Writer out) throws java.io.IOException {
-    {
+    public final void translate(final CharSequence input, final Writer out) throws IOException {
+        if (out == null) {
+            throw new IllegalArgumentException("The Writer must not be null");
+        }
         if (input == null) {
             return;
         }
         int pos = 0;
         final int len = input.length();
         while (pos < len) {
-            final int consumed = translate(input, pos, /* NPEX_NULL_EXP */
-            out);
+            final int consumed = translate(input, pos, out);
             if (consumed == 0) {
                 // inlined implementation of Character.toChars(Character.codePointAt(input, pos))
                 // avoids allocating temp char arrays and duplicate checks
                 char c1 = input.charAt(pos);
                 out.write(c1);
                 pos++;
-                if (java.lang.Character.isHighSurrogate(c1) && (pos < len)) {
+                if (Character.isHighSurrogate(c1) && pos < len) {
                     char c2 = input.charAt(pos);
-                    if (java.lang.Character.isLowSurrogate(c2)) {
-                        out.write(c2);
-                        pos++;
+                    if (Character.isLowSurrogate(c2)) {
+                      out.write(c2);
+                      pos++;
                     }
                 }
                 continue;
@@ -112,11 +102,10 @@ public final void translate(final java.lang.CharSequence input, final java.io.Wr
             // contract with translators is that they have to understand codepoints
             // and they just took care of a surrogate pair
             for (int pt = 0; pt < consumed; pt++) {
-                pos += java.lang.Character.charCount(java.lang.Character.codePointAt(input, pos));
+                pos += Character.charCount(Character.codePointAt(input, pos));
             }
-        } 
+        }
     }
-}
 
     /**
      * Helper method to create a merger of this translator with another set of 

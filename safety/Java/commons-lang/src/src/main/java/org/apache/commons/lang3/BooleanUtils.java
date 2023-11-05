@@ -500,31 +500,12 @@ public class BooleanUtils {
      * @param nullValue  the value to return if {@code null}, may be {@code null}
      * @return the appropriate value
      */
-/**
- * <p>Converts a Boolean to an Integer specifying the conversion values.</p>
- *
- * <pre>
- * BooleanUtils.toIntegerObject(Boolean.TRUE, Integer.valueOf(1), Integer.valueOf(0), Integer.valueOf(2))  = Integer.valueOf(1)
- * BooleanUtils.toIntegerObject(Boolean.FALSE, Integer.valueOf(1), Integer.valueOf(0), Integer.valueOf(2)) = Integer.valueOf(0)
- * BooleanUtils.toIntegerObject(null, Integer.valueOf(1), Integer.valueOf(0), Integer.valueOf(2))          = Integer.valueOf(2)
- * </pre>
- *
- * @param bool
- * 		the Boolean to convert
- * @param trueValue
- * 		the value to return if {@code true}, may be {@code null}
- * @param falseValue
- * 		the value to return if {@code false}, may be {@code null}
- * @param nullValue
- * 		the value to return if {@code null}, may be {@code null}
- * @return the appropriate value
- */
-public static java.lang.Integer toIntegerObject(final java.lang.Boolean bool, final java.lang.Integer trueValue, final java.lang.Integer falseValue, final java.lang.Integer nullValue) {
-    {
-        return /* NPEX_NULL_EXP */
-        bool.booleanValue() ? trueValue : falseValue;
+    public static Integer toIntegerObject(final Boolean bool, final Integer trueValue, final Integer falseValue, final Integer nullValue) {
+        if (bool == null) {
+            return nullValue;
+        }
+        return bool.booleanValue() ? trueValue : falseValue;
     }
-}
 
     // String to Boolean methods
     //-----------------------------------------------------------------------

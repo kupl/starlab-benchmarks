@@ -468,43 +468,14 @@ public class WordUtils {
      * @return capitalized String, <code>null</code> if null String input
      * @since 2.1
      */
-/**
- * <p>Converts all the delimiter separated words in a String into capitalized words,
- * that is each word is made up of a titlecase character and then a series of
- * lowercase characters. </p>
- *
- * <p>The delimiters represent a set of characters understood to separate words.
- * The first string character and the first non-delimiter character after a
- * delimiter will be capitalized. </p>
- *
- * <p>A <code>null</code> input String returns <code>null</code>.
- * Capitalization uses the Unicode title case, normally equivalent to
- * upper case.</p>
- *
- * <pre>
- * WordUtils.capitalizeFully(null, *)            = null
- * WordUtils.capitalizeFully("", *)              = ""
- * WordUtils.capitalizeFully(*, null)            = *
- * WordUtils.capitalizeFully(*, new char[0])     = *
- * WordUtils.capitalizeFully("i aM.fine", {'.'}) = "I am.Fine"
- * </pre>
- *
- * @param str
- * 		the String to capitalize, may be null
- * @param delimiters
- * 		set of characters to determine capitalization, null means whitespace
- * @return capitalized String, <code>null</code> if null String input
- * @since 2.1
- */
-public static java.lang.String capitalizeFully(java.lang.String str, final char... delimiters) {
-    final int delimLen = (/* NPEX_NULL_EXP */
-    delimiters == null) ? -1 : delimiters.length;
-    if (org.apache.commons.lang3.StringUtils.isEmpty(str) || (delimLen == 0)) {
-        return str;
+    public static String capitalizeFully(String str, final char... delimiters) {
+        final int delimLen = delimiters == null ? -1 : delimiters.length;
+        if (StringUtils.isEmpty(str) || delimLen == 0) {
+            return str;
+        }
+        str = str.toLowerCase();
+        return capitalize(str, delimiters);
     }
-    str = str.toLowerCase();
-    return org.apache.commons.lang3.text.WordUtils.capitalize(str, delimiters);
-}
 
     //-----------------------------------------------------------------------
     /**

@@ -60,13 +60,13 @@ import org.junit.runners.model.Statement;
 public class SystemDefaultsSwitch implements TestRule {
     
     @Override
-public org.junit.runners.model.Statement apply(org.junit.runners.model.Statement stmt, org.junit.runner.Description description) {
-    org.apache.commons.lang3.test.SystemDefaults defaults = description.getAnnotation(org.apache.commons.lang3.test.SystemDefaults.class);
-    {
-        return applyTimeZone(/* NPEX_NULL_EXP */
-        defaults, applyLocale(defaults, stmt));
+    public Statement apply(Statement stmt, Description description) {
+        SystemDefaults defaults = description.getAnnotation(SystemDefaults.class);
+        if (defaults == null) {
+            return stmt;
+        }
+        return applyTimeZone(defaults, applyLocale(defaults, stmt));
     }
-}
 
     private Statement applyTimeZone(SystemDefaults defaults, final Statement stmt) {
         if (defaults.timezone().isEmpty()) {

@@ -703,24 +703,17 @@ public class ReflectionToStringBuilder extends ToStringBuilder {
      * @return the built string
      */
     @Override
-/**
- * <p>
- * Gets the String built by this builder.
- * </p>
- *
- * @return the built string
- */
-public java.lang.String toString() {
-    {
-        java.lang.Class<?> clazz = /* NPEX_NULL_EXP */
-        this.getObject().getClass();
+    public String toString() {
+        if (this.getObject() == null) {
+            return this.getStyle().getNullText();
+        }
+        Class<?> clazz = this.getObject().getClass();
         this.appendFieldsIn(clazz);
-        while ((clazz.getSuperclass() != null) && (clazz != this.getUpToClass())) {
+        while (clazz.getSuperclass() != null && clazz != this.getUpToClass()) {
             clazz = clazz.getSuperclass();
             this.appendFieldsIn(clazz);
-        } 
+        }
         return super.toString();
     }
-}
 
 }

@@ -321,22 +321,14 @@ public abstract class BackgroundInitializer<T> implements
          * @throws Exception if an error occurs
          */
         @Override
-/**
- * Initiates initialization and returns the result.
- *
- * @return the result object
- * @throws Exception
- * 		if an error occurs
- */
-public T call() throws java.lang.Exception {
-    try {
-        return initialize();
-    } finally {
-        {
-            /* NPEX_NULL_EXP */
-            execFinally.shutdown();
+        public T call() throws Exception {
+            try {
+                return initialize();
+            } finally {
+                if (execFinally != null) {
+                    execFinally.shutdown();
+                }
+            }
         }
-    }
-}
     }
 }

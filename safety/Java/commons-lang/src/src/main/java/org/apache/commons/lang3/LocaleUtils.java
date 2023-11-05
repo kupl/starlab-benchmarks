@@ -188,43 +188,22 @@ public class LocaleUtils {
      * @param defaultLocale  the default locale to use if no other is found
      * @return the unmodifiable list of Locale objects, 0 being locale, not null
      */
-// -----------------------------------------------------------------------
-/**
- * <p>Obtains the list of locales to search through when performing
- * a locale search.</p>
- *
- * <pre>
- * localeLookupList(Locale("fr", "CA", "xxx"), Locale("en"))
- * = [Locale("fr","CA","xxx"), Locale("fr","CA"), Locale("fr"), Locale("en"]
- * </pre>
- *
- * <p>The result list begins with the most specific locale, then the
- * next more general and so on, finishing with the default locale.
- * The list will never contain the same locale twice.</p>
- *
- * @param locale
- * 		the locale to start from, null returns empty list
- * @param defaultLocale
- * 		the default locale to use if no other is found
- * @return the unmodifiable list of Locale objects, 0 being locale, not null
- */
-public static java.util.List<java.util.Locale> localeLookupList(final java.util.Locale locale, final java.util.Locale defaultLocale) {
-    final java.util.List<java.util.Locale> list = new java.util.ArrayList<java.util.Locale>(4);
-    {
-        list.add(/* NPEX_NULL_EXP */
-        locale);
-        if (locale.getVariant().length() > 0) {
-            list.add(new java.util.Locale(locale.getLanguage(), locale.getCountry()));
+    public static List<Locale> localeLookupList(final Locale locale, final Locale defaultLocale) {
+        final List<Locale> list = new ArrayList<Locale>(4);
+        if (locale != null) {
+            list.add(locale);
+            if (locale.getVariant().length() > 0) {
+                list.add(new Locale(locale.getLanguage(), locale.getCountry()));
+            }
+            if (locale.getCountry().length() > 0) {
+                list.add(new Locale(locale.getLanguage(), StringUtils.EMPTY));
+            }
+            if (list.contains(defaultLocale) == false) {
+                list.add(defaultLocale);
+            }
         }
-        if (locale.getCountry().length() > 0) {
-            list.add(new java.util.Locale(locale.getLanguage(), org.apache.commons.lang3.StringUtils.EMPTY));
-        }
-        if (list.contains(defaultLocale) == false) {
-            list.add(defaultLocale);
-        }
+        return Collections.unmodifiableList(list);
     }
-    return java.util.Collections.unmodifiableList(list);
-}
 
     //-----------------------------------------------------------------------
     /**

@@ -2211,19 +2211,11 @@ public class StrBuilder implements CharSequence, Appendable, Serializable, Build
      * @param str  the string to search for, null returns false
      * @return true if the builder ends with the string
      */
-/**
- * Checks whether this builder ends with the specified string.
- * <p>
- * Note that this method handles null input quietly, unlike String.
- *
- * @param str
- * 		the string to search for, null returns false
- * @return true if the builder ends with the string
- */
-public boolean endsWith(final java.lang.String str) {
-    {
-        final int len = /* NPEX_NULL_EXP */
-        str.length();
+    public boolean endsWith(final String str) {
+        if (str == null) {
+            return false;
+        }
+        final int len = str.length();
         if (len == 0) {
             return true;
         }
@@ -2231,14 +2223,13 @@ public boolean endsWith(final java.lang.String str) {
             return false;
         }
         int pos = size - len;
-        for (int i = 0; i < len; i++ , pos++) {
+        for (int i = 0; i < len; i++,pos++) {
             if (buffer[pos] != str.charAt(i)) {
                 return false;
             }
         }
         return true;
     }
-}
 
     //-----------------------------------------------------------------------
     /**

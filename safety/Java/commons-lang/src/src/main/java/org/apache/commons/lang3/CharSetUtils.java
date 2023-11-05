@@ -184,38 +184,15 @@ public class CharSetUtils {
      * @return the modified String, {@code null} if null string input
      * @since 2.0
      */
-// Keep
-// -----------------------------------------------------------------------
-/**
- * <p>Takes an argument in set-syntax, see evaluateSet,
- * and keeps any of characters present in the specified string.</p>
- *
- * <pre>
- * CharSetUtils.keep(null, *)        = null
- * CharSetUtils.keep("", *)          = ""
- * CharSetUtils.keep(*, null)        = ""
- * CharSetUtils.keep(*, "")          = ""
- * CharSetUtils.keep("hello", "hl")  = "hll"
- * CharSetUtils.keep("hello", "le")  = "ell"
- * </pre>
- *
- * @see CharSet#getInstance(java.lang.String...) for set-syntax.
- * @param str
- * 		String to keep characters from, may be null
- * @param set
- * 		String[] set of characters to keep, may be null
- * @return the modified String, {@code null} if null string input
- * @since 2.0
- */
-public static java.lang.String keep(final java.lang.String str, final java.lang.String... set) {
-    {
-        if (/* NPEX_NULL_EXP */
-        str.isEmpty() || org.apache.commons.lang3.CharSetUtils.deepEmpty(set)) {
-            return org.apache.commons.lang3.StringUtils.EMPTY;
+    public static String keep(final String str, final String... set) {
+        if (str == null) {
+            return null;
         }
-        return org.apache.commons.lang3.CharSetUtils.modify(str, set, true);
+        if (str.isEmpty() || deepEmpty(set)) {
+            return StringUtils.EMPTY;
+        }
+        return modify(str, set, true);
     }
-}
 
     // Delete
     //-----------------------------------------------------------------------

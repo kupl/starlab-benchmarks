@@ -130,36 +130,24 @@ public class MultiBackgroundInitializer
      * @throws IllegalArgumentException if a required parameter is missing
      * @throws IllegalStateException if {@code start()} has already been called
      */
-/**
- * Adds a new {@code BackgroundInitializer} to this object. When this
- * {@code MultiBackgroundInitializer} is started, the given initializer will
- * be processed. This method must not be called after {@link #start()} has
- * been invoked.
- *
- * @param name
- * 		the name of the initializer (must not be <b>null</b>)
- * @param init
- * 		the {@code BackgroundInitializer} to add (must not be
- * 		<b>null</b>)
- * @throws IllegalArgumentException
- * 		if a required parameter is missing
- * @throws IllegalStateException
- * 		if {@code start()} has already been called
- */
-public void addInitializer(final java.lang.String name, final org.apache.commons.lang3.concurrent.BackgroundInitializer<?> init) {
-    if (name == null) {
-        throw new java.lang.IllegalArgumentException("Name of child initializer must not be null!");
-    }
-    {
-        synchronized(this) {
+    public void addInitializer(final String name, final BackgroundInitializer<?> init) {
+        if (name == null) {
+            throw new IllegalArgumentException(
+                    "Name of child initializer must not be null!");
+        }
+        if (init == null) {
+            throw new IllegalArgumentException(
+                    "Child initializer must not be null!");
+        }
+
+        synchronized (this) {
             if (isStarted()) {
-                throw new java.lang.IllegalStateException("addInitializer() must not be called after start()!");
+                throw new IllegalStateException(
+                        "addInitializer() must not be called after start()!");
             }
-            childInitializers.put(name, /* NPEX_NULL_EXP */
-            init);
+            childInitializers.put(name, init);
         }
     }
-}
 
     /**
      * Returns the number of tasks needed for executing all child {@code

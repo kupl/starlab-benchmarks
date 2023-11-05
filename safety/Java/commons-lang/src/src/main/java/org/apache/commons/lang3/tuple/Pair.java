@@ -145,17 +145,11 @@ public abstract class Pair<L, R> implements Map.Entry<L, R>, Comparable<Pair<L, 
      * @return the hash code
      */
     @Override
-/**
- * <p>Returns a suitable hash code.
- * The hash code follows the definition in {@code Map.Entry}.</p>
- *
- * @return the hash code
- */
-public int hashCode() {
-    // see Map.Entry API specification
-    return (getKey() == null ? 0 : getKey().hashCode()) ^ /* NPEX_NULL_EXP */
-    getValue().hashCode();
-}
+    public int hashCode() {
+        // see Map.Entry API specification
+        return (getKey() == null ? 0 : getKey().hashCode()) ^
+                (getValue() == null ? 0 : getValue().hashCode());
+    }
 
     /**
      * <p>Returns a String representation of this pair using the format {@code ($left,$right)}.</p>

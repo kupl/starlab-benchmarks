@@ -936,46 +936,30 @@ public class CompareToBuilder implements Builder<Integer> {
      * @param rhs  right-hand array
      * @return this - used to chain append calls
      */
-/**
- * <p>Appends to the <code>builder</code> the deep comparison of
- * two <code>float</code> arrays.</p>
- *
- * <ol>
- * <li>Check if arrays are the same using <code>==</code></li>
- * <li>Check if for <code>null</code>, <code>null</code> is less than non-<code>null</code></li>
- * <li>Check array length, a shorter length array is less than a longer length array</li>
- * <li>Check array contents element by element using {@link #append(float, float)}</li>
- * </ol>
- *
- * @param lhs
- * 		left-hand array
- * @param rhs
- * 		right-hand array
- * @return this - used to chain append calls
- */
-public org.apache.commons.lang3.builder.CompareToBuilder append(final float[] lhs, final float[] rhs) {
-    if (comparison != 0) {
-        return this;
-    }
-    if (lhs == rhs) {
-        return this;
-    }
-    {
+    public CompareToBuilder append(final float[] lhs, final float[] rhs) {
+        if (comparison != 0) {
+            return this;
+        }
+        if (lhs == rhs) {
+            return this;
+        }
+        if (lhs == null) {
+            comparison = -1;
+            return this;
+        }
         if (rhs == null) {
             comparison = +1;
             return this;
         }
-        if (/* NPEX_NULL_EXP */
-        lhs.length != rhs.length) {
-            comparison = (lhs.length < rhs.length) ? -1 : +1;
+        if (lhs.length != rhs.length) {
+            comparison = lhs.length < rhs.length ? -1 : +1;
             return this;
         }
-        for (int i = 0; (i < lhs.length) && (comparison == 0); i++) {
+        for (int i = 0; i < lhs.length && comparison == 0; i++) {
             append(lhs[i], rhs[i]);
         }
         return this;
     }
-}
 
     /**
      * <p>Appends to the <code>builder</code> the deep comparison of

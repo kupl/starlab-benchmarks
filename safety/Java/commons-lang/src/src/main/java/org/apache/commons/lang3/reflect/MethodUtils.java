@@ -338,40 +338,21 @@ public class MethodUtils {
      * @throws IllegalAccessException if the requested method is not accessible
      *  via reflection
      */
-/**
- * <p>Invokes a method whose parameter types match exactly the parameter
- * types given.</p>
- *
- * <p>This uses reflection to invoke the method obtained from a call to
- * {@link #getAccessibleMethod(Class,String,Class[])}.</p>
- *
- * @param object
- * 		invoke method on this object
- * @param methodName
- * 		get method with this name
- * @param args
- * 		use these arguments - treat null as empty array
- * @param parameterTypes
- * 		match these parameters - treat {@code null} as empty array
- * @return The value returned by the invoked method
- * @throws NoSuchMethodException
- * 		if there is no such accessible method
- * @throws InvocationTargetException
- * 		wraps an exception thrown by the
- * 		method invoked
- * @throws IllegalAccessException
- * 		if the requested method is not accessible
- * 		via reflection
- */
-public static java.lang.Object invokeExactMethod(final java.lang.Object object, final java.lang.String methodName, java.lang.Object[] args, java.lang.Class<?>[] parameterTypes) throws java.lang.NoSuchMethodException, java.lang.IllegalAccessException, java.lang.reflect.InvocationTargetException {
-    args = org.apache.commons.lang3.ArrayUtils.nullToEmpty(args);
-    parameterTypes = org.apache.commons.lang3.ArrayUtils.nullToEmpty(parameterTypes);
-    final java.lang.reflect.Method method = org.apache.commons.lang3.reflect.MethodUtils.getAccessibleMethod(object.getClass(), methodName, parameterTypes);
-    {
-        return /* NPEX_NULL_EXP */
-        method.invoke(object, args);
+    public static Object invokeExactMethod(final Object object, final String methodName,
+            Object[] args, Class<?>[] parameterTypes)
+            throws NoSuchMethodException, IllegalAccessException,
+            InvocationTargetException {
+        args = ArrayUtils.nullToEmpty(args);
+        parameterTypes = ArrayUtils.nullToEmpty(parameterTypes);
+        final Method method = getAccessibleMethod(object.getClass(), methodName,
+                parameterTypes);
+        if (method == null) {
+            throw new NoSuchMethodException("No such accessible method: "
+                    + methodName + "() on object: "
+                    + object.getClass().getName());
+        }
+        return method.invoke(object, args);
     }
-}
 
     /**
      * <p>Invokes a {@code static} method whose parameter types match exactly the parameter

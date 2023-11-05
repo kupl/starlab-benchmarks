@@ -1004,41 +1004,12 @@ public class ToStringBuilder implements Builder<String> {
      * @return this
      * @since 2.0
      */
-/**
- * <p>Append the <code>toString</code> from another object.</p>
- *
- * <p>This method is useful where a class delegates most of the implementation of
- * its properties to another class. You can then call <code>toString()</code> on
- * the other class and pass the result into this method.</p>
- *
- * <pre>
- * private AnotherObject delegate;
- * private String fieldInThisClass;
- *
- * public String toString() {
- * return new ToStringBuilder(this).
- * appendToString(delegate.toString()).
- * append(fieldInThisClass).
- * toString();
- * }</pre>
- *
- * <p>This method assumes that the other object uses the same <code>ToStringStyle</code>
- * as this one.</p>
- *
- * <p>If the <code>toString</code> is <code>null</code>, no change is made.</p>
- *
- * @param toString
- * 		the result of <code>toString()</code> on another object
- * @return this
- * @since 2.0
- */
-public org.apache.commons.lang3.builder.ToStringBuilder appendToString(final java.lang.String toString) {
-    {
-        style.appendToString(buffer, /* NPEX_NULL_EXP */
-        toString);
+    public ToStringBuilder appendToString(final String toString) {
+        if (toString != null) {
+            style.appendToString(buffer, toString);
+        }
+        return this;
     }
-    return this;
-}
 
     /**
      * <p>Returns the <code>Object</code> being output.</p>

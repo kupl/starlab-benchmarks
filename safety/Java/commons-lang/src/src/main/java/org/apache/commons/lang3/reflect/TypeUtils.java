@@ -1266,66 +1266,69 @@ public class TypeUtils {
      * @return the resolved {@link Class} object or {@code null} if
      * the type could not be resolved
      */
-/**
- * <p>Get the raw type of a Java type, given its context. Primarily for use
- * with {@link TypeVariable}s and {@link GenericArrayType}s, or when you do
- * not know the runtime type of {@code type}: if you know you have a
- * {@link Class} instance, it is already raw; if you know you have a
- * {@link ParameterizedType}, its raw type is only a method call away.</p>
- *
- * @param type
- * 		to resolve
- * @param assigningType
- * 		type to be resolved against
- * @return the resolved {@link Class} object or {@code null} if
-the type could not be resolved
- */
-public static java.lang.Class<?> getRawType(final java.lang.reflect.Type type, final java.lang.reflect.Type assigningType) {
-    if (type instanceof java.lang.Class<?>) {
-        // it is raw, no problem
-        return ((java.lang.Class<?>) (type));
-    }
-    if (type instanceof java.lang.reflect.ParameterizedType) {
-        // simple enough to get the raw type of a ParameterizedType
-        return org.apache.commons.lang3.reflect.TypeUtils.getRawType(((java.lang.reflect.ParameterizedType) (type)));
-    }
-    if (type instanceof java.lang.reflect.TypeVariable<?>) {
-        if (assigningType == null) {
-            return null;
+    public static Class<?> getRawType(final Type type, final Type assigningType) {
+        if (type instanceof Class<?>) {
+            // it is raw, no problem
+            return (Class<?>) type;
         }
-        // get the entity declaring this type variable
-        final java.lang.Object genericDeclaration = ((java.lang.reflect.TypeVariable<?>) (type)).getGenericDeclaration();
-        // can't get the raw type of a method- or constructor-declared type
-        // variable
-        if (!(genericDeclaration instanceof java.lang.Class<?>)) {
-            return null;
+
+        if (type instanceof ParameterizedType) {
+            // simple enough to get the raw type of a ParameterizedType
+            return getRawType((ParameterizedType) type);
         }
-        // get the type arguments for the declaring class/interface based
-        // on the enclosing type
-        final java.util.Map<java.lang.reflect.TypeVariable<?>, java.lang.reflect.Type> typeVarAssigns = org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments(assigningType, ((java.lang.Class<?>) (genericDeclaration)));
-        {
+
+        if (type instanceof TypeVariable<?>) {
+            if (assigningType == null) {
+                return null;
+            }
+
+            // get the entity declaring this type variable
+            final Object genericDeclaration = ((TypeVariable<?>) type).getGenericDeclaration();
+
+            // can't get the raw type of a method- or constructor-declared type
+            // variable
+            if (!(genericDeclaration instanceof Class<?>)) {
+                return null;
+            }
+
+            // get the type arguments for the declaring class/interface based
+            // on the enclosing type
+            final Map<TypeVariable<?>, Type> typeVarAssigns = getTypeArguments(assigningType,
+                    (Class<?>) genericDeclaration);
+
+            // enclosingType has to be a subclass (or subinterface) of the
+            // declaring type
+            if (typeVarAssigns == null) {
+                return null;
+            }
+
             // get the argument assigned to this type variable
-            final java.lang.reflect.Type typeArgument = /* NPEX_NULL_EXP */
-            typeVarAssigns.get(type);
+            final Type typeArgument = typeVarAssigns.get(type);
+
             if (typeArgument == null) {
                 return null;
             }
+
             // get the argument for this type variable
-            return org.apache.commons.lang3.reflect.TypeUtils.getRawType(typeArgument, assigningType);
+            return getRawType(typeArgument, assigningType);
         }
+
+        if (type instanceof GenericArrayType) {
+            // get raw component type
+            final Class<?> rawComponentType = getRawType(((GenericArrayType) type)
+                    .getGenericComponentType(), assigningType);
+
+            // create array type from raw component type and return its class
+            return Array.newInstance(rawComponentType, 0).getClass();
+        }
+
+        // (hand-waving) this is not the method you're looking for
+        if (type instanceof WildcardType) {
+            return null;
+        }
+
+        throw new IllegalArgumentException("unknown type: " + type);
     }
-    if (type instanceof java.lang.reflect.GenericArrayType) {
-        // get raw component type
-        final java.lang.Class<?> rawComponentType = org.apache.commons.lang3.reflect.TypeUtils.getRawType(((java.lang.reflect.GenericArrayType) (type)).getGenericComponentType(), assigningType);
-        // create array type from raw component type and return its class
-        return java.lang.reflect.Array.newInstance(rawComponentType, 0).getClass();
-    }
-    // (hand-waving) this is not the method you're looking for
-    if (type instanceof java.lang.reflect.WildcardType) {
-        return null;
-    }
-    throw new java.lang.IllegalArgumentException("unknown type: " + type);
-}
 
     /**
      * Learn whether the specified type denotes an array type.

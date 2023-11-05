@@ -146,52 +146,41 @@ public enum JavaVersion {
      * @return the corresponding enumeration constant or <b>null</b> if the
      * version is unknown
      */
-/**
- * Transforms the given string with a Java version number to the
- * corresponding constant of this enumeration class. This method is used
- * internally.
- *
- * @param nom
- * 		the Java version as string
- * @return the corresponding enumeration constant or <b>null</b> if the
-version is unknown
- */
-static org.apache.commons.lang3.JavaVersion get(final java.lang.String nom) {
-    if ("0.9".equals(nom)) {
-        return org.apache.commons.lang3.JavaVersion.JAVA_0_9;
-    } else if ("1.1".equals(nom)) {
-        return org.apache.commons.lang3.JavaVersion.JAVA_1_1;
-    } else if ("1.2".equals(nom)) {
-        return org.apache.commons.lang3.JavaVersion.JAVA_1_2;
-    } else if ("1.3".equals(nom)) {
-        return org.apache.commons.lang3.JavaVersion.JAVA_1_3;
-    } else if ("1.4".equals(nom)) {
-        return org.apache.commons.lang3.JavaVersion.JAVA_1_4;
-    } else if ("1.5".equals(nom)) {
-        return org.apache.commons.lang3.JavaVersion.JAVA_1_5;
-    } else if ("1.6".equals(nom)) {
-        return org.apache.commons.lang3.JavaVersion.JAVA_1_6;
-    } else if ("1.7".equals(nom)) {
-        return org.apache.commons.lang3.JavaVersion.JAVA_1_7;
-    } else if ("1.8".equals(nom)) {
-        return org.apache.commons.lang3.JavaVersion.JAVA_1_8;
-    } else if ("9".equals(nom)) {
-        return org.apache.commons.lang3.JavaVersion.JAVA_9;
-    }
-    {
-        final float v = org.apache.commons.lang3.JavaVersion.toFloatVersion(/* NPEX_NULL_EXP */
-        nom);
-        if ((v - 1.0) < 1.0) {
-            // then we need to check decimals > .9
-            final int firstComma = java.lang.Math.max(nom.indexOf('.'), nom.indexOf(','));
-            final int end = java.lang.Math.max(nom.length(), nom.indexOf(',', firstComma));
-            if (java.lang.Float.parseFloat(nom.substring(firstComma + 1, end)) > 0.9F) {
-                return org.apache.commons.lang3.JavaVersion.JAVA_RECENT;
+    static JavaVersion get(final String nom) {
+        if ("0.9".equals(nom)) {
+            return JAVA_0_9;
+        } else if ("1.1".equals(nom)) {
+            return JAVA_1_1;
+        } else if ("1.2".equals(nom)) {
+            return JAVA_1_2;
+        } else if ("1.3".equals(nom)) {
+            return JAVA_1_3;
+        } else if ("1.4".equals(nom)) {
+            return JAVA_1_4;
+        } else if ("1.5".equals(nom)) {
+            return JAVA_1_5;
+        } else if ("1.6".equals(nom)) {
+            return JAVA_1_6;
+        } else if ("1.7".equals(nom)) {
+            return JAVA_1_7;
+        } else if ("1.8".equals(nom)) {
+            return JAVA_1_8;
+        } else if ("9".equals(nom)) {
+            return JAVA_9;
+        }
+        if (nom == null) {
+            return null;
+        }
+        final float v = toFloatVersion(nom);
+        if ((v - 1.) < 1.) { // then we need to check decimals > .9
+            final int firstComma = Math.max(nom.indexOf('.'), nom.indexOf(','));
+            final int end = Math.max(nom.length(), nom.indexOf(',', firstComma));
+            if (Float.parseFloat(nom.substring(firstComma + 1, end)) > .9f) {
+                return JAVA_RECENT;
             }
         }
         return null;
     }
-}
 
     //-----------------------------------------------------------------------
     /**

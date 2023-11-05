@@ -267,19 +267,12 @@ public final class Range<T> implements Serializable {
      * @param element  the element to check for, null returns false
      * @return true if this range is entirely before the specified element
      */
-/**
- * <p>Checks whether this range is before the specified element.</p>
- *
- * @param element
- * 		the element to check for, null returns false
- * @return true if this range is entirely before the specified element
- */
-public boolean isBefore(final T element) {
-    {
-        return comparator.compare(/* NPEX_NULL_EXP */
-        element, maximum) > 0;
+    public boolean isBefore(final T element) {
+        if (element == null) {
+            return false;
+        }
+        return comparator.compare(element, maximum) > 0;
     }
-}
 
     /**
      * <p>Checks where the specified element occurs relative to this range.</p>
