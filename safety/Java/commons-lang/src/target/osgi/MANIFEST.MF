@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1698975436411
+Build-Jdk: 1.8.0_382
+Built-By: root
+Bundle-Description: Apache Commons Lang, a package of Java utility class
+ es for the  classes that are in java.lang's hierarchy, or are considere
+ d to be so  standard as to justify existence in java.lang.
+Bundle-DocURL: http://commons.apache.org/proper/commons-lang/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons Lang
+Bundle-SymbolicName: org.apache.commons.lang3
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 3.5.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.apache.commons.lang3;version="3.5",org.apache.common
+ s.lang3.builder;version="3.5",org.apache.commons.lang3.concurrent;versi
+ on="3.5",org.apache.commons.lang3.event;version="3.5",org.apache.common
+ s.lang3.exception;version="3.5",org.apache.commons.lang3.math;version="
+ 3.5",org.apache.commons.lang3.mutable;version="3.5",org.apache.commons.
+ lang3.reflect;version="3.5",org.apache.commons.lang3.text;version="3.5"
+ ,org.apache.commons.lang3.text.translate;version="3.5",org.apache.commo
+ ns.lang3.time;version="3.5",org.apache.commons.lang3.tuple;version="3.5
+ "
+Include-Resource: META-INF/NOTICE.txt=NOTICE.txt,META-INF/LICENSE.txt=LI
+ CENSE.txt
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Tool: Bnd-3.0.0.201509101326

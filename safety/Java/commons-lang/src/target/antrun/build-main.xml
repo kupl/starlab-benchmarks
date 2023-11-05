@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="/home/benchmarks/commons-lang/src/target/apidocs/META-INF">
+    <fileset dir="/home/benchmarks/commons-lang/src">
+      <include name="LICENSE.txt"/>
+      <include name="NOTICE.txt"/>
+    </fileset>
+  </copy>
+</target>
+</project>
