@@ -25,33 +25,29 @@ This repository features two sorts of bugs: functional bugs and safety bugs. Fun
     <td align="center" rowspan="3">Safety</td>
     <td align="center">C</td>
     <td align="center">Resource Leak,<br>Memory Leak</th>
-    <td align="center">198</td>
-    <td rowspan="3" align="center">1015</td> 
+    <td align="center">200</td>
+    <td rowspan="3" align="center">1000</td> 
   </tr>
   <tr>
     <td align="center">Java</td>
     <td align="center">Null Pointer<br>Exception</th>
-    <td align="center">617</td>
+    <td align="center">500</td>
   </tr>
   <tr>
     <td align="center">Solidity</td>
     <td align="center">Integer<br>Overflow</th>
-    <td align="center">200</td>
+    <td align="center">300</td>
   </tr>
   <tr>
     <td align="center" rowspan="3">Functional</td>
-    <td align="center">C</td>
-    <td align="center" rowspan="3">N/A</th>
-    <td align="center">20</td>
-    <td rowspan="3">205</td> 
-  </tr>
-  <tr>
     <td align="center">Java</td>
-    <td align="center">85</th>
+    <td align="center" rowspan="3">Logical Error</th>
+    <td align="center">100</td>
+    <td rowspan="3">400</td> 
   </tr>
   <tr>
     <td align="center">OCaml</td>
-    <td align="center">100</th>
+    <td align="center">300</th>
   </tr>
   </tbody>
 </table>
