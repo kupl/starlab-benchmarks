@@ -4,8 +4,8 @@ This repository features two sorts of bugs: functional bugs and safety bugs. Fun
 
 ## Directory Overview
 
-- `Benchmarks_with_Functional_Bugs` contains functional bugs found from open-source C projects and student assignment submissions written in OCaml.
-    - The C projects show undesirable behaviors such as infinite loop, resource exhaustion, or crashes.
+- `Benchmarks_with_Functional_Bugs` contains functional bugs found from open-source Java projects and student assignment submissions written in OCaml.
+    - The Java projects has failing testcases revealing logical errors.
     - The OCaml student submissions feature assertion violations required by the respective exercise problems.
 - `Benchmarks_with_Safety_Bugs` contains safety bugs found from open-source C projects and Real-world Ethereum smart contracts written in Solidity.
     - The C projects show faults in memory management, namely, memory-leak, double-free, or use-after-free. 
