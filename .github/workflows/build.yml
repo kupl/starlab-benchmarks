@@ -1,0 +1,41 @@
+name: Build benchmark images
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  REGISTRY: ghcr.io
+
+jobs:
+  find-targets:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v3
+      - id: find-targets
+        run: |
+          echo "target=[Java/Closure_1]"
+
+    outputs:
+      targets: ${{ steps.find-targets.outputs.targets }}
+      
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    needs:
+      - find-targets
+
+    strategy:
+      matrix:
+        target: ${{ fromJSON(needs.find-targets.outputs.targets) }}
+
+    steps:
+      - uses: actions/checkout@v3
