@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
       - id: find-targets
         run: |
-          projects=$(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep OCaml | cut -d '/' -f 1-2 | sort | uniq | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
+          projects=$(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
           echo "targets=[$projects]" >> ${GITHUB_OUTPUT}
 
     outputs:

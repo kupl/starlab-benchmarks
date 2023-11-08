@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 2
       - id: find-targets
         run: |
-          projects=$(git diff --name-only HEAD^ HEAD | grep OCaml | cut -d '/' -f 1-2 | sort | uniq | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
+          projects=$(git diff --name-only HEAD^ HEAD | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
           echo "targets=[$projects]" >> ${GITHUB_OUTPUT}
 
     outputs:
