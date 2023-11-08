@@ -16,8 +16,8 @@ jobs:
       - uses: actions/checkout@v3
       - id: find-targets
         run: |
-          projects=$(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep OCaml | cut -d '/' -f 1-2 | sort | uniq) | tr '\n' ',' | sed 's/,*$//'
-          echo "target=[$projects]"
+          projects=$(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep OCaml | cut -d '/' -f 1-2 | sort | uniq | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
+          echo "targets=[$projects]" >> ${GITHUB_OUTPUT}
 
     outputs:
       targets: ${{ steps.find-targets.outputs.targets }}
@@ -32,12 +32,20 @@ jobs:
     needs:
       - find-targets
 
+    if: always() && needs.find-targets.outputs.targets != '[]'
+
     strategy:
       matrix:
         target: ${{ fromJSON(needs.find-targets.outputs.targets) }}
 
     steps:
       - uses: actions/checkout@v3
+      - name: Read metadata
+        id: read-metadata
+        run: |
+          content=$(cat ${{ matrix.target }}/metadata.json)
+          content="${content//$'\n'/''}"
+          echo "buildCommand=$(echo $content | jq -r .buildCommand)" >> ${GITHUB_OUTPUT}
       - uses: docker/setup-buildx-action@v3
       - uses: docker/build-push-action@v5
         with:
@@ -46,14 +54,6 @@ jobs:
           platforms: linux/amd64
           push: false
           tags: benchmark:latest
-      - name: Read metadata
-        id: read_metadata
-        run: |
-          content=$(cat ${{ matrix.target }}/metadata.json)
-          content="${content//'%'/'%25'}"
-          content="${content//$'\n'/'%0A'}"
-          content="${content//$'\r'/'%0D'}"
-          echo "metadata=$content"
       - name: Smoke test
         run: |
-          docker run --rm benchmark:latest ${{ fromJson(steps.read_metadata.outputs.metadata).buildCommand }}
+          docker run --rm benchmark:latest ${{ steps.read-metadata.outputs.buildCommand }}
