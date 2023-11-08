@@ -13,9 +13,10 @@ jobs:
       contents: read
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - id: find-targets
         run: |
+          git fetch origin
           projects=$(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
           echo "targets=[$projects]" >> ${GITHUB_OUTPUT}
 
@@ -45,6 +46,7 @@ jobs:
         run: |
           content=$(cat ${{ matrix.target }}/metadata.json)
           content="${content//$'\n'/''}"
+          echo "location=$(echo $content | jq -r .buggyPath)" >> ${GITHUB_OUTPUT}
           echo "buildCommand=$(echo $content | jq -r .buildCommand)" >> ${GITHUB_OUTPUT}
       - uses: docker/setup-buildx-action@v3
       - uses: docker/build-push-action@v5
@@ -56,4 +58,4 @@ jobs:
           tags: benchmark:latest
       - name: Smoke test
         run: |
-          docker run --rm benchmark:latest ${{ steps.read-metadata.outputs.buildCommand }}
+          docker run --rm benchmark:latest /bin/bash -c "cd ${{ steps.read-metadata.outputs.location }}; ${{ steps.read-metadata.outputs.buildCommand }}"
