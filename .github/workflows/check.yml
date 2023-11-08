@@ -56,6 +56,8 @@ jobs:
           platforms: linux/amd64
           push: false
           tags: benchmark:latest
+          outputs: type=oci,dest=./image.tar
       - name: Smoke test
         run: |
+          docker load --input ./image.tar
           docker run --rm benchmark:latest /bin/bash -c "cd ${{ steps.read-metadata.outputs.location }}; ${{ steps.read-metadata.outputs.buildCommand }}"
