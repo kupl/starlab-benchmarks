@@ -1,0 +1,12 @@
+{
+    "language": "ocaml",
+    "id": "lambda-30",
+
+    "buggyPath": "buggy",
+    "referencePath": null,
+
+    "buildCommand": "ocamlc src.ml",
+    "testCommand": null,
+
+    "categories": ["functional"]
+}
