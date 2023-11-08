@@ -18,4 +18,4 @@ let rec check (m : lambda) : bool =
     | C (m0, m1) -> check_sub (m0, l) && check_sub (m1, l)
   in
 
-  match m with V s -> raise Invalid_input "V only" | _ -> check_sub (m, [])
+  match m with V s -> raise (Invalid_input "V only") | _ -> check_sub (m, [])
