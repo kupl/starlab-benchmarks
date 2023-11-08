@@ -63,3 +63,5 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: ${{ env.REGISTRY }}/kupl/starlab-benchmarks/${{ steps.read-metadata.outputs.language }}:${{ steps.read-metadata.outputs.id }}
+          labels: |
+            org.opencontainers.image.source="https://github.com/kupl/starlab-benchmarks"
