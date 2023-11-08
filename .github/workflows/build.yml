@@ -18,7 +18,8 @@ jobs:
       - uses: actions/checkout@v3
       - id: find-targets
         run: |
-          echo "target=[Java/Closure_1]"
+          projects=$(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep OCaml | cut -d '/' -f 1-2 | sort | uniq) | tr '\n' ',' | sed 's/,*$//'
+          echo "target=[$projects]"
 
     outputs:
       targets: ${{ steps.find-targets.outputs.targets }}
@@ -39,3 +40,19 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - name: Read metadata
+        id: read_metadata
+        run: |
+          content=$(cat ${{ matrix.target }}/metadata.json)
+          content="${content//'%'/'%25'}"
+          content="${content//$'\n'/'%0A'}"
+          content="${content//$'\r'/'%0D'}"
+          echo "metadata=$content"
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v5
+        with:
+          context: ${{ matrix.target }}
+          file: ${{ matrix.target }}/Dockerfile
+          platforms: linux/amd64
+          push: false
+          tags: ${{ env.REGISTRY }}/kupl/starlab-benchmarks/${{ fromJson(steps.read_metadata.outputs.metadata).language }}:${{ fromJson(steps.read_metadata.outputs.metadata).id }}
