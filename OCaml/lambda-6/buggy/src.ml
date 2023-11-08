@@ -18,4 +18,4 @@ let rec check (met : lambda) : bool =
         | _ -> check2 a x && check2 a x )
   in
 
-  match met with P (b, c) -> check2 b c | _ -> raise Error "Illegal input"
+  match met with P (b, c) -> check2 b c | _ -> raise (Error "Illegal input")

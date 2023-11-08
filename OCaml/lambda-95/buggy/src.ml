@@ -4,7 +4,7 @@ and var = string
 
 let isinthelist (l : 'a list) a : bool =
   let temp : 'a list =
-    List.filter (fun x y -> if x != y then false else true a) l
+    List.filter ((fun x y -> if x != y then false else true) a) l
   in
 
   match temp with [] -> false | hd :: tl -> true
@@ -12,7 +12,7 @@ let isinthelist (l : 'a list) a : bool =
 
 let isnotinthelist (l : 'b list) (a : string) : bool =
   let temp : 'b list =
-    List.filter (fun x y -> if x != y then false else true a) l
+    List.filter ((fun x y -> if x != y then false else true) a) l
   in
 
   match temp with [] -> true | hd :: tl -> false
