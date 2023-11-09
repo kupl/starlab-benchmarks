@@ -1,0 +1,12 @@
+{
+    "language": "ocaml",
+    "id": "formula-45",
+
+    "buggyPath": "buggy",
+    "referencePath": null,
+
+    "buildCommand": "ocamlc src.ml",
+    "testCommand": null,
+
+    "categories": ["functional"]
+}
