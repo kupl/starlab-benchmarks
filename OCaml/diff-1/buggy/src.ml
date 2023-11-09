@@ -20,5 +20,5 @@ let rec diff ((aexp : aexp), (str : string)) : aexp =
       | h :: t ->
           Sum [ Times (diff (h, str) :: t); Times [ h; diff (Times t, str) ] ] )
   | Sum [] -> Const 0
-  | Sum h :: [] -> Const 0
-  | Sum h :: t -> Sum [ diff (h, str); diff (Sum t, str) ]
+  | Sum (h :: []) -> Const 0
+  | Sum (h :: t) -> Sum [ diff (h, str); diff (Sum t, str) ]
