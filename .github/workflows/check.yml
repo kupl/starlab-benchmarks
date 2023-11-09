@@ -1,4 +1,4 @@
-name: Build benchmark images
+name: Check on PR
 
 on:
   pull_request:
@@ -61,3 +61,24 @@ jobs:
         run: |
           docker load --input ./image.tar
           docker run --rm benchmark:latest /bin/bash -c "cd ${{ steps.read-metadata.outputs.location }}; ${{ steps.read-metadata.outputs.buildCommand }}"
+  
+  check-all-test-pass-on-pr:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    needs:
+      - build-test
+
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: ':mega: All tests passed!'
+            })
