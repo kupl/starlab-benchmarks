@@ -1,0 +1,12 @@
+{
+    "language": "ocaml",
+    "id": "diff-50",
+
+    "buggyPath": "buggy",
+    "referencePath": null,
+
+    "buildCommand": "ocamlc  src.ml test.ml",
+    "testCommand": null,
+
+    "categories": ["functional"]
+}
