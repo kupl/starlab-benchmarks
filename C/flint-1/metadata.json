@@ -1,0 +1,12 @@
+{
+    "language": "c",
+    "id": "flint-1",
+
+    "buggyPath": "buggy",
+    "referencePath": null,
+
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+
+    "categories": ["safety", "resource-leak"]
+}
