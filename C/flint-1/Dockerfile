@@ -4,7 +4,9 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
         autoconf \
+        automake \
         build-essential \
+        jq \
         libgmp-dev \
         libmpfr-dev \
         libtool \
@@ -12,5 +14,10 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /workspace
-WORKDIR /workspace
 COPY . /workspace
+
+WORKDIR /workspace
+RUN export BUGGY_PATH=$(cat metadata.json | jq -r ".buggyPath") \
+    && cd $BUGGY_PATH \
+    && ./bootstrap.sh \
+    && ./configure
