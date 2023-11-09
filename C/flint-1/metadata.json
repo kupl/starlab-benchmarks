@@ -8,5 +8,17 @@
     "buildCommand": "make -j`nproc`",
     "testCommand": null,
 
-    "categories": ["safety", "resource-leak"]
+    "categories": ["safety", "resource-leak"],
+
+    "leak": {
+        "kind": "flint_object",
+        "source": {
+            "file": "src/fmpz_mpoly_factor/sort.c",
+            "line": 61
+        },
+        "sink": {
+            "file": "src/fmpz_mpoly_factor/sort.c",
+            "line": 71
+        }
+    }
 }
