@@ -5,7 +5,7 @@
     "buggyPath": "buggy",
     "referencePath": null,
 
-    "buildCommand": "ocamlc test.ml src.ml",
+    "buildCommand": "ocamlc  src.ml test.ml",
     "testCommand": null,
 
     "categories": ["functional"]
