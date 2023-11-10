@@ -20,5 +20,24 @@
             "file": "src/fmpz_mpoly_factor/sort.c",
             "line": 71
         }
+    },
+
+    "api": {
+        "flint_object": {
+            "allocators": [
+                {
+                    "func": "flint_malloc",
+                    "effect": "$return",
+                    "deference_depth": 0
+                }
+            ],
+            "deallocators": [
+                {
+                    "func": "flint_free",
+                    "effect": "$param0",
+                    "deference_depth": 0
+                }
+            ]
+        }
     }
 }
