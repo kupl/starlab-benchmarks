@@ -28,14 +28,14 @@
                 {
                     "func": "flint_malloc",
                     "effect": "$return",
-                    "deference_depth": 0
+                    "reference_depth": 0
                 }
             ],
             "deallocators": [
                 {
                     "func": "flint_free",
                     "effect": "$param0",
-                    "deference_depth": 0
+                    "reference_depth": 0
                 }
             ]
         }
