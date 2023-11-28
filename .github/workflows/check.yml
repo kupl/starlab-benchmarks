@@ -106,7 +106,7 @@ jobs:
           push: true
           tags: localhost:5000/benchmark:latest
           build-contexts: |
-            ${{ steps.check-if-base-image-exists.outputs.base }}=docker-image://localhost:5000/${{ steps.check-if-base-image-exists.outputs.image }}
+            ${{ steps.check-if-base-image-exists.outputs.image }}=docker-image://localhost:5000/${{ steps.check-if-base-image-exists.outputs.image }}
           # outputs: type=docker,dest=./image.tar
           # cache-from: type=local,src=./base.tar
       
