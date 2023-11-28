@@ -1,4 +1,4 @@
-FROM base
+FROM c-base/snort:cached
 
 RUN mkdir -p /workspace
 WORKDIR /workspace
