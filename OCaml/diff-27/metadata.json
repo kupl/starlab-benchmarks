@@ -8,5 +8,7 @@
     "buildCommand": "ocamlc src.ml test.ml",
     "testCommand": null,
 
-    "categories": ["functional"]
+    "categories": ["functional"],
+
+    "function": "grading"
 }
