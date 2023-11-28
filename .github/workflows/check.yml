@@ -30,8 +30,8 @@ jobs:
           git diff --name-only --diff-filter=ACMR origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq >> updated.txt
       - id: find-targets
         run: |
-          cat updated.txt
           targets=$(cat updated.txt | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
+          echo $targets
           echo "targets=[$projects]" >> ${GITHUB_OUTPUT}
 
     outputs:
@@ -69,7 +69,7 @@ jobs:
           fi
       - name: Build base image
         id: build-base-image
-        if: steps.check-if-base-image-exists.outputs.base != ''
+        if: always() && steps.check-if-base-image-exists.outputs.base != ''
         uses: docker/build-push-action@v5
         with:
           context: ${{ steps.check-if-base-image-exists.outputs.base }}
