@@ -26,7 +26,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt
-RUN wget "https://www.snort.org/downloads/snort/snort-2.9.13.tar.gz" --no-check-certificate \
+RUN wget "https://www.snort.org/downloads/archive/snort/snort-2.9.13.tar.gz" --no-check-certificate \
     && tar xvf snort-2.9.13.tar.gz \
     && rm snort-2.9.13.tar.gz
 COPY ./src/util.h /opt/snort-2.9.13/src/util.h
