@@ -47,7 +47,7 @@ jobs:
     needs:
       - find-updated-benchmarks
 
-    if: needs.find-updated-benchmarks.outputs.targets != '[]'
+    if: always() && needs.find-updated-benchmarks.outputs.targets != '[]'
 
     strategy:
       matrix:
