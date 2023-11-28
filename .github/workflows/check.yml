@@ -60,23 +60,25 @@ jobs:
       - name: Check if base image exists
         id: check-if-base-image-exists
         run: |
-          lang=$(echo ${{ matrix.target }} | cut -d '-' -f 1)
-          proj=$(echo ${{ matrix.target }} | cut -d '-' -f 2)
+          lang=$(echo ${{ matrix.target }} | cut -d '/' -f 1)
+          proj=$(echo ${{ matrix.target }} | cut -d '/' -f 2 | cut -d '-' -f 1)
+          ls ${lang}-base/${proj}
           if [ -d ${lang}-base/${proj} ]; then
             echo "base=${lang}-base/${proj}" >> ${GITHUB_OUTPUT}
-          else
-            echo "base=" >> ${GITHUB_OUTPUT}
+            echo "image=${lang}-base/${proj}:cached" | tr '[:upper:]' '[:lower:]' >> ${GITHUB_OUTPUT}
+          # else
+          #   echo "base=" >> ${GITHUB_OUTPUT}
           fi
       - name: Build base image
         id: build-base-image
-        if: always() && steps.check-if-base-image-exists.outputs.base != ''
+        if: steps.check-if-base-image-exists.outputs.base != ''
         uses: docker/build-push-action@v5
         with:
           context: ${{ steps.check-if-base-image-exists.outputs.base }}
           file: ${{ steps.check-if-base-image-exists.outputs.base }}/Dockerfile
           platforms: linux/amd64
           push: false
-          tags: base:latest
+          tags: ${{ steps.check-if-base-image-exists.outputs.image  }}
           # outputs: type=docker,dest=./base.tar
       
       - name: Read metadata
