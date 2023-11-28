@@ -74,8 +74,6 @@ jobs:
           if [ -d ${lang}-base/${proj} ]; then
             echo "base=${lang}-base/${proj}" >> ${GITHUB_OUTPUT}
             echo "image=${lang}-base/${proj}:cached" | tr '[:upper:]' '[:lower:]' >> ${GITHUB_OUTPUT}
-          # else
-          #   echo "base=" >> ${GITHUB_OUTPUT}
           fi
       - name: Build base image
         id: build-base-image
@@ -96,7 +94,6 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: localhost:5000/benchmark:latest
-      #     outputs: type=docker,dest=./image.tar
       - uses: docker/build-push-action@v5
         if: steps.check-if-base-image-exists.outputs.base != ''
         with:
@@ -107,8 +104,6 @@ jobs:
           tags: localhost:5000/benchmark:latest
           build-contexts: |
             ${{ steps.check-if-base-image-exists.outputs.image }}=docker-image://localhost:5000/${{ steps.check-if-base-image-exists.outputs.image }}
-          # outputs: type=docker,dest=./image.tar
-          # cache-from: type=local,src=./base.tar
       
       - name: Read metadata
         id: read-metadata
