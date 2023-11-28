@@ -1,3 +1,0 @@
-Import-Package: !javax.jcr,*
-DynamicImport-Package: javax.jcr
-Bundle-DocURL: http://sling.apache.org/site/authentication.html
