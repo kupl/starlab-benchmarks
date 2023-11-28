@@ -1,4 +1,4 @@
-FROM c-base/snort:cached
+FROM ghcr.io/kupl/starlab-benchmarks/c-base:snort
 
 RUN mkdir -p /workspace
 WORKDIR /workspace
