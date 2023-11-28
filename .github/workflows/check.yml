@@ -76,7 +76,7 @@ jobs:
           platforms: linux/amd64
           push: false
           tags: base:latest
-          outputs: type=docker,dest=./base.tar
+          # outputs: type=docker,dest=./base.tar
       
       - name: Read metadata
         id: read-metadata
@@ -85,29 +85,29 @@ jobs:
           content="${content//$'\n'/''}"
           echo "location=$(echo $content | jq -r .buggyPath)" >> ${GITHUB_OUTPUT}
           echo "buildCommand=$(echo $content | jq -r .buildCommand)" >> ${GITHUB_OUTPUT}
+      # - uses: docker/build-push-action@v5
+      #   if: steps.check-if-base-image-exists.outputs.base == ''
+      #   with:
+      #     context: ${{ matrix.target }}
+      #     file: ${{ matrix.target }}/Dockerfile
+      #     platforms: linux/amd64
+      #     push: false
+      #     tags: benchmark:latest
+      #     outputs: type=docker,dest=./image.tar
       - uses: docker/build-push-action@v5
-        if: steps.check-if-base-image-exists.outputs.base == ''
+        # if: steps.check-if-base-image-exists.outputs.base != ''
         with:
           context: ${{ matrix.target }}
           file: ${{ matrix.target }}/Dockerfile
           platforms: linux/amd64
           push: false
           tags: benchmark:latest
-          outputs: type=docker,dest=./image.tar
-      - uses: docker/build-push-action@v5
-        if: steps.check-if-base-image-exists.outputs.base != ''
-        with:
-          context: ${{ matrix.target }}
-          file: ${{ matrix.target }}/Dockerfile
-          platforms: linux/amd64
-          push: false
-          tags: benchmark:latest
-          outputs: type=docker,dest=./image.tar
-          cache-from: type=local,src=./base.tar
+          # outputs: type=docker,dest=./image.tar
+          # cache-from: type=local,src=./base.tar
 
       - name: Smoke test
         run: |
-          docker load --input ./image.tar
+          # docker load --input ./image.tar
           docker run --rm benchmark:latest /bin/bash -c "cd ${{ steps.read-metadata.outputs.location }}; ${{ steps.read-metadata.outputs.buildCommand }}"
   
   check-all-test-pass-on-pr:
