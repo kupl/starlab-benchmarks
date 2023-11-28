@@ -53,9 +53,17 @@ jobs:
       matrix:
         target: ${{ fromJSON(needs.find-updated-benchmarks.outputs.targets) }}
 
+    services:
+      registry:
+        image: registry:2
+        ports:
+          - 5000:5000
+
     steps:
       - uses: actions/checkout@v3
       - uses: docker/setup-buildx-action@v3
+        with:
+          driver-opts: network=host
 
       - name: Check if base image exists
         id: check-if-base-image-exists
@@ -77,13 +85,30 @@ jobs:
           context: ${{ steps.check-if-base-image-exists.outputs.base }}
           file: ${{ steps.check-if-base-image-exists.outputs.base }}/Dockerfile
           platforms: linux/amd64
-          push: false
-          tags: ${{ steps.check-if-base-image-exists.outputs.image  }}
-          outputs: type=docker,dest=./base.tar
-      - name: Load base image
+          push: true
+          tags: localhost:5000/${{ steps.check-if-base-image-exists.outputs.image  }}
+      
+      - uses: docker/build-push-action@v5
+        if: steps.check-if-base-image-exists.outputs.base == ''
+        with:
+          context: ${{ matrix.target }}
+          file: ${{ matrix.target }}/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: localhost:5000/benchmark:latest
+      #     outputs: type=docker,dest=./image.tar
+      - uses: docker/build-push-action@v5
         if: steps.check-if-base-image-exists.outputs.base != ''
-        run: |
-          docker load --input ./base.tar
+        with:
+          context: ${{ matrix.target }}
+          file: ${{ matrix.target }}/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: localhost:5000/benchmark:latest
+          build-contexts: |
+            ${{ steps.check-if-base-image-exists.outputs.base }}=docker-image://localhost:5000/${{ steps.check-if-base-image-exists.outputs.image }}
+          # outputs: type=docker,dest=./image.tar
+          # cache-from: type=local,src=./base.tar
       
       - name: Read metadata
         id: read-metadata
@@ -92,30 +117,9 @@ jobs:
           content="${content//$'\n'/''}"
           echo "location=$(echo $content | jq -r .buggyPath)" >> ${GITHUB_OUTPUT}
           echo "buildCommand=$(echo $content | jq -r .buildCommand)" >> ${GITHUB_OUTPUT}
-      # - uses: docker/build-push-action@v5
-      #   if: steps.check-if-base-image-exists.outputs.base == ''
-      #   with:
-      #     context: ${{ matrix.target }}
-      #     file: ${{ matrix.target }}/Dockerfile
-      #     platforms: linux/amd64
-      #     push: false
-      #     tags: benchmark:latest
-      #     outputs: type=docker,dest=./image.tar
-      - uses: docker/build-push-action@v5
-        # if: steps.check-if-base-image-exists.outputs.base != ''
-        with:
-          context: ${{ matrix.target }}
-          file: ${{ matrix.target }}/Dockerfile
-          platforms: linux/amd64
-          push: false
-          tags: benchmark:latest
-          outputs: type=docker,dest=./image.tar
-          # cache-from: type=local,src=./base.tar
-
       - name: Smoke test
         run: |
-          # docker load --input ./image.tar
-          docker run --rm benchmark:latest /bin/bash -c "cd ${{ steps.read-metadata.outputs.location }}; ${{ steps.read-metadata.outputs.buildCommand }}"
+          docker run --rm localhost:5000/benchmark:latest /bin/bash -c "cd ${{ steps.read-metadata.outputs.location }}; ${{ steps.read-metadata.outputs.buildCommand }}"
   
   check-all-test-pass-on-pr:
     runs-on: ubuntu-latest
