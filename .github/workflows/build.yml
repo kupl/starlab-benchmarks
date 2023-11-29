@@ -50,7 +50,7 @@ jobs:
         id: make-build-info
         run: |
           echo "language=$(echo ${{ matrix.target }} | cut -d '/' -f 1 | tr '[:upper:]' '[:lower:]')" >> ${GITHUB_OUTPUT}
-          echo "project=$(echo ${{ matrix.target }} | cut -d '/' -f 2 )"
+          echo "project=$(echo ${{ matrix.target }} | cut -d '/' -f 2 )" >> ${GITHUB_OUTPUT}
 
       - uses: docker/setup-buildx-action@v3
       - uses: docker/build-push-action@v5
