@@ -1,0 +1,7 @@
+{
+    "filepath": "maven-enforcer-plugin/src/main/java/org/apache/maven/plugins/enforcer/EnforceMojo.java",
+    "line": 182,
+    "npe_method": "execute",
+    "deref_field": "rule",
+    "npe_class": "EnforceMojo"
+}

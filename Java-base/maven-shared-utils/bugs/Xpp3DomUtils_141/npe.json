@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/xml/Xpp3DomUtils.java",
+    "line": 141,
+    "npe_method": "isMergeChildren",
+    "deref_field": "override",
+    "npe_class": "Xpp3DomUtils"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/jcr/resource/internal/helper/jcr/JcrItemResource.java",
+    "line": 90,
+    "npe_method": "getPath",
+    "deref_field": "version",
+    "npe_class": "JcrItemResource"
+}

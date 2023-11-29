@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/text/WordUtils.java",
+    "line": 556,
+    "npe_method": "uncapitalize",
+    "deref_field": "delimiters",
+    "npe_class": "WordUtils"
+}

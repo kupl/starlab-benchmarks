@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/testing/mock/jcr/MockSession.java",
+    "line": 91,
+    "npe_method": "getItem",
+    "deref_field": "itemData",
+    "npe_class": "MockSession"
+}

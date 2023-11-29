@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/sling/jcr/resource/internal/JcrResourceListenerTest.java",
+    "line": 160,
+    "npe_method": "tearDown",
+    "deref_field": "listener",
+    "npe_class": "JcrResourceListenerTest"
+}
