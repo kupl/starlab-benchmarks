@@ -25,9 +25,11 @@ jobs:
               ls $base-*
             done
           } > updated.txt
+          cat updated.txt
       - id: find-benchmark-updates
         run: |
           git diff --name-only --diff-filter=ACMR origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq >> updated.txt
+          cat updated.txt
       - id: find-targets
         run: |
           targets=$(cat updated.txt | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
