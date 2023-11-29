@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/sling/jcr/resource/internal/JcrModifiableValueMapTest.java",
+    "line": 261,
+    "npe_method": "testMixins",
+    "deref_field": "types",
+    "npe_class": "JcrModifiableValueMapTest"
+}

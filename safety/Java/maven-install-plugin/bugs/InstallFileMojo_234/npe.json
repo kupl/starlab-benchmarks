@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/plugins/install/InstallFileMojo.java",
+    "line": 221,
+    "npe_method": "execute",
+    "deref_field": "classifier",
+    "npe_class": "InstallFileMojo"
+}

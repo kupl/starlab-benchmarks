@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/LocaleUtilsTest.java",
+    "line": 249,
+    "npe_method": "assertLocaleLookupList",
+    "deref_field": "defaultLocale",
+    "npe_class": "LocaleUtilsTest"
+}

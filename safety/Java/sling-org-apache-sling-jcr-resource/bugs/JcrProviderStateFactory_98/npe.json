@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/jcr/resource/internal/helper/jcr/JcrProviderStateFactory.java",
+    "line": 99,
+    "npe_method": "createProviderState",
+    "deref_field": "bundle",
+    "npe_class": "JcrProviderStateFactory"
+}

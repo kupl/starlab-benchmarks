@@ -1,0 +1,7 @@
+{
+    "filepath": "log4j-audit/log4j-audit-api/src/main/java/org/apache/logging/log4j/audit/generator/InterfacesGenerator.java",
+    "line": 169,
+    "npe_method": "generateSource",
+    "deref_field": "eventAttributes",
+    "npe_class": "InterfacesGenerator"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/MappedPropertyDescriptor.java",
+    "line": 465,
+    "npe_method": "get",
+    "deref_field": "writeParamClassNames",
+    "npe_class": "MappedMethodReference"
+}

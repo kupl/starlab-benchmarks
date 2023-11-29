@@ -308,6 +308,27 @@ public class ToStringBuilderTest {
         assertReflectionArray("<null>", array);
     }
 
+    // Reflection hierarchy tests
+    @Test
+    public void testReflectionHierarchyArrayList() {
+        // note, the test data depends on the internal representation of the ArrayList, which may differ between JDK versions and vendors
+        // representation different for IBM JDK 1.6.0, LANG-727
+        assumeFalse("IBM Corporation".equals(SystemUtils.JAVA_VENDOR) && "1.6".equals(SystemUtils.JAVA_SPECIFICATION_VERSION));
+        assumeFalse("Oracle Corporation".equals(SystemUtils.JAVA_VENDOR) && "1.6".compareTo(SystemUtils.JAVA_SPECIFICATION_VERSION) < 0);
+        final List<Object> list = new ArrayList<Object>();
+        final String baseString = this.toBaseString(list);
+        final String expectedWithTransients = baseString + "[elementData={<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>},size=0,modCount=0]";
+        final String toStringWithTransients = ToStringBuilder.reflectionToString(list, null, true);
+        if (!expectedWithTransients.equals(toStringWithTransients)) {
+            assertEquals(expectedWithTransients, toStringWithTransients);
+        }
+        final String expectedWithoutTransients = baseString + "[size=0]";
+        final String toStringWithoutTransients = ToStringBuilder.reflectionToString(list, null, false);
+        if (!expectedWithoutTransients.equals(toStringWithoutTransients)) {
+            assertEquals(expectedWithoutTransients, toStringWithoutTransients);
+        }
+    }
+
     @Test
     public void testReflectionHierarchy() {
         final ReflectionTestFixtureA baseA = new ReflectionTestFixtureA();

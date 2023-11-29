@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+    "line": 7481,
+    "npe_method": "isSorted",
+    "deref_field": "comparator",
+    "npe_class": "ArrayUtils"
+}

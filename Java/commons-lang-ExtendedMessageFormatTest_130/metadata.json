@@ -1,0 +1,21 @@
+{
+  "language": "java",
+  "id": "commons-lang-1",
+  "buggyPath": ".",
+  "referencePath": null,
+  "buildCommand": "mvn package -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100 -DskipTests=true -DskipITs=true -Dtest=None -DfailIfNoTests=false",
+  "testCommand": "mvn test -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100",
+  "categories": [
+    "safety",
+    "npe"
+  ],
+  "npe": {
+    "filepath": "src/test/java/org/apache/commons/lang3/text/ExtendedMessageFormatTest.java",
+    "line": 133,
+    "npe_method": "testExtendedAndBuiltInFormats",
+    "deref_field": "locale",
+    "npe_class": "ExtendedMessageFormatTest",
+    "repo": "commons-lang",
+    "bug_id": "ExtendedMessageFormatTest_130"
+  }
+}

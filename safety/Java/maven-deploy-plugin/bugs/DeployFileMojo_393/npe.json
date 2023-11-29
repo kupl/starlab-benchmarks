@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/plugins/deploy/DeployFileMojo.java",
+    "line": 367,
+    "npe_method": "execute",
+    "deref_field": "files",
+    "npe_class": "DeployFileMojo"
+}

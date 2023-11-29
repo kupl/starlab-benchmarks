@@ -1,0 +1,25 @@
+Bundle-DocURL: https://sling.apache.org/documentation/bundles/metrics.html
+
+DynamicImport-Package:\
+  javax.servlet,\
+  javax.servlet.http,\
+  org.apache.commons.io.output,\
+  org.apache.felix.inventory
+
+Import-Package:\
+  javax.servlet;resolution:=optional,\
+  javax.servlet.http;resolution:=optional,\
+  org.apache.commons.io.output;resolution:=optional,\
+  org.apache.felix.inventory;resolution:=optional,\
+  *
+
+Provide-Capability:\
+  osgi.service;objectClass=com.codahale.metrics.MetricRegistry,\
+  osgi.service;objectClass=org.apache.sling.commons.metrics.MetricsService
+
+-includeresource:\
+  @org.apache.felix.utils-*.jar!/org/apache/felix/utils/json/JSONWriter**
+
+-removeheaders:\
+  Include-Resource,\
+  Private-Package

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/maven/plugins/deploy/stubs/DeployArtifactStub.java",
+    "line": 120,
+    "npe_method": "getMetadataList",
+    "deref_field": "metadataMap",
+    "npe_class": "DeployArtifactStub"
+}

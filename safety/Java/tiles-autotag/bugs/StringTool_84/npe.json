@@ -1,0 +1,7 @@
+{
+    "filepath": "tiles-autotag-core/src/main/java/org/apache/tiles/autotag/tool/StringTool.java",
+    "line": 93,
+    "npe_method": "splitOnNewlines",
+    "deref_field": "toSplit",
+    "npe_class": "StringTool"
+}

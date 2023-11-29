@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/maven/plugins/install/stubs/InstallArtifactStub.java",
+    "line": 109,
+    "npe_method": "getMetadataList",
+    "deref_field": "metadataMap",
+    "npe_class": "InstallArtifactStub"
+}

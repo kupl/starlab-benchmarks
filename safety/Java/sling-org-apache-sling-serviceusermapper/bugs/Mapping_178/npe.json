@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/serviceusermapping/Mapping.java",
+    "line": 182,
+    "npe_method": "compare",
+    "deref_field": "str1",
+    "npe_class": "Mapping"
+}

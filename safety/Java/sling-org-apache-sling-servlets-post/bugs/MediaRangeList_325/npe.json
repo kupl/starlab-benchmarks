@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/servlets/post/impl/helper/MediaRangeList.java",
+    "line": 328,
+    "npe_method": "toString",
+    "deref_field": "parameters",
+    "npe_class": "MediaRange"
+}

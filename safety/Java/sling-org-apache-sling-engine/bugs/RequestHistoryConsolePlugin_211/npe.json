@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/engine/impl/console/RequestHistoryConsolePlugin.java",
+    "line": 211,
+    "npe_method": "doGet",
+    "deref_field": "key",
+    "npe_class": "RequestHistoryConsolePlugin"
+}

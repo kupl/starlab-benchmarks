@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/plugins/war/packaging/CopyUserManifestTask.java",
+    "line": 62,
+    "npe_method": "performPackaging",
+    "deref_field": "userManifest",
+    "npe_class": "CopyUserManifestTask"
+}
