@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/text/ExtendedMessageFormatTest.java",
+    "line": 390,
+    "npe_method": "checkBuiltInFormat",
+    "deref_field": "locale",
+    "npe_class": "ExtendedMessageFormatTest"
+}

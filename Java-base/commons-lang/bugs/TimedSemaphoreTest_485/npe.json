@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/concurrent/TimedSemaphoreTest.java",
+    "line": 489,
+    "npe_method": "startTimer",
+    "deref_field": "schedFuture",
+    "npe_class": "TimedSemaphoreTestImpl"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+    "line": 1398,
+    "npe_method": "unrollVariables",
+    "deref_field": "unrolled",
+    "npe_class": "TypeUtils"
+}

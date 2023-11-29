@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializerTest.java",
+    "line": 409,
+    "npe_method": "initialize",
+    "deref_field": "ex",
+    "npe_class": "ChildBackgroundInitializer"
+}

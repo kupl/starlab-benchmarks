@@ -1,0 +1,130 @@
+ ~~ Licensed to the Apache Software Foundation (ASF) under one
+ ~~ or more contributor license agreements.  See the NOTICE file
+ ~~ distributed with this work for additional information
+ ~~ regarding copyright ownership.  The ASF licenses this file
+ ~~ to you under the Apache License, Version 2.0 (the
+ ~~ "License"); you may not use this file except in compliance
+ ~~ with the License.  You may obtain a copy of the License at
+ ~~
+ ~~   http://www.apache.org/licenses/LICENSE-2.0
+ ~~
+ ~~ Unless required by applicable law or agreed to in writing,
+ ~~ software distributed under the License is distributed on an
+ ~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ ~~ KIND, either express or implied.  See the License for the
+ ~~ specific language governing permissions and limitations
+ ~~ under the License.
+
+ -----
+ Dependency Convergence
+ -----
+ -----
+ 2008-09-13
+ -----
+
+Dependency Convergence
+
+  This rule requires that dependency version numbers converge.  If a project has two dependencies, A and B, both depending on the same artifact, C, this rule will fail the build if A depends on a different version of C than the version of C depended on by B.
+
+  Here is a concrete example.
+
+  This will cause a build to fail.
+  
++-----------------------------------------------------------------------------------
+
+  <dependencies>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <version>1.6.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-nop</artifactId>
+      <version>1.6.0</version>
+    </dependency>
+  </dependencies>  
++-----------------------------------------------------------------------------------
+
+  With this being logged during compilation
+
++-----------------------------------------------------------------------------------
+Dependency convergence error for org.slf4j:slf4j-api1.6.1 paths to dependency are:
+
+[ERROR]
+Dependency convergence error for org.slf4j:slf4j-api:1.6.1 paths to dependency are:
++-org.myorg:my-project:1.0.0-SNAPSHOT
+  +-org.slf4j:slf4j-jdk14:1.6.1
+    +-org.slf4j:slf4j-api:1.6.1
+and
++-org.myorg:my-project:1.0.0-SNAPSHOT
+  +-org.slf4j:slf4j-nop:1.6.0
+    +-org.slf4j:slf4j-api:1.6.0
++-----------------------------------------------------------------------------------
+
+  And this will succeed.
+  
++-----------------------------------------------------------------------------------
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <version>1.6.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-nop</artifactId>
+      <version>1.6.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
++-----------------------------------------------------------------------------------
+
+
+  Here is how a project should be setup to use this rule
+
++-----------------------------------------------------------------------------------
+<project>
+  ...
+  <build>
+    <plugins>
+      ...
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>${project.version}</version>
+        <executions>
+          <execution>
+            <id>enforce</id>
+            <configuration>
+              <rules>
+                <dependencyConvergence/>
+              </rules>
+            </configuration>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      ...
+    </plugins>
+  </build>
+  ...
+</project>
++-----------------------------------------------------------------------------------
+
+* Timestamped version
+	
+	By default the non-unique versions are matched, which means the <<<X.Y-SNAPSHOT>>> instead of the timestamped versions.
+	If you want to use the unique versions of the dependencies, you can set its property to <<<true>>>.
+
++---------------------------------------------
+      <dependencyConvergence>
+        <uniqueVersions>true</uniqueVersions> 
+      </dependencyConvergence>
++---------------------------------------------
+

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+    "line": 430,
+    "npe_method": "format",
+    "deref_field": "obj",
+    "npe_class": "FastDatePrinter"
+}

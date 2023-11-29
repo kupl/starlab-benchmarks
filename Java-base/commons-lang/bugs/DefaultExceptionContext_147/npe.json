@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java",
+    "line": 156,
+    "npe_method": "getFormattedExceptionMessage",
+    "deref_field": "value",
+    "npe_class": "DefaultExceptionContext"
+}

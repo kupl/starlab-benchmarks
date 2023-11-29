@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/caconfig/impl/override/OverrideStringParser.java",
+    "line": 267,
+    "npe_method": "isValid",
+    "deref_field": "value",
+    "npe_class": "OverrideStringParser"
+}

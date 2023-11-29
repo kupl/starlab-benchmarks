@@ -1,0 +1,6 @@
+org.apache.sling.feature.extension.apiregions.analyser.CheckApiRegions
+org.apache.sling.feature.extension.apiregions.analyser.CheckApiRegionsDependencies
+org.apache.sling.feature.extension.apiregions.analyser.CheckApiRegionsDuplicates
+org.apache.sling.feature.extension.apiregions.analyser.CheckApiRegionsOrder
+org.apache.sling.feature.extension.apiregions.analyser.CheckApiRegionsBundleExportsImports
+org.apache.sling.feature.extension.apiregions.analyser.CheckApiRegionsCrossFeatureDups

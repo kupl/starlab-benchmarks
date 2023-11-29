@@ -1,0 +1,15 @@
+[
+   {
+     "name" : "global",
+     "exports" : [
+       "org.apache.sling.global",
+       "org.apache.felix.global"
+     ]
+   },
+   {
+     "name" : "internal",
+     "exports" : [
+       "org.apache.sling.internal"
+     ]
+   }
+]

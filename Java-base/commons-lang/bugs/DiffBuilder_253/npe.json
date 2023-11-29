@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/builder/DiffBuilder.java",
+    "line": 273,
+    "npe_method": "append",
+    "deref_field": "fieldName",
+    "npe_class": "DiffBuilder"
+}
