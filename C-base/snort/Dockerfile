@@ -33,3 +33,4 @@ RUN mkdir -p buggy \
     && mv /tmp/src/util.h /workspace/buggy/src/util.h \
     && cd buggy \
     && ./configure
+
