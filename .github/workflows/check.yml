@@ -22,17 +22,17 @@ jobs:
           {
             for base in $bases; do
               base=$(echo $base | sed 's/-base//')
-              ls $base-*
+              find $base-* -maxdepth 0 -type d
             done
-          } > updated.txt
-          cat updated.txt
+          } > /tmp/updated.txt
+          cat /tmp/updated.txt
       - id: find-benchmark-updates
         run: |
-          git diff --name-only --diff-filter=ACMR origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq >> updated.txt
-          cat updated.txt
+          git diff --name-only --diff-filter=ACMR origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq >> /tmp/updated.txt
+          cat /tmp/updated.txt
       - id: find-targets
         run: |
-          targets=$(cat updated.txt | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
+          targets=$(cat /tmp/updated.txt | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
           echo $targets
           echo "targets=[$targets]" >> ${GITHUB_OUTPUT}
 
