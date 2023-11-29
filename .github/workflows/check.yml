@@ -21,7 +21,7 @@ jobs:
           bases=$(git diff --name-only --diff-filter=ACMR origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep -e "^OCaml-base/" -e "^Java-base/" -e "^C-base/" -e "^Solidity-base/" | cut -d '/' -f 1-2 | sort | uniq)
           {
             for base in $base; do
-              base=$(echo $base | sed 's/-base//')
+              base=$(echo $bases | sed 's/-base//')
               ls $base-*
             done
           } > updated.txt
