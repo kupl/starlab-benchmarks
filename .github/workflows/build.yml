@@ -9,7 +9,7 @@ env:
   REGISTRY: ghcr.io
 
 jobs:
-  find-targets:
+  find-updated-bases:
     runs-on: ubuntu-latest
 
     permissions:
@@ -21,7 +21,71 @@ jobs:
           fetch-depth: 2
       - id: find-targets
         run: |
-          projects=$(git diff --name-only --diff-filter=ACMR HEAD^ HEAD | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
+          git diff --name-only --diff-filter=ACMR HEAD^ HEAD | grep -e "^OCaml-base/" -e "^Java-base/" -e "^C-base/" -e "^Solidity-base/" | cut -d '/' -f 1-2 | sort | uniq > /tmp/updated-bases.txt
+          bases=$(cat /tmp/updated-bases.txt | xargs -I{base} echo \"{base}\" | tr '\n' ',' | sed 's/,*$//')
+          echo "targets=[$bases]" >> ${GITHUB_OUTPUT}
+
+    outputs:
+      targets: ${{ steps.find-targets.outputs.targets }}
+
+  build-base-images:
+    needs:
+      - find-updated-bases
+
+    runs-on: ubuntu-latest
+
+    if: needs.find-updated-bases.outputs.targets != '[]'
+
+    permissions:
+      contents: read
+      packages: write
+
+    strategy:
+      matrix:
+        target: ${{ fromJSON(needs.find-updated-bases.outputs.targets) }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make build info
+        id: make-build-info
+        run: |
+          echo "language=$(echo ${{ matrix.target }} | cut -d '/' -f 1 | tr '[:upper:]' '[:lower:]')" >> ${GITHUB_OUTPUT}
+          echo "project=$(echo ${{ matrix.target }} | cut -d '/' -f 2 )"
+
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v5
+        with:
+          context: ${{ matrix.target }}
+          file: ${{ matrix.target }}/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: ${{ env.REGISTRY }}/kupl/starlab-benchmarks/${{ steps.make-build-info.outputs.language }}:${{ steps.make-build-info.outputs.project }}
+          labels: |
+            org.opencontainers.image.source="https://github.com/kupl/starlab-benchmarks"
+
+  find-targets:
+    needs:
+      - find-updated-bases
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - id: find-targets
+        run: |
+          {
+            for base in $(echo ${{ needs.find-updated-bases.outputs.targets }} | jq -r '.[]'); do
+              base=$(echo $base | sed 's/-base//')
+              ls $base-*
+            done
+          } > /tmp/updated-benchmarks.txt
+          git diff --name-only --diff-filter=ACMR HEAD^ HEAD | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq >> /tmp/updated-benchmarks.txt
+          projects=$(cat /tmp/updated-benchmarks.txt | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
           echo "targets=[$projects]" >> ${GITHUB_OUTPUT}
 
     outputs:
@@ -36,6 +100,7 @@ jobs:
       packages: write
 
     needs:
+      - build-base-images
       - find-targets
 
     if: always() && needs.find-targets.outputs.targets != '[]'

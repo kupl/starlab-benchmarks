@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  find-targets:
+  find-updated-benchmarks:
     runs-on: ubuntu-latest
 
     permissions:
@@ -14,33 +14,99 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - run: |
+          git fetch origin
+      - id: find-base-updates
+        run: |
+          bases=$(git diff --name-only --diff-filter=ACMR origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep -e "^OCaml-base/" -e "^Java-base/" -e "^C-base/" -e "^Solidity-base/" | cut -d '/' -f 1-2 | sort | uniq)
+          {
+            for base in $base; do
+              base=$(echo $base | sed 's/-base//')
+              ls $base-*
+            done
+          } > updated.txt
+      - id: find-benchmark-updates
+        run: |
+          git diff --name-only --diff-filter=ACMR origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq >> updated.txt
       - id: find-targets
         run: |
-          git fetch origin
-          projects=$(git diff --name-only --diff-filter=ACMR origin/${{ github.base_ref }} origin/${{ github.head_ref }} | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
-          echo "targets=[$projects]" >> ${GITHUB_OUTPUT}
+          targets=$(cat updated.txt | xargs -I{prj} echo \"{prj}\" | tr '\n' ',' | sed 's/,*$//')
+          echo $targets
+          echo "targets=[$targets]" >> ${GITHUB_OUTPUT}
 
     outputs:
       targets: ${{ steps.find-targets.outputs.targets }}
       
 
-  build-test:
+  benchmarks-build-test:
     runs-on: ubuntu-latest
 
     permissions:
       contents: read
 
     needs:
-      - find-targets
+      - find-updated-benchmarks
 
-    if: always() && needs.find-targets.outputs.targets != '[]'
+    if: always() && needs.find-updated-benchmarks.outputs.targets != '[]'
 
     strategy:
       matrix:
-        target: ${{ fromJSON(needs.find-targets.outputs.targets) }}
+        target: ${{ fromJSON(needs.find-updated-benchmarks.outputs.targets) }}
+
+    services:
+      registry:
+        image: registry:2
+        ports:
+          - 5000:5000
 
     steps:
       - uses: actions/checkout@v3
+      - uses: docker/setup-buildx-action@v3
+        with:
+          driver-opts: network=host
+
+      - name: Check if base image exists
+        id: check-if-base-image-exists
+        run: |
+          lang=$(echo ${{ matrix.target }} | cut -d '/' -f 1)
+          proj=$(echo ${{ matrix.target }} | cut -d '/' -f 2 | cut -d '-' -f 1)
+          ls ${lang}-base/${proj}
+          if [ -d ${lang}-base/${proj} ]; then
+            echo "base=${lang}-base/${proj}" >> ${GITHUB_OUTPUT}
+            echo "image=${lang}-base:${proj}" | tr '[:upper:]' '[:lower:]' >> ${GITHUB_OUTPUT}
+          fi
+      - name: Build base image
+        id: build-base-image
+        if: steps.check-if-base-image-exists.outputs.base != ''
+        uses: docker/build-push-action@v5
+        with:
+          context: ${{ steps.check-if-base-image-exists.outputs.base }}
+          file: ${{ steps.check-if-base-image-exists.outputs.base }}/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: localhost:5000/base:latest
+      
+      - name: Build benchmark image without base image
+        uses: docker/build-push-action@v5
+        if: steps.check-if-base-image-exists.outputs.base == ''
+        with:
+          context: ${{ matrix.target }}
+          file: ${{ matrix.target }}/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: localhost:5000/benchmark:latest
+      - name: Build benchmark image with base image
+        uses: docker/build-push-action@v5
+        if: steps.check-if-base-image-exists.outputs.base != ''
+        with:
+          context: ${{ matrix.target }}
+          file: ${{ matrix.target }}/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: localhost:5000/benchmark:latest
+          build-contexts: |
+            ghcr.io/kupl/starlab-benchmarks/${{ steps.check-if-base-image-exists.outputs.image }}=docker-image://localhost:5000/base:latest
+      
       - name: Read metadata
         id: read-metadata
         run: |
@@ -48,19 +114,9 @@ jobs:
           content="${content//$'\n'/''}"
           echo "location=$(echo $content | jq -r .buggyPath)" >> ${GITHUB_OUTPUT}
           echo "buildCommand=$(echo $content | jq -r .buildCommand)" >> ${GITHUB_OUTPUT}
-      - uses: docker/setup-buildx-action@v3
-      - uses: docker/build-push-action@v5
-        with:
-          context: ${{ matrix.target }}
-          file: ${{ matrix.target }}/Dockerfile
-          platforms: linux/amd64
-          push: false
-          tags: benchmark:latest
-          outputs: type=docker,dest=./image.tar
       - name: Smoke test
         run: |
-          docker load --input ./image.tar
-          docker run --rm benchmark:latest /bin/bash -c "cd ${{ steps.read-metadata.outputs.location }}; ${{ steps.read-metadata.outputs.buildCommand }}"
+          docker run --rm localhost:5000/benchmark:latest /bin/bash -c "cd ${{ steps.read-metadata.outputs.location }}; ${{ steps.read-metadata.outputs.buildCommand }}"
   
   check-all-test-pass-on-pr:
     runs-on: ubuntu-latest
@@ -69,7 +125,7 @@ jobs:
       pull-requests: write
 
     needs:
-      - build-test
+      - benchmarks-build-test
 
     if: always()
 
