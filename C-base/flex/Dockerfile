@@ -23,3 +23,4 @@ RUN git clone https://github.com/westes/flex.git buggy \
     && git checkout d3de49f84224b18c5287653f20525291b24cc26e \
     && ./autogen.sh \
     && ./configure
+
