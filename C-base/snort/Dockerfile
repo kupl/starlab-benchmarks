@@ -8,6 +8,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
         automake \
         bison \
         build-essential \
+        ca-certificates \
         flex \
         jq \
         libdaq-dev \
@@ -25,8 +26,10 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /opt
-RUN wget "https://www.snort.org/downloads/archive/snort/snort-2.9.13.tar.gz" --no-check-certificate \
-    && tar xvf snort-2.9.13.tar.gz \
-    && rm snort-2.9.13.tar.gz
-COPY ./src/util.h /opt/snort-2.9.13/src/util.h
+COPY ./src /tmp/src
+WORKDIR /workspace
+RUN mkdir -p buggy \
+    && wget -q "https://www.snort.org/downloads/archive/snort/snort-2.9.13.tar.gz" -O - | tar -zxvf - -C ./buggy --strip-components=1 \
+    && mv /tmp/src/util.h /workspace/buggy/src/util.h \
+    && cd buggy \
+    && ./configure
