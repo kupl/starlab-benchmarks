@@ -84,9 +84,9 @@ jobs:
       - id: find-targets
         run: |
           {
-            for base in $(echo ${{ needs.find-updated-bases.outputs.targets }} | jq -r '.[]'); do
+            for base in $(echo '${{ needs.find-updated-bases.outputs.targets }}' | jq -r '.[]'); do
               base=$(echo $base | sed 's/-base//')
-              ls $base-*
+              find $base-* -maxdepth 0 -type d
             done
           } > /tmp/updated-benchmarks.txt
           git diff --name-only --diff-filter=ACMR HEAD^ HEAD | grep -e "^OCaml/" -e "^Java/" -e "^C/" -e "^Solidity/" | cut -d '/' -f 1-2 | sort | uniq >> /tmp/updated-benchmarks.txt
