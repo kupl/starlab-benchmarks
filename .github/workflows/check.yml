@@ -86,7 +86,8 @@ jobs:
           push: true
           tags: localhost:5000/base:latest
       
-      - uses: docker/build-push-action@v5
+      - name: Build benchmark image without base image
+        uses: docker/build-push-action@v5
         if: steps.check-if-base-image-exists.outputs.base == ''
         with:
           context: ${{ matrix.target }}
@@ -94,7 +95,8 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: localhost:5000/benchmark:latest
-      - uses: docker/build-push-action@v5
+      - name: Build benchmark image with base image
+        uses: docker/build-push-action@v5
         if: steps.check-if-base-image-exists.outputs.base != ''
         with:
           context: ${{ matrix.target }}
