@@ -16,7 +16,7 @@ jobs:
       contents: read
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 2
       - id: find-targets
@@ -45,7 +45,7 @@ jobs:
         target: ${{ fromJSON(needs.find-updated-bases.outputs.targets) }}
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
       - name: Make build info
         id: make-build-info
         run: |
