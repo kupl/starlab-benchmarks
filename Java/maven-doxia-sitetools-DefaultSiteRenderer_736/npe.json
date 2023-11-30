@@ -1,0 +1,7 @@
+{
+    "filepath": "doxia-site-renderer/src/main/java/org/apache/maven/doxia/siterenderer/DefaultSiteRenderer.java",
+    "line": 725,
+    "npe_method": "mergeDocumentIntoSite",
+    "deref_field": "skinModel",
+    "npe_class": "DefaultSiteRenderer"
+}

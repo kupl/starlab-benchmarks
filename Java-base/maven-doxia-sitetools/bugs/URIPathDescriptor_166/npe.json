@@ -1,0 +1,7 @@
+{
+    "filepath": "doxia-decoration-model/src/main/java/org/apache/maven/doxia/site/decoration/inheritance/URIPathDescriptor.java",
+    "line": 182,
+    "npe_method": "rebaseLink",
+    "deref_field": "newBase",
+    "npe_class": "URIPathDescriptor"
+}

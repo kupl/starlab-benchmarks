@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+
+<!DOCTYPE document [
+<!-- These are the entity sets for ISO Latin 1 characters for the XHTML -->
+<!ENTITY % HTMLlat1 SYSTEM "xhtml-lat1.ent">
+%HTMLlat1;
+<!-- Some entities from http://www.w3.org/TR/xhtml1/DTD/xhtml-symbol.ent -->
+<!ENTITY Alpha    "&#913;"> <!-- greek capital letter alpha, U+0391 -->
+<!ENTITY Beta     "&#914;"> <!-- greek capital letter beta, U+0392 -->
+<!ENTITY Gamma    "&#915;"> <!-- greek capital letter gamma, U+0393 ISOgrk3 -->
+<!ENTITY tritPos  "&#x1d7ed;"> <!-- MATHEMATICAL SANS-SERIF BOLD DIGIT ONE -->
+<!ENTITY flo "&#x159;">
+<!ENTITY myCustomEntity "&flo;">
+]>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 file://xdoc-2.0.xsd">
+  <properties>
+    <title>Test entities, cdatas and comments</title>
+    <!-- Test comment: DOXIA-312 -->
+    <author email="test@email.com">Ligature &AElig;</author>
+    <author email="test@email.com">Ampersand &amp;</author>
+    <author email="test@email.com">Less than &lt;</author>
+    <author email="test@email.com">Greater than &gt;</author>
+    <author email="test@email.com">Apostrophe &apos;</author>
+    <author email="test@email.com">Quote &quot;</author>
+    <author email="test@email.com">test@email.com</author>
+    <author email="test@email.com">test&copy;email.com</author>
+  </properties>
+
+  <body>
+
+    <section name="section name with entities: '&amp;' '&Alpha;' '&nbsp;' '&tritPos;'">
+
+      <h4>Entities</h4>
+      <h3>Generic Entities: '&amp;' '&lt;' '&gt;' '&quot;' '&apos;'</h3>
+      <p>'&amp;' '&lt;' '&gt;' '&quot;' '&apos;'</p>
+
+      <h3>Local Entities: '&Alpha;' '&Beta;' '&Gamma;' '&tritPos;'</h3>
+      <p>'&Alpha;' '&Beta;' '&Gamma;' '&tritPos;&#x1d7ed;' '&flo;&#x159;' '&myCustomEntity;'</p>
+
+      <h3>DTD Entities: '&nbsp;' '&iexcl;' '&cent;'</h3>
+      <p>'&nbsp;' '&iexcl;' '&cent;'</p>
+
+      <h4>CDATA</h4>
+      <source><![CDATA[<project xmlns:ant="jelly:ant">]]></source>
+      <p><![CDATA['&nbsp;' '&iexcl;']]></p>
+
+    </section>
+
+  </body>
+
+</document>
