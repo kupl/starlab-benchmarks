@@ -75,7 +75,8 @@ jobs:
         id: check-if-base-image-exists
         run: |
           lang=$(echo ${{ matrix.target }} | cut -d'/' -f1)
-          proj=$(echo ${{ matrix.target }} | cut -d'/' -f2 | rev | cut-d'-' -f2- | rev)
+          proj=$(echo ${{ matrix.target }} | cut -d'/' -f2 | rev | cut -d'-' -f2- | rev)
+          echo "base_dir=${lang}-base/${proj}"
           if [ -d ${lang}-base/${proj} ]; then
             echo "base=${lang}-base/${proj}" >> ${GITHUB_OUTPUT}
             echo "image=${lang}-base:${proj}" | tr '[:upper:]' '[:lower:]' >> ${GITHUB_OUTPUT}
