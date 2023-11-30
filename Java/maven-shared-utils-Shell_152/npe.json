@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/cli/shell/Shell.java",
+    "line": 166,
+    "npe_method": "getRawCommandLine",
+    "deref_field": "executableParameter",
+    "npe_class": "Shell"
+}

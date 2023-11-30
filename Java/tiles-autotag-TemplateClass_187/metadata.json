@@ -1,0 +1,21 @@
+{
+  "language": "java",
+  "id": "tiles-autotag-TemplateClass_187",
+  "buggyPath": ".",
+  "referencePath": null,
+  "buildCommand": "mvn package -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100 -DskipTests=true -DskipITs=true -Dtest=None -DfailIfNoTests=false",
+  "testCommand": "mvn test -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100",
+  "categories": [
+    "safety",
+    "npe"
+  ],
+  "npe": {
+    "filepath": "tiles-autotag-core/src/main/java/org/apache/tiles/autotag/model/TemplateClass.java",
+    "line": 196,
+    "npe_method": "fillRegularParameters",
+    "deref_field": "method",
+    "npe_class": "TemplateClass",
+    "repo": "tiles-autotag",
+    "bug_id": "TemplateClass_187"
+  }
+}
