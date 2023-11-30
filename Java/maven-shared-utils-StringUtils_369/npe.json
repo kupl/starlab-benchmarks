@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
+    "line": 388,
+    "npe_method": "substring",
+    "deref_field": "str",
+    "npe_class": "StringUtils"
+}
