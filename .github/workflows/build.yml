@@ -49,8 +49,8 @@ jobs:
       - name: Make build info
         id: make-build-info
         run: |
-          echo "language=$(echo ${{ matrix.target }} | cut -d '/' -f 1 | tr '[:upper:]' '[:lower:]')" >> ${GITHUB_OUTPUT}
-          echo "project=$(echo ${{ matrix.target }} | cut -d '/' -f 2 )" >> ${GITHUB_OUTPUT}
+          echo "language=$(echo ${{ matrix.target }} | cut -d'/' -f1 | tr '[:upper:]' '[:lower:]')" >> ${GITHUB_OUTPUT}
+          echo "project=$(echo ${{ matrix.target }} | cut -d'/' -f2 | tr '[:upper:]' '[:lower:]')" >> ${GITHUB_OUTPUT}
 
       - uses: docker/setup-buildx-action@v3
       - uses: docker/login-action@v3
@@ -116,15 +116,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Read metadata
-        id: read-metadata
+      - name: Make build info
+        id: make-build-info
         run: |
-          content=$(cat ${{ matrix.target }}/metadata.json)
-          content="${content//$'\n'/''}"
-          echo "language=$(echo $content | jq -r .language)" >> ${GITHUB_OUTPUT}
-          echo "id=$(echo $content | jq -r .id)" >> ${GITHUB_OUTPUT}
-      - run: |
-          echo "${{steps.read-metadata.outputs.metadata}}"
+          echo "language=$(echo ${{ matrix.target }} | cut -d'/' -f1 | tr '[:upper:]' '[:lower:]')" >> ${GITHUB_OUTPUT}
+          echo "benchmark=$(echo ${{ matrix.target }} | cut -d'/' -f2 | tr '[:upper:]' '[:lower:]')" >> ${GITHUB_OUTPUT}
       - uses: docker/setup-buildx-action@v3
       - uses: docker/login-action@v3
         with:
@@ -137,6 +133,6 @@ jobs:
           file: ${{ matrix.target }}/Dockerfile
           platforms: linux/amd64
           push: true
-          tags: ${{ env.REGISTRY }}/kupl/starlab-benchmarks/${{ steps.read-metadata.outputs.language }}:${{ steps.read-metadata.outputs.id }}
+          tags: ${{ env.REGISTRY }}/kupl/starlab-benchmarks/${{ steps.make-build-info.outputs.language }}:${{ steps.make-build-info.outputs.benchmark }}
           labels: |
             org.opencontainers.image.source="https://github.com/kupl/starlab-benchmarks"
