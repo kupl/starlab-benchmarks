@@ -1,0 +1,7 @@
+{
+    "filepath": "tiles-api/src/main/java/org/apache/tiles/access/TilesAccess.java",
+    "line": 100,
+    "npe_method": "setContainer",
+    "deref_field": "container",
+    "npe_class": "TilesAccess"
+}
