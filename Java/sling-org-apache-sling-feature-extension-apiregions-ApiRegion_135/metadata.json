@@ -1,0 +1,21 @@
+{
+  "language": "java",
+  "id": "sling-org-apache-sling-feature-extension-apiregions-ApiRegion_135",
+  "buggyPath": ".",
+  "referencePath": null,
+  "buildCommand": "mvn package -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100 -DskipTests=true -DskipITs=true -Dtest=None -DfailIfNoTests=false",
+  "testCommand": "mvn test -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100",
+  "categories": [
+    "safety",
+    "npe"
+  ],
+  "npe": {
+    "filepath": "src/main/java/org/apache/sling/feature/extension/apiregions/api/ApiRegion.java",
+    "line": 142,
+    "npe_method": "listAllExports",
+    "deref_field": "parent",
+    "npe_class": "ApiRegion",
+    "repo": "sling-org-apache-sling-feature-extension-apiregions",
+    "bug_id": "ApiRegion_135"
+  }
+}
