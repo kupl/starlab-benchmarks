@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/xml/PrettyPrintXMLWriter.java",
+    "line": 362,
+    "npe_method": "writeDocumentHeader",
+    "deref_field": "docType",
+    "npe_class": "PrettyPrintXMLWriter"
+}

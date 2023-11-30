@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/maven/plugins/war/AbstractWarExplodedMojoTest.java",
+    "line": 99,
+    "npe_method": "setUpMojo",
+    "deref_field": "sourceFiles",
+    "npe_class": "AbstractWarExplodedMojoTest"
+}
