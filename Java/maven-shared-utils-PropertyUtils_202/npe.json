@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/PropertyUtils.java",
+    "line": 214,
+    "npe_method": "loadOptionalProperties",
+    "deref_field": "inputStream",
+    "npe_class": "PropertyUtils"
+}
