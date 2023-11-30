@@ -1,0 +1,7 @@
+{
+    "filepath": "maven-release-plugin/src/main/java/org/apache/maven/plugins/release/AbstractReleaseMojo.java",
+    "line": 188,
+    "npe_method": "createReleaseDescriptor",
+    "deref_field": "additionalProfiles",
+    "npe_class": "AbstractReleaseMojo"
+}

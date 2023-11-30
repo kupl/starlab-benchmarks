@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~ or more contributor license agreements.  See the NOTICE file
+  ~ distributed with this work for additional information
+  ~ regarding copyright ownership.  The ASF licenses this file
+  ~ to you under the Apache License, Version 2.0 (the
+  ~ "License"); you may not use this file except in compliance
+  ~ with the License.  You may obtain a copy of the License at
+  ~
+  ~   http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied.  See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<model xmlns="https://codehaus-plexus.github.io/MODELLO/1.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://codehaus-plexus.github.io/MODELLO/1.4.0 https://codehaus-plexus.github.io/modello/xsd/modello-1.4.0.xsd">
+  <id>release-descriptor</id>
+  <name>ReleaseDescriptor</name>
+  <description>
+    A release descriptor contains everything that is needed to perform a
+    release. A release descriptor can be used by third party systems like
+    Continuum to perform releases in a consistent way. The release model could also
+    be deployed to the repository manager so that new releases can be announced easily
+    and automatically.
+  </description>
+  <defaults>
+    <default>
+      <key>package</key>
+      <value>org.apache.maven.shared.release.config</value>
+    </default>
+  </defaults>
+  <classes>
+    <class rootElement="true">
+      <name>ModelloReleaseDescriptor</name>
+      <version>1.0.0+</version>
+      <fields>
+        <!-- Descriptive Information -->
+        <field>
+          <name>name</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            The name of this release configuration
+          </description>
+        </field>
+        <field>
+          <name>description</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            The description of this release configuration
+          </description>
+        </field>
+        <!-- Settings needs to be resolved -->
+        <!-- SCM Information -->
+        <field>
+          <name>ScmCommentPrefix</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <defaultValue>[maven-release-manager] </defaultValue>
+          <description>
+            The prefix of SCM modification messages
+          </description>
+        </field>
+        <field>
+          <name>scmReleaseCommitComment</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+          <defaultValue>@{prefix} prepare release @{releaseLabel}</defaultValue>
+          <description>
+            The SCM commit comment when setting pom.xml to release
+          </description>
+        </field>
+        <field>
+          <name>scmDevelopmentCommitComment</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+          <defaultValue>@{prefix} prepare for next development iteration</defaultValue>
+          <description>
+            The SCM commit comment when setting pom.xml back to development
+          </description>
+        </field>
+        <field>
+          <name>scmBranchCommitComment</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+          <defaultValue>@{prefix} prepare branch @{releaseLabel}</defaultValue>
+          <description>
+            The SCM commit comment when branching
+          </description>
+        </field>
+        <field>
+          <name>scmRollbackCommitComment</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+          <defaultValue>@{prefix} rollback the release of @{releaseLabel}</defaultValue>
+          <description>
+            The SCM commit comment when rolling back
+          </description>
+        </field>
+        <field>
+          <name>scmSourceUrl</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            This is a MavenSCM of where you're going to get the sources to make the release with.
+            Example: scm:svn:https://svn.apache.org/repos/asf/maven/plugins/trunk/maven-release-plugin
+          </description>
+        </field>
+        <field>
+          <name>scmTagBase</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            Where you are going to put your tagged sources
+            Example https://svn.apache.org/repos/asf/maven/plugins/tags
+          </description>
+        </field>
+        <field>
+          <name>scmBranchBase</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            Where you are going to put your branched sources
+            Example https://svn.apache.org/repos/asf/maven/plugins/branches
+          </description>
+        </field>
+        <field>
+          <name>scmReleaseLabel</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            tag or branch name: the identifier for the tag/branch.
+            Example: maven-release-plugin-2.0
+          </description>
+        </field>
+        <field>
+          <name>scmId</name>
+          <version>2.3.0+</version>
+          <type>String</type>
+          <description>
+            The id can be used to get the credentials by the server-id from the settings.xml
+          </description>
+        </field>
+        <field>
+          <name>scmUsername</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            The user name to interact with the scm
+          </description>
+        </field>
+        <field>
+          <name>scmPassword</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            The password for the user interacting with the scm
+          </description>
+        </field>
+        <field>
+          <name>scmPrivateKey</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            Private key for an SSH based SCM repository.
+          </description>
+        </field>
+        <field>
+          <name>scmPrivateKeyPassPhrase</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            Pass phrase for the private key.
+          </description>
+        </field>
+        <field>
+          <name>scmUseEditMode</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <description>
+            Whether to use edit mode when making SCM modifications. This setting is disregarded
+            if the SCM does not support edit mode, or if edit mode is compulsory for the given SCM.
+          </description>
+        </field>
+        <field>
+          <name>scmRelativePathProjectDirectory</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            Relative path of the project returned by the checkout command.
+          </description>
+        </field>
+        <!-- Maven Information -->
+<!--         <field> -->
+<!--           <name>releaseVersions</name> -->
+<!--           <version>1.0.0+</version> -->
+<!--           <type>Map</type> -->
+<!--           <association> -->
+<!--             <type>String</type> -->
+<!--             <multiplicity>*</multiplicity> -->
+<!--           </association> -->
+<!--           <description> -->
+<!--             A map of projects to versions to use when releasing the given projects. -->
+<!--           </description> -->
+<!--         </field> -->
+<!--         <field> -->
+<!--           <name>developmentVersions</name> -->
+<!--           <version>1.0.0+</version> -->
+<!--           <type>Map</type> -->
+<!--           <association> -->
+<!--             <type>String</type> -->
+<!--             <multiplicity>*</multiplicity> -->
+<!--           </association> -->
+<!--           <description> -->
+<!--             A map of projects to versions to use when moving the given projects back into development after release. -->
+<!--           </description> -->
+<!--         </field> -->
+<!--         <field> -->
+<!--           <name>resolvedSnapshotDependencies</name> -->
+<!--           <version>1.0.0+</version> -->
+<!--           <type>Map</type> -->
+<!--           <association> -->
+<!--             <type>String</type> -->
+<!--             <multiplicity>*</multiplicity> -->
+<!--           </association> -->
+<!--           <description> -->
+<!--             A map of resolved snapshot dependencies versions. -->
+<!--           </description> -->
+<!--         </field> -->
+        <field>
+          <name>updateDependencies</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>true</defaultValue>
+          <description>
+            If updateDependencies is false, dependencies version won't be updated to the next development version.
+          </description>
+        </field>
+        <field>
+          <name>useReleaseProfile</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>true</defaultValue>
+          <description>
+            Whether to use the release profile that adds sources and javadocs to the released artifact, if appropriate.
+            If set to true, this will set the property "performRelease" to true.
+          </description>
+        </field>
+        <field>
+          <name>activateProfiles</name>
+          <version>3.0.0+</version>
+          <type>List</type>
+          <association>
+            <type>String</type>
+            <multiplicity>*</multiplicity>
+          </association>
+          <description>List of profiles to activate.</description>
+        </field>
+        <field>
+          <name>workingDirectory</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            The directory where the release is performed.
+          </description>
+        </field>
+        <field>
+          <name>checkoutDirectory</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <defaultValue>target/checkout</defaultValue>
+          <description>
+            The directory where the tag will be checked out.
+          </description>
+        </field>
+        <field>
+          <name>completedPhase</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            The last completed phase.
+          </description>
+        </field>
+        <field>
+          <name>addSchema</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <description>
+            <![CDATA[Whether to add the model schema to the top of the rewritten POM if it wasn't there already.
+            If <code>false</code> then the root element will remain untouched.]]>
+          </description>
+        </field>
+        <field>
+          <name>generateReleasePoms</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <description>
+            Whether to generate release POMs.
+          </description>
+        </field>
+        <field>
+          <name>autoVersionSubmodules</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <description>
+            Whether to use the parent pom version for submodule versions.
+          </description>
+        </field>
+        <field>
+          <name>interactive</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>true</defaultValue>
+          <description>
+            Whether the release process is interactive and the release manager should be prompted to
+            confirm values, or whether the defaults are used regardless.
+          </description>
+        </field>
+        <field>
+          <name>snapshotReleasePluginAllowed</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>false</defaultValue>
+          <description>
+            Whether a SNAPSHOT of the release plugin is allowed.
+          </description>
+        </field>
+        <field>
+          <name>additionalArguments</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            Additional arguments to pass to any executed Maven process.
+          </description>
+        </field>
+        <field>
+          <name>pomFileName</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            The file name of the POM to pass to any executed Maven process.
+          </description>
+        </field>
+        <field>
+          <name>checkModificationExcludes</name>
+          <version>2.1.0+</version>
+          <type>List</type>
+          <association>
+            <type>String</type>
+            <multiplicity>*</multiplicity>
+          </association>
+          <description>
+            In some exceptions you want to allow changes to the working copy. Changes
+            to files listed here will not make the ScmCheckModificationsPhase fail.
+          </description>
+        </field>
+        <field>
+          <name>preparationGoals</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            The goals to execute in preparation for the release.
+          </description>
+        </field>
+        <field>
+          <name>completionGoals</name>
+          <version>2.2.0+</version>
+          <type>String</type>
+          <description>
+            The goals to execute in on completion of preparation for the release.
+          </description>
+        </field>
+        <field>
+          <name>performGoals</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            The goals to execute in perform phase for the release.
+          </description>
+        </field>
+        <field>
+          <name>commitByProject</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>false</defaultValue>
+          <description>
+            The commits must be done by modules or not. Set it to true in case of flat directory structure.
+          </description>
+        </field>
+        <field>
+          <name>branchCreation</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <description>
+            Whether to create a branch instead of do a release.
+          </description>
+        </field>
+        <field>
+          <name>updateBranchVersions</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <description>
+            Whether to update branch POM versions.
+          </description>
+        </field>
+        <field>
+          <name>updateWorkingCopyVersions</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>true</defaultValue>
+          <description>
+            Whether to update working copy POM versions.
+          </description>
+        </field>
+        <field>
+          <name>updateVersionsToSnapshot</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <description>
+            Whether to update branch versions to SNAPSHOT.
+          </description>
+        </field>
+        <field>
+          <name>suppressCommitBeforeTagOrBranch</name>
+          <version>2.1.0+</version>
+          <type>boolean</type>
+          <description>
+            Whether to suppress a commit of changes to the working copy before a tag or branch is created.
+          </description>
+        </field>
+        <field>
+          <name>waitBeforeTagging</name>
+          <version>2.2.0+</version>
+          <type>int</type>
+          <description>
+            Wait the specified number of seconds before creating a tag.
+          </description>
+        </field>
+        <field>
+          <name>allowTimestampedSnapshots</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>false</defaultValue>
+          <description>
+            Should timestamped SNAPSHOT dependencies be allowed?  Default is to fail when any SNAPSHOT
+              dependency is found.
+          </description>
+        </field>
+        <field>
+          <name>defaultReleaseVersion</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            Default version to use for the tagged release or the new branch.
+          </description>
+        </field>
+        <field>
+          <name>defaultDevelopmentVersion</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            Default version to use for new working copy.
+          </description>
+        </field>
+        <field>
+          <name>projectVersionPolicyId</name>
+          <version>2.5.1+</version>
+          <type>String</type>
+          <defaultValue>default</defaultValue>
+          <description>
+            The role-hint for the VersionPolicy implementation used to calculate the project versions.
+          </description>
+        </field>
+        <field>
+          <name>projectNamingPolicyId</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+          <!--  no default value to support scmTagNameFormat-style behavior  -->
+          <description>
+            The role-hint for the NamingPolicy implementation used to calculate the project branch and tag names.
+          </description>
+        </field>
+        <field>
+          <name>releaseStrategyId</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+          <defaultValue>default</defaultValue>
+          <description>
+            The role-hint for the release Strategy implementation.
+          </description>
+        </field>
+
+        <field>
+          <name>remoteTagging</name>
+          <version>1.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>false</defaultValue>
+          <description>
+            NOTE : currently only implemented with svn scm. Enable a workaround to prevent issue due to svn client > 1.5.0
+            (http://jira.codehaus.org/browse/SCM-406)
+          </description>
+        </field>
+        <field>
+          <name>scmReleasedPomRevision</name>
+          <version>1.0.0+</version>
+          <type>String</type>
+          <description>
+            NOTE : currently only implemented with svn scm. It contains the revision of the committed released pom to remotely tag
+            the source code with this revision.
+          </description>
+        </field>
+
+        <field>
+          <name>pushChanges</name>
+          <version>2.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>true</defaultValue>
+          <description>
+            Should distributed changes be pushed to the central repository?
+            For many distributed SCMs like Git, a change like a commit is only stored in your local copy of the repository.
+            Pushing the change allows your to more easily share it with other users.
+          </description>
+        </field>
+
+        <field>
+          <name>localCheckout</name>
+          <version>2.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>false</defaultValue>
+          <description>
+            If the scm provider should use local checkouts via file://${basedir}
+            instead of doing a clean checkout over the network.
+            This is very helpful for releasing large projects!
+          </description>
+        </field>
+
+        <field>
+          <name>scmTagNameFormat</name>
+          <version>2.2.0+</version>
+          <type>String</type>
+          <description>
+            Specifies the format for generating a tag name. Property expansion is
+            used with the optional prefix of project, where properties are delimited
+            with @{ and }
+          </description>
+        </field>
+
+        <field>
+          <name>workItem</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+          <description>
+            Some SCMs may require a Work Item or a Task to allow the changes to be pushed or delivered.
+            This field allows you to specify that Work Item or Task. It is optional, and only relevant
+            if pushChanges is true.
+          </description>
+        </field>
+
+        <field>
+          <name>autoResolveSnapshots</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+          <description>
+            <![CDATA[Specifies whether unresolved SNAPSHOT dependencies are automatically resolved.
+            If set, it is used as the answer to use when being asked how unresolved SNAPSHOT 
+            dependencies should be resolved:
+            <ul>
+            <li>"all" or "0": resolve all kinds of snapshots, ie. project, plugin, report and extension dependencies</li>
+            <li>"dependencies" or "1": resolve project dependencies</li>
+            <li>"plugins" or "2": resolve plugin dependencies</li>
+            <li>"reports" or "3": resolve report dependencies</li>
+            <li>"extensions" or "4": resolve extension dependencies</li>
+            </ul>
+            Additionally this implies that the default values for the dependency's release and next
+            development version are used.]]>
+          </description>
+        </field>
+
+        <field>
+          <name>pinExternals</name>
+          <version>3.0.0+</version>
+          <type>boolean</type>
+          <defaultValue>false</defaultValue>
+          <description>
+            Enable the "--pin-externals" option in svn copy commands which is new in Subversion 1.9.
+            NOTE : Currently only implemented with Subversion.
+            (https://issues.apache.org/jira/browse/SCM-805)
+          </description>
+        </field>
+
+        <!-- Announcement Information
+
+        Announcement related info, this can be a second part of the process.
+
+        o anything that might be of interest in the release
+          o issue management urls
+          o new content
+          o announcement text
+
+        -->
+      </fields>
+
+      <!-- Code Segments -->
+      <codeSegments>
+        <codeSegment>
+          <version>2.1.0+</version>
+          <code><![CDATA[
+    /**
+     * Field resolvedSnapshotDependencies.
+     */
+    private java.util.Map<String, ReleaseStageVersions> resolvedSnapshotDependencies = new java.util.HashMap<>();
+
+    /**
+     * Field projectVersions
+     */
+    private java.util.Map<String, ReleaseStageVersions> projectVersions = new java.util.HashMap<>();
+    
+    /**
+     * Field originalScmInfo.
+     */
+    private java.util.Map<String, org.apache.maven.model.Scm> originalScmInfo = new java.util.HashMap<>();
+    
+    
+    java.util.Map<String, ReleaseStageVersions> getProjectVersions()
+    {
+        return projectVersions;
+    }
+    
+    java.util.Map<String, org.apache.maven.model.Scm> getOriginalScmInfo()
+    {
+        return originalScmInfo;
+    }
+    
+    /**
+     * Method getResolvedSnapshotDependencies.
+     * 
+     * @return Map
+     */
+    java.util.Map<String, ReleaseStageVersions> getResolvedSnapshotDependencies()
+    {
+        return this.resolvedSnapshotDependencies;
+    } //-- java.util.Map<String, ReleaseStageVersions> getResolvedSnapshotDependencies()
+
+    public String getProjectReleaseVersion( String projectId )
+    {
+      if ( projectVersions.containsKey( projectId ) )
+      {
+        return projectVersions.get( projectId ).getRelease();
+      }
+      return null;
+    }
+
+    /**
+     * Method addReleaseVersion.
+     * 
+     * @param key
+     * @param value
+     */
+    public void addReleaseVersion( String projectId, String version )
+    {
+        computeIfAbsent( projectVersions, projectId ).setRelease( version ); 
+    } //-- void addReleaseVersion( String, String )
+
+    public String getProjectDevelopmentVersion( String projectId )
+    {
+      if ( projectVersions.containsKey( projectId ) )
+      {
+        return projectVersions.get( projectId ).getDevelopment();
+      }
+      return null;
+    }
+
+    /**
+     * Method addDevelopmentVersion.
+     * 
+     * @param key
+     * @param value
+     */
+    public void addDevelopmentVersion( String projectId, String version )
+    {
+        computeIfAbsent( projectVersions, projectId ).setDevelopment( version ); 
+    } //-- void addDevelopmentVersion( String, String )
+
+    /**
+     * Method getOriginalScmInfo.
+     * 
+     * @return Map
+     */
+    public org.apache.maven.model.Scm getOriginalScmInfo( String id )
+    {
+        return this.originalScmInfo.get( id );
+    } //-- java.util.Map<Object, String> getOriginalScmInfo()
+    
+    /**
+     * Method addOriginalScmInfo.
+     * 
+     * @param key
+     * @param value
+     */
+    public void addOriginalScmInfo( String key, org.apache.maven.model.Scm value )
+    {
+        getOriginalScmInfo().put( key, value );
+    } //-- void addOriginalScmInfo( String, org.apache.maven.model.Scm )
+
+    public String getProjectOriginalVersion( String projectId )
+    {
+      if ( projectVersions.containsKey( projectId ) )
+      {
+        return projectVersions.get( projectId ).getOriginal();
+      }
+      return null;
+    }
+    
+    public void addOriginalVersion( String projectId, String version )
+    {
+      computeIfAbsent( projectVersions, projectId ).setOriginal( version ); 
+    }
+
+    /**
+     * Retrieve the release version for the resolved snapshot dependency.
+     *
+     */
+    public String getDependencyDevelopmentVersion( String artifactConflictId )
+    {
+        if ( resolvedSnapshotDependencies.containsKey( artifactConflictId ) )
+        {
+            ReleaseStageVersions versionMap = resolvedSnapshotDependencies.get( artifactConflictId );
+            return versionMap.getDevelopment();
+        }
+        return null;
+    }
+
+    /**
+     * Retrieve the release version for the resolved snapshot dependency.
+     *
+     */
+    public String getDependencyReleaseVersion( String artifactConflictId )
+    {
+        if ( resolvedSnapshotDependencies.containsKey( artifactConflictId ) )
+        {
+            ReleaseStageVersions versionMap = resolvedSnapshotDependencies.get( artifactConflictId );
+            return versionMap.getRelease();
+        }
+        return null;
+    }
+
+    /**
+     * Retrieve the original version for the resolved snapshot dependency.
+     *
+     */
+    public String getDependencyOriginalVersion( String artifactConflictId )
+    {
+        if ( resolvedSnapshotDependencies.containsKey( artifactConflictId ) )
+        {
+            ReleaseStageVersions versionMap = resolvedSnapshotDependencies.get( artifactConflictId );
+            return versionMap.getOriginal();
+        }
+        return null;
+    }
+    
+    public void addDependencyOriginalVersion( String dependencyKey, String version )
+    {
+        computeIfAbsent( resolvedSnapshotDependencies, dependencyKey ).setOriginal( version );
+    }
+
+    public void addDependencyReleaseVersion( String dependencyKey, String version )
+    {
+        computeIfAbsent( resolvedSnapshotDependencies, dependencyKey ).setRelease( version );
+    }
+
+    public void addDependencyDevelopmentVersion( String dependencyKey, String version )
+    {
+        computeIfAbsent( resolvedSnapshotDependencies, dependencyKey ).setDevelopment( version );
+    }
+    
+    private static ReleaseStageVersions computeIfAbsent( java.util.Map<String, ReleaseStageVersions> map, String key )
+    {
+        ReleaseStageVersions value = map.get( key );
+        if ( value == null )
+        {
+            value = new ReleaseStageVersions();
+            map.put( key, value );
+        }
+        return value;
+    }
+
+    @Override
+    public boolean equals( Object obj )
+    {
+        if ( this == obj )
+        {
+            return true;
+        }
+        if ( obj == null || getClass() != obj.getClass() )
+        {
+            return false;
+        }
+
+        ModelloReleaseDescriptor that = (ModelloReleaseDescriptor) obj;
+
+        if ( updateDependencies               != that.isUpdateDependencies()               ||
+             useReleaseProfile                != that.isUseReleaseProfile()                ||
+             autoVersionSubmodules            != that.isAutoVersionSubmodules()            ||
+             snapshotReleasePluginAllowed     != that.isSnapshotReleasePluginAllowed()     ||
+             commitByProject                  != that.isCommitByProject()                  ||
+             branchCreation                   != that.isBranchCreation()                   ||
+             updateBranchVersions             != that.isUpdateBranchVersions()             ||
+             updateWorkingCopyVersions        != that.isUpdateWorkingCopyVersions()        ||
+             suppressCommitBeforeTagOrBranch  != that.isSuppressCommitBeforeTagOrBranch()  ||
+             updateVersionsToSnapshot         != that.isUpdateVersionsToSnapshot()         ||
+             allowTimestampedSnapshots        != that.isAllowTimestampedSnapshots()        ||
+             remoteTagging                    != that.isRemoteTagging()                    ||
+             pinExternals                     != that.isPinExternals()                     ||
+             localCheckout                    != that.isLocalCheckout()                    ||
+             pushChanges                      != that.isPushChanges()
+           )
+           {
+               return false;
+           }
+
+        if ( !java.util.Objects.equals( defaultDevelopmentVersion, that.getDefaultDevelopmentVersion() ) ||
+             !java.util.Objects.equals( scmRelativePathProjectDirectory, that.getScmRelativePathProjectDirectory() ) ||
+             !java.util.Objects.equals( checkoutDirectory, that.getCheckoutDirectory() ) ||
+             !java.util.Objects.equals( performGoals, that.getPerformGoals() ) ||
+             !java.util.Objects.equals( defaultReleaseVersion, that.getDefaultReleaseVersion() ) ||
+             !java.util.Objects.equals( workItem, that.getWorkItem() ) ||
+             !java.util.Objects.equals( scmReleasedPomRevision, that.getScmReleasedPomRevision() ) ||
+             !java.util.Objects.equals( autoResolveSnapshots, that.getAutoResolveSnapshots() )
+           )
+        {
+            return false;
+        }
+
+        if ( addSchema != that.isAddSchema() )
+        {
+            return false;
+        }
+        if ( generateReleasePoms != that.isGenerateReleasePoms() )
+        {
+            return false;
+        }
+        if ( interactive != that.isInteractive() )
+        {
+            return false;
+        }
+        if ( scmUseEditMode != that.isScmUseEditMode() )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( completedPhase, that.getCompletedPhase() ) )
+        {
+            return false;
+        }
+        if ( ( checkModificationExcludes == null || ( checkModificationExcludes != null && checkModificationExcludes.size() == 0) ) &&
+            ( that.getCheckModificationExcludes() == null || ( that.getCheckModificationExcludes() != null && that.getCheckModificationExcludes().size() == 0) ) )
+        {
+            // Do nothing.  This is a Modello workaround
+        }
+        else
+        {
+            if ( checkModificationExcludes != null ? !checkModificationExcludes.equals( that.getCheckModificationExcludes() )
+                : that.getCheckModificationExcludes() != null )
+            {
+                return false;
+            }
+        }
+        if ( ( originalScmInfo == null || (originalScmInfo != null && originalScmInfo.size() == 0 ) ) &&
+            ( that.getOriginalScmInfo() == null || ( that.getOriginalScmInfo() != null && that.getOriginalScmInfo().size() == 0 ) ) )
+        {
+            // Do nothing.  This is a Modello workaround
+        }
+        else
+        {
+            if ( originalScmInfo != null ? !compareScmCollections( that.getOriginalScmInfo() ) : that.getOriginalScmInfo() != null )
+            {
+                return false;
+            }
+        }
+        if ( !java.util.Objects.equals( additionalArguments, that.getAdditionalArguments() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( preparationGoals, that.getPreparationGoals() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( completionGoals, that.getCompletionGoals() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( pomFileName, that.getPomFileName() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmDevelopmentCommitComment, that.getScmDevelopmentCommitComment() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmReleaseCommitComment, that.getScmReleaseCommitComment() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmBranchCommitComment, that.getScmBranchCommitComment() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmRollbackCommitComment, that.getScmRollbackCommitComment() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmPrivateKeyPassPhrase, that.getScmPrivateKeyPassPhrase() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmPassword, that.getScmPassword() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmPrivateKey, that.getScmPrivateKey() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmReleaseLabel, that.getScmReleaseLabel() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmTagBase, that.getScmTagBase() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmBranchBase, that.getScmBranchBase() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmId, that.getScmId() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmSourceUrl, that.getScmSourceUrl() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmUsername, that.getScmUsername() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( workingDirectory, that.getWorkingDirectory() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( scmTagNameFormat, that.getScmTagNameFormat() ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.deepEquals( projectVersions, that.getProjectVersions() ) )
+        {
+            return false;
+        }
+
+        return true;
+    }
+
+    private boolean compareScmCollections( java.util.Map<String, org.apache.maven.model.Scm> that )
+    {
+        // Must manually compare as Scm doesn't have an equals method
+        if ( that == null && originalScmInfo == null )
+        {
+            return true;
+        }
+
+        if ( ( that == null && originalScmInfo != null ) || ( that != null && originalScmInfo == null ) )
+        {
+            return false;
+        }
+
+        if ( that.size() != originalScmInfo.size() )
+        {
+            return false;
+        }
+
+        for ( java.util.Iterator<java.util.Map.Entry<String, org.apache.maven.model.Scm>> i = originalScmInfo.entrySet().iterator(); i.hasNext(); )
+        {
+            java.util.Map.Entry<String, org.apache.maven.model.Scm> entry = i.next();
+
+            org.apache.maven.model.Scm thatScm = that.get( entry.getKey() );
+
+            org.apache.maven.model.Scm thisScm = entry.getValue();
+            if ( thatScm == null && thisScm == null )
+            {
+                return true;
+            }
+            else if ( thatScm == null )
+            {
+                return false;
+            }
+            else if ( thisScm == null )
+            {
+                return true;
+            }
+
+            if ( thisScm.getConnection() != null ? !thisScm.getConnection().equals( thatScm.getConnection() )
+                : thatScm.getConnection() != null )
+            {
+                return false;
+            }
+            if ( thisScm.getDeveloperConnection() != null ? !thisScm.getDeveloperConnection().equals(
+                thatScm.getDeveloperConnection() ) : thatScm.getDeveloperConnection() != null )
+            {
+                return false;
+            }
+            if ( thisScm.getUrl() != null ? !thisScm.getUrl().equals( thatScm.getUrl() ) : thatScm.getUrl() != null )
+            {
+                return false;
+            }
+            if ( thisScm.getTag() != null ? !thisScm.getTag().equals( thatScm.getTag() ) : thatScm.getTag() != null )
+            {
+                return false;
+            }
+
+            if ( thisScm instanceof org.apache.maven.shared.release.scm.IdentifiedScm && thatScm instanceof org.apache.maven.shared.release.scm.IdentifiedScm )
+            {
+                org.apache.maven.shared.release.scm.IdentifiedScm thisIdentifiedScm = (org.apache.maven.shared.release.scm.IdentifiedScm) thisScm;
+                org.apache.maven.shared.release.scm.IdentifiedScm thatIdentifiedScm = (org.apache.maven.shared.release.scm.IdentifiedScm) thatScm;
+                if ( thisIdentifiedScm.getId() != null ? !thisIdentifiedScm.getId().equals( thatIdentifiedScm.getId() ) : thatIdentifiedScm.getId() != null )
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    @Override
+    public int hashCode()
+    {
+        int result = java.util.Objects.hashCode( completedPhase );
+        result = 29 * result + java.util.Objects.hashCode( scmReleaseLabel );
+        result = 29 * result + java.util.Objects.hashCode( additionalArguments );
+        result = 29 * result + java.util.Objects.hashCode( preparationGoals );
+        result = 29 * result + java.util.Objects.hashCode( completionGoals );
+        result = 29 * result + java.util.Objects.hashCode( pomFileName );
+        result = 29 * result + java.util.Objects.hashCode( checkModificationExcludes );
+        result = 29 * result + java.util.Objects.hashCode( scmDevelopmentCommitComment );
+        result = 29 * result + java.util.Objects.hashCode( scmReleaseCommitComment );
+        result = 29 * result + java.util.Objects.hashCode( scmBranchCommitComment );
+        result = 29 * result + java.util.Objects.hashCode( scmRollbackCommitComment );
+        result = 29 * result + java.util.Objects.hashCode( scmTagBase );
+        result = 29 * result + java.util.Objects.hashCode( scmBranchBase );
+        result = 29 * result + java.util.Objects.hashCode( scmUsername );
+        result = 29 * result + java.util.Objects.hashCode( scmPassword  );
+        result = 29 * result + java.util.Objects.hashCode( scmId );
+        result = 29 * result + java.util.Objects.hashCode( scmSourceUrl );
+        result = 29 * result + java.util.Objects.hashCode( scmPrivateKey );
+        result = 29 * result + java.util.Objects.hashCode( scmPrivateKeyPassPhrase );
+        result = 29 * result + java.util.Objects.hashCode( workingDirectory );
+        result = 29 * result + java.util.Objects.hashCode( scmUseEditMode );
+        result = 29 * result + java.util.Objects.hashCode( addSchema );
+        result = 29 * result + java.util.Objects.hashCode( generateReleasePoms );
+        result = 29 * result + java.util.Objects.hashCode( interactive );
+        result = 29 * result + java.util.Objects.hashCode( projectVersions );
+        result = 29 * result + java.util.Objects.hashCode( originalScmInfo  );
+        result = 29 * result + java.util.Objects.hashCode( updateDependencies );
+        result = 29 * result + java.util.Objects.hashCode( useReleaseProfile );
+        result = 29 * result + java.util.Objects.hashCode( autoVersionSubmodules );
+        result = 29 * result + java.util.Objects.hashCode( snapshotReleasePluginAllowed );
+        result = 29 * result + java.util.Objects.hashCode( commitByProject );
+        result = 29 * result + java.util.Objects.hashCode( branchCreation );
+        result = 29 * result + java.util.Objects.hashCode( updateBranchVersions );
+        result = 29 * result + java.util.Objects.hashCode( updateWorkingCopyVersions );
+        result = 29 * result + java.util.Objects.hashCode( suppressCommitBeforeTagOrBranch );
+        result = 29 * result + java.util.Objects.hashCode( updateVersionsToSnapshot );
+        result = 29 * result + java.util.Objects.hashCode( allowTimestampedSnapshots );
+        result = 29 * result + java.util.Objects.hashCode( remoteTagging );
+        result = 29 * result + java.util.Objects.hashCode( localCheckout );
+        result = 29 * result + java.util.Objects.hashCode( pushChanges );
+        result = 29 * result + java.util.Objects.hashCode( defaultDevelopmentVersion  );
+        result = 29 * result + java.util.Objects.hashCode( scmRelativePathProjectDirectory );
+        result = 29 * result + java.util.Objects.hashCode( checkoutDirectory );
+        result = 29 * result + java.util.Objects.hashCode( performGoals );
+        result = 29 * result + java.util.Objects.hashCode( defaultReleaseVersion );
+        result = 29 * result + java.util.Objects.hashCode( scmReleasedPomRevision );
+        result = 29 * result + java.util.Objects.hashCode( workItem );
+        result = 29 * result + java.util.Objects.hashCode( autoResolveSnapshots );
+        result = 29 * result + java.util.Objects.hashCode( pinExternals );
+
+        return result;
+    }
+]]></code>
+        </codeSegment>
+      </codeSegments>
+    </class>
+    <class>
+      <name>ReleaseStageVersions</name>
+      <fields>
+        <field>
+          <name>original</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+        </field>
+        <field>
+          <name>release</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+        </field>
+        <field>
+          <name>development</name>
+          <version>3.0.0+</version>
+          <type>String</type>
+        </field>
+      </fields>
+      <codeSegments>
+        <codeSegment>
+          <version>2.1.0+</version>
+          <code><![CDATA[
+    @Override
+    public boolean equals( Object obj )
+    {
+        if ( this == obj )
+        {
+            return true;
+        }
+        if ( obj == null || getClass() != obj.getClass() )
+        {
+            return false;
+        }
+
+        ReleaseStageVersions that = (ReleaseStageVersions) obj;
+        if ( !java.util.Objects.equals( original, that.original ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( release, that.release ) )
+        {
+            return false;
+        }
+        if ( !java.util.Objects.equals( development, that.development ) )
+        {
+            return false;
+        }
+        return true;
+    }
+          
+    @Override
+    public int hashCode()
+    {
+        int result = java.util.Objects.hashCode( original );
+        result = 29 * result + java.util.Objects.hashCode( release );
+        result = 29 * result + java.util.Objects.hashCode( development );
+        return result;
+    }      
+          
+]]></code>
+        </codeSegment>
+      </codeSegments>          
+    </class>
+  </classes>
+</model>
