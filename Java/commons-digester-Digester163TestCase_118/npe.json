@@ -1,0 +1,7 @@
+{
+    "filepath": "core/src/test/java/org/apache/commons/digester3/binder/Digester163TestCase.java",
+    "line": 105,
+    "npe_method": "test",
+    "deref_field": "e",
+    "npe_class": "Digester163TestCase"
+}
