@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
+    "line": 261,
+    "npe_method": "equalsIgnoreCase",
+    "deref_field": "str1",
+    "npe_class": "StringUtils"
+}
