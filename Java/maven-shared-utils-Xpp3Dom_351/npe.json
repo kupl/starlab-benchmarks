@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/xml/Xpp3Dom.java",
+    "line": 348,
+    "npe_method": "equals",
+    "deref_field": "value",
+    "npe_class": "Xpp3Dom"
+}
