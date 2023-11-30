@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Licensed to the Apache Software Foundation (ASF) under one or more
+     contributor license agreements.  See the NOTICE file distributed with
+     this work for additional information regarding copyright ownership.
+     The ASF licenses this file to You under the Apache License, Version 2.0
+     (the "License"); you may not use this file except in compliance with
+     the License.  You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+  -->
+<document xmlns="http://maven.apache.org/changes/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/plugins/maven-changes-plugin/xsd/changes-1.0.0.xsd">
+  <properties>
+    <title>Apache Commons Digester Changes</title>
+  </properties>
+  <body>
+  <release version="3.3" date="201?-??-??" description="Maintenance release.">
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-175">
+      Regression: DigesterTestCase#testPopNamedStackNotPushed expects EmptyStackException
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-174" due-to="Andreas Sahlbach">
+      Inner List Annotation has wrong @Target for most of the predefined annotation rules
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-173" due-to="Nick Williams">
+      No way to enable schema validation from DigesterLoader - patch provided by Ivan Diana
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-172" due-to="Nick Williams">
+      Even with custom ErrorHandler, SAX errors are still written to stderr - patch provided by Ivan Diana
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-171" due-to="Nick Williams">
+      Add DefaultThrowingErrorHandler to Digester API - patch provided by Ivan Diana
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-170" due-to="Dale Wijnand">
+      Digester.pop(String) throws EmptyStackException where API doc says it returns null
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-169" due-to="Eugene Fedotov">
+      Problem when including rules XML file with "classpath:" URL prefix
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-167" due-to="Eugene Fedotov">
+      Groundless "Circular file inclusion detected" exception when including rules XML file
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-165" due-to="Dirk Schaube">
+      BinderClassLoader does not override getResource
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-164" due-to="Frank David Martinez">
+      RulesBase performance optimization.
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-163" due-to="Torsten Krah">
+      ConcurrentModificationException creating a new Digester via loaderInstance.newDigester()
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-162">
+      ObjectCreateRule doesn't allow create objects which type is specified in attributeName only
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-161" due-to="Eduard Papa">
+      Document thread-safety in javadoc of Rule class
+    </action>
+    <action dev="ggregory" type="update" issue="DIGESTER-185">
+      Update Apache Commons Logging from 1.1.1 to 1.2.
+    </action>
+    <action dev="ggregory" type="update" issue="DIGESTER-186">
+      Update Java requirement from version 5 to 6.
+    </action>
+    <action dev="ggregory" type="update" issue="DIGESTER-187">
+      Update Apache Commons Bean Utils from 1.8.3 to 1.9.4.
+    </action>
+    <action dev="ggregory" type="update" issue="DIGESTER-188">
+      Update cglib from 2.2.2 to 3.2.5.
+    </action>
+    <action dev="ggregory" type="update">
+      Update JUnit from 4.10 to 4.13.
+    </action>
+  </release>
+  <release version="3.2" date="2011-12-13" description="Maintenance release.">
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-160">
+      provide an additional artifact with shaded dependencies
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-159">
+      */object-param-rule is not managed in the XML rules
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-157">
+      Improve Set(Nested)PropertiesRuleAlias performances in the XML ruleset while binding rules.
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-156">
+      Make (Nested|Set)PropertiesBuilder#addAlias() fluent.
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-155">
+      ClassLoader reference set to DigesterLoader not set in produced Digester instances
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-154">
+      The DigesterBinder is not able to load primitive classes by name
+    </action>
+    <action dev="mbenson" type="add" issue="DIGESTER-153">
+      Add Constructor support to ObjectCreateRule
+    </action>
+    <action dev="simonetripodi" type="add" issue="DIGESTER-152">
+      The org.apache.commons.digester3.binder.DigesterLoader doesn't allow binding a default org.xml.sax.Locator
+    </action>
+    <action dev="simonetripodi" type="add" issue="DIGESTER-151">
+      The org.apache.commons.digester3.binder.DigesterLoader doesn't allow binding a default org.xml.sax.ErrorHandler.
+    </action>
+  </release>
+  <release version="3.1" date="2011-10-29" description="New features release.">
+    <action dev="simonetripodi" type="add" issue="DIGESTER-150">
+      Use Java5 Concurrent APIs to asynchronous parse()
+    </action>
+  </release>
+  <release version="3.0" date="2011-07-06" description="New major release.">
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-28">
+      Default ClassLoader policy unusable in EAR archive
+    </action>
+    <action dev="simonetripodi" type="add" issue="DIGESTER-72">
+      Allow SetNextRule to fire on begin
+    </action>
+    <action dev="simonetripodi" type="add" issue="DIGESTER-85">
+      Include filename or uri if Digester.parse(File file or String uri throws a SAXException
+    </action>
+    <action dev="simonetripodi" type="add" issue="DIGESTER-90">
+      xmlrules does not support setNamespaceURI
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-103">
+      xmlrules does not support NodeCreateRule
+    </action>
+    <action dev="simonetripodi" type="add" issue="DIGESTER-105">
+      Need to process [attribute id="name"]somename[/attribute]
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-118">
+      ObjectCreateRule shouldn't keep className as a field.
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-123">
+      xmlrules dtd does not define xmlattrs for node-create-rule
+    </action>
+    <action dev="simonetripodi" type="add" issue="DIGESTER-127">
+      Allow DigesterLoader to accept an instance of a preconfigured Digester
+    </action>
+    <action dev="simonetripodi" type="add" issue="DIGESTER-131">
+      Allow recursive match in ExtendedBaseRules.
+    </action>
+    <action dev="simonetripodi" type="add" issue="DIGESTER-132">
+      Add a CompoundSubstitutor to support more than one Substitutors at a time.
+    </action>
+    <action dev="simonetripodi" type="fix" issue="DIGESTER-134">
+      Bug in SetPropertyRule.
+    </action>
+    <action dev="simonetripodi" type="update" issue="DIGESTER-137">
+      Public/protected static fields which intended as constants, but which are not marked final.
+    </action>
+  </release>
+  </body>
+</document>
