@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/beanutils2/ConstructorUtils.java",
+    "line": 344,
+    "npe_method": "toArray",
+    "deref_field": "arg",
+    "npe_class": "ConstructorUtils"
+}

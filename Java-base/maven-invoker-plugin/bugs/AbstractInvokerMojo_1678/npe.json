@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugins/invoker/AbstractInvokerMojo.java",
-    "line": 1678,
-    "npe_method": "runBuild",
-    "deref_field": "buildLogger",
-    "npe_class": "AbstractInvokerMojo"
-}

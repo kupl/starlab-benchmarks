@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/JDBCDynaClass.java",
-    "line": 264,
-    "npe_method": "introspect",
-    "deref_field": "dynaProperty",
-    "npe_class": "JDBCDynaClass"
-}

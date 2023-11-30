@@ -1,0 +1,21 @@
+{
+  "language": "java",
+  "id": "commons-lang-1",
+  "buggyPath": ".",
+  "referencePath": null,
+  "buildCommand": "mvn package -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100 -DskipTests=true -DskipITs=true -Dtest=None -DfailIfNoTests=false",
+  "testCommand": "mvn test -V -B -Denforcer.skip=true -Dcheckstyle.skip=true -Dcobertura.skip=true -Drat.skip=true -Dlicense.skip=true -Dfindbugs.skip=true -Dgpg.skip=true -Dskip.npm=true -Dskip.gulp=true -Dskip.bower=true -Drat.numUnapprovedLicenses=100",
+  "categories": [
+    "safety",
+    "npe"
+  ],
+  "npe": {
+    "filepath": "maven-script/maven-script-ant/src/main/java/org/apache/maven/script/ant/AntMojoWrapper.java",
+    "line": 253,
+    "npe_method": "addClasspathReferences",
+    "deref_field": "mojoExecution",
+    "npe_class": "AntMojoWrapper",
+    "repo": "maven-plugin-tools",
+    "bug_id": "AntMojoWrapper_279"
+  }
+}

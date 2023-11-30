@@ -1,0 +1,7 @@
+{
+    "filepath": "maven-plugin-tools-api/src/main/java/org/apache/maven/tools/plugin/util/PluginUtils.java",
+    "line": 143,
+    "npe_method": "sortMojoParameters",
+    "deref_field": "parameters",
+    "npe_class": "PluginUtils"
+}

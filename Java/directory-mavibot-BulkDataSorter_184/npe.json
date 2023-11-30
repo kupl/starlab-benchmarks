@@ -1,0 +1,7 @@
+{
+    "filepath": "mavibot/src/main/java/org/apache/directory/mavibot/btree/memory/BulkDataSorter.java",
+    "line": 178,
+    "npe_method": "hasNext",
+    "deref_field": "available",
+    "npe_class": "1"
+}

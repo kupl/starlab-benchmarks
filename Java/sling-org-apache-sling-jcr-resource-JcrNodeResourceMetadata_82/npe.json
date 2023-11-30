@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/jcr/resource/internal/helper/jcr/JcrNodeResourceMetadata.java",
+    "line": 79,
+    "npe_method": "promoteNode",
+    "deref_field": "contentNode",
+    "npe_class": "JcrNodeResourceMetadata"
+}

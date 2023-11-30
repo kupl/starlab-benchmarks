@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/tuple/Triple.java",
-    "line": 135,
-    "npe_method": "hashCode",
-    "deref_field": "getRight",
-    "npe_class": "Triple"
-}
