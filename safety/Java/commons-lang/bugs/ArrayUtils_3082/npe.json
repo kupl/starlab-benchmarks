@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
-    "line": 3103,
-    "npe_method": "shift",
-    "deref_field": "array",
-    "npe_class": "ArrayUtils"
-}

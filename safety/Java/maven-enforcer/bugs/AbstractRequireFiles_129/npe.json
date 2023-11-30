@@ -1,7 +1,0 @@
-{
-    "filepath": "enforcer-rules/src/main/java/org/apache/maven/plugins/enforcer/AbstractRequireFiles.java",
-    "line": 139,
-    "npe_method": "hashCode",
-    "deref_field": "items",
-    "npe_class": "AbstractRequireFiles"
-}

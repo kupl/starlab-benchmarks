@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/CharUtils.java",
-    "line": 149,
-    "npe_method": "toChar",
-    "deref_field": "ch",
-    "npe_class": "CharUtils"
-}

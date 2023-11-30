@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
-    "line": 1743,
-    "npe_method": "isAlpha",
-    "deref_field": "str",
-    "npe_class": "StringUtils"
-}

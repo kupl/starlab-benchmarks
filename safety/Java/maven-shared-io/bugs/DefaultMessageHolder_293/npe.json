@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/io/logging/DefaultMessageHolder.java",
-    "line": 296,
-    "npe_method": "render",
-    "deref_field": "error",
-    "npe_class": "Message"
-}

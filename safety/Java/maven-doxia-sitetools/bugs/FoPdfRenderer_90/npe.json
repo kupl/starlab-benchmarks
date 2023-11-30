@@ -1,7 +1,0 @@
-{
-    "filepath": "doxia-doc-renderer/src/main/java/org/apache/maven/doxia/docrenderer/pdf/fo/FoPdfRenderer.java",
-    "line": 91,
-    "npe_method": "render",
-    "deref_field": "documentModel",
-    "npe_class": "FoPdfRenderer"
-}

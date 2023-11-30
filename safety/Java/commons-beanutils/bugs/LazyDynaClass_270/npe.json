@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/beanutils2/LazyDynaClass.java",
-    "line": 290,
-    "npe_method": "remove",
-    "deref_field": "name",
-    "npe_class": "LazyDynaClass"
-}

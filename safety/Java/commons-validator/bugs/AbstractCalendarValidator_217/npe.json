@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/validator/routines/AbstractCalendarValidator.java",
-    "line": 231,
-    "npe_method": "getFormat",
-    "deref_field": "locale",
-    "npe_class": "AbstractCalendarValidator"
-}

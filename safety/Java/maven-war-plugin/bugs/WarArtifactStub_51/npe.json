@@ -1,7 +1,0 @@
-{
-    "filepath": "src/test/java/org/apache/maven/plugins/war/stub/WarArtifactStub.java",
-    "line": 52,
-    "npe_method": "getArtifactId",
-    "deref_field": "artifactId",
-    "npe_class": "WarArtifactStub"
-}

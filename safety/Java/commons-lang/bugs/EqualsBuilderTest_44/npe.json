@@ -1,7 +1,0 @@
-{
-    "filepath": "src/test/java/org/apache/commons/lang3/builder/EqualsBuilderTest.java",
-    "line": 46,
-    "npe_method": "equals",
-    "deref_field": "o",
-    "npe_class": "TestObject"
-}

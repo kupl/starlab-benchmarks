@@ -1,7 +1,0 @@
-{
-    "filepath": "maven-script/maven-script-ant/src/main/java/org/apache/maven/script/ant/AntMojoWrapper.java",
-    "line": 232,
-    "npe_method": "addClasspathReferences",
-    "deref_field": "mavenProject",
-    "npe_class": "AntMojoWrapper"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/PropertyUtils.java",
-    "line": 118,
-    "npe_method": "loadProperties",
-    "deref_field": "is",
-    "npe_class": "PropertyUtils"
-}

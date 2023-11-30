@@ -1,7 +1,0 @@
-{
-    "filepath": "doxia-decoration-model/src/main/java/org/apache/maven/doxia/site/decoration/inheritance/PathUtils.java",
-    "line": 67,
-    "npe_method": "convertPath",
-    "deref_field": "relative",
-    "npe_class": "PathUtils"
-}

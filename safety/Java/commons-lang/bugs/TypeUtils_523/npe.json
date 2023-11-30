@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
-    "line": 535,
-    "npe_method": "isAssignable",
-    "deref_field": "toGenericArrayType",
-    "npe_class": "TypeUtils"
-}

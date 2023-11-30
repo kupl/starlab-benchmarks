@@ -1,7 +1,0 @@
-{
-    "filepath": "log4j-catalog/log4j-catalog-jpa/src/main/java/org/apache/logging/log4j/catalog/jpa/converter/AttributeConverter.java",
-    "line": 50,
-    "npe_method": "convert",
-    "deref_field": "getId",
-    "npe_class": "AttributeConverter"
-}

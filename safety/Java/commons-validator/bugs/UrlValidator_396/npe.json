@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/validator/routines/UrlValidator.java",
-    "line": 408,
-    "npe_method": "isValidAuthority",
-    "deref_field": "ipv6",
-    "npe_class": "UrlValidator"
-}

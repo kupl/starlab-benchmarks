@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/testing/mock/jcr/MockNode.java",
-    "line": 378,
-    "npe_method": "orderBefore",
-    "deref_field": "destChildRelPath",
-    "npe_class": "MockNode"
-}

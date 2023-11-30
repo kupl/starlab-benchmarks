@@ -1,7 +1,0 @@
-{
-    "filepath": "src/test/java/org/apache/commons/lang3/event/EventUtilsTest.java",
-    "line": 223,
-    "npe_method": "invoke",
-    "deref_field": "count",
-    "npe_class": "EventCountingInvociationHandler"
-}

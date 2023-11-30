@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
-    "line": 1525,
-    "npe_method": "reverse",
-    "deref_field": "array",
-    "npe_class": "ArrayUtils"
-}

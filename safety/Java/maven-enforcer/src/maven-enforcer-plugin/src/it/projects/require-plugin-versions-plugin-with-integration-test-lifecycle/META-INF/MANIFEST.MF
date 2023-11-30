@@ -1,2 +1,0 @@
-Bundle-SymbolicName: pluginWithIntegrationTestLifecycle
-Bundle-Version: 1.0.0.qualifier

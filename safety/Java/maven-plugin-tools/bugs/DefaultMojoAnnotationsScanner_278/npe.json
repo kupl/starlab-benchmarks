@@ -1,7 +1,0 @@
-{
-    "filepath": "maven-plugin-tools-annotations/src/main/java/org/apache/maven/tools/plugin/extractor/annotations/scanner/DefaultMojoAnnotationsScanner.java",
-    "line": 275,
-    "npe_method": "analyzeVisitors",
-    "deref_field": "mojoAnnotationVisitor",
-    "npe_class": "DefaultMojoAnnotationsScanner"
-}

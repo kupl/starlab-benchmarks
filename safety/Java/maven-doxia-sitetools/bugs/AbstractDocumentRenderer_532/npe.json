@@ -1,7 +1,0 @@
-{
-    "filepath": "doxia-doc-renderer/src/main/java/org/apache/maven/doxia/docrenderer/AbstractDocumentRenderer.java",
-    "line": 534,
-    "npe_method": "parse",
-    "deref_field": "context",
-    "npe_class": "AbstractDocumentRenderer"
-}

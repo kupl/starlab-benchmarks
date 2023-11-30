@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
-    "line": 1312,
-    "npe_method": "appendWithSeparators",
-    "deref_field": "it",
-    "npe_class": "StrBuilder"
-}

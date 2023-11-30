@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/validator/routines/CreditCardValidator.java",
-    "line": 483,
-    "npe_method": "validate",
-    "deref_field": "range.high",
-    "npe_class": "1"
-}

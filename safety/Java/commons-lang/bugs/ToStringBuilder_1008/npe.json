@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java",
-    "line": 1038,
-    "npe_method": "appendToString",
-    "deref_field": "toString",
-    "npe_class": "ToStringBuilder"
-}

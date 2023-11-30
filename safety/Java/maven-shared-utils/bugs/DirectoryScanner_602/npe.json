@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/io/DirectoryScanner.java",
-    "line": 612,
-    "npe_method": "scandir",
-    "deref_field": "scanConductor",
-    "npe_class": "DirectoryScanner"
-}

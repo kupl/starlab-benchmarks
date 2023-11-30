@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
-    "line": 2035,
-    "npe_method": "replaceFirst",
-    "deref_field": "searchStr",
-    "npe_class": "StrBuilder"
-}

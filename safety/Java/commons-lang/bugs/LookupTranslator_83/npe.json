@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java",
-    "line": 87,
-    "npe_method": "translate",
-    "deref_field": "result",
-    "npe_class": "LookupTranslator"
-}

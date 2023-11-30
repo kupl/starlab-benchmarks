@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/serviceusermapping/impl/ServiceUserMapperImpl.java",
-    "line": 499,
-    "npe_method": "internalGetPrincipalNames",
-    "deref_field": "principalNames",
-    "npe_class": "ServiceUserMapperImpl"
-}

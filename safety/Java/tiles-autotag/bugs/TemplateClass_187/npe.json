@@ -1,7 +1,0 @@
-{
-    "filepath": "tiles-autotag-core/src/main/java/org/apache/tiles/autotag/model/TemplateClass.java",
-    "line": 196,
-    "npe_method": "fillRegularParameters",
-    "deref_field": "method",
-    "npe_class": "TemplateClass"
-}

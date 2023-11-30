@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/validator/routines/UrlValidator.java",
-    "line": 484,
-    "npe_method": "isValidQuery",
-    "deref_field": "query",
-    "npe_class": "UrlValidator"
-}

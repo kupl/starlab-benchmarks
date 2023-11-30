@@ -1,7 +1,0 @@
-{
-    "filepath": "mavibot/src/main/java/org/apache/directory/mavibot/btree/comparator/ShortComparator.java",
-    "line": 68,
-    "npe_method": "compare",
-    "deref_field": "short2",
-    "npe_class": "ShortComparator"
-}

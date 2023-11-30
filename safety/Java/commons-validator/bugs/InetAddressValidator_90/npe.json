@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/validator/routines/InetAddressValidator.java",
-    "line": 99,
-    "npe_method": "isValidInet4Address",
-    "deref_field": "groups",
-    "npe_class": "InetAddressValidator"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/validator/util/ValidatorUtils.java",
-    "line": 128,
-    "npe_method": "getValueAsString",
-    "deref_field": "value",
-    "npe_class": "ValidatorUtils"
-}

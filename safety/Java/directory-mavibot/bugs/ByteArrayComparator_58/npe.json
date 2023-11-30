@@ -1,7 +1,0 @@
-{
-    "filepath": "mavibot/src/main/java/org/apache/directory/mavibot/btree/comparator/ByteArrayComparator.java",
-    "line": 68,
-    "npe_method": "compare",
-    "deref_field": "byteArray1",
-    "npe_class": "ByteArrayComparator"
-}

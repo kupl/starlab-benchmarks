@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/caconfig/impl/override/OverrideItem.java",
-    "line": 76,
-    "npe_method": "matchesPath",
-    "deref_field": "pathPattern",
-    "npe_class": "OverrideItem"
-}

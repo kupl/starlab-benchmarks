@@ -1,7 +1,0 @@
-{
-    "filepath": "maven-plugin-tools-annotations/src/main/java/org/apache/maven/tools/plugin/extractor/annotations/datamodel/ParameterAnnotationContent.java",
-    "line": 176,
-    "npe_method": "equals",
-    "deref_field": "alias",
-    "npe_class": "ParameterAnnotationContent"
-}

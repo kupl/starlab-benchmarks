@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugins/invoker/SelectorUtils.java",
-    "line": 50,
-    "npe_method": "parseList",
-    "deref_field": "list",
-    "npe_class": "SelectorUtils"
-}

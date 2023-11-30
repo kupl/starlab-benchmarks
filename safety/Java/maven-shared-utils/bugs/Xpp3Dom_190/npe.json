@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/xml/Xpp3Dom.java",
-    "line": 203,
-    "npe_method": "setAttribute",
-    "deref_field": "nameParameter",
-    "npe_class": "Xpp3Dom"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/serviceusermapping/impl/ServiceUserMapperImpl.java",
-    "line": 390,
-    "npe_method": "executeServiceRegistrations",
-    "deref_field": "oldServiceRegistration",
-    "npe_class": "ServiceUserMapperImpl"
-}

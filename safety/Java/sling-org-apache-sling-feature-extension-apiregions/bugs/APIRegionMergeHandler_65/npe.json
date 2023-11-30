@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/extension/apiregions/APIRegionMergeHandler.java",
-    "line": 65,
-    "npe_method": "merge",
-    "deref_field": "sourceRegion",
-    "npe_class": "APIRegionMergeHandler"
-}

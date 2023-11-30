@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/io/FileUtils.java",
-    "line": 1346,
-    "npe_method": "cleanDirectory",
-    "deref_field": "exception",
-    "npe_class": "FileUtils"
-}

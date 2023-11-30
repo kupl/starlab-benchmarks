@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/geronimo/jcache/simple/SimpleProvider.java",
-    "line": 47,
-    "npe_method": "getCacheManager",
-    "deref_field": "existingManagers",
-    "npe_class": "SimpleProvider"
-}

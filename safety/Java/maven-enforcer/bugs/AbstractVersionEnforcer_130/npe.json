@@ -1,7 +1,0 @@
-{
-    "filepath": "enforcer-rules/src/main/java/org/apache/maven/plugins/enforcer/AbstractVersionEnforcer.java",
-    "line": 144,
-    "npe_method": "containsVersion",
-    "deref_field": "recommendedVersion",
-    "npe_class": "AbstractVersionEnforcer"
-}

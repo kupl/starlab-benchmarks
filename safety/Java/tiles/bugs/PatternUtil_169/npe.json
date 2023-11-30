@@ -1,7 +1,0 @@
-{
-    "filepath": "tiles-core/src/main/java/org/apache/tiles/definition/pattern/PatternUtil.java",
-    "line": 180,
-    "npe_method": "replaceVarsInSimpleAttribute",
-    "deref_field": "expressionObject",
-    "npe_class": "PatternUtil"
-}

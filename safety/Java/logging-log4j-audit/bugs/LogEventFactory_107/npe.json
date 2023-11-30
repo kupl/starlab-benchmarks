@@ -1,7 +1,0 @@
-{
-    "filepath": "log4j-audit/log4j-audit-api/src/main/java/org/apache/logging/log4j/audit/LogEventFactory.java",
-    "line": 108,
-    "npe_method": "getMaxLength",
-    "deref_field": "maxLength",
-    "npe_class": "LogEventFactory"
-}

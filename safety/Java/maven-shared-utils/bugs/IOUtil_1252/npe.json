@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/io/IOUtil.java",
-    "line": 1344,
-    "npe_method": "close",
-    "deref_field": "reader",
-    "npe_class": "IOUtil"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "log4j-audit/log4j-audit-war/src/main/java/org/apache/logging/log4j/audit/service/catalog/AuditCatalogManager.java",
-    "line": 96,
-    "npe_method": "initialize",
-    "deref_field": "catalogModel",
-    "npe_class": "AuditCatalogManager"
-}

@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugin/changelog/ChangeLogReport.java",
-    "line": 1535,
-    "npe_method": "sinkAuthorDetails",
-    "deref_field": "developer",
-    "npe_class": "ChangeLogReport"
-}

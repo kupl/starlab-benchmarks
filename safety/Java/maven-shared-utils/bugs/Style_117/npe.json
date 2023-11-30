@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/logging/Style.java",
-    "line": 118,
-    "npe_method": "apply",
-    "deref_field": "color",
-    "npe_class": "Style"
-}

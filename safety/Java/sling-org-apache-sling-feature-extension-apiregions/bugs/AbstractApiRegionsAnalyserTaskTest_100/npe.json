@@ -1,7 +1,0 @@
-{
-    "filepath": "src/test/java/org/apache/sling/feature/extension/apiregions/analyser/AbstractApiRegionsAnalyserTaskTest.java",
-    "line": 102,
-    "npe_method": "execute",
-    "deref_field": "apiRegionJSON",
-    "npe_class": "AbstractApiRegionsAnalyserTaskTest"
-}

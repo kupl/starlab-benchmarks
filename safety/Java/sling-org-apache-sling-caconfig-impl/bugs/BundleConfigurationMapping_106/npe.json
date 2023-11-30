@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/caconfig/impl/metadata/BundleConfigurationMapping.java",
-    "line": 107,
-    "npe_method": "hasMappingConflict",
-    "deref_field": "conflictingConfigMapping",
-    "npe_class": "BundleConfigurationMapping"
-}

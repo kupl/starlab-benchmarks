@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/geronimo/jcache/simple/SimpleCache.java",
-    "line": 623,
-    "npe_method": "invokeAll",
-    "deref_field": "invoke",
-    "npe_class": "SimpleCache"
-}

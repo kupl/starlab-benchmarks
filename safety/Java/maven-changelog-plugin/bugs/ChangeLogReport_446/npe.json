@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/plugin/changelog/ChangeLogReport.java",
-    "line": 446,
-    "npe_method": "executeReport",
-    "deref_field": "providerImplementations",
-    "npe_class": "ChangeLogReport"
-}

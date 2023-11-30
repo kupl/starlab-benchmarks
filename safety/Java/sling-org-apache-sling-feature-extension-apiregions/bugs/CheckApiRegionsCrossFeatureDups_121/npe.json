@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/feature/extension/apiregions/analyser/CheckApiRegionsCrossFeatureDups.java",
-    "line": 123,
-    "npe_method": "splitListConfig",
-    "deref_field": "value",
-    "npe_class": "CheckApiRegionsCrossFeatureDups"
-}

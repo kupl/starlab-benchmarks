@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
-    "line": 117,
-    "npe_method": "defaultIfNull",
-    "deref_field": "object",
-    "npe_class": "ObjectUtils"
-}

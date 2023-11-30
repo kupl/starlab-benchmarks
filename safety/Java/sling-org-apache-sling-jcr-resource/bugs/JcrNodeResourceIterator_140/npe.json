@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/jcr/resource/internal/helper/jcr/JcrNodeResourceIterator.java",
-    "line": 142,
-    "npe_method": "getPath",
-    "deref_field": "parentPath",
-    "npe_class": "JcrNodeResourceIterator"
-}

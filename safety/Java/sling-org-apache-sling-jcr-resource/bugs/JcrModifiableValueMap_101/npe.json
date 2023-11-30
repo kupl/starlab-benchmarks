@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/sling/jcr/resource/internal/JcrModifiableValueMap.java",
-    "line": 107,
-    "npe_method": "get",
-    "deref_field": "entry",
-    "npe_class": "JcrModifiableValueMap"
-}

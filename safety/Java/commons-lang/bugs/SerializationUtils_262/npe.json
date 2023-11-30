@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
-    "line": 285,
-    "npe_method": "deserialize",
-    "deref_field": "objectData",
-    "npe_class": "SerializationUtils"
-}

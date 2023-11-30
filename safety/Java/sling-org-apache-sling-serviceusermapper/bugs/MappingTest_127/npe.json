@@ -1,7 +1,0 @@
-{
-    "filepath": "src/test/java/org/apache/sling/serviceusermapping/impl/MappingTest.java",
-    "line": 129,
-    "npe_method": "assertMapping",
-    "deref_field": "userName",
-    "npe_class": "MappingTest"
-}

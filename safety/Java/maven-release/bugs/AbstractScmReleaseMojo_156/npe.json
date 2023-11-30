@@ -1,7 +1,0 @@
-{
-    "filepath": "maven-release-plugin/src/main/java/org/apache/maven/plugins/release/AbstractScmReleaseMojo.java",
-    "line": 154,
-    "npe_method": "createReleaseDescriptor",
-    "deref_field": "getScm",
-    "npe_class": "AbstractScmReleaseMojo"
-}

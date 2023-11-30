@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
-    "line": 1526,
-    "npe_method": "swapCase",
-    "deref_field": "str",
-    "npe_class": "StringUtils"
-}

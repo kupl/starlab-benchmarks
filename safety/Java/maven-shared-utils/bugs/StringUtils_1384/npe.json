@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
-    "line": 1394,
-    "npe_method": "stripStart",
-    "deref_field": "strip",
-    "npe_class": "StringUtils"
-}

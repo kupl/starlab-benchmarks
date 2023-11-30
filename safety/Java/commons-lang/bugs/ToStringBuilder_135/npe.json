@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java",
-    "line": 154,
-    "npe_method": "setDefaultStyle",
-    "deref_field": "style",
-    "npe_class": "ToStringBuilder"
-}

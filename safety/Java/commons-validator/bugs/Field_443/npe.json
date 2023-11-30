@@ -1,7 +1,0 @@
-{
-    "filepath": "src/main/java/org/apache/commons/validator/Field.java",
-    "line": 451,
-    "npe_method": "getArg",
-    "deref_field": "arg",
-    "npe_class": "Field"
-}
