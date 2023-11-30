@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/beanutils2/locale/converters/BaseLocaleConverterTestCase.java",
+    "line": 253,
+    "npe_method": "convertInvalid",
+    "deref_field": "expectedValue",
+    "npe_class": "BaseLocaleConverterTestCase"
+}
