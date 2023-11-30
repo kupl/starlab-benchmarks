@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/caconfig/management/impl/ConfigurationDataImpl.java",
+    "line": 268,
+    "npe_method": "isInherited",
+    "deref_field": "writebackConfigurationResource",
+    "npe_class": "ConfigurationDataImpl"
+}

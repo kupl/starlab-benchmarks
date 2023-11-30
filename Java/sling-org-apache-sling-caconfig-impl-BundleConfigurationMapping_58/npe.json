@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/caconfig/impl/metadata/BundleConfigurationMapping.java",
+    "line": 65,
+    "npe_method": "getConfigMappings",
+    "deref_field": "configMappings",
+    "npe_class": "BundleConfigurationMapping"
+}
