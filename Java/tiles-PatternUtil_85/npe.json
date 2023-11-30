@@ -1,0 +1,7 @@
+{
+    "filepath": "tiles-core/src/main/java/org/apache/tiles/definition/pattern/PatternUtil.java",
+    "line": 97,
+    "npe_method": "replacePlaceholders",
+    "deref_field": "templateAttribute",
+    "npe_class": "PatternUtil"
+}
