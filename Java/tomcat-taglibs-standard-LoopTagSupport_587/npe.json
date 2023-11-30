@@ -1,0 +1,7 @@
+{
+    "filepath": "spec/src/main/java/jakarta/servlet/jsp/jstl/core/LoopTagSupport.java",
+    "line": 560,
+    "npe_method": "unExposeVariables",
+    "deref_field": "itemId",
+    "npe_class": "LoopTagSupport"
+}
