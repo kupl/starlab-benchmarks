@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+    "line": 1316,
+    "npe_method": "getRawType",
+    "deref_field": "typeArgument",
+    "npe_class": "TypeUtils"
+}
