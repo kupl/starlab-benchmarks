@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/geronimo/jcache/simple/SimpleCache.java",
+    "line": 225,
+    "npe_method": "getAll",
+    "deref_field": "elt",
+    "npe_class": "SimpleCache"
+}

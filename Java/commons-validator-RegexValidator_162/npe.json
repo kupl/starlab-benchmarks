@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/validator/routines/RegexValidator.java",
+    "line": 174,
+    "npe_method": "match",
+    "deref_field": "value",
+    "npe_class": "RegexValidator"
+}
