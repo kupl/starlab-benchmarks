@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+
+<!--
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+  <properties>
+    <title>Introduction</title>
+    <author>Vincent Siveton</author>
+    <author email="hboutemy_AT_apache_DOT_org">Hervé Boutemy</author>
+  </properties>
+
+  <body>
+
+    <section name="Maven Plugin Tools">
+
+      <p>The Maven Plugin Tools contains the necessary tools to generate rebarbative content like descriptor,
+      help and documentation. In addition, it provides tools to write Maven Plugins in scripting languages
+      like Ant or Beanshell.</p>
+
+      <p>
+        <img src="images/plugin-tools-deps.png" width="759" height="474" border="0" usemap="#PluginTools_dependencies" />
+        <map name="PluginTools_dependencies">
+          <area shape="rect" coords="256,0,467,34"    alt="maven-plugin-plugin"      href="./maven-plugin-plugin" />
+          <area shape="rect" coords="28,95,205,131"   alt="plugin-tools-api"         href="./maven-plugin-tools-api"/>
+          <area shape="rect" coords="287,154,496,190" alt="plugin-tools-javadoc"     href="./maven-plugin-tools-javadoc"/>
+          <area shape="rect" coords="44,146,508,198"  alt="plugin-tools-java"        href="./maven-plugin-tools-java"/>
+          <area shape="rect" coords="311,213,496,248" alt="plugin-annotations"       href="./maven-plugin-annotations"/>
+          <area shape="rect" coords="44,204,508,256"  alt="plugin-tools-annotations" href="./maven-plugin-tools-annotations"/>
+          <area shape="rect" coords="55,270,293,306"  alt="plugin-tools-beanshell"   href="./maven-script/maven-plugin-tools-beanshell"/>
+          <area shape="rect" coords="319,271,557,306" alt="maven-script-beanshell"   href="./maven-script/maven-script-beanshell"/>
+          <area shape="rect" coords="56,329,223,365"  alt="plugin-tools-ant"         href="./maven-script/maven-plugin-tools-ant"/>
+          <area shape="rect" coords="388,329,557,365" alt="maven-script-ant"         href="./maven-script/maven-script-ant"/>
+          <area shape="rect" coords="48,388,231,424"  alt="plugin-tools-model"       href="./maven-script/maven-plugin-tools-model"/>
+          <area shape="rect" coords="514,95,759,131"  alt="plugin-tools-generators"  href="./maven-plugin-tools-generators"/>
+          <area shape="rect" coords="44,263,570,432"  alt="maven-script"             href="./maven-script"/>
+          <area shape="rect" coords="340,438,529,474" alt="maven-plugin-api"         href="/ref/current/maven-plugin-api/"/>
+          <area shape="rect" coords="510,154,582,190" alt="qdox"                     href="http://qdox.codehaus.org/"/>
+          <area shape="rect" coords="510,212,583,248" alt="asm"                      href="http://asm.ow2.org/"/>
+          <area shape="rect" coords="656,134,747,169" alt="Doxia"                    href="/doxia/"/>
+          <area shape="rect" coords="599,271,715,306" alt="Beanshell"                href="http://www.beanshell.org/"/>
+          <area shape="rect" coords="600,329,670,366" alt="Ant"                      href="http://ant.apache.maven/"/>
+        </map>
+      </p>
+
+      <table>
+        <tr><th><b>Module</b></th><th><b>Overview</b></th></tr>
+        <tr>
+          <td><b><a href="./maven-plugin-plugin/index.html">maven-plugin-plugin</a></b></td>
+          <td>Create a Maven plugin descriptor for any mojos found in the source tree, generate reports, create help goal.</td>
+        </tr> 
+        <tr>
+          <td><a href="./maven-plugin-tools-generators/index.html">maven-plugin-tools-generators</a></td>
+          <td>Generators (XML descriptor, help, documentation), used by maven-plugin-plugin to generate content from descriptor extracted from sources.</td>
+        </tr>      
+        <tr>
+          <td><a href="./maven-plugin-tools-api/index.html">maven-plugin-tools-api</a></td>
+          <td>Extractor API, used by maven-plugin-plugin to extract Mojo information.</td>
+        </tr>      
+        <tr>
+          <td>&nbsp;&nbsp;<a href="./maven-plugin-tools-java/index.html">maven-plugin-tools-java</a></td>
+          <td>Extractor for plugins written in Java annotated with Mojo Javadoc Tags.</td>
+        </tr>      
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="./maven-plugin-tools-javadoc/index.html">maven-plugin-tools-javadoc</a></td>
+          <td>Provides doclets to support Mojo Javadoc Tags in the Javadoc Tool.</td>
+        </tr>      
+        <tr>
+          <td>&nbsp;&nbsp;<a href="./maven-plugin-tools-annotations/index.html">maven-plugin-tools-annotations</a></td>
+          <td>Extractor for plugins written in Java with Java annotations.</td>
+        </tr>      
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="./maven-plugin-annotations/index.html">maven-plugin-annotations</a></td>
+          <td>Provides the Java annotations to use in Mojos.</td>
+        </tr>      
+        <tr>
+          <td><a href="./maven-script/index.html">maven-script</a></td>
+          <td>Maven Script Mojo Support lets developer write Maven plugins/goals with scripting languages instead of compiled Java.</td>
+        </tr>      
+        <tr>
+          <td>&nbsp;&nbsp;<a href="./maven-script/maven-plugin-tools-beanshell/index.html">maven-plugin-tools-beanshell</a></td>
+          <td>Extractor for plugins written in Beanshell.</td>
+        </tr>      
+        <tr>
+          <td>&nbsp;&nbsp;<a href="./maven-script/maven-script-beanshell/index.html">maven-script-beanshell</a></td>
+          <td>Maven Beanshell Mojo Support, ie write Maven plugins with Beanshell scripts.</td>
+        </tr>      
+        <tr>
+          <td>&nbsp;&nbsp;<a href="./maven-script/maven-plugin-tools-ant/index.html">maven-plugin-tools-ant</a></td>
+          <td>Extractor for plugins written in Ant.</td>
+        </tr>      
+        <tr>
+          <td>&nbsp;&nbsp;<a href="./maven-script/maven-script-ant/index.html">maven-script-ant</a></td>
+          <td>Maven Ant Mojo Support, ie write Maven plugins with Ant script.</td>
+        </tr>      
+        <tr>
+          <td>&nbsp;&nbsp;<a href="./maven-script/maven-plugin-tools-model/index.html">maven-plugin-tools-model</a></td>
+          <td>Plugin Metadata Model for script-based plugins.</td>
+        </tr>      
+      </table>
+
+      <subsection name="See Also">
+        <ul>
+          <li><a href="/plugin-testing/">Maven Plugin Testing</a></li>
+          <li><a href="/ref/current/maven-plugin-api/">Maven Plugin API</a></li>
+        </ul>
+      </subsection>
+
+    </section>
+
+  </body>
+
+</document>
