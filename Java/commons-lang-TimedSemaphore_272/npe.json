@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java",
+    "line": 278,
+    "npe_method": "shutdown",
+    "deref_field": "task",
+    "npe_class": "TimedSemaphore"
+}

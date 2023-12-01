@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/geronimo/jcache/simple/cdi/CDIJCacheHelper.java",
+    "line": 266,
+    "npe_method": "cacheResolverFactoryFor",
+    "deref_field": "defaults",
+    "npe_class": "CDIJCacheHelper"
+}

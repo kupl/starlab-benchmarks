@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
+    "line": 3243,
+    "npe_method": "splitByWholeSeparatorWorker",
+    "deref_field": "str",
+    "npe_class": "StringUtils"
+}

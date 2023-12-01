@@ -1,0 +1,7 @@
+{
+    "filepath": "doxia-integration-tools/src/main/java/org/apache/maven/doxia/tools/DefaultSiteTool.java",
+    "line": 699,
+    "npe_method": "populateParentMenu",
+    "deref_field": "menu",
+    "npe_class": "DefaultSiteTool"
+}
