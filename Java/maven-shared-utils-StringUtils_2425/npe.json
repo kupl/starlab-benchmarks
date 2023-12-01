@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
+    "line": 2446,
+    "npe_method": "unifyLineSeparators",
+    "deref_field": "s",
+    "npe_class": "StringUtils"
+}
