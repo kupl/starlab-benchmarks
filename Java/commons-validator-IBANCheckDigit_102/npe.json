@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/validator/routines/checkdigit/IBANCheckDigit.java",
+    "line": 116,
+    "npe_method": "calculate",
+    "deref_field": "code",
+    "npe_class": "IBANCheckDigit"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/validator/routines/AbstractNumberValidatorTest.java",
+    "line": 106,
+    "npe_method": "testValidateMinMax",
+    "deref_field": "max",
+    "npe_class": "AbstractNumberValidatorTest"
+}

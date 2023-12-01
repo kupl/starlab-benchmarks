@@ -1,0 +1,7 @@
+{
+    "filepath": "maven-plugin-tools-java/src/main/java/org/apache/maven/tools/plugin/extractor/javadoc/JavaJavadocMojoDescriptorExtractor.java",
+    "line": 318,
+    "npe_method": "getBooleanTagValue",
+    "deref_field": "tag",
+    "npe_class": "JavaJavadocMojoDescriptorExtractor"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "log4j-catalog/log4j-catalog-jpa/src/main/java/org/apache/logging/log4j/catalog/jpa/converter/EventConverter.java",
+    "line": 75,
+    "npe_method": "convert",
+    "deref_field": "eventAttributeModel",
+    "npe_class": "EventConverter"
+}
