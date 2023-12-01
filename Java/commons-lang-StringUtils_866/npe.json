@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
+    "line": 888,
+    "npe_method": "stripAccents",
+    "deref_field": "input",
+    "npe_class": "StringUtils"
+}
