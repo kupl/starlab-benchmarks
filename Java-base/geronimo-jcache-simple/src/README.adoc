@@ -1,0 +1,12 @@
+= Simple JCache Implementation
+
+A light implementation simply backed by a ConcurrentHashMap.
+
+It is intended for reference data cache usages.
+
+There are three modules:
+
+- default ones embeds next two
+- cdi is only the CDI integration
+- standalone is only the API implementation without CDI support
+

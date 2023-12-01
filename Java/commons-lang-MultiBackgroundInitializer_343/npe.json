@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java",
+    "line": 356,
+    "npe_method": "checkName",
+    "deref_field": "init",
+    "npe_class": "MultiBackgroundInitializerResults"
+}

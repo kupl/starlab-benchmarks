@@ -1,0 +1,7 @@
+{
+    "filepath": "tiles-core/src/main/java/org/apache/tiles/definition/dao/ResolvingLocaleUrlDefinitionDAO.java",
+    "line": 155,
+    "npe_method": "resolveInheritance",
+    "deref_field": "parent",
+    "npe_class": "ResolvingLocaleUrlDefinitionDAO"
+}

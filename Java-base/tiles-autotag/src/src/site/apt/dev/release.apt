@@ -1,0 +1,302 @@
+~~ $Id$
+~~
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~
+~~ http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+~~
+         -----------
+         Release Process
+         -----------
+
+Tiles Release Process
+
+  Here you will find the steps to create releases for Tiles.
+
+  Apache's existing documentation should be read
+
+  * {{{http://www.apache.org/dev/release-publishing}Publishing Releases}}
+
+  * {{{http://www.apache.org/dev/publishing-maven-artifacts.html}Publishing Maven Artifacts}}
+
+  * {{{http://www.apache.org/dev/release}Releases Policy}}
+
+Prerequisites
+
+  To create a release you have to install:
+
+  * {{{http://www.oracle.com/technetwork/java/javase/overview/index.html}Java 9}}. If you are using a newer
+  version of Java <<change JAVA_HOME environment variable>>
+  when calling Maven, so it points to an instance of Java 9;
+
+  * {{{http://maven.apache.org/}Maven 3.2.2+}};
+
+  * {{{http://www.gnupg.org/}GnuPG}};
+
+  * {{{http://www.openssh.com/}OpenSSH}};
+
+  * {{{http://www.graphviz.org/}GraphViz}};
+
+One-time operations
+
+  These operations need to be performed only one time.
+
+* Create and publish your GPG key
+
+  To create a GPG key, follow the
+  {{{http://www.apache.org/dev/openpgp.html}guidelines}}.
+  Include it in:
+
+-------------------------------------
+https://svn.apache.org/repos/asf/tiles/site/KEYS
+-------------------------------------
+
+  Publish your GPG key in a PGP key server, such as
+  {{{http://pgp.mit.edu/} MIT Keyserver}}.
+
+* Modify <<<settings.xml>>>
+
+  Your <<<settings.xml>>> must be modified to allow deployment.
+
+  See {{{http://www.apache.org/dev/publishing-maven-artifacts.html#dev-env}Publishing Maven Artifacts – Setup your development environment}}
+
+Repeatable operations
+
+  These steps must be performed <<for each>> release.
+
+* Prepare the release tag
+
+  To prepare the release Subversion tag, check out the branch/trunk from where
+  you are preparing the release and type:
+
+-----------------------------------
+mvn clean
+mvn release:prepare -Dusername=YOUR_SVN_USER -Dpassword=YOUR_SVN_PASSWORD
+-----------------------------------
+
+  The plugin interactively will ask you the version to release, the Subversion
+  tag to use and the next snapshot version. It is recommended to use the tag:
+  <<tiles-autotag-X.X.X>>.
+
+  See also {{{http://www.apache.org/dev/publishing-maven-artifacts.html}the recommendations of the ASF}}.
+
+* Perform the Release
+
+  To perform the release, i.e. creating and deploying Maven artifacts, use:
+
+-----------------------------------
+mvn release:perform
+-----------------------------------
+
+  It should compile and test everything, build and upload the artifacts and the website for the project.
+
+  Upload the assemblies manually with
+
+-----------------------------------
+cd target/
+svn co https://dist.apache.org/repos/dist/dev/tiles tiles-dist-dev
+mkdir tiles-dist-dev/autotag/${version}
+cp checkout/assembly/target/assembly/* tiles-dist-dev/autotag/${version}/
+svn add tiles-dist-dev/autotag/${version}
+svn ci tiles-dist-dev/autotag/${version}
+-----------------------------------
+
+* Close the staging repository
+
+  Login to {{{https://repository.apache.org} Nexus repository}} using your Apache LDAP credentials.
+  Click on "Staging". Then click on "tiles" in the list of repositories.
+
+  In the panel below you should see an open repository that is linked to your username and ip.
+  Right click on this repository and select "Close".
+  This will close the repository from future deployments and make it available for others to view.
+  If you are staging multiple releases together, skip this step until you have staged everything.
+
+  Enter the name and version of the artifact being released in the "Description" field and then click "Close".
+  This will make it easier to identify it later.
+
+* Verify the staged artifacts
+
+  If you click on your repository, a tree view will appear below.
+  You can then browse the contents to ensure the artifacts are as you expect them.
+  Pay particular attention to the existence of *.asc (signature) files.
+  If the you don't like the content of the repository, right click your repository and choose "Drop".
+  You can then rollback your release and repeat the process.
+
+  Note the repository URL, you will need this in your vote email.
+
+* Verify the uploaded assemblies
+
+  * go to the destination directory on people.apache.org (cd /www/people.apache.org/builds/tiles/autotag/${version})
+
+  * check the presence of the 3 distributions (bin, doc and src), and their signature files (*.asc, *.md5, *sha1).
+
+* Release the JIRA version
+
+  * In JIRA go to the version that you want to release and release it.
+
+  * Create a new version, if it has not been done before.
+
+  * Create the release notes and <<write down the link>> that it uses.
+
+* Send announcement for the test build
+
+  In <<developers mailing list>> send an announcement for the test build:
+
+-----------------------------------
+Subject: [ANNOUNCE] Tiles Autotag ${version} test build available
+
+The test build of Tiles Autotag ${version} is available.
+
+
+No determination as to the quality ('alpha,' 'beta,' or 'GA') of Tiles Autotag
+${version} has been made, and at this time it is simply a "test build". We
+welcome any comments you may have, and will take all feedback into
+account if a quality vote is called for this build.
+
+Release notes:
+
+* ${jira.release.notes}
+
+Distribution:
+
+ * https://dist.apache.org/repos/dist/dev/tiles/autotag/${version}/
+
+Maven 2 staging repository:
+
+ * https://repository.apache.org/content/repositories/tiles-[YOUR REPOSITORY ID]/
+
+A vote regarding the quality of this test build will be initiated
+within the next couple of days.
+-----------------------------------
+
+* Call for a vote
+
+  A few days after the test build announcement, call for a vote in
+  <<developers mailing list>>.
+
+-----------------------------------
+Subject: [VOTE] Tiles Autotag ${version} Release Quality
+
+The Tiles Autotag ${version} test build has been available since ${testBuildDate}.
+
+Release notes:
+
+* ${jira.release.notes}
+
+Distribution:
+
+ * https://dist.apache.org/repos/dist/dev/tiles/autotag/${version}/
+
+Maven 2 staging repository:
+
+ * https://repository.apache.org/content/repositories/tiles-[YOUR REPOSITORY ID]/
+
+If you have had a chance to review the test build, please respond with
+a vote on its quality:
+
+ [ ] Leave at test build
+ [ ] Alpha
+ [ ] Beta
+ [ ] General Availability (GA)
+
+
+Everyone who has tested the build is invited to vote. Votes by PMC
+members are considered binding. A vote passes if there are at least
+three binding +1s and more +1s than -1s.
+-----------------------------------
+
+* Post-vote operations
+
+  After a vote is finished, and it has been decided that is
+  <<at least of alpha quality>>, there is the need of a post-vote process.
+
+** Promote maven staged artifacts
+
+  Once the release is deemed fit for public consumption it can be transfered to a
+  production repository where it will be available to all users.
+
+  Login to {{{https://repository.apache.org}Nexus repository}} again.
+  Click on "Staging" and then on the repository with id "tiles-staging".
+  Find your closed staging repository, right click on it and choose "Release".
+
+  Next click on "Repositories", select the "Releases" repository
+  and validate that your artifacts exist as you expect them.
+
+** Publish distribution artifacts
+
+  * Move assemblies into the Apache {{{http://www.apache.org/dev/release#when-to-archive}dist}} repository:
+
+-------------------------------------------
+svn mv https://dist.apache.org/repos/dist/dev/tiles/autotag/${version} https://dist.apache.org/repos/dist/release/tiles/autotag/
+-------------------------------------------
+
+** Update the site
+
+  * Wait 24 hours to let the mirror sync to the release and then update the
+  site. In particular you have to update the index and the download pages:
+
+------------------------------------------------
+https://svn.apache.org/repos/asf/tiles/site/src/site/xdoc/index.xml
+https://svn.apache.org/repos/asf/tiles/site/src/site/apt/download.apt
+------------------------------------------------
+
+  Build and publish the site:
+
+--------------------------------------
+mvn clean site site:stage
+mvn scm-publish:publish-scm
+# check staging website at target/scmpublish-checkout/index.html
+cd <tiles-site-checkout>/publish/tiles-autotag/
+svn merge ^/tiles/site/staging/tiles-autotag .
+svn ci
+--------------------------------------
+
+** Send announcement
+
+  Finally, send an an announcement to the <<users>> and <<developers mailing
+  list>>:
+
+--------------------------------------
+Subject: [ANNOUNCE] Tiles Autotag ${version} ${quality} released
+
+The Apache Tiles team is pleased to announce the release of Tiles Autotag ${version}
+${quality}.
+
+Available in binary and source distribution.
+
+http://tiles.apache.org/download.html
+
+It is also available in the central Maven repository under Group ID
+"org.apache.tiles".
+
+The 1.x series of the Apache Tiles Autotag framework has a minimum
+requirement of the following specification versions:
+
+* Java Standard Edition (Java SE) 1.8
+
+The release notes are available online at:
+
+* ${jira.release.notes}
+
+Please feel free to test the distribution and post your comments to
+the user list, or, if appropriate, file a ticket with JIRA.
+--------------------------------------
+
+** Delete old releases
+
+  As described in http://www.apache.org/dev/release.html#when-to-archive
+
+
+  <<You have finished!>>

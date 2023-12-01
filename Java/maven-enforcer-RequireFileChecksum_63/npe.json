@@ -1,0 +1,7 @@
+{
+    "filepath": "enforcer-rules/src/main/java/org/apache/maven/plugins/enforcer/RequireFileChecksum.java",
+    "line": 73,
+    "npe_method": "execute",
+    "deref_field": "this.checksum",
+    "npe_class": "RequireFileChecksum"
+}

@@ -1,0 +1,42 @@
+Maven 2 &amp; 3
+This is...
+
+We have the following keys in the context:
+   1. FileUtils
+   2. PathTool
+   3. StringUtils
+   4. alignedFileName
+   5. alternator
+   6. authors
+   7. bodyContent
+   8. class
+   9. context
+  10. convert
+  11. currentDate
+  12. currentFileName
+  13. date
+  14. dateFormat
+  15. dateRevision
+  16. decoration
+  17. display
+  18. docRenderingContext
+  19. doxiaSiteRendererVersion
+  20. esc
+  21. field
+  22. headContent
+  23. i18n
+  24. link
+  25. locale
+  26. loop
+  27. math
+  28. number
+  29. plexus
+  30. publishDate
+  31. relativePath
+  32. render
+  33. shortTitle
+  34. sorter
+  35. supportedLocales
+  36. text
+  37. title
+  38. xml

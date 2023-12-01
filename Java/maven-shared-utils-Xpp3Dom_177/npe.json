@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/xml/Xpp3Dom.java",
+    "line": 184,
+    "npe_method": "getAttribute",
+    "deref_field": "this.attributes",
+    "npe_class": "Xpp3Dom"
+}
