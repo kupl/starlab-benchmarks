@@ -1,0 +1,7 @@
+{
+    "filepath": "doxia-doc-renderer/src/main/java/org/apache/maven/doxia/docrenderer/pdf/itext/ITextPdfRenderer.java",
+    "line": 153,
+    "npe_method": "render",
+    "deref_field": "documentModel",
+    "npe_class": "ITextPdfRenderer"
+}
