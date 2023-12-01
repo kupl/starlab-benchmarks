@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/plugins/war/overlay/OverlayManager.java",
+    "line": 208,
+    "npe_method": "getAssociatedArtifact",
+    "deref_field": "projectArtifacts",
+    "npe_class": "OverlayManager"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/LocaleUtils.java",
+    "line": 215,
+    "npe_method": "localeLookupList",
+    "deref_field": "locale",
+    "npe_class": "LocaleUtils"
+}
