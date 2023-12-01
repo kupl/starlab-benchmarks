@@ -1,0 +1,7 @@
+{
+    "filepath": "log4j-audit/log4j-audit-api/src/main/java/org/apache/logging/log4j/audit/LogEventFactory.java",
+    "line": 396,
+    "npe_method": "validateContextConstraint",
+    "deref_field": "value",
+    "npe_class": "LogEventFactory"
+}

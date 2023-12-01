@@ -1,0 +1,169 @@
+~~ $Id$
+~~
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~
+~~ http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+~~
+         -----------
+         Wildcard support
+         -----------
+
+Wildcard support
+
+  By default, Tiles supports wildcards in definition names. Wilcards help a
+  lot in writing less code to declare your definitions.
+
+* Default configuration
+
+  Note: default configuration only works if you do not use <<<CompleteAutoloadTilesContainerFactory>>>. If you are using this setting, you can move to the next section.
+
+  Let us start with a simple example. When not using wildcards, you might end up with such tiles definitions:
+
+-----------------------------------
+<definition name="bank/user" template="/layout.jsp">
+    <put-attribute name="header" value="/header.jsp"/>
+    <put-attribute name="body"   value="/user.jsp"/>
+</definition>
+
+<definition name="bank/account" template="/layout.jsp">
+    <put-attribute name="header" value="/header.jsp"/>
+    <put-attribute name="body"   value="/account.jsp"/>
+</definition>
+
+<definition name="bank/customer" template="/layout.jsp">
+    <put-attribute name="header" value="/header.jsp"/>
+    <put-attribute name="body"   value="/customer.jsp"/>
+</definition>
+------------------------------------
+
+  The above definitions are pretty verbose as you need to create one definition per JSP that you're adding to your          application.
+  You could use definition inheritance to reduce the number of lines but you would still need one definition per JSP.
+
+
+** Single star '\*'
+
+  Let's see how to improve that using wildcards. You would then have:
+
+------------------------------------
+<definition name="bank/*" template="/layout.jsp">
+    <put-attribute name="header" value="/header.jsp"/>
+    <put-attribute name="body"   value="/{1}.jsp"/>
+</definition>
+
+------------------------------------
+  Calling a view named "bank/user" matches the above definition name. Inside the "body" attributes, \{1\} refers to the star's value which is "user" in that case.
+
+
+** Multiple stars such as in '\*/\*'
+
+  Let's now consider another case. As you can see, the sample below uses 2 stars '\*'.
+
+------------------------------------
+<definition name="bank/*/*" template="/layout.jsp">
+    <put-attribute name="header" value="/header.jsp"/>
+    <put-attribute name="body"   value="/{1}-{2}.jsp"/>
+</definition>
+
+------------------------------------
+
+  Calling a view named "/bank/customer/account" matches the above definition name.
+  Inside the 'body' attribute, \{1\} refers to the first star and \{2\} refers to the second one.
+  The "body" JSP name will be "customer-account.jsp".
+
+  Here is another example which shows that you can use package-style definition names:
+
+------------------------------------
+<definition name="test.definition*.message*" template="/layout{1}.jsp">
+    <put-attribute name="title"  value="This definition has a message: {2}."/>
+    <put-attribute name="header" value="/header.jsp"/>
+    <put-attribute name="body"   value="/body.jsp"/>
+</definition>
+------------------------------------
+
+
+* Using prefixes
+
+** Enabling CompleteAutoloadTilesContainerFactory
+
+  As a prerequisite for using prefixes, you need to have CompleteAutoloadTilesContainerFactory enabled.
+
+  If you haven't enabled it yet, here is a quick checklist for you to use.
+
+  The library tiles-extras is required. If you're using Maven, you need to add this dependency to you POM file:
+
+
+------------------------------------
+<dependency>
+	<groupId>org.apache.tiles</groupId>
+	<artifactId>tiles-extras</artifactId>
+	<version>3.0.1</version>
+</dependency>
+------------------------------------
+
+	If you are using Spring, you should add the 'completeAutoload' attribute to your TilesConfigurer bean.
+
+------------------------------------
+<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+	<property name="completeAutoload" value="true"/>
+</bean>
+------------------------------------
+
+** Using prefixes
+
+	Here is an example of prefix using Regular Expressions:
+
+------------------------------------
+<definition name="REGEXP:test\.definition(.*)\.message(.*)" template="/layout{1}.jsp">
+    <put-attribute name="title"  value="This definition has a message: {2}."/>
+    <put-attribute name="header" value="/header.jsp"/>
+    <put-attribute name="body"   value="/body.jsp"/>
+</definition>
+------------------------------------
+
+	The below sample uses WILDCARD (this prefix is not needed when using wildcards solely, as shown in the 'Default 	Configuration' section).
+
+------------------------------------
+<definition name="WILDCARD:test.definition*.message*" template="/layout{1}.jsp">
+    <put-attribute name="title"  value="This definition has a message: {2}."/>
+    <put-attribute name="header" value="/header.jsp"/>
+    <put-attribute name="body"   value="/body.jsp"/>
+</definition>
+
+<definition name="WILDCARD:bank/*" template="/layout.jsp">
+    <put-attribute name="header" value="/header.jsp"/>
+    <put-attribute name="body"   value="/{1}.jsp"/>
+</definition>
+------------------------------------
+
+
+* tiles:insertDefinition
+
+  In both cases, if you insert a definition that matches the definition, for example:
+
+------------------------------------
+<tiles:insertDefinition name="test.definitionOne.messageThisIsAMessage" />
+------------------------------------
+
+  The definition is automatically mapped, replacing placeholders, marked by
+  curly brackets, with the value of matched definitions. In this case:
+
+------------------------------------
+<definition name="test.definitionOne.messageThisIsAMessage" template="/layoutOne.jsp">
+    <put-attribute name="title"  value="This definition has a message: ThisIsAMessage."/>
+    <put-attribute name="header" value="/header.jsp"/>
+    <put-attribute name="body"   value="/body.jsp"/>
+</definition>
+------------------------------------

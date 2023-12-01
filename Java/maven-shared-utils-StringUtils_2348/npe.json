@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
+    "line": 2365,
+    "npe_method": "escape",
+    "deref_field": "source",
+    "npe_class": "StringUtils"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "mavibot/src/main/java/org/apache/directory/mavibot/btree/comparator/IntComparator.java",
+    "line": 68,
+    "npe_method": "compare",
+    "deref_field": "integer2",
+    "npe_class": "IntComparator"
+}

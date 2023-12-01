@@ -1,0 +1,7 @@
+{
+    "filepath": "enforcer-rules/src/test/java/org/apache/maven/plugins/enforcer/MockProject.java",
+    "line": 1501,
+    "npe_method": "getParentArtifact",
+    "deref_field": "parent",
+    "npe_class": "MockProject"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/geronimo/jcache/simple/SimpleCache.java",
+    "line": 192,
+    "npe_method": "doLoad",
+    "deref_field": "v",
+    "npe_class": "SimpleCache"
+}
