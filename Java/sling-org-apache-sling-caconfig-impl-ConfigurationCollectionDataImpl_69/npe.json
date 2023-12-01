@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/caconfig/management/impl/ConfigurationCollectionDataImpl.java",
+    "line": 72,
+    "npe_method": "getProperties",
+    "deref_field": "properties",
+    "npe_class": "ConfigurationCollectionDataImpl"
+}

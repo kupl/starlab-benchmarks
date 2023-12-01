@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/caconfig/management/impl/ConfigurationManagerImpl.java",
+    "line": 96,
+    "npe_method": "getConfiguration",
+    "deref_field": "configResourceInheritanceChain",
+    "npe_class": "ConfigurationManagerImpl"
+}
