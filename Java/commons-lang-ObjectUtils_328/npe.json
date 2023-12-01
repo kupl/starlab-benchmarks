@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
+    "line": 350,
+    "npe_method": "identityToString",
+    "deref_field": "object",
+    "npe_class": "ObjectUtils"
+}
