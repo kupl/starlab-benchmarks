@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<!-- START SNIPPET: macrotest -->
+      <!-- A test snippet... -->
+<!-- END SNIPPET: macrotest -->
+
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 file:../../../../../doxia-decoration-model/target/generated-site/xsd/decoration-1.0.0.xsd"
+  name="Plexus">
+  <bannerLeft>
+    <name>Plexus</name>
+    <src>http://plexus.codehaus.org/images/plexus-logo.png</src>
+    <href>http://plexus.codehaus.org</href>
+  </bannerLeft>
+  <bannerRight>
+    <src>http://media.codehaus.org/images/unity-codehaus-logo.png</src>
+    <href>http://www.codehaus.org</href>
+  </bannerRight>
+  <body>
+    <links>
+      <item name="Plexus" href="http://plexus.codehaus.org"/>
+      <item name="The Codehaus" href="http://www.codehaus.org"/>
+    </links>
+    <menu name="Quick Links">
+      <item name="CDC" href="/cdc.html"/>
+      <item name="nestedItems" href="/nestedItems.html"/>
+      <item name="entities, cdata, comment" href="/entityTest.html"/>
+      <item name="javascript alert" href="/javascript.html"/>
+      <item name="sub-menu" href="/confluence/link.html" collapse="true">
+        <item name="nested-list" href="/confluence/nested-list.html"/>
+        <item name="sub-sub-menu" href="/confluence/section.html" collapse="true">
+          <item name="table" href="/confluence/table.html"/>
+          <item name="test" href="/confluence/test.html"/>
+        </item>
+      </item>
+    </menu>
+  </body>
+</project>

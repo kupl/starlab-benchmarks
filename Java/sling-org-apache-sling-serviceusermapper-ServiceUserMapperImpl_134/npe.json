@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/serviceusermapping/impl/ServiceUserMapperImpl.java",
+    "line": 135,
+    "npe_method": "configure",
+    "deref_field": "props",
+    "npe_class": "ServiceUserMapperImpl"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/cli/shell/Shell.java",
+    "line": 385,
+    "npe_method": "getWorkingDirectory",
+    "deref_field": "workingDir",
+    "npe_class": "Shell"
+}
