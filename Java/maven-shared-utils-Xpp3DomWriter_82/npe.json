@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/xml/Xpp3DomWriter.java",
+    "line": 93,
+    "npe_method": "write",
+    "deref_field": "value",
+    "npe_class": "Xpp3DomWriter"
+}

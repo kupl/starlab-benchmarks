@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
+    "line": 1767,
+    "npe_method": "isWhitespace",
+    "deref_field": "str",
+    "npe_class": "StringUtils"
+}
