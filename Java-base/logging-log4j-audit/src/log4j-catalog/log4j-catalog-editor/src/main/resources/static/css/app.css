@@ -1,0 +1,205 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements. See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache license, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the license for the specific language governing permissions and
+ * limitations under the license.
+ */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #e7e7e7;
+  display: flex;
+  height: 48px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+#nav a {
+  border-right: 1px solid #e7e7e7;
+  color: #666;
+  font-size: 16px;
+  line-height: 48px;
+  padding: 0 14px;
+  text-decoration: none;
+}
+
+#nav #save-all {
+  border-right: none;
+  border-left: 1px solid #e7e7e7;
+  margin-left: auto;
+}
+
+#nav a:hover,
+#nav #save-all:hover {
+  background-color: #0b67cd;
+  border-right: 1px solid #0b67cd;
+  color: #fff;
+}
+
+#ftr {
+  margin: 24px;
+  text-align: center;
+}
+
+.log4j-table-container {
+  padding: 0 24px;
+}
+
+.form-processing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+  opacity: .75;
+}
+
+.form-processing .gif {
+  position: absolute;
+  top: calc(50% - 16px);
+  left: calc(50% - 16px);
+  width: 32px;
+  height: 32px;
+  background-image: url(../images/ajax-loader.gif);
+  background-repeat: no-repeat;
+}
+
+.log4J-action-icon {
+  opacity: .4;
+}
+
+.log4j-catalog-form {
+  position: relative;
+}
+
+.log4j-catalog-form p {
+  position: relative;
+}
+
+.log4j-catalog-form input[type="text"],
+.log4j-catalog-form select,
+.log4j-catalog-form textarea {
+  width: 80%;
+  border: 1px solid #ddd;
+  padding: 2px 7px;
+  background-color: #fff;
+}
+
+.log4j-catalog-form select[multiple] {
+  height: 200px;
+}
+
+.log4j-catalog-form label {
+  display: block;
+  margin-bottom: 7px;
+  color: #aaa;
+}
+
+.log4j-catalog-form .form-error {
+  position: absolute;
+  top: 52px;
+  left: 354px;
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.log4j-catalog-modal {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 20px #ccc;
+  left: 0;
+  margin: auto;
+  padding: 24px;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  width: 500px;
+}
+
+.log4j-catalog-title {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+}
+
+.log4j-catalog-button + .log4j-catalog-button {
+  margin-left: 24px;
+}
+
+/* Events */
+.event-attributes,
+.event-attribute-row {
+  font-size: 12px;
+}
+
+.event-attribute-row,
+.attribute-constraint-row,
+.product-event-row {
+  display: block;
+  clear: both;
+  line-height: 12px;
+  margin: 2px 0;
+  vertical-align: middle;
+}
+
+.event-attribute-row input[type="text"] {
+  width: 270px;
+  margin-right: 24px;
+}
+
+.event-attribute-item-required {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.event-attribute-row button {
+  margin-left: 24px;
+}
+
+.attribute-constraint-row .form-error {
+  position: static;
+  padding: 0 4px;
+}
+
+.attribute-constraint-name {
+  font-size: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+  width: 145px;
+}
+
+.attribute-constraint-data,
+#addAttributeConstraintValue {
+  width: 251px !important;
+}
+
+#addAttributeConstraintName {
+  width: 145px;
+}
+
+#addEventAttribute {
+  width: 375px !important;
+}
+
+#addEventAttributeButton,
+.remove-event-attribute-button {
+  cursor: pointer;
+}

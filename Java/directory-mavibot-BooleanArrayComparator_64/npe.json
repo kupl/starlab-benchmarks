@@ -1,0 +1,7 @@
+{
+    "filepath": "mavibot/src/main/java/org/apache/directory/mavibot/btree/comparator/BooleanArrayComparator.java",
+    "line": 70,
+    "npe_method": "compare",
+    "deref_field": "booleanArray2",
+    "npe_class": "BooleanArrayComparator"
+}

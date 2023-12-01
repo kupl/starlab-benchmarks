@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/RandomStringUtils.java",
+    "line": 397,
+    "npe_method": "random",
+    "deref_field": "chars",
+    "npe_class": "RandomStringUtils"
+}

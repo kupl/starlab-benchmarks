@@ -1,0 +1,7 @@
+{
+    "filepath": "doxia-integration-tools/src/main/java/org/apache/maven/doxia/tools/DefaultSiteTool.java",
+    "line": 475,
+    "npe_method": "getDecorationModel",
+    "deref_field": "parentProject",
+    "npe_class": "DefaultSiteTool"
+}

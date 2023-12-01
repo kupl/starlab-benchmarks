@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/validator/routines/CodeValidator.java",
+    "line": 272,
+    "npe_method": "validate",
+    "deref_field": "regexValidator",
+    "npe_class": "CodeValidator"
+}

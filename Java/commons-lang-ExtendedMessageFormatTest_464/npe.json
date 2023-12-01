@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/lang3/text/ExtendedMessageFormatTest.java",
+    "line": 465,
+    "npe_method": "getFormat",
+    "deref_field": "locale",
+    "npe_class": "OverrideShortDateFormatFactory"
+}

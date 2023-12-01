@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/validator/routines/TimeValidatorTest.java",
+    "line": 327,
+    "npe_method": "createTime",
+    "deref_field": "zone",
+    "npe_class": "TimeValidatorTest"
+}
