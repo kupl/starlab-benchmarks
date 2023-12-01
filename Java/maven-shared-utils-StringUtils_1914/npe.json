@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
+    "line": 1929,
+    "npe_method": "defaultString",
+    "deref_field": "obj",
+    "npe_class": "StringUtils"
+}

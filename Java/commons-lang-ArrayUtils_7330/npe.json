@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+    "line": 7362,
+    "npe_method": "removeElements",
+    "deref_field": "count",
+    "npe_class": "ArrayUtils"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+    "line": 1519,
+    "npe_method": "appendFixedWidthPadLeft",
+    "deref_field": "obj",
+    "npe_class": "StrBuilder"
+}

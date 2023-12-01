@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/validator/routines/ISSNValidator.java",
+    "line": 165,
+    "npe_method": "convertToEAN13",
+    "deref_field": "result",
+    "npe_class": "ISSNValidator"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
+    "line": 1624,
+    "npe_method": "uncapitaliseAllWords",
+    "deref_field": "str",
+    "npe_class": "StringUtils"
+}
