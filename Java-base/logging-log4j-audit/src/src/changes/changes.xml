@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vi: set sw=2: -->
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<document xmlns="http://maven.apache.org/changes/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
+  <properties>
+    <title>Changes</title>
+  </properties>
+  <body>
+    <!-- NOTE: the text node in an action element is interpreted as Markdown in the release notes! -->
+    <!-- The "type" attribute can have the following values:
+         - "add" - New Feature
+         - "fix" - Fixed Bug
+         - "update" - Change
+         - "remove" - Removed
+    -->
+    <release version="1.0.2" date="TBD" description="Release 1.0.2">
+        <action issue="LOG4J2-2448" dev="shadow" type="fix">
+            Allow usage of Versions in non-Spring environments
+        </action>
+      <action issue="LOG4J2-2579" dev="shadow" type="fix">
+        Fix event names normalization
+      </action>
+      <action issue="LOG4J2-2580" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        Event.toString() failed with NullPointerException for events without attributes.
+      </action>
+      <action issue="LOG4J2-2582" dev="rgoers" type="fix" due-to="Eugene Chan">
+        WebMvcAppContext in the catalog editor was missing a curly brace for the gitUserName variable.
+      </action>
+      <action issue="LOG4J2-2578" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        RequestContextMappings should ignore private and instance fields.
+      </action>
+      <action issue="LOG4J2-2521" dev="mattsicker" type="update" due-to="sullis">
+        Update maven-compiler-plugin to 3.8.0.
+      </action>
+    </release>
+    <release version="1.0.1" date="2018-12-2" description="Release 1.0.1">
+      <action issue="LOG4J2-2428" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        Use the AuditExceptionHandler for validation exceptions.
+      </action>
+      <action issue="LOG4J2-2443" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        Fix inconsistencies in validation exceptions.
+      </action>
+      <action issue="LOG4J2-2440" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        AuditEvents should provide some basic toString().
+      </action>
+      <action issue="LOG4J2-2429" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        Setting the exceptionHandler on the AuditEvent sets it as a ThreadContext variable.
+      </action>
+      <action issue="LOG4J2-2421" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        Add verbose parameter to the Log4j audit Maven plugin.
+      </action>
+      <action issue="LOG4J2-2421" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        AbstractEventLogger.logEvent doesn't check for missing required context attributes.
+      </action>
+      <action issue="LOG4J2-2417" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        Better handling of optional properties.
+      </action>
+      <action issue="LOG4J2-2420" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        RequestContextFilter logging cleanup.
+      </action>
+      <action issue="LOG4J2-2442" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        Normalize the event names logged through AbstractEventLogger.logEvent.
+      </action>
+      <action issue="LOG4J2-2431" dev="rgoers" type="fix" due-to="Andrei Ivanov">
+        Narrow the return type of getEvent.
+      </action>
+    </release>
+    <release version="1.0.0" date="2018-06-10" description="Release 1.0.0">
+    </release>
+  </body>
+</document>
