@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/concurrent/ConcurrentUtils.java",
+    "line": 145,
+    "npe_method": "handleCauseUnchecked",
+    "deref_field": "crex",
+    "npe_class": "ConcurrentUtils"
+}
