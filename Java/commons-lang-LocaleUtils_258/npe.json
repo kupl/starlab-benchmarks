@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/LocaleUtils.java",
+    "line": 271,
+    "npe_method": "languagesByCountry",
+    "deref_field": "countryCode",
+    "npe_class": "LocaleUtils"
+}

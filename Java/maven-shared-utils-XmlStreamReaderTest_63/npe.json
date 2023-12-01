@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/maven/shared/utils/XmlStreamReaderTest.java",
+    "line": 64,
+    "npe_method": "createXmlContent",
+    "deref_field": "encoding",
+    "npe_class": "XmlStreamReaderTest"
+}

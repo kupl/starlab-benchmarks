@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/concurrent/ConcurrentUtils.java",
+    "line": 285,
+    "npe_method": "putIfAbsent",
+    "deref_field": "map",
+    "npe_class": "ConcurrentUtils"
+}
