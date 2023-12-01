@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/xml/Xpp3DomUtils.java",
+    "line": 90,
+    "npe_method": "merge",
+    "deref_field": "it",
+    "npe_class": "Xpp3DomUtils"
+}
