@@ -1,0 +1,7 @@
+{
+    "filepath": "tiles-core/src/main/java/org/apache/tiles/definition/dao/CachingLocaleUrlDefinitionDAO.java",
+    "line": 248,
+    "npe_method": "loadRawDefinitionsFromResources",
+    "deref_field": "defsMap",
+    "npe_class": "CachingLocaleUrlDefinitionDAO"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/plugins/war/packaging/WarProjectPackagingTask.java",
+    "line": 337,
+    "npe_method": "copyResources",
+    "deref_field": "getTargetPath",
+    "npe_class": "WarProjectPackagingTask"
+}
