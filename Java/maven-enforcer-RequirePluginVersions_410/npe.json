@@ -1,0 +1,7 @@
+{
+    "filepath": "enforcer-rules/src/main/java/org/apache/maven/plugins/enforcer/RequirePluginVersions.java",
+    "line": 418,
+    "npe_method": "addAdditionalPlugins",
+    "deref_field": "existing",
+    "npe_class": "RequirePluginVersions"
+}

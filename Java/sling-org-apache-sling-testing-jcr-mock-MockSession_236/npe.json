@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/testing/mock/jcr/MockSession.java",
+    "line": 238,
+    "npe_method": "orderBefore",
+    "deref_field": "destination",
+    "npe_class": "MockSession"
+}

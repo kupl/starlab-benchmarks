@@ -1,0 +1,7 @@
+{
+    "filepath": "enforcer-rules/src/main/java/org/apache/maven/plugins/enforcer/RequireFilesExist.java",
+    "line": 34,
+    "npe_method": "checkFile",
+    "deref_field": "file",
+    "npe_class": "RequireFilesExist"
+}

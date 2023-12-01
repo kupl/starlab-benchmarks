@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/validator/Field.java",
+    "line": 508,
+    "npe_method": "getVarValue",
+    "deref_field": "v",
+    "npe_class": "Field"
+}

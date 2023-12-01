@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/jcr/resource/internal/JcrSystemUserValidator.java",
+    "line": 177,
+    "npe_method": "isValid",
+    "deref_field": "servicePrincipalNames",
+    "npe_class": "JcrSystemUserValidator"
+}

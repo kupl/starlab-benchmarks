@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/geronimo/jcache/simple/SimpleProvider.java",
+    "line": 84,
+    "npe_method": "close",
+    "deref_field": "mgr",
+    "npe_class": "SimpleProvider"
+}
