@@ -1,0 +1,7 @@
+{
+    "filepath": "maven-plugin-tools-api/src/main/java/org/apache/maven/tools/plugin/scanner/DefaultMojoScanner.java",
+    "line": 141,
+    "npe_method": "setActiveExtractors",
+    "deref_field": "extractors",
+    "npe_class": "DefaultMojoScanner"
+}

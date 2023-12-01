@@ -1,0 +1,7 @@
+{
+    "filepath": "tiles-core/src/main/java/org/apache/tiles/definition/dao/LocaleUrlDefinitionDAO.java",
+    "line": 101,
+    "npe_method": "computeLocales",
+    "deref_field": "customizationKey",
+    "npe_class": "LocaleUrlDefinitionDAO"
+}
