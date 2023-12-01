@@ -1,0 +1,16 @@
+DynamicImport-Package:\
+  org.apache.felix.inventory
+
+Provide-Capability:\
+  osgi.service;objectClass=org.apache.sling.serviceusermapping.ServiceUserMapped
+
+Import-Package:\
+  org.apache.felix.inventory;resolution:=optional,\
+  *
+
+-includeresource:\
+  @org.apache.felix.utils-*.jar!/org/apache/felix/utils/json/JSONWriter*
+
+-removeheaders:\
+  Include-Resource,\
+  Private-Package
