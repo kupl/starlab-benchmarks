@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+    "line": 5131,
+    "npe_method": "addAll",
+    "deref_field": "array1",
+    "npe_class": "ArrayUtils"
+}

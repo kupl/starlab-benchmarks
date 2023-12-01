@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/maven/plugins/war/AbstractWarExplodedMojoTest.java",
+    "line": 110,
+    "npe_method": "setUpMojo",
+    "deref_field": "artifactStubs",
+    "npe_class": "AbstractWarExplodedMojoTest"
+}

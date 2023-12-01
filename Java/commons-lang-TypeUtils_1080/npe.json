@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+    "line": 1085,
+    "npe_method": "getClosestParentType",
+    "deref_field": "genericInterface",
+    "npe_class": "TypeUtils"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "doxia-site-renderer/src/main/java/org/apache/maven/doxia/siterenderer/DefaultSiteRenderer.java",
+    "line": 186,
+    "npe_method": "locateDocumentFiles",
+    "deref_field": "moduleExcludes",
+    "npe_class": "DefaultSiteRenderer"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/feature/extension/apiregions/analyser/CheckApiRegionsOrder.java",
+    "line": 54,
+    "npe_method": "execute",
+    "deref_field": "order",
+    "npe_class": "CheckApiRegionsOrder"
+}

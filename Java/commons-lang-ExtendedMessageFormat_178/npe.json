@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java",
+    "line": 178,
+    "npe_method": "applyPattern",
+    "deref_field": "format",
+    "npe_class": "ExtendedMessageFormat"
+}

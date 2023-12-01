@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/plugin/changelog/ChangeLogReport.java",
+    "line": 510,
+    "npe_method": "initializeDeveloperMaps",
+    "deref_field": "developers",
+    "npe_class": "ChangeLogReport"
+}
