@@ -1,0 +1,7 @@
+{
+    "filepath": "doxia-decoration-model/src/main/java/org/apache/maven/doxia/site/decoration/DecorationUtils.java",
+    "line": 88,
+    "npe_method": "getCustomChild",
+    "deref_field": "custom",
+    "npe_class": "DecorationUtils"
+}

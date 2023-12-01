@@ -1,0 +1,7 @@
+{
+    "filepath": "tiles-core/src/main/java/org/apache/tiles/definition/dao/BaseLocaleUrlDefinitionDAO.java",
+    "line": 166,
+    "npe_method": "loadDefinitionsFromResource",
+    "deref_field": "stream",
+    "npe_class": "BaseLocaleUrlDefinitionDAO"
+}
