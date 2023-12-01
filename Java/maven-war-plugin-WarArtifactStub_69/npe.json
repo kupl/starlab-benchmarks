@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/maven/plugins/war/stub/WarArtifactStub.java",
+    "line": 70,
+    "npe_method": "getGroupId",
+    "deref_field": "groupId",
+    "npe_class": "WarArtifactStub"
+}

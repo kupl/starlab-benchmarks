@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/maven/shared/utils/XmlStreamReaderTest.java",
+    "line": 80,
+    "npe_method": "checkXmlContent",
+    "deref_field": "bom",
+    "npe_class": "XmlStreamReaderTest"
+}
