@@ -1,0 +1,7 @@
+{
+    "filepath": "maven-plugin-tools-annotations/src/main/java/org/apache/maven/tools/plugin/extractor/annotations/datamodel/ParameterAnnotationContent.java",
+    "line": 204,
+    "npe_method": "hashCode",
+    "deref_field": "alias",
+    "npe_class": "ParameterAnnotationContent"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/maven/shared/utils/StringUtils.java",
+    "line": 1719,
+    "npe_method": "countMatches",
+    "deref_field": "str",
+    "npe_class": "StringUtils"
+}

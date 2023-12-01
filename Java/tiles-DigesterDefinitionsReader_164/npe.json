@@ -1,0 +1,7 @@
+{
+    "filepath": "tiles-core/src/main/java/org/apache/tiles/definition/digester/DigesterDefinitionsReader.java",
+    "line": 166,
+    "npe_method": "begin",
+    "deref_field": "templateType",
+    "npe_class": "FillDefinitionRule"
+}

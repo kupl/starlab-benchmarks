@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/geronimo/jcache/simple/ConfigurableMBeanServerIdBuilder.java",
+    "line": 46,
+    "npe_method": "newMBeanServer",
+    "deref_field": "existing",
+    "npe_class": "ConfigurableMBeanServerIdBuilder"
+}

@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/sling/jcr/resource/internal/helper/jcr/JcrResourceProviderSessionHandlingTest.java",
+    "line": 253,
+    "npe_method": "tearDown",
+    "deref_field": "explicitSession",
+    "npe_class": "JcrResourceProviderSessionHandlingTest"
+}

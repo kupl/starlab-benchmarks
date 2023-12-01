@@ -1,0 +1,7 @@
+{
+    "filepath": "enforcer-rules/src/main/java/org/apache/maven/plugins/enforcer/RequirePrerequisite.java",
+    "line": 94,
+    "npe_method": "execute",
+    "deref_field": "prerequisites",
+    "npe_class": "RequirePrerequisite"
+}

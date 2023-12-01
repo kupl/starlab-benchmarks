@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/sling/jcr/resource/internal/helper/jcr/JcrItemResourceFactoryTest.java",
+    "line": 97,
+    "npe_method": "compareGetItemOrNull",
+    "deref_field": "expectedPath",
+    "npe_class": "JcrItemResourceFactoryTest"
+}

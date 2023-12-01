@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/sling/jcr/resource/internal/helper/JcrPropertyMapCacheEntry.java",
+    "line": 193,
+    "npe_method": "getPropertyValue",
+    "deref_field": "this.propertyValue",
+    "npe_class": "JcrPropertyMapCacheEntry"
+}

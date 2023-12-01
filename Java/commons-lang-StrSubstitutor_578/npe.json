@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java",
+    "line": 596,
+    "npe_method": "replace",
+    "deref_field": "source",
+    "npe_class": "StrSubstitutor"
+}

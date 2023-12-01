@@ -1,2 +1,8 @@
 #ignore patches
 **/patches
+
+# ignore enviroment related files
+*.swp
+/.vscode
+/.idea
+.DS_Store
