@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/geronimo/jcache/simple/cdi/CDIJCacheHelper.java",
+    "line": 125,
+    "npe_method": "createMeta",
+    "deref_field": "cacheResult",
+    "npe_class": "CDIJCacheHelper"
+}

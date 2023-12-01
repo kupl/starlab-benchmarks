@@ -1,0 +1,7 @@
+{
+    "filepath": "src/test/java/org/apache/commons/validator/routines/AbstractCalendarValidatorTest.java",
+    "line": 242,
+    "npe_method": "createCalendar",
+    "deref_field": "zone",
+    "npe_class": "AbstractCalendarValidatorTest"
+}

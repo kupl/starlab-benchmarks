@@ -1,0 +1,7 @@
+{
+    "filepath": "src/main/java/org/apache/commons/validator/routines/AbstractNumberValidator.java",
+    "line": 169,
+    "npe_method": "parse",
+    "deref_field": "value",
+    "npe_class": "AbstractNumberValidator"
+}
