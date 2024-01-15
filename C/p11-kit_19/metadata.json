@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_19",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 676,
+            "file": "p11-kit/proxy.c"
+        },
+        "sink": {
+            "line": 683,
+            "file": "p11-kit/proxy.c"
+        }
+    }
+}

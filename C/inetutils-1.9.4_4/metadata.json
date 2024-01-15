@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "inetutils-1.9.4_4",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 913,
+            "file": "ifconfig/system/linux.c"
+        },
+        "sink": {
+            "line": 919,
+            "file": "ifconfig/system/linux.c"
+        }
+    }
+}

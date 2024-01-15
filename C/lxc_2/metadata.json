@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "lxc_2",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 201,
+            "file": "src/lxc/attach.c"
+        },
+        "sink": {
+            "line": 209,
+            "file": "src/lxc/attach.c"
+        }
+    }
+}

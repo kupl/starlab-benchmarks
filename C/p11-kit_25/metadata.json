@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_25",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 75,
+            "file": "trust/asn1.c"
+        },
+        "sink": {
+            "line": 84,
+            "file": "trust/asn1.c"
+        }
+    }
+}

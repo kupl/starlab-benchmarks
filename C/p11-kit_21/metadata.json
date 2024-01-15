@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_21",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 525,
+            "file": "p11-kit/rpc-message.c"
+        },
+        "sink": {
+            "line": 529,
+            "file": "p11-kit/rpc-message.c"
+        }
+    }
+}

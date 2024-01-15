@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_31",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 543,
+            "file": "trust/extract-openssl.c"
+        },
+        "sink": {
+            "line": 543,
+            "file": "trust/extract-openssl.c"
+        }
+    }
+}

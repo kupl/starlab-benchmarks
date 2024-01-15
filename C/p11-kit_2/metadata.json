@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_2",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 549,
+            "file": "trust/save.c"
+        },
+        "sink": {
+            "line": 566,
+            "file": "trust/save.c"
+        }
+    }
+}

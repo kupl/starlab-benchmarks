@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "swoole-src_1",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 542,
+            "file": "src/network/ReactorProcess.c"
+        },
+        "sink": {
+            "line": 559,
+            "file": "src/network/ReactorProcess.c"
+        }
+    }
+}

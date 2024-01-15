@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "rappel_1",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 52,
+            "file": "pipe.c"
+        },
+        "sink": {
+            "line": 65,
+            "file": "pipe.c"
+        }
+    }
+}

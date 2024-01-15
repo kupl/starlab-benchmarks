@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_4",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 566,
+            "file": "src/detection-plugins/sp_flowbits.c"
+        },
+        "sink": {
+            "line": 585,
+            "file": "src/detection-plugins/sp_flowbits.c"
+        }
+    }
+}

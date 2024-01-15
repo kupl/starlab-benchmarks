@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "x264_10",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 347,
+            "file": "input/timecode.c"
+        },
+        "sink": {
+            "line": 360,
+            "file": "input/timecode.c"
+        }
+    }
+}

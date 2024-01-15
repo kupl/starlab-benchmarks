@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "swoole-src_13",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 173,
+            "file": "swoole_mmap.c"
+        },
+        "sink": {
+            "line": 189,
+            "file": "swoole_mmap.c"
+        }
+    }
+}

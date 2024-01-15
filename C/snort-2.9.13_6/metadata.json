@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_6",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 141,
+            "file": "src/dynamic-plugins/sp_preprocopt.c"
+        },
+        "sink": {
+            "line": 150,
+            "file": "src/dynamic-plugins/sp_preprocopt.c"
+        }
+    }
+}

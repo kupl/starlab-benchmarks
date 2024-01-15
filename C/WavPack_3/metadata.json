@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "WavPack_3",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 102,
+            "file": "src/open_legacy.c"
+        },
+        "sink": {
+            "line": 113,
+            "file": "src/open_legacy.c"
+        }
+    }
+}

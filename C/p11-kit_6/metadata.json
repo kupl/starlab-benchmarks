@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_6",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 156,
+            "file": "p11-kit/iter.c"
+        },
+        "sink": {
+            "line": 161,
+            "file": "p11-kit/iter.c"
+        }
+    }
+}

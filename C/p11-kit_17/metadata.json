@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_17",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 549,
+            "file": "p11-kit/pin.c"
+        },
+        "sink": {
+            "line": 553,
+            "file": "p11-kit/pin.c"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_7",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 398,
+            "file": "src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c"
+        },
+        "sink": {
+            "line": 406,
+            "file": "src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_1",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 274,
+            "file": "src/output-plugins/spo_unified2.c"
+        },
+        "sink": {
+            "line": 278,
+            "file": "src/output-plugins/spo_unified2.c"
+        }
+    }
+}

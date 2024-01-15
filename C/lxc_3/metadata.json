@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "lxc_3",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 83,
+            "file": "src/lxc/tools/lxc_usernsexec.c"
+        },
+        "sink": {
+            "line": 92,
+            "file": "src/lxc/tools/lxc_usernsexec.c"
+        }
+    }
+}

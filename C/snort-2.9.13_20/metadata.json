@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_20",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 61,
+            "file": "src/event_wrapper.c"
+        },
+        "sink": {
+            "line": 66,
+            "file": "src/event_wrapper.c"
+        }
+    }
+}

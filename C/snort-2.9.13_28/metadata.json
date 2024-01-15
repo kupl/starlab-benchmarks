@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_28",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 11924,
+            "file": "src/preprocessors/Stream6/snort_stream_tcp.c"
+        },
+        "sink": {
+            "line": 11927,
+            "file": "src/preprocessors/Stream6/snort_stream_tcp.c"
+        }
+    }
+}

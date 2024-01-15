@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "x264_2",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "sink": {
+            "line": 107,
+            "file": "input/y4m.c"
+        },
+        "source": {
+            "line": 89,
+            "file": "input/y4m.c"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_3",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 762,
+            "file": "tools/u2spewfoo/u2spewfoo.c"
+        },
+        "sink": {
+            "line": 771,
+            "file": "tools/u2spewfoo/u2spewfoo.c"
+        }
+    }
+}

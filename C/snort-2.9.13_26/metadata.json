@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_26",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 1739,
+            "file": "src/fpdetect.c"
+        },
+        "sink": {
+            "line": 1752,
+            "file": "src/fpdetect.c"
+        }
+    }
+}

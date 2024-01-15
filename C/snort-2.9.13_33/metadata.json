@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_33",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 903,
+            "file": "src/sfutil/sf_ipvar.c"
+        },
+        "sink": {
+            "line": 905,
+            "file": "src/sfutil/sf_ipvar.c"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_21",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 413,
+            "file": "src/file-process/file_service.c"
+        },
+        "sink": {
+            "line": 413,
+            "file": "src/file-process/file_service.c"
+        }
+    }
+}

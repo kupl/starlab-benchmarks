@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "recutils-1.8_20",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 422,
+            "file": "utils/recutl.c"
+        },
+        "sink": {
+            "line": 447,
+            "file": "utils/recutl.c"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "inetutils-1.9.4_7",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 312,
+            "file": "src/hostname.c"
+        },
+        "sink": {
+            "line": 336,
+            "file": "src/hostname.c"
+        }
+    }
+}

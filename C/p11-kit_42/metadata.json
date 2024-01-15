@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_42",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 831,
+            "file": "trust/token.c"
+        },
+        "sink": {
+            "line": 850,
+            "file": "trust/token.c"
+        }
+    }
+}

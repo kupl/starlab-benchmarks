@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "lxc_4",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 120,
+            "file": "hooks/unmount-namespace.c"
+        },
+        "sink": {
+            "line": 144,
+            "file": "hooks/unmount-namespace.c"
+        }
+    }
+}

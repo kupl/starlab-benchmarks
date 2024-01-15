@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "lxc_5",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 174,
+            "file": "src/lxc/bdev/lxczfs.c"
+        },
+        "sink": {
+            "line": 176,
+            "file": "src/lxc/bdev/lxczfs.c"
+        }
+    }
+}

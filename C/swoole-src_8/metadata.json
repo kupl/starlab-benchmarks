@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "swoole-src_8",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 528,
+            "file": "swoole_async.c"
+        },
+        "sink": {
+            "line": 537,
+            "file": "swoole_async.c"
+        }
+    }
+}

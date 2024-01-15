@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "swoole-src_15",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 54,
+            "file": "src/pipe/PipeUnsock.c"
+        },
+        "sink": {
+            "line": 64,
+            "file": "src/pipe/PipeUnsock.c"
+        }
+    }
+}

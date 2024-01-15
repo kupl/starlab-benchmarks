@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_22",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 1034,
+            "file": "p11-kit/rpc-transport.c"
+        },
+        "sink": {
+            "line": 1034,
+            "file": "p11-kit/rpc-transport.c"
+        }
+    }
+}

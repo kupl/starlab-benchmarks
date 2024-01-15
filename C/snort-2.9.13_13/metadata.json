@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_13",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 123,
+            "file": "src/dynamic-preprocessors/appid/service_plugins/service_telnet.c"
+        },
+        "sink": {
+            "line": 137,
+            "file": "src/dynamic-preprocessors/appid/service_plugins/service_telnet.c"
+        }
+    }
+}

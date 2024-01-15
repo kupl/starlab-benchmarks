@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "swoole-src_18",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 124,
+            "file": "swoole_buffer.c"
+        },
+        "sink": {
+            "line": 131,
+            "file": "swoole_buffer.c"
+        }
+    }
+}

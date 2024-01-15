@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_18",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 170,
+            "file": "src/dynamic-preprocessors/sdf/spp_sdf.c"
+        },
+        "sink": {
+            "line": 171,
+            "file": "src/dynamic-preprocessors/sdf/spp_sdf.c"
+        }
+    }
+}

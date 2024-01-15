@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "recutils-1.8_3",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 1397,
+            "file": "lib/regexec.c"
+        },
+        "sink": {
+            "line": 1414,
+            "file": "lib/regexec.c"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_32",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 367,
+            "file": "trust/index.c"
+        },
+        "sink": {
+            "line": 374,
+            "file": "trust/index.c"
+        }
+    }
+}

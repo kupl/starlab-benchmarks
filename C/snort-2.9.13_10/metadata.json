@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_10",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 136,
+            "file": "src/dynamic-preprocessors/appid/service_plugins/service_direct_connect.c"
+        },
+        "sink": {
+            "line": 147,
+            "file": "src/dynamic-preprocessors/appid/service_plugins/service_direct_connect.c"
+        }
+    }
+}

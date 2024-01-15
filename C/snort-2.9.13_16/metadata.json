@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_16",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 1386,
+            "file": "src/dynamic-preprocessors/dcerpc2/dce2_config.c"
+        },
+        "sink": {
+            "line": 1449,
+            "file": "src/dynamic-preprocessors/dcerpc2/dce2_config.c"
+        }
+    }
+}

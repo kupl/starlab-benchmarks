@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_24",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 1584,
+            "file": "p11-kit/uri.c"
+        },
+        "sink": {
+            "line": 1596,
+            "file": "p11-kit/uri.c"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_17",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 535,
+            "file": "src/dynamic-preprocessors/ftptelnet/spp_ftptelnet.c"
+        },
+        "sink": {
+            "line": 554,
+            "file": "src/dynamic-preprocessors/ftptelnet/spp_ftptelnet.c"
+        }
+    }
+}

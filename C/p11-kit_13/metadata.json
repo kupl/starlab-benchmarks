@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "p11-kit_13",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 2426,
+            "file": "p11-kit/modules.c"
+        },
+        "sink": {
+            "line": 2433,
+            "file": "p11-kit/modules.c"
+        }
+    }
+}

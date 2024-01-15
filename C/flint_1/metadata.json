@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "flint_1",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 61,
+            "file": "src/fmpz_mpoly_factor/sort.c"
+        },
+        "sink": {
+            "line": 71,
+            "file": "src/fmpz_mpoly_factor/sort.c"
+        }
+    }
+}

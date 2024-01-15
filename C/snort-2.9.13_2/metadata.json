@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_2",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 765,
+            "file": "tools/u2openappid/u2openappid.c"
+        },
+        "sink": {
+            "line": 774,
+            "file": "tools/u2openappid/u2openappid.c"
+        }
+    }
+}

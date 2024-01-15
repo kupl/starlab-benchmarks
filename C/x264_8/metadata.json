@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "x264_8",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 53,
+            "file": "input/thread.c"
+        },
+        "sink": {
+            "line": 54,
+            "file": "input/thread.c"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "recutils-1.8_1",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 345,
+            "file": "utils/csv2rec.c"
+        },
+        "sink": {
+            "line": 382,
+            "file": "utils/csv2rec.c"
+        }
+    }
+}

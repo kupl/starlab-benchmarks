@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "snort-2.9.13_32",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 417,
+            "file": "src/sfutil/sfPolicy.c"
+        },
+        "sink": {
+            "line": 440,
+            "file": "src/sfutil/sfPolicy.c"
+        }
+    }
+}

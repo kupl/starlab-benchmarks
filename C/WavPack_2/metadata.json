@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "WavPack_2",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 255,
+            "file": "src/open_filename.c"
+        },
+        "sink": {
+            "line": 261,
+            "file": "src/open_filename.c"
+        }
+    }
+}

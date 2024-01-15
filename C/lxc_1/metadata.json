@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "lxc_1",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 218,
+            "file": "src/lxc/monitor.c"
+        },
+        "sink": {
+            "line": 234,
+            "file": "src/lxc/monitor.c"
+        }
+    }
+}

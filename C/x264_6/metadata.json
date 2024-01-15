@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "x264_6",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 42,
+            "file": "filters/video/source.c"
+        },
+        "sink": {
+            "line": 48,
+            "file": "filters/video/source.c"
+        }
+    }
+}

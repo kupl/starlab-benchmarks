@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "spearmint_1",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 1437,
+            "file": "code/opusfile-0.9/src/opusfile.c"
+        },
+        "sink": {
+            "line": 1464,
+            "file": "code/opusfile-0.9/src/opusfile.c"
+        }
+    }
+}

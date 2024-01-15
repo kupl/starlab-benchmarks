@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "swoole-src_3",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 25,
+            "file": "src/core/socket.c"
+        },
+        "sink": {
+            "line": 35,
+            "file": "src/core/socket.c"
+        }
+    }
+}

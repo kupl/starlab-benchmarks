@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "flex_3",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 285,
+            "file": "src/dfa.c"
+        },
+        "sink": {
+            "line": 298,
+            "file": "src/dfa.c"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "lxc_7",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 157,
+            "file": "src/lxc/lxc_user_nic.c"
+        },
+        "sink": {
+            "line": 174,
+            "file": "src/lxc/lxc_user_nic.c"
+        }
+    }
+}

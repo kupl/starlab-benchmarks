@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "recutils-1.8_8",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 99,
+            "file": "src/rec-crypt.c"
+        },
+        "sink": {
+            "line": 115,
+            "file": "src/rec-crypt.c"
+        }
+    }
+}

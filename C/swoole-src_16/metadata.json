@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "swoole-src_16",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 42,
+            "file": "src/reactor/ReactorPoll.c"
+        },
+        "sink": {
+            "line": 53,
+            "file": "src/reactor/ReactorPoll.c"
+        }
+    }
+}

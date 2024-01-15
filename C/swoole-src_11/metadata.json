@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "swoole-src_11",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "resource-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 100,
+            "file": "swoole_lock.c"
+        },
+        "sink": {
+            "line": 105,
+            "file": "swoole_lock.c"
+        }
+    }
+}

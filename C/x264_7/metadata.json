@@ -1,0 +1,22 @@
+{
+    "language": "c",
+    "id": "x264_7",
+    "buggyPath": "buggy",
+    "referencePath": null,
+    "buildCommand": "make -j`nproc`",
+    "testCommand": null,
+    "categories": [
+        "safety",
+        "memory-leak"
+    ],
+    "leak": {
+        "source": {
+            "line": 265,
+            "file": "input/avs.c"
+        },
+        "sink": {
+            "line": 268,
+            "file": "input/avs.c"
+        }
+    }
+}
